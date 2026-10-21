@@ -77,6 +77,13 @@
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 
 
+    /* Project-card artwork: original SVG concept visuals, explicitly labelled as illustrative. */
+    .project-art{display:block;width:calc(100% + 50px);max-width:none;height:174px;object-fit:cover;margin:-25px -25px 20px;border-radius:16px 16px 0 0;border-bottom:1px solid var(--line);background:#102338}
+    .project-art-link{display:block;margin:0 0 20px;text-decoration:none}
+    .project-art-link .project-art{margin-bottom:0}
+    .project-art-note{display:block;color:var(--muted);font-size:.72rem;line-height:1.4;margin-top:-12px;margin-bottom:14px}
+    @media(max-width:760px){.project-art{height:190px}}
+    
     .flagship{padding-top:12px}
     .flagship-shell{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.92fr);gap:clamp(24px,4vw,48px);align-items:center;margin-top:25px;padding:clamp(22px,4vw,38px);border:1px solid rgba(157,224,201,.25);border-radius:22px;background:linear-gradient(125deg,rgba(20,43,58,.96),rgba(12,23,38,.98));box-shadow:0 24px 60px rgba(0,0,0,.18)}
     .flagship-kicker{display:inline-flex;align-items:center;gap:8px;color:var(--accent);font-size:.73rem;font-weight:850;letter-spacing:.14em;text-transform:uppercase}
@@ -251,6 +258,8 @@
       <p class="intro">Each project is developed incrementally. Concept art and roadmaps are clearly separated from implemented software, verified simulation, and real-world validation.</p>
       <div class="grid">
         <article class="card">
+          <img class="project-art" src="/images/coconut-harvest-ai-overview.svg" alt="Coconut Harvest AI system workflow diagram" loading="lazy" decoding="async">
+          <span class="project-art-note">System workflow illustration</span>
           <div class="num">01 / AGRICULTURE</div>
           <h3>Coconut Harvest AI</h3>
           <p>Research into AI-assisted coconut perception and an agricultural-robot workflow, with emphasis on image evaluation, system integration, and physical safety requirements.</p>
@@ -258,6 +267,8 @@
           <a href="https://github.com/Pui89/Coconut-Harvest-AI">Explore repository ↗</a>
         </article>
         <article class="card">
+          <img class="project-art" src="/images/flood-rescue-ai-concept.svg" alt="Illustrative flood reconnaissance robot and hazard mapping interface concept" loading="lazy" decoding="async">
+          <span class="project-art-note">Illustrative concept · not field deployment</span>
           <div class="num">02 / DISASTER RESPONSE</div>
           <h3>Flood Rescue AI</h3>
           <p>A simulation-first direction for flood reconnaissance, hazard mapping, and human-supervised rescue support, with safe-failure behavior as a core requirement.</p>
@@ -265,6 +276,8 @@
           <a href="https://github.com/Pui89/Flood-Rescue-AI">Explore repository ↗</a>
         </article>
         <article class="card">
+          <img class="project-art" src="/images/multimodal-screening-ai-concept.svg" alt="Illustrative multimodal evidence review workflow with human oversight" loading="lazy" decoding="async">
+          <span class="project-art-note">Illustrative workflow · not a validated detector</span>
           <div class="num">03 / MULTIMODAL INSPECTION</div>
           <h3>Multimodal Screening AI</h3>
           <p>A local-first review workflow for uncertain multimodal evidence. Outputs are screening hypotheses for authorized human review—not proof of chemical identity or grounds for automatic enforcement.</p>
