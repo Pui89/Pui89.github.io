@@ -28,6 +28,8 @@ Until explicit approval is given, do not activate paid plans, enter payment deta
 
 **No cost-saving claim is a guarantee of zero risk.** Review service terms and account billing before enabling any new capability. If cost or billing behavior is unclear, do not enable it.
 
+**Shared technical blueprint:** [PUI89 Platform Architecture](PUI89_PLATFORM_ARCHITECTURE.md) defines reusable data, perception, evaluation, planning, safety, and robot-adapter interfaces while keeping unimplemented capabilities clearly marked.
+
 ## Stage 1 — Establish a reliable foundation
 
 ### Engineering milestones
