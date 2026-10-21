@@ -76,6 +76,24 @@
     @media(max-width:760px){.wrap{width:min(calc(100% - 32px),var(--max))}.navlinks{gap:2px}.navlinks a{font-size:.8rem;padding:6px 8px}.hero{grid-template-columns:1fr;padding:48px 0 34px;gap:28px}.hero h1{font-size:clamp(3.1rem,13vw,4.6rem)}.hero-visual{min-height:340px}.hero-points{gap:10px 15px}.trust-strip{grid-template-columns:1fr;gap:10px;padding:15px}.trust-strip>div{padding:5px 8px}.section{padding:30px 0 48px}.grid,.principles,.service-grid,.photo-grid,.contact-grid{grid-template-columns:1fr}.card{min-height:0}.photo-card img{height:250px}.notice{margin-bottom:28px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 
+
+    .flagship{padding-top:12px}
+    .flagship-shell{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.92fr);gap:clamp(24px,4vw,48px);align-items:center;margin-top:25px;padding:clamp(22px,4vw,38px);border:1px solid rgba(157,224,201,.25);border-radius:22px;background:linear-gradient(125deg,rgba(20,43,58,.96),rgba(12,23,38,.98));box-shadow:0 24px 60px rgba(0,0,0,.18)}
+    .flagship-kicker{display:inline-flex;align-items:center;gap:8px;color:var(--accent);font-size:.73rem;font-weight:850;letter-spacing:.14em;text-transform:uppercase}
+    .flagship-kicker:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent)}
+    .flagship-shell h3{font-size:clamp(1.8rem,3.5vw,2.65rem);line-height:1.1;letter-spacing:-.045em;margin:14px 0}
+    .flagship-shell p{color:var(--muted);margin:0 0 18px}
+    .flagship-tags{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}
+    .flagship-tags span{border:1px solid rgba(157,224,201,.22);border-radius:999px;padding:6px 10px;font-size:.75rem;color:#dce9f4;background:rgba(4,14,25,.25)}
+    .flagship-visual{border:1px solid rgba(169,199,214,.2);border-radius:15px;overflow:hidden;background:#f7fafc}
+    .flagship-visual img{display:block;width:100%;height:auto;min-height:210px;object-fit:contain}
+    .flagship-caption{padding:12px 15px;background:#101d2d;color:#b6c7d8;font-size:.78rem}
+    .flagship-caption a{font-weight:750}
+    .flagship-evidence{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:15px}
+    .flagship-evidence>div{border:1px solid var(--line);border-radius:12px;background:rgba(14,25,40,.72);padding:15px}
+    .flagship-evidence strong{display:block;font-size:.9rem}.flagship-evidence span{display:block;color:var(--muted);font-size:.78rem;margin-top:4px}
+    @media(max-width:760px){.flagship-shell{grid-template-columns:1fr;padding:21px}.flagship-evidence{grid-template-columns:1fr}.flagship-visual img{min-height:0}}
+
   </style>
 </head>
 <body>
@@ -83,7 +101,7 @@
   <header class="wrap nav">
     <a class="brand" href="#top" aria-label="PUI89 AI Robotics home">PUI89 / AI ROBOTICS</a>
     <nav class="navlinks" aria-label="Main navigation">
-      <a href="#about">About</a><a href="#field-photos">Photos</a><a href="#projects">Projects</a><a href="#services">Our Services</a><a href="#pilot">Pilot</a><a href="#principles">Approach</a><a href="#roadmap">Roadmap</a><a href="#sponsors">Sponsors</a><a href="#contact">Contact</a><a href="RESEARCH_PORTFOLIO.md">Research portfolio</a><a href="https://github.com/Pui89">GitHub</a>
+      <a href="#about">About</a><a href="#field-photos">Photos</a><a href="#flagship-coconut">Coconut AI</a><a href="#projects">Projects</a><a href="#services">Our Services</a><a href="#pilot">Pilot</a><a href="#principles">Approach</a><a href="#roadmap">Roadmap</a><a href="#sponsors">Sponsors</a><a href="#contact">Contact</a><a href="RESEARCH_PORTFOLIO.md">Research portfolio</a><a href="https://github.com/Pui89">GitHub</a>
     </nav>
   </header>
   <main id="main-content" class="wrap">
@@ -131,6 +149,33 @@
           <img src="https://images.unsplash.com/photo-1495813059965-531a515f6dff?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=85&amp;w=1600" alt="Hands working with a harvested coconut" loading="lazy" decoding="async">
           <figcaption><strong>Harvesting workflow context</strong>Reference photograph by <a href="https://unsplash.com/photos/field-worker-digs-up-a-coconut-from-the-forest-floor-2zFna5RUGyU" target="_blank" rel="noopener noreferrer">Eddie Kopp on Unsplash</a>.</figcaption>
         </figure>
+      </div>
+    </section>
+    <section id="flagship-coconut" class="section flagship" aria-labelledby="flagship-heading">
+      <h2 id="flagship-heading">Flagship research project</h2>
+      <p class="intro">Our main focus is turning an agricultural AI concept into a reproducible, testable software workflow—before making claims about a physical robot.</p>
+      <div class="flagship-shell">
+        <div>
+          <div class="flagship-kicker">01 / Coconut Harvest AI</div>
+          <h3>From orchard perception to safer harvest decisions.</h3>
+          <p>Coconut Harvest AI explores local-first image review, candidate assessment, conservative planning, and a future path toward agricultural robotics. The current repository includes planning and review tools, synthetic workflow demonstrations, dataset checks, and reproducible evaluation utilities.</p>
+          <div class="flagship-tags"><span>Applied computer vision</span><span>Human-in-the-loop</span><span>Free-first tooling</span><span>Evidence-led R&amp;D</span></div>
+          <div class="actions">
+            <a class="btn primary" href="https://github.com/Pui89/Coconut-Harvest-AI">Explore the code ↗</a>
+            <a class="btn secondary" href="https://github.com/Pui89/Coconut-Harvest-AI/blob/main/docs/RESEARCH_EVIDENCE_SPRINT.md">See next experiments ↗</a>
+          </div>
+        </div>
+        <div>
+          <div class="flagship-visual">
+            <img src="https://raw.githubusercontent.com/Pui89/Coconut-Harvest-AI/main/docs/images/coconut-harvest-ai-overview.svg" alt="Coconut Harvest AI system workflow overview diagram" loading="lazy" decoding="async">
+            <div class="flagship-caption">System overview · <a href="https://github.com/Pui89/Coconut-Harvest-AI/blob/main/docs/images/coconut-harvest-ai-overview.svg">View diagram source ↗</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="flagship-evidence" aria-label="Project evidence status">
+        <div><strong>Implemented software</strong><span>Planning, image-review, and dataset-quality tools</span></div>
+        <div><strong>Next proof point</strong><span>Rights-cleared images, reviewed labels, and held-out detector evaluation</span></div>
+        <div><strong>Boundary</strong><span>Automatic real-orchard detection and physical harvesting are not yet validated</span></div>
       </div>
     </section>
     <section id="projects" class="section">
