@@ -20,6 +20,7 @@ MARKDOWN_FILES = [
     ROOT / "PRODUCT_QUALITY_AND_BENCHMARK_STANDARD.md",
     ROOT / "TRUST_QUALITY_CUSTOMER_VALUE.md",
     ROOT / "COCONUT_ORCHARD_PILOT_BRIEF.md",
+    ROOT / "PRODUCT_STATUS.md",
 ]
 
 
@@ -108,6 +109,7 @@ def main() -> int:
             "INNOVATION_STRATEGY.md",
             "PRODUCT_QUALITY_AND_BENCHMARK_STANDARD.md",
             "TRUST_QUALITY_CUSTOMER_VALUE.md",
+            "PRODUCT_STATUS.md",
             'id="pilot"',
         ):
             if required not in html:
