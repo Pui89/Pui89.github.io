@@ -1,6 +1,6 @@
 # PUI89 AI Robotics
 
-Public portfolio website for PUI89's independent AI and robotics projects.
+Public-facing website for PUI89's independent AI and robotics initiative, presenting technology projects, engineering principles, and a responsible path toward future products.
 
 ## Purpose
 
@@ -12,7 +12,7 @@ Present three projects with clear links, engineering principles, and honest desc
 
 ## Evidence and status policy
 
-This site is an independent project portfolio, not a claim that a legally incorporated company, validated commercial product, certified robot, customer deployment, or funding relationship already exists. Each repository is the source of truth for implementation and test status. Concept artwork is not operational evidence; synthetic test data is not a real-world benchmark.
+PUI89 AI Robotics is currently used as a project and initiative identity. This website does not claim that a legal entity has been incorporated, or that products are commercially validated, robots are certified, customers are deployed, or funding has been secured. Each repository is the source of truth for implementation and test status. Concept artwork is not operational evidence; synthetic test data is not a real-world benchmark.
 
 ## Cost policy
 
@@ -38,6 +38,6 @@ Then visit `http://127.0.0.1:8000`.
 
 The repository can be published with GitHub Pages using the included Actions workflow. In the repository settings, confirm **Settings → Pages → Build and deployment → Source: GitHub Actions** if it is not already configured. The website should only be described as live after a successful deployment is verified.
 
-## Future company note
+## Company-development status
 
-“PUI89 AI Robotics” is used here as a project/portfolio identity. This page does not represent legal incorporation or professional, safety, regulatory, or commercial certification.
+The website is designed to present the work professionally while the future business is being developed. Before offering products or services, confirm the appropriate legal and tax requirements, intellectual-property rights, privacy obligations, safety requirements, and customer needs. The website itself is static and does not require paid hosting or a custom domain. GitHub Pages availability and quotas remain subject to GitHub's terms.
