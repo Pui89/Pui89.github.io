@@ -11,6 +11,10 @@ PUI89 is developing practical AI and robotics prototypes with an emphasis on tra
 
 The projects are in development. Support helps move them from software prototypes toward better evidence, useful workflows, and carefully scoped real-world evaluation. This page does not imply existing sponsors, customers, grants, field validation, or institutional partnerships.
 
+## Measurable milestones
+
+See the [Support Milestones plan](SPONSOR_MILESTONES.md) for specific proposed work packages, useful contributions, and acceptance evidence. These milestones are proposals, not claims of completed results or guaranteed deliverables.
+
 ## What support would make the biggest difference?
 
 ### 1. Technical mentorship and research collaboration
