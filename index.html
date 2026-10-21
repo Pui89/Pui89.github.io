@@ -110,6 +110,39 @@
     .support-footnote{font-size:.88rem;margin-top:17px}
     @media(max-width:980px){.support-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.sponsor-intro{grid-template-columns:1fr}}
     @media(max-width:600px){.support-grid{grid-template-columns:1fr}.support-card{min-height:0}.sponsor-intro{padding:20px}}
+  
+    /* 2026 visual refinement: calm botanical palette, editorial spacing, and a more cohesive coconut-first identity. */
+    :root{--bg:#07130f;--panel:#10231b;--panel2:#173326;--text:#f4f8ef;--muted:#b5c8b8;--line:#2a4938;--accent:#b9e6a5;--accent2:#f0d49a;--max:1200px}
+    body{background:radial-gradient(ellipse at 78% 0%,rgba(73,127,78,.22),transparent 34%),radial-gradient(ellipse at 0% 45%,rgba(41,91,71,.13),transparent 32%),var(--bg)}
+    .hero{gap:clamp(28px,5vw,76px);padding-top:76px;padding-bottom:58px}
+    .hero h1{max-width:720px;text-wrap:balance}
+    .hero h1 span{background:linear-gradient(105deg,#c8efb1,#8bd8c0);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero-visual{min-height:480px;border-color:rgba(190,228,178,.3);box-shadow:0 30px 90px rgba(0,0,0,.3)}
+    .hero-visual>img{object-position:center 42%;transform:scale(1.01);transition:transform .8s ease}
+    .hero-visual:hover>img{transform:scale(1.045)}
+    .visual-shade{background:linear-gradient(180deg,rgba(3,14,8,.02) 15%,rgba(3,14,8,.15) 42%,rgba(3,14,8,.86) 100%),linear-gradient(90deg,rgba(3,14,8,.12),transparent 75%)}
+    .visual-tag-mark{background:#c8efb1;color:#102719}
+    .btn.primary{background:linear-gradient(115deg,#c8efb1,#9ddcc4);border-color:transparent;color:#102719}
+    .btn.primary:hover{background:#def7cb;color:#102719}
+    .trust-strip{border-color:rgba(185,230,165,.18);background:linear-gradient(110deg,rgba(23,51,38,.88),rgba(12,31,23,.76));backdrop-filter:blur(8px)}
+    .notice{border-color:rgba(240,212,154,.3);background:rgba(54,43,21,.28)}
+    .section{padding-top:42px;padding-bottom:68px}
+    .section h2{max-width:820px;text-wrap:balance}
+    .card,.service-card,.contact-card,.sponsor-panel,.photo-card{border-color:rgba(164,202,165,.18);box-shadow:0 12px 36px rgba(0,0,0,.08)}
+    .card{background:linear-gradient(150deg,rgba(25,57,41,.95),rgba(12,31,23,.98))}
+    .card:hover,.service-card:hover,.contact-card:hover,.photo-card:hover{border-color:rgba(185,230,165,.48);box-shadow:0 18px 42px rgba(0,0,0,.2)}
+    .photo-grid{grid-template-columns:minmax(0,880px);justify-content:start}
+    .photo-card img{height:clamp(280px,44vw,510px);object-fit:cover;object-position:center 48%}
+    .photo-card figcaption{padding:18px 20px 20px}
+    .photo-card figcaption strong{font-size:1.08rem}
+    .photo-card figcaption{line-height:1.7}
+    .principle{background:rgba(16,35,27,.72);border-color:rgba(164,202,165,.15);border-left-color:var(--accent)}
+    .sponsor-panel{background:linear-gradient(135deg,rgba(24,56,40,.95),rgba(12,30,23,.98))}
+    .footer{border-top-color:rgba(164,202,165,.17)}
+    a{transition:color .18s ease}
+    @media(max-width:760px){.hero{padding-top:44px;padding-bottom:38px;gap:26px}.hero-visual{min-height:340px}.section{padding-top:30px;padding-bottom:48px}.photo-grid{grid-template-columns:1fr}.photo-card img{height:300px}}
+    @media(prefers-reduced-motion:reduce){.hero-visual>img,.btn,.card,.service-card,.contact-card,.photo-card,a{transition:none}}
+
   </style>
 </head>
 <body>
@@ -133,7 +166,7 @@
         <div class="hero-points"><span><i></i> Evidence-led development</span><span><i></i> Open-source first</span><span><i></i> Human-aware design</span></div>
       </div>
       <div class="hero-visual">
-        <img src="https://images.unsplash.com/photo-1714073619098-606600c7b5a0?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=85&amp;w=1600" alt="Coconuts growing in a tropical palm orchard" fetchpriority="high">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Fruiting_Coconut_Palm_Canopy.jpg?width=1600" alt="Coconut palm canopy with developing green coconuts, reference imagery for Coconut Harvest AI" fetchpriority="high">
         <div class="visual-shade"></div>
         <div class="visual-tag"><span class="visual-tag-mark">P/89</span><span><strong>COCONUT HARVEST AI</strong><small>Applied AI · Agricultural robotics</small></span></div>
         <div class="visual-note"><span class="pulse"></span> PROTOTYPE DEVELOPMENT <span class="note-divider">/</span> FIELD VALIDATION PENDING</div>
