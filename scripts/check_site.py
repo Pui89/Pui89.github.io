@@ -14,6 +14,9 @@ MARKDOWN_FILES = [
     ROOT / "README.md",
     ROOT / "GROWTH_ROADMAP.md",
     ROOT / "RESEARCH_PORTFOLIO.md",
+    ROOT / "MARKET_AND_PRODUCT_STRATEGY.md",
+    ROOT / "INNOVATION_STRATEGY.md",
+    ROOT / "COCONUT_ORCHARD_PILOT_BRIEF.md",
 ]
 
 
@@ -97,6 +100,10 @@ def main() -> int:
             "Flood Rescue AI",
             "Multimodal Screening AI",
             "RESEARCH_PORTFOLIO.md",
+            "COCONUT_ORCHARD_PILOT_BRIEF.md",
+            "MARKET_AND_PRODUCT_STRATEGY.md",
+            "INNOVATION_STRATEGY.md",
+            'id="pilot"',
         ):
             if required not in html:
                 errors.append(f"index.html is missing expected content: {required}")
