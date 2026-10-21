@@ -8,6 +8,8 @@ Public portfolio: https://pui89.github.io/
 
 The [Research Portfolio](RESEARCH_PORTFOLIO.md) summarises the projects' research questions, evidence plans, and limitations. The [Growth Roadmap](GROWTH_ROADMAP.md) describes the free-first development approach. The [Market and Product Strategy](MARKET_AND_PRODUCT_STRATEGY.md) sets out the first customer hypothesis, discovery questions, pilot evidence, and a 90-day plan. The [Innovation Strategy](INNOVATION_STRATEGY.md) describes proposed technical differentiators, research questions, and a staged path beyond individual prototypes.
 
+The [Early Pilot Brief](COCONUT_ORCHARD_PILOT_BRIEF.md) outlines the first customer-discovery offer, potential measures, data handling, and limitations for a proposed coconut orchard workflow.
+
 ## Purpose
 
 Present three projects with clear links, engineering principles, and honest descriptions of what is implemented versus proposed:
