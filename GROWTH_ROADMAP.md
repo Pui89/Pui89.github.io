@@ -30,6 +30,8 @@ Until explicit approval is given, do not activate paid plans, enter payment deta
 
 **Shared technical blueprint:** [PUI89 Platform Architecture](PUI89_PLATFORM_ARCHITECTURE.md) defines reusable data, perception, evaluation, planning, safety, and robot-adapter interfaces while keeping unimplemented capabilities clearly marked.
 
+**Fast-growth execution plan:** [30-day sprint](FAST_GROWTH_30_DAY_SPRINT.md) prioritises the coconut flagship, a reproducible AI result, customer discovery and one simulation milestone while maintaining the ฿0 default budget.
+
 ## Stage 1 — Establish a reliable foundation
 
 ### Engineering milestones
