@@ -2,6 +2,12 @@
 
 Public-facing website for PUI89's independent AI and robotics initiative, presenting technology projects, engineering principles, and a responsible path toward future products.
 
+## Website
+
+Public portfolio: https://pui89.github.io/
+
+The [Research Portfolio](RESEARCH_PORTFOLIO.md) summarises the projects' research questions, evidence plans, and limitations. The [Growth Roadmap](GROWTH_ROADMAP.md) describes the free-first development approach.
+
 ## Purpose
 
 Present three projects with clear links, engineering principles, and honest descriptions of what is implemented versus proposed:
