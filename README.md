@@ -6,7 +6,7 @@ Public-facing website for PUI89's independent AI and robotics initiative, presen
 
 Public portfolio: https://pui89.github.io/
 
-The [Research Portfolio](RESEARCH_PORTFOLIO.md) summarises the projects' research questions, evidence plans, and limitations. The [Growth Roadmap](GROWTH_ROADMAP.md) describes the free-first development approach. The [Market and Product Strategy](MARKET_AND_PRODUCT_STRATEGY.md) sets out the first customer hypothesis, discovery questions, pilot evidence, and a 90-day plan.
+The [Research Portfolio](RESEARCH_PORTFOLIO.md) summarises the projects' research questions, evidence plans, and limitations. The [Growth Roadmap](GROWTH_ROADMAP.md) describes the free-first development approach. The [Market and Product Strategy](MARKET_AND_PRODUCT_STRATEGY.md) sets out the first customer hypothesis, discovery questions, pilot evidence, and a 90-day plan. The [Innovation Strategy](INNOVATION_STRATEGY.md) describes proposed technical differentiators, research questions, and a staged path beyond individual prototypes.
 
 ## Purpose
 
