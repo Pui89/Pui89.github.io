@@ -13,6 +13,21 @@ This roadmap is a plan, not a claim that PUI89 is already an incorporated compan
 5. **Maintainable, reusable technology.** Reuse tested components where appropriate, document dependencies, track licences, and keep projects reproducible.
 6. **Protect trust.** Publish limitations, failures, data provenance, and the exact conditions under which results were measured.
 
+## Non-negotiable free-first spending gate
+
+**Default budget: $0.** No project task may introduce a paid commitment unless the owner explicitly approves it first.
+
+Before recommending or enabling anything that could charge money, document:
+- The exact service, feature, or item and why a free/local alternative is insufficient.
+- The full expected cost, billing unit, usage limits, taxes if applicable, and what could trigger extra charges.
+- Whether a “free trial” automatically converts, whether a payment method is required, and how to cancel.
+- Data handling, licence terms, portability, and any vendor lock-in.
+- The measurable milestone or customer evidence that justifies the expense.
+
+Until explicit approval is given, do not activate paid plans, enter payment details, enable billing, purchase a custom domain or hardware, use paid inference/cloud compute, or add paid datasets or subscriptions. Prefer local execution and free/open-source tools; check usage quotas and billing settings because “free” services can still have limits or optional metered features.
+
+**No cost-saving claim is a guarantee of zero risk.** Review service terms and account billing before enabling any new capability. If cost or billing behavior is unclear, do not enable it.
+
 ## Stage 1 — Establish a reliable foundation
 
 ### Engineering milestones
