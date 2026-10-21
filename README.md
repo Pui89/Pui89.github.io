@@ -6,7 +6,7 @@ Public-facing website for PUI89's independent AI and robotics initiative, presen
 
 Public portfolio: https://pui89.github.io/
 
-The [Research Portfolio](RESEARCH_PORTFOLIO.md) summarises the projects' research questions, evidence plans, and limitations. The [Growth Roadmap](GROWTH_ROADMAP.md) describes the free-first development approach. The [Market and Product Strategy](MARKET_AND_PRODUCT_STRATEGY.md) sets out the first customer hypothesis, discovery questions, pilot evidence, and a 90-day plan. The [Innovation Strategy](INNOVATION_STRATEGY.md) describes proposed technical differentiators, research questions, and a staged path beyond individual prototypes.
+The [Research Portfolio](RESEARCH_PORTFOLIO.md) summarises the projects' research questions, evidence plans, and limitations. The [Growth Roadmap](GROWTH_ROADMAP.md) describes the cost-conscious development approach. The [Market and Product Strategy](MARKET_AND_PRODUCT_STRATEGY.md) sets out the first customer hypothesis, discovery questions, pilot evidence, and a 90-day plan. The [Innovation Strategy](INNOVATION_STRATEGY.md) describes proposed technical differentiators, research questions, and a staged path beyond individual prototypes.
 
 The [Early Pilot Brief](COCONUT_ORCHARD_PILOT_BRIEF.md) outlines the first customer-discovery offer, potential measures, data handling, and limitations for a proposed coconut orchard workflow.
 
@@ -24,7 +24,7 @@ PUI89 AI Robotics is currently used as a project and initiative identity. This w
 
 ## Cost policy
 
-Prefer free and open-source tools. Review paid services, hardware purchases, licences, privacy obligations, and deployment costs before adopting them. GitHub Pages availability and usage remain subject to GitHub's terms and quotas.
+Prefer open-source tools and local workflows. Review paid services, hardware purchases, licences, privacy obligations, and deployment costs before adopting them. GitHub Pages availability and usage remain subject to GitHub's terms and quotas.
 
 ## Website
 
