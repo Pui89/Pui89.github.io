@@ -83,3 +83,18 @@ Continue only if evidence supports a meaningful improvement, a clear buyer and u
 ## One-sentence pitch
 
 **PUI89 builds cost-conscious AI tools for real-world work, designed to show their evidence, flag uncertainty, and keep people in control—starting with coconut orchard intelligence.**
+
+
+## Zero-spend operating rule
+
+**Budget for planned digital development: ฿0 in additional spending.** Use existing equipment, free tiers only when they require no payment method or create no billable exposure, free/open-source software, public documentation, and local tests wherever practical.
+
+- Do not buy hardware, datasets, domains, certificates, subscriptions, credits, or paid support without the project owner's explicit approval.
+- Do not enable paid APIs, cloud compute, hosted inference, storage upgrades, or services that can generate usage charges.
+- Before using any free service, check quotas, renewal terms, payment-method requirements, and whether overages can be charged. If unclear, choose a local or no-cost alternative.
+- Prefer local CPU/GPU execution on existing equipment and GitHub-hosted features within the existing no-additional-spend limits. Never assume a quota or free tier is unlimited or permanent.
+- Record any unavoidable cost before a proposed action and stop for approval; never incur it on the owner's behalf.
+- Keep customer discovery remote and no-cost where possible; do not promise a free customer pilot that would require travel, equipment, support, or other unbudgeted work.
+- Legal registration, tax/accounting advice, insurance, certification, travel, and physical robot fabrication may carry unavoidable costs. They are not authorized by this strategy and must be researched and approved separately before proceeding.
+
+**Hard rule: if an action may create a charge or financial commitment, do not proceed until the owner explicitly approves it.**
