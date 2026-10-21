@@ -2,6 +2,17 @@
 
 Public-facing website for PUI89's independent AI and robotics initiative, presenting technology projects, engineering principles, and a responsible path toward future products.
 
+## Support, sponsorship and open-source collaboration
+
+PUI89 welcomes technical mentors, research collaborators, agricultural and robotics partners, open-source contributors, in-kind resources, and relevant sponsorship or grant introductions.
+
+- **Support brief:** [Support PUI89 AI Robotics](SUPPORT_AND_SPONSORSHIP.md)
+- **Public website:** https://pui89.github.io/
+- **Main contact:** puinuanmanee@gmail.com
+- **Projects:** [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI), [Flood Rescue AI](https://github.com/Pui89/Flood-Rescue-AI), and [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI).
+
+Potential supporters should identify the expertise, resources, data access, or milestone they can help with. PUI89 is an initiative in development; this invitation does not imply existing sponsors, customers, incorporated-company status, or validated field performance.
+
 ## Website
 
 Public portfolio: https://pui89.github.io/
