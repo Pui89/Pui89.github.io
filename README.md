@@ -10,6 +10,10 @@ Present three projects with clear links, engineering principles, and honest desc
 - [Flood Rescue AI](https://github.com/Pui89/Flood-Rescue-AI) — simulation-first disaster reconnaissance and rescue-support research.
 - [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) — local-first, human-reviewed screening workflow prototype.
 
+## Engineering standard
+
+See [ENGINEERING_STANDARD.md](ENGINEERING_STANDARD.md) for the project-wide rules on evidence maturity, release gates, safety, security, licensing, cost control, and company-building milestones.
+
 ## Evidence and status policy
 
 This site is an independent project portfolio, not a claim that a legally incorporated company, validated commercial product, certified robot, customer deployment, or funding relationship already exists. Each repository is the source of truth for implementation and test status. Concept artwork is not operational evidence; synthetic test data is not a real-world benchmark.
