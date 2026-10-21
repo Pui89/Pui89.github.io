@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a2a">
+  <meta name="description" content="PUI89 AI Robotics builds open, testable AI and robotics prototypes for agriculture, disaster response, and human-reviewed multimodal inspection.">
+  <title>PUI89 AI Robotics — Build with evidence</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b1220;--panel:#111d30;--panel2:#15243a;--text:#eef4ff;--muted:#afbdd1;--line:#2b3d56;--accent:#9bd4c5;--accent2:#f2c879;--max:1120px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% -10%,#203c54 0,transparent 44%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:var(--accent);text-underline-offset:4px}a:hover{color:#d5fff2}a:focus-visible{outline:3px solid var(--accent2);outline-offset:4px}
+    .wrap{width:min(calc(100% - 40px),var(--max));margin:auto}.nav{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}.brand{font-weight:800;letter-spacing:.04em;color:var(--text);text-decoration:none}.navlinks{display:flex;gap:20px;flex-wrap:wrap}.navlinks a{font-size:.94rem;color:var(--muted)}
+    .hero{padding:84px 0 62px;max-width:850px}.eyebrow{color:var(--accent);font-size:.82rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.hero h1{font-size:clamp(2.7rem,7vw,5.5rem);line-height:1.03;letter-spacing:-.055em;margin:18px 0 22px}.hero p{font-size:clamp(1.05rem,2vw,1.25rem);color:var(--muted);max-width:760px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:11px 17px;border-radius:10px;border:1px solid var(--line);text-decoration:none;font-weight:750}.btn.primary{background:var(--accent);color:#09211d;border-color:var(--accent)}.btn.secondary{color:var(--text);background:#101b2b}
+    .notice{border:1px solid #725e36;background:#251f16;color:#f5e8cb;padding:15px 18px;border-radius:12px;margin:0 0 50px}.section{padding:28px 0 60px}.section h2{font-size:clamp(1.7rem,4vw,2.5rem);letter-spacing:-.03em;margin:0 0 10px}.intro{color:var(--muted);max-width:760px;margin-top:0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:24px}.card{border:1px solid var(--line);background:linear-gradient(160deg,var(--panel2),var(--panel));border-radius:16px;padding:24px;display:flex;flex-direction:column;min-height:320px}.num{font-size:.8rem;color:var(--accent);font-weight:800;letter-spacing:.12em}.card h3{font-size:1.35rem;line-height:1.25;margin:14px 0 10px}.card p{color:var(--muted);margin:0 0 20px}.status{font-size:.8rem;color:#f5e8cb;border:1px solid #725e36;border-radius:999px;padding:4px 9px;align-self:flex-start;margin-top:auto;margin-bottom:14px}.card a{font-weight:750}.principles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:24px}.principle{padding:20px;border-left:2px solid var(--accent);background:#101a2a}.principle h3{margin:0 0 6px;font-size:1.05rem}.principle p{margin:0;color:var(--muted)}.footer{border-top:1px solid var(--line);padding:26px 0 40px;color:var(--muted);font-size:.9rem}.footerrow{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:800px){.grid{grid-template-columns:1fr}.card{min-height:0}.principles{grid-template-columns:1fr}.hero{padding-top:60px}.nav{align-items:flex-start;flex-direction:column}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#top" aria-label="PUI89 AI Robotics home">PUI89 / AI ROBOTICS</a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#projects">Projects</a><a href="#principles">Engineering principles</a><a href="https://github.com/Pui89">GitHub</a>
+    </nav>
+  </header>
+  <main id="top" class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Independent AI & robotics portfolio</div>
+      <h1>Build boldly.<br>Verify everything.</h1>
+      <p>PUI89 AI Robotics explores practical AI and robotics systems for agriculture, disaster response, and human-reviewed multimodal inspection. We aim to make progress visible through working code, reproducible tests, and honest evidence.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">Explore the projects</a>
+        <a class="btn secondary" href="https://github.com/Pui89">View GitHub profile ↗</a>
+      </div>
+    </section>
+    <aside class="notice" aria-label="Project status notice"><strong>Current stage:</strong> independent prototypes and research projects. The portfolio is not claiming validated commercial products, certified robots, or proven real-world performance. Each repository documents its implementation status and limitations.</aside>
+    <section id="projects" class="section">
+      <h2>Three problem areas. One engineering standard.</h2>
+      <p class="intro">Each project is developed incrementally. Concept art and roadmaps are clearly separated from implemented software, verified simulation, and real-world validation.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="num">01 / AGRICULTURE</div>
+          <h3>Coconut Harvest AI</h3>
+          <p>Research into AI-assisted coconut perception and an agricultural-robot workflow, with emphasis on image evaluation, system integration, and physical safety requirements.</p>
+          <span class="status">Prototype · field validation pending</span>
+          <a href="https://github.com/Pui89/Coconut-Harvest-AI">Explore repository ↗</a>
+        </article>
+        <article class="card">
+          <div class="num">02 / DISASTER RESPONSE</div>
+          <h3>Flood Rescue AI</h3>
+          <p>A simulation-first direction for flood reconnaissance, hazard mapping, and human-supervised rescue support, with safe-failure behavior as a core requirement.</p>
+          <span class="status">Prototype · real-world trials pending</span>
+          <a href="https://github.com/Pui89/Flood-Rescue-AI">Explore repository ↗</a>
+        </article>
+        <article class="card">
+          <div class="num">03 / MULTIMODAL INSPECTION</div>
+          <h3>Multimodal Screening AI</h3>
+          <p>A local-first review workflow for uncertain multimodal evidence. Outputs are screening hypotheses for authorized human review—not proof of chemical identity or grounds for automatic enforcement.</p>
+          <span class="status">Software prototype · detector not validated</span>
+          <a href="https://github.com/Pui89/Multimodal-Narcotics-Screening-AI">Explore repository ↗</a>
+        </article>
+      </div>
+    </section>
+    <section id="principles" class="section">
+      <h2>How we build</h2>
+      <p class="intro">A future company must earn trust through evidence, not presentation alone.</p>
+      <div class="principles">
+        <div class="principle"><h3>Evidence before claims</h3><p>Automated tests, reproducible benchmarks, documented limitations, and clear distinctions between simulated and measured results.</p></div>
+        <div class="principle"><h3>Safety and human oversight</h3><p>Failure handling, explicit uncertainty, human review for consequential decisions, and independent safety controls for physical systems.</p></div>
+        <div class="principle"><h3>Open and cost-conscious</h3><p>Prefer free and open-source tools where suitable. Avoid paid services and hardware purchases unless their costs and need are reviewed first.</p></div>
+        <div class="principle"><h3>Responsible commercialization</h3><p>Check software and dataset licences, privacy, security, applicable regulations, and customer needs before product or deployment claims.</p></div>
+      </div>
+    </section>
+    <section class="section">
+      <h2>From prototype to product</h2>
+      <p class="intro">The roadmap is deliberately evidence-led: establish reliable software, measure performance on appropriate data, validate under intended conditions, and only then assess pilot deployments and commercial readiness. No funding, customers, or product certifications are implied by this site.</p>
+      <a class="btn secondary" href="https://github.com/Pui89/Coconut-Harvest-AI">Start with the engineering repositories ↗</a>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap footerrow"><span>© 2026 PUI89 AI Robotics · Independent project portfolio</span><span><a href="https://github.com/Pui89">Open-source work on GitHub</a></span></div></footer>
+</body>
+</html>
