@@ -30,6 +30,9 @@ jobs:
           grep -q 'Multimodal Screening AI' index.html
           grep -q 'Current stage' index.html
 
+      - name: Check local portfolio links and required content
+        run: python3 scripts/check_site.py
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
