@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: "29 5 * * 0" # Weekly Sunday validation; UTC
 
 permissions:
   contents: read
@@ -42,6 +44,7 @@ jobs:
           path: .
 
   deploy:
+    if: github.event_name != 'schedule'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
