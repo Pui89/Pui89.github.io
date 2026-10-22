@@ -103,14 +103,11 @@ def main() -> int:
             "Coconut Harvest AI",
             "Flood Rescue AI",
             "Multimodal Screening AI",
-            "RESEARCH_PORTFOLIO.md",
-            "COCONUT_ORCHARD_PILOT_BRIEF.md",
-            "MARKET_AND_PRODUCT_STRATEGY.md",
-            "INNOVATION_STRATEGY.md",
-            "PRODUCT_QUALITY_AND_BENCHMARK_STANDARD.md",
-            "TRUST_QUALITY_CUSTOMER_VALUE.md",
+            "SAFETY_AND_RESILIENCE.md",
             "PRODUCT_STATUS.md",
-            'id="pilot"',
+            'id="coconut"',
+            'id="collaborate"',
+            'id="contact"',
         ):
             if required not in html:
                 errors.append(f"index.html is missing expected content: {required}")
