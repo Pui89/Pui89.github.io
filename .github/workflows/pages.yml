@@ -30,7 +30,7 @@ jobs:
           grep -q 'Coconut Harvest AI' index.html
           grep -q 'Flood Rescue AI' index.html
           grep -q 'Multimodal Screening AI' index.html
-          grep -q 'Current stage' index.html
+          grep -q 'Development stage' index.html
 
       - name: Check local portfolio links and required content
         run: python3 scripts/check_site.py
