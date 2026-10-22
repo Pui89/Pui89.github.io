@@ -158,7 +158,7 @@
   <header class="wrap nav">
     <a class="brand" href="#top" aria-label="PUI89 AI Robotics home">PUI89 / AI ROBOTICS</a>
     <nav class="navlinks" aria-label="Main navigation">
-      <a href="#about">About</a><a href="#field-photos">Photos</a><a href="#flagship-coconut">Coconut AI</a><a href="#research-evidence">Research evidence</a><a href="#projects">Projects</a><a href="#services">Our Services</a><a href="#pilot">Pilot</a><a href="#principles">Approach</a><a href="#roadmap">Roadmap</a><a href="#sponsors">Sponsors</a><a href="#contact">Contact</a><a href="RESEARCH_PORTFOLIO.md">Research portfolio</a><a href="https://github.com/Pui89">GitHub</a>
+      <a href="#about">About</a><a href="#field-photos">Photos</a><a href="#flagship-coconut">Coconut AI</a><a href="#research-evidence">Research evidence</a><a href="#projects">Projects</a><a href="#services">Our Services</a><a href="#pilot">Pilot</a><a href="#safety-security">Safety &amp; Security</a><a href="#principles">Approach</a><a href="#roadmap">Roadmap</a><a href="#sponsors">Sponsors</a><a href="#contact">Contact</a><a href="RESEARCH_PORTFOLIO.md">Research portfolio</a><a href="https://github.com/Pui89">GitHub</a>
     </nav>
   </header>
   <main id="main-content" class="wrap">
@@ -342,6 +342,19 @@
         <a class="btn secondary" href="https://github.com/Pui89/Coconut-Harvest-AI/issues/new/choose">Discuss a farm workflow ↗</a>
       </div>
       <p class="intro">This is early product discovery, not a claim of a validated commercial product or existing customer deployments. Please do not post confidential data or private images publicly.</p>
+    </section>
+    <section id="safety-security" class="section" aria-labelledby="safety-security-heading">
+      <h2 id="safety-security-heading">Safety, security &amp; resilient operation</h2>
+      <p class="intro">Every project is being developed with failure handling and misuse resistance in scope. These are engineering requirements and planned safeguards—not a claim that every hazard has already been implemented, independently tested, or eliminated.</p>
+      <div class="principles">
+        <div class="principle"><h3>Detect faults and fail safely</h3><p>Monitor software health, sensor validity, power, temperature, communications, and actuator status where supported. On critical faults, stop hazardous actions, enter a defined safe state, alert the operator, and require checks before resuming.</p></div>
+        <div class="principle"><h3>Cybersecurity and malware</h3><p>Use least privilege, authenticated access, protected secrets, dependency updates, input validation, backups, and auditable logs. Isolate untrusted data and software; define recovery steps for suspected malware or compromise. No system can promise perfect protection.</p></div>
+        <div class="principle"><h3>Physical tampering and hostile conditions</h3><p>Plan for damaged cables, sensor obstruction, unauthorized access, theft, impact, fire, extreme weather, and loss of power. Protect people first: inhibit cutting or other hazardous actuation, stop movement when safe control cannot be assured, and hand over to a human.</p></div>
+        <div class="principle"><h3>Human control and emergency response</h3><p>Provide clear status and fault messages, an accessible emergency stop where physical hardware is used, and a documented manual recovery procedure. Never treat an uncertain AI output as authorization to cut, enter a hazard, identify a substance conclusively, or use force.</p></div>
+        <div class="principle"><h3>Project-specific boundaries</h3><p>Coconut Harvest AI prioritizes harvest-tool inhibition and stable robot stop; Flood Rescue AI prioritizes safe navigation, retreat/stop behavior, and human-supervised rescue decisions; Multimodal Screening AI prioritizes evidence integrity, uncertainty, privacy, and human review.</p></div>
+        <div class="principle"><h3>Verify before deployment</h3><p>Use documented threat models, fault-injection tests, simulated scenarios, recovery drills, and measurable acceptance criteria. Keep simulation, bench testing, and field evidence clearly separated. Do not deploy a physical system until critical safeguards are verified.</p></div>
+      </div>
+      <p class="intro" style="margin-top:18px"><a href="SAFETY_AND_RESILIENCE.md">Read the safety and security requirements ↗</a> · <a href="https://github.com/Pui89/Pui89.github.io/issues">Report a site or project issue ↗</a></p>
     </section>
     <section id="principles" class="section">
       <h2>Our engineering approach</h2>
