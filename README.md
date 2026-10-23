@@ -62,3 +62,17 @@ The repository can be published with GitHub Pages using the included Actions wor
 ## Company-development status
 
 The website is designed to present the work professionally while the future business is being developed. Before offering products or services, confirm the appropriate legal and tax requirements, intellectual-property rights, privacy obligations, safety requirements, and customer needs. The website itself is static and does not require paid hosting or a custom domain. GitHub Pages availability and quotas remain subject to GitHub's terms.
+
+## Free-first AI tooling policy
+
+PUI89 prioritises useful, reproducible engineering over adopting every available AI platform. The current preferred stack is:
+
+- **Automation:** Python and GitHub Actions for repository checks and repeatable reports, subject to platform quotas.
+- **Computer vision:** OpenCV and PyTorch for local experiments when each project has suitable data, hardware, and model licences.
+- **Testing and observability:** pytest, Ruff where configured, structured logs, versioned data manifests, and reproducible benchmark reports.
+- **AI agents:** existing Python decision-support workflows first; a framework such as LangGraph is optional and should be added only for a specific multi-step requirement.
+- **Retrieval:** local documentation search first; optional local vector indexing only when it solves a demonstrated problem.
+
+**Cost policy:** no paid API, cloud GPU, new subscription, hosted inference, or unexpected billing change without explicit approval. Free tiers may have quotas and terms. Open-source code does not automatically make model weights or datasets unrestricted; review their licences and usage rights separately.
+
+**Evidence policy:** automated tests verify software behaviour, not model accuracy, commercial readiness, or physical-robot safety. Each project's repository remains the source of truth for its actual implementation and test status.
