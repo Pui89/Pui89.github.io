@@ -13,6 +13,10 @@ PUI89 welcomes technical mentors, research collaborators, agricultural and robot
 
 Potential supporters should identify the expertise, resources, data access, or milestone they can help with. PUI89 is an initiative in development; this invitation does not imply existing sponsors, customers, incorporated-company status, or validated field performance.
 
+## Shared local automation
+
+Use the [one-command project automation guide](docs/SHARED_PROJECT_AUTOMATION.md) and [PowerShell runner](tools/run-all-project-checks.ps1) to run local syntax checks and existing tests for all three AI projects together. It does not install packages, download models or datasets, start hosted runners, or control hardware.
+
 ## Website
 
 Public portfolio: https://pui89.github.io/
