@@ -4,6 +4,9 @@ Public-facing website for PUI89's independent AI and robotics initiative, presen
 
 ## Support, sponsorship and open-source collaboration
 
+- **Partner landing page:** [PUI89 AI Robotics — Partner with us](https://pui89.github.io/support.html)
+- **One-page partner brief:** [PARTNER_BRIEF.md](PARTNER_BRIEF.md)
+
 PUI89 welcomes technical mentors, research collaborators, agricultural and robotics partners, open-source contributors, in-kind resources, and relevant sponsorship or grant introductions.
 
 - **Support brief:** [Support PUI89 AI Robotics](SUPPORT_AND_SPONSORSHIP.md)
