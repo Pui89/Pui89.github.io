@@ -44,7 +44,7 @@ Repository: [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI)
 
 **Current boundary:** research/prototype direction; real-world rescue performance is not established by simulation or concept material.
 
-Repository: [Flood Rescue AI](https://github.com/Pui89/Flood-Rescue-AI)
+Repository: [Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI)
 
 ## 3. Multimodal Narcotics Screening AI
 
