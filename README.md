@@ -12,7 +12,7 @@ PUI89 welcomes technical mentors, research collaborators, agricultural and robot
 - **Support brief:** [Support PUI89 AI Robotics](SUPPORT_AND_SPONSORSHIP.md)
 - **Public website:** https://pui89.github.io/
 - **Main contact:** puinuanmanee@gmail.com
-- **Projects:** [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI), [Flood Rescue AI](https://github.com/Pui89/Flood-Rescue-AI), and [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI).
+- **Projects:** [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI), [Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI), and [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI).
 
 Potential supporters should identify the expertise, resources, data access, or milestone they can help with. PUI89 is an initiative in development; this invitation does not imply existing sponsors, customers, incorporated-company status, or validated field performance.
 
@@ -31,7 +31,7 @@ The [Early Pilot Brief](COCONUT_ORCHARD_PILOT_BRIEF.md) outlines the first custo
 Present three projects with clear links, engineering principles, and honest descriptions of what is implemented versus proposed:
 
 - [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) — agricultural AI and robot workflow research.
-- [Flood Rescue AI](https://github.com/Pui89/Flood-Rescue-AI) — simulation-first disaster reconnaissance and rescue-support research.
+- [Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) — simulation-first disaster reconnaissance and rescue-support research.
 - [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) — local-first, human-reviewed screening workflow prototype.
 
 ## Evidence and status policy
