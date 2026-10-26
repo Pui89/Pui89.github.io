@@ -15,7 +15,7 @@ PUI89 prioritises reliable engineering progress over collecting tools. This list
 | Model discovery | [Hugging Face Models](https://huggingface.co/models) | Find vision, language, and multimodal models | Check each model's licence, commercial terms, file size, and hardware needs |
 | Website quality | [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) | Check performance, accessibility, and basic SEO | Scores are diagnostic, not a guarantee of rankings or sales |
 | Search visibility | [Google Search Console](https://search.google.com/search-console/about) | Monitor impressions and search queries | Requires site verification; data takes time to appear |
-| Basic site audit | [FreeScan.app](https://www.freescan.app/) | Run a first-pass public URL audit | Advanced monitoring may be paid |
+| Optional one-off site audit | [FreeScan.app](https://www.freescan.app/) | A free audit is currently offered; optional only | Paid Pro monitoring exists; Lighthouse is the default, and FreeScan is not required |
 
 ## Local model guidance
 
@@ -57,3 +57,12 @@ Prioritise authorised or synthetic data, documented reference methods, uncertain
 - Open-source code does not automatically make model weights, datasets, images, or generated outputs unrestricted for commercial use.
 - Record adopted tool, version, licence, purpose, hardware fit, and any usage limit.
 - The website and catalogue do not imply that any project is field-validated, certified, commercially deployed, or ready for autonomous operation.
+
+
+## Resource activity check — 26 October 2026
+
+The main linked resources were opened and responded during a spot check: GitHub Actions documentation, pytest, Ruff, pip-audit, Ollama, Hugging Face Models, Lighthouse, and Google Search Console. This is a link-response check, not a guarantee of uptime or a review of every feature or current quota.
+
+**Optional only:** FreeScan currently presents a free one-off website audit but also promotes paid Pro monitoring. It is not required for PUI89; use Lighthouse first. Do not pay for it. If the free audit is removed, the URL stops responding, or the tool becomes unusable without payment, remove it from this catalogue and the PUI89 website rather than replacing it with another paid tool.
+
+**Maintenance rule:** if a listed resource becomes unavailable, inactive, or no longer has a usable $0 option, remove its recommendation and website link, record the date and reason in the next update, and prefer a local/open alternative. Do not delete PUI89 project code or evidence just because an external service is retired. Recheck links periodically; this document does not imply continuous monitoring.
