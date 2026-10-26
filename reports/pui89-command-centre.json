@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-26T11:44:26.107284+00:00",
+  "generated_at_utc": "2026-10-26T11:49:27.121883+00:00",
   "mode": "read-only public GitHub status summary",
   "projects": [
     {
@@ -53,6 +53,29 @@
           "conclusion": "success",
           "updated_at": "2026-10-26T11:35:08Z",
           "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40315833127"
+        }
+      ],
+      "key_workflows": [
+        {
+          "name": "Free cloud verification",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:39:06Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40316626647"
+        },
+        {
+          "name": "Dataset recovery audit",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null
+        },
+        {
+          "name": "Free-resource link audit",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null
         }
       ],
       "warnings": []
@@ -117,6 +140,29 @@
           "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40315324710"
         }
       ],
+      "key_workflows": [
+        {
+          "name": "Free cloud verification",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:39:11Z",
+          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40316632333"
+        },
+        {
+          "name": "Dataset recovery audit",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:28:45Z",
+          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40315324710"
+        },
+        {
+          "name": "Free-resource link audit",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null
+        }
+      ],
       "warnings": []
     },
     {
@@ -170,6 +216,29 @@
           "conclusion": "success",
           "updated_at": "2026-10-26T11:32:26Z",
           "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40315714611"
+        }
+      ],
+      "key_workflows": [
+        {
+          "name": "Free cloud verification",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:39:13Z",
+          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40316638893"
+        },
+        {
+          "name": "Dataset recovery audit",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null
+        },
+        {
+          "name": "Free-resource link audit",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null
         }
       ],
       "warnings": []
