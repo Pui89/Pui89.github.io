@@ -1,0 +1,184 @@
+{
+  "generated_at_utc": "2026-10-26T11:44:26.107284+00:00",
+  "mode": "read-only public GitHub status summary",
+  "projects": [
+    {
+      "name": "Coconut Harvest AI",
+      "repository": "Pui89/Coconut-Harvest-AI",
+      "url": "https://github.com/Pui89/Coconut-Harvest-AI",
+      "focus": "Priority 1: dataset provenance, reviewed labels, leakage-safe evaluation.",
+      "status": "CHECKS_AVAILABLE",
+      "default_branch": "main",
+      "latest_commit": "ede103897568",
+      "latest_commit_url": "https://github.com/Pui89/Coconut-Harvest-AI/commit/ede103897568a5d751fe62a740c91b82e6ea109e",
+      "latest_workflows": [
+        {
+          "name": "Free cloud-side verification",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:39:06Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40316626647"
+        },
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:39:43Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40316626645"
+        },
+        {
+          "name": "security",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:40:26Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40316626547"
+        },
+        {
+          "name": "Coconut Harvest AI - CI",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:39:29Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40316626494"
+        },
+        {
+          "name": "PUI89 Free Local Checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:33:21Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40315833207"
+        },
+        {
+          "name": "Python tests",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:35:08Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40315833127"
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "name": "Extreme Flood Rescue AI",
+      "repository": "Pui89/Extreme-Flood-Rescue-AI",
+      "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI",
+      "focus": "Simulation-first: scenario coverage, navigation and fail-safe evidence.",
+      "status": "CHECKS_AVAILABLE",
+      "default_branch": "main",
+      "latest_commit": "4a9037b60a21",
+      "latest_commit_url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/commit/4a9037b60a2112fd8c16052d61a506565293372a",
+      "latest_workflows": [
+        {
+          "name": "Free cloud-side verification",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:39:11Z",
+          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40316632333"
+        },
+        {
+          "name": "Security checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:40:27Z",
+          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40316632295"
+        },
+        {
+          "name": "PUI89 Free Local Checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:33:37Z",
+          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40315840170"
+        },
+        {
+          "name": "Python tests",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:35:20Z",
+          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40315840146"
+        },
+        {
+          "name": "PUI89 Fast Preflight",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:32:11Z",
+          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40315707596"
+        },
+        {
+          "name": "Free helper review (Ruff)",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:32:11Z",
+          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40315707582"
+        },
+        {
+          "name": "Dataset recovery and replacement queue",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:28:45Z",
+          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40315324710"
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "name": "Multimodal Screening AI",
+      "repository": "Pui89/Multimodal-Narcotics-Screening-AI",
+      "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI",
+      "focus": "Data provenance, uncertainty, modality failures and human review.",
+      "status": "CHECKS_AVAILABLE",
+      "default_branch": "main",
+      "latest_commit": "02be986c5a97",
+      "latest_commit_url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/commit/02be986c5a97707b395af05cfd956a058639fdcd",
+      "latest_workflows": [
+        {
+          "name": "Free cloud-side verification",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:39:13Z",
+          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40316638893"
+        },
+        {
+          "name": "Python tests",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:39:23Z",
+          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40316638767"
+        },
+        {
+          "name": "Security Checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:40:10Z",
+          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40316638709"
+        },
+        {
+          "name": "PUI89 Free Local Checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:33:16Z",
+          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40315860404"
+        },
+        {
+          "name": "Free local-first app regression checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:33:46Z",
+          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40315860321"
+        },
+        {
+          "name": "PUI89 Fast Preflight",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-26T11:32:26Z",
+          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40315714611"
+        }
+      ],
+      "warnings": []
+    }
+  ],
+  "limitations": [
+    "This report reads public repository metadata and recent workflow runs; it does not execute project tests.",
+    "A missing workflow run is unknown, not a passing result or proof of failure.",
+    "A successful workflow does not validate real-world robot performance or dataset correctness.",
+    "GitHub API rate limits or temporary network errors can make status partial."
+  ]
+}
