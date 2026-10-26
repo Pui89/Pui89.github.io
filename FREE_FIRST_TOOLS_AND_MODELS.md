@@ -66,3 +66,12 @@ The main linked resources were opened and responded during a spot check: GitHub 
 **Optional only:** FreeScan currently presents a free one-off website audit but also promotes paid Pro monitoring. It is not required for PUI89; use Lighthouse first. Do not pay for it. If the free audit is removed, the URL stops responding, or the tool becomes unusable without payment, remove it from this catalogue and the PUI89 website rather than replacing it with another paid tool.
 
 **Maintenance rule:** if a listed resource becomes unavailable, inactive, or no longer has a usable $0 option, remove its recommendation and website link, record the date and reason in the next update, and prefer a local/open alternative. Do not delete PUI89 project code or evidence just because an external service is retired. Recheck links periodically; this document does not imply continuous monitoring.
+
+## Automatic no-paid-upgrade policy
+
+- Keep the catalogue limited to tools and services that do not require a paid upgrade for the documented use case.
+- The weekly GitHub Actions audit checks curated resource-table URLs for repeated outages and explicit paid-upgrade wording (for example, paid/pro/premium plans or buying credits).
+- A table row is removed after three consecutive checks of an explicit paid-upgrade signal or a failed URL. Inconclusive fetches do not count as evidence.
+- The scan is a conservative text check, not a guarantee: pricing may be JavaScript-rendered or worded differently. Review the generated audit report; do not treat absence of a flag as proof that a tool is free.
+- The automation only removes curated Markdown resource-table rows. It never deletes source code, tests, datasets, evidence, workflows, repository history, or the service account itself.
+- No purchase, subscription, billing activation, or paid API call is made. Local/open-source alternatives are preferred.
