@@ -2,6 +2,12 @@
 
 Public-facing website for PUI89's independent AI and robotics initiative, presenting technology projects, engineering principles, and a responsible path toward future products.
 
+## Cross-project command centre
+
+- **Latest project status:** [PUI89 Cross-Project Command Centre](reports/pui89-command-centre.md)
+- Read-only summary of the latest public repository commits and recent GitHub Actions runs; unknown or missing results are never treated as passing tests.
+- Updated by a free weekly GitHub Actions workflow; no paid AI API, model download or third-party Python package is required.
+
 ## Support, sponsorship and open-source collaboration
 
 - **Partner landing page:** [PUI89 AI Robotics — Partner with us](https://pui89.github.io/support.html)
