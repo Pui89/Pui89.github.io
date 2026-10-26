@@ -4,7 +4,7 @@ Public-facing website for PUI89's independent AI and robotics initiative, presen
 
 ## Cross-project command centre
 
-- **Latest project status:** [PUI89 Cross-Project Command Centre](reports/pui89-command-centre.md)
+- **Latest project status:** [PUI89 Cross-Project Command Centre](https://github.com/Pui89/Pui89.github.io/blob/main/reports/pui89-command-centre.md)
 - Read-only summary of the latest public repository commits and recent GitHub Actions runs; unknown or missing results are never treated as passing tests.
 - Updated by a free weekly GitHub Actions workflow; no paid AI API, model download or third-party Python package is required.
 
