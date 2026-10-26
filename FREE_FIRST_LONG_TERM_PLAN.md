@@ -61,7 +61,7 @@ Use authorized data and appropriate reference methods. Record uncertainty and fa
 
 ## Stop rules
 
-Pause adding tools when a tool needs payment, billing activation, excessive downloads, unreviewed data access, unclear commercial rights, or creates more maintenance than value. Prefer a documented manual fallback over a fragile dependency.
+Pause adding tools when a tool needs payment, billing activation, excessive downloads, unreviewed data access, unclear commercial rights, or creates more maintenance than value. Prefer a documented manual fallback over a fragile dependency. If an existing resource becomes unavailable, inactive, or no longer offers a usable $0 option, remove its recommendation and website link, record the date and reason, and use a local/open alternative where practical. Do not delete project code or evidence because an external tool retires.
 
 ## What this plan does not promise
 
