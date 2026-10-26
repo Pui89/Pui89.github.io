@@ -49,6 +49,7 @@ def collect(project: tuple[str, str, str]) -> dict:
         "latest_commit": None,
         "latest_commit_url": None,
         "latest_workflows": [],
+        "key_workflows": [],
         "warnings": [],
     }
     try:
@@ -75,6 +76,27 @@ def collect(project: tuple[str, str, str]) -> dict:
                         "url": run.get("html_url"),
                     }
             result["latest_workflows"] = list(latest_by_name.values())
+            # Keep important safeguards visible even when routine CI runs are newer.
+            key_terms = {
+                "Free cloud verification": ("free cloud verification", "free-cloud-verification"),
+                "Dataset recovery audit": ("dataset recovery", "dataset-recovery"),
+                "Free-resource link audit": ("free-resource link", "free-resource-link-cleanup"),
+            }
+            all_runs = runs.get("workflow_runs", [])
+            for label, terms in key_terms.items():
+                match = next(
+                    (item for item in all_runs
+                     if any(term in (str(item.get("name", "")) + " " + str(item.get("path", ""))).lower()
+                            for term in terms)),
+                    None,
+                )
+                result["key_workflows"].append({
+                    "name": label,
+                    "status": (match or {}).get("status", "not_seen_in_recent_runs"),
+                    "conclusion": (match or {}).get("conclusion"),
+                    "updated_at": (match or {}).get("updated_at"),
+                    "url": (match or {}).get("html_url"),
+                })
             if not result["latest_workflows"]:
                 result["warnings"].append("No workflow runs returned; this is not proof that checks failed.")
         except (urllib.error.URLError, TimeoutError, ValueError, KeyError) as exc:
@@ -133,7 +155,23 @@ def main() -> int:
             f'| [{project["name"]}]({project["url"]}) | {project["status"]} | '
             f'{commit} | {workflow_text} | {focus} |'
         )
-    lines += ["", "## Warnings and limitations", ""]
+    lines += [
+        "",
+        "## Key engineering safeguards",
+        "",
+        "These selected checks are shown separately so routine CI runs do not hide their status. A status of not_seen_in_recent_runs means unknown, not failed or passed.",
+        "",
+    ]
+    for project in projects:
+        lines.append("### " + project["name"])
+        lines += ["", "| Safeguard | Status | Last updated (UTC) | Run |", "|---|---|---|---|"]
+        for check in project.get("key_workflows", []):
+            status = check.get("conclusion") or check.get("status") or "unknown"
+            updated_at = check.get("updated_at") or "unknown"
+            run_link = "[open](" + check["url"] + ")" if check.get("url") else "—"
+            lines.append("| " + check["name"] + " | " + status + " | " + updated_at + " | " + run_link + " |")
+        lines.append("")
+    lines += ["## Warnings and limitations", ""]
     for project in projects:
         for warning in project["warnings"]:
             lines.append(f'- **{project["name"]}:** {warning}')
