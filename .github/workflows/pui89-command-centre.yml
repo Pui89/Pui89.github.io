@@ -23,18 +23,35 @@ jobs:
     steps:
       - name: Check out website repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Generate read-only project status report
         run: python tools/pui89_command_centre.py
-      - name: Publish report update
+      - name: Publish report with safe retry for concurrent commits
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reports/pui89-command-centre.md reports/pui89-command-centre.json
-          if git diff --cached --quiet; then
-            echo "Command-centre report unchanged."
-          else
+          mkdir -p /tmp/pui89-report
+          cp reports/pui89-command-centre.md reports/pui89-command-centre.json /tmp/pui89-report/
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            cp /tmp/pui89-report/pui89-command-centre.md reports/pui89-command-centre.md
+            cp /tmp/pui89-report/pui89-command-centre.json reports/pui89-command-centre.json
+            git add reports/pui89-command-centre.md reports/pui89-command-centre.json
+            if git diff --cached --quiet; then
+              echo "Command-centre report unchanged."
+              exit 0
+            fi
             git commit -m "Update PUI89 cross-project command centre"
-            git push
-          fi
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Concurrent update detected; retrying with latest main (attempt $attempt/3)."
+          done
+          echo "Could not publish after 3 attempts; generated reports remain available in the job workspace." >&2
+          exit 1
