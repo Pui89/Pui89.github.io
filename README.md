@@ -18,7 +18,7 @@ PUI89 welcomes technical mentors, research collaborators, agricultural and robot
 - **Support brief:** [Support PUI89 AI Robotics](SUPPORT_AND_SPONSORSHIP.md)
 - **Public website:** https://pui89.github.io/
 - **Main contact:** puinuanmanee@gmail.com
-- **Projects:** [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI), [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI), and [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI).
+- **Projects:** [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI), [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI), and [Multimodal-Narcotics-Screening-AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI).
 
 Potential supporters should identify the expertise, resources, data access, or milestone they can help with. PUI89 is an initiative in development; this invitation does not imply existing sponsors, customers, incorporated-company status, or validated field performance.
 
@@ -38,7 +38,7 @@ Present three projects with clear links, engineering principles, and honest desc
 
 - [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) — agricultural AI and robot workflow research.
 - [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) — simulation-first disaster reconnaissance and rescue-support research.
-- [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) — local-first, human-reviewed screening workflow prototype.
+- [Multimodal-Narcotics-Screening-AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) — local-first, human-reviewed screening workflow prototype.
 
 ## Recent project updates — 26 October 2026
 
@@ -46,7 +46,7 @@ The project repositories have received recent documentation and engineering upda
 
 - [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI): merged RGB-D localization input validation ([PR #67](https://github.com/Pui89/Coconut-Harvest-AI/pull/67)), orchard robot concept requirements ([PR #65](https://github.com/Pui89/Coconut-Harvest-AI/pull/65)), and an automated protection policy ([PR #84](https://github.com/Pui89/Coconut-Harvest-AI/pull/84)). These changes strengthen software validation and document future safety requirements; they do not validate physical reach, harvesting, or sensor accuracy.
 - [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI): refreshed the README to clarify simulation-only flood-depth scenarios and the current status of optional local inference ([PR #67](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/67)).
-- [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI): refreshed the README to clarify inference limits, evidence requirements, and human review ([PR #42](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/42)).
+- [Multimodal-Narcotics-Screening-AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI): refreshed the README to clarify inference limits, evidence requirements, and human review ([PR #42](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/42)).
 
 **Current priority:** verify the original coconut image files, hashes, reuse rights, and annotations before approving any dataset for training. The latest repository snapshot I checked records 34 candidate records and 0 approved for training. Project-specific repositories remain the source of truth for their latest status.
 
