@@ -63,7 +63,7 @@ def collect(project: tuple[str, str, str]) -> dict:
         except (urllib.error.URLError, TimeoutError, ValueError, KeyError) as exc:
             result["warnings"].append(f"Latest commit unavailable: {type(exc).__name__}")
         try:
-            runs = get_json(f"/repos/{repo}/actions/runs?per_page=10")
+            runs = get_json(f"/repos/{repo}/actions/runs?per_page=50")
             latest_by_name = {}
             for run in runs.get("workflow_runs", []):
                 workflow_name = run.get("name") or run.get("path") or "Unnamed workflow"
@@ -81,6 +81,8 @@ def collect(project: tuple[str, str, str]) -> dict:
                 "Free cloud verification": ("free cloud verification", "free-cloud-verification"),
                 "Dataset recovery audit": ("dataset recovery", "dataset-recovery"),
                 "Free-resource link audit": ("free-resource link", "free-resource-link-cleanup"),
+                "Simulation benchmark + report validator": ("simulation benchmark", "pui89-simulation-benchmark"),
+                "Autonomy / safety regression tests": ("autonomy", "safety regression"),
             }
             all_runs = runs.get("workflow_runs", [])
             for label, terms in key_terms.items():
@@ -118,6 +120,7 @@ def main() -> int:
         "limitations": [
             "This report reads public repository metadata and recent workflow runs; it does not execute project tests.",
             "A missing workflow run is unknown, not a passing result or proof of failure.",
+            "Only the most recent 50 repository workflow runs are scanned; a safeguard absent from that window is unknown.",
             "A successful workflow does not validate real-world robot performance or dataset correctness.",
             "GitHub API rate limits or temporary network errors can make status partial.",
         ],
@@ -159,7 +162,7 @@ def main() -> int:
         "",
         "## Key engineering safeguards",
         "",
-        "These selected checks are shown separately so routine CI runs do not hide their status. A status of not_seen_in_recent_runs means unknown, not failed or passed.",
+        "Selected safeguards are scanned across the latest 50 repository workflow runs, rather than only the newest 10. A status of not_seen_in_recent_runs means unknown, not failed or passed. The simulation check includes the report validator step only when that workflow run completes successfully.",
         "",
     ]
     for project in projects:
