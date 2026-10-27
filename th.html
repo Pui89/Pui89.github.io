@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#07130f">
-  <meta name="description" content="PUI89 AI Robotics พัฒนาแนวคิด AI และหุ่นยนต์แบบเน้นต้นทุนต่ำเป็นหลัก ครอบคลุมเกษตรกรรม การกู้ภัยน้ำท่วม และการตรวจคัดกรองหลายรูปแบบ โดยรายงานผลตามหลักฐานจริง">
+  <meta name="description" content="PUI89 AI Robotics พัฒนาซอฟต์แวร์ AI และแนวคิดหุ่นยนต์สำหรับงานเกษตร การตอบสนองภัยน้ำท่วมรุนแรง และการตรวจสอบหลายรูปแบบ โดยยึดหลักฐานและระบุข้อจำกัดอย่างชัดเจน">
   <meta name="robots" content="index,follow">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://pui89.github.io/images/coconut-harvest-ai-overview.svg">
   <meta property="og:title" content="PUI89 AI Robotics | AI ที่ใช้งานได้ หุ่นยนต์ที่พัฒนาอย่างรับผิดชอบ">
-  <meta property="og:description" content="โครงการ AI และหุ่นยนต์อิสระ เน้นการทดสอบซ้ำได้ ความปลอดภัย และการเข้าถึงเทคโนโลยี">
+  <meta property="og:description" content="โครงการ AI และหุ่นยนต์อิสระ เน้นการทดสอบซ้ำได้ ความปลอดภัย และการพัฒนาอย่างมีความรับผิดชอบ">
   <meta property="og:url" content="https://pui89.github.io/th.html">
   <link rel="canonical" href="https://pui89.github.io/th.html">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -24,7 +25,7 @@
     <nav class="nav" aria-label="เมนูหลัก">
       <a class="brand" href="th.html">PUI89 AI ROBOTICS</a>
       <div class="navlinks">
-        <a href="#about">เกี่ยวกับเรา</a><a href="#projects">โครงการ</a><a href="#approach">แนวทาง</a><a href="#resources">เครื่องมือ</a><a href="#collaborate">ร่วมมือ</a><a href="#contact">ติดต่อ</a>
+        <a href="#about">เกี่ยวกับเรา</a><a href="#projects">โครงการ</a><a href="#core">AI Core</a><a href="#approach">แนวทาง</a><a href="#resources">เครื่องมือ</a><a href="#collaborate">ร่วมมือ</a><a href="#contact">ติดต่อ</a>
         <a href="index.html" lang="en" class="lang">EN</a>
       </div>
     </nav>
@@ -64,18 +65,30 @@
           </article>
         </div>
       </section>
-      <section class="section" id="approach">
+      
+    <section class="section" id="core">
+      <h2>พื้นฐานวิศวกรรมร่วมของ PUI89</h2>
+      <p class="intro">แนวทางของ PUI89 คือพัฒนาพื้นฐานซอฟต์แวร์ AI ร่วมกัน แล้วต่อยอดเป็นสามแอปพลิเคชันเฉพาะทาง งาน shared core กำลังทยอยพัฒนาและตรวจทาน ส่วนนี้อธิบายทิศทางสถาปัตยกรรม ไม่ใช่การยืนยันว่าทุกส่วนเชื่อมต่อหรือผ่านการตรวจสอบแล้ว</p>
+      <div class="grid">
+        <article class="panel"><h3>ติดตามสถานะและความไม่แน่นอน</h3><p>ระบุแหล่งที่มา เวลา ความเชื่อมั่น สถานะการสอบเทียบ ข้อมูลเก่า และข้อมูลที่ขัดแย้งกัน เพื่อให้ระบบส่งต่อให้มนุษย์ตรวจสอบเมื่อหลักฐานไม่เพียงพอ</p></article>
+        <article class="panel"><h3>ทดสอบและรายงานข้อผิดพลาด</h3><p>ใช้การทดสอบ Python ที่ทำซ้ำได้และรายงานแบบมีโครงสร้าง ผลทดสอบซอฟต์แวร์ไม่ใช่หลักฐานยืนยันสมรรถนะภาคสนามหรือความปลอดภัยของหุ่นยนต์จริง</p></article>
+        <article class="panel"><h3>แยกข้อเสนอจากการสั่งงานจริง</h3><p>แยกการวางแผนงานออกจากการควบคุมฮาร์ดแวร์ เริ่มจากการจำลองและการตรวจสอบโดยมนุษย์ก่อนพิจารณาทดลองกับฮาร์ดแวร์</p></article>
+      </div>
+      <p><a href="reports/pui89-command-centre.md">ดูสถานะและผลตรวจสอบข้ามโครงการ ↗</a></p>
+    </section>
+
+    <section class="section" id="approach">
         <h2>หลักการพัฒนา</h2>
         <div class="two">
           <div class="panel"><h3>หลักฐานมาก่อนคำกล่าวอ้าง</h3><p>ให้ความสำคัญกับการทดสอบ ผลที่ทำซ้ำได้ รายงานข้อผิดพลาด และข้อจำกัดที่ระบุชัดเจน</p></div>
           <div class="panel"><h3>ความปลอดภัยและมนุษย์เป็นผู้กำกับ</h3><p>ผลลัพธ์ที่ไม่แน่นอนต้องได้รับการตรวจสอบ ระบบจริงต้องมีมาตรการความปลอดภัยและวิธีหยุดฉุกเฉินที่ผ่านการตรวจสอบ</p></div>
           <div class="panel"><h3>ความมั่นคงปลอดภัยและความทนทาน</h3><p>เตรียมรับมือซอฟต์แวร์ผิดพลาด เซนเซอร์ขัดข้อง การสื่อสารขาดหาย และการกู้คืนระบบ โดยไม่อ้างว่าปลอดภัยจากทุกภัยคุกคาม</p></div>
-          <div class="panel"><h3>เน้นเครื่องมือที่ไม่มีค่าใช้จ่ายก่อน</h3><p>เลือกใช้เครื่องมือท้องถิ่นและโอเพนซอร์ส ตรวจสอบสิทธิ์การใช้งาน และไม่เพิ่มค่าใช้จ่ายหรือซื้ออุปกรณ์โดยไม่ทบทวนก่อน</p></div>
+          <div class="panel"><h3>พัฒนาโดยคำนึงถึงต้นทุน</h3><p>เลือกใช้เครื่องมือที่ทำงานในเครื่องหรือโอเพนซอร์สเมื่อเหมาะสม ตรวจสอบใบอนุญาต ทรัพยากรที่ต้องใช้ ความเป็นส่วนตัว และค่าใช้จ่ายก่อนนำมาใช้</p></div>
         </div>
         <p class="small"><a href="SAFETY_AND_RESILIENCE.md">แนวทางความปลอดภัยและความทนทาน ↗</a> · <a href="PRODUCT_STATUS.md">สถานะผลิตภัณฑ์ ↗</a> · <a href="RESEARCH_PORTFOLIO.md">แฟ้มผลงานทางเทคนิค ↗</a></p>
       </section>
       <section class="section" id="resources">
-        <h2>เครื่องมือและทรัพยากรแบบเน้นประหยัดค่าใช้จ่าย</h2>
+        <h2>เครื่องมือและทรัพยากรทางเทคนิค</h2>
         <div class="two">
           <div class="panel"><h3>สร้างและทดสอบซอฟต์แวร์</h3><p>ใช้ GitHub Actions และเครื่องมือทดสอบเพื่อตรวจโค้ด ทดสอบกรณีผิดพลาด และตรวจคำเตือนด้านความปลอดภัย ผลทดสอบซอฟต์แวร์ไม่ใช่หลักฐานยืนยันความปลอดภัยของหุ่นยนต์จริง</p><a href="FREE_FIRST_TOOLS_AND_MODELS.md">คู่มือเครื่องมือทั้งหมด ↗</a></div>
           <div class="panel"><h3>ทดลองโมเดล AI ในเครื่อง</h3><p>ก่อนดาวน์โหลดโมเดล ให้ตรวจสอบใบอนุญาต ขนาดไฟล์ ความต้องการ RAM/VRAM และเงื่อนไขการใช้งานเชิงพาณิชย์ก่อนเสมอ</p><a href="https://ollama.com/library">ดูโมเดล Ollama ↗</a> · <a href="https://huggingface.co/models">ดูโมเดล Hugging Face ↗</a></div>
