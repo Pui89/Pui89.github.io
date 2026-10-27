@@ -1,47 +1,54 @@
 # PUI89 AI Robotics — Cross-Project Command Centre
 
-> Generated (UTC): 2026-10-26T11:49:27.121883+00:00
+> Generated (UTC): 2026-10-27T11:38:24.746512+00:00
 
 Read-only overview of public repository commits and recent GitHub Actions runs. This report is not a substitute for running tests or reviewing evidence.
 
 | Project | Status | Latest commit | Latest workflow summary | Next focus |
 |---|---|---|---|---|
-| [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | CHECKS_AVAILABLE | [ede103897568](https://github.com/Pui89/Coconut-Harvest-AI/commit/ede103897568a5d751fe62a740c91b82e6ea109e) | Free cloud-side verification: success; pages build and deployment: success; security: success | Priority 1: dataset provenance, reviewed labels, leakage-safe evaluation. |
-| [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | CHECKS_AVAILABLE | [4a9037b60a21](https://github.com/Pui89/Extreme-Flood-Rescue-AI/commit/4a9037b60a2112fd8c16052d61a506565293372a) | Free cloud-side verification: success; Security checks: success; PUI89 Free Local Checks: success | Simulation-first: scenario coverage, navigation and fail-safe evidence. |
-| [Multimodal Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | CHECKS_AVAILABLE | [02be986c5a97](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/commit/02be986c5a97707b395af05cfd956a058639fdcd) | Free cloud-side verification: success; Python tests: success; Security Checks: success | Data provenance, uncertainty, modality failures and human review. |
+| [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | CHECKS_AVAILABLE | [a6a836d21374](https://github.com/Pui89/Coconut-Harvest-AI/commit/a6a836d21374857a133b148877a1145a8ae02e8a) | PUI89 Free Local Checks: success; PUI89 Shared Interface Smoke: success; security: success | Priority 1: dataset provenance, reviewed labels, leakage-safe evaluation. |
+| [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | CHECKS_AVAILABLE | [205cc1c1a607](https://github.com/Pui89/Extreme-Flood-Rescue-AI/commit/205cc1c1a6074f82daf8bf9bf3f556182c3c0fdd) | Security checks: success; PUI89 Fast Preflight: success; Free helper review (Ruff): success | Simulation-first: scenario coverage, navigation and fail-safe evidence. |
+| [Multimodal Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | CHECKS_AVAILABLE | [5a92787ab4e3](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/commit/5a92787ab4e3adf2a3c02ea1fdac26de702b0478) | Free local-first app regression checks: success; PUI89 Shared Interface Smoke: success; Security Checks: success | Data provenance, uncertainty, modality failures and human review. |
 
 ## Key engineering safeguards
 
-These selected checks are shown separately so routine CI runs do not hide their status. A status of not_seen_in_recent_runs means unknown, not failed or passed.
+Selected safeguards are scanned across the latest 50 repository workflow runs, rather than only the newest 10. A status of not_seen_in_recent_runs means unknown, not failed or passed. The simulation check includes the report validator step only when that workflow run completes successfully.
 
 ### Coconut Harvest AI
 
 | Safeguard | Status | Last updated (UTC) | Run |
 |---|---|---|---|
-| Free cloud verification | success | 2026-10-26T11:39:06Z | [open](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40316626647) |
+| Free cloud verification | not_seen_in_recent_runs | unknown | — |
 | Dataset recovery audit | not_seen_in_recent_runs | unknown | — |
 | Free-resource link audit | not_seen_in_recent_runs | unknown | — |
+| Simulation benchmark + report validator | failure | 2026-10-27T11:34:13Z | [open](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40497133870) |
+| Autonomy / safety regression tests | not_seen_in_recent_runs | unknown | — |
 
 ### Extreme Flood Rescue AI
 
 | Safeguard | Status | Last updated (UTC) | Run |
 |---|---|---|---|
-| Free cloud verification | success | 2026-10-26T11:39:11Z | [open](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40316632333) |
-| Dataset recovery audit | success | 2026-10-26T11:28:45Z | [open](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40315324710) |
+| Free cloud verification | success | 2026-10-27T11:35:57Z | [open](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40497163989) |
+| Dataset recovery audit | not_seen_in_recent_runs | unknown | — |
 | Free-resource link audit | not_seen_in_recent_runs | unknown | — |
+| Simulation benchmark + report validator | failure | 2026-10-27T11:34:27Z | [open](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40497162414) |
+| Autonomy / safety regression tests | not_seen_in_recent_runs | unknown | — |
 
 ### Multimodal Screening AI
 
 | Safeguard | Status | Last updated (UTC) | Run |
 |---|---|---|---|
-| Free cloud verification | success | 2026-10-26T11:39:13Z | [open](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40316638893) |
+| Free cloud verification | success | 2026-10-27T11:36:43Z | [open](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40497376647) |
 | Dataset recovery audit | not_seen_in_recent_runs | unknown | — |
 | Free-resource link audit | not_seen_in_recent_runs | unknown | — |
+| Simulation benchmark + report validator | failure | 2026-10-27T11:36:09Z | [open](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40497374915) |
+| Autonomy / safety regression tests | not_seen_in_recent_runs | unknown | — |
 
 ## Warnings and limitations
 
 - This report reads public repository metadata and recent workflow runs; it does not execute project tests.
 - A missing workflow run is unknown, not a passing result or proof of failure.
+- Only the most recent 50 repository workflow runs are scanned; a safeguard absent from that window is unknown.
 - A successful workflow does not validate real-world robot performance or dataset correctness.
 - GitHub API rate limits or temporary network errors can make status partial.
 
