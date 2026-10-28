@@ -8,6 +8,12 @@ Public-facing website for PUI89's independent AI and robotics initiative, presen
 - Read-only summary of the latest public repository commits and recent GitHub Actions runs; unknown or missing results are never treated as passing tests.
 - Updated by a free weekly GitHub Actions workflow; no paid AI API, model download or third-party Python package is required.
 
+## Shared AI Core verification snapshot
+
+- **Cross-project report:** [PUI89 Cross-Project Verification Snapshot](PUI89_CROSS_PROJECT_VERIFICATION.md) — shared evidence checks, safety boundaries, and the metric contract for the three AI projects.
+- **Project Actions:** [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI/actions) · [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions) · [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions).
+- These checks validate software and report structure only; they are not evidence of physical robot capability. Post-merge workflows may still be running, so consult the Actions pages for current status.
+
 ## Support, sponsorship and open-source collaboration
 
 - **Partner landing page:** [PUI89 AI Robotics — Partner with us](https://pui89.github.io/support.html)
