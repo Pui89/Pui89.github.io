@@ -52,6 +52,10 @@ The project repositories have received recent documentation and engineering upda
 
 These updates are repository and software/documentation evidence only. They do not establish validated field performance, physical robot capability, certified safety, or a validated narcotics detector.
 
+## Engineering standard
+
+See [ENGINEERING_STANDARD.md](ENGINEERING_STANDARD.md) for the project-wide rules on evidence maturity, release gates, safety, security, licensing, cost control, and company-building milestones.
+
 ## Evidence and status policy
 
 PUI89 AI Robotics is currently used as a project and initiative identity. This website does not claim that a legal entity has been incorporated, or that products are commercially validated, robots are certified, customers are deployed, or funding has been secured. Each repository is the source of truth for implementation and test status. Concept artwork is not operational evidence; synthetic test data is not a real-world benchmark.
