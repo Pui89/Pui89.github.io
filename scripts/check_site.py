@@ -83,7 +83,7 @@ def main() -> int:
                 if fragment not in target_ids:
                     errors.append(f"{path.relative_to(ROOT)}: missing fragment {link!r}")
 
-    markdown_link_pattern = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
+    markdown_link_pattern = re.compile(r"!?[[^]]*](([^)]+))")
     for path in MARKDOWN_FILES:
         if not path.is_file():
             continue
@@ -102,7 +102,7 @@ def main() -> int:
             'id="main-content"',
             "Coconut Harvest AI",
             "Flood Rescue AI",
-            "Multimodal Screening AI",
+            "Multimodal Narcotics Screening AI",
             "SAFETY_AND_RESILIENCE.md",
             "PRODUCT_STATUS.md",
             'id="coconut"',
