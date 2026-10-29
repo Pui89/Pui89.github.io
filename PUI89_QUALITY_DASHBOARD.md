@@ -144,3 +144,11 @@ The recent lightweight checks pass, but they do **not** close the previously rec
 - [Coconut lightweight core tests](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40937571854) completed successfully: **36 selected tests passed** under Python 3.12 using pytest only. This is a focused core/world-state test scope, not Coconut's full test suite and not AI-performance validation.
 
 **Next engineering step:** add a tiny report emitter and schema-validation tests to the shared core, then adopt the report format project by project. Do not publish guessed metrics or mark a planned simulator as executed.
+
+
+## Report generator implementation — 30 October 2026
+
+- Added [dependency-free report builder and contract validator](tools/pui89_report.py). It writes the shared JSON report structure, records explicit software/AI/simulation/hardware claims, and rejects invalid status/count/commit/failure fields without requiring a JSON Schema package.
+- Added [six contract tests](tests/test_pui89_report.py), including valid report acceptance, missing fields, invalid status/commit, negative counts, incomplete failure details, and a CLI round-trip.
+- Updated the combined quality workflow to run the report-contract tests and trigger on changes to the standard, schema, generator, and tests.
+- **Verification status:** committed; the newly triggered workflow result still needs to be checked before claiming the six tests passed in CI. The validator is a dependency-free contract check, not a complete implementation of every JSON Schema keyword.
