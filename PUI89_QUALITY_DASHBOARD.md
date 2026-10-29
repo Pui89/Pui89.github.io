@@ -4,7 +4,7 @@
 
 ## Execution status
 
-**Latest verified status (29 October 2026):** the combined workflow passed at [run 40876143739](https://github.com/Pui89/Pui89.github.io/actions/runs/40876143739). It passed 39 shared-core tests across the three projects, 5 Coconut evaluator unit tests, and 4 new Coconut dataset-preflight tests. These are software-test results, not AI accuracy or physical robot validation.
+**Latest verified status (29 October 2026):** [run 40877473235](https://github.com/Pui89/Pui89.github.io/actions/runs/40877473235) completed successfully. It passed 39 shared-core tests across the three projects, 5 Coconut evaluator unit tests, and 4 Coconut dataset-preflight tests (52 selected tests total). The combined report artifact is available [here](https://github.com/Pui89/Pui89.github.io/actions/runs/40877473235/artifacts/12899230702) and is retained until 12 November 2026. These are selected software-test results, not a full-suite pass, AI accuracy result or physical robot validation.
 
 The combined workflow runs the standard-library unit tests in all three repositories, writes a JSON/Markdown report, and preserves each project's full test log even when a project fails. The artifact is retained for 14 days. A failed project causes the combined job to fail, while the per-project logs remain available for diagnosis.
 
