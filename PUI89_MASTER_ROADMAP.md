@@ -200,3 +200,10 @@
 ## Bottom line
 
 The immediate upgrade is **evidence quality and reliable test infrastructure**, not adding a large model just to appear more advanced. The strongest next milestone is a clean, reproducible CI run plus one real, auditable Coconut AI benchmark. Flood simulation and screening-sensor validation follow as separate, measured workstreams.
+
+
+### New verified evidence — Coconut simulation-only run (29 October 2026)
+
+[Run 40881372992](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40881372992) completed successfully: 7/7 configured scenarios and 9/9 steps passed, with zero reported scenario failures. Hardware actuation was disabled. The artifact [coconut-simulation-report-40881372992](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40881372992/artifacts/12901050654) records the run configuration hash and metrics.
+
+**Interpretation:** this is a deterministic simulation-workflow result only. It is not evidence of trained-detector accuracy, real-world harvesting, physical safety or validated reach.
