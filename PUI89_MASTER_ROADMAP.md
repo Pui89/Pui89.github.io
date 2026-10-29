@@ -247,3 +247,8 @@ After inspecting the newest default-branch workflow jobs and their logs:
 - **Done — verified:** report standard and JSON Schema committed; dashboard links and scoped test result recorded.
 - **Next:** build a dependency-light JSON report emitter, add unit tests for valid and invalid reports, and generate artifacts from real workflow outputs.
 - **Not yet done:** automatic schema validation in all three project workflows; do not claim adoption until those checks run successfully.
+
+
+### Verified report-generator milestone — 30 October 2026
+
+[Combined workflow run 40944240576](https://github.com/Pui89/Pui89.github.io/actions/runs/40944240576) passed. The six new report-contract tests passed, as did the three shared-core project checks, five Coconut evaluator tests and four Coconut dataset-preflight tests. The three shared-core project checks are selected scopes only, not each project's full suite. Next: connect actual test outcomes to standardized per-project JSON reports and validate generated reports before artifact upload.
