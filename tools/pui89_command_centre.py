@@ -81,6 +81,7 @@ def collect(project: tuple[str, str, str]) -> dict:
                 "Free cloud verification": ("free cloud verification", "free-cloud-verification"),
                 "Dataset recovery audit": ("dataset recovery", "dataset-recovery"),
                 "Free-resource link audit": ("free-resource link", "free-resource-link-cleanup"),
+                "Rule-based simulation evaluation": ("coconut harvest ai simulation evaluation", "flood rescue ai simulation evaluation", "multimodal narcotics screening ai simulation evaluation"),
                 "Simulation benchmark + report validator": ("simulation benchmark", "pui89-simulation-benchmark"),
                 "Autonomy / safety regression tests": ("autonomy", "safety regression"),
             }
