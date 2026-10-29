@@ -13,7 +13,7 @@ The listed pull-request-head workflow runs had completed with GitHub Actions con
 | [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | [#115 — lightweight CI dependency boundary](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/115) | Fast preflight; free local checks; automated verification; shared-interface smoke; Python tests on 3.10/3.11/3.12; security; pitfall detector; Ruff | Does not validate flood physics, 15 m depth capability, navigation, buoyancy or real rescue performance. |
 | [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | [#93 — lightweight CI dependency boundary](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/93) | Lightweight verification; shared-interface smoke; fast preflight; free local checks; Python tests on 3.10/3.11/3.12; app regression checks on 3.10/3.11/3.12; security; pitfall detector; Ruff | Does not validate chemical identification, X-ray capability, field screening accuracy or physical robot safety. Human review remains necessary. |
 
-**Review state:** all three CI-fix pull requests remain drafts and have not been merged. Results above apply to the observed PR commits, not necessarily the default branches. Workflow results can change when new commits are pushed.
+**Review state (updated 2026-10-29):** all three CI-fix PRs have since been merged into their respective default branches: [Coconut #151](https://github.com/Pui89/Coconut-Harvest-AI/pull/151), [Flood #115](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/115), and [Screening #93](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/93). The test counts below refer to the specific inspected PR-head workflow logs and are evidence of those software checks only. New commits can change workflow results.
 
 
 ## Selected observed test counts
@@ -66,7 +66,7 @@ Do not compare scores across projects unless scenario definitions and measuremen
 
 ## Next milestone
 
-1. Review the three CI-fix PRs and merge only after review and required checks are satisfactory.
-2. Run Coconut dataset provenance, hash, annotation and source-group split checks.
-3. Obtain genuine detector predictions on a frozen held-out set and publish reproducible metrics—or document why inference remains blocked.
+1. Keep the merged lightweight-runner fixes under CI monitoring; if any new run fails, record the failing job and log evidence.
+2. Complete the Coconut source-byte hash, licence/provenance, annotation QA and source/tree/session split checks. The published readiness snapshot records 34 candidate rows and 0 approved for training; the dataset remains blocked.
+3. Only after the dataset promotion gate passes, obtain genuine detector predictions on a frozen held-out set and publish reproducible metrics. Until then, keep detector evaluation marked NOT RUN / NOT MEASURED.
 4. Add observed test counts and failure details from actual run artifacts, never estimates.
