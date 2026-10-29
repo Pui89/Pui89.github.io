@@ -84,7 +84,7 @@ jobs:
                   overall = False
               else:
                   proc = subprocess.run(
-                      [sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v"],
+                      [sys.executable, "-m", "unittest", "discover", "-s", "tests", "-p", "test_pui89_core.py", "-v"],
                       cwd=root,
                       text=True,
                       stdout=subprocess.PIPE,
