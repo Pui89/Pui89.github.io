@@ -41,6 +41,10 @@ The fault-injection cases verify expected fail-closed handling for missing emerg
 
 These are results from the projects' existing **rule-based software simulation scenarios**. A 100% scenario pass rate applies only to the defined scenarios and is not a measure of perception accuracy, flood-depth capability, chemical identification, robot reliability, or field safety. The three project scenario sets are not interchangeable and should not be combined into a single cross-project performance score.
 
+## World-state timestamp validation
+
+On 2026-10-30, three dependency-light world-state validation changes were merged: [Coconut #146](https://github.com/Pui89/Coconut-Harvest-AI/pull/146), [Flood Rescue #111](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/111), and [Multimodal Screening #88](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/88). The changes reject combined world states when an observation timestamp is missing or malformed, including string, Boolean, and non-finite values, instead of risking ordering errors or silently selecting another observation. The associated Python tests and security/regression checks passed on the pull-request commits before merge. These are software input-validation safeguards only; they do not establish sensor calibration, real-time performance, perception accuracy, or physical safety.
+
 ## Shared evidence safeguards
 
 The standard-library observability generator starts with conservative statuses: software/model/system/workflow/safety checks are `NOT_RUN`, and hardware is `NOT_CONNECTED`, unless supplied evidence is provided. A `PASS` or `FAIL` entry requires an evidence reference and observation timestamp. Schema validation checks format only; it does not authenticate evidence.
