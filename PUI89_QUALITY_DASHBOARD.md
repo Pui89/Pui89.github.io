@@ -135,3 +135,12 @@ Artifacts:
 - [Narcotics lightweight report](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40878549402/artifacts/12899860349)
 
 The recent lightweight checks pass, but they do **not** close the previously recorded broad-suite import/optional-dependency repair task because they deliberately do not discover or execute the full dependency-backed test suites. Continue to report that work as unfinished until a dedicated broad-suite run proves otherwise.
+
+
+## New shared reporting standard — 30 October 2026
+
+- [PUI89 Verification and Failure Report Standard](PUI89_FAILURE_REPORT_STANDARD.md) defines common PASS / FAIL / BLOCKED / NOT_RUN / PARTIAL statuses and requires explicit scope and evidence limitations.
+- [Machine-readable JSON Schema](schemas/pui89-failure-report.schema.json) defines a consistent structure for run metadata, test counts, failure records, blockers, measured metrics, and claims about software checks, AI evaluation, simulation, and hardware validation.
+- [Coconut lightweight core tests](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40937571854) completed successfully: **36 selected tests passed** under Python 3.12 using pytest only. This is a focused core/world-state test scope, not Coconut's full test suite and not AI-performance validation.
+
+**Next engineering step:** add a tiny report emitter and schema-validation tests to the shared core, then adopt the report format project by project. Do not publish guessed metrics or mark a planned simulator as executed.
