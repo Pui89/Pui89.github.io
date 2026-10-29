@@ -1,0 +1,65 @@
+name: PUI89 Website Quality Checks
+
+on:
+  push:
+    branches: ["main", "automation/**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pui89-site-check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate-html:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate website HTML pages
+        run: |
+          python - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          class Checker(HTMLParser):
+              def __init__(self):
+                  super().__init__(convert_charrefs=True)
+                  self.title_depth = 0
+                  self.has_title = False
+                  self.errors = []
+              def handle_starttag(self, tag, attrs):
+                  if tag.lower() == "title":
+                      self.title_depth += 1
+                      self.has_title = True
+              def handle_endtag(self, tag):
+                  if tag.lower() == "title" and self.title_depth:
+                      self.title_depth -= 1
+          pages = [Path("index.html"), Path("th.html")]
+          failed = False
+          for page in pages:
+              if not page.is_file():
+                  print(f"FAIL: missing {page}")
+                  failed = True
+                  continue
+              text = page.read_text(encoding="utf-8")
+              checker = Checker()
+              try:
+                  checker.feed(text)
+                  checker.close()
+              except Exception as exc:
+                  print(f"FAIL: {page}: {exc}")
+                  failed = True
+                  continue
+              if not checker.has_title:
+                  print(f"FAIL: {page}: missing title element")
+                  failed = True
+              else:
+                  print(f"PASS: {page} parsed; title element found")
+          raise SystemExit(1 if failed else 0)
+          PY
