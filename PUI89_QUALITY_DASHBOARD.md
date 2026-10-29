@@ -96,3 +96,16 @@ The Coconut validator and its new unit tests have been added to the combined wor
 | [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | 13 shared-core tests passed | Substance-specific performance **not measured** | Scenario matrix documented; sensor and physical robot validation **not established** | Define sensor modality/calibration and run human-reviewed, lawful evaluation |
 
 **Interpretation:** 52 passing tests in the combined run means the selected software test scopes passed. It does not mean 52 AI capability tests, a trained model benchmark, or physical robot validation. Earlier broad project test runs exposed optional-dependency/import errors and remain a separate unresolved test-infrastructure task.
+
+
+## Master roadmap: unfinished work, current checks, fixes and future levels
+
+See the [PUI89 Master Roadmap](PUI89_MASTER_ROADMAP.md) for each project's:
+- verified work and test results;
+- work currently identified for checking (not implied background execution);
+- unresolved defects and blockers;
+- ordered next process;
+- next upgrade level and longer-term future;
+- definition-of-done checklist.
+
+The immediate priority is to verify the newest CI run, repair broad-suite test-environment/import failures transparently, then run the Coconut dataset preflight against reviewed real data. Model benchmarks, flood simulations and sensor tests remain unmeasured until actually run.
