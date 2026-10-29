@@ -96,7 +96,7 @@ jobs:
                           stdout=subprocess.PIPE,
                           stderr=subprocess.STDOUT,
                       )
-                      match = re.search(r"Ran (\\d+) tests?", proc.stdout)
+                      match = re.search(r"Ran (\d+) tests?", proc.stdout)
                       test_count = int(match.group(1)) if match else 0
                       test_runs.append({
                           "pattern": pattern,
@@ -105,9 +105,9 @@ jobs:
                           "tests_run": test_count,
                       })
                       log_sections.append(
-                          f"=== {pattern}: exit={proc.returncode}, tests_run={test_count} ===\\n{proc.stdout}"
+                          f"=== {pattern}: exit={proc.returncode}, tests_run={test_count} ===\n{proc.stdout}"
                       )
-                  log_path.write_text("\\n".join(log_sections), encoding="utf-8")
+                  log_path.write_text("\n".join(log_sections), encoding="utf-8")
                   passed = all(item["status"] == "passed" for item in test_runs)
                   result = {
                       "project": name,
