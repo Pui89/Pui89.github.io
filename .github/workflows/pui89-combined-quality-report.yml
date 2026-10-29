@@ -8,6 +8,8 @@ on:
     paths:
       - ".github/workflows/pui89-combined-quality-report.yml"
       - "PUI89_QUALITY_DASHBOARD.md"
+      - "PUI89_ENGINEERING_CHARTER.md"
+      - "PUI89_FIRST_TEST_RESULTS.md"
 
 permissions:
   contents: read
@@ -153,6 +155,13 @@ jobs:
           set -o pipefail
           python -m unittest discover -s tests -p "test_evaluate_coconut_detections.py" -v 2>&1 | tee ../../portfolio/pui89-coconut-baseline-evaluator-tests.txt
 
+      - name: Test Coconut dataset preflight validator
+        if: always()
+        working-directory: projects/coconut-harvest
+        run: |
+          set -o pipefail
+          python -m unittest discover -s tests -p "test_validate_coconut_dataset_manifest.py" -v 2>&1 | tee ../../portfolio/pui89-coconut-dataset-preflight-tests.txt
+
       - name: Upload combined quality report and logs
         if: always()
         uses: actions/upload-artifact@v4
@@ -163,5 +172,6 @@ jobs:
             portfolio/pui89-combined-quality-report.md
             portfolio/pui89-*-tests.txt
             portfolio/pui89-coconut-baseline-evaluator-tests.txt
+            portfolio/pui89-coconut-dataset-preflight-tests.txt
           if-no-files-found: warn
           retention-days: 14
