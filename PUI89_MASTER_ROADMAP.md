@@ -8,7 +8,7 @@
 ## Executive status
 
 - **Shared test foundation:** selected CI scopes passed 52 tests in the last verified run on 29 October 2026 (39 shared-core, 5 Coconut evaluator, 4 Coconut preflight). A later queued run must be checked before claiming it also passed.
-- **Full-suite reliability:** **not finished**. Earlier broad runs exposed missing optional dependencies and import/package setup errors. The current 52-test pass does not resolve those failures.
+- **Full-suite reliability:** improved for Flood Rescue and Narcotics Screening: verified runs passed 419 and 385 tests respectively (Narcotics across Python 3.10–3.12). Coconut remains on lightweight/selected checks; its full dependency-backed suite still needs a confirmed pass.
 - **AI performance:** no new genuine held-out detector results have been established by the latest combined run.
 - **Simulation:** repeatable scenario plans exist for Flood Rescue and Narcotics Screening; plans are not executed simulator evidence.
 - **Physical robots:** none of the three concepts is declared physically validated.
@@ -29,7 +29,7 @@
 ## 1. Coconut Harvest AI
 
 **Overall stage:** software prototype and dataset/evaluation preparation.  
-**Latest verified selected tests:** 22 passing tests in the combined run (13 shared-core + 5 evaluator + 4 dataset-preflight).
+**Latest verified checks:** 22 selected tests passed in the combined run (13 shared-core + 5 evaluator + 4 dataset-preflight); the latest main-branch automated verification is lightweight only. Full dependency-backed Coconut tests are still not confirmed.
 
 ### Done — verified
 - Shared PUI89 core contract tests passed in the recorded combined run.
@@ -70,7 +70,7 @@
 ## 2. Extreme Flood Rescue AI
 
 **Overall stage:** software prototype, input-safety gates and simulation planning.  
-**Latest verified selected tests:** 13 shared-core tests passed in the recorded combined run.
+**Latest verified full suite:** 419 tests passed on `main` in [run 40882267388](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40882267388). A later feature-branch simulation [run 40919457152](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40919457152) passed 7/7 rule-based scenarios and 9/9 steps; hardware actuation was disabled. The simulation result is not physical rescue or navigation validation.
 
 ### Done — verified
 - Shared PUI89 core contract tests passed in the recorded combined run.
@@ -111,7 +111,7 @@
 ## 3. Multimodal Narcotics Screening AI
 
 **Overall stage:** screening workflow software prototype and robotic concept.  
-**Latest verified selected tests:** 13 shared-core tests passed in the recorded combined run.
+**Latest verified full suite:** 385 tests passed on the feature branch in [run 40919469797](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40919469797) across Python 3.10, 3.11 and 3.12. The feature-branch simulation [run 40919469891](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40919469891) passed 7/7 rule-based scenarios and 9/9 steps; hardware actuation was disabled. These tests do not validate chemical identification or physical screening.
 
 ### Done — verified
 - Shared PUI89 core contract tests passed in the recorded combined run.
