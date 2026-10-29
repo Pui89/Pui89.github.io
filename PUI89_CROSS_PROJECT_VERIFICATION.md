@@ -33,6 +33,12 @@ The standard-library observability generator starts with conservative statuses: 
 
 Shared software-contract and simulation-evidence checks cover world-state/confidence-field contracts, simulation-only action proposals, machine-readable failure/evidence reports, and rejection of missing or inconsistent report evidence. Passing validators prove only the checked software/report properties, not physical-world robot performance.
 
+## Failure history and resolution status
+
+A prior lightweight-runner attempt failed because it discovered and imported dependency-backed test modules without the project's full dependency/import environment (errors included missing project modules and optional packages). The three open CI-fix PRs change that lightweight job to compile configured Python folders and smoke-test the standard-library observability report, while leaving full unit/integration testing to the dedicated project test workflows. The replacement lightweight jobs now pass on the observed PR heads.
+
+**Important:** this resolves the lightweight preflight's test-discovery boundary; it does not mean every possible test failure has been eliminated. No failing test was present in the workflow runs inspected for the current PR heads. If a later run fails, keep its failure in the report with the job/test name and log evidence rather than suppressing it.
+
 ## Coconut Harvest AI — first measurable AI evaluation
 
 Coconut Harvest AI is selected first for a genuine perception benchmark. The repository has a standard-library evaluator for manually reviewed ground-truth boxes and actual detector prediction CSVs. It calculates precision, recall and F1 at declared IoU and score thresholds; it does **not** calculate mAP and does not run a detector.
