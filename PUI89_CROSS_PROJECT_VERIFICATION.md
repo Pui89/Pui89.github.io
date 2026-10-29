@@ -15,6 +15,18 @@ The listed pull-request-head workflow runs had completed with GitHub Actions con
 
 **Review state:** all three CI-fix pull requests remain drafts and have not been merged. Results above apply to the observed PR commits, not necessarily the default branches. Workflow results can change when new commits are pushed.
 
+
+## Selected observed test counts
+
+The job logs were inspected, not just the green status icons:
+
+- **Coconut shared-interface smoke:** 15 tests run, 0 reported failures; interface/proposal-gate checks only.
+- **Extreme Flood Rescue AI:** 419 pytest items passed in the inspected Python 3.11.17 job (3.17 seconds); the Python 3.10, 3.11 and 3.12 jobs all concluded success.
+- **Multimodal Narcotics Screening AI:** 385 pytest items passed in the inspected Python 3.11.17 job (1.06 seconds); the Python 3.10, 3.11 and 3.12 jobs all concluded success.
+- **Multimodal app regression:** the inspected synthetic pipeline smoke check passed for six synthetic cases; it explicitly says it is not a real-world benchmark. Regression jobs for Python 3.10, 3.11 and 3.12 all concluded success.
+
+These counts are from different test suites and must not be summed into a single “PUI89 test count.” The two pytest counts are for one Python-version job each; their other matrix jobs also passed but are not added here. A passing CI job is not evidence of AI accuracy or physical-world performance.
+
 ## Shared evidence safeguards
 
 The standard-library observability generator starts with conservative statuses: software/model/system/workflow/safety checks are `NOT_RUN`, and hardware is `NOT_CONNECTED`, unless supplied evidence is provided. A `PASS` or `FAIL` entry requires an evidence reference and observation timestamp. Schema validation checks format only; it does not authenticate evidence.
