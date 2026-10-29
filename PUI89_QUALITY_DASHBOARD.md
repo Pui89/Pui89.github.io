@@ -109,3 +109,10 @@ See the [PUI89 Master Roadmap](PUI89_MASTER_ROADMAP.md) for each project's:
 - definition-of-done checklist.
 
 The immediate priority is to verify the newest CI run, repair broad-suite test-environment/import failures transparently, then run the Coconut dataset preflight against reviewed real data. Model benchmarks, flood simulations and sensor tests remain unmeasured until actually run.
+
+
+## Latest Coconut simulation-only run (29 October 2026)
+
+The [Coconut Simulation Evaluation run 40881372992](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40881372992) completed successfully: **7/7 configured simulation scenarios passed, 9/9 steps passed, 0 reported scenario failures**. The run recorded hardware_actuation=false and explicitly labels the result simulation-only, not real-world detector or robot validation. [Download the simulation report artifact](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40881372992/artifacts/12901050654).
+
+This is a separate simulation result and must not be added to the 52 software unit-test count or interpreted as model accuracy.
