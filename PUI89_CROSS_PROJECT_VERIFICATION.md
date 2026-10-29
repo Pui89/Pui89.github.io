@@ -1,53 +1,54 @@
 # PUI89 AI Core — Cross-Project Verification Snapshot
 
-**Snapshot date:** 2026-10-28  
-**Purpose:** Document shared simulation-evidence safeguards across the three PUI89 AI application and robot-concept projects. This is a software verification snapshot, not a real-world performance report.
+**Snapshot date:** 2026-10-29  
+**Purpose:** Record observed automated checks across the three PUI89 AI applications and robot concepts. This is a software verification snapshot, not a real-world performance report.
 
-## Project matrix
+## Current automated-check status
 
-| Project | Scope | Shared safeguards covered by automated tests |
-|---|---|---|
-| [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | Agricultural perception and harvesting task-planning concept | World-state contract; confidence validation; simulation-only action proposals; failure-report evidence validation |
-| [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | Flood-response perception and rescue-planning concept | World-state contract; confidence validation; simulation-only action proposals; failure-report evidence validation |
-| [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | Multimodal screening and human-review concept | World-state contract; confidence validation; simulation-only action proposals; failure-report evidence validation |
+The listed pull-request-head workflow runs had completed with GitHub Actions conclusion **success** when inspected on 2026-10-29.
 
-## Evidence-validation checks
+| Project | Draft PR | Observed passing workflow runs | Evidence boundary |
+|---|---|---|---|
+| [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | [#151 — lightweight CI dependency boundary](https://github.com/Pui89/Coconut-Harvest-AI/pull/151) | Lightweight Python verification; shared-interface smoke; pitfall detector; security; free local checks; duplicate automated-verification run | Software and report-generator checks only; no coconut detector accuracy measured. |
+| [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | [#115 — lightweight CI dependency boundary](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/115) | Fast preflight; free local checks; automated verification; shared-interface smoke; Python tests on 3.10/3.11/3.12; security; pitfall detector; Ruff | Does not validate flood physics, 15 m depth capability, navigation, buoyancy or real rescue performance. |
+| [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | [#93 — lightweight CI dependency boundary](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/93) | Lightweight verification; shared-interface smoke; fast preflight; free local checks; Python tests on 3.10/3.11/3.12; app regression checks on 3.10/3.11/3.12; security; pitfall detector; Ruff | Does not validate chemical identification, X-ray capability, field screening accuracy or physical robot safety. Human review remains necessary. |
 
-The latest merged test additions exercise failure cases that a benchmark report must reject:
+**Review state:** all three CI-fix pull requests remain drafts and have not been merged. Results above apply to the observed PR commits, not necessarily the default branches. Workflow results can change when new commits are pushed.
 
-- CSV evidence row count does not match the report.
-- A report claims success while its failure count contradicts that status.
-- Required CSV evidence is missing.
+## Shared evidence safeguards
 
-The simulation workflow is designed to generate machine-readable JSON and CSV reports, validate the report against its scenario configuration, check for prohibited hardware actuation, and retain the reports as workflow artifacts. A passing validator means the report is structurally consistent with these checks; it does **not** mean a robot works in the physical world.
+The standard-library observability generator starts with conservative statuses: software/model/system/workflow/safety checks are `NOT_RUN`, and hardware is `NOT_CONNECTED`, unless supplied evidence is provided. A `PASS` or `FAIL` entry requires an evidence reference and observation timestamp. Schema validation checks format only; it does not authenticate evidence.
 
-## Verification status
+Shared software-contract and simulation-evidence checks cover world-state/confidence-field contracts, simulation-only action proposals, machine-readable failure/evidence reports, and rejection of missing or inconsistent report evidence. Passing validators prove only the checked software/report properties, not physical-world robot performance.
 
-- The adversarial evidence-validation PR checks passed before merge in all three repositories on 2026-10-28.
-- Post-merge workflow runs were still in progress when this snapshot was prepared. Check each repository's [Actions](https://github.com/Pui89/Coconut-Harvest-AI/actions), [Actions](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions), and [Actions](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions) pages for the latest main-branch result.
-- No numeric accuracy, latency, success-rate, or physical-robot capability is claimed in this snapshot. Publish those metrics only after a named scenario, data split, measurement method, and reproducible run produce evidence.
+## Coconut Harvest AI — first measurable AI evaluation
 
-## Common metric contract for future comparisons
+Coconut Harvest AI is selected first for a genuine perception benchmark. The repository has a standard-library evaluator for manually reviewed ground-truth boxes and actual detector prediction CSVs. It calculates precision, recall and F1 at declared IoU and score thresholds; it does **not** calculate mAP and does not run a detector.
 
-When comparable scenario outputs are available, report the same fields for each project:
+- Evaluator/tool checks were previously recorded as passing in the Coconut Harvest AI README.
+- Real held-out detector evaluation: **NOT RUN / NOT MEASURED** in the evidence reviewed for this snapshot.
+- Source/licence review, annotation QA and leakage-safe source/tree/session splits remain prerequisites.
+- No detector accuracy, maturity-class accuracy, 0–30 m reach, harvest success or physical robot performance is claimed.
 
-1. Scenario/configuration identifier and configuration hash.
-2. Number of cases attempted, completed, failed, and safely rejected.
-3. Perception confidence summary and count of low-confidence cases.
-4. Task-planning success/failure counts and failure categories.
-5. Runtime/latency statistics, including measurement environment.
-6. Evidence completeness: JSON/CSV present, row counts consistent, and validation result.
-7. Safety: proposed actions versus rejected actions; simulation-only gate outcome.
+A valid benchmark needs a reviewed held-out set, actual model predictions, documented model/checkpoint and dataset provenance, fixed thresholds, per-class counts, and error review. If a compatible model/checkpoint is unavailable locally, record inference as not run rather than inventing predictions.
 
-Do not compare raw scores across projects unless the scenario definitions and measurement procedures are comparable. For screening scenarios, keep human review explicit; for rescue and harvesting, treat robot actions as simulated proposals until separately validated.
+## Common fields for future reproducible runs
+
+Record repository and commit SHA; command and environment; scenario/configuration ID and hash; dataset version/manifest/source licence/split; cases attempted, completed, failed and safely rejected; per-class counts and metrics; uncertainty summaries; failure categories and evidence artifacts; runtime measurement method; human-review, safe-hold and simulation-only gate outcomes.
+
+Do not compare scores across projects unless scenario definitions and measurement procedures are comparable.
 
 ## Free-first execution policy
 
-- Prefer Python standard-library checks and small deterministic scenarios.
-- Do not download models automatically or require paid APIs, subscriptions, or cloud GPUs.
-- Evaluate any optional VLM/VLA only after checking license, download size, RAM/VRAM needs, and whether it can be run locally.
-- Keep action execution simulated. No hardware actuation is enabled by this report.
+- Prefer deterministic Python standard-library checks and small local scenarios.
+- Do not download models automatically or require paid APIs, subscriptions or cloud GPUs.
+- Before optional VLM/VLA evaluation, check licence, download size, disk/RAM/VRAM needs and offline operation.
+- Keep actions simulated until software evidence, simulation evidence, hardware readiness and independent safety review justify the next stage.
+- GitHub Actions usage may be subject to account quotas; do not promise unlimited or universally cost-free CI.
 
 ## Next milestone
 
-Collect validated outputs from the three simulation workflows, then generate a comparison table from actual artifacts. Do not fill metric values with estimates or placeholders presented as results.
+1. Review the three CI-fix PRs and merge only after review and required checks are satisfactory.
+2. Run Coconut dataset provenance, hash, annotation and source-group split checks.
+3. Obtain genuine detector predictions on a frozen held-out set and publish reproducible metrics—or document why inference remains blocked.
+4. Add observed test counts and failure details from actual run artifacts, never estimates.
