@@ -5,13 +5,13 @@
 
 ## Current automated-check status
 
-The listed workflow runs had completed with GitHub Actions conclusion **success** when inspected on 2026-10-30. The three lightweight CI-fix PRs (#151, #115, #93) and three simulation-evaluation workflow PRs (#153, #116, #94) are now merged.
+The listed workflow runs had completed with GitHub Actions conclusion **success** when inspected on 2026-10-30. The three lightweight CI-fix PRs (#151, #115, #93), three simulation-evaluation workflow PRs (#153, #116, #94), and three adversarial-scenario PRs (#154, #117, #95) are now merged.
 
 | Project | Merged workflow PRs | Observed passing workflow runs | Evidence boundary |
 |---|---|---|---|
-| [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | [#151 — lightweight CI](https://github.com/Pui89/Coconut-Harvest-AI/pull/151); [#153 — simulation evaluation](https://github.com/Pui89/Coconut-Harvest-AI/pull/153) | Lightweight verification, shared-interface smoke, pitfall detector, security, free local checks, and simulation evaluation | Software and rule-based simulation only; no coconut detector accuracy measured. |
-| [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | [#115 — lightweight CI](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/115); [#116 — simulation evaluation](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/116) | Automated verification, shared-interface smoke, Python tests on 3.10/3.11/3.12, security, pitfall detector, and simulation evaluation | Does not validate flood physics, 15 m depth capability, navigation, buoyancy or real rescue performance. |
-| [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | [#93 — lightweight CI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/93); [#94 — simulation evaluation](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/94) | Python tests, automated verification, shared-interface smoke, Python tests on 3.10/3.11/3.12, synthetic app regression, security, pitfall detector, and simulation evaluation | Does not validate chemical identification, X-ray capability, field screening accuracy or physical robot safety. Human review remains necessary. |
+| [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | [#151 — lightweight CI](https://github.com/Pui89/Coconut-Harvest-AI/pull/151); [#153 — simulation evaluation](https://github.com/Pui89/Coconut-Harvest-AI/pull/153); [#154 — adversarial safety cases](https://github.com/Pui89/Coconut-Harvest-AI/pull/154) | Lightweight verification, shared-interface smoke, pitfall detector, security, free local checks, and simulation evaluation | Software and rule-based simulation only; no coconut detector accuracy measured. |
+| [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | [#115 — lightweight CI](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/115); [#116 — simulation evaluation](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/116); [#117 — adversarial safety cases](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/117) | Automated verification, shared-interface smoke, Python tests on 3.10/3.11/3.12, security, pitfall detector, and simulation evaluation | Does not validate flood physics, 15 m depth capability, navigation, buoyancy or real rescue performance. |
+| [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | [#93 — lightweight CI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/93); [#94 — simulation evaluation](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/94); [#95 — adversarial safety cases](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/95) | Python tests, automated verification, shared-interface smoke, Python tests on 3.10/3.11/3.12, synthetic app regression, security, pitfall detector, and simulation evaluation | Does not validate chemical identification, X-ray capability, field screening accuracy or physical robot safety. Human review remains necessary. |
 
 **Review state:** the three lightweight CI-fix PRs and three simulation-evaluation workflow PRs are merged. The workflow logs and report artifacts were inspected for the simulation PR heads before merge; later changes to the default branches can still alter results.
 
@@ -29,13 +29,15 @@ These counts are from different test suites and must not be summed into a single
 
 ## Reproducible simulation evaluation — observed results
 
-On 2026-10-29, each newly added simulation-evaluation workflow completed successfully on Python 3.11.17. Each printed a machine-readable report summary and uploaded JSON/CSV report artifacts, including failure reports if any occur in future runs.
+On 2026-10-29, each simulation-evaluation workflow completed successfully on Python 3.11.17. A follow-up PR added three adversarial cases per project and the updated simulation workflows also completed successfully. Each run printed a machine-readable report summary and uploaded report artifacts.
 
 | Project | Scenarios passed | Steps passed | Failures | Hardware actuation |
 |---|---:|---:|---:|---|
-| Coconut Harvest AI | 7/7 | 9/9 | 0 | false |
-| Extreme Flood Rescue AI | 7/7 | 9/9 | 0 | false |
-| Multimodal Narcotics Screening AI | 7/7 | 9/9 | 0 | false |
+| Coconut Harvest AI | 10/10 | 12/12 | 0 | false |
+| Extreme Flood Rescue AI | 10/10 | 12/12 | 0 | false |
+| Multimodal Narcotics Screening AI | 10/10 | 12/12 | 0 | false |
+
+The added adversarial cases verify expected fail-closed handling for missing emergency-stop telemetry (`SAFE_HOLD`), a malformed sensor-health Boolean (`SAFE_HOLD`), and Boolean-valued confidence (`UNKNOWN`). These are specific software-policy checks, not exhaustive safety assurance.
 
 These are results from the projects' existing **rule-based software simulation scenarios**. A 100% scenario pass rate applies only to the defined scenarios and is not a measure of perception accuracy, flood-depth capability, chemical identification, robot reliability, or field safety. The three project scenario sets are not interchangeable and should not be combined into a single cross-project performance score.
 
