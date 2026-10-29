@@ -66,6 +66,7 @@ jobs:
           python - <<'PY'
           import json
           import os
+          import re
           import subprocess
           import sys
           from datetime import datetime, timezone
@@ -93,23 +94,39 @@ jobs:
                   log_path.write_text(result["note"] + "\n", encoding="utf-8")
                   overall = False
               else:
-                  proc = subprocess.run(
-                      [sys.executable, "-m", "unittest", "discover", "-s", "tests", "-p", "test_pui89_core.py", "-v"],
-                      cwd=root,
-                      text=True,
-                      stdout=subprocess.PIPE,
-                      stderr=subprocess.STDOUT,
-                  )
-                  log_path.write_text(proc.stdout, encoding="utf-8")
+                  test_runs = []
+                  log_sections = []
+                  for pattern in ("test_pui89_core.py", "test_pui89_ai_core_conformance.py"):
+                      proc = subprocess.run(
+                          [sys.executable, "-m", "unittest", "discover", "-s", "tests", "-p", pattern, "-v"],
+                          cwd=root,
+                          text=True,
+                          stdout=subprocess.PIPE,
+                          stderr=subprocess.STDOUT,
+                      )
+                      match = re.search(r"Ran (\d+) tests?", proc.stdout)
+                      test_count = int(match.group(1)) if match else 0
+                      test_runs.append({
+                          "pattern": pattern,
+                          "status": "passed" if proc.returncode == 0 and test_count > 0 else "failed",
+                          "return_code": proc.returncode,
+                          "tests_run": test_count,
+                      })
+                      log_sections.append(
+                          f"=== {pattern}: exit={proc.returncode}, tests_run={test_count} ===\n{proc.stdout}"
+                      )
+                  log_path.write_text("\n".join(log_sections), encoding="utf-8")
+                  passed = all(item["status"] == "passed" for item in test_runs)
                   result = {
                       "project": name,
-                      "status": "passed" if proc.returncode == 0 else "failed",
-                      "return_code": proc.returncode,
+                      "status": "passed" if passed else "failed",
+                      "return_code": 0 if passed else 1,
                       "tests_directory_found": True,
+                      "test_runs": test_runs,
                       "log": str(log_path),
-                      "note": "Shared standard-library core tests only; broader project-specific suites may require optional dependencies and are not run by this job. Not evidence of AI accuracy or physical robot safety."
+                      "note": "Runs both shared core tests and the PUI89 AI Core safety/conformance suite. Each suite must discover at least one test and exit successfully. Broader project-specific suites may require optional dependencies and are not run here. Not evidence of AI accuracy or physical robot safety."
                   }
-                  if proc.returncode != 0:
+                  if not passed:
                       overall = False
               results.append(result)
               print(f"{name}: {result['status']}")
@@ -123,7 +140,7 @@ jobs:
               "overall_status": "passed" if overall else "review_required",
               "projects": results,
               "limitations": [
-                  "This report covers the dependency-free shared PUI89 core contract tests only; broader project-specific suites are not run by this job.",
+                  "This report covers two dependency-free shared suites per project: core unit tests and PUI89 AI Core safety/conformance tests. Each suite must discover at least one test; broader project-specific suites are not run by this job.",
                   "It does not measure model accuracy, detection precision/recall, latency, simulation realism, or real-world robot performance.",
                   "No GPU, model downloads, paid API, or physical hardware is used."
               ]
@@ -138,7 +155,7 @@ jobs:
               f"- Overall status: **{report['overall_status']}**",
               f"- Commit: {report['commit']}",
               "",
-              "| Project | Unit-test status |",
+              "| Project | Shared core + safety conformance |",
               "|---|---|",
           ]
           lines.extend(f"| {item['project']} | {item['status']} |" for item in results)
