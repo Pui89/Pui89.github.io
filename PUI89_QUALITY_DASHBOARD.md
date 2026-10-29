@@ -2,15 +2,21 @@
 
 **Purpose:** one place to track software-verification progress across the three PUI89 AI projects. This dashboard distinguishes implemented checks from results that still need to be observed or measured.
 
+## Execution status
+
+**Current truthful status before the next GitHub Actions run:** automated test infrastructure is configured; the newest run outcome is **not yet verified here**. Do not infer a pass from the presence of workflow files.
+
+The combined workflow runs the standard-library unit tests in all three repositories, writes a JSON/Markdown report, and preserves each project's full test log even when a project fails. The artifact is retained for 14 days. A failed project causes the combined job to fail, while the per-project logs remain available for diagnosis.
+
 ## Current project comparison
 
 | Project | Engineering focus | Current evidence foundation | Highest-priority gap |
 |---|---|---|---|
-| [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | Agricultural perception, maturity classes, harvesting task planning | Shared PUI89 core tests for world state, confidence validation, simulation-only action proposals and structured failure reports; project-specific dataset and evaluation gates documented | Verified/licensed dataset, reviewed annotations, leakage-safe splits, then measured baseline metrics |
+| [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | Agricultural perception, maturity classes, harvesting task planning | Shared PUI89 core tests; detector-CSV evaluator and its unit tests; dataset and evaluation gates documented | Verified/licensed dataset, reviewed annotations, leakage-safe held-out split, real detector predictions, then measured metrics |
 | [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | Flood-response perception and rescue planning | Shared core tests and documented simulation/fault-injection roadmap | Reproducible scenarios, missing/stale/conflicting sensor tests, and validated water/navigation simulation |
 | [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | Multimodal screening support with human review | Shared core tests and documented uncertainty, abstention and human-review safeguards | Lawful, licensed evaluation data and independently validated sensor-specific screening performance |
 
-**Readiness ranking:** Coconut Harvest AI is the recommended first project to advance based on the documented engineering and evaluation path. This is not a ranking of measured AI accuracy. All three currently share the same core test suite, so the evidence does not establish that one has superior runtime or detection performance.
+**Readiness ranking:** Coconut Harvest AI is the recommended first project to advance based on the documented engineering and evaluation path. This is not a ranking of measured AI accuracy. No real detector benchmark score is claimed by this dashboard.
 
 ## Automated verification
 
@@ -20,7 +26,24 @@
 - [Multimodal Narcotics Screening AI Actions](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions)
 - [Portfolio verification Actions](https://github.com/Pui89/Pui89.github.io/actions)
 
-The combined workflow checks out all three public repositories, runs Python standard-library unit tests, and publishes JSON/Markdown plus per-project logs as a workflow artifact. Open the latest workflow run and inspect its conclusion and artifact before reporting pass/fail.
+Open the newest combined workflow run. Check its conclusion and download the `pui89-combined-quality-report` artifact. The Markdown/JSON report gives each project's status; each `pui89-*-tests.txt` file contains the full unittest output, including tracebacks and failed test names. A report that says `review_required` or a project that says `failed` must remain visible and be fixed, not rewritten as a pass.
+
+## Coconut Harvest AI — first measurable baseline
+
+The evaluator already in the repository is `tools/evaluate_coconut_detections.py`. It compares manually reviewed ground-truth bounding boxes with predictions exported by an actual detector. It reports counts, precision, recall and F1 at declared IoU/score thresholds; it is a single-threshold box evaluator, **not mAP**, and does not run a model.
+
+After rights review, annotation QA, and a source/tree/session-separated held-out split are complete, run:
+
+```bash
+python tools/evaluate_coconut_detections.py --ground-truth path/to/heldout_ground_truth.csv --predictions path/to/real_detector_predictions.csv --iou 0.50 --score 0.25 --output evaluation.json
+```
+
+Required ground-truth columns: `image_id,xmin,ymin,xmax,ymax,class`.
+Required prediction columns: `image_id,xmin,ymin,xmax,ymax,class,score`.
+
+Use actual model predictions and the same pixel coordinate system as the ground-truth boxes. Record the dataset/manifest SHA-256, code commit, detector/checkpoint and its hash, split policy, number of held-out images/scenes, environment and thresholds. Do not use the same images to tune and report final performance.
+
+**Baseline status: NOT RUN / NOT MEASURED in this dashboard.** No reviewed held-out ground-truth CSV and corresponding real detector prediction CSV have been established as available evidence for this run. Empty, invented or synthetic predictions must not be reported as model accuracy. The existing evaluator's unit tests validate the metric code only; they are not a performance benchmark.
 
 ## Status definitions
 
@@ -41,9 +64,9 @@ These labels are not interchangeable. A passing unit test is not proof of model 
 
 ## Next engineering sequence
 
-1. **Observe the first combined workflow run** and fix any genuine failures.
-2. Add project-specific tests beyond the shared core contract, prioritizing safety-critical edge cases.
-3. For Coconut Harvest AI, finish dataset provenance and annotation QA before running a baseline.
+1. Observe the triggered combined workflow and publish its actual per-project results, including failures.
+2. Fix any genuine shared-test failures before adding new model dependencies.
+3. For Coconut Harvest AI, complete dataset provenance, annotation QA and leakage-safe split; then run the detector evaluator against actual held-out predictions.
 4. For Flood Rescue AI, test sensor dropout, stale readings, contradictory measurements and conservative safe-stop behavior in deterministic scenarios.
 5. For Narcotics Screening AI, test missing/conflicting modalities, uncertainty/abstention and human-review routing; do not equate RGB appearance with chemical identification.
-6. Publish comparable metrics only when the scenario definitions and measurement conditions are recorded and comparable.
+6. Add VLMs, mock VLA interfaces and robotics simulation only after the software tests are stable; preflight licence, resource use and cost before optional installs.
