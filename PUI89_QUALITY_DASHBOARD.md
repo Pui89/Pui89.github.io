@@ -116,3 +116,21 @@ The immediate priority is to verify the newest CI run, repair broad-suite test-e
 The [Coconut Simulation Evaluation run 40881372992](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40881372992) completed successfully: **7/7 configured simulation scenarios passed, 9/9 steps passed, 0 reported scenario failures**. The run recorded hardware_actuation=false and explicitly labels the result simulation-only, not real-world detector or robot validation. [Download the simulation report artifact](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40881372992/artifacts/12901050654).
 
 This is a separate simulation result and must not be added to the 52 software unit-test count or interpreted as model accuracy.
+
+
+## Latest per-project lightweight verification — 29 October 2026
+
+The newest checked default-branch lightweight verification runs completed successfully:
+
+| Project | Run | Result in the emitted report | Explicit limit |
+|---|---|---|---|
+| Coconut Harvest AI | [40881602888](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40881602888) | Python 3.11.17 compile checks: 0 errors; observability smoke: PASS; reported failure count: 0 | Full dependency-backed unit tests were not run in this lightweight preflight |
+| Extreme Flood Rescue AI | [40878523954](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40878523954) | Python 3.11.17 compile checks: 0 errors; observability smoke: PASS; reported failure count: 0 | Full dependency-backed unit tests were not run in this lightweight preflight |
+| Multimodal Narcotics Screening AI | [40878549402](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40878549402) | Python syntax compilation and dependency-free observability smoke: PASS | This workflow is a lightweight verification scope, not a full model/sensor benchmark |
+
+Artifacts:
+- [Coconut lightweight report](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40881602888/artifacts/12901395117)
+- [Flood lightweight report](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40878523954/artifacts/12898129816)
+- [Narcotics lightweight report](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40878549402/artifacts/12899860349)
+
+The recent lightweight checks pass, but they do **not** close the previously recorded broad-suite import/optional-dependency repair task because they deliberately do not discover or execute the full dependency-backed test suites. Continue to report that work as unfinished until a dedicated broad-suite run proves otherwise.
