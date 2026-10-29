@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Pui89/Pui89.github.io/blob/main/schemas/pui89-failure-report.schema.json",
+  "title": "PUI89 Verification and Failure Report",
+  "description": "Shared, evidence-first report format for automated checks, simulation runs, and model experiments. A passing software check must not be interpreted as AI accuracy or physical validation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "project", "run", "status", "summary", "failures", "blockers", "claims"],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "project": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name"],
+      "properties": {
+        "id": { "enum": ["coconut-harvest-ai", "extreme-flood-rescue-ai", "multimodal-narcotics-screening-ai", "pui89-shared-core"] },
+        "name": { "type": "string", "minLength": 1 },
+        "repository": { "type": "string", "format": "uri" }
+      }
+    },
+    "run": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "started_at", "commit"],
+      "properties": {
+        "kind": { "enum": ["unit_test", "integration_test", "static_check", "simulation", "dataset_preflight", "model_evaluation", "hardware_test"] },
+        "started_at": { "type": "string", "format": "date-time" },
+        "finished_at": { "type": ["string", "null"], "format": "date-time" },
+        "workflow_url": { "type": ["string", "null"], "format": "uri" },
+        "commit": { "type": "string", "pattern": "^[0-9a-fA-F]{7,40}$" },
+        "environment": {
+          "type": "object",
+          "properties": {
+            "os": { "type": ["string", "null"] },
+            "python": { "type": ["string", "null"] },
+            "dependencies": { "type": "array", "items": { "type": "string" } },
+            "hardware": { "type": ["string", "null"] }
+          },
+          "additionalProperties": true
+        },
+        "seed": { "type": ["integer", "null"] },
+        "config_hash": { "type": ["string", "null"] }
+      }
+    },
+    "status": { "enum": ["PASS", "FAIL", "BLOCKED", "NOT_RUN", "PARTIAL"] },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tests_total", "passed", "failed", "skipped", "blocked"],
+      "properties": {
+        "tests_total": { "type": ["integer", "null"], "minimum": 0 },
+        "passed": { "type": "integer", "minimum": 0 },
+        "failed": { "type": "integer", "minimum": 0 },
+        "skipped": { "type": "integer", "minimum": 0 },
+        "blocked": { "type": "integer", "minimum": 0 },
+        "duration_seconds": { "type": ["number", "null"], "minimum": 0 }
+      }
+    },
+    "failures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "severity", "category", "message", "reproducible"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "severity": { "enum": ["critical", "high", "medium", "low", "info"] },
+          "category": { "enum": ["assertion", "import", "dependency", "data", "configuration", "timeout", "safety_gate", "environment", "unknown"] },
+          "message": { "type": "string", "minLength": 1 },
+          "test_or_step": { "type": ["string", "null"] },
+          "reproducible": { "type": "boolean" },
+          "root_cause": { "type": ["string", "null"] },
+          "repair_commit": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "blockers": { "type": "array", "items": { "type": "string" } },
+    "metrics": {
+      "type": "object",
+      "description": "Only measured metrics with documented protocol belong here. Unknown metrics must be omitted or null, never guessed.",
+      "additionalProperties": { "type": ["number", "integer", "string", "boolean", "null"] }
+    },
+    "claims": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["software_checks_only", "ai_performance_measured", "simulation_executed", "hardware_validated"],
+      "properties": {
+        "software_checks_only": { "type": "boolean" },
+        "ai_performance_measured": { "type": "boolean" },
+        "simulation_executed": { "type": "boolean" },
+        "hardware_validated": { "type": "boolean" },
+        "limitations": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "artifacts": { "type": "array", "items": { "type": "string", "format": "uri" } }
+  }
+}
