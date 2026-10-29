@@ -85,3 +85,14 @@ The Coconut validator and its new unit tests have been added to the combined wor
 - [Experiment record JSON Schema](https://github.com/Pui89/Pui89.github.io/blob/main/schemas/pui89-experiment-record.schema.json): a common structure for reproducible run metadata and explicit status labels.
 - [Flood rescue repeatable scenario matrix](https://github.com/Pui89/Extreme-Flood-Rescue-AI/blob/main/docs/REPEATABLE_SCENARIO_MATRIX.md): scenario and fault-injection plan; not yet executed simulation evidence.
 - [Multimodal screening repeatable scenario matrix](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/blob/main/docs/REPEATABLE_SCENARIO_MATRIX.md): sensor disagreement, calibration, ambiguity and human-review tests; not validated sensor performance.
+
+
+## Per-project status — 29 October 2026
+
+| Project | Verified software checks in combined run | AI/model performance | Simulation / physical status | Next gate |
+|---|---|---|---|---|
+| [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | 13 shared-core + 5 evaluator + 4 dataset-preflight tests passed | Real detector accuracy **NOT MEASURED** | Dataset preflight tests used synthetic fixtures; physical harvesting **not validated** | Validate actual dataset provenance/annotations and run held-out detector evaluation |
+| [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | 13 shared-core tests passed | Detection/navigation performance **not established by this run** | Scenario matrix documented; no new simulator result claimed; physical rescue **not validated** | Run repeatable simulator scenarios with seeds and logged outcomes |
+| [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | 13 shared-core tests passed | Substance-specific performance **not measured** | Scenario matrix documented; sensor and physical robot validation **not established** | Define sensor modality/calibration and run human-reviewed, lawful evaluation |
+
+**Interpretation:** 52 passing tests in the combined run means the selected software test scopes passed. It does not mean 52 AI capability tests, a trained model benchmark, or physical robot validation. Earlier broad project test runs exposed optional-dependency/import errors and remain a separate unresolved test-infrastructure task.
