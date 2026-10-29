@@ -1,0 +1,64 @@
+name: PUI89 Website Verification
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pui89-website-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  website-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+
+      - name: Verify required pages and parse HTML
+        run: |
+          python - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          import json, sys
+
+          required = [Path("index.html"), Path("th.html")]
+          missing = [str(p) for p in required if not p.is_file()]
+          html_files = list(Path(".").rglob("*.html"))
+          html_files = [p for p in html_files if ".git" not in p.parts]
+          class Checker(HTMLParser):
+              def error(self, message):
+                  raise ValueError(message)
+          parse_errors = []
+          for path in html_files:
+              try:
+                  Checker(convert_charrefs=True).feed(path.read_text(encoding="utf-8"))
+              except Exception as exc:
+                  parse_errors.append({"file": str(path), "error": str(exc)})
+          report = {
+              "project": "Pui89/Pui89.github.io",
+              "required_pages_missing": missing,
+              "html_files_checked": len(html_files),
+              "parse_errors": parse_errors,
+              "status": "passed" if not missing and not parse_errors else "failed",
+              "scope": "Basic HTML parsing and required-page presence only; no browser, accessibility, SEO, or external-link validation."
+          }
+          Path("pui89-website-report.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+          print(json.dumps(report, indent=2))
+          if report["status"] != "passed":
+              sys.exit(1)
+          PY
+
+      - name: Upload website report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pui89-website-verification
+          path: pui89-website-report.json
+          if-no-files-found: warn
+          retention-days: 14
