@@ -207,3 +207,30 @@ The immediate upgrade is **evidence quality and reliable test infrastructure**, 
 [Run 40881372992](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40881372992) completed successfully: 7/7 configured scenarios and 9/9 steps passed, with zero reported scenario failures. Hardware actuation was disabled. The artifact [coconut-simulation-report-40881372992](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40881372992/artifacts/12901050654) records the run configuration hash and metrics.
 
 **Interpretation:** this is a deterministic simulation-workflow result only. It is not evidence of trained-detector accuracy, real-world harvesting, physical safety or validated reach.
+
+
+## Latest checked per-project verification update — 29 October 2026
+
+After inspecting the newest default-branch workflow jobs and their logs:
+
+- **Coconut Harvest AI:** [run 40881602888](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40881602888) passed the lightweight verification job. Report: Python 3.11.17, compile errors 0, observability smoke PASS, failure count 0. Full dependency-backed tests explicitly were not run by this preflight. [Artifact](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40881602888/artifacts/12901395117).
+- **Extreme Flood Rescue AI:** [run 40878523954](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40878523954) passed the lightweight verification job. Report: Python 3.11.17, compile errors 0, observability smoke PASS, failure count 0. Full dependency-backed tests explicitly were not run by this preflight. [Artifact](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40878523954/artifacts/12898129816).
+- **Multimodal Narcotics Screening AI:** [run 40878549402](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40878549402) passed syntax compilation and the dependency-free observability smoke test. This does not establish sensor or model performance. [Artifact](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40878549402/artifacts/12899860349).
+- **Shared combined scope:** [run 40877473235](https://github.com/Pui89/Pui89.github.io/actions/runs/40877473235) passed 52 selected tests: 39 shared-core, 5 Coconut evaluator, 4 Coconut dataset-preflight.
+- **Coconut simulation:** [run 40881372992](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40881372992) passed 7/7 configured scenarios and 9/9 steps, with hardware actuation disabled.
+
+### What these new checks change
+
+**Now verified:** the newest per-project lightweight verification jobs succeeded, with zero Python compile errors reported for Coconut and Flood, and successful syntax/observability checks for Narcotics. The selected combined test scope and Coconut simulation-only scenario run also passed.
+
+**Still not finished:** broad dependency-backed test coverage is not established by these lightweight jobs; actual Coconut dataset provenance/annotation validation and held-out detector metrics remain blocked on real reviewed inputs; Flood simulator scenarios and Narcotics sensor/calibration evaluations have not been demonstrated by these runs. Do not interpret CI green status as AI accuracy or physical robot readiness.
+
+### Immediate engineering queue
+
+1. Review and classify broad-suite failures from the dedicated Python test workflows, preserving the original error and test names.
+2. Make the smallest justified packaging/dependency/import fixes and add regression tests; never suppress a failing test merely to make CI green.
+3. Run the Coconut dataset validator against a real rights-reviewed manifest and annotation file once those inputs are available.
+4. Build the first measured Coconut detector baseline only after a real held-out split and actual detector prediction CSV exist.
+5. Implement deterministic, dependency-light Flood fault-injection scenarios before installing a large simulator.
+6. Specify Narcotics sensor modality, calibration, permitted claims and human-review behavior before sensor-performance testing.
+7. Check GitHub Actions usage and keep optional model/simulator installation gated by licence, disk/RAM/VRAM and cost review.
