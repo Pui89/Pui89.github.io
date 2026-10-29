@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pui89.github.io/schemas/pui89-experiment-record.schema.json",
+  "title": "PUI89 Experiment Record",
+  "description": "Reproducibility metadata for software, model, and simulation experiments. A valid record does not imply performance or safety validation.",
+  "type": "object",
+  "required": ["project", "repository", "commit", "experiment_id", "status", "command", "environment", "data", "results", "limitations"],
+  "properties": {
+    "project": {"type": "string", "minLength": 1},
+    "repository": {"type": "string", "format": "uri"},
+    "commit": {"type": "string", "minLength": 7},
+    "experiment_id": {"type": "string", "minLength": 1},
+    "status": {"enum": ["implemented", "unit_tested", "measured", "simulation_validated", "real_world_validated", "not_run", "blocked", "failed"]},
+    "command": {"type": "string"},
+    "environment": {
+      "type": "object",
+      "required": ["os", "python"],
+      "properties": {
+        "os": {"type": "string"},
+        "python": {"type": "string"},
+        "dependencies": {"type": "array", "items": {"type": "string"}},
+        "hardware": {"type": "string"},
+        "gpu_used": {"type": "boolean"},
+        "paid_service_used": {"type": "boolean"}
+      },
+      "additionalProperties": true
+    },
+    "data": {
+      "type": "object",
+      "required": ["source", "license", "manifest_sha256", "split_policy", "sample_counts"],
+      "properties": {
+        "source": {"type": "string"},
+        "license": {"type": "string"},
+        "manifest_sha256": {"type": ["string", "null"]},
+        "split_policy": {"type": "string"},
+        "sample_counts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+        "model_or_checkpoint": {"type": ["string", "null"]},
+        "model_sha256": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "configuration": {"type": "object"},
+    "results": {"type": "object"},
+    "artifact_urls": {"type": "array", "items": {"type": "string", "format": "uri"}},
+    "limitations": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "reviewer_notes": {"type": "string"}
+  },
+  "additionalProperties": false
+}
