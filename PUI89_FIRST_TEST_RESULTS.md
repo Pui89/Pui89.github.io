@@ -58,3 +58,23 @@ Ground-truth columns: `image_id,xmin,ymin,xmax,ymax,class`. Prediction columns: 
 3. Run the evaluator on actual detector predictions and publish its JSON output and failure analysis.
 4. Only after the foundation is stable, test VLMs, mock VLA interfaces and robotics simulation—after checking licences, resource requirements and cost.
 5. Keep all proposed actions simulation-only; these tests do not validate real robot operation or physical safety.
+
+
+## Latest extended verification — 29 October 2026
+
+- Workflow: [PUI89 Combined Quality Report — successful run](https://github.com/Pui89/Pui89.github.io/actions/runs/40875821265)
+- Commit: `550fe15ab794e77a92601dbeef5fb27225a6e607`
+- Artifact: [Combined report and test logs](https://github.com/Pui89/Pui89.github.io/actions/runs/40875821265/artifacts/12898316211)
+- Workflow conclusion: **success**
+
+| Test scope | Actual result | Interpretation |
+|---|---:|---|
+| Shared PUI89 core — Coconut | 13 passed, 0 failed | Shared software contract tests |
+| Shared PUI89 core — Extreme Flood Rescue | 13 passed, 0 failed | Shared software contract tests |
+| Shared PUI89 core — Narcotics Screening | 13 passed, 0 failed | Shared software contract tests |
+| Coconut detection evaluator | 5 passed, 0 failed | Metric implementation tests only |
+| Coconut dataset preflight validator | 4 passed, 0 failed | Manifest/annotation QA checks on synthetic test fixtures |
+
+**Total verified in this run: 52 passing unit tests, 0 failures in the selected CI test scopes.**
+
+The dataset preflight tests use temporary synthetic CSV fixtures. They do **not** validate the project's real dataset. The detector was not run and real-world accuracy remains **NOT MEASURED**. The earlier broader suites that require optional dependencies remain outside this CI job and have previously reported environment/import errors; do not treat this scoped pass as a full-suite pass.
