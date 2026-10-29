@@ -234,3 +234,16 @@ After inspecting the newest default-branch workflow jobs and their logs:
 5. Implement deterministic, dependency-light Flood fault-injection scenarios before installing a large simulator.
 6. Specify Narcotics sensor modality, calibration, permitted claims and human-review behavior before sensor-performance testing.
 7. Check GitHub Actions usage and keep optional model/simulator installation gated by licence, disk/RAM/VRAM and cost review.
+
+
+## Shared failure-report contract — added 30 October 2026
+
+- Standard: [PUI89_FAILURE_REPORT_STANDARD.md](PUI89_FAILURE_REPORT_STANDARD.md)
+- JSON Schema: [schemas/pui89-failure-report.schema.json](schemas/pui89-failure-report.schema.json)
+- Verified lightweight Coconut core run: [40937571854](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40937571854) — 36 selected tests passed with Python 3.12 and pytest only.
+
+### Implementation status
+
+- **Done — verified:** report standard and JSON Schema committed; dashboard links and scoped test result recorded.
+- **Next:** build a dependency-light JSON report emitter, add unit tests for valid and invalid reports, and generate artifacts from real workflow outputs.
+- **Not yet done:** automatic schema validation in all three project workflows; do not claim adoption until those checks run successfully.
