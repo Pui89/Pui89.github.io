@@ -70,3 +70,14 @@ These labels are not interchangeable. A passing unit test is not proof of model 
 4. For Flood Rescue AI, test sensor dropout, stale readings, contradictory measurements and conservative safe-stop behavior in deterministic scenarios.
 5. For Narcotics Screening AI, test missing/conflicting modalities, uncertainty/abstention and human-review routing; do not equate RGB appearance with chemical identification.
 6. Add VLMs, mock VLA interfaces and robotics simulation only after the software tests are stable; preflight licence, resource use and cost before optional installs.
+
+
+## New engineering gates added
+
+- [Shared engineering charter](https://github.com/Pui89/Pui89.github.io/blob/main/PUI89_ENGINEERING_CHARTER.md): evidence labels, experiment metadata, safety principles and merge checklist.
+- [Coconut dataset preflight validator](https://github.com/Pui89/Coconut-Harvest-AI/blob/main/tools/validate_coconut_dataset.py): dependency-free checks for manifest fields, duplicate image IDs, annotation box validity, optional image file/hash checks, and source/tree/session split leakage.
+- [Coconut safety and validation gates](https://github.com/Pui89/Coconut-Harvest-AI/blob/main/docs/PUI89_SAFETY_AND_VALIDATION_GATES.md).
+- [Flood rescue safety and validation gates](https://github.com/Pui89/Extreme-Flood-Rescue-AI/blob/main/docs/PUI89_SAFETY_AND_VALIDATION_GATES.md).
+- [Multimodal screening safety and human-review gates](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/blob/main/docs/PUI89_SAFETY_AND_VALIDATION_GATES.md).
+
+The Coconut validator and its new unit tests have been added to the combined workflow. Their result remains **not verified until the next Actions run completes**. The validator's PASS_PREFLIGHT status is not a detector benchmark; it deliberately emits no accuracy metrics.
