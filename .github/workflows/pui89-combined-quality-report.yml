@@ -146,6 +146,13 @@ jobs:
               raise SystemExit(1)
           PY
 
+      - name: Test Coconut detection evaluation metric implementation
+        if: always()
+        working-directory: projects/coconut-harvest
+        run: |
+          set -o pipefail
+          python -m unittest discover -s tests -p "test_evaluate_coconut_detections.py" -v 2>&1 | tee ../../portfolio/pui89-coconut-baseline-evaluator-tests.txt
+
       - name: Upload combined quality report and logs
         if: always()
         uses: actions/upload-artifact@v4
@@ -155,5 +162,6 @@ jobs:
             portfolio/pui89-combined-quality-report.json
             portfolio/pui89-combined-quality-report.md
             portfolio/pui89-*-tests.txt
+            portfolio/pui89-coconut-baseline-evaluator-tests.txt
           if-no-files-found: warn
           retention-days: 14
