@@ -81,3 +81,7 @@ These labels are not interchangeable. A passing unit test is not proof of model 
 - [Multimodal screening safety and human-review gates](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/blob/main/docs/PUI89_SAFETY_AND_VALIDATION_GATES.md).
 
 The Coconut validator and its new unit tests have been added to the combined workflow. Their result remains **not verified until the next Actions run completes**. The validator's PASS_PREFLIGHT status is not a detector benchmark; it deliberately emits no accuracy metrics.
+
+- [Experiment record JSON Schema](https://github.com/Pui89/Pui89.github.io/blob/main/schemas/pui89-experiment-record.schema.json): a common structure for reproducible run metadata and explicit status labels.
+- [Flood rescue repeatable scenario matrix](https://github.com/Pui89/Extreme-Flood-Rescue-AI/blob/main/docs/REPEATABLE_SCENARIO_MATRIX.md): scenario and fault-injection plan; not yet executed simulation evidence.
+- [Multimodal screening repeatable scenario matrix](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/blob/main/docs/REPEATABLE_SCENARIO_MATRIX.md): sensor disagreement, calibration, ambiguity and human-review tests; not validated sensor performance.
