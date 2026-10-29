@@ -1,19 +1,19 @@
 # PUI89 AI Core — Cross-Project Verification Snapshot
 
-**Snapshot date:** 2026-10-29  
+**Snapshot date:** 2026-10-30  
 **Purpose:** Record observed automated checks across the three PUI89 AI applications and robot concepts. This is a software verification snapshot, not a real-world performance report.
 
 ## Current automated-check status
 
-The listed pull-request-head workflow runs had completed with GitHub Actions conclusion **success** when inspected on 2026-10-29.
+The listed workflow runs had completed with GitHub Actions conclusion **success** when inspected on 2026-10-30. The three lightweight CI-fix PRs (#151, #115, #93) and three simulation-evaluation workflow PRs (#153, #116, #94) are now merged.
 
-| Project | Draft PR | Observed passing workflow runs | Evidence boundary |
+| Project | Merged workflow PRs | Observed passing workflow runs | Evidence boundary |
 |---|---|---|---|
-| [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | [#151 — lightweight CI dependency boundary](https://github.com/Pui89/Coconut-Harvest-AI/pull/151) | Lightweight Python verification; shared-interface smoke; pitfall detector; security; free local checks; duplicate automated-verification run | Software and report-generator checks only; no coconut detector accuracy measured. |
-| [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | [#115 — lightweight CI dependency boundary](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/115) | Fast preflight; free local checks; automated verification; shared-interface smoke; Python tests on 3.10/3.11/3.12; security; pitfall detector; Ruff | Does not validate flood physics, 15 m depth capability, navigation, buoyancy or real rescue performance. |
-| [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | [#93 — lightweight CI dependency boundary](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/93) | Lightweight verification; shared-interface smoke; fast preflight; free local checks; Python tests on 3.10/3.11/3.12; app regression checks on 3.10/3.11/3.12; security; pitfall detector; Ruff | Does not validate chemical identification, X-ray capability, field screening accuracy or physical robot safety. Human review remains necessary. |
+| [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | [#151 — lightweight CI](https://github.com/Pui89/Coconut-Harvest-AI/pull/151); [#153 — simulation evaluation](https://github.com/Pui89/Coconut-Harvest-AI/pull/153) | Lightweight verification, shared-interface smoke, pitfall detector, security, free local checks, and simulation evaluation | Software and rule-based simulation only; no coconut detector accuracy measured. |
+| [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | [#115 — lightweight CI](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/115); [#116 — simulation evaluation](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/116) | Automated verification, shared-interface smoke, Python tests on 3.10/3.11/3.12, security, pitfall detector, and simulation evaluation | Does not validate flood physics, 15 m depth capability, navigation, buoyancy or real rescue performance. |
+| [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | [#93 — lightweight CI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/93); [#94 — simulation evaluation](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/94) | Python tests, automated verification, shared-interface smoke, Python tests on 3.10/3.11/3.12, synthetic app regression, security, pitfall detector, and simulation evaluation | Does not validate chemical identification, X-ray capability, field screening accuracy or physical robot safety. Human review remains necessary. |
 
-**Review state:** all three CI-fix pull requests remain drafts and have not been merged. Results above apply to the observed PR commits, not necessarily the default branches. Workflow results can change when new commits are pushed.
+**Review state:** the three lightweight CI-fix PRs and three simulation-evaluation workflow PRs are merged. The workflow logs and report artifacts were inspected for the simulation PR heads before merge; later changes to the default branches can still alter results.
 
 
 ## Selected observed test counts
@@ -27,6 +27,18 @@ The job logs were inspected, not just the green status icons:
 
 These counts are from different test suites and must not be summed into a single “PUI89 test count.” The two pytest counts are for one Python-version job each; their other matrix jobs also passed but are not added here. A passing CI job is not evidence of AI accuracy or physical-world performance.
 
+## Reproducible simulation evaluation — observed results
+
+On 2026-10-29, each newly added simulation-evaluation workflow completed successfully on Python 3.11.17. Each printed a machine-readable report summary and uploaded JSON/CSV report artifacts, including failure reports if any occur in future runs.
+
+| Project | Scenarios passed | Steps passed | Failures | Hardware actuation |
+|---|---:|---:|---:|---|
+| Coconut Harvest AI | 7/7 | 9/9 | 0 | false |
+| Extreme Flood Rescue AI | 7/7 | 9/9 | 0 | false |
+| Multimodal Narcotics Screening AI | 7/7 | 9/9 | 0 | false |
+
+These are results from the projects' existing **rule-based software simulation scenarios**. A 100% scenario pass rate applies only to the defined scenarios and is not a measure of perception accuracy, flood-depth capability, chemical identification, robot reliability, or field safety. The three project scenario sets are not interchangeable and should not be combined into a single cross-project performance score.
+
 ## Shared evidence safeguards
 
 The standard-library observability generator starts with conservative statuses: software/model/system/workflow/safety checks are `NOT_RUN`, and hardware is `NOT_CONNECTED`, unless supplied evidence is provided. A `PASS` or `FAIL` entry requires an evidence reference and observation timestamp. Schema validation checks format only; it does not authenticate evidence.
@@ -35,7 +47,7 @@ Shared software-contract and simulation-evidence checks cover world-state/confid
 
 ## Failure history and resolution status
 
-A prior lightweight-runner attempt failed because it discovered and imported dependency-backed test modules without the project's full dependency/import environment (errors included missing project modules and optional packages). The three open CI-fix PRs change that lightweight job to compile configured Python folders and smoke-test the standard-library observability report, while leaving full unit/integration testing to the dedicated project test workflows. The replacement lightweight jobs now pass on the observed PR heads.
+A prior lightweight-runner attempt failed because it discovered and imported dependency-backed test modules without the project's full dependency/import environment (errors included missing project modules and optional packages). The three CI-fix PRs changed the lightweight job to compile configured Python folders and smoke-test the standard-library observability report, while leaving full unit/integration testing to dedicated project workflows. Those PRs are now merged, and the replacement lightweight jobs passed on the observed PR heads.
 
 **Important:** this resolves the lightweight preflight's test-discovery boundary; it does not mean every possible test failure has been eliminated. No failing test was present in the workflow runs inspected for the current PR heads. If a later run fails, keep its failure in the report with the job/test name and log evidence rather than suppressing it.
 
@@ -66,7 +78,7 @@ Do not compare scores across projects unless scenario definitions and measuremen
 
 ## Next milestone
 
-1. Review the three CI-fix PRs and merge only after review and required checks are satisfactory.
-2. Run Coconut dataset provenance, hash, annotation and source-group split checks.
+1. Continue monitoring the merged simulation workflows and preserve failed reports rather than hiding them.
+2. Run Coconut dataset provenance, local file hash, annotation and source-group split checks when the original candidate image is available.
 3. Obtain genuine detector predictions on a frozen held-out set and publish reproducible metrics—or document why inference remains blocked.
-4. Add observed test counts and failure details from actual run artifacts, never estimates.
+4. Add simulator-specific telemetry only where an actual simulator emits it; keep hardware fields NOT_CONNECTED until hardware is present and measured.
