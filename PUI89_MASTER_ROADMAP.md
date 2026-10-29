@@ -158,7 +158,7 @@
 - Latest verified combined run passed 52 tests across the selected scopes.
 
 ### Checking / processing next
-- Check the queued/latest workflow run before describing it as successful.
+- The newest combined run checked on 29 October 2026 completed successfully (52 selected tests); continue checking the latest run before quoting results.
 - Inspect actual job logs and artifact reports rather than inferring success from the workflow file.
 - Ensure the three README status sections and central dashboard stay consistent.
 
@@ -188,7 +188,7 @@
 
 ## Definition of done for the next milestone
 
-- [ ] Latest combined workflow status and artifact inspected.
+- [x] Latest combined workflow status and artifact inspected: run 40877473235 passed its selected scopes; report artifact available through 12 November 2026.
 - [ ] Broad-suite failures listed with root cause and repair plan.
 - [ ] Coconut real dataset preflight run or explicitly marked blocked because a reviewed manifest is unavailable.
 - [ ] No detector metric published without real held-out predictions and labels.
