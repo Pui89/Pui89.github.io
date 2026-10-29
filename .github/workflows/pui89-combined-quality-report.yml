@@ -10,6 +10,10 @@ on:
       - "PUI89_QUALITY_DASHBOARD.md"
       - "PUI89_ENGINEERING_CHARTER.md"
       - "PUI89_FIRST_TEST_RESULTS.md"
+      - "PUI89_FAILURE_REPORT_STANDARD.md"
+      - "schemas/pui89-failure-report.schema.json"
+      - "tools/pui89_report.py"
+      - "tests/test_pui89_report.py"
 
 permissions:
   contents: read
@@ -51,6 +55,10 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
+      - name: Test shared PUI89 report generator and contract
+        working-directory: portfolio
+        run: python -m unittest discover -s tests -p "test_pui89_report.py" -v
 
       - name: Run project tests and write combined report
         id: tests
