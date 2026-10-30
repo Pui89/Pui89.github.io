@@ -152,3 +152,18 @@ The recent lightweight checks pass, but they do **not** close the previously rec
 - Added [six contract tests](tests/test_pui89_report.py), including valid report acceptance, missing fields, invalid status/commit, negative counts, incomplete failure details, and a CLI round-trip.
 - Updated the combined quality workflow to run the report-contract tests and trigger on changes to the standard, schema, generator, and tests.
 - **Verification status:** [combined workflow run 40944240576 passed](https://github.com/Pui89/Pui89.github.io/actions/runs/40944240576). All six report-contract tests passed; the three shared-core project checks also passed in that run, along with five Coconut evaluator tests and four dataset-preflight tests. The validator is a dependency-free contract check, not a complete implementation of every JSON Schema keyword.
+
+
+## Automated per-project verification reports — 30 October 2026
+
+The [combined quality workflow run 41062484106](https://github.com/Pui89/Pui89.github.io/actions/runs/41062484106) completed successfully. It generated and validated one standardized JSON report for each project from the actual selected shared-core and safety/conformance test outcomes:
+
+- `reports/coconut-harvest-verification.json`
+- `reports/extreme-flood-rescue-verification.json`
+- `reports/narcotics-screening-verification.json`
+
+The reports were uploaded with the combined Markdown/JSON report and test logs in the [workflow artifact](https://github.com/Pui89/Pui89.github.io/actions/runs/41062484106/artifacts/12979947742). Artifact retention is 14 days (through 13 November 2026).
+
+**Scope limitation:** these reports cover only the two selected dependency-free shared suites per project. They are not full-suite, AI-performance, simulator-fidelity or physical-hardware validation results. The report generator uses the actual discovered test totals and separates passed, failed, skipped and blocked counts.
+
+**Next:** improve failure-summary parsing for all unittest summary formats, add explicit report-schema validation, and extend the same evidence contract to separately executed project-specific suites without installing heavy AI dependencies by default.
