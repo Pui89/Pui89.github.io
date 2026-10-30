@@ -1,0 +1,160 @@
+[
+  {
+    "id": "baseline-12-step",
+    "expected_final_state": "CONTINUE",
+    "steps": [
+      {
+        "timestamp": "t+0",
+        "confidence": 0.94
+      },
+      {
+        "timestamp": "t+1",
+        "confidence": 0.94
+      },
+      {
+        "timestamp": "t+2",
+        "confidence": 0.94
+      },
+      {
+        "timestamp": "t+3",
+        "confidence": 0.94
+      },
+      {
+        "timestamp": "t+4",
+        "confidence": 0.94
+      },
+      {
+        "timestamp": "t+5",
+        "confidence": 0.94
+      },
+      {
+        "timestamp": "t+6",
+        "confidence": 0.94
+      },
+      {
+        "timestamp": "t+7",
+        "confidence": 0.94
+      },
+      {
+        "timestamp": "t+8",
+        "confidence": 0.94
+      },
+      {
+        "timestamp": "t+9",
+        "confidence": 0.94
+      },
+      {
+        "timestamp": "t+10",
+        "confidence": 0.94
+      },
+      {
+        "timestamp": "t+11",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "id": "sensor-stale-then-recover",
+    "expected_final_state": "CONTINUE",
+    "steps": [
+      {
+        "timestamp": "t0",
+        "confidence": 0.95
+      },
+      {
+        "timestamp": "t1",
+        "confidence": 0.95,
+        "faults": [
+          "stale_sensor"
+        ]
+      },
+      {
+        "timestamp": "t2",
+        "confidence": 0.95
+      },
+      {
+        "timestamp": "t3",
+        "confidence": 0.95,
+        "recovery": true,
+        "fresh_evidence": true,
+        "consistent_evidence": true,
+        "operator_approved": true
+      }
+    ]
+  },
+  {
+    "id": "conflict-review",
+    "expected_final_state": "REQUEST_HUMAN_REVIEW",
+    "steps": [
+      {
+        "timestamp": "t0",
+        "confidence": 0.92
+      },
+      {
+        "timestamp": "t1",
+        "confidence": 0.8,
+        "faults": [
+          "conflicting_evidence"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "missing-evidence-hold",
+    "expected_final_state": "SAFE_HOLD",
+    "steps": [
+      {
+        "timestamp": "t0",
+        "confidence": 0.9
+      },
+      {
+        "timestamp": "t1",
+        "confidence": 0.9,
+        "faults": [
+          "missing_evidence"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "critical-stop-latched",
+    "expected_final_state": "STOPPED",
+    "steps": [
+      {
+        "timestamp": "t0",
+        "confidence": 0.99
+      },
+      {
+        "timestamp": "t1",
+        "confidence": 0.9,
+        "faults": [
+          "safety_critical_failure"
+        ]
+      },
+      {
+        "timestamp": "t2",
+        "confidence": 1
+      }
+    ]
+  },
+  {
+    "id": "noisy-ood-review",
+    "expected_final_state": "REQUEST_HUMAN_REVIEW",
+    "steps": [
+      {
+        "timestamp": "t0",
+        "confidence": 0.9,
+        "faults": [
+          "noisy_evidence"
+        ]
+      },
+      {
+        "timestamp": "t1",
+        "confidence": 0.9,
+        "faults": [
+          "ood_evidence"
+        ]
+      }
+    ]
+  }
+]\n
