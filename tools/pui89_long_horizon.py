@@ -19,12 +19,12 @@ def evaluate_sequence(sequence):
     for index, step in enumerate(sequence):
         faults = set(step.get("faults", []))
         confidence = step.get("confidence", 1.0)
-        if not isinstance(confidence, (int, float)) or isinstance(confidence, bool) or not 0 <= confidence <= 1:
+        invalid_confidence = (not isinstance(confidence, (int, float)) or isinstance(confidence, bool) or not 0 <= confidence <= 1)
+        if invalid_confidence:
             failures.append({"step": index, "reason": "invalid_confidence"})
-            state = "SAFE_HOLD"
             confidence = 0.0
         uncertainty = min(1.0, max(uncertainty, 1.0 - confidence))
-        if "missing_evidence" in faults or "stale_sensor" in faults or "sensor_clock_skew" in faults:
+        if invalid_confidence or "missing_evidence" in faults or "stale_sensor" in faults or "sensor_clock_skew" in faults:
             next_state = "SAFE_HOLD"
         elif "conflicting_evidence" in faults or "noisy_evidence" in faults or "ood_evidence" in faults:
             next_state = "REQUEST_HUMAN_REVIEW"
