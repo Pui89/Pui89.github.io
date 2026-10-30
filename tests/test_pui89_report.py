@@ -76,6 +76,16 @@ class Pui89ReportContractTests(unittest.TestCase):
         report["run"]["started_at"] = "not-a-date"
         self.assertTrue(any("ISO 8601" in e for e in validate_report(report)))
 
+    def test_rejects_non_string_workflow_url_without_crashing(self):
+        report = valid_report()
+        report["run"]["workflow_url"] = 123
+        self.assertTrue(any("workflow_url" in e for e in validate_report(report)))
+
+    def test_rejects_invalid_artifact_uri(self):
+        report = valid_report()
+        report["artifacts"] = ["reports/output.json"]
+        self.assertTrue(any("artifacts[0]" in e for e in validate_report(report)))
+
     def test_rejects_failure_without_reason(self):
         report = valid_report()
         report["failures"] = [{
