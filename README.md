@@ -19,6 +19,18 @@ PUI89 brings together domain knowledge, independent software development, applie
 
 ---
 
+## Latest portfolio engineering update — 30 October 2026
+
+The three flagship repositories now share the PUI89 AI Core safety contract and automated conformance checks. Their merged rule-based simulation evaluations each completed **7/7 scenarios and 9/9 steps, with 0 reported failures**:
+
+- [Coconut Harvest AI simulation evidence](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40881372992)
+- [Extreme Flood Rescue AI simulation evidence](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40919457152)
+- [Multimodal Screening AI simulation evidence](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40919469891)
+
+Coconut's merged dataset audit also passed 15 checks across dataset structure, image hashes and split leakage: [audit run and evidence artifact](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40944312469).
+
+**Evidence boundary:** these are rule-based scenario and software-verification results. They are not model accuracy metrics, proof of dataset licensing or annotation correctness, validated simulator physics, physical robot performance, safety certification, or commercial deployment. The PUI89 Command Centre dataset-monitoring addition is proposed in [PR #33](https://github.com/Pui89/Pui89.github.io/pull/33) and is not yet merged.
+
 ## 1. Mission and vision
 
 ### Mission
