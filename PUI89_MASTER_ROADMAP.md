@@ -335,7 +335,7 @@ The new workflows use Python standard library only, no model downloads, no exter
 ## Level 7 — adaptive agent orchestration policy (31 October 2026)
 
 - Added `tools/pui89_adaptive_orchestrator.py`, a deterministic policy simulator that routes validated agent messages.
-- Added nine standard-library tests covering continue boundaries, latched stop, invalid provenance, missing/stale/future evidence, disagreement, human review and invalid policy thresholds.
+- Added ten standard-library tests covering continue boundaries, latched stop, invalid message and evidence provenance, missing/stale/future evidence, disagreement, human review and invalid policy thresholds.
 - Added a read-only GitHub Actions workflow and the [orchestrator protocol](PUI89_ADAPTIVE_AGENT_ORCHESTRATOR.md).
 - Decision outcomes include `STOP`, `SAFE_HOLD`, `REQUEST_HUMAN_REVIEW`, `REQUEST_EVIDENCE`, `REQUEST_SPECIALIST_VERIFICATION` and `CONTINUE`.
 - Every output is marked simulation-only and explicitly disables physical actuation. `CONTINUE` is not hardware authorization.
