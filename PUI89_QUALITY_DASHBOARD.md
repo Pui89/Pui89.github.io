@@ -197,8 +197,8 @@ The first scenario pack exercises multi-step baseline behavior, missing/stale ev
 
 ## Adaptive agent orchestration policy — 31 October 2026
 
-The central repository now includes a deterministic [adaptive orchestrator](https://github.com/Pui89/Pui89.github.io/blob/main/tools/pui89_adaptive_orchestrator.py), [nine policy tests](https://github.com/Pui89/Pui89.github.io/blob/main/tests/test_pui89_adaptive_orchestrator.py), a read-only [GitHub Actions workflow](https://github.com/Pui89/Pui89.github.io/actions/workflows/pui89-adaptive-orchestrator.yml), and the [protocol and limitations](https://github.com/Pui89/Pui89.github.io/blob/main/PUI89_ADAPTIVE_AGENT_ORCHESTRATOR.md).
+The central repository now includes a deterministic [adaptive orchestrator](https://github.com/Pui89/Pui89.github.io/blob/main/tools/pui89_adaptive_orchestrator.py), [ten policy tests](https://github.com/Pui89/Pui89.github.io/blob/main/tests/test_pui89_adaptive_orchestrator.py), a read-only [GitHub Actions workflow](https://github.com/Pui89/Pui89.github.io/actions/workflows/pui89-adaptive-orchestrator.yml), and the [protocol and limitations](https://github.com/Pui89/Pui89.github.io/blob/main/PUI89_ADAPTIVE_AGENT_ORCHESTRATOR.md).
 
-The policy fails closed on stop conditions, invalid provenance, safety holds, human-review requests, and missing/stale evidence. Conflicting agent claims trigger specialist verification without voting or averaging. All outcomes are simulation-only; physical actuation is explicitly disabled.
+The policy validates referenced evidence records and fails closed on stop conditions, invalid provenance, safety holds, human-review requests, and missing/stale evidence. Conflicting agent claims trigger specialist verification without voting or averaging. All outcomes are simulation-only; physical actuation is explicitly disabled.
 
 **Verification status:** source, test, workflow and protocol files were fetched from the repository after commit. The latest orchestrator CI run has not yet been independently confirmed. No live multi-agent execution or project adapter is claimed.
