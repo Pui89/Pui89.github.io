@@ -341,3 +341,13 @@ The new workflows use Python standard library only, no model downloads, no exter
 - Every output is marked simulation-only and explicitly disables physical actuation. `CONTINUE` is not hardware authorization.
 - Repository files have been fetched after commit and their presence verified. The new workflow's run result has not yet been independently confirmed.
 - Live agents, specialist execution, project adapters, model inference, ROS integration and physical robot control are not implemented.
+
+
+## Level 8 — first project adapter: Coconut Harvest AI (31 October 2026)
+
+- Added a Coconut adapter that maps caller-supplied four-class maturity observations into the shared agent/evidence contract and routes them through a project-local snapshot of the adaptive policy orchestrator.
+- Added six adapter regression tests and a dedicated read-only GitHub Actions workflow.
+- The adapter does not run a detector, infer maturity from images, calibrate confidence, or control a robot. Synthetic fixtures are used for policy tests.
+- The contract and orchestrator are vendored snapshots in the Coconut repository; they must be synchronized when the central implementation changes.
+- Repository files and README documentation have been fetched after commit. The adapter workflow's completed result has not yet been independently confirmed.
+- Next: verify the Coconut adapter workflow, then implement separate adapters for Extreme Flood Rescue and Multimodal Narcotics Screening. Do not call these live agents or validated domain systems.
