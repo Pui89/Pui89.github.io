@@ -300,3 +300,23 @@ The repositories already contain shared world-state/planning modules, autonomy s
 
 ### Cost and safety controls
 The new workflows use Python standard library only, no model downloads, no external API, no GPU, and read-only GitHub permissions. This does not certify functional safety, cybersecurity, model accuracy, simulator fidelity, or field performance.
+
+
+## Level 5 engineering upgrade — long-horizon evaluation (31 October 2026)
+
+### Implemented in the shared PUI89 platform
+- Added a dependency-free deterministic sequence evaluator, six synthetic scenario families, eight unit tests, a protocol document and a dedicated GitHub Actions workflow.
+- Scenarios cover baseline sequences, missing/stale evidence, conflicting/noisy/OOD evidence, uncertainty carry-forward, explicit recovery, invalid confidence and latched safety stop.
+- Reports preserve scenario IDs, step traces, injected faults, final states, expected outcomes and explicit limitations.
+- Invalid confidence is treated as a fail-safe hold; an earlier CI run exposed a precedence defect and the evaluator was corrected in commit 67126702170101d941e41b7fb48c2f49e79e7524.
+
+### Verification status
+- Initial run [41115190461](https://github.com/Pui89/Pui89.github.io/actions/runs/41115190461) exposed one failing regression test; this was used to correct the fail-safe precedence.
+- The corrected commit automatically triggers a new evaluation run. Its result must be checked before claiming the framework passes.
+- The evaluator currently runs in the central portfolio repository. Project-specific adapters for Coconut, Flood Rescue and Narcotics Screening are the next integration task; do not claim the three project applications are already benchmarked end-to-end.
+
+### Limits and next gates
+- Current uncertainty is a policy-level synthetic input, not statistically calibrated confidence.
+- Brier score, ECE, reliability diagrams and risk-coverage curves remain unavailable until independent labelled predictions exist.
+- Synthetic scenarios do not establish AI accuracy, real sensor robustness, simulator realism, physical safety or field performance.
+- Next: verify corrected CI, add explicit evidence provenance and sequence timestamps, then implement one narrow adapter per project with project-specific tests.
