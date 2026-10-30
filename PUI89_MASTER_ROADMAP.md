@@ -274,3 +274,29 @@ This milestone verifies only the selected dependency-free shared-core and safety
 3. Extend report generation to project-specific test groups as separately named scopes; preserve independent statuses rather than combining unlike evidence.
 4. Add report summaries and artifact links to the quality dashboard.
 5. Continue broad-suite environment/import repair as a separate task; do not hide failures or install heavy optional dependencies by default.
+
+
+## Level 4 engineering upgrade — shared health gate (31 October 2026)
+
+### Implemented in all three application repositories
+- Added identical standard-library-only `pui89_core/health_gate.py` modules.
+- Added 10 regression tests per project.
+- Added dedicated `PUI89 Health Gate Regression` workflows using Python 3.12 and `ubuntu-slim`, with read-only repository permissions and concurrency cancellation.
+- The gate fails closed for missing/malformed safety telemetry, stale sensors, unhealthy perception/localization/communications, invalid confidence, or absent operator approval.
+- A positive result means `SIMULATION_READY` only. No result permits physical actuation.
+
+### Existing capabilities discovered and retained
+The repositories already contain shared world-state/planning modules, autonomy supervisors, MockVLA interfaces, fail-closed agentic workflow tests, simulation evaluation tools, and security policies. The upgrade therefore adds a common health contract rather than creating duplicate autonomy frameworks.
+
+### Pending verification and next gates
+1. Confirm all three new health-gate workflows complete successfully; queued runs are not passes.
+2. Add cross-project parity tests to ensure the three health-gate modules remain byte-for-byte equivalent.
+3. Extend the common telemetry contract with explicit timestamps/age limits and sensor provenance after agreeing on units and clock assumptions.
+4. Add fault-injection scenarios for stale, missing, conflicting and out-of-range observations.
+5. Connect the health gate to existing project-specific supervisors only through reviewed adapters; avoid changing established mission logic without project-specific regression coverage.
+6. Verify agentic workflows remain proposal-only and require human approval for repository writes or simulated action dispatch.
+7. Keep VLM/VLA evaluation as a separate optional profile; record model licence, source, size, digest, RAM/VRAM estimate and offline behavior before any download.
+8. Keep ROS/Gazebo and hardware integration behind separate opt-in jobs; never run physical actuation from CI.
+
+### Cost and safety controls
+The new workflows use Python standard library only, no model downloads, no external API, no GPU, and read-only GitHub permissions. This does not certify functional safety, cybersecurity, model accuracy, simulator fidelity, or field performance.
