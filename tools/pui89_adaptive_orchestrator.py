@@ -31,11 +31,12 @@ def evaluate(messages, evidence_by_id, *, now, required_claim_keys=(),
                 f"message[{i}]: {error}"
                 for error in validate_message(message, evidence_by_id)
             )
-        referenced_ids = {
-            sid for message in messages if isinstance(message, dict)
-            for sid in message.get("source_ids", [])
-            if isinstance(message.get("source_ids"), list)
-        }
+        referenced_ids = set()
+        for message in messages:
+            if isinstance(message, dict) and isinstance(message.get("source_ids"), list):
+                referenced_ids.update(
+                    sid for sid in message["source_ids"] if isinstance(sid, str)
+                )
         for sid in sorted(referenced_ids):
             if sid in evidence_by_id:
                 errors.extend(
