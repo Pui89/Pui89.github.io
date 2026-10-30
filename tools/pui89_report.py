@@ -75,10 +75,17 @@ def validate_report(report: Any) -> list[str]:
         for key in ("finished_at", "workflow_url"):
             if key in run and run[key] is not None and not isinstance(run[key], str):
                 errors.append(f"run.{key} must be a string or null")
-        if run.get("workflow_url") is not None:
+        if run.get("finished_at") is not None:
+            try:
+                datetime.fromisoformat(run["finished_at"].replace("Z", "+00:00"))
+            except (ValueError, AttributeError):
+                errors.append("run.finished_at must be an ISO 8601 date-time or null")
+        if isinstance(run.get("workflow_url"), str):
             parsed = urlparse(run["workflow_url"])
             if parsed.scheme not in {"https", "http"} or not parsed.netloc:
                 errors.append("run.workflow_url must be an absolute HTTP(S) URI")
+        elif run.get("workflow_url") is not None:
+            errors.append("run.workflow_url must be an absolute HTTP(S) URI or null")
 
     if report.get("status") not in STATUSES:
         errors.append("status is invalid")
@@ -137,6 +144,20 @@ def validate_report(report: Any) -> list[str]:
                     "simulation_executed", "hardware_validated"):
             if not isinstance(claims.get(key), bool):
                 errors.append(f"claims.{key} must be boolean")
+        if "limitations" in claims and not (
+            isinstance(claims["limitations"], list)
+            and all(isinstance(item, str) for item in claims["limitations"])
+        ):
+            errors.append("claims.limitations must be an array of strings")
+
+    artifacts = report.get("artifacts", [])
+    if not isinstance(artifacts, list):
+        errors.append("artifacts must be an array")
+    else:
+        for i, artifact in enumerate(artifacts):
+            parsed = urlparse(artifact) if isinstance(artifact, str) else None
+            if not parsed or parsed.scheme not in {"https", "http"} or not parsed.netloc:
+                errors.append(f"artifacts[{i}] must be an absolute HTTP(S) URI")
     return errors
 
 
