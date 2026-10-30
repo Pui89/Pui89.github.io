@@ -1,0 +1,42 @@
+name: PUI89 Long-Horizon Evaluation
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "tools/pui89_long_horizon.py"
+      - "tests/test_pui89_long_horizon.py"
+      - "benchmarks/pui89_long_horizon_scenarios.json"
+      - "PUI89_LONG_HORIZON_EVALUATION.md"
+      - ".github/workflows/pui89-long-horizon-evaluation.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pui89-long-horizon-evaluation
+  cancel-in-progress: true
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run evaluator unit tests
+        run: python -m unittest discover -s tests -p "test_pui89_long_horizon.py" -v
+      - name: Run deterministic synthetic scenarios
+        run: |
+          python tools/pui89_long_horizon.py \
+            --input benchmarks/pui89_long_horizon_scenarios.json \
+            --output long-horizon-report.json \
+            --commit "$GITHUB_SHA"
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: pui89-long-horizon-report
+          path: long-horizon-report.json
+          retention-days: 14
