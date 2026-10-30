@@ -1,6 +1,6 @@
 """Deterministic policy simulator for validated PUI89 agent messages."""
 from datetime import datetime
-from pui89_agent_contract import detect_disagreements, validate_message
+from pui89_agent_contract import detect_disagreements, validate_evidence, validate_message
 
 
 def _parse_time(value):
@@ -31,6 +31,17 @@ def evaluate(messages, evidence_by_id, *, now, required_claim_keys=(),
                 f"message[{i}]: {error}"
                 for error in validate_message(message, evidence_by_id)
             )
+        referenced_ids = {
+            sid for message in messages if isinstance(message, dict)
+            for sid in message.get("source_ids", [])
+            if isinstance(message.get("source_ids"), list)
+        }
+        for sid in sorted(referenced_ids):
+            if sid in evidence_by_id:
+                errors.extend(
+                    f"evidence[{sid}]: {error}"
+                    for error in validate_evidence(evidence_by_id[sid])
+                )
         if errors:
             action, reason = "SAFE_HOLD", "invalid message or evidence provenance"
         elif any(m.get("status") == "SAFE_HOLD" or
