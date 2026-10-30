@@ -190,6 +190,15 @@ The shared platform now contains a dependency-free [PUI89 Long-Horizon Evaluatio
 
 The first scenario pack exercises multi-step baseline behavior, missing/stale evidence, sensor recovery, conflicting/noisy/OOD evidence, uncertainty carry-forward and latched stop behavior. Reports contain per-step state traces and injected faults.
 
-**Verification:** the first CI attempt found one failing invalid-confidence precedence test. The code was corrected in commit 67126702170101d941e41b7fb48c2f49e79e7524; the corrected workflow is pending verification. Do not describe this as a passing benchmark until the rerun is complete.
+**Verification:** the corrected long-horizon workflow completed successfully in run [41115502053](https://github.com/Pui89/Pui89.github.io/actions/runs/41115502053). This confirms the synthetic policy test workflow, not real-world robustness or AI performance.
 
 **Scope:** synthetic policy tests only. No AI accuracy, statistical calibration, real sensor performance, simulation fidelity or physical robot safety is established. Project-specific adapters for the three applications are still pending.
+
+
+## Adaptive agent orchestration policy — 31 October 2026
+
+The central repository now includes a deterministic [adaptive orchestrator](https://github.com/Pui89/Pui89.github.io/blob/main/tools/pui89_adaptive_orchestrator.py), [nine policy tests](https://github.com/Pui89/Pui89.github.io/blob/main/tests/test_pui89_adaptive_orchestrator.py), a read-only [GitHub Actions workflow](https://github.com/Pui89/Pui89.github.io/actions/workflows/pui89-adaptive-orchestrator.yml), and the [protocol and limitations](https://github.com/Pui89/Pui89.github.io/blob/main/PUI89_ADAPTIVE_AGENT_ORCHESTRATOR.md).
+
+The policy fails closed on stop conditions, invalid provenance, safety holds, human-review requests, and missing/stale evidence. Conflicting agent claims trigger specialist verification without voting or averaging. All outcomes are simulation-only; physical actuation is explicitly disabled.
+
+**Verification status:** source, test, workflow and protocol files were fetched from the repository after commit. The latest orchestrator CI run has not yet been independently confirmed. No live multi-agent execution or project adapter is claimed.
