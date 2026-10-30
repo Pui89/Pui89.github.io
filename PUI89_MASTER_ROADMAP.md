@@ -252,3 +252,25 @@ After inspecting the newest default-branch workflow jobs and their logs:
 ### Verified report-generator milestone — 30 October 2026
 
 [Combined workflow run 40944240576](https://github.com/Pui89/Pui89.github.io/actions/runs/40944240576) passed. The six new report-contract tests passed, as did the three shared-core project checks, five Coconut evaluator tests and four Coconut dataset-preflight tests. The three shared-core project checks are selected scopes only, not each project's full suite. Next: connect actual test outcomes to standardized per-project JSON reports and validate generated reports before artifact upload.
+
+
+## New verified milestone — automated per-project reports (30 October 2026)
+
+[Combined workflow run 41062484106](https://github.com/Pui89/Pui89.github.io/actions/runs/41062484106) completed successfully. The workflow now generates a standardized JSON verification report for each of the three projects using the actual outcomes from the selected shared-core and safety/conformance suites. All three report-generation commands returned `PASS`, and the workflow uploaded the reports, combined summary and test logs in [artifact 12979947742](https://github.com/Pui89/Pui89.github.io/actions/runs/41062484106/artifacts/12979947742).
+
+### What changed
+- Added per-project report generation to the combined CI workflow.
+- Captured discovered test totals, passed/failed/skipped counts and run metadata.
+- Included repository identity, commit, Python version, workflow URL and explicit scope limitations.
+- Uploaded all three project reports as part of the combined artifact.
+- Confirmed the complete workflow job and artifact upload succeeded.
+
+### Scope boundary
+This milestone verifies only the selected dependency-free shared-core and safety/conformance test suites for each repository. It does not mean the full test suites passed, nor does it establish AI accuracy, chemical identification, rescue performance, simulator realism or physical robot readiness. Coconut evaluator and dataset-preflight tests also ran separately in the same workflow.
+
+### Next engineering gates
+1. Exercise the report generator against failure, skipped-test and blocked-test runs to verify every status and count path.
+2. Add actual JSON Schema validation (the current Python validator checks the report contract but not every JSON Schema keyword).
+3. Extend report generation to project-specific test groups as separately named scopes; preserve independent statuses rather than combining unlike evidence.
+4. Add report summaries and artifact links to the quality dashboard.
+5. Continue broad-suite environment/import repair as a separate task; do not hide failures or install heavy optional dependencies by default.
