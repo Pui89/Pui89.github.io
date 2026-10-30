@@ -1,0 +1,25 @@
+name: PUI89 Agent Contract Checks
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'tools/pui89_agent_contract.py'
+      - 'tests/test_pui89_agent_contract.py'
+      - 'PUI89_AGENT_MESSAGE_AND_EVIDENCE_STANDARD.md'
+      - '.github/workflows/pui89-agent-contract.yml'
+permissions:
+  contents: read
+concurrency:
+  group: pui89-agent-contract
+  cancel-in-progress: true
+jobs:
+  contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run contract tests
+        run: python -m unittest discover -s tests -p 'test_pui89_agent_contract.py' -v
