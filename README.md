@@ -9,6 +9,11 @@ PUI89 develops AI applications and robotics concepts around a shared engineering
 PUI89 brings together domain knowledge, independent software development, applied research questions, and an evidence-led engineering process. The initiative is in development; project concepts, software tests, simulations, and visual designs are described separately from validated model performance or physical robot capability.
 
 - **Public portfolio:** https://pui89.github.io/
+- **Official initiative profile:** https://pui89.github.io/company.html
+- **Thai profile:** https://pui89.github.io/company-th.html
+- **Growth roadmap:** https://pui89.github.io/growth.html
+- **Thai growth roadmap:** https://pui89.github.io/growth-th.html
+- **Partnership and trust:** https://pui89.github.io/support.html
 - **GitHub:** https://github.com/Pui89
 - **Collaboration:** puinuanmanee@gmail.com
 
