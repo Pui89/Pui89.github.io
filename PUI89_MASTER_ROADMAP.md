@@ -330,3 +330,14 @@ The new workflows use Python standard library only, no model downloads, no exter
 - Added six standard-library regression tests and a read-only GitHub Actions workflow.
 - Project adapters and live multi-agent execution are not implemented. Tests validate contract behavior only, not agent reasoning, source truth, sensor calibration, AI performance or physical safety.
 - The corrected long-horizon evaluation run [41115502053](https://github.com/Pui89/Pui89.github.io/actions/runs/41115502053) completed successfully.
+
+
+## Level 7 — adaptive agent orchestration policy (31 October 2026)
+
+- Added `tools/pui89_adaptive_orchestrator.py`, a deterministic policy simulator that routes validated agent messages.
+- Added nine standard-library tests covering continue boundaries, latched stop, invalid provenance, missing/stale/future evidence, disagreement, human review and invalid policy thresholds.
+- Added a read-only GitHub Actions workflow and the [orchestrator protocol](PUI89_ADAPTIVE_AGENT_ORCHESTRATOR.md).
+- Decision outcomes include `STOP`, `SAFE_HOLD`, `REQUEST_HUMAN_REVIEW`, `REQUEST_EVIDENCE`, `REQUEST_SPECIALIST_VERIFICATION` and `CONTINUE`.
+- Every output is marked simulation-only and explicitly disables physical actuation. `CONTINUE` is not hardware authorization.
+- Repository files have been fetched after commit and their presence verified. The new workflow's run result has not yet been independently confirmed.
+- Live agents, specialist execution, project adapters, model inference, ROS integration and physical robot control are not implemented.
