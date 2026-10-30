@@ -182,3 +182,14 @@ The gate checks required telemetry types, emergency-stop state, sensor freshness
 Ten regression tests per repository cover healthy simulation-only proposals, missing/malformed telemetry, emergency stop, unhealthy safety monitor, sensor faults, missing operator approval, low/invalid confidence, invalid thresholds, and absent input.
 
 **Verification status:** workflows were created and queued at the time of this update; passing results have not yet been confirmed. The change adds a software-level gate, not a certified safety controller or hardware interlock.
+
+
+## Long-horizon robustness evaluation — 31 October 2026
+
+The shared platform now contains a dependency-free [PUI89 Long-Horizon Evaluation Framework](https://github.com/Pui89/Pui89.github.io/blob/main/PUI89_LONG_HORIZON_EVALUATION.md), including a deterministic runner, synthetic scenarios, regression tests and a lightweight [GitHub Actions workflow](https://github.com/Pui89/Pui89.github.io/actions/workflows/pui89-long-horizon-evaluation.yml).
+
+The first scenario pack exercises multi-step baseline behavior, missing/stale evidence, sensor recovery, conflicting/noisy/OOD evidence, uncertainty carry-forward and latched stop behavior. Reports contain per-step state traces and injected faults.
+
+**Verification:** the first CI attempt found one failing invalid-confidence precedence test. The code was corrected in commit 67126702170101d941e41b7fb48c2f49e79e7524; the corrected workflow is pending verification. Do not describe this as a passing benchmark until the rerun is complete.
+
+**Scope:** synthetic policy tests only. No AI accuracy, statistical calibration, real sensor performance, simulation fidelity or physical robot safety is established. Project-specific adapters for the three applications are still pending.
