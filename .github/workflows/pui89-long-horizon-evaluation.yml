@@ -1,4 +1,5 @@
 name: PUI89 Long-Horizon Evaluation
+# Standard-library-only synthetic policy checks; no model or hardware execution.
 
 on:
   workflow_dispatch:
