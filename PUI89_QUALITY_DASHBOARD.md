@@ -167,3 +167,18 @@ The reports were uploaded with the combined Markdown/JSON report and test logs i
 **Scope limitation:** these reports cover only the two selected dependency-free shared suites per project. They are not full-suite, AI-performance, simulator-fidelity or physical-hardware validation results. The report generator uses the actual discovered test totals and separates passed, failed, skipped and blocked counts.
 
 **Next:** improve failure-summary parsing for all unittest summary formats, add explicit report-schema validation, and extend the same evidence contract to separately executed project-specific suites without installing heavy AI dependencies by default.
+
+
+## Shared health-gate upgrade — 31 October 2026
+
+A matching dependency-free `pui89_core/health_gate.py` module, regression tests, and a dedicated lightweight GitHub Actions workflow have been added to all three application repositories:
+
+- [Coconut Harvest AI health-gate workflow](https://github.com/Pui89/Coconut-Harvest-AI/actions/workflows/pui89-health-gate.yml)
+- [Extreme Flood Rescue AI health-gate workflow](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/workflows/pui89-health-gate.yml)
+- [Multimodal Narcotics Screening AI health-gate workflow](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/workflows/pui89-health-gate.yml)
+
+The gate checks required telemetry types, emergency-stop state, sensor freshness, perception/localization/communications health, safety-monitor health, operator approval, and finite confidence. Outcomes are limited to `SIMULATION_READY`, `SAFE_HOLD`, `STOPPED`, or `REQUEST_HUMAN_REVIEW`. Every outcome explicitly sets `physical_actuation_permitted=false`.
+
+Ten regression tests per repository cover healthy simulation-only proposals, missing/malformed telemetry, emergency stop, unhealthy safety monitor, sensor faults, missing operator approval, low/invalid confidence, invalid thresholds, and absent input.
+
+**Verification status:** workflows were created and queued at the time of this update; passing results have not yet been confirmed. The change adds a software-level gate, not a certified safety controller or hardware interlock.
