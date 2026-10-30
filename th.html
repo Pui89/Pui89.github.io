@@ -256,12 +256,12 @@
 
 
     <section id="core" class="section" aria-labelledby="core-heading">
-      <h2 id="core-heading">One shared engineering foundation</h2>
-      <p class="intro">PUI89 is being developed as a common AI-software foundation with three specialised applications. The shared-core work is being introduced and reviewed incrementally; this section describes the architecture direction, not a claim that every component is already integrated or validated.</p>
+      <h2 id="core-heading">พื้นฐานวิศวกรรมร่วมหนึ่งชุด</h2>
+      <p class="intro">PUI89 กำลังพัฒนาพื้นฐานซอฟต์แวร์ AI ร่วมกัน เพื่อต่อยอดเป็นแอปพลิเคชันเฉพาะทางสามโครงการ งาน shared core กำลังทยอยนำมาใช้และตรวจทานเป็นลำดับ ส่วนนี้อธิบายทิศทางสถาปัตยกรรม ไม่ได้หมายความว่าทุกองค์ประกอบเชื่อมต่อหรือผ่านการตรวจสอบแล้ว</p>
       <div class="grid">
-        <article class="card"><div class="num">01 / STATE &amp; UNCERTAINTY</div><h3>Know what the system knows</h3><p>Track observation source, timestamp, confidence, calibration status, stale inputs, and conflicts. Uncertain or incomplete evidence should trigger review rather than confident action.</p><span class="status">Software contract under review</span></article>
-        <article class="card"><div class="num">02 / AUTOMATED CHECKS</div><h3>Make failures visible</h3><p>Use repeatable Python checks and structured test reports to record failures, environment details, and evidence. Passing software tests does not establish field performance or robot safety.</p><span class="status">Incremental implementation</span></article>
-        <article class="card"><div class="num">03 / SAFE TASK FLOW</div><h3>Separate proposals from actions</h3><p>Keep task-planning interfaces separate from physical actuation. Simulation and human review come before any hardware integration; no physical capability is implied.</p><span class="status">Simulation-first roadmap</span></article>
+        <article class="card"><div class="num">01 / สถานะและความไม่แน่นอน</div><h3>เข้าใจขอบเขตความรู้ของระบบ</h3><p>ติดตามแหล่งที่มาของการสังเกต เวลา ระดับความเชื่อมั่น สถานะการสอบเทียบ ข้อมูลที่ล้าสมัย และข้อมูลที่ขัดแย้งกัน เมื่อหลักฐานไม่แน่นอนหรือไม่ครบถ้วน ระบบควรส่งให้ตรวจทาน แทนการดำเนินการอย่างมั่นใจเกินจริง</p><span class="status">สัญญาการทำงานของซอฟต์แวร์อยู่ระหว่างการตรวจทาน</span></article>
+        <article class="card"><div class="num">02 / การตรวจสอบอัตโนมัติ</div><h3>แสดงข้อผิดพลาดให้ตรวจสอบได้</h3><p>ใช้การตรวจสอบด้วย Python ที่ทำซ้ำได้และรายงานผลทดสอบแบบมีโครงสร้าง เพื่อบันทึกข้อผิดพลาด รายละเอียดสภาพแวดล้อม และหลักฐาน การผ่านการทดสอบซอฟต์แวร์ไม่ได้ยืนยันสมรรถนะภาคสนามหรือความปลอดภัยของหุ่นยนต์</p><span class="status">อยู่ระหว่างพัฒนาเป็นลำดับ</span></article>
+        <article class="card"><div class="num">03 / ลำดับงานที่ปลอดภัย</div><h3>แยกข้อเสนอออกจากการสั่งงานจริง</h3><p>แยกส่วนเชื่อมต่อสำหรับวางแผนงานออกจากการสั่งงานอุปกรณ์ทางกายภาพ ต้องผ่านการจำลองและการตรวจทานโดยมนุษย์ก่อนเชื่อมต่อฮาร์ดแวร์ ทั้งนี้ไม่ได้กล่าวอ้างว่ามีความสามารถทางกายภาพแล้ว</p><span class="status">แผนพัฒนาโดยเริ่มจากการจำลอง</span></article>
       </div>
       <article class="card" style="margin-top:18px">
         <div class="num">04 / RESEARCH ROADMAP</div>
