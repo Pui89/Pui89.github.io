@@ -34,6 +34,11 @@ class Tests(unittest.TestCase):
         result = evaluate([message(sid="unknown")], {"e1": evidence()}, now=NOW)
         self.assertEqual(result["action"], "SAFE_HOLD")
 
+    def test_malformed_evidence_record_holds(self):
+        malformed = {"source_id": "e1", "timestamp": "not-a-time"}
+        result = evaluate([message()], {"e1": malformed}, now=NOW)
+        self.assertEqual(result["action"], "SAFE_HOLD")
+
     def test_missing_required_claim_requests_evidence(self):
         result = evaluate([message()], {"e1": evidence()}, now=NOW,
                           required_claim_keys=("state", "position"))
