@@ -45,6 +45,12 @@ These are results from the projects' existing **rule-based software simulation s
 
 On 2026-10-30, three dependency-light world-state validation changes were merged: [Coconut #146](https://github.com/Pui89/Coconut-Harvest-AI/pull/146), [Flood Rescue #111](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/111), and [Multimodal Screening #88](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/88). The changes reject combined world states when an observation timestamp is missing or malformed, including string, Boolean, and non-finite values, instead of risking ordering errors or silently selecting another observation. The associated Python tests and security/regression checks passed on the pull-request commits before merge. These are software input-validation safeguards only; they do not establish sensor calibration, real-time performance, perception accuracy, or physical safety.
 
+## Observation source-provenance validation
+
+On 2026-10-30, the same input-validation fix was merged across all three project repositories: [Coconut Harvest AI #157](https://github.com/Pui89/Coconut-Harvest-AI/pull/157), [Extreme Flood Rescue AI #119](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/119), and [Multimodal Narcotics Screening AI #97](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/97). Missing, empty, whitespace-only and non-string observation source identifiers are now treated as missing provenance and require human review. The focused PR workflows completed successfully before merge, including the shared world-state, free-local-check and security checks reported for each repository.
+
+This is a software-contract improvement only. It does not prove that a sensor's source claim is authentic, that a dataset has reuse rights, or that a physical system is safe. Hardware actuation remains outside this interface.
+
 ## Shared evidence safeguards
 
 The standard-library observability generator starts with conservative statuses: software/model/system/workflow/safety checks are `NOT_RUN`, and hardware is `NOT_CONNECTED`, unless supplied evidence is provided. A `PASS` or `FAIL` entry requires an evidence reference and observation timestamp. Schema validation checks format only; it does not authenticate evidence.
