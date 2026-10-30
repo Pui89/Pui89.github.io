@@ -200,7 +200,7 @@
 
     <section class="section" id="verification" aria-labelledby="verification-heading">
       <h2 id="verification-heading">Shared AI Core: verification update</h2>
-      <p class="intro">Latest verified combined run: 52 unit tests passed across the shared core, Coconut detection-metric implementation, and Coconut dataset-preflight checks. These are software-test results, not evidence of AI accuracy or physical robot readiness.</p>
+      <p class="intro">Evidence note (29 October 2026): repository-reported checks included 13 shared-core tests, 5 Coconut evaluator tests, and 4 dataset-preflight tests using synthetic fixtures. These are separate software-check results, not one integrated three-project acceptance run. They do not establish AI accuracy, real-world performance, or physical robot readiness. Check the linked quality dashboard and workflow records for the latest run before relying on a status.</p>
       <div class="grid">
         <article class="card">
           <h3>What is checked</h3>
@@ -260,6 +260,12 @@
         <article class="card"><div class="num">02 / AUTOMATED CHECKS</div><h3>Make failures visible</h3><p>Use repeatable Python checks and structured test reports to record failures, environment details, and evidence. Passing software tests does not establish field performance or robot safety.</p><span class="status">Incremental implementation</span></article>
         <article class="card"><div class="num">03 / SAFE TASK FLOW</div><h3>Separate proposals from actions</h3><p>Keep task-planning interfaces separate from physical actuation. Simulation and human review come before any hardware integration; no physical capability is implied.</p><span class="status">Simulation-first roadmap</span></article>
       </div>
+      <article class="card" style="margin-top:18px">
+        <div class="num">04 / RESEARCH ROADMAP</div>
+        <h3>Agentic AI, VLM and VLA — staged evaluation</h3>
+        <p>Explore agentic task workflows, vision-language models (VLMs), and mock vision-language-action (VLA) interfaces only after the shared Python checks and reporting foundations are stable. First review model licences, download size, RAM/VRAM requirements, and total cost; then test in simulation with human approval. No model download, paid API, or physical robot control is implied by this roadmap.</p>
+        <span class="status">Planned evaluation — not yet validated</span>
+      </article>
       <div class="actions"><a class="btn primary" href="reports/pui89-command-centre.md">View cross-project status ↗</a><a class="btn secondary" href="https://github.com/Pui89/Coconut-Harvest-AI/pull/123">Shared-core review: Coconut ↗</a><a class="btn secondary" href="https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/91">Flood ↗</a><a class="btn secondary" href="https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/66">Screening ↗</a></div>
     </section>
 
