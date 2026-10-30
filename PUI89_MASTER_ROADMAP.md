@@ -320,3 +320,13 @@ The new workflows use Python standard library only, no model downloads, no exter
 - Brier score, ECE, reliability diagrams and risk-coverage curves remain unavailable until independent labelled predictions exist.
 - Synthetic scenarios do not establish AI accuracy, real sensor robustness, simulator realism, physical safety or field performance.
 - Next: verify corrected CI, add explicit evidence provenance and sequence timestamps, then implement one narrow adapter per project with project-specific tests.
+
+
+## Level 6 — shared agent message and evidence provenance contract (31 October 2026)
+
+- Added a common agent-message contract and evidence provenance validator in `tools/pui89_agent_contract.py`.
+- Added timezone-aware evidence timestamps, source identifiers, evidence kind/modality, lineage, optional SHA-256 source digest, claim-to-evidence references, and explicit uncalibrated-confidence handling.
+- Added a disagreement detector that flags different values for the same claim key and leaves resolution empty; it does not vote or manufacture consensus.
+- Added six standard-library regression tests and a read-only GitHub Actions workflow.
+- Project adapters and live multi-agent execution are not implemented. Tests validate contract behavior only, not agent reasoning, source truth, sensor calibration, AI performance or physical safety.
+- The corrected long-horizon evaluation run [41115502053](https://github.com/Pui89/Pui89.github.io/actions/runs/41115502053) completed successfully.
