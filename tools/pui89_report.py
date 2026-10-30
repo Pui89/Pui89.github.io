@@ -9,6 +9,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
 
 PROJECT_IDS = {
     "coconut-harvest-ai",
@@ -49,6 +50,11 @@ def validate_report(report: Any) -> list[str]:
             errors.append("project.id is not a supported PUI89 project id")
         if not isinstance(project.get("name"), str) or not project["name"].strip():
             errors.append("project.name must be a non-empty string")
+        repository = project.get("repository")
+        if repository is not None:
+            parsed = urlparse(repository) if isinstance(repository, str) else None
+            if not parsed or parsed.scheme not in {"https", "http"} or not parsed.netloc:
+                errors.append("project.repository must be an absolute HTTP(S) URI")
 
     run = report.get("run")
     if not isinstance(run, dict):
@@ -58,12 +64,21 @@ def validate_report(report: Any) -> list[str]:
             errors.append("run.kind is invalid")
         if not isinstance(run.get("started_at"), str) or not run["started_at"].strip():
             errors.append("run.started_at must be a non-empty timestamp string")
+        else:
+            try:
+                datetime.fromisoformat(run["started_at"].replace("Z", "+00:00"))
+            except ValueError:
+                errors.append("run.started_at must be an ISO 8601 date-time")
         commit = run.get("commit")
         if not isinstance(commit, str) or not re.fullmatch(r"[0-9a-fA-F]{7,40}", commit):
             errors.append("run.commit must be a 7-40 character hexadecimal commit")
         for key in ("finished_at", "workflow_url"):
             if key in run and run[key] is not None and not isinstance(run[key], str):
                 errors.append(f"run.{key} must be a string or null")
+        if run.get("workflow_url") is not None:
+            parsed = urlparse(run["workflow_url"])
+            if parsed.scheme not in {"https", "http"} or not parsed.netloc:
+                errors.append("run.workflow_url must be an absolute HTTP(S) URI")
 
     if report.get("status") not in STATUSES:
         errors.append("status is invalid")
@@ -78,6 +93,18 @@ def validate_report(report: Any) -> list[str]:
         total = summary.get("tests_total")
         if total is not None and (not isinstance(total, int) or isinstance(total, bool) or total < 0):
             errors.append("summary.tests_total must be a non-negative integer or null")
+        elif total is not None and all(
+            isinstance(summary.get(key), int) and not isinstance(summary.get(key), bool)
+            and summary[key] >= 0 for key in ("passed", "failed", "skipped")
+        ):
+            if summary["passed"] + summary["failed"] + summary["skipped"] != total:
+                errors.append("summary.tests_total must equal passed + failed + skipped")
+        if report.get("status") == "PASS" and isinstance(summary.get("failed"), int) and (
+            summary.get("failed", 0) > 0 or summary.get("blocked", 0) > 0
+        ):
+            errors.append("PASS status cannot contain failed or blocked checks")
+        if report.get("status") == "FAIL" and summary.get("failed") == 0:
+            errors.append("FAIL status requires at least one failed test")
 
     if not isinstance(report.get("failures"), list):
         errors.append("failures must be an array")
