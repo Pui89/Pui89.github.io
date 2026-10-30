@@ -56,6 +56,26 @@ class Pui89ReportContractTests(unittest.TestCase):
         report["summary"]["failed"] = -1
         self.assertTrue(any("summary.failed" in e for e in validate_report(report)))
 
+    def test_rejects_inconsistent_test_totals(self):
+        report = valid_report()
+        report["summary"]["tests_total"] = 4
+        self.assertTrue(any("tests_total must equal" in e for e in validate_report(report)))
+
+    def test_rejects_pass_status_with_blocked_checks(self):
+        report = valid_report()
+        report["summary"]["blocked"] = 1
+        self.assertTrue(any("PASS status cannot" in e for e in validate_report(report)))
+
+    def test_rejects_invalid_repository_uri(self):
+        report = valid_report()
+        report["project"]["repository"] = "Pui89/example"
+        self.assertTrue(any("project.repository" in e for e in validate_report(report)))
+
+    def test_rejects_invalid_timestamp(self):
+        report = valid_report()
+        report["run"]["started_at"] = "not-a-date"
+        self.assertTrue(any("ISO 8601" in e for e in validate_report(report)))
+
     def test_rejects_failure_without_reason(self):
         report = valid_report()
         report["failures"] = [{
