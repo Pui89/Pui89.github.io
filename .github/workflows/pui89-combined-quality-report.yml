@@ -163,9 +163,9 @@ jobs:
                   "--project-id", project_ids[root.name],
                   "--project-name", name,
                   "--repository", {
-                      "coconut-harvest": "Pui89/Coconut-Harvest-AI",
-                      "extreme-flood-rescue": "Pui89/Extreme-Flood-Rescue-AI",
-                      "narcotics-screening": "Pui89/Multimodal-Narcotics-Screening-AI",
+                      "coconut-harvest": "https://github.com/Pui89/Coconut-Harvest-AI",
+                      "extreme-flood-rescue": "https://github.com/Pui89/Extreme-Flood-Rescue-AI",
+                      "narcotics-screening": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI",
                   }[root.name],
                   "--kind", "unit_test",
                   "--status", report_status,
