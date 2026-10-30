@@ -202,3 +202,10 @@ The central repository now includes a deterministic [adaptive orchestrator](http
 The policy validates referenced evidence records and fails closed on stop conditions, invalid provenance, safety holds, human-review requests, and missing/stale evidence. Conflicting agent claims trigger specialist verification without voting or averaging. All outcomes are simulation-only; physical actuation is explicitly disabled.
 
 **Verification status:** source, test, workflow and protocol files were fetched from the repository after commit. The latest orchestrator CI run has not yet been independently confirmed. No live multi-agent execution or project adapter is claimed.
+
+
+## First project adapter — Coconut Harvest AI (31 October 2026)
+
+The Coconut repository now contains a project adapter that converts caller-supplied maturity labels into the shared PUI89 evidence/message contract and passes them through a vendored snapshot of the policy orchestrator. Six regression tests and a dedicated workflow were added. The adapter is not a detector and does not infer maturity from images or authorize harvesting.
+
+**Verification status:** repository files were fetched after commit; the dedicated Actions run has not yet been confirmed. The central contract/orchestrator and Coconut vendored copies require synchronization when either changes.
