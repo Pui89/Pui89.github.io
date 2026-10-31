@@ -1,0 +1,28 @@
+name: PUI89 Sensor Evidence Assessment
+
+on:
+  push:
+    paths:
+      - "tools/pui89_sensor_fusion.py"
+      - "tests/test_pui89_sensor_fusion.py"
+      - ".github/workflows/pui89-sensor-fusion.yml"
+  pull_request:
+    paths:
+      - "tools/pui89_sensor_fusion.py"
+      - "tests/test_pui89_sensor_fusion.py"
+      - ".github/workflows/pui89-sensor-fusion.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  standard-library-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run sensor evidence tests
+        run: python -m unittest discover -s tests -p "test_pui89_sensor_fusion.py" -v
