@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-31T18:52:40.387815+00:00",
+  "generated_at_utc": "2026-10-31T21:45:07.676262+00:00",
   "mode": "read-only public GitHub status summary",
   "projects": [
     {
@@ -9,47 +9,63 @@
       "focus": "Priority 1: dataset provenance, reviewed labels, leakage-safe evaluation.",
       "status": "CHECKS_AVAILABLE",
       "default_branch": "main",
-      "latest_commit": "bfd75709dc14",
-      "latest_commit_url": "https://github.com/Pui89/Coconut-Harvest-AI/commit/bfd75709dc149bd0d0fa1ff326686345a53276c0",
+      "latest_commit": "66cb218b679e",
+      "latest_commit_url": "https://github.com/Pui89/Coconut-Harvest-AI/commit/66cb218b679e10618d4ec43f117c4a791210f69a",
       "latest_workflows": [
-        {
-          "name": "pages build and deployment",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:30:16Z",
-          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41229261929",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Pitfall Detector Checks",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:24:34Z",
-          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41229261615",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Automated Verification",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:24:39Z",
-          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41229261640",
-          "branch": "main"
-        },
         {
           "name": "PUI89 Shared Interface Smoke",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-10-31T18:24:50Z",
-          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41229261606",
+          "updated_at": "2026-10-31T20:58:22Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41241337656",
           "branch": "main"
         },
         {
           "name": "PUI89 Free Local Checks",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-10-31T18:24:34Z",
-          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41229257531",
+          "updated_at": "2026-10-31T20:58:09Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41241337660",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Automated Verification",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:58:10Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41241337764",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Pitfall Detector Checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:58:07Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41241337622",
+          "branch": "main"
+        },
+        {
+          "name": "Coconut Lightweight Core Tests",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:58:38Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41241337730",
+          "branch": "main"
+        },
+        {
+          "name": "security",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:59:30Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41241337679",
+          "branch": "main"
+        },
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:58:41Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41241337102",
           "branch": "main"
         },
         {
@@ -77,14 +93,6 @@
           "branch": "main"
         },
         {
-          "name": "security",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:01:56Z",
-          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41227283939",
-          "branch": "main"
-        },
-        {
           "name": "Coconut PUI89 Adaptive Policy and Mock Model Adapter Checks",
           "status": "completed",
           "conclusion": "success",
@@ -101,7 +109,7 @@
           "branch": "main"
         }
       ],
-      "non_default_branch_run_count": 40,
+      "non_default_branch_run_count": 32,
       "key_workflows": [
         {
           "name": "Free cloud verification",
@@ -169,9 +177,89 @@
       "focus": "Simulation-first: scenario coverage, navigation and fail-safe evidence.",
       "status": "CHECKS_AVAILABLE",
       "default_branch": "main",
-      "latest_commit": "d4a6ba989941",
-      "latest_commit_url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/commit/d4a6ba989941283af45a7af20a5b36107b304bab",
+      "latest_commit": "07657be4a4fa",
+      "latest_commit_url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/commit/07657be4a4fab211d8bb6819eb505b03922e4fec",
       "latest_workflows": [
+        {
+          "name": "PUI89 Automated Verification",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:56:29Z",
+          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41241212664",
+          "branch": "main"
+        },
+        {
+          "name": "Flood Rescue AI regression checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:56:30Z",
+          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41241212718",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Free Local Checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:56:28Z",
+          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41241212694",
+          "branch": "main"
+        },
+        {
+          "name": "Free helper review (Ruff)",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:56:26Z",
+          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41241212654",
+          "branch": "main"
+        },
+        {
+          "name": "Free cloud-side verification",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:56:26Z",
+          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41241212604",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Pitfall Detector Checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:56:27Z",
+          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41241212648",
+          "branch": "main"
+        },
+        {
+          "name": "Security checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:57:39Z",
+          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41241212728",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Shared Interface Smoke",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:57:03Z",
+          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41241212703",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Fast Preflight",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:56:58Z",
+          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41241212666",
+          "branch": "main"
+        },
+        {
+          "name": "Python tests",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:58:28Z",
+          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41241212662",
+          "branch": "main"
+        },
         {
           "name": "github_actions in / for actions/setup-python - Update #1668297857",
           "status": "completed",
@@ -189,91 +277,11 @@
           "branch": "main"
         },
         {
-          "name": "PUI89 Automated Verification",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:01:21Z",
-          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41227320474",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Free Local Checks",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:01:20Z",
-          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41227320558",
-          "branch": "main"
-        },
-        {
           "name": "Flood Rescue AI Simulation Evaluation",
           "status": "completed",
           "conclusion": "success",
           "updated_at": "2026-10-31T18:01:22Z",
           "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41227320457",
-          "branch": "main"
-        },
-        {
-          "name": "Flood Rescue AI regression checks",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:01:25Z",
-          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41227320441",
-          "branch": "main"
-        },
-        {
-          "name": "Free cloud-side verification",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:01:18Z",
-          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41227320489",
-          "branch": "main"
-        },
-        {
-          "name": "Free helper review (Ruff)",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:01:20Z",
-          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41227320448",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Pitfall Detector Checks",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:01:18Z",
-          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41227320523",
-          "branch": "main"
-        },
-        {
-          "name": "Security checks",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:02:11Z",
-          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41227320443",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Shared Interface Smoke",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:01:56Z",
-          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41227320492",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Fast Preflight",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:02:09Z",
-          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41227320437",
-          "branch": "main"
-        },
-        {
-          "name": "Python tests",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:03:24Z",
-          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41227320495",
           "branch": "main"
         },
         {
@@ -283,24 +291,16 @@
           "updated_at": "2026-10-31T17:18:31Z",
           "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41223819245",
           "branch": "main"
-        },
-        {
-          "name": "PUI89 Health Gate Regression",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-30T18:16:56Z",
-          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41105377583",
-          "branch": "main"
         }
       ],
-      "non_default_branch_run_count": 50,
+      "non_default_branch_run_count": 39,
       "key_workflows": [
         {
           "name": "Free cloud verification",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-10-31T18:01:18Z",
-          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41227320489",
+          "updated_at": "2026-10-31T20:56:26Z",
+          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41241212604",
           "branch": "main"
         },
         {
@@ -361,9 +361,97 @@
       "focus": "Data provenance, uncertainty, modality failures and human review.",
       "status": "CHECKS_AVAILABLE",
       "default_branch": "main",
-      "latest_commit": "3236929ac09a",
-      "latest_commit_url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/commit/3236929ac09a5881575f8cb94bb4af4d7968ba26",
+      "latest_commit": "7caa06a3b83f",
+      "latest_commit_url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/commit/7caa06a3b83fd83d43d213e00c6c4bb36ba227f8",
       "latest_workflows": [
+        {
+          "name": "Security Checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:58:03Z",
+          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41241242485",
+          "branch": "main"
+        },
+        {
+          "name": "Free cloud-side verification",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:56:54Z",
+          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41241242522",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Free Local Checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:56:55Z",
+          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41241242525",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Automated Verification",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:56:51Z",
+          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41241242511",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Pitfall Detector Checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:56:51Z",
+          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41241242461",
+          "branch": "main"
+        },
+        {
+          "name": "Multimodal Screening AI regression checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:56:53Z",
+          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41241242433",
+          "branch": "main"
+        },
+        {
+          "name": "Free helper review (Ruff)",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:56:52Z",
+          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41241242471",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Shared Interface Smoke",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:57:02Z",
+          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41241242480",
+          "branch": "main"
+        },
+        {
+          "name": "Python tests",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:57:08Z",
+          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41241242543",
+          "branch": "main"
+        },
+        {
+          "name": "Free local-first app regression checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:57:07Z",
+          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41241242512",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Fast Preflight",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-10-31T20:57:06Z",
+          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41241242484",
+          "branch": "main"
+        },
         {
           "name": "github_actions in / for actions/setup-python - Update #1668299703",
           "status": "completed",
@@ -389,99 +477,11 @@
           "branch": "main"
         },
         {
-          "name": "Security Checks",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:03:09Z",
-          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41227358998",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Automated Verification",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:01:47Z",
-          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41227358879",
-          "branch": "main"
-        },
-        {
           "name": "Multimodal Narcotics Screening AI Simulation Evaluation",
           "status": "completed",
           "conclusion": "success",
           "updated_at": "2026-10-31T18:01:48Z",
           "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41227358866",
-          "branch": "main"
-        },
-        {
-          "name": "Free cloud-side verification",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:01:46Z",
-          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41227358868",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Free Local Checks",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:01:51Z",
-          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41227358920",
-          "branch": "main"
-        },
-        {
-          "name": "Free helper review (Ruff)",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:01:51Z",
-          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41227358935",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Pitfall Detector Checks",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:01:49Z",
-          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41227358917",
-          "branch": "main"
-        },
-        {
-          "name": "Python tests",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:01:59Z",
-          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41227358870",
-          "branch": "main"
-        },
-        {
-          "name": "Free local-first app regression checks",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:02:10Z",
-          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41227358897",
-          "branch": "main"
-        },
-        {
-          "name": "Multimodal Screening AI regression checks",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:02:10Z",
-          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41227358875",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Shared Interface Smoke",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:02:14Z",
-          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41227358909",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Fast Preflight",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-31T18:02:25Z",
-          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41227358886",
           "branch": "main"
         },
         {
@@ -491,24 +491,16 @@
           "updated_at": "2026-10-31T17:18:29Z",
           "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41223825331",
           "branch": "main"
-        },
-        {
-          "name": "PUI89 Health Gate Regression",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-10-30T18:16:58Z",
-          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41105396272",
-          "branch": "main"
         }
       ],
-      "non_default_branch_run_count": 50,
+      "non_default_branch_run_count": 38,
       "key_workflows": [
         {
           "name": "Free cloud verification",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-10-31T18:01:46Z",
-          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41227358868",
+          "updated_at": "2026-10-31T20:56:54Z",
+          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41241242522",
           "branch": "main"
         },
         {
