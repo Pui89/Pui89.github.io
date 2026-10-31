@@ -49,6 +49,7 @@ def collect(project: tuple[str, str, str]) -> dict:
         "latest_commit": None,
         "latest_commit_url": None,
         "latest_workflows": [],
+        "non_default_branch_run_count": 0,
         "key_workflows": [],
         "warnings": [],
     }
@@ -64,8 +65,16 @@ def collect(project: tuple[str, str, str]) -> dict:
             result["warnings"].append(f"Latest commit unavailable: {type(exc).__name__}")
         try:
             runs = get_json(f"/repos/{repo}/actions/runs?per_page=50")
+            all_runs = runs.get("workflow_runs", [])
+            # Keep the public command-centre headline tied to the repository default branch.
+            # Dependabot and feature-branch runs remain visible as a separate count, not mixed
+            # into the main-branch health summary.
+            default_branch_runs = [run for run in all_runs if run.get("head_branch") == branch]
+            result["non_default_branch_run_count"] = sum(
+                1 for run in all_runs if run.get("head_branch") != branch
+            )
             latest_by_name = {}
-            for run in runs.get("workflow_runs", []):
+            for run in default_branch_runs:
                 workflow_name = run.get("name") or run.get("path") or "Unnamed workflow"
                 if workflow_name not in latest_by_name:
                     latest_by_name[workflow_name] = {
@@ -74,8 +83,11 @@ def collect(project: tuple[str, str, str]) -> dict:
                         "conclusion": run.get("conclusion"),
                         "updated_at": run.get("updated_at"),
                         "url": run.get("html_url"),
+                        "branch": run.get("head_branch"),
                     }
             result["latest_workflows"] = list(latest_by_name.values())
+            if not default_branch_runs:
+                result["warnings"].append("No default-branch workflow runs found in the latest 50; branch health is unknown.")
             # Keep important safeguards visible even when routine CI runs are newer.
             key_terms = {
                 "Free cloud verification": ("free cloud verification", "free-cloud-verification"),
@@ -86,10 +98,9 @@ def collect(project: tuple[str, str, str]) -> dict:
                 "Simulation benchmark + report validator": ("simulation benchmark", "pui89-simulation-benchmark"),
                 "Autonomy / safety regression tests": ("autonomy", "safety regression"),
             }
-            all_runs = runs.get("workflow_runs", [])
             for label, terms in key_terms.items():
                 match = next(
-                    (item for item in all_runs
+                    (item for item in default_branch_runs
                      if any(term in (str(item.get("name", "")) + " " + str(item.get("path", ""))).lower()
                             for term in terms)),
                     None,
@@ -100,6 +111,7 @@ def collect(project: tuple[str, str, str]) -> dict:
                     "conclusion": (match or {}).get("conclusion"),
                     "updated_at": (match or {}).get("updated_at"),
                     "url": (match or {}).get("html_url"),
+                    "branch": (match or {}).get("head_branch"),
                 })
             if not result["latest_workflows"]:
                 result["warnings"].append("No workflow runs returned; this is not proof that checks failed.")
@@ -123,6 +135,7 @@ def main() -> int:
             "This report reads public repository metadata and recent workflow runs; it does not execute project tests.",
             "A missing workflow run is unknown, not a passing result or proof of failure.",
             "Only the most recent 50 repository workflow runs are scanned; a safeguard absent from that window is unknown.",
+            "Headline workflow and safeguard status is filtered to the repository default branch; other-branch runs are counted separately and do not prove default-branch health.",
             "A successful workflow does not validate real-world robot performance or dataset correctness.",
             "The Coconut dataset evidence audit runs only where its workflow is configured; not_seen_in_recent_runs for other projects means not observed, not a failure.",
             "GitHub API rate limits or temporary network errors can make status partial.",
@@ -148,7 +161,7 @@ def main() -> int:
         latest = project["latest_workflows"]
         if latest:
             workflow_text = "; ".join(
-                f'{w["name"]}: {w["conclusion"] or w["status"] or "unknown"}'
+                f'{w["name"]}: {w["conclusion"] or w["status"] or "unknown"} [{w.get("branch") or "branch unknown"}]'
                 for w in latest[:3]
             ).replace("|", "\\|")
         else:
@@ -165,17 +178,18 @@ def main() -> int:
         "",
         "## Key engineering safeguards",
         "",
-        "Selected safeguards are scanned across the latest 50 repository workflow runs, rather than only the newest 10. A status of not_seen_in_recent_runs means unknown, not failed or passed. The simulation check includes the report validator step only when that workflow run completes successfully. The Coconut dataset evidence audit is currently project-specific; other projects may show not_seen_in_recent_runs because that workflow is not configured there.",
+        "Selected safeguards are scanned across the latest 50 repository workflow runs, rather than only the newest 10, and are filtered to the repository default branch. A status of not_seen_in_recent_runs means unknown, not failed or passed. Feature/Dependabot runs are counted separately and never substituted for default-branch evidence. The simulation check includes the report validator step only when that workflow run completes successfully. The Coconut dataset evidence audit is currently project-specific; other projects may show not_seen_in_recent_runs because that workflow is not configured there.",
         "",
     ]
     for project in projects:
         lines.append("### " + project["name"])
-        lines += ["", "| Safeguard | Status | Last updated (UTC) | Run |", "|---|---|---|---|"]
+        lines += ["", f'Non-default-branch runs in the scanned window: {project.get("non_default_branch_run_count", 0)}', "", "| Safeguard | Status | Branch | Last updated (UTC) | Run |", "|---|---|---|---|---|"]
         for check in project.get("key_workflows", []):
             status = check.get("conclusion") or check.get("status") or "unknown"
             updated_at = check.get("updated_at") or "unknown"
             run_link = "[open](" + check["url"] + ")" if check.get("url") else "—"
-            lines.append("| " + check["name"] + " | " + status + " | " + updated_at + " | " + run_link + " |")
+            branch = check.get("branch") or "not seen on default branch"
+            lines.append("| " + check["name"] + " | " + status + " | " + branch + " | " + updated_at + " | " + run_link + " |")
         lines.append("")
     lines += ["## Warnings and limitations", ""]
     for project in projects:
