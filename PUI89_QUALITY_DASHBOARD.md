@@ -219,3 +219,14 @@ The Coconut repository now contains a project adapter that converts caller-suppl
 - [Free-first adoption standard](https://github.com/Pui89/Pui89.github.io/blob/main/PUI89_FREE_RESOURCE_STACK.md)
 
 The tool reports a point-in-time software/platform and system RAM/disk snapshot and checks whether selected optional packages are present. It is read-only: no network access, package installation, model download, paid service, GPU/VRAM test or inference. Unit tests and workflow status must be checked in Actions before marking this addition as CI-verified. Run locally for the user's own computer; hosted runner measurements do not describe the laptop.
+
+
+## Shared world-state prototype — added 31 October 2026
+
+- [World-state standard](https://github.com/Pui89/Pui89.github.io/blob/main/PUI89_WORLD_STATE_STANDARD.md)
+- [Python prototype](https://github.com/Pui89/Pui89.github.io/blob/main/tools/pui89_world_state.py)
+- [Observation JSON Schema](https://github.com/Pui89/Pui89.github.io/blob/main/schemas/pui89-world-state-observation.schema.json)
+- [Six focused unit tests](https://github.com/Pui89/Pui89.github.io/blob/main/tests/test_pui89_world_state.py)
+- [World-state Actions workflow](https://github.com/Pui89/Pui89.github.io/actions/workflows/pui89-world-state.yml)
+
+This is a deterministic record organiser, not a perception or sensor-fusion model. It preserves conflicts and stale inputs, and never authorises physical action. Project adapters and CI verification are not yet confirmed.
