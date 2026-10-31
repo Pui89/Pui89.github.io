@@ -26,6 +26,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Test cross-project evidence status contract
+        run: python -m unittest discover -s tests -p "test_pui89_command_centre_evidence.py" -v
       - name: Generate read-only project status report
         run: python tools/pui89_command_centre.py
       - name: Publish report with safe retry for concurrent commits
