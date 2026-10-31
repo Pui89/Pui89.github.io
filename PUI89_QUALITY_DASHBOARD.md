@@ -209,3 +209,13 @@ The policy validates referenced evidence records and fails closed on stop condit
 The Coconut repository now contains a project adapter that converts caller-supplied maturity labels into the shared PUI89 evidence/message contract and passes them through a vendored snapshot of the policy orchestrator. Six regression tests and a dedicated workflow were added. The adapter is not a detector and does not infer maturity from images or authorize harvesting.
 
 **Verification status:** repository files were fetched after commit; the dedicated Actions run has not yet been confirmed. The central contract/orchestrator and Coconut vendored copies require synchronization when either changes.
+
+
+## Free-first resource preflight — added 31 October 2026
+
+- [Read-only resource preflight tool](https://github.com/Pui89/Pui89.github.io/blob/main/tools/pui89_resource_preflight.py)
+- [Preflight unit tests](https://github.com/Pui89/Pui89.github.io/blob/main/tests/test_pui89_resource_preflight.py)
+- [Resource preflight workflow](https://github.com/Pui89/Pui89.github.io/actions/workflows/pui89-resource-preflight.yml)
+- [Free-first adoption standard](https://github.com/Pui89/Pui89.github.io/blob/main/PUI89_FREE_RESOURCE_STACK.md)
+
+The tool reports a point-in-time software/platform and system RAM/disk snapshot and checks whether selected optional packages are present. It is read-only: no network access, package installation, model download, paid service, GPU/VRAM test or inference. Unit tests and workflow status must be checked in Actions before marking this addition as CI-verified. Run locally for the user's own computer; hosted runner measurements do not describe the laptop.
