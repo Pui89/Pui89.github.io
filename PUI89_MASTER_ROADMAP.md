@@ -1,6 +1,6 @@
 # PUI89 Master Roadmap — Status, Work in Progress, Fixes, Next Steps and Future Upgrades
 
-**Updated:** 31 October 2026  
+**Updated:** 1 November 2026  
 **Purpose:** one transparent source of truth for what is complete, what is being checked, what remains unfinished, and the next development level across PUI89.
 
 > **Status note:** "In progress" means a defined next task with an evidence gate; it does not mean a background process is continuously running. Only committed files and completed, inspected workflow runs count as evidence.
@@ -435,7 +435,7 @@ The utility orders events by sequence, flags duplicate IDs, invalid/mixed-missio
 
 ## Hugging Face integration foundation — added 31 October 2026
 
-A review-gated Hugging Face discovery layer has been added on branch `feat/huggingface-integration-layer-20261031` and proposed in [PR #42](https://github.com/Pui89/Pui89.github.io/pull/42).
+A review-gated Hugging Face discovery layer was merged into `main` through [PR #42](https://github.com/Pui89/Pui89.github.io/pull/42).
 
 ### Added artifacts
 - `config/pui89-huggingface-registry.json`: initial candidates for SmolVLM, SmolVLA and LeRobot, with intended project uses and explicit pending review fields.
@@ -445,10 +445,9 @@ A review-gated Hugging Face discovery layer has been added on branch `feat/huggi
 - `.github/workflows/pui89-huggingface-registry.yml`: read-only CI validation workflow.
 
 ### Current status
-- **Implemented on feature branch:** registry, validator, tests, documentation and CI workflow.
-- **Not yet verified:** CI run is queued; wait for completed result before claiming tests pass.
+- **Merged to main and verified:** registry, validator, tests, documentation and read-only CI workflow. Main-branch run [41222083645](https://github.com/Pui89/Pui89.github.io/actions/runs/41222083645) completed successfully.
 - **Not approved:** every candidate remains `NOT_APPROVED`; licence and resource reviews are pending. Licence values, model sizes and RAM/VRAM estimates are intentionally blank until verified against the exact upstream revision and measured.
-- **Not integrated:** no model weights downloaded, no inference adapter activated, no package installed, no model benchmark performed.
+- **Model execution remains disabled:** no model weights downloaded, no local model inference activated, no package installed and no model benchmark performed. A separate mock-only adapter contract has since been merged; it does not load or execute a model.
 
 ### Adoption gates
 1. Inspect exact model card, licence text, gated-access terms, dependencies and revision.
@@ -459,3 +458,30 @@ A review-gated Hugging Face discovery layer has been added on branch `feat/huggi
 6. Keep Flood and Coconut actions as simulated proposals; no direct physical actuation.
 
 **Cost and safety boundary:** no paid inference, cloud GPU, automatic download, package installation, external data upload or hardware actuation. A valid registry is a governance/software check, not evidence of model capability or project performance.
+
+
+## Level 10 — Hugging Face governance and mock model-adapter boundary (1 November 2026)
+
+### Hugging Face foundation — merged and verified
+- The review-gated registry, standard-library validator, regression tests, integration guide and read-only workflow were merged to main in PR [#42](https://github.com/Pui89/Pui89.github.io/pull/42).
+- Main-branch workflow [41222083645](https://github.com/Pui89/Pui89.github.io/actions/runs/41222083645) completed successfully.
+- SmolVLM, SmolVLA and LeRobot remain discovery candidates only. Exact licence, dependency, model revision and local resource reviews remain pending. No weights are downloaded or approved.
+
+### Mock model adapter — merged
+- Added tools/pui89_model_adapter.py as a standard-library-only boundary into the existing evidence validator and adaptive policy simulator.
+- Added tests/test_pui89_model_adapter.py with eight regression tests for valid mock envelopes, missing provenance, non-synthetic evidence, stale/future evidence, unknown project IDs, hardware-command rejection and invalid timestamps.
+- Added PUI89_MODEL_ADAPTER_STANDARD.md and a dedicated read-only workflow.
+- The adapter accepts synthetic fixture observations only, labels execution MOCK, records inference_performed=false, emits no proposed actions and keeps physical_actuation_permitted=false.
+- The adapter does not call Hugging Face, import model libraries, load weights, access a network or install packages.
+
+### Verification evidence
+- PR [#44](https://github.com/Pui89/Pui89.github.io/pull/44) was merged to main at commit 6240bc76e15668fd8e96fdc6a5c1d471faa9c53e.
+- Dedicated mock adapter workflow [41222960814](https://github.com/Pui89/Pui89.github.io/actions/runs/41222960814) completed successfully; its mock-contract job passed.
+- Website verification on the PR branch [41222960711](https://github.com/Pui89/Pui89.github.io/actions/runs/41222960711) completed successfully.
+- Main-branch website verification and Pages deployment were triggered by the merge; their final run conclusions should be checked separately before claiming deployment completion.
+
+### Remaining boundaries and next step
+- This proves a software interface and deterministic policy routing only; it does not prove VLM/VLA capability, model accuracy, calibrated confidence, sensor truth or project performance.
+- Next: create narrow project-specific adapter mappings for Coconut, Flood Rescue and Screening, with separate domain-specific tests and preserved human-review / simulation-only boundaries.
+- Only after those interfaces pass should PUI89 consider an optional local model-runtime experiment, preceded by exact licence, dependency, model-size and measured hardware-fit review.
+- No paid service, cloud GPU, automatic model download, external data upload or physical robot command is part of this milestone.
