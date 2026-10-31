@@ -408,3 +408,15 @@ Added a read-only, standard-library resource preflight and adoption standard:
 6. Add project adapter status to the dashboard only after those runs pass.
 
 **Boundary:** successful feature-branch checks are not merged-main verification. Adapter tests are software-contract evidence, not model accuracy, flood-physics evidence, chemical identification, simulator validation or physical robot readiness. No paid service, model download or hardware action is needed for this milestone.
+
+
+## Shared world-state contract — added 31 October 2026
+
+A dependency-free world-state observation prototype, JSON Schema, six focused unit tests and a dedicated GitHub Actions workflow have been added:
+- `tools/pui89_world_state.py`
+- `tests/test_pui89_world_state.py`
+- `schemas/pui89-world-state-observation.schema.json`
+- `PUI89_WORLD_STATE_STANDARD.md`
+- `.github/workflows/pui89-world-state.yml`
+
+The prototype groups timestamped observations by entity and attribute, preserves conflicting values, flags stale/future-dated inputs, and records invalid observations with reasons. Conflicts request human review; stale data produces a safe-hold recommendation. It does not perform perception, resolve disagreements, calibrate confidence or permit physical actuation. Project-specific adapters and a successful Actions run remain pending.
