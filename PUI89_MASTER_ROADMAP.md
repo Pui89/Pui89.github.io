@@ -371,3 +371,14 @@ The new workflows use Python standard library only, no model downloads, no exter
 - The contract and orchestrator are vendored snapshots in the Coconut repository; they must be synchronized when the central implementation changes.
 - Repository files and README documentation have been fetched after commit. The adapter workflow's completed result has not yet been independently confirmed.
 - Next: verify the Coconut adapter workflow, then implement separate adapters for Extreme Flood Rescue and Multimodal Narcotics Screening. Do not call these live agents or validated domain systems.
+
+
+## New free-first resource gate — 31 October 2026
+
+Added a read-only, standard-library resource preflight and adoption standard:
+- `tools/pui89_resource_preflight.py` reports Python/platform, CPU count, available system RAM, free disk and presence of selected optional packages.
+- `tests/test_pui89_resource_preflight.py` covers resource classifications, unknown values and read-only report flags.
+- `.github/workflows/pui89-resource-preflight.yml` runs the focused tests and uploads a short-lived runner report.
+- `PUI89_FREE_RESOURCE_STACK.md` defines staged adoption gates for local vision tools, ONNX/OpenVINO, VLMs, ROS 2/Gazebo and mock VLA workflows.
+
+**Boundary:** the tool does not use the network, install packages, download models, invoke paid services, test GPU/VRAM or run inference. A hosted-runner report is not a measurement of the user's laptop. The new workflow's result remains pending until an actual Actions run is inspected.
