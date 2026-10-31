@@ -382,3 +382,29 @@ Added a read-only, standard-library resource preflight and adoption standard:
 - `PUI89_FREE_RESOURCE_STACK.md` defines staged adoption gates for local vision tools, ONNX/OpenVINO, VLMs, ROS 2/Gazebo and mock VLA workflows.
 
 **Boundary:** the tool does not use the network, install packages, download models, invoke paid services, test GPU/VRAM or run inference. A hosted-runner report is not a measurement of the user's laptop. The new workflow's result remains pending until an actual Actions run is inspected.
+
+## Level 9 — latest automated checks and adapter-parity queue (31 October 2026)
+
+### Newly inspected GitHub Actions evidence
+
+- **Coconut Harvest AI — main branch:** [PUI89 Automated Verification run 41205734749](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41205734749) completed successfully at commit `1929c44d790418cc9c3b7220a0ed624a75a3fa7a`. The same main-branch commit also has successful [Free Local Checks](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41205734813) and [Pitfall Detector Checks](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41205734752).
+- **Extreme Flood Rescue AI — feature branch:** [Python tests run 41163791357](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41163791357), [Shared Interface Smoke run 41163791338](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41163791338), [Automated Verification run 41163791367](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41163791367), and [Pitfall Detector Checks run 41163791443](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41163791443) completed successfully on branch `fix/world-state-update-input-types-20261031`, commit `78a7007b3026cb0789cf5e1ddaaa9ce7d0696f7a`. These are feature-branch results, not proof that the same commit is on main.
+- **Multimodal Narcotics Screening AI — feature branch:** [Python tests run 41163794461](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41163794461), [Shared Interface Smoke run 41163794492](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41163794492), [Automated Verification run 41163794524](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41163794524), and [Screening regression checks run 41163794423](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41163794423) completed successfully on branch `fix/world-state-update-input-types-20261031`, commit `2db304b640766e97fe4306bc778e938c0471e7c1`. These are feature-branch results, not proof that the same commit is on main.
+
+### What is actually integrated today
+
+- **Coconut:** a project adapter exists and maps caller-supplied four-class maturity observations into the shared evidence/message contract and policy simulator. It does not run a detector or infer maturity from an image.
+- **Flood Rescue:** dependency-free vision-finding/action-plan contracts and a project-specific shared-core integration specification exist. A matching project adapter has not yet been verified.
+- **Narcotics Screening:** a model-optional, standard-library workflow, modality safety tests, evidence provenance and human-review gates exist. A matching project adapter to the central agent-message/orchestrator contract has not yet been verified.
+- **Central platform:** the adaptive orchestrator, evidence/message contract, sequence evaluator and failure-report standard exist. Vendored project snapshots must be kept synchronised with the central protocol.
+
+### Next engineering task — adapter parity, not another model
+
+1. Inspect and merge the Flood and Screening feature-branch changes only after reviewing their diffs and confirming the intended base commit.
+2. Implement a narrow Flood adapter that maps time-stamped hazard, water, localisation and rescue-observation records into shared evidence messages; unknown or stale safety data must route to SAFE_HOLD/STOP or human review.
+3. Implement a narrow Screening adapter that preserves modality identity, calibration/provenance, disagreement and abstention; it must never emit a substance identity or enforcement action as a verified fact.
+4. Add unit tests for valid, missing, stale, malformed and conflicting inputs, plus policy routing. Use synthetic fixtures only and label them clearly.
+5. Add dedicated read-only CI workflows and inspect their completed results.
+6. Add project adapter status to the dashboard only after those runs pass.
+
+**Boundary:** successful feature-branch checks are not merged-main verification. Adapter tests are software-contract evidence, not model accuracy, flood-physics evidence, chemical identification, simulator validation or physical robot readiness. No paid service, model download or hardware action is needed for this milestone.
