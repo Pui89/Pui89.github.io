@@ -1,0 +1,38 @@
+name: PUI89 Hugging Face Registry — Offline Checks
+
+on:
+  push:
+    paths:
+      - "config/pui89-huggingface-registry.json"
+      - "tools/pui89_hf_registry.py"
+      - "tests/test_pui89_hf_registry.py"
+      - ".github/workflows/pui89-huggingface-registry.yml"
+  pull_request:
+    paths:
+      - "config/pui89-huggingface-registry.json"
+      - "tools/pui89_hf_registry.py"
+      - "tests/test_pui89_hf_registry.py"
+      - ".github/workflows/pui89-huggingface-registry.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pui89-hf-registry-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate local candidate registry
+        run: python tools/pui89_hf_registry.py
+      - name: Run standard-library regression tests
+        env:
+          PYTHONPATH: tools
+        run: python -m unittest discover -s tests -p "test_pui89_hf_registry.py" -v

@@ -1,0 +1,79 @@
+{
+  "registry_version": "1.0",
+  "policy": {
+    "network_access": false,
+    "automatic_downloads": false,
+    "package_installation": false,
+    "paid_inference": false,
+    "hardware_actuation": false,
+    "default_approval": "NOT_APPROVED"
+  },
+  "resources": [
+    {
+      "id": "lerobot/smolvla_base",
+      "kind": "vision-language-action-model",
+      "provider": "Hugging Face",
+      "source_url": "https://huggingface.co/lerobot/smolvla_base",
+      "intended_projects": ["Coconut-Harvest-AI", "Extreme-Flood-Rescue-AI"],
+      "intended_use": "Research candidate for offline, simulated action proposals behind the PUI89 safety gate.",
+      "license_review": {
+        "status": "RECHECK_REQUIRED",
+        "license": null,
+        "reviewed_on": null,
+        "review_evidence_url": null
+      },
+      "resource_review": {
+        "status": "NOT_TESTED",
+        "model_size_bytes": null,
+        "ram_gib_required": null,
+        "vram_gib_required": null
+      },
+      "approval": "NOT_APPROVED",
+      "download": "DISABLED"
+    },
+    {
+      "id": "HuggingFaceTB/SmolVLM-256M-Instruct",
+      "kind": "vision-language-model",
+      "provider": "Hugging Face",
+      "source_url": "https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct",
+      "intended_projects": ["Coconut-Harvest-AI", "Extreme-Flood-Rescue-AI", "Multimodal-Narcotics-Screening-AI"],
+      "intended_use": "Candidate for image description and evidence summarisation with explicit uncertainty and human review.",
+      "license_review": {
+        "status": "RECHECK_REQUIRED",
+        "license": null,
+        "reviewed_on": null,
+        "review_evidence_url": null
+      },
+      "resource_review": {
+        "status": "NOT_TESTED",
+        "model_size_bytes": null,
+        "ram_gib_required": null,
+        "vram_gib_required": null
+      },
+      "approval": "NOT_APPROVED",
+      "download": "DISABLED"
+    },
+    {
+      "id": "huggingface/lerobot",
+      "kind": "robotics-framework",
+      "provider": "Hugging Face",
+      "source_url": "https://github.com/huggingface/lerobot",
+      "intended_projects": ["Coconut-Harvest-AI", "Extreme-Flood-Rescue-AI"],
+      "intended_use": "Reference framework for robotics data formats, simulation workflows and future policy evaluation.",
+      "license_review": {
+        "status": "RECHECK_REQUIRED",
+        "license": null,
+        "reviewed_on": null,
+        "review_evidence_url": null
+      },
+      "resource_review": {
+        "status": "NOT_TESTED",
+        "model_size_bytes": null,
+        "ram_gib_required": null,
+        "vram_gib_required": null
+      },
+      "approval": "NOT_APPROVED",
+      "download": "DISABLED"
+    }
+  ]
+}

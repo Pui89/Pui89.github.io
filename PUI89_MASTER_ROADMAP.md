@@ -431,3 +431,31 @@ Added a standard-library event validator and deterministic replay utility, nine 
 - `.github/workflows/pui89-mission-replay.yml`
 
 The utility orders events by sequence, flags duplicate IDs, invalid/mixed-mission events and sequence gaps, and reports faults, human-review requests and terminal states. It reconstructs supplied logs only; event signing, evidence verification, project event emitters and workflow success remain pending. It never issues commands or authorises actuation.
+
+
+## Hugging Face integration foundation — added 31 October 2026
+
+A review-gated Hugging Face discovery layer has been added on branch `feat/huggingface-integration-layer-20261031` and proposed in [PR #42](https://github.com/Pui89/Pui89.github.io/pull/42).
+
+### Added artifacts
+- `config/pui89-huggingface-registry.json`: initial candidates for SmolVLM, SmolVLA and LeRobot, with intended project uses and explicit pending review fields.
+- `tools/pui89_hf_registry.py`: standard-library-only local registry validator; no network access, package installation or downloads.
+- `tests/test_pui89_hf_registry.py`: regression tests for registry structure, duplicate IDs, HTTPS sources, safety policy and approval gates.
+- `PUI89_HUGGING_FACE_INTEGRATION.md`: integration architecture, project boundaries, official references and adoption policy.
+- `.github/workflows/pui89-huggingface-registry.yml`: read-only CI validation workflow.
+
+### Current status
+- **Implemented on feature branch:** registry, validator, tests, documentation and CI workflow.
+- **Not yet verified:** CI run is queued; wait for completed result before claiming tests pass.
+- **Not approved:** every candidate remains `NOT_APPROVED`; licence and resource reviews are pending. Licence values, model sizes and RAM/VRAM estimates are intentionally blank until verified against the exact upstream revision and measured.
+- **Not integrated:** no model weights downloaded, no inference adapter activated, no package installed, no model benchmark performed.
+
+### Adoption gates
+1. Inspect exact model card, licence text, gated-access terms, dependencies and revision.
+2. Measure local disk/RAM/VRAM needs without downloading by default; then obtain explicit approval before any optional local download.
+3. Build a model adapter that emits evidence/proposals only and passes through PUI89 provenance, uncertainty, world-state and safety policies.
+4. Evaluate in offline simulation and synthetic tests before using any lawful, rights-reviewed project dataset.
+5. Keep Screening outputs limited to human-reviewed observations; no chemical identity, guilt or enforcement conclusions from VLM output.
+6. Keep Flood and Coconut actions as simulated proposals; no direct physical actuation.
+
+**Cost and safety boundary:** no paid inference, cloud GPU, automatic download, package installation, external data upload or hardware actuation. A valid registry is a governance/software check, not evidence of model capability or project performance.
