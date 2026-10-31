@@ -1,4 +1,4 @@
-name: PUI89 Hugging Face Registry
+name: PUI89 Hugging Face Registry — Offline Checks
 
 on:
   push:
