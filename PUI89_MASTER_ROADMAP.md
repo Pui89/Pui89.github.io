@@ -485,3 +485,30 @@ A review-gated Hugging Face discovery layer was merged into `main` through [PR #
 - Next: create narrow project-specific adapter mappings for Coconut, Flood Rescue and Screening, with separate domain-specific tests and preserved human-review / simulation-only boundaries.
 - Only after those interfaces pass should PUI89 consider an optional local model-runtime experiment, preceded by exact licence, dependency, model-size and measured hardware-fit review.
 - No paid service, cloud GPU, automatic model download, external data upload or physical robot command is part of this milestone.
+
+
+## Level 11 — Project-specific mock model adapters (1 November 2026)
+
+### Merged into the three project main branches
+
+- **Coconut Harvest AI:** PR [#161](https://github.com/Pui89/Coconut-Harvest-AI/pull/161), merge commit \`6fc5924de6cd3285ad64aac241c5eb5c8381c26b\`. Added \`tools/pui89_coconut_model_adapter.py\`, shared project adapter validation, six domain regression tests and project documentation. Candidate maturity labels remain unverified observations for human review; no image inference or harvest action is performed.
+- **Extreme Flood Rescue AI:** PR [#125](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/125), merge commit \`c25b03391852da5656728907e8889fbec2ec82ea\`. Added \`tools/pui89_flood_model_adapter.py\`, six regression tests and project documentation. The 0–15 m value is only a bounded simulation scenario input, not demonstrated robot capability.
+- **Multimodal Narcotics Screening AI:** PR [#102](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/102), merge commit \`10c3ee093056281f77fb53c0bf0c26ad9373c93f\`. Added \`tools/pui89_screening_model_adapter.py\`, seven regression tests and project documentation. Chemical identity, guilt, suspect scoring and enforcement fields are rejected; outputs always require human review.
+
+### Adapter verification
+
+- Coconut dedicated adapter workflow passed: [run 41223699585](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41223699585).
+- Flood dedicated adapter workflow passed: [run 41223702436](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41223702436).
+- Screening dedicated adapter workflow passed: [run 41223718640](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41223718640).
+- Post-merge main-branch workflows were triggered; their final conclusions remain pending at this roadmap update.
+
+### Shared guarantees and limitations
+
+- All three adapters accept explicitly synthetic fixtures only, require \`synthetic://\` provenance, validate timezone-aware timestamps and lineage, and reject physical command fields.
+- Successful outputs are marked \`MOCK\`; \`inference_performed=false\`; no proposed actions are emitted; physical actuation remains disabled.
+- No model weights, third-party model packages, network calls, paid APIs, cloud GPUs, external data uploads or hardware commands were used.
+- This milestone verifies domain-specific software interfaces and regression behaviour only. It does not establish VLM/VLA inference, detection accuracy, calibration, real-world sensor validity, rescue capability, harvest readiness, chemical identification or field readiness.
+
+### Next engineering gate
+
+Run the merged main-branch workflows to completion, then add cross-project contract conformance tests against the website-level PUI89 model adapter. Only after those pass should any optional local inference runtime be considered, subject to explicit licence, dependency and measured hardware-resource review.
