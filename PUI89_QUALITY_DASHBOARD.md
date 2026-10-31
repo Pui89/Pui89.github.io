@@ -230,3 +230,13 @@ The tool reports a point-in-time software/platform and system RAM/disk snapshot 
 - [World-state Actions workflow](https://github.com/Pui89/Pui89.github.io/actions/workflows/pui89-world-state.yml)
 
 This is a deterministic record organiser, not a perception or sensor-fusion model. It preserves conflicts and stale inputs, and never authorises physical action. Project adapters and CI verification are not yet confirmed.
+
+
+## Mission Replay & Audit — prototype added 31 October 2026
+
+- [Audit and replay documentation](https://github.com/Pui89/Pui89.github.io/blob/main/PUI89_MISSION_REPLAY_AUDIT.md)
+- [Replay engine](https://github.com/Pui89/Pui89.github.io/blob/main/tools/pui89_mission_replay.py)
+- [Nine unit tests](https://github.com/Pui89/Pui89.github.io/blob/main/tests/test_pui89_mission_replay.py)
+- [GitHub Actions workflow](https://github.com/Pui89/Pui89.github.io/actions/workflows/pui89-mission-replay.yml)
+
+Status: code and workflow committed; CI result and integration into the three project runners are not yet confirmed. Logs are not cryptographically authenticated and replay is not ground truth.
