@@ -420,3 +420,14 @@ A dependency-free world-state observation prototype, JSON Schema, six focused un
 - `.github/workflows/pui89-world-state.yml`
 
 The prototype groups timestamped observations by entity and attribute, preserves conflicting values, flags stale/future-dated inputs, and records invalid observations with reasons. Conflicts request human review; stale data produces a safe-hold recommendation. It does not perform perception, resolve disagreements, calibrate confidence or permit physical actuation. Project-specific adapters and a successful Actions run remain pending.
+
+
+## Mission Replay & Audit prototype — added 31 October 2026
+
+Added a standard-library event validator and deterministic replay utility, nine unit tests, documentation and a dedicated Actions workflow:
+- `tools/pui89_mission_replay.py`
+- `tests/test_pui89_mission_replay.py`
+- `PUI89_MISSION_REPLAY_AUDIT.md`
+- `.github/workflows/pui89-mission-replay.yml`
+
+The utility orders events by sequence, flags duplicate IDs, invalid/mixed-mission events and sequence gaps, and reports faults, human-review requests and terminal states. It reconstructs supplied logs only; event signing, evidence verification, project event emitters and workflow success remain pending. It never issues commands or authorises actuation.
