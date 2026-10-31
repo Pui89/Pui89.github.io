@@ -1,0 +1,34 @@
+name: PUI89 read-only resource preflight
+
+on:
+  push:
+    paths:
+      - "tools/pui89_resource_preflight.py"
+      - "tests/test_pui89_resource_preflight.py"
+      - ".github/workflows/pui89-resource-preflight.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run resource preflight unit tests
+        env:
+          PYTHONPATH: tools
+        run: python -m unittest discover -s tests -p "test_pui89_resource_preflight.py" -v
+      - name: Generate runner resource report
+        run: python tools/pui89_resource_preflight.py --output pui89-resource-report.json
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: pui89-resource-preflight
+          path: pui89-resource-report.json
+          retention-days: 14
