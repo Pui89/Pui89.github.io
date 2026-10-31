@@ -12,6 +12,7 @@ import os
 import sys
 import urllib.error
 import urllib.request
+import urllib.parse
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -66,10 +67,13 @@ def collect(project: tuple[str, str, str]) -> dict:
         try:
             runs = get_json(f"/repos/{repo}/actions/runs?per_page=50")
             all_runs = runs.get("workflow_runs", [])
-            # Keep the public command-centre headline tied to the repository default branch.
-            # Dependabot and feature-branch runs remain visible as a separate count, not mixed
-            # into the main-branch health summary.
-            default_branch_runs = [run for run in all_runs if run.get("head_branch") == branch]
+            # Query the default branch directly: Dependabot/feature runs can otherwise
+            # occupy the 50-run window and hide the latest main-branch evidence.
+            encoded_branch = urllib.parse.quote(branch, safe="")
+            branch_runs = get_json(
+                f"/repos/{repo}/actions/runs?branch={encoded_branch}&per_page=50"
+            )
+            default_branch_runs = branch_runs.get("workflow_runs", [])
             result["non_default_branch_run_count"] = sum(
                 1 for run in all_runs if run.get("head_branch") != branch
             )
