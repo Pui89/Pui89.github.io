@@ -1,18 +1,18 @@
 # PUI89 AI Robotics — Cross-Project Command Centre
 
-> Generated (UTC): 2026-10-30T13:21:00.030996+00:00
+> Generated (UTC): 2026-10-31T18:04:03.532561+00:00
 
 Read-only overview of public repository commits and recent GitHub Actions runs. This report is not a substitute for running tests or reviewing evidence.
 
 | Project | Status | Latest commit | Latest workflow summary | Next focus |
 |---|---|---|---|---|
-| [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | CHECKS_AVAILABLE | [312940246095](https://github.com/Pui89/Coconut-Harvest-AI/commit/3129402460950a0bc2508f173f88e24a62cbc22a) | PUI89 Pitfall Detector Checks: success; Coconut Simulation Evaluation: success; PUI89 Free Local Checks: success | Priority 1: dataset provenance, reviewed labels, leakage-safe evaluation. |
-| [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | CHECKS_AVAILABLE | [83977802ef6b](https://github.com/Pui89/Extreme-Flood-Rescue-AI/commit/83977802ef6be9adbb12dd4dce55c81185b6a795) | PUI89 Automated Verification: success; PUI89 Pitfall Detector Checks: success; PUI89 Shared Interface Smoke: success | Simulation-first: scenario coverage, navigation and fail-safe evidence. |
-| [Multimodal Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | CHECKS_AVAILABLE | [4b26daf1c2aa](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/commit/4b26daf1c2aa7e97f3d24dc9d9896b580c4bbb13) | PUI89 Automated Verification: success; Multimodal Screening AI regression checks: success; Fault monitor tests: success | Data provenance, uncertainty, modality failures and human review. |
+| [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | CHECKS_AVAILABLE | [1b23950b4edb](https://github.com/Pui89/Coconut-Harvest-AI/commit/1b23950b4edb1e08a7c9b9353d5a76bac18ef6fd) | PUI89 Health Gate Regression: success; PUI89 Pitfall Detector Checks: success; PUI89 Automated Verification: success | Priority 1: dataset provenance, reviewed labels, leakage-safe evaluation. |
+| [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | CHECKS_AVAILABLE | [d4a6ba989941](https://github.com/Pui89/Extreme-Flood-Rescue-AI/commit/d4a6ba989941283af45a7af20a5b36107b304bab) | Fault monitor tests: queued; Flood Rescue AI Simulation Evaluation: queued; Dataset recovery and replacement queue: queued | Simulation-first: scenario coverage, navigation and fail-safe evidence. |
+| [Multimodal Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | CHECKS_AVAILABLE | [3236929ac09a](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/commit/3236929ac09a5881575f8cb94bb4af4d7968ba26) | github_actions in / for actions/setup-python - Update #1668299703: queued; github_actions in / for actions/checkout - Update #1668299560: in_progress; github_actions in / for actions/upload-artifact - Update #1668299555: in_progress | Data provenance, uncertainty, modality failures and human review. |
 
 ## Key engineering safeguards
 
-Selected safeguards are scanned across the latest 50 repository workflow runs, rather than only the newest 10. A status of not_seen_in_recent_runs means unknown, not failed or passed. The simulation check includes the report validator step only when that workflow run completes successfully. The Coconut dataset evidence audit is currently project-specific; other projects may show not_seen_in_recent_runs because that workflow is not configured there.
+Selected safeguards are scanned across the latest 50 repository workflow runs, rather than only the newest 10. The Evidence benchmark + report integrity row points to the latest project simulation workflow, which runs the benchmark validator before uploading its simulation report artifact. A completed-success conclusion confirms the configured workflow steps passed; it is not an independent reading of benchmark JSON. A status of not_seen_in_recent_runs means unknown, not failed or passed. The Coconut dataset evidence audit is currently project-specific; other projects may show not_seen_in_recent_runs because that workflow is not configured there.
 
 ### Coconut Harvest AI
 
@@ -22,32 +22,35 @@ Selected safeguards are scanned across the latest 50 repository workflow runs, r
 | Dataset recovery audit | not_seen_in_recent_runs | unknown | — |
 | Free-resource link audit | not_seen_in_recent_runs | unknown | — |
 | Rule-based simulation evaluation | not_seen_in_recent_runs | unknown | — |
-| Coconut dataset evidence audit | success | 2026-10-30T08:27:48Z | [open](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41026451738) |
-| Simulation benchmark + report validator | success | 2026-10-30T08:26:41Z | [open](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41026443056) |
+| Coconut dataset evidence audit | success | 2026-10-31T18:03:13Z | [open](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41227466513) |
+| Simulation benchmark + report validator | success | 2026-10-31T18:03:22Z | [open](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41227461507) |
+| Evidence benchmark + report integrity | success | 2026-10-31T18:03:16Z | [open](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41227466500) |
 | Autonomy / safety regression tests | not_seen_in_recent_runs | unknown | — |
 
 ### Extreme Flood Rescue AI
 
 | Safeguard | Status | Last updated (UTC) | Run |
 |---|---|---|---|
-| Free cloud verification | success | 2026-10-30T08:27:45Z | [open](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41026465322) |
-| Dataset recovery audit | success | 2026-10-30T08:29:08Z | [open](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41026473120) |
+| Free cloud verification | queued | 2026-10-31T18:03:23Z | [open](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41227499687) |
+| Dataset recovery audit | queued | 2026-10-31T18:03:24Z | [open](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41227503317) |
 | Free-resource link audit | not_seen_in_recent_runs | unknown | — |
-| Rule-based simulation evaluation | success | 2026-10-30T08:28:12Z | [open](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41026473029) |
+| Rule-based simulation evaluation | queued | 2026-10-31T18:03:24Z | [open](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41227503323) |
 | Coconut dataset evidence audit | not_seen_in_recent_runs | unknown | — |
-| Simulation benchmark + report validator | success | 2026-10-30T08:27:24Z | [open](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41026465346) |
+| Simulation benchmark + report validator | queued | 2026-10-31T18:03:23Z | [open](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41227499649) |
+| Evidence benchmark + report integrity | queued | 2026-10-31T18:03:24Z | [open](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41227503323) |
 | Autonomy / safety regression tests | not_seen_in_recent_runs | unknown | — |
 
 ### Multimodal Screening AI
 
 | Safeguard | Status | Last updated (UTC) | Run |
 |---|---|---|---|
-| Free cloud verification | success | 2026-10-30T08:28:13Z | [open](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41026484878) |
-| Dataset recovery audit | success | 2026-10-30T08:29:36Z | [open](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41026491540) |
+| Free cloud verification | success | 2026-10-31T18:01:46Z | [open](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41227358868) |
+| Dataset recovery audit | not_seen_in_recent_runs | unknown | — |
 | Free-resource link audit | not_seen_in_recent_runs | unknown | — |
-| Rule-based simulation evaluation | success | 2026-10-30T08:28:43Z | [open](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41026491630) |
+| Rule-based simulation evaluation | success | 2026-10-31T18:01:48Z | [open](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41227358866) |
 | Coconut dataset evidence audit | not_seen_in_recent_runs | unknown | — |
-| Simulation benchmark + report validator | success | 2026-10-30T08:28:21Z | [open](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41026484956) |
+| Simulation benchmark + report validator | not_seen_in_recent_runs | unknown | — |
+| Evidence benchmark + report integrity | success | 2026-10-31T18:01:48Z | [open](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41227358866) |
 | Autonomy / safety regression tests | not_seen_in_recent_runs | unknown | — |
 
 ## Warnings and limitations
@@ -55,7 +58,8 @@ Selected safeguards are scanned across the latest 50 repository workflow runs, r
 - This report reads public repository metadata and recent workflow runs; it does not execute project tests.
 - A missing workflow run is unknown, not a passing result or proof of failure.
 - Only the most recent 50 repository workflow runs are scanned; a safeguard absent from that window is unknown.
-- A successful workflow does not validate real-world robot performance or dataset correctness.
+- A successful simulation workflow confirms its configured scenario and evidence-benchmark steps completed; it does not validate real-world robot performance or dataset correctness.
+- Evidence benchmark status is inferred from the latest matching simulation workflow conclusion; the generated JSON benchmark is retained in the workflow workspace and is not independently parsed by this dashboard.
 - The Coconut dataset evidence audit runs only where its workflow is configured; not_seen_in_recent_runs for other projects means not observed, not a failure.
 - GitHub API rate limits or temporary network errors can make status partial.
 
