@@ -19,7 +19,12 @@ class HuggingFaceRegistryTests(unittest.TestCase):
 
     def test_downloads_and_external_execution_remain_disabled(self):
         policy = self.registry["policy"]
-        self.assertTrue(all(value is False for value in policy.values()))
+        boolean_safety_controls = (
+            "network_access", "automatic_downloads", "package_installation",
+            "paid_inference", "hardware_actuation",
+        )
+        self.assertTrue(all(policy[key] is False for key in boolean_safety_controls))
+        self.assertEqual(policy["default_approval"], "NOT_APPROVED")
         self.assertTrue(all(item["download"] == "DISABLED" for item in self.registry["resources"]))
         self.assertTrue(all(item["approval"] == "NOT_APPROVED" for item in self.registry["resources"]))
 
