@@ -7,6 +7,7 @@ on:
   push:
     paths:
       - "tools/pui89_command_centre.py"
+      - "tests/test_pui89_command_centre_evidence.py"
       - ".github/workflows/pui89-command-centre.yml"
 
 permissions:
