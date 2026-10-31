@@ -209,7 +209,7 @@
           <span class="project-art-note">Four maturity stages · conceptual harvesting workflow</span>
           <div class="num">01 / AGRICULTURE</div>
           <h3>Coconut Harvest AI</h3>
-          <p>Organises the concept around four maturity stages: Young Green, Developing, Mature Green, and Brown-Aging. The long-term 0–30 m palm-height range is a design goal; maturity classification, detection, reach, and physical harvesting are not yet validated.</p>
+          <p>Organises the concept around four maturity stages: Young Green, Mature Green, Yellow, and Brown-Aging. The long-term 0–30 m palm-height range is a design goal; maturity classification, detection, reach, and physical harvesting are not yet validated. The proposed harvesting arm and optional collection basket remain design concepts pending engineering and safety tests.</p>
           <span class="status">4 categories · 0–30 m target · validation pending</span>
           <a href="coconut.html">Explore project ↗</a><a href="https://github.com/Pui89/Coconut-Harvest-AI">Source code on GitHub ↗</a>
         </article>
@@ -229,7 +229,7 @@
           <span class="project-art-note">Workflow illustration</span>
           <div class="num">03 / MULTIMODAL INSPECTION</div>
           <h3>Multimodal Narcotics Screening AI</h3>
-          <p>A local-first workflow for reviewing uncertain evidence. E-cigarettes and vaping devices are treated as a separate product category, not automatically as narcotics. Appearance alone cannot identify liquid contents or chemical substances.</p>
+          <p>A proposed mobile inspection-assistant workflow for reviewing permitted multimodal evidence, including RGB imagery and, only where suitable equipment and licensed data are available, X-ray or validated chemical-sensor outputs. Each modality and any later fusion must be evaluated separately. E-cigarettes and vaping devices are a separate product category; appearance alone cannot identify liquid contents or chemical substances. An AI alert is not proof of narcotics and cannot autonomously accuse, detain, search, or enforce. Consequential decisions remain with authorised personnel under lawful procedures.</p>
           <a href="screening.html">Explore project &amp; screening scope ↗</a>
           <span class="status">Detector validation pending</span>
           <a href="https://github.com/Pui89/Multimodal-Narcotics-Screening-AI">Explore repository ↗</a>
@@ -242,9 +242,9 @@
       <h2 id="core-heading">One shared engineering foundation</h2>
       <p class="intro">PUI89 is being developed as a common AI-software foundation with three specialised applications. The shared-core work is being introduced and reviewed incrementally; this section describes the architecture direction, not a claim that every component is already integrated or validated.</p>
       <div class="grid">
-        <article class="card"><div class="num">01 / STATE &amp; UNCERTAINTY</div><h3>Know what the system knows</h3><p>Track observation source, timestamp, confidence, calibration status, stale inputs, and conflicts. Uncertain or incomplete evidence should trigger review rather than confident action.</p><span class="status">Software contract under review</span></article>
+        <article class="card"><div class="num">01 / STATE &amp; UNCERTAINTY</div><h3>Know what the system knows</h3><p>Track observation source, timestamp, confidence, calibration status, stale inputs, and conflicting evidence. Represent the changing world state explicitly, propagate uncertainty into task plans, and request human review when evidence is incomplete or unreliable.</p><span class="status">Software contract under review</span></article>
         <article class="card"><div class="num">02 / AUTOMATED CHECKS</div><h3>Make failures visible</h3><p>Use repeatable Python checks and structured test reports to record failures, environment details, and evidence. Passing software tests does not establish field performance or robot safety.</p><span class="status">Development stage: incremental implementation</span></article>
-        <article class="card"><div class="num">03 / SAFE TASK FLOW</div><h3>Separate proposals from actions</h3><p>Keep task-planning interfaces separate from physical actuation. Simulation and human review come before any hardware integration; no physical capability is implied.</p><span class="status">Simulation-first roadmap</span></article>
+        <article class="card"><div class="num">03 / SAFE TASK FLOW</div><h3>Separate proposals from actions</h3><p>Keep perception, world-state tracking, task planning, safety monitoring, and physical actuation as distinct interfaces. Simulation and human review come before any hardware integration; no physical capability is implied.</p><span class="status">Simulation-first roadmap</span></article>
       </div>
       <article class="card" style="margin-top:18px">
         <div class="num">04 / RESEARCH ROADMAP</div>
