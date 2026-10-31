@@ -22,7 +22,7 @@ No stage is automatically approved by the existence of a package or model.
 
 ## Resource preflight
 
-Run from a project or repository root:
+Run from the root of the `Pui89.github.io` repository (where the tool currently lives):
 
 ```bash
 python tools/pui89_resource_preflight.py
