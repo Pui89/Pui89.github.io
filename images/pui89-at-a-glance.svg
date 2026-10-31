@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 at a glance — three applied AI projects and one shared AI Core</title>
+<desc id="desc">Bilingual English and Thai overview of Coconut Harvest AI, Extreme Flood Rescue AI, and Multimodal Narcotics Screening AI, connected to shared AI Core, simulation, testing and human oversight. Concepts and simulation targets are not validated physical capabilities.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071426"/><stop offset="1" stop-color="#102d46"/></linearGradient>
+ <linearGradient id="green" x2="0" y2="1"><stop stop-color="#246b43"/><stop offset="1" stop-color="#102f2c"/></linearGradient>
+ <linearGradient id="blue" x2="0" y2="1"><stop stop-color="#1767a0"/><stop offset="1" stop-color="#102b4c"/></linearGradient>
+ <linearGradient id="purple" x2="0" y2="1"><stop stop-color="#67418b"/><stop offset="1" stop-color="#2b214b"/></linearGradient>
+ <linearGradient id="core" x2="1" y2="1"><stop stop-color="#0b6382"/><stop offset="1" stop-color="#153e71"/></linearGradient>
+ <style>
+ .en{font:700 29px system-ui,sans-serif;fill:#f4f8ff}.th{font:500 21px system-ui,sans-serif;fill:#d2e3f2}.sub{font:500 18px system-ui,sans-serif;fill:#c0d0df}.tag{font:800 16px system-ui,sans-serif;letter-spacing:2px;fill:#a8e8d4}.num{font:800 18px system-ui,sans-serif;fill:#fff}.coretitle{font:800 35px system-ui,sans-serif;fill:white}.coreline{font:600 20px system-ui,sans-serif;fill:#e3f5ff}
+ </style>
+</defs>
+<rect width="1600" height="1000" rx="34" fill="url(#bg)"/>
+<circle cx="1420" cy="80" r="240" fill="#2c7890" opacity=".12"/><circle cx="120" cy="900" r="260" fill="#4b8d5c" opacity=".12"/>
+<text x="80" y="92" class="tag">PUI89 · APPLIED AI &amp; ROBOTICS</text>
+<text x="80" y="158" style="font:800 62px system-ui,sans-serif;fill:#fff">Three projects. One shared AI Core.</text>
+<text x="82" y="202" style="font:500 28px system-ui,sans-serif;fill:#b9d4e7">สามโครงการ · พื้นฐาน AI ร่วมกัน</text>
+<text x="1515" y="94" text-anchor="end" class="sub">BUILD · TEST · VERIFY</text>
+<!-- cards -->
+<g transform="translate(65 265)">
+ <rect width="470" height="430" rx="25" fill="url(#green)" stroke="#63bd8a" stroke-width="2"/>
+ <circle cx="62" cy="62" r="32" fill="#9bdc9d" opacity=".2"/><path d="M45 68Q58 28 86 42Q79 70 45 68M48 70Q66 82 83 63" fill="none" stroke="#a9e6a8" stroke-width="5" stroke-linecap="round"/>
+ <text x="112" y="57" class="tag">01 / AGRICULTURE</text><text x="112" y="98" class="en">Coconut Harvest AI</text><text x="35" y="151" class="th">AI วิเคราะห์ระยะการเจริญของมะพร้าว</text>
+ <g transform="translate(38 190)">
+  <rect width="394" height="58" rx="12" fill="#ffffff" opacity=".10"/><circle cx="32" cy="29" r="15" fill="#69bd68"/><text x="64" y="25" class="num">01  Young Green</text><text x="64" y="47" class="sub">มะพร้าวเขียวอ่อน</text>
+  <rect y="68" width="394" height="58" rx="12" fill="#ffffff" opacity=".10"/><circle cx="32" cy="97" r="15" fill="#93bf56"/><text x="64" y="93" class="num">02  Developing</text><text x="64" y="115" class="sub">มะพร้าวกำลังพัฒนา</text>
+  <rect y="136" width="394" height="58" rx="12" fill="#ffffff" opacity=".10"/><circle cx="32" cy="165" r="15" fill="#b6a94c"/><text x="64" y="161" class="num">03  Mature Green</text><text x="64" y="183" class="sub">มะพร้าวเขียวแก่</text>
+  <rect y="204" width="394" height="58" rx="12" fill="#ffffff" opacity=".10"/><circle cx="32" cy="233" r="15" fill="#95613e"/><text x="64" y="229" class="num">04  Brown-Aging</text><text x="64" y="251" class="sub">มะพร้าวแก่สีน้ำตาล</text>
+ </g>
+ <text x="38" y="397" class="sub">Maturity support · Harvest planning</text>
+</g>
+<g transform="translate(565 265)">
+ <rect width="470" height="430" rx="25" fill="url(#blue)" stroke="#5bb8ef" stroke-width="2"/>
+ <circle cx="62" cy="62" r="32" fill="#8bd5ff" opacity=".2"/><path d="M34 60Q62 38 90 60M34 75Q62 53 90 75" fill="none" stroke="#a9e1ff" stroke-width="5" stroke-linecap="round"/>
+ <text x="112" y="57" class="tag">02 / DISASTER RESPONSE</text><text x="112" y="98" class="en">Extreme Flood Rescue AI</text><text x="35" y="151" class="th">AI สนับสนุนการค้นหาและช่วยเหลือผู้ประสบภัย</text>
+ <g transform="translate(38 190)">
+  <rect width="394" height="58" rx="12" fill="#ffffff" opacity=".10"/><text x="22" y="26" class="num">01  Detect &amp; map hazards</text><text x="22" y="48" class="sub">ตรวจจับและทำแผนที่จุดเสี่ยง</text>
+  <rect y="68" width="394" height="58" rx="12" fill="#ffffff" opacity=".10"/><text x="22" y="94" class="num">02  Plan land / water routes</text><text x="22" y="116" class="sub">วางแผนเส้นทางบนบกและในน้ำ</text>
+  <rect y="136" width="394" height="58" rx="12" fill="#ffffff" opacity=".10"/><text x="22" y="162" class="num">03  Assist people &amp; animals</text><text x="22" y="184" class="sub">สนับสนุนการช่วยเหลือคนและสัตว์</text>
+  <rect y="204" width="394" height="58" rx="12" fill="#ffffff" opacity=".10"/><text x="22" y="230" class="num">04  Human-supervised decisions</text><text x="22" y="252" class="sub">มนุษย์กำกับการตัดสินใจ</text>
+ </g>
+ <text x="38" y="397" class="sub">0–15 m = simulation scenario target only</text>
+</g>
+<g transform="translate(1065 265)">
+ <rect width="470" height="430" rx="25" fill="url(#purple)" stroke="#b18be6" stroke-width="2"/>
+ <circle cx="62" cy="62" r="32" fill="#c5a5f4" opacity=".2"/><path d="M62 35L86 45V64Q82 82 62 91Q42 82 38 64V45Z" fill="none" stroke="#e2cfff" stroke-width="5"/>
+ <text x="112" y="57" class="tag">03 / MULTIMODAL INSPECTION</text><text x="112" y="98" class="en">Narcotics Screening AI</text><text x="35" y="151" class="th">AI ช่วยตรวจทานหลักฐานหลายรูปแบบ</text>
+ <g transform="translate(38 190)">
+  <rect width="394" height="58" rx="12" fill="#ffffff" opacity=".10"/><text x="22" y="26" class="num">01  Collect multiple inputs</text><text x="22" y="48" class="sub">รวบรวมข้อมูลจากหลายแหล่ง</text>
+  <rect y="68" width="394" height="58" rx="12" fill="#ffffff" opacity=".10"/><text x="22" y="94" class="num">02  Analyse evidence &amp; uncertainty</text><text x="22" y="116" class="sub">วิเคราะห์หลักฐานและความไม่แน่นอน</text>
+  <rect y="136" width="394" height="58" rx="12" fill="#ffffff" opacity=".10"/><text x="22" y="162" class="num">03  Flag for further checks</text><text x="22" y="184" class="sub">แจ้งเตือนเมื่อต้องตรวจสอบเพิ่ม</text>
+  <rect y="204" width="394" height="58" rx="12" fill="#ffffff" opacity=".10"/><text x="22" y="230" class="num">04  Authorised human review</text><text x="22" y="252" class="sub">ผู้มีอำนาจตรวจสอบผล</text>
+ </g>
+ <text x="38" y="397" class="sub">Appearance alone cannot identify chemicals</text>
+</g>
+<!-- connector -->
+<path d="M300 695V742H800V770M800 695V770M1300 695V742H800" fill="none" stroke="#79d6e9" stroke-width="4" opacity=".8"/>
+<rect x="65" y="770" width="1470" height="160" rx="26" fill="url(#core)" stroke="#67d6ed" stroke-width="2"/>
+<circle cx="160" cy="850" r="46" fill="#8de4ef" opacity=".15" stroke="#9beaff" stroke-width="2"/><path d="M138 850H182M160 828V872M145 835L175 865M175 835L145 865" stroke="#b5f2ff" stroke-width="4" stroke-linecap="round"/>
+<text x="235" y="832" class="coretitle">PUI89 AI Core</text><text x="235" y="868" class="coreline">Shared foundation · พื้นฐานร่วมของทุกโครงการ</text>
+<g transform="translate(700 805)">
+ <text x="0" y="25" class="num">PERCEPTION &amp; EVIDENCE</text><text x="0" y="55" class="sub">การรับรู้และหลักฐาน</text>
+ <text x="280" y="25" class="num">SIMULATION &amp; TESTING</text><text x="280" y="55" class="sub">การจำลองและทดสอบ</text>
+ <text x="560" y="25" class="num">SAFETY &amp; HUMAN REVIEW</text><text x="560" y="55" class="sub">ความปลอดภัยและมนุษย์กำกับ</text>
+</g>
+<text x="800" y="970" text-anchor="middle" style="font:500 17px system-ui,sans-serif;fill:#b8ccdc">Concepts and simulation targets are not proof of field or physical capability · ภาพแนวคิดและสถานการณ์จำลองไม่ใช่หลักฐานการใช้งานจริง</text>
+</svg>
