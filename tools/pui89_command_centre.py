@@ -94,13 +94,28 @@ def collect(project: tuple[str, str, str]) -> dict:
                 result["warnings"].append("No default-branch workflow runs found in the latest 50; branch health is unknown.")
             # Keep important safeguards visible even when routine CI runs are newer.
             key_terms = {
-                "Free cloud verification": ("free cloud verification", "free-cloud-verification"),
+                "Free cloud verification": (
+                    "free cloud verification", "free-cloud-verification",
+                    "free cloud-side verification", "free cloud-side",
+                ),
                 "Dataset recovery audit": ("dataset recovery", "dataset-recovery"),
                 "Free-resource link audit": ("free-resource link", "free-resource-link-cleanup"),
-                "Rule-based simulation evaluation": ("coconut harvest ai simulation evaluation", "flood rescue ai simulation evaluation", "multimodal narcotics screening ai simulation evaluation"),
+                # Workflow titles differ slightly by project; include the actual
+                # Coconut title as well as the longer shared naming convention.
+                "Rule-based simulation evaluation": (
+                    "coconut simulation evaluation",
+                    "coconut harvest ai simulation evaluation",
+                    "flood rescue ai simulation evaluation",
+                    "multimodal narcotics screening ai simulation evaluation",
+                ),
                 "Coconut dataset evidence audit": ("coconut dataset evidence audit", "dataset provenance, hashes and split integrity"),
                 "Simulation benchmark + report validator": ("simulation benchmark", "pui89-simulation-benchmark"),
-                "Autonomy / safety regression tests": ("autonomy", "safety regression"),
+                # Existing project workflows use both "regression checks" and
+                # "health gate regression" naming, not only "safety regression".
+                "Autonomy / safety regression tests": (
+                    "autonomy", "safety regression", "regression checks",
+                    "health gate regression", "adaptive policy",
+                ),
             }
             for label, terms in key_terms.items():
                 match = next(
