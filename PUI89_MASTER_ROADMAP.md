@@ -1,18 +1,38 @@
 # PUI89 Master Roadmap — Status, Work in Progress, Fixes, Next Steps and Future Upgrades
 
-**Updated:** 29 October 2026  
+**Updated:** 31 October 2026  
 **Purpose:** one transparent source of truth for what is complete, what is being checked, what remains unfinished, and the next development level across PUI89.
 
-> **Status note:** "In progress" below means the next engineering task is identified and its evidence gate is open. It does not mean a background process is continuously running. Only completed GitHub Actions runs and committed files count as evidence.
+> **Status note:** "In progress" means a defined next task with an evidence gate; it does not mean a background process is continuously running. Only committed files and completed, inspected workflow runs count as evidence.
 
-## Executive status
+## Executive status — 31 October 2026
 
-- **Shared test foundation:** selected CI scopes passed 52 tests in the last verified run on 29 October 2026 (39 shared-core, 5 Coconut evaluator, 4 Coconut preflight). A later queued run must be checked before claiming it also passed.
-- **Full-suite reliability:** improved for Flood Rescue and Narcotics Screening: verified runs passed 419 and 385 tests respectively (Narcotics across Python 3.10–3.12). Coconut remains on lightweight/selected checks; its full dependency-backed suite still needs a confirmed pass.
-- **AI performance:** no new genuine held-out detector results have been established by the latest combined run.
-- **Simulation:** repeatable scenario plans exist for Flood Rescue and Narcotics Screening; plans are not executed simulator evidence.
-- **Physical robots:** none of the three concepts is declared physically validated.
-- **Cost/model gate:** no large VLM/VLA model or paid service is required for the current phase.
+- **Shared AI Core:** the central portfolio now contains the dependency-light agent-message/evidence contract, adaptive policy orchestrator, long-horizon sequence evaluator, and standardised failure-report contract. These are software policy and evaluation components, not deployed autonomous agents.
+- **Safety gate:** identical standard-library health-gate modules, regression tests and dedicated workflows have been added to all three application repositories. The workflow results must be checked individually before calling the new gates verified.
+- **Project adapters:** Coconut has the first four-class observation adapter; Flood has model-agnostic vision/action data contracts; Screening has a model-optional agentic workflow and safety/human-review boundaries. Full end-to-end model inference is not established.
+- **Test evidence:** prior recorded scopes include selected shared-core tests, project-specific test runs and synthetic scenario results. Quote each run only with its exact workflow link and scope; do not combine unlike test counts into one headline.
+- **AI performance:** no new held-out detector, flood perception/navigation, or chemical-screening performance benchmark is established by the latest shared-core work.
+- **Advanced technology:** VLM/VLA, ONNX model execution, ROS 2 and Gazebo remain optional adoption candidates unless a repository-specific integration and successful test are explicitly recorded.
+- **Physical systems:** none of the three robot concepts is declared physically validated.
+- **Cost policy:** no paid API, cloud GPU, subscription, automatic model download or hardware actuation is required for the current phase.
+
+## High-tech adoption status — shared across PUI89
+
+| Technology / capability | Current status | Next responsible step |
+|---|---|---|
+| Python standard-library core, contracts and deterministic tests | **Implemented in the shared platform** | Keep interfaces and tests consistent |
+| Failure reports and long-horizon synthetic evaluation | **Implemented centrally; project integration remains staged** | Validate failure/blocked/skipped report paths |
+| Health-gate regression modules | **Added to all three repositories; latest workflow confirmation pending** | Inspect all three dedicated Actions runs |
+| Coconut observation adapter | **Implemented; adapter workflow result pending confirmation** | Verify workflow, then align adapters |
+| Flood vision/action interfaces | **Implemented as dependency-free contracts** | Add a narrow, tested adapter to shared evidence/policy format |
+| Screening agentic workflow | **Model-optional, synthetic workflow documented** | Connect shared evidence format without bypassing human review |
+| OpenCV / ONNX Runtime / OpenVINO | **Optional candidates; not assumed integrated** | Check exact package/model licence, hardware fit and measured need |
+| VLM / VLA model weights | **Not downloaded; not approved for automatic installation** | Model-card, licence, size, RAM/VRAM and offline preflight |
+| ROS 2 Jazzy / Gazebo Harmonic / Nav2 | **Planned robotics-simulation candidates, not installed by this roadmap** | First prove a minimal supported Ubuntu simulation is feasible |
+| Physical robot control | **Not enabled / not validated** | Separate engineering risk review and human-authorised testing |
+
+**Adoption rule:** a technology is not “integrated” merely because it appears in a roadmap or dependency list. Upgrade its status only after code, a named test, a successful recorded run and any relevant licence/resource review are available. Keep optional heavy dependencies out of the base install.
+
 
 ## Status definitions
 
