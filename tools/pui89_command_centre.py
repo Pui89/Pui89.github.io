@@ -84,6 +84,7 @@ def collect(project: tuple[str, str, str]) -> dict:
                 "Rule-based simulation evaluation": ("coconut harvest ai simulation evaluation", "flood rescue ai simulation evaluation", "multimodal narcotics screening ai simulation evaluation"),
                 "Coconut dataset evidence audit": ("coconut dataset evidence audit", "dataset provenance, hashes and split integrity"),
                 "Simulation benchmark + report validator": ("simulation benchmark", "pui89-simulation-benchmark"),
+                "Evidence benchmark + report integrity": ("coconut simulation evaluation", "flood rescue ai simulation evaluation", "multimodal narcotics screening ai simulation evaluation"),
                 "Autonomy / safety regression tests": ("autonomy", "safety regression"),
             }
             all_runs = runs.get("workflow_runs", [])
@@ -123,7 +124,8 @@ def main() -> int:
             "This report reads public repository metadata and recent workflow runs; it does not execute project tests.",
             "A missing workflow run is unknown, not a passing result or proof of failure.",
             "Only the most recent 50 repository workflow runs are scanned; a safeguard absent from that window is unknown.",
-            "A successful workflow does not validate real-world robot performance or dataset correctness.",
+            "A successful simulation workflow confirms its configured scenario and evidence-benchmark steps completed; it does not validate real-world robot performance or dataset correctness.",
+            "Evidence benchmark status is inferred from the latest matching simulation workflow conclusion; the generated JSON benchmark is retained in the workflow workspace and is not independently parsed by this dashboard.",
             "The Coconut dataset evidence audit runs only where its workflow is configured; not_seen_in_recent_runs for other projects means not observed, not a failure.",
             "GitHub API rate limits or temporary network errors can make status partial.",
         ],
@@ -165,7 +167,7 @@ def main() -> int:
         "",
         "## Key engineering safeguards",
         "",
-        "Selected safeguards are scanned across the latest 50 repository workflow runs, rather than only the newest 10. A status of not_seen_in_recent_runs means unknown, not failed or passed. The simulation check includes the report validator step only when that workflow run completes successfully. The Coconut dataset evidence audit is currently project-specific; other projects may show not_seen_in_recent_runs because that workflow is not configured there.",
+        "Selected safeguards are scanned across the latest 50 repository workflow runs, rather than only the newest 10. The Evidence benchmark + report integrity row points to the latest project simulation workflow, which runs the benchmark validator before uploading its simulation report artifact. A completed-success conclusion confirms the configured workflow steps passed; it is not an independent reading of benchmark JSON. A status of not_seen_in_recent_runs means unknown, not failed or passed. The Coconut dataset evidence audit is currently project-specific; other projects may show not_seen_in_recent_runs because that workflow is not configured there.",
         "",
     ]
     for project in projects:
