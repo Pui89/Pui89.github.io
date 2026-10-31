@@ -5,12 +5,15 @@ on:
   schedule:
     - cron: "23 6 * * 1"
   push:
+    branches:
+      - main
     paths:
       - "tools/pui89_command_centre.py"
       - ".github/workflows/pui89-command-centre.yml"
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: pui89-command-centre
@@ -27,7 +30,7 @@ jobs:
           fetch-depth: 0
       - name: Generate read-only project status report
         run: python tools/pui89_command_centre.py
-      - name: Publish report with safe retry for concurrent commits
+      - name: Propose report update through a dedicated pull request
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
@@ -35,23 +38,36 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          branch="automation/pui89-command-centre-report"
           mkdir -p /tmp/pui89-report
           cp reports/pui89-command-centre.md reports/pui89-command-centre.json /tmp/pui89-report/
-          for attempt in 1 2 3; do
-            git fetch origin main
-            git reset --hard origin/main
-            cp /tmp/pui89-report/pui89-command-centre.md reports/pui89-command-centre.md
-            cp /tmp/pui89-report/pui89-command-centre.json reports/pui89-command-centre.json
-            git add reports/pui89-command-centre.md reports/pui89-command-centre.json
-            if git diff --cached --quiet; then
-              echo "Command-centre report unchanged."
-              exit 0
-            fi
-            git commit -m "Update PUI89 cross-project command centre"
-            if git push origin HEAD:main; then
-              exit 0
-            fi
-            echo "Concurrent update detected; retrying with latest main (attempt $attempt/3)."
-          done
-          echo "Could not publish after 3 attempts; generated reports remain available in the job workspace." >&2
-          exit 1
+
+          git fetch origin main
+          git checkout -B "$branch" origin/main
+          cp /tmp/pui89-report/pui89-command-centre.md reports/pui89-command-centre.md
+          cp /tmp/pui89-report/pui89-command-centre.json reports/pui89-command-centre.json
+          git add reports/pui89-command-centre.md reports/pui89-command-centre.json
+
+          if git diff --cached --quiet; then
+            echo "Command-centre report unchanged; no pull request is needed."
+            exit 0
+          fi
+
+          git commit -m "Update PUI89 cross-project command centre"
+
+          if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
+            git fetch origin "$branch"
+            expected="$(git rev-parse FETCH_HEAD)"
+            git push --force-with-lease="refs/heads/$branch:$expected" origin "HEAD:refs/heads/$branch"
+          else
+            git push --force-with-lease="refs/heads/$branch:" origin "HEAD:refs/heads/$branch"
+          fi
+
+          if gh pr view "$branch" --json number >/dev/null 2>&1; then
+            echo "Updated the existing command-centre report pull request."
+          else
+            gh pr create --draft --base main --head "$branch" \
+              --title "Update PUI89 cross-project Command Centre report" \
+              --body "Automated evidence refresh. This PR keeps generated status reports reviewable and prevents workflow runs from writing directly to main. Review exact source SHAs and checks before merging."
+          fi
