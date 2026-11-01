@@ -10,13 +10,13 @@ PUI89 brings together domain knowledge, independent software development, applie
 
 - ## PUI89 visual overview
 
-![PUI89 Flow Matrix Prime primary logo](images/pui89-flow-matrix-prime.svg)
+![PUI89 Precision Glow 01 primary logo](images/pui89-precision-glow-01.svg)
 
-**Selected identity:** Flow Matrix Prime — abstract N symbol, premium PUI89 wordmark, dark teal and emerald palette.
+**Selected identity:** Precision Glow 01 — the PUI89 abstract N symbol with a refined emerald wordmark and controlled glow.
 
 Logo assets:
-- [Primary stacked logo](images/pui89-flow-matrix-prime.svg)
-- [Horizontal website logo](images/pui89-flow-matrix-horizontal.svg)
+- [Precision Glow 01 website logo](images/pui89-precision-glow-01.svg)
+- [Previous Flow Matrix horizontal logo](images/pui89-flow-matrix-horizontal.svg)
 - [Standalone N symbol](images/pui89-flow-matrix-mark.svg)
 - [White logo for dark backgrounds](images/pui89-flow-matrix-white.svg)
 - [Monochrome logo](images/pui89-flow-matrix-monochrome.svg)
