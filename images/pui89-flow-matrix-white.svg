@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 420" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 Flow Matrix Prime white logo</title><desc id="desc">White PUI89 wordmark and emerald abstract N for dark backgrounds.</desc>
+<defs><linearGradient id="flow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0C8D76"/><stop offset="1" stop-color="#20C997"/></linearGradient></defs>
+<path d="M82 42H142V272H82Z" fill="#FFFFFF"/><path d="M338 42H398V272H338Z" fill="#20C997"/><path d="M142 42H202L338 272H278Z" fill="url(#flow)"/><path d="M142 42L278 272" stroke="#B2FFE5" stroke-width="7" stroke-linecap="round" fill="none"/>
+<text x="240" y="365" text-anchor="middle" fill="#FFFFFF" font-family="Arial,Helvetica,sans-serif" font-size="66" font-weight="800" letter-spacing="13">PUI89</text></svg>
