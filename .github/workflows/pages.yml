@@ -29,8 +29,12 @@ jobs:
       - name: Validate static site files
         run: |
           test -s index.html
+          test -s th.html
           test -s README.md
           grep -q 'Coconut Harvest AI' index.html
+          grep -q 'Coconut Harvest AI' th.html
+          grep -q 'id="share"' index.html
+          grep -q 'id="share"' th.html
           grep -q 'Flood Rescue AI' index.html
           grep -q 'Multimodal Screening AI' index.html
           grep -q 'Development stage' index.html
