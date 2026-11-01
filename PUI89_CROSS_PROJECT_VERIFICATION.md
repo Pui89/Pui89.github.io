@@ -1,7 +1,26 @@
 # PUI89 AI Core — Cross-Project Verification Snapshot
 
-**Snapshot date:** 2026-10-30  
+**Snapshot date:** 2026-11-01  
 **Purpose:** Record observed automated checks across the three PUI89 AI applications and robot concepts. This is a software verification snapshot, not a real-world performance report.
+
+## Evidence benchmark engine — 1 November 2026
+
+The deterministic PUI89 Evidence Benchmark Engine has now been merged into all three project repositories. The corresponding hosted simulation/evidence workflows completed successfully on 31 October 2026, and each project reports **6 standard-library benchmark-engine tests passed**.
+
+| Project | Merged PR | Successful hosted run | What this verifies |
+|---|---|---|---|
+| [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | [#160](https://github.com/Pui89/Coconut-Harvest-AI/pull/160) | [Run 41222933984](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41222933984) | Evidence-report structure, metric consistency, source-report and ordered world-state snapshot hashes, and rejection of hardware-actuation claims |
+| [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | [#124](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/124) | [Run 41222937936](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41222937936) | Same deterministic evidence-integrity checks; simulation evidence only |
+| [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | [#101](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/101) | [Run 41222943024](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41222943024) | Same deterministic evidence-integrity checks; simulation evidence only |
+
+All three PRs are merged, and all three cited runs have GitHub Actions conclusion **success**. The engine checks integrity and consistency of supplied evidence; it does not authenticate the truth of the underlying observations, measure model accuracy, establish comparable cross-project scores, or validate physical performance. The runs reject any simulation step that claims hardware actuation.
+
+The default-branch workflow runs observed on 31 October 2026 also completed successfully:
+- Coconut: [automated verification](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41241337764), [lightweight core tests](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41241337730), and [security](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41241337679).
+- Flood Rescue: [automated verification](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41241212702), [regression checks](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41241212718), and [security](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41241212728).
+- Screening: [automated verification](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41241242511), [Python tests](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41241242543), and [security](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41241242522).
+
+These are separate workflow runs and test suites. Their results must not be summed into a single project score or presented as proof of field readiness.
 
 ## Current automated-check status
 
