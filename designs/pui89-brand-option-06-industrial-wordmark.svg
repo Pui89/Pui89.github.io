@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 — Industrial intelligence identity</title>
+<desc id="desc">A bold typographic PUI89 identity inspired by precision-engineered components, with a distinctive square-frame motif and a restrained signal-orange accent.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080b10"/><stop offset="1" stop-color="#171d25"/></linearGradient>
+ <linearGradient id="white" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#bfc9d0"/></linearGradient>
+ <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffbd72"/><stop offset="1" stop-color="#ff713e"/></linearGradient>
+</defs>
+<rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+<g fill="none" stroke="#65717d" opacity=".22"><path d="M110 170H1490M110 730H1490"/><path d="M160 120V780M1440 120V780" stroke-dasharray="5 14"/></g>
+<!-- corner datum marks -->
+<g stroke="url(#orange)" stroke-width="8" fill="none"><path d="M250 315V260H305M1295 260H1350V315M250 585V640H305M1295 640H1350V585"/></g>
+<!-- strong, open wordmark -->
+<g fill="url(#white)" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="270" letter-spacing="5">
+ <text x="285" y="535">PUI</text>
+ <text x="835" y="535">89</text>
+</g>
+<!-- engineered separator -->
+<path d="M790 315V565" stroke="#56636e" stroke-width="5"/>
+<path d="M790 315V385" stroke="url(#orange)" stroke-width="9"/>
+<!-- orange precision cuts in the 8 and 9 -->
+<path d="M1007 330L1072 330M1228 500L1290 500" stroke="url(#orange)" stroke-width="12" stroke-linecap="square"/>
+<g fill="#aab5bd" font-family="Arial, Helvetica, sans-serif">
+ <text x="800" y="655" font-size="26" text-anchor="middle" letter-spacing="11">AI  /  ROBOTICS  /  ENGINEERING</text>
+ <text x="800" y="705" font-size="16" text-anchor="middle" letter-spacing="6">DESIGNING INTELLIGENCE FOR THE REAL WORLD</text>
+</g>
+<g fill="#ff9b5d"><circle cx="250" cy="450" r="7"/><circle cx="1350" cy="450" r="7"/></g>
+</svg>
