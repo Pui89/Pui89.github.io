@@ -30,6 +30,5 @@
 <circle cx="84" cy="75" r="18" fill="#DDF7C9" opacity=".34"/>
 <circle cx="84" cy="75" r="7" fill="#F2FFE9"/>
 <circle cx="84" cy="75" r="2.5" fill="#FFFFFF"/>
-<!-- N symbol and wordmark use the same brand gradient. -->
-<text x="190" y="94" fill="url(#pui89BrandGreen)" font-family="Arial,Helvetica,sans-serif" font-size="55" font-weight="900" letter-spacing="2" filter="url(#pui89SoftGlow">PUI89</text>
+<text x="190" y="94" fill="url(#pui89BrandGreen)" font-family="Arial,Helvetica,sans-serif" font-size="55" font-weight="900" letter-spacing="2" filter="url(#pui89SoftGlow)">PUI89</text>
 </svg>
