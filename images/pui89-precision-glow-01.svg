@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" role="img" aria-labelledby="title desc">
 <title id="title">PUI89 Precision Glow 01 — Emerald Edition</title>
-<desc id="desc">The existing PUI89 Flow Matrix N symbol is preserved unchanged. The PUI89 wordmark receives an emerald gradient, subtle white-green inner highlight, and controlled precision glow.</desc>
+<desc id="desc">The existing PUI89 Flow Matrix N geometry is preserved, with a brighter medium-intensity emerald body glow and a crisp illuminated diagonal. The PUI89 wordmark receives an emerald gradient, subtle white-green inner highlight, and controlled precision glow.</desc>
 <defs>
   <linearGradient id="nGreen41" x1="0" y1="1" x2="1" y2="0">
-    <stop offset="0" stop-color="#062D2B"/>
-    <stop offset=".38" stop-color="#075B45"/>
-    <stop offset=".72" stop-color="#20B75D"/>
-    <stop offset="1" stop-color="#C0FF80"/>
+    <stop offset="0" stop-color="#087A5A"/>
+    <stop offset=".38" stop-color="#12A96B"/>
+    <stop offset=".72" stop-color="#49D982"/>
+    <stop offset="1" stop-color="#D5FFAA"/>
   </linearGradient>
   <linearGradient id="diagonalBeam41" x1="49" y1="42" x2="119" y2="108" gradientUnits="userSpaceOnUse">
     <stop offset="0" stop-color="#A9FF68" stop-opacity=".25"/>
@@ -37,6 +37,12 @@
     <stop offset=".52" stop-color="#FFFFFF" stop-opacity="0"/>
     <stop offset="1" stop-color="#003E2B" stop-opacity=".16"/>
   </linearGradient>
+  <filter id="nBodyGlow41" x="-35%" y="-35%" width="170%" height="170%">
+    <feGaussianBlur stdDeviation="4" result="bodyBlur"/>
+    <feFlood flood-color="#42F59A" flood-opacity=".48" result="bodyColor"/>
+    <feComposite in="bodyColor" in2="bodyBlur" operator="in" result="bodyGlow"/>
+    <feMerge><feMergeNode in="bodyGlow"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
   <filter id="diagonalGlow41" x="-100%" y="-100%" width="300%" height="300%">
     <feGaussianBlur stdDeviation="7"/>
   </filter>
@@ -53,8 +59,8 @@
     </feMerge>
   </filter>
 </defs>
-<!-- Existing Flow Matrix N symbol: geometry and treatments retained unchanged. -->
-<path d="M25 25H49L119 91V25H143V125H119L49 59V125H25Z" fill="url(#nGreen41)"/>
+<!-- Existing Flow Matrix N geometry retained; body illumination raised to a clear medium level. -->
+<path d="M25 25H49L119 91V25H143V125H119L49 59V125H25Z" fill="url(#nGreen41)" filter="url(#nBodyGlow41)"/>
 <path d="M49 42L119 108" fill="none" stroke="#A9FF65" stroke-width="19" stroke-linecap="butt" opacity=".88" filter="url(#diagonalGlow41)"/>
 <path d="M49 42L119 108" fill="none" stroke="url(#diagonalBeam41)" stroke-width="8" stroke-linecap="butt"/>
 <path d="M49 42L119 108" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="butt" opacity=".98"/>
