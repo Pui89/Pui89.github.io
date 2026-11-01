@@ -21,6 +21,8 @@ concurrency:
 
 jobs:
   update-dashboard:
+    # Manual dispatches from feature branches must not publish reports.
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
