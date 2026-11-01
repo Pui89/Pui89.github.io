@@ -8,7 +8,7 @@
     <stop offset=".72" stop-color="#20B75D"/>
     <stop offset="1" stop-color="#C0FF80"/>
   </linearGradient>
-  <linearGradient id="diagonalBeam41" x1="49" y1="25" x2="119" y2="91" gradientUnits="userSpaceOnUse">
+  <linearGradient id="diagonalBeam41" x1="49" y1="42" x2="119" y2="108" gradientUnits="userSpaceOnUse">
     <stop offset="0" stop-color="#A9FF68" stop-opacity=".25"/>
     <stop offset=".22" stop-color="#D8FFB4" stop-opacity=".9"/>
     <stop offset=".43" stop-color="#F4FFE8"/>
@@ -32,11 +32,11 @@
   </filter>
 </defs>
 <path d="M25 25H49L119 91V25H143V125H119L49 59V125H25Z" fill="url(#nGreen41)"/>
-<path d="M49 25L119 91" fill="none" stroke="#A9FF65" stroke-width="19" stroke-linecap="butt" opacity=".88" filter="url(#diagonalGlow41)"/>
-<path d="M49 25L119 91" fill="none" stroke="url(#diagonalBeam41)" stroke-width="8" stroke-linecap="butt"/>
-<path d="M49 25L119 91" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="butt" opacity=".98"/>
-<circle cx="84" cy="58" r="25" fill="#A8FF64" opacity=".72" filter="url(#coreGlow41)"/>
-<circle cx="84" cy="58" r="21" fill="url(#core41)"/>
-<circle cx="84" cy="58" r="3.2" fill="#FFFFFF"/>
+<path d="M49 42L119 108" fill="none" stroke="#A9FF65" stroke-width="19" stroke-linecap="butt" opacity=".88" filter="url(#diagonalGlow41)"/>
+<path d="M49 42L119 108" fill="none" stroke="url(#diagonalBeam41)" stroke-width="8" stroke-linecap="butt"/>
+<path d="M49 42L119 108" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="butt" opacity=".98"/>
+<circle cx="84" cy="75" r="25" fill="#A8FF64" opacity=".72" filter="url(#coreGlow41)"/>
+<circle cx="84" cy="75" r="21" fill="url(#core41)"/>
+<circle cx="84" cy="75" r="3.2" fill="#FFFFFF"/>
 <text x="190" y="94" fill="#F0F8EE" font-family="Arial,Helvetica,sans-serif" font-size="55" font-weight="900" letter-spacing="2">PUI89</text>
 </svg>
