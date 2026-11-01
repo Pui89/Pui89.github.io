@@ -1,67 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" role="img" aria-labelledby="title desc">
-<title id="title">PUI89 Precision Glow 01 — Emerald Edition</title>
-<desc id="desc">The existing PUI89 Flow Matrix N symbol is preserved unchanged. The PUI89 wordmark receives an emerald gradient, subtle white-green inner highlight, and controlled precision glow.</desc>
+<title id="title">PUI89 Flow Matrix — Unified Emerald</title>
+<desc id="desc">The PUI89 Flow Matrix N symbol and PUI89 wordmark share one coordinated emerald-green gradient matched to the website accent palette.</desc>
 <defs>
-  <linearGradient id="nGreen41" x1="0" y1="1" x2="1" y2="0">
-    <stop offset="0" stop-color="#062D2B"/>
-    <stop offset=".38" stop-color="#075B45"/>
-    <stop offset=".72" stop-color="#20B75D"/>
-    <stop offset="1" stop-color="#C0FF80"/>
+  <linearGradient id="pui89BrandGreen" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#315F45"/>
+    <stop offset=".48" stop-color="#6FAF82"/>
+    <stop offset="1" stop-color="#C5E9A9"/>
   </linearGradient>
-  <linearGradient id="diagonalBeam41" x1="49" y1="42" x2="119" y2="108" gradientUnits="userSpaceOnUse">
-    <stop offset="0" stop-color="#A9FF68" stop-opacity=".25"/>
-    <stop offset=".22" stop-color="#D8FFB4" stop-opacity=".9"/>
-    <stop offset=".43" stop-color="#F4FFE8"/>
-    <stop offset=".5" stop-color="#FFFFFF"/>
-    <stop offset=".58" stop-color="#F4FFE8"/>
-    <stop offset=".8" stop-color="#D8FFB4" stop-opacity=".9"/>
-    <stop offset="1" stop-color="#A9FF68" stop-opacity=".25"/>
+  <linearGradient id="pui89Beam" x1="49" y1="42" x2="119" y2="108" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#C5E9A9" stop-opacity=".35"/>
+    <stop offset=".5" stop-color="#F6F8F1"/>
+    <stop offset="1" stop-color="#C5E9A9" stop-opacity=".35"/>
   </linearGradient>
-  <radialGradient id="core41">
-    <stop offset="0" stop-color="#FFFFFF"/>
-    <stop offset=".22" stop-color="#FFFFFF"/>
-    <stop offset=".43" stop-color="#F0FFD9"/>
-    <stop offset=".7" stop-color="#B5FF70" stop-opacity=".92"/>
-    <stop offset="1" stop-color="#8CFF50" stop-opacity="0"/>
-  </radialGradient>
-  <linearGradient id="wordmarkEmerald01" x1="0" y1="0" x2=".15" y2="1">
-    <stop offset="0" stop-color="#F4FFF9"/>
-    <stop offset=".18" stop-color="#C8FFE2"/>
-    <stop offset=".42" stop-color="#63F5B0"/>
-    <stop offset=".72" stop-color="#10C982"/>
-    <stop offset="1" stop-color="#08734E"/>
-  </linearGradient>
-  <linearGradient id="wordmarkHighlight01" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#FFFFFF" stop-opacity=".9"/>
-    <stop offset=".28" stop-color="#E7FFF2" stop-opacity=".42"/>
-    <stop offset=".52" stop-color="#FFFFFF" stop-opacity="0"/>
-    <stop offset="1" stop-color="#003E2B" stop-opacity=".16"/>
-  </linearGradient>
-  <filter id="diagonalGlow41" x="-100%" y="-100%" width="300%" height="300%">
-    <feGaussianBlur stdDeviation="7"/>
+  <filter id="pui89SoftGlow" x="-30%" y="-80%" width="160%" height="260%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="2.2" result="blur"/>
+    <feFlood flood-color="#8FBD91" flood-opacity=".24" result="glowColor"/>
+    <feComposite in="glowColor" in2="blur" operator="in" result="glow"/>
+    <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
-  <filter id="coreGlow41" x="-150%" y="-150%" width="400%" height="400%">
+  <filter id="pui89BeamGlow" x="-100%" y="-100%" width="300%" height="300%">
     <feGaussianBlur stdDeviation="5"/>
   </filter>
-  <filter id="wordmarkGlow01" x="-25%" y="-70%" width="150%" height="240%">
-    <feGaussianBlur in="SourceAlpha" stdDeviation="3.2" result="blur"/>
-    <feFlood flood-color="#20E99A" flood-opacity=".58" result="glowColor"/>
-    <feComposite in="glowColor" in2="blur" operator="in" result="glow"/>
-    <feMerge>
-      <feMergeNode in="glow"/>
-      <feMergeNode in="SourceGraphic"/>
-    </feMerge>
-  </filter>
 </defs>
-<!-- Existing Flow Matrix N symbol: geometry and treatments retained unchanged. -->
-<path d="M25 25H49L119 91V25H143V125H119L49 59V125H25Z" fill="url(#nGreen41)"/>
-<path d="M49 42L119 108" fill="none" stroke="#A9FF65" stroke-width="19" stroke-linecap="butt" opacity=".88" filter="url(#diagonalGlow41)"/>
-<path d="M49 42L119 108" fill="none" stroke="url(#diagonalBeam41)" stroke-width="8" stroke-linecap="butt"/>
-<path d="M49 42L119 108" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="butt" opacity=".98"/>
-<circle cx="84" cy="75" r="25" fill="#A8FF64" opacity=".72" filter="url(#coreGlow41)"/>
-<circle cx="84" cy="75" r="21" fill="url(#core41)"/>
-<circle cx="84" cy="75" r="3.2" fill="#FFFFFF"/>
-<!-- PUI89 lettering: same position, font family, weight, size and tracking as source; finish upgraded. -->
-<text x="190" y="94" fill="url(#wordmarkEmerald01)" stroke="#DFFFF0" stroke-width=".55" paint-order="stroke fill" font-family="Arial,Helvetica,sans-serif" font-size="55" font-weight="900" letter-spacing="2" filter="url(#wordmarkGlow01)">PUI89</text>
-<text x="190" y="94" fill="url(#wordmarkHighlight01)" font-family="Arial,Helvetica,sans-serif" font-size="55" font-weight="900" letter-spacing="2" pointer-events="none">PUI89</text>
+<!-- Original Flow Matrix N geometry retained. -->
+<path d="M25 25H49L119 91V25H143V125H119L49 59V125H25Z" fill="url(#pui89BrandGreen)"/>
+<path d="M49 42L119 108" fill="none" stroke="#C5E9A9" stroke-width="15" stroke-linecap="butt" opacity=".38" filter="url(#pui89BeamGlow)"/>
+<path d="M49 42L119 108" fill="none" stroke="url(#pui89Beam)" stroke-width="7" stroke-linecap="butt"/>
+<path d="M49 42L119 108" fill="none" stroke="#F6F8F1" stroke-width="1.8" stroke-linecap="butt" opacity=".9"/>
+<circle cx="84" cy="75" r="18" fill="#C5E9A9" opacity=".28"/>
+<circle cx="84" cy="75" r="7" fill="#E7F4DE"/>
+<circle cx="84" cy="75" r="2.5" fill="#FFFFFF"/>
+<!-- N symbol and wordmark use the same brand gradient. -->
+<text x="190" y="94" fill="url(#pui89BrandGreen)" font-family="Arial,Helvetica,sans-serif" font-size="55" font-weight="900" letter-spacing="2" filter="url(#pui89SoftGlow)">PUI89</text>
 </svg>
