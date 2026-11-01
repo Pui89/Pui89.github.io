@@ -82,7 +82,7 @@ jobs:
                   errors.append(f"{filename}: favicon is not the current PUI89 mark")
               if 'id="share"' in text or 'qr-code' in text or 'pui89-english-qr' in text or 'pui89-thai-qr' in text:
                   errors.append(f"{filename}: obsolete QR/share block remains")
-              if not re.search(r'<link rel="canonical" href="https://pui89\\.github\\.io/', text):
+              if '<link rel="canonical" href="https://pui89.github.io/' not in text:
                   errors.append(f"{filename}: canonical URL missing")
           if errors:
               print("\\n".join("FAIL: " + item for item in errors))
