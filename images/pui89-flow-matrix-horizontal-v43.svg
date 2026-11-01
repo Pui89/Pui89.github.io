@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 horizontal logo — corrected lower light</title>
+<desc id="desc">Geometric green N and PUI89 wordmark. The luminous white-green beam is deliberately shifted lower across the diagonal band.</desc>
+<defs>
+ <linearGradient id="ng" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#062D2B"/><stop offset=".38" stop-color="#075B45"/><stop offset=".72" stop-color="#20B75D"/><stop offset="1" stop-color="#C0FF80"/></linearGradient>
+ <linearGradient id="beam" x1="43" y1="48" x2="113" y2="114" gradientUnits="userSpaceOnUse"><stop stop-color="#A9FF68" stop-opacity=".25"/><stop offset=".22" stop-color="#D8FFB4" stop-opacity=".9"/><stop offset=".43" stop-color="#F4FFE8"/><stop offset=".5" stop-color="#FFF"/><stop offset=".58" stop-color="#F4FFE8"/><stop offset=".8" stop-color="#D8FFB4" stop-opacity=".9"/><stop offset="1" stop-color="#A9FF68" stop-opacity=".25"/></linearGradient>
+ <radialGradient id="core"><stop stop-color="#FFF"/><stop offset=".22" stop-color="#FFF"/><stop offset=".43" stop-color="#F0FFD9"/><stop offset=".7" stop-color="#B5FF70" stop-opacity=".92"/><stop offset="1" stop-color="#8CFF50" stop-opacity="0"/></radialGradient>
+ <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="7"/></filter>
+ <filter id="cg" x="-150%" y="-150%" width="400%" height="400%"><feGaussianBlur stdDeviation="5"/></filter>
+</defs>
+<path d="M25 25H49L119 91V25H143V125H119L49 59V125H25Z" fill="url(#ng)"/>
+<g transform="translate(-6 6)">
+ <path d="M49 42L119 108" fill="none" stroke="#A9FF65" stroke-width="19" stroke-linecap="butt" opacity=".88" filter="url(#glow)"/>
+ <path d="M49 42L119 108" fill="none" stroke="url(#beam)" stroke-width="8" stroke-linecap="butt"/>
+ <path d="M49 42L119 108" fill="none" stroke="#FFF" stroke-width="2.3" stroke-linecap="butt" opacity=".98"/>
+ <circle cx="84" cy="75" r="25" fill="#A8FF64" opacity=".72" filter="url(#cg)"/>
+ <circle cx="84" cy="75" r="21" fill="url(#core)"/>
+ <circle cx="84" cy="75" r="3.2" fill="#FFF"/>
+</g>
+<text x="190" y="94" fill="#F0F8EE" font-family="Arial,Helvetica,sans-serif" font-size="55" font-weight="900" letter-spacing="2">PUI89</text>
+</svg>
