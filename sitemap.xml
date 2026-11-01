@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://pui89.github.io/</loc>
-  </url>
-  <url>
-    <loc>https://pui89.github.io/index.html</loc>
-  </url>
-  <url>
-    <loc>https://pui89.github.io/th.html</loc>
-  </url>
-  <url>
-    <loc>https://pui89.github.io/support.html</loc>
-  </url>
+  <url><loc>https://pui89.github.io/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://pui89.github.io/th.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://pui89.github.io/company.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://pui89.github.io/company-th.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://pui89.github.io/growth.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://pui89.github.io/growth-th.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://pui89.github.io/coconut.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://pui89.github.io/coconut-th.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://pui89.github.io/flood-rescue.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://pui89.github.io/flood-rescue-th.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://pui89.github.io/screening.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://pui89.github.io/screening-th.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://pui89.github.io/support.html</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://pui89.github.io/support-th.html</loc><lastmod>2026-11-01</lastmod></url>
 </urlset>
