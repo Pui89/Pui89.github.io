@@ -9,7 +9,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
-HTML_FILES = [ROOT / "index.html", ROOT / "404.html"]
+HTML_FILES = [ROOT / "index.html", ROOT / "th.html", ROOT / "404.html"]
 MARKDOWN_FILES = [
     ROOT / "README.md",
     ROOT / "GROWTH_ROADMAP.md",
@@ -112,6 +112,47 @@ def main() -> int:
             if required not in html:
                 errors.append(f"index.html is missing expected content: {required}")
 
+    # Validate the English and Thai homepages as one bilingual release unit.
+    localized_pages = {
+        "index.html": {
+            "language": '<html lang="en">',
+            "theme": '<meta name="theme-color" content="#14251c">',
+            "qr_asset": 'src="images/pui89-english-qr.svg"',
+            "qr_target": 'href="https://pui89.github.io/"',
+        },
+        "th.html": {
+            "language": '<html lang="th">',
+            "theme": '<meta name="theme-color" content="#14251c">',
+            "qr_asset": 'src="images/pui89-thai-qr.svg"',
+            "qr_target": 'href="https://pui89.github.io/th.html"',
+        },
+    }
+    for filename, required_values in localized_pages.items():
+        path = ROOT / filename
+        if not path.is_file():
+            continue
+        source = path.read_text(encoding="utf-8")
+        for label, value in required_values.items():
+            if value not in source:
+                errors.append(f"{filename} is missing or has incorrect {label}: {value}")
+        if r"\n" in source:
+            errors.append(f"{filename} contains a literal escaped newline sequence")
+        if 'id="share"' not in source:
+            errors.append(f"{filename} is missing its QR sharing section")
+
+    thai_path = ROOT / "th.html"
+    if thai_path.is_file():
+        thai_source = thai_path.read_text(encoding="utf-8")
+        if 'href="growth.html"' in thai_source:
+            errors.append("th.html navigation must link to the Thai growth page, not growth.html")
+        if thai_source.count('href="growth-th.html"') != 1:
+            errors.append("th.html must contain exactly one Thai growth-roadmap navigation link")
+
+    english_path = ROOT / "index.html"
+    if english_path.is_file():
+        english_source = english_path.read_text(encoding="utf-8")
+        if english_source.count('href="growth.html"') != 1:
+            errors.append("index.html must contain exactly one English growth-roadmap navigation link")
     if errors:
         print("Portfolio site checks FAILED:")
         for error in errors:
