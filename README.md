@@ -8,7 +8,13 @@ PUI89 develops AI applications and robotics concepts around a shared engineering
 
 PUI89 brings together domain knowledge, independent software development, applied research questions, and an evidence-led engineering process. The initiative is in development; project concepts, software tests, simulations, and visual designs are described separately from validated model performance or physical robot capability.
 
-- **Public portfolio:** https://pui89.github.io/
+- ## PUI89 visual overview
+
+![PUI89 ecosystem: coconut harvesting, amphibious flood rescue, multimodal inspection, and shared AI Core](images/pui89-ai-robotics-ecosystem.svg)
+
+*Concept illustration only; it does not represent validated physical robots, measured AI performance, or field-proven capability.*
+
+**Public portfolio:** https://pui89.github.io/
 - **Official initiative profile:** https://pui89.github.io/company.html
 - **Thai profile:** https://pui89.github.io/company-th.html
 - **Growth roadmap:** https://pui89.github.io/growth.html
