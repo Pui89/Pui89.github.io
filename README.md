@@ -10,7 +10,17 @@ PUI89 brings together domain knowledge, independent software development, applie
 
 - ## PUI89 visual overview
 
-![PUI89 brand visual: abstract PUI89 identity and connected intelligence network](images/pui89-ai-robotics-ecosystem.svg)
+![PUI89 Flow Matrix Prime primary logo](images/pui89-flow-matrix-prime.svg)
+
+**Selected identity:** Flow Matrix Prime — abstract N symbol, premium PUI89 wordmark, dark teal and emerald palette.
+
+Logo assets:
+- [Primary stacked logo](images/pui89-flow-matrix-prime.svg)
+- [Horizontal website logo](images/pui89-flow-matrix-horizontal.svg)
+- [Standalone N symbol](images/pui89-flow-matrix-mark.svg)
+- [White logo for dark backgrounds](images/pui89-flow-matrix-white.svg)
+- [Monochrome logo](images/pui89-flow-matrix-monochrome.svg)
+- [Favicon](favicon.svg)
 
 *Brand illustration only. The abstract visual represents PUI89's identity and engineering approach; it does not depict physical products or claim validated capabilities.*
 
