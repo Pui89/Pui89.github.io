@@ -1,7 +1,7 @@
 {
   "portfolio": "PUI89",
   "report_version": "0.1.0",
-  "generated_at": "2026-11-02T00:00:00Z",
+  "generated_at": "2026-11-01T20:14:00Z",
   "reporting_mode": "manual_historical_baseline",
   "overall_statement": "This is a manually assembled historical baseline from the public PUI89 portfolio README. It is not a live dashboard and does not imply project-wide readiness.",
   "projects": [
