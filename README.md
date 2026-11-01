@@ -10,9 +10,9 @@ PUI89 brings together domain knowledge, independent software development, applie
 
 - ## PUI89 visual overview
 
-![PUI89 ecosystem: coconut harvesting, amphibious flood rescue, multimodal inspection, and shared AI Core](images/pui89-ai-robotics-ecosystem.svg)
+![PUI89 brand visual: abstract PUI89 identity and connected intelligence network](images/pui89-ai-robotics-ecosystem.svg)
 
-*Concept illustration only; it does not represent validated physical robots, measured AI performance, or field-proven capability.*
+*Brand illustration only. The abstract visual represents PUI89's identity and engineering approach; it does not depict physical products or claim validated capabilities.*
 
 **Public portfolio:** https://pui89.github.io/
 - **Official initiative profile:** https://pui89.github.io/company.html
