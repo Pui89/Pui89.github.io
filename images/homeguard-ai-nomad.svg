@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+<title id="title">HOMEGUARD AI NOMAD — portable mobile guardian concept</title>
+<desc id="desc">A compact low-profile four-wheel mobile robot with a protected central body, raised sensor mast, panoramic awareness sensors, front depth sensor, soft protective bumper and cyan status lighting, shown as an engineering concept.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#102b45"/><stop offset=".55" stop-color="#091a2d"/><stop offset="1" stop-color="#07111f"/></linearGradient>
+  <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e6f2f6"/><stop offset=".38" stop-color="#9eb8c9"/><stop offset=".72" stop-color="#536d83"/><stop offset="1" stop-color="#263c52"/></linearGradient>
+  <linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#29445c"/><stop offset="1" stop-color="#0d1b2b"/></linearGradient>
+  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#42d9ff"/><stop offset="1" stop-color="#a8edbd"/></linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#173d58"/><stop offset="1" stop-color="#061521"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="shadow"><feGaussianBlur stdDeviation="18"/></filter>
+  <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#5d91ae" stroke-opacity=".11"/></pattern>
+</defs>
+<rect width="1440" height="900" rx="34" fill="url(#bg)"/><rect width="1440" height="900" rx="34" fill="url(#grid)"/>
+<circle cx="1080" cy="350" r="270" fill="#1b7390" opacity=".09"/><circle cx="1080" cy="350" r="205" fill="none" stroke="#42d9ff" stroke-opacity=".12" stroke-width="2"/>
+<g font-family="Arial,Helvetica,sans-serif">
+  <text x="82" y="88" fill="#42d9ff" font-size="20" font-weight="700" letter-spacing="5">PUI89  /  MOBILE SAFETY CONCEPT</text>
+  <text x="82" y="151" fill="#f1f7fb" font-size="58" font-weight="800" letter-spacing="-2">HOMEGUARD AI</text>
+  <text x="84" y="194" fill="#9de0c9" font-size="25" font-weight="700" letter-spacing="4">NOMAD</text>
+  <text x="84" y="235" fill="#b8c7da" font-size="19">A compact, owner-supervised mobile guardian</text>
+</g>
+<!-- ground shadow -->
+<ellipse cx="800" cy="690" rx="420" ry="58" fill="#000" opacity=".45" filter="url(#shadow)"/>
+<!-- sensor mast and head -->
+<g stroke-linejoin="round">
+  <path d="M802 280V389" stroke="#9eb8c9" stroke-width="22" stroke-linecap="round"/>
+  <path d="M802 285V385" stroke="#263f56" stroke-width="9" stroke-linecap="round"/>
+  <path d="M742 254Q742 220 778 210H830Q864 220 864 254V284Q864 310 837 316H769Q742 310 742 284Z" fill="url(#shell)" stroke="#d8e8ef" stroke-width="4"/>
+  <path d="M756 251Q756 235 777 231H829Q850 235 850 251V271H756Z" fill="url(#glass)" stroke="#42d9ff" stroke-width="3"/>
+  <circle cx="803" cy="252" r="13" fill="#42d9ff" filter="url(#glow)"/><circle cx="803" cy="252" r="5" fill="#f4fdff"/>
+  <circle cx="770" cy="282" r="5" fill="#a8edbd"/><circle cx="836" cy="282" r="5" fill="#a8edbd"/>
+  <path d="M762 214l-18-18M844 214l18-18" stroke="#9eb8c9" stroke-width="6" stroke-linecap="round"/>
+</g>
+<!-- rear wheel pair -->
+<g>
+  <g transform="translate(460 602)"><ellipse rx="70" ry="111" fill="#07111f" stroke="#607b90" stroke-width="7"/><ellipse rx="46" ry="82" fill="#172a3b" stroke="#9eb8c9" stroke-width="5"/><path d="M-40-52L40 52M-40 52L40-52M0-76V76" stroke="#5d7a90" stroke-width="8" opacity=".8"/></g>
+  <g transform="translate(1080 602)"><ellipse rx="70" ry="111" fill="#07111f" stroke="#607b90" stroke-width="7"/><ellipse rx="46" ry="82" fill="#172a3b" stroke="#9eb8c9" stroke-width="5"/><path d="M-40-52L40 52M-40 52L40-52M0-76V76" stroke="#5d7a90" stroke-width="8" opacity=".8"/></g>
+</g>
+<!-- chassis and main body -->
+<path d="M405 485Q425 428 500 413L946 413Q1032 421 1087 493L1128 584Q1136 612 1102 627L469 627Q423 621 397 587Z" fill="#0b1726" stroke="#607d92" stroke-width="7"/>
+<path d="M434 484Q463 432 531 429H940Q1002 435 1050 491L1085 560Q1098 589 1063 600H485Q443 594 424 560Z" fill="url(#shell)" stroke="#d4e3eb" stroke-width="5"/>
+<path d="M493 448H934Q983 454 1014 493L1042 548H455L474 493Q480 463 493 448Z" fill="url(#dark)" stroke="#7893a7" stroke-width="4"/>
+<path d="M532 465H913Q953 469 979 500H506Q512 477 532 465Z" fill="#1c354a"/>
+<!-- top service panel -->
+<path d="M585 451H873Q900 451 911 473L893 492H565L548 473Q557 451 585 451Z" fill="#d8e6ed" opacity=".92"/>
+<path d="M609 463H851" stroke="#607d92" stroke-width="5" stroke-linecap="round"/>
+<circle cx="873" cy="463" r="5" fill="#42d9ff"/>
+<!-- front bumper / light strip -->
+<path d="M446 551Q463 577 498 579H1020Q1052 576 1068 548" fill="none" stroke="#1b3044" stroke-width="23" stroke-linecap="round"/>
+<path d="M493 580H1021" stroke="url(#cyan)" stroke-width="8" stroke-linecap="round" filter="url(#glow)"/>
+<!-- front sensor pod -->
+<path d="M693 530Q710 511 738 511H840Q865 514 875 537V556H683Z" fill="url(#glass)" stroke="#42d9ff" stroke-width="4"/>
+<circle cx="745" cy="535" r="10" fill="#42d9ff"/><circle cx="815" cy="535" r="10" fill="#a8edbd"/>
+<path d="M779 519v30" stroke="#6f9bb3" stroke-width="3"/>
+<!-- side vents and protected corner modules -->
+<g fill="#263f55" stroke="#a8c1d0" stroke-width="3">
+ <path d="M468 500h70v42h-70z"/><path d="M947 500h70v42h-70z"/>
+ <path d="M482 510h42M482 522h42M482 534h42M961 510h42M961 522h42M961 534h42" stroke="#42d9ff" stroke-width="4"/>
+</g>
+<!-- wheel guards -->
+<path d="M405 537Q410 454 478 424L499 440Q448 473 447 552Z" fill="#2b465e" stroke="#a7bdcc" stroke-width="4"/>
+<path d="M1086 537Q1080 454 1012 424L991 440Q1042 473 1043 552Z" fill="#2b465e" stroke="#a7bdcc" stroke-width="4"/>
+<!-- callout lines -->
+<g fill="none" stroke="#42d9ff" stroke-width="2.5" stroke-dasharray="7 7" opacity=".85">
+ <path d="M865 248H1098V212H1168"/><path d="M868 536H1128V482H1190"/><path d="M480 530H330V458H210"/><path d="M800 622V720H1030"/>
+</g>
+<g font-family="Arial,Helvetica,sans-serif" fill="#eaf5fb">
+ <text x="1180" y="205" font-size="18" font-weight="700">360° AWARENESS MAST</text><text x="1180" y="231" font-size="14" fill="#a9c0d0">Camera / thermal / range sensors*</text>
+ <text x="1200" y="476" font-size="18" font-weight="700">PROTECTED FRONT POD</text><text x="1200" y="502" font-size="14" fill="#a9c0d0">Obstacle sensing and status lighting*</text>
+ <text x="78" y="448" font-size="18" font-weight="700">ALL-TERRAIN WHEELS</text><text x="78" y="474" font-size="14" fill="#a9c0d0">Low-speed, supervised mobility</text>
+ <text x="1044" y="730" font-size="18" font-weight="700">SEALED CENTRAL CHASSIS</text><text x="1044" y="756" font-size="14" fill="#a9c0d0">Battery and compute protection goals</text>
+</g>
+<!-- bottom technical legend -->
+<path d="M80 800H1360" stroke="#55738b" stroke-opacity=".55"/>
+<g font-family="Arial,Helvetica,sans-serif">
+ <text x="82" y="842" fill="#42d9ff" font-size="16" font-weight="700" letter-spacing="2">PROPOSED CONCEPT · NOT A BUILT ROBOT</text>
+ <text x="1360" y="842" fill="#b8c7da" font-size="14" text-anchor="end">*Sensor fit and environmental ratings require engineering selection and validation.</text>
+</g>
+</svg>
