@@ -77,3 +77,9 @@ def test_no_automatic_actuation_or_diagnostic_claims():
     report = build_demo()
     assert "automatic control" in report["safety_notice"]
     assert report["system"]["model_status"] == "NO_TRAINED_MODEL"
+
+
+def test_empty_input_is_insufficient_evidence_not_normal():
+    report = evaluate_observations([], {"temperature_c": baseline()})
+    assert report["assessment"]["status"] == "INSUFFICIENT_EVIDENCE"
+    assert report["assessment"]["observations_evaluated"] == 0

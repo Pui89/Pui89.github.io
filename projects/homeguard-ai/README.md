@@ -27,7 +27,7 @@ HOMEGUARD AI is a proposed evidence-driven platform for building condition monit
 - JSON report output
 - Automated tests and continuous integration
 
-The 29-capability catalogue is a product roadmap, not 29 implemented AI models. Initial algorithms are deterministic and explainable. Machine learning is introduced only when suitable, lawfully usable, representative data and measurable validation criteria exist.
+The 29-capability catalogue is a product roadmap, not 29 implemented AI models. See [Intelligence Catalogue](docs/INTELLIGENCE_CATALOGUE.md). Initial algorithms are deterministic and explainable. Machine learning is introduced only when suitable, lawfully usable, representative data and measurable validation criteria exist.
 
 ## Quick start
 
