@@ -170,7 +170,7 @@ def evaluate_observations(
         },
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "assessment": {
-            "status": "REVIEW_REQUIRED" if findings else "NO_DEVIATION_IN_EVALUATED_INPUTS",
+            "status": ("INSUFFICIENT_EVIDENCE" if accepted == 0 else "REVIEW_REQUIRED" if findings else "NO_DEVIATION_IN_EVALUATED_INPUTS"),
             "observations_received": accepted + excluded,
             "observations_evaluated": accepted,
             "observations_excluded": excluded,
