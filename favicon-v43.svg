@@ -1,5 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="PUI89">
-<defs><linearGradient id="g" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#062D2B"/><stop offset=".38" stop-color="#075B45"/><stop offset=".72" stop-color="#20B75D"/><stop offset="1" stop-color="#C0FF80"/></linearGradient><linearGradient id="b" x1="15" y1="27" x2="37" y2="53" gradientUnits="userSpaceOnUse"><stop stop-color="#D8FFB4" stop-opacity=".4"/><stop offset=".4" stop-color="#F4FFE8"/><stop offset=".5" stop-color="#FFF"/><stop offset=".7" stop-color="#E5FFD0"/><stop offset="1" stop-color="#A9FF68" stop-opacity=".4"/></linearGradient><radialGradient id="c"><stop stop-color="#FFF"/><stop offset=".3" stop-color="#F0FFD9"/><stop offset=".7" stop-color="#B5FF70" stop-opacity=".95"/><stop offset="1" stop-color="#8CFF50" stop-opacity="0"/></radialGradient><filter id="f" x="-150%" y="-150%" width="400%" height="400%"><feGaussianBlur stdDeviation="3.5"/></filter></defs>
-<rect width="64" height="64" rx="13" fill="#07130F"/><path d="M9 9H21L43 40V9H55V55H43L21 33V55H9Z" fill="url(#g)"/>
-<g transform="translate(-2 2)"><path d="M21 21L43 47" stroke="#A9FF65" stroke-width="9" opacity=".9" filter="url(#f)"/><path d="M21 21L43 47" stroke="url(#b)" stroke-width="4"/><path d="M21 21L43 47" stroke="#FFF" stroke-width="1.2"/><circle cx="32" cy="34" r="12" fill="#A8FF64" opacity=".8" filter="url(#f)"/><circle cx="32" cy="34" r="9" fill="url(#c)"/><circle cx="32" cy="34" r="1.8" fill="#FFF"/></g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="PUI89 N icon">
+<defs>
+  <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#173D68"/><stop offset="1" stop-color="#06152C"/>
+  </linearGradient>
+  <linearGradient id="core" x1="15" y1="15" x2="49" y2="49" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#00AEEF"/><stop offset=".5" stop-color="#D7FFFF"/><stop offset="1" stop-color="#00BFFF"/>
+  </linearGradient>
+  <filter id="glow" x="-70%" y="-70%" width="240%" height="240%">
+    <feGaussianBlur stdDeviation="3.2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <clipPath id="nclip"><path d="M8 9H21L43 38V9H56V55H43L21 26V55H8Z"/></clipPath>
+</defs>
+<rect width="64" height="64" rx="12" fill="#07172F"/>
+<path d="M8 9H21L43 38V9H56V55H43L21 26V55H8Z" fill="url(#navy)" stroke="#28577D" stroke-width="1"/>
+<g clip-path="url(#nclip)">
+  <path d="M21 17L43 47" stroke="#00CFFF" stroke-width="11" opacity=".55" filter="url(#glow)"/>
+  <path d="M21 17L43 47" stroke="url(#core)" stroke-width="4.5"/>
+  <path d="M21 17L43 47" stroke="#F1FFFF" stroke-width="1"/>
+</g>
 </svg>
