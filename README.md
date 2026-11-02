@@ -1,6 +1,6 @@
 # PUI89 AI Robotics
 
-**An independent AI initiative exploring practical intelligence across agriculture, disaster response, and public-safety screening.**
+**An independent AI initiative exploring practical intelligence across agriculture, disaster response, public-safety screening, and building safety.**
 
 PUI89 develops AI applications and robotics concepts around a shared engineering question:
 
@@ -46,6 +46,15 @@ The three flagship repositories now share the PUI89 AI Core safety contract and 
 Coconut's merged dataset audit also passed 15 checks across dataset structure, image hashes and split leakage: [audit run and evidence artifact](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40944312469).
 
 **Evidence boundary:** these are rule-based scenario and software-verification results. They are not model accuracy metrics, proof of dataset licensing or annotation correctness, validated simulator physics, physical robot performance, safety certification, or commercial deployment. The PUI89 Command Centre dataset-monitoring addition is proposed in [PR #33](https://github.com/Pui89/Pui89.github.io/pull/33) and is not yet merged.
+
+## Four-product portfolio
+
+1. [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) — agricultural AI application and harvesting robot concept.
+2. [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) — flood-response AI application and amphibious rescue robot concept.
+3. [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) — multimodal inspection and human-review concept.
+4. **HOMEGUARD AI** — multi-modal predictive building intelligence. Its initial foundation is staged at [projects/homeguard-ai](projects/homeguard-ai/) in this website repository while the dedicated `Pui89/HOMEGUARD-AI` repository is prepared. It is not yet a separate repository or a real building deployment.
+
+Each product has its own domain requirements and validation gates. Shared PUI89 engineering contracts should be reused through documented interfaces rather than copying product-specific logic.
 
 ## 1. Mission and vision
 
