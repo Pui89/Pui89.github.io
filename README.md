@@ -47,6 +47,10 @@ Coconut's merged dataset audit also passed 15 checks across dataset structure, i
 
 **Evidence boundary:** these are rule-based scenario and software-verification results. They are not model accuracy metrics, proof of dataset licensing or annotation correctness, validated simulator physics, physical robot performance, safety certification, or commercial deployment. The PUI89 Command Centre dataset-monitoring addition is proposed in [PR #33](https://github.com/Pui89/Pui89.github.io/pull/33) and is not yet merged.
 
+## PUI89 world-class engineering blueprint
+
+The four products follow one zero-cost, evidence-first AI engineering strategy. Read the [PUI89 World-Class AI Blueprint](PUI89_WORLD_CLASS_AI_BLUEPRINT.md) for the shared AI Core, approved technology direction, automation boundaries, product-specific priorities, quality gates and staged roadmap.
+
 ## Four-product portfolio
 
 1. [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) — agricultural AI application and harvesting robot concept.
