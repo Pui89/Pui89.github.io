@@ -113,3 +113,13 @@ Do not compare scores across projects unless scenario definitions and measuremen
 2. Run Coconut dataset provenance, local file hash, annotation and source-group split checks when the original candidate image is available.
 3. Obtain genuine detector predictions on a frozen held-out set and publish reproducible metrics—or document why inference remains blocked.
 4. Add simulator-specific telemetry only where an actual simulator emits it; keep hardware fields NOT_CONNECTED until hardware is present and measured.
+
+
+## Continuous improvement programme — approved direction
+
+The shared programme now defines the 21-capability intelligence catalogue, common AI Core architecture, daily/weekly report contract, event-driven quality checks, weekly engineering review, monthly architecture review, human approval gates and staged HOMEGUARD demonstration. These are strategic specifications and staged targets; they are not claims that all capabilities or schedules are already implemented.
+
+- [Read the PUI89 Continuous Improvement & Intelligence Programme](PUI89_CONTINUOUS_IMPROVEMENT_PROGRAMME.md).
+- Current project evidence remains limited to the dated workflow runs and test results documented above. Audit existing automation before adding new jobs; reuse working checks and avoid duplicate workflows.
+- HOMEGUARD AI is a proposed next project. Its first target is a clearly labelled synthetic three-floor building demonstration, not live building monitoring.
+- Safety-critical changes, model/data approvals, releases and hardware-related interfaces require human review. No automatic hardware action, paid service, model download or unverified performance claim is authorized.
