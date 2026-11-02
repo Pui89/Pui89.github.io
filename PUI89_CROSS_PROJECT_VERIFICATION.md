@@ -1,11 +1,11 @@
 # PUI89 AI Core — Cross-Project Verification Snapshot
 
-**Snapshot date:** 2026-11-01  
-**Purpose:** Record observed automated checks across the three PUI89 AI applications and robot concepts. This is a software verification snapshot, not a real-world performance report.
+**Snapshot date:** 2026-11-02  
+**Purpose:** Record observed automated checks across the four PUI89 AI applications and robot concepts. This is a software verification snapshot, not a real-world performance report.
 
 ## Evidence benchmark engine — 1 November 2026
 
-The deterministic PUI89 Evidence Benchmark Engine has now been merged into all three project repositories. The corresponding hosted simulation/evidence workflows completed successfully on 31 October 2026, and each project reports **6 standard-library benchmark-engine tests passed**.
+The deterministic PUI89 Evidence Benchmark Engine has now been merged into the three robotics/screening project repositories; HOMEGUARD has a separate initial foundation CI. The corresponding hosted simulation/evidence workflows completed successfully on 31 October 2026, and each project reports **6 standard-library benchmark-engine tests passed**.
 
 | Project | Merged PR | Successful hosted run | What this verifies |
 |---|---|---|---|
@@ -13,7 +13,7 @@ The deterministic PUI89 Evidence Benchmark Engine has now been merged into all t
 | [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | [#124](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/124) | [Run 41222937936](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41222937936) | Same deterministic evidence-integrity checks; simulation evidence only |
 | [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | [#101](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/101) | [Run 41222943024](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41222943024) | Same deterministic evidence-integrity checks; simulation evidence only |
 
-All three PRs are merged, and all three cited runs have GitHub Actions conclusion **success**. The engine checks integrity and consistency of supplied evidence; it does not authenticate the truth of the underlying observations, measure model accuracy, establish comparable cross-project scores, or validate physical performance. The runs reject any simulation step that claims hardware actuation.
+All three benchmark-engine PRs are merged, and all three cited runs have GitHub Actions conclusion **success**. HOMEGUARD's separate initial CI run also completed successfully; it is not yet running the same benchmark engine. The engine checks integrity and consistency of supplied evidence; it does not authenticate the truth of the underlying observations, measure model accuracy, establish comparable cross-project scores, or validate physical performance. The runs reject any simulation step that claims hardware actuation.
 
 The default-branch workflow runs observed on 31 October 2026 also completed successfully:
 - Coconut: [automated verification](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41241337764), [lightweight core tests](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41241337730), and [security](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41241337679).
@@ -123,3 +123,25 @@ The shared programme now defines the 21-capability intelligence catalogue, commo
 - Current project evidence remains limited to the dated workflow runs and test results documented above. Audit existing automation before adding new jobs; reuse working checks and avoid duplicate workflows.
 - HOMEGUARD AI is a proposed next project. Its first target is a clearly labelled synthetic three-floor building demonstration, not live building monitoring.
 - Safety-critical changes, model/data approvals, releases and hardware-related interfaces require human review. No automatic hardware action, paid service, model download or unverified performance claim is authorized.
+
+
+## Fourth product added — HOMEGUARD AI (2 November 2026)
+
+[HOMEGUARD AI](https://github.com/Pui89/HomeguardAI) is now included in the PUI89 portfolio and website's product 04 pages. Its standalone repository contains a deterministic Python foundation, evidence-aware observations and baselines, quality/freshness/calibration checks, a synthetic three-floor scenario, machine-readable finding schema, automated tests and GitHub Actions CI.
+
+- Initial CI run: [Run 41453149397](https://github.com/Pui89/HomeguardAI/actions/runs/41453149397) — completed successfully.
+- Website product pages: [English](https://pui89.github.io/homeguard.html) · [Thai](https://pui89.github.io/homeguard-th.html).
+- Standalone repository: [Pui89/HomeguardAI](https://github.com/Pui89/HomeguardAI).
+
+**Evidence boundary:** HOMEGUARD's first CI validates its software foundation and synthetic report generation only. It is not yet using the same shared benchmark engine as the other three repositories. No calibrated building sensors, trained AI model, live monitoring, certified hazard detection, structural certification or field performance are claimed. The 29-capability catalogue remains a roadmap.
+
+## Four-product PUI89 engineering direction
+
+The four projects now follow the [PUI89 World-Class AI Blueprint](PUI89_WORLD_CLASS_AI_BLUEPRINT.md), which defines the shared AI Core, domain-specific adapters, zero-cost technology adoption rules, safe automation boundaries, evidence gates and staged development roadmap. The shared core is a set of contracts and reusable engineering practices; it does not imply one universal model or one common performance score.
+
+- Coconut: reviewed dataset and first valid held-out vision benchmark.
+- Flood Rescue: robust world-state, fault injection and platform-specific simulation.
+- Screening: lawful sensor/data provenance, false-positive/false-negative evaluation and human review.
+- HOMEGUARD: spatial sensor-quality model and multi-sensor building evidence.
+
+Do not sum tests or scenario passes across projects into a single PUI89 score. Do not infer field readiness from successful CI.
