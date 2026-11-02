@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1120" viewBox="0 0 1800 1120" role="img" aria-labelledby="title desc">
+<title id="title">HOMEGUARD AI NOMAD — how it works</title>
+<desc id="desc">Concept diagram: a four-wheel mobile robot gathers observations, checks evidence quality, understands location and context, selects a safe state, and reports to its owner. Home, Travel and Camping are supervised modes. If safe return conditions are not met, it safe-stops. Proposed only, not built or tested.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071426"/><stop offset="1" stop-color="#102b45"/></linearGradient>
+ <linearGradient id="cyan" x2="1" y2="1"><stop stop-color="#25bde8"/><stop offset="1" stop-color="#91f7ff"/></linearGradient>
+ <linearGradient id="robot" x2="0" y2="1"><stop stop-color="#2b5272"/><stop offset="1" stop-color="#10243b"/></linearGradient>
+ <marker id="arr" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M1 1L10 6L1 11" fill="none" stroke="#57dff9" stroke-width="2"/></marker>
+ <style>
+ .title{font:800 45px system-ui,sans-serif;fill:#f3f8ff}.subtitle{font:400 22px system-ui,sans-serif;fill:#b2c6d8}.label{font:800 24px system-ui,sans-serif;fill:#f2f8ff}.copy{font:400 18px system-ui,sans-serif;fill:#b8cbdc}.micro{font:800 16px system-ui,sans-serif;letter-spacing:2px;fill:#73eaff}.panel{fill:#10243a;stroke:#365570;stroke-width:2}.arrow{fill:none;stroke:#57dff9;stroke-width:4;marker-end:url(#arr)}.number{font:800 21px system-ui,sans-serif;fill:#071727}
+ </style>
+</defs>
+<rect width="1800" height="1120" rx="28" fill="url(#bg)"/>
+<circle cx="1600" cy="100" r="240" fill="#1c7896" opacity=".09"/><circle cx="120" cy="1000" r="260" fill="#1c7896" opacity=".08"/>
+<text x="85" y="78" class="micro">PUI89  /  HOMEGUARD AI NOMAD</text>
+<text x="85" y="139" class="title">HOW THE ROBOT IS INTENDED TO WORK</text>
+<text x="85" y="178" class="subtitle">A simple observe → understand → act safely → report loop, with the owner in control</text>
+
+<!-- Robot -->
+<g transform="translate(95 280)">
+ <rect x="10" y="112" width="440" height="240" rx="72" fill="#030b15" opacity=".55"/>
+ <rect x="0" y="88" width="460" height="238" rx="70" fill="url(#robot)" stroke="#6595b5" stroke-width="5"/>
+ <rect x="116" y="35" width="228" height="80" rx="24" fill="#183e5b" stroke="#6398b8" stroke-width="4"/>
+ <rect x="143" y="52" width="174" height="44" rx="17" fill="#071b2d" stroke="#51dff9" stroke-width="3"/>
+ <circle cx="230" cy="74" r="12" fill="#9af8ff"/>
+ <path d="M230 35V12" stroke="#71edff" stroke-width="7" stroke-linecap="round"/>
+ <rect x="198" y="-14" width="64" height="34" rx="12" fill="#163b58" stroke="#70eaff" stroke-width="3"/>
+ <path d="M205 1H255" stroke="#a0f8ff" stroke-width="4"/>
+ <rect x="28" y="158" width="76" height="70" rx="19" fill="#071523" stroke="#4bdcf8" stroke-width="3"/>
+ <circle cx="66" cy="193" r="18" fill="#54e2fb"/><circle cx="66" cy="193" r="7" fill="#071523"/>
+ <rect x="357" y="158" width="76" height="70" rx="19" fill="#071523" stroke="#4bdcf8" stroke-width="3"/>
+ <circle cx="395" cy="193" r="17" fill="#54e2fb"/>
+ <path d="M125 268H335" stroke="#55e3fa" stroke-width="7" stroke-linecap="round"/>
+ <g fill="#07101c" stroke="#7096af" stroke-width="4"><rect x="-24" y="130" width="65" height="150" rx="26"/><rect x="419" y="130" width="65" height="150" rx="26"/></g>
+ <g fill="#1a405e" stroke="#8bb9d2" stroke-width="3"><circle cx="8" cy="205" r="18"/><circle cx="451" cy="205" r="18"/></g>
+ <text x="230" y="390" class="label" text-anchor="middle">4-WHEEL MOBILE ROBOT</text>
+ <text x="230" y="421" class="copy" text-anchor="middle">Two wheels on each side • proposed layout</text>
+</g>
+<rect x="95" y="755" width="460" height="125" rx="18" fill="#0b1e31" stroke="#35556e" stroke-width="2"/>
+<text x="122" y="795" class="micro">POSSIBLE INPUTS (IF INSTALLED &amp; VALIDATED)</text>
+<text x="122" y="834" class="copy">Camera • thermal • obstacle sensors • GPS</text>
+<text x="122" y="862" class="copy">Battery / wheel state • local map</text>
+
+<!-- Workflow top row -->
+<g>
+ <rect x="650" y="265" width="310" height="170" rx="20" class="panel"/>
+ <circle cx="690" cy="307" r="22" fill="url(#cyan)"/><text x="690" y="315" class="number" text-anchor="middle">1</text>
+ <text x="728" y="315" class="label">OBSERVE</text>
+ <text x="680" y="370" class="copy">Gather camera and sensor</text><text x="680" y="400" class="copy">observations around the robot</text>
+ <path d="M960 350H1015" class="arrow"/>
+ <rect x="1025" y="265" width="310" height="170" rx="20" class="panel"/>
+ <circle cx="1065" cy="307" r="22" fill="url(#cyan)"/><text x="1065" y="315" class="number" text-anchor="middle">2</text>
+ <text x="1103" y="315" class="label">CHECK EVIDENCE</text>
+ <text x="1055" y="370" class="copy">Check freshness, sensor health,</text><text x="1055" y="400" class="copy">calibration and uncertainty</text>
+ <path d="M1335 350H1390" class="arrow"/>
+ <rect x="1400" y="265" width="310" height="170" rx="20" class="panel"/>
+ <circle cx="1440" cy="307" r="22" fill="url(#cyan)"/><text x="1440" y="315" class="number" text-anchor="middle">3</text>
+ <text x="1478" y="315" class="label">UNDERSTAND</text>
+ <text x="1430" y="370" class="copy">Relate observations to place,</text><text x="1430" y="400" class="copy">time and known context</text>
+ <path d="M1555 435V500" class="arrow"/>
+ <rect x="1400" y="515" width="310" height="170" rx="20" class="panel"/>
+ <circle cx="1440" cy="557" r="22" fill="url(#cyan)"/><text x="1440" y="565" class="number" text-anchor="middle">4</text>
+ <text x="1478" y="565" class="label">CHOOSE SAFELY</text>
+ <text x="1430" y="620" class="copy">Continue, pause, return or</text><text x="1430" y="650" class="copy">safe-stop based on conditions</text>
+ <path d="M1400 600H1345" class="arrow"/>
+ <rect x="1025" y="515" width="310" height="170" rx="20" class="panel"/>
+ <circle cx="1065" cy="557" r="22" fill="url(#cyan)"/><text x="1065" y="565" class="number" text-anchor="middle">5</text>
+ <text x="1103" y="565" class="label">REPORT TO OWNER</text>
+ <text x="1055" y="620" class="copy">Show what was observed,</text><text x="1055" y="650" class="copy">what is uncertain, what to review</text>
+ <path d="M1025 600H970" class="arrow"/>
+ <rect x="650" y="515" width="310" height="170" rx="20" class="panel"/>
+ <text x="680" y="562" class="micro">HUMAN IN CONTROL</text>
+ <text x="680" y="608" class="label">Owner reviews alert</text>
+ <text x="680" y="650" class="copy">A person decides next steps</text>
+</g>
+<!-- Modes -->
+<text x="650" y="760" class="micro">THREE SUPERVISED MODES</text>
+<g>
+ <rect x="650" y="785" width="310" height="90" rx="16" fill="#0b1e31" stroke="#35556e" stroke-width="2"/>
+ <text x="675" y="822" class="label">HOME</text><text x="675" y="852" class="copy">Indoor patrol • dock when safe</text>
+ <rect x="980" y="785" width="310" height="90" rx="16" fill="#0b1e31" stroke="#35556e" stroke-width="2"/>
+ <text x="1005" y="822" class="label">TRAVEL</text><text x="1005" y="852" class="copy">Owner nearby • defined area</text>
+ <rect x="1310" y="785" width="400" height="90" rx="16" fill="#0b1e31" stroke="#35556e" stroke-width="2"/>
+ <text x="1335" y="822" class="label">CAMPING</text><text x="1335" y="852" class="copy">Quiet monitoring • alert owner</text>
+</g>
+<rect x="650" y="915" width="1060" height="110" rx="18" fill="#102d3b" stroke="#55dff8" stroke-width="2"/>
+<text x="680" y="957" class="micro">SAFETY DECISION</text>
+<text x="680" y="998" class="label">Return only if location + route + battery are safe.</text>
+<text x="1310" y="998" class="label" fill="#ffd99a">Otherwise: SAFE STOP</text>
+<text x="95" y="1080" class="copy">CONCEPT ONLY — workflow is proposed; robot hardware, sensor integration and autonomous behaviour are not verified.</text>
+</svg>
