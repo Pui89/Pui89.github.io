@@ -52,7 +52,7 @@ Coconut's merged dataset audit also passed 15 checks across dataset structure, i
 1. [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) — agricultural AI application and harvesting robot concept.
 2. [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) — flood-response AI application and amphibious rescue robot concept.
 3. [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) — multimodal inspection and human-review concept.
-4. **HOMEGUARD AI** — multi-modal predictive building intelligence. Its initial foundation is staged at [projects/homeguard-ai](projects/homeguard-ai/) in this website repository while the dedicated `Pui89/HOMEGUARD-AI` repository is prepared. It is not yet a separate repository or a real building deployment.
+4. **[HOMEGUARD AI](https://github.com/Pui89/HomeguardAI)** — multi-modal predictive building intelligence. Its standalone repository now contains an evidence-first Python foundation, deterministic synthetic three-floor scenario, machine-readable report schema, automated tests and GitHub Actions CI. The initial CI run passed; all evidence remains simulation-only, with no real building deployment or trained model claimed.
 
 Each product has its own domain requirements and validation gates. Shared PUI89 engineering contracts should be reused through documented interfaces rather than copying product-specific logic.
 
