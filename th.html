@@ -7,7 +7,7 @@
 <link rel="alternate" hreflang="th" href="https://pui89.github.io/th.html">
 <link rel="alternate" hreflang="x-default" href="https://pui89.github.io/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07130f">
+  <meta name="theme-color" content="#07111f">
   <meta name="description" content="PUI89 AI Robotics พัฒนาซอฟต์แวร์ AI และแนวคิดหุ่นยนต์สำหรับงานเกษตร การตอบสนองภัยน้ำท่วมรุนแรง และการตรวจสอบหลายรูปแบบ โดยยึดหลักฐานและระบุข้อจำกัดอย่างชัดเจน">
   <meta name="robots" content="index,follow">
   <meta property="og:type" content="website">
@@ -47,6 +47,87 @@
     .notice{background:rgba(91,73,34,.36);border-color:rgba(240,212,154,.48)}
     .footer{border-top-color:rgba(197,233,169,.25)}
     .qr-panel{background:linear-gradient(135deg,#2b4b37,#1d3829);border-color:rgba(197,233,169,.25)}
+
+  
+    /* PUI89 unified premium finish — one navy/cyan system for both languages. */
+    :root{
+      color-scheme:dark;
+      --bg:#07111F;--panel:#101F33;--panel2:#172B43;
+      --text:#F3F7FF;--muted:#B8C7DA;--line:#30445F;
+      --accent:#42D9FF;--accent2:#A8EDBD;
+    }
+    html{background:var(--bg)}
+    body{
+      color:var(--text);
+      background:
+        radial-gradient(ellipse at 78% -8%,rgba(66,217,255,.16),transparent 36%),
+        radial-gradient(ellipse at 4% 38%,rgba(40,112,190,.13),transparent 34%),
+        linear-gradient(180deg,#07111F 0%,#091626 52%,#07111F 100%);
+    }
+    a{color:var(--accent)}
+    a:hover{color:#B8F2FF}
+    a:focus-visible{outline-color:var(--accent);box-shadow:0 0 0 4px rgba(66,217,255,.13)}
+    .nav{border-bottom-color:rgba(120,165,198,.2)}
+    .navlinks a{color:#C1D0E1}
+    .navlinks a:hover{background:rgba(66,217,255,.09);color:#fff}
+    .hero h1 span{color:var(--accent);background:none}
+    .eyebrow,.num,.tag,.service-card .label,.contact-card .label,
+    .flagship-kicker,.support-outcome-label,.support-number{color:var(--accent)}
+    .eyebrow-dot,.hero-points i,.pulse,.flagship-kicker:before{background:var(--accent);box-shadow:0 0 0 5px rgba(66,217,255,.10)}
+    .btn{border-color:rgba(120,165,198,.32);color:var(--text);background:rgba(16,31,51,.78)}
+    .btn.primary,.primary{
+      color:#041522;background:linear-gradient(110deg,#42D9FF,#8AEAFF);
+      border-color:#42D9FF;box-shadow:0 8px 28px rgba(66,217,255,.16)
+    }
+    .btn.primary:hover,.primary:hover{color:#041522;background:#B8F2FF;box-shadow:0 10px 34px rgba(66,217,255,.24)}
+    .btn.secondary,.btn:not(.primary){background:#10233A;border-color:#36516D;color:#EAF5FF}
+    .btn.secondary:hover,.btn:not(.primary):hover{background:#18334F;border-color:#42D9FF;color:#fff}
+    .hero-visual,.hero-photo{
+      background:#10233A;border:1px solid rgba(66,217,255,.28);
+      box-shadow:0 26px 72px rgba(0,0,0,.34),0 0 34px rgba(66,217,255,.055)
+    }
+    .visual-shade{background:linear-gradient(180deg,rgba(4,13,25,.02) 15%,rgba(4,13,25,.16) 48%,rgba(4,13,25,.84) 100%)}
+    .visual-note{background:rgba(5,16,30,.78);color:#D8E9F8}
+    .visual-tag-mark{background:linear-gradient(135deg,#42D9FF,#A8EDBD);color:#061725}
+    .hero-photo:after{background:linear-gradient(transparent,rgba(4,13,25,.82))}
+    .hero-photo-label{color:#F3F7FF}
+    .hero-photo-label small{color:#D3E2F1}
+    .trust-strip{background:linear-gradient(110deg,rgba(16,31,51,.94),rgba(10,23,39,.9));border-color:rgba(120,165,198,.22)}
+    .strip-index{color:var(--accent)}
+    .card,.panel,.service-card,.contact-card,.support-card,.research-card,.principle{
+      background:linear-gradient(150deg,rgba(23,43,67,.97),rgba(12,26,44,.98));
+      border-color:rgba(105,145,180,.25)
+    }
+    .card:hover,.service-card:hover,.contact-card:hover,.photo-card:hover{
+      border-color:rgba(66,217,255,.55);box-shadow:0 16px 38px rgba(0,0,0,.24),0 0 22px rgba(66,217,255,.055)
+    }
+    .card h3,.panel h3,.service-card h3,.contact-card h3{color:#F3F7FF}
+    .card p,.panel p,.service-card p,.contact-card p{color:var(--muted)}
+    .status{color:#C9F5FF;background:rgba(66,217,255,.08);border-color:rgba(66,217,255,.3)}
+    .notice{background:rgba(67,53,27,.24);border-color:rgba(240,200,120,.38);color:#F5E8CB}
+    .principle{border-left-color:var(--accent)}
+    .sponsor-panel,.sponsor-intro{
+      background:linear-gradient(130deg,rgba(23,43,67,.98),rgba(10,24,41,.98));
+      border-color:rgba(66,217,255,.28)
+    }
+    .support-outcome,.flagship-evidence>div{
+      background:rgba(7,17,31,.72);border-color:rgba(66,217,255,.2)
+    }
+    .flagship-shell{
+      background:linear-gradient(125deg,#142B45,#0B1A2D);
+      border-color:rgba(66,217,255,.28)
+    }
+    .flagship-tags span{border-color:rgba(66,217,255,.28);background:rgba(7,17,31,.42)}
+    .flagship-visual{border-color:rgba(120,165,198,.25)}
+    .photo-card{background:var(--panel);border-color:rgba(105,145,180,.25)}
+    .photo-card figcaption{color:var(--muted)}
+    .project-art{background:#10233A;border-bottom-color:rgba(66,217,255,.22)}
+    .qr-panel{background:linear-gradient(135deg,#172B43,#101F33);border-color:rgba(105,145,180,.25)}
+    .footer{border-top-color:rgba(120,165,198,.2)}
+    .support-note{color:#D5E3F0}
+    @media(prefers-reduced-motion:no-preference){
+      .btn,.card,.service-card,.contact-card,.photo-card{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease,background .2s ease}
+    }
 
   </style>
 </head>
