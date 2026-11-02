@@ -41,6 +41,59 @@ h1 span{color:#42D9FF}
 .principle{border-left-color:#42D9FF}
 .ask{background:linear-gradient(135deg,#142B45,#0B1A2D);border-color:rgba(66,217,255,.28)}
 
+
+/* PUI89 unified bilingual design system — shared across all public pages */
+:root{
+ --bg:#07111F!important;--panel:#101F33!important;--panel2:#172B43!important;
+ --text:#F3F7FF!important;--muted:#B8C7DA!important;--line:#30445F!important;
+ --accent:#42D9FF!important;--accent2:#42D9FF!important;--mint:#42D9FF!important;
+ --gold:#42D9FF!important;--glow:rgba(66,217,255,.18)!important;
+ --pui-cyan:#42D9FF;--pui-cyan-soft:#B8F2FF;
+}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{color:#F3F7FF}
+a{color:#42D9FF;text-underline-offset:4px;transition:color .22s ease,opacity .22s ease}
+a:hover{color:#B8F2FF}
+:where(.eyebrow,.num,.index,.label,.tag,.status,.badge,.pill,.chip,.flagship-tags span,.visual-tag-mark){color:#42D9FF}
+:where(h1 span,.hero h1 span){color:#42D9FF}
+:where(.navlinks a:hover,.nav a:hover,.footer a:hover,.foot a:hover){color:#42D9FF}
+:where(.btn.primary,.button.primary,.primary){
+ background:#42D9FF!important;border-color:#42D9FF!important;color:#041522!important;
+ box-shadow:0 0 0 1px rgba(66,217,255,.10),0 8px 24px rgba(66,217,255,.12);
+ transition:transform .22s ease,box-shadow .22s ease,background .22s ease;
+}
+:where(.btn.primary:hover,.button.primary:hover,.primary:hover){
+ background:#B8F2FF!important;border-color:#B8F2FF!important;color:#041522!important;
+ transform:translateY(-2px);box-shadow:0 12px 30px rgba(66,217,255,.20);
+}
+:where(.btn.secondary,.button.secondary,.secondary){transition:transform .22s ease,border-color .22s ease,background .22s ease}
+:where(.btn.secondary:hover,.button.secondary:hover,.secondary:hover){border-color:#42D9FF!important;transform:translateY(-1px)}
+:where(.card,.panel,.principle,.milestone,.service-card,.contact-card,.photo-card,.research-card,.support-card,.sponsor-panel,.flagship-shell,.contactbox){
+ border-color:#30445F;
+}
+:where(.card,.panel,.service-card,.contact-card,.photo-card,.research-card,.support-card,.milestone,.principle){
+ transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease;
+}
+:where(.card,.service-card,.contact-card,.photo-card,.research-card,.support-card):hover{
+ border-color:rgba(66,217,255,.58);
+ box-shadow:0 14px 34px rgba(0,0,0,.20),0 0 0 1px rgba(66,217,255,.06);
+ transform:translateY(-3px);
+}
+:where(.principle,.milestone){border-left-color:#42D9FF}
+:where(.step b,.milestone .index){color:#42D9FF;background:rgba(66,217,255,.10)}
+:where(.notice,.warning,.alert,.research-footnote){border-color:rgba(66,217,255,.28)}
+:where(.notice strong,.warning strong,.alert strong){color:#B8F2FF}
+:where(.trust-strip,.sponsor-panel,.sponsor-intro,.flagship-shell,.support-outcome,.flagship-evidence>div){
+ border-color:rgba(66,217,255,.24);
+}
+:where(input,textarea,select):focus-visible{outline:2px solid #42D9FF;outline-offset:3px}
+:where(button,a,.btn,.button,[role="button"]):focus-visible{outline:2px solid #42D9FF;outline-offset:4px}
+::selection{background:rgba(66,217,255,.28);color:#F3F7FF}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+}
+
 </style>
 </head>
 <body>
