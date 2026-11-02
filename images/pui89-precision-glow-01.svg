@@ -1,30 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 150" role="img" aria-labelledby="title desc">
-<title id="title">PUI89 — Bold N, Internal Electric Core</title>
-<desc id="desc">A bold, square-cut deep navy N with a controlled electric cyan luminous core inside its central diagonal, followed by a glowing cyan PUI89 wordmark.</desc>
+<title id="title">PUI89 — Bold N, Brighter Internal Electric Core</title>
+<desc id="desc">A bold, square-cut deep navy N with a vivid electric cyan luminous core contained inside its central diagonal, followed by a bright cyan PUI89 wordmark.</desc>
 <defs>
   <linearGradient id="pui89Navy" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#173D68"/>
+    <stop offset="0" stop-color="#245789"/>
     <stop offset=".55" stop-color="#0B2444"/>
     <stop offset="1" stop-color="#06152C"/>
   </linearGradient>
   <linearGradient id="pui89Core" x1="54" y1="40" x2="146" y2="110" gradientUnits="userSpaceOnUse">
-    <stop offset="0" stop-color="#00AEEF"/>
-    <stop offset=".48" stop-color="#D7FFFF"/>
-    <stop offset=".7" stop-color="#69F1FF"/>
-    <stop offset="1" stop-color="#00BFFF"/>
+    <stop offset="0" stop-color="#00BFFF"/>
+    <stop offset=".34" stop-color="#A8F8FF"/>
+    <stop offset=".52" stop-color="#FFFFFF"/>
+    <stop offset=".72" stop-color="#73F4FF"/>
+    <stop offset="1" stop-color="#00CFFF"/>
   </linearGradient>
   <linearGradient id="pui89Word" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#D9FFFF"/>
-    <stop offset=".42" stop-color="#69EEFF"/>
+    <stop offset="0" stop-color="#FFFFFF"/>
+    <stop offset=".34" stop-color="#A8F8FF"/>
+    <stop offset=".68" stop-color="#42D9FF"/>
     <stop offset="1" stop-color="#00AEEF"/>
   </linearGradient>
-  <filter id="pui89CoreGlow" x="-50%" y="-60%" width="200%" height="220%">
-    <feGaussianBlur stdDeviation="5.2" result="soft"/>
-    <feMerge><feMergeNode in="soft"/><feMergeNode in="SourceGraphic"/></feMerge>
+  <filter id="pui89CoreGlow" x="-55%" y="-65%" width="210%" height="230%">
+    <feGaussianBlur stdDeviation="8.5" result="wide"/>
+    <feGaussianBlur stdDeviation="3.2" result="tight"/>
+    <feMerge>
+      <feMergeNode in="wide"/>
+      <feMergeNode in="tight"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
   </filter>
-  <filter id="pui89WordGlow" x="-20%" y="-35%" width="140%" height="170%">
-    <feGaussianBlur in="SourceAlpha" stdDeviation="2.1" result="blur"/>
-    <feFlood flood-color="#00CFFF" flood-opacity=".34" result="cyan"/>
+  <filter id="pui89WordGlow" x="-25%" y="-45%" width="150%" height="190%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="3.4" result="blur"/>
+    <feFlood flood-color="#00CFFF" flood-opacity=".62" result="cyan"/>
     <feComposite in="cyan" in2="blur" operator="in" result="halo"/>
     <feMerge><feMergeNode in="halo"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
@@ -32,19 +39,19 @@
     <path d="M24 24H54L146 103V24H176V126H146L54 47V126H24Z"/>
   </clipPath>
 </defs>
-<!-- Bold geometric N: all terminals are flat and square-cut. -->
+<!-- Bold geometric N with flat, square-cut terminals. -->
 <path d="M24 24H54L146 103V24H176V126H146L54 47V126H24Z"
-      fill="url(#pui89Navy)" stroke="#28577D" stroke-width="1.4" stroke-linejoin="miter"/>
-<!-- Electric energy is confined to the diagonal core inside the N. -->
+      fill="url(#pui89Navy)" stroke="#3475A5" stroke-width="1.6" stroke-linejoin="miter"/>
+<!-- Brighter electric core stays clipped inside the N's diagonal. -->
 <g clip-path="url(#pui89NClip)">
-  <path d="M54 40L146 110" fill="none" stroke="#00CFFF"
-        stroke-width="17" opacity=".46" filter="url(#pui89CoreGlow)"/>
+  <path d="M54 40L146 110" fill="none" stroke="#00D9FF"
+        stroke-width="21" opacity=".78" filter="url(#pui89CoreGlow)"/>
   <path d="M54 40L146 110" fill="none" stroke="url(#pui89Core)"
-        stroke-width="7.2" stroke-linecap="butt"/>
-  <path d="M54 40L146 110" fill="none" stroke="#F1FFFF"
-        stroke-width="1.7" opacity=".96" stroke-linecap="butt"/>
+        stroke-width="8.2" stroke-linecap="butt" filter="url(#pui89CoreGlow)"/>
+  <path d="M54 40L146 110" fill="none" stroke="#FFFFFF"
+        stroke-width="2" opacity="1" stroke-linecap="butt"/>
 </g>
-<!-- Side wordmark: luminous, legible, deliberately quieter than the N. -->
+<!-- Bright but legible side wordmark. -->
 <text x="211" y="101" fill="url(#pui89Word)"
       font-family="Arial, Helvetica, sans-serif" font-size="69"
       font-weight="900" letter-spacing="1.8"
