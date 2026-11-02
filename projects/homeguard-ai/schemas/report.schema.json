@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pui89.github.io/schemas/homeguard-report-0.1.0.schema.json",
+  "title": "HOMEGUARD AI Evidence Report",
+  "type": "object",
+  "required": ["schema_version", "system", "generated_at", "assessment", "findings", "safety_notice"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "system": {
+      "type": "object",
+      "required": ["name", "software_version", "execution_mode", "model_status"],
+      "properties": {
+        "name": {"const": "HOMEGUARD AI"},
+        "software_version": {"type": "string"},
+        "execution_mode": {"type": "string"},
+        "model_status": {"type": "string"},
+        "scenario": {"type": "string"},
+        "random_seed": {"type": "integer"},
+        "data_status": {"enum": ["SIMULATION_ONLY", "REAL_SENSOR_DATA", "MIXED"] }
+      },
+      "additionalProperties": true
+    },
+    "generated_at": {"type": "string", "format": "date-time"},
+    "assessment": {
+      "type": "object",
+      "required": ["status", "observations_received", "observations_evaluated", "observations_excluded", "findings_count", "threshold_z"],
+      "properties": {
+        "status": {"type": "string"},
+        "observations_received": {"type": "integer", "minimum": 0},
+        "observations_evaluated": {"type": "integer", "minimum": 0},
+        "observations_excluded": {"type": "integer", "minimum": 0},
+        "findings_count": {"type": "integer", "minimum": 0},
+        "threshold_z": {"type": "number", "exclusiveMinimum": 0},
+        "floors_simulated": {"type": "array", "items": {"type": "string"}},
+        "baseline_status": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["finding_id", "status", "severity", "summary", "evidence_ids", "limitations"],
+        "properties": {
+          "finding_id": {"type": "string"},
+          "status": {"type": "string"},
+          "severity": {"type": "string"},
+          "summary": {"type": "string"},
+          "evidence_ids": {"type": "array", "items": {"type": "string"}},
+          "limitations": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": true
+      }
+    },
+    "safety_notice": {"type": "string"}
+  },
+  "additionalProperties": false
+}
