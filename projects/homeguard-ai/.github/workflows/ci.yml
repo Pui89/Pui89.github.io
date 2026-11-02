@@ -1,0 +1,48 @@
+name: HOMEGUARD AI CI
+
+on:
+  push:
+    paths:
+      - "projects/homeguard-ai/**"
+  pull_request:
+    paths:
+      - "projects/homeguard-ai/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/homeguard-ai
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: projects/homeguard-ai/pyproject.toml
+      - name: Install package and test dependency
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[dev]"
+      - name: Run automated tests
+        run: pytest
+      - name: Generate deterministic simulation report
+        run: homeguard-simulate --seed 89 --output /tmp/homeguard-report.json
+      - name: Verify simulation-only label and evidence output
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          report = json.loads(Path("/tmp/homeguard-report.json").read_text())
+          assert report["system"]["data_status"] == "SIMULATION_ONLY"
+          assert report["system"]["model_status"] == "NO_TRAINED_MODEL"
+          assert report["assessment"]["findings_count"] > 0
+          print("Simulation report contract passed.")
+          PY
