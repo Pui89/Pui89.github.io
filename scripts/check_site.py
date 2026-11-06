@@ -130,7 +130,7 @@ def main() -> int:
         if not path.is_file():
             continue
         source = path.read_text(encoding="utf-8")
-        for label in ("name=\\"description\\"", "name=\\"viewport\\""):
+        for label in ('name=' + chr(34) + 'description' + chr(34), 'name=' + chr(34) + 'viewport' + chr(34)):
             if label not in source:
                 errors.append(f"{filename} is missing required metadata: {label}")
         if requirements["language"] not in source:
@@ -139,7 +139,7 @@ def main() -> int:
             errors.append(f"{filename} is missing its canonical URL")
         if 'hreflang="en"' not in source or 'hreflang="th"' not in source:
             errors.append(f"{filename} must declare both English and Thai alternate-language links")
-        if requirements["thai_text"] and not re.search(r"[\\u0E00-\\u0E7F]", source):
+        if requirements["thai_text"] and not any("\\u0e00" <= char <= "\\u0e7f" for char in source):
             errors.append("th.html does not contain Thai-script text")
 
     if errors:
