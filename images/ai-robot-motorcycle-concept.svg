@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 AI Robot Motorcycle — electric intelligence concept</title>
+<desc id="desc">A futuristic electric sport-touring motorcycle concept in deep navy and electric cyan, with conceptual camera, radar, inertial and wheel-state sensing callouts. Not production CAD.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#07111f"/><stop offset=".55" stop-color="#102940"/><stop offset="1" stop-color="#07111f"/></linearGradient>
+ <linearGradient id="fair" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b9f3ff"/><stop offset=".24" stop-color="#238eb8"/><stop offset=".68" stop-color="#123653"/><stop offset="1" stop-color="#071725"/></linearGradient>
+ <linearGradient id="cyan" x2="1"><stop stop-color="#167da5"/><stop offset=".5" stop-color="#42d9ff"/><stop offset="1" stop-color="#a8f1ff"/></linearGradient>
+ <linearGradient id="tire" x2="0" y2="1"><stop stop-color="#24394b"/><stop offset="1" stop-color="#050b12"/></linearGradient>
+ <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#23415a" stroke-width="1" opacity=".32"/></pattern>
+</defs>
+<rect width="1600" height="900" rx="28" fill="url(#bg)"/><rect width="1600" height="900" rx="28" fill="url(#grid)"/>
+<path d="M72 115H1528" stroke="#2b506c" stroke-width="2"/><text x="82" y="77" fill="#42d9ff" font-family="Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="7">PUI89 / MOBILITY INTELLIGENCE</text>
+<text x="82" y="164" fill="#f4f8ff" font-family="Arial,sans-serif" font-size="50" font-weight="700">AI ROBOT MOTORCYCLE</text>
+<text x="84" y="204" fill="#a9c3d6" font-family="Arial,sans-serif" font-size="22" letter-spacing="2">ELECTRIC SPORT-TOURING · ADVISORY-FIRST CONCEPT</text>
+<!-- ground -->
+<path d="M110 704H1480" stroke="#31516a" stroke-width="3"/><path d="M190 724H1400" stroke="#42d9ff" stroke-width="2" opacity=".22" filter="url(#glow)"/>
+<!-- wheels -->
+<g>
+ <circle cx="430" cy="650" r="151" fill="#030910" stroke="#516b7e" stroke-width="9"/><circle cx="430" cy="650" r="132" fill="none" stroke="#1d3447" stroke-width="22"/><circle cx="430" cy="650" r="103" fill="#091522" stroke="#42d9ff" stroke-width="4"/><circle cx="430" cy="650" r="24" fill="#9beaff"/><circle cx="430" cy="650" r="12" fill="#102238"/>
+ <g stroke="#42647d" stroke-width="5"><path d="M430 547V753M327 650H533M357 577L503 723M503 577L357 723"/></g>
+ <circle cx="1110" cy="650" r="151" fill="#030910" stroke="#516b7e" stroke-width="9"/><circle cx="1110" cy="650" r="132" fill="none" stroke="#1d3447" stroke-width="22"/><circle cx="1110" cy="650" r="103" fill="#091522" stroke="#42d9ff" stroke-width="4"/><circle cx="1110" cy="650" r="24" fill="#9beaff"/><circle cx="1110" cy="650" r="12" fill="#102238"/>
+ <g stroke="#42647d" stroke-width="5"><path d="M1110 547V753M1007 650H1213M1037 577L1183 723M1183 577L1037 723"/></g>
+</g>
+<!-- rear swingarm and chassis -->
+<path d="M1110 650L900 490L760 630L430 650L620 500L865 475L1030 535Z" fill="#0c1e30" stroke="#5f8299" stroke-width="17" stroke-linejoin="round"/>
+<path d="M620 500L735 380L970 390L1110 650" fill="none" stroke="#42d9ff" stroke-width="13" opacity=".85"/>
+<path d="M760 630L825 450L915 450L990 630" fill="none" stroke="#91b7ca" stroke-width="16"/>
+<!-- engine/battery core -->
+<path d="M680 455L900 445L960 570L835 625L700 575Z" fill="#0b1725" stroke="#42d9ff" stroke-width="5"/>
+<path d="M720 475L885 470L920 550L835 585L735 555Z" fill="#173a54" stroke="#376d8a" stroke-width="3"/>
+<path d="M755 500H875M745 522H890M770 545H860" stroke="#42d9ff" stroke-width="4" opacity=".7"/>
+<!-- bodywork / tank / seat -->
+<path d="M580 410Q630 335 750 315L950 320Q1030 325 1090 390L1055 455L920 475L820 450L700 470L610 455Z" fill="url(#fair)" stroke="#9beaff" stroke-width="5"/>
+<path d="M630 390Q700 300 830 300L970 315L1030 360L900 375L780 365L690 430Z" fill="#102b43" stroke="#42d9ff" stroke-width="4"/>
+<path d="M670 302Q760 262 915 285L1000 315L925 340L770 330Z" fill="#081522" stroke="#83eaff" stroke-width="4"/>
+<path d="M665 295Q755 260 895 277L935 292L825 306L710 318Z" fill="#0a1725" stroke="#8caec1" stroke-width="5"/>
+<path d="M640 285L560 278L515 300L615 326L715 315" fill="#0b1a29" stroke="#42d9ff" stroke-width="4"/>
+<!-- front fork and front fairing -->
+<path d="M1030 390L1110 650M1070 380L1140 640" stroke="#b9d2df" stroke-width="14"/>
+<path d="M980 335Q1090 300 1190 375L1225 455L1160 515L1060 475L1000 420Z" fill="url(#fair)" stroke="#8beaff" stroke-width="5"/>
+<path d="M1090 360Q1155 345 1200 405L1160 425L1080 410Z" fill="#07111f" stroke="#42d9ff" stroke-width="4"/>
+<path d="M1150 435L1218 450L1190 470L1128 466Z" fill="#c7f7ff" filter="url(#glow)"/>
+<path d="M1055 370L1110 310L1190 315" fill="none" stroke="#9bdff1" stroke-width="10" stroke-linecap="round"/>
+<!-- handlebar/mirrors -->
+<path d="M1075 335L1040 270L980 250M1110 320L1160 260L1210 250" fill="none" stroke="#a8c3d5" stroke-width="8" stroke-linecap="round"/>
+<path d="M965 242L1005 232L1020 252L982 264Z M1195 240L1235 232L1245 250L1207 263Z" fill="#102238" stroke="#42d9ff" stroke-width="3"/>
+<!-- rear tail / light -->
+<path d="M580 410L500 365L390 365L350 405L470 430L620 455Z" fill="#102940" stroke="#42d9ff" stroke-width="5"/>
+<path d="M390 370L455 372L480 386L405 389Z" fill="#ff496b" opacity=".9" filter="url(#glow)"/>
+<!-- robotic sensor modules -->
+<g filter="url(#glow)">
+ <rect x="1157" y="421" width="37" height="23" rx="7" fill="#42d9ff" stroke="#d8fbff" stroke-width="2"/><circle cx="1177" cy="432" r="6" fill="#07111f"/>
+ <rect x="1038" y="350" width="28" height="20" rx="5" fill="#42d9ff"/><circle cx="1052" cy="360" r="5" fill="#07111f"/>
+ <rect x="550" y="384" width="30" height="18" rx="5" fill="#42d9ff"/><circle cx="565" cy="393" r="5" fill="#07111f"/>
+</g>
+<!-- callout leader lines -->
+<g fill="none" stroke="#42d9ff" stroke-width="2.5" stroke-dasharray="8 8">
+ <path d="M1175 430L1300 340L1450 340"/><path d="M1050 360L1200 250L1450 250"/><path d="M565 392L420 270L170 270"/><path d="M1110 650L1280 770L1450 770"/><path d="M830 520L720 780L170 780"/>
+</g>
+<g fill="#42d9ff"><circle cx="1175" cy="430" r="6"/><circle cx="1050" cy="360" r="6"/><circle cx="565" cy="392" r="6"/><circle cx="1110" cy="650" r="6"/><circle cx="830" cy="520" r="6"/></g>
+<!-- labels -->
+<g font-family="Arial,sans-serif">
+ <text x="1305" y="318" fill="#eafaff" font-size="22" font-weight="700">FRONT VISION</text><text x="1305" y="346" fill="#a9c3d6" font-size="17">Camera / radar concept</text>
+ <text x="1205" y="224" fill="#eafaff" font-size="22" font-weight="700">RIDER INTERFACE</text><text x="1205" y="252" fill="#a9c3d6" font-size="17">Clear, low-distraction alerts</text>
+ <text x="85" y="240" fill="#eafaff" font-size="22" font-weight="700">REAR AWARENESS</text><text x="85" y="268" fill="#a9c3d6" font-size="17">Blind-zone observation concept</text>
+ <text x="1300" y="744" fill="#eafaff" font-size="22" font-weight="700">WHEEL / TRACTION STATE</text><text x="1300" y="772" fill="#a9c3d6" font-size="17">Modeled signals · not validated</text>
+ <text x="85" y="752" fill="#eafaff" font-size="22" font-weight="700">ELECTRIC POWER MODULE</text><text x="85" y="780" fill="#a9c3d6" font-size="17">Thermal / electrical monitoring concept</text>
+</g>
+<rect x="82" y="822" width="1436" height="46" rx="10" fill="#091827" stroke="#31516a"/><text x="105" y="852" fill="#c5dce9" font-family="Arial,sans-serif" font-size="17">CONCEPT ART ONLY · NOT PRODUCTION CAD · NO AUTONOMOUS CONTROL · NO ROAD OR SAFETY CERTIFICATION</text>
+</svg>
