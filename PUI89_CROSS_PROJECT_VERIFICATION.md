@@ -145,3 +145,24 @@ The four projects now follow the [PUI89 World-Class AI Blueprint](PUI89_WORLD_CL
 - HOMEGUARD: spatial sensor-quality model and multi-sensor building evidence.
 
 Do not sum tests or scenario passes across projects into a single PUI89 score. Do not infer field readiness from successful CI.
+
+
+## Next engineering gate — Level 12 cross-project AI Core conformance (6 November 2026)
+
+The next portfolio-wide milestone is now specified in [PUI89 AI Core — Level 12 Cross-Project Conformance](PUI89_AI_CORE_LEVEL_12_CONFORMANCE.md).
+
+**Purpose:** align all seven current project repositories on the four canonical contracts—Observation, WorldState, ActionProposal and FailureReport—plus shared evidence, uncertainty, provenance, failure-retention and simulation/advisory-only invariants.
+
+| Portfolio area | Repository | Baseline status from this review |
+|---|---|---|
+| Agriculture | [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | Existing shared-core and benchmark checks documented; Level 12 conformance not yet independently verified |
+| Rescue | [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | Existing shared-core and benchmark checks documented; Level 12 conformance not yet independently verified |
+| Screening | [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | Existing shared-core and benchmark checks documented; Level 12 conformance not yet independently verified |
+| Indoor assistant | [PUI89 AI HOME](https://github.com/Pui89/AI-HOME) | Project-local adapter and optional vision-model integration documented; conformance not yet verified |
+| Mobile assistant | [PUI89 AI NOMAD](https://github.com/Pui89/AI-NOMAD) | Project-local adapter and optional vision-model integration documented; conformance not yet verified |
+| Car | [PUI89 AI Robot Car](https://github.com/Pui89/ai-robot-car) | Project-local compatibility foundation and optional vision-model integration documented; conformance not yet verified |
+| Motorcycle | [PUI89 AI Robot Motorcycle](https://github.com/Pui89/ai-robot-motorcycle) | Level 12 and matching Hugging Face integration documentation not confirmed in this review |
+
+**Model integration truth:** OWLv2 and Intel DPT-Hybrid adapters are documented in six repositories as opt-in local integrations. Their weights are not confirmed downloaded, dependencies are not confirmed installed, and model inference/accuracy is not confirmed benchmarked. The motorcycle integration remains NOT_CONFIRMED. Do not report these as seven fully operational model integrations.
+
+**Acceptance gate:** each repository must publish its contract version, reproducible dependency-light test command, machine-readable result, commit SHA and limitations. Each project reports its own result; do not sum test counts or compare unlike project metrics. No model download, package installation, paid service, hardware connection or automatic merge is part of this milestone.
