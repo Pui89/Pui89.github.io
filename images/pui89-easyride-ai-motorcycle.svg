@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="t d">
+<title id="t">PUI89 EasyRide AI Motorcycle — inclusive step-through concept</title>
+<desc id="d">A low step-through electric motorcycle concept with upright ergonomics, broad seat, low centre of gravity, protective body panels and cyan AI assistance indicators.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071321"/><stop offset="1" stop-color="#102b43"/></linearGradient>
+ <linearGradient id="body" x2="1"><stop stop-color="#35d9ff"/><stop offset=".55" stop-color="#1685ad"/><stop offset="1" stop-color="#123d5b"/></linearGradient>
+ <linearGradient id="seat" x2="0" y2="1"><stop stop-color="#344c61"/><stop offset="1" stop-color="#172a3c"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1200" height="680" rx="34" fill="url(#bg)"/>
+<g font-family="Arial, sans-serif">
+ <text x="64" y="70" fill="#43dcff" font-size="22" font-weight="700" letter-spacing="5">PUI89 / EASYRIDE</text>
+ <text x="64" y="116" fill="#f2f8ff" font-size="39" font-weight="700">Inclusive AI Motorcycle Concept</text>
+ <text x="64" y="151" fill="#a9c1d3" font-size="19">Low step-through · upright comfort · rider-first assistance</text>
+ <!-- ground -->
+ <path d="M70 535H1135" stroke="#29475d" stroke-width="3"/>
+ <!-- wheels -->
+ <g fill="#08111c" stroke="#9bb5c7" stroke-width="13">
+  <circle cx="315" cy="478" r="104"/><circle cx="315" cy="478" r="65" fill="none" stroke="#34536a" stroke-width="6"/>
+  <circle cx="900" cy="478" r="104"/><circle cx="900" cy="478" r="65" fill="none" stroke="#34536a" stroke-width="6"/>
+ </g>
+ <g stroke="#42657c" stroke-width="5"><path d="M315 374V582M211 478H419M900 374V582M796 478H1004"/></g>
+ <!-- low chassis + open step-through -->
+ <path d="M315 478L435 392L535 456L690 456L770 360L900 478" fill="none" stroke="url(#body)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+ <path d="M438 393L486 330L674 330L744 367" fill="none" stroke="#d6f7ff" stroke-width="10" stroke-linecap="round"/>
+ <!-- step through opening -->
+ <path d="M486 340L520 433L674 433L704 356" fill="none" stroke="#42d9ff" stroke-width="5" stroke-dasharray="10 10"/>
+ <!-- floorboard -->
+ <path d="M475 450L710 450L733 470L463 470Z" fill="#16374d" stroke="#42d9ff" stroke-width="4"/>
+ <!-- seat and seat post -->
+ <path d="M510 287Q528 264 572 263H700Q725 266 738 291L725 313H550Q510 311 500 298Z" fill="url(#seat)" stroke="#b7d1e0" stroke-width="5"/>
+ <path d="M600 314L588 379" stroke="#9bb5c7" stroke-width="13"/>
+ <!-- front fairing / handlebar -->
+ <path d="M746 353L770 260Q782 231 817 235L854 253L824 374L770 390Z" fill="url(#body)" stroke="#a7efff" stroke-width="5"/>
+ <path d="M789 245L828 215L887 218" fill="none" stroke="#d7f6ff" stroke-width="10" stroke-linecap="round"/>
+ <path d="M846 219L885 207" stroke="#d7f6ff" stroke-width="8" stroke-linecap="round"/>
+ <!-- headlight -->
+ <path d="M804 278L845 266L836 300L798 310Z" fill="#e8fbff" filter="url(#glow)"/>
+ <!-- rear body and battery -->
+ <path d="M418 383L460 329L522 339L546 421L473 442L402 418Z" fill="url(#body)" stroke="#9deeff" stroke-width="4"/>
+ <rect x="520" y="375" width="150" height="54" rx="15" fill="#102a40" stroke="#42d9ff" stroke-width="4"/>
+ <text x="540" y="408" fill="#d8f8ff" font-size="17" font-weight="700">LOW CG</text>
+ <!-- rear carrier -->
+ <path d="M428 320L390 300L350 300" fill="none" stroke="#9bb5c7" stroke-width="9" stroke-linecap="round"/>
+ <!-- AI display -->
+ <rect x="752" y="302" width="42" height="30" rx="6" fill="#071321" stroke="#42d9ff" stroke-width="3"/>
+ <circle cx="773" cy="317" r="7" fill="#42d9ff"/>
+ <!-- callouts -->
+ <g fill="none" stroke="#42d9ff" stroke-width="3" stroke-dasharray="8 8">
+  <path d="M550 270L490 205H260"/><path d="M610 448L610 555H765"/><path d="M795 290L900 185H1070"/>
+ </g>
+ <g fill="#d9f7ff" font-size="19" font-weight="700">
+  <text x="80" y="198">LOW STEP-THROUGH</text><text x="780" y="585">LOW-CENTRE BATTERY</text><text x="910" y="170">CLEAR, SIMPLE DISPLAY</text>
+ </g>
+ <g fill="#a9c1d3" font-size="16">
+  <text x="80" y="226">Easy mounting and dismounting</text><text x="780" y="612">Balanced packaging target</text><text x="910" y="197">Large icons + tactile controls</text>
+ </g>
+ <text x="64" y="645" fill="#7896ab" font-size="15">CONCEPT ART ONLY · NOT A PRODUCTION DESIGN OR VALIDATED VEHICLE</text>
+</g></svg>
