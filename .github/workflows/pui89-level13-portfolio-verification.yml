@@ -48,7 +48,6 @@ jobs:
           path: portfolio/projects/screening
 
       - name: Check out PUI89 AI HOME
-        continue-on-error: true
         uses: actions/checkout@v4
         with:
           repository: Pui89/AI-HOME
