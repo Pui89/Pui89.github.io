@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "project": "pui89-ai-robot-motorcycle",
+  "status": "scenario_catalog_only_not_simulation_evidence",
+  "scenarios": [
+    {
+      "id": "MOTO-001",
+      "hazard": "Lean-angle or balance sensor disagreement",
+      "expected_warning": "UNKNOWN_DEGRADED",
+      "required_evidence": [
+        "sensor_sources",
+        "timestamps",
+        "calibration_status"
+      ],
+      "response": "Do not issue steering, braking or torque proposals based on uncertain balance state."
+    },
+    {
+      "id": "MOTO-002",
+      "hazard": "Traction loss or wheel slip",
+      "expected_warning": "WARNING_OR_CRITICAL_PROJECT_DEFINED",
+      "required_evidence": [
+        "wheel_speed_sources",
+        "road_condition",
+        "traction_estimate_quality"
+      ],
+      "response": "Use only validated rider-assistance warnings; no unvalidated torque or brake intervention."
+    },
+    {
+      "id": "MOTO-003",
+      "hazard": "Rider fall detected",
+      "expected_warning": "EMERGENCY",
+      "required_evidence": [
+        "fall_sensor_source",
+        "motion_evidence",
+        "timestamp"
+      ],
+      "response": "Notify rider/emergency contact according to approved consent and response design; no unsafe automatic movement."
+    },
+    {
+      "id": "MOTO-004",
+      "hazard": "Brake or throttle actuator fault",
+      "expected_warning": "CRITICAL",
+      "required_evidence": [
+        "diagnostic_source",
+        "fault_code",
+        "vehicle_state"
+      ],
+      "response": "Require independent vehicle safety mechanisms and rider warning; no generic actuator command."
+    },
+    {
+      "id": "MOTO-005",
+      "hazard": "GNSS or communication loss",
+      "expected_warning": "UNKNOWN_DEGRADED",
+      "required_evidence": [
+        "position_source",
+        "integrity_check",
+        "message_age"
+      ],
+      "response": "Reject stale remote commands and preserve safe rider-control behavior."
+    }
+  ]
+}

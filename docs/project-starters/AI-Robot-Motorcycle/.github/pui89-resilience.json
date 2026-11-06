@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "standard": "PUI89-TOTAL-RESILIENCE",
+  "project": "PUI89 AI Robot Motorcycle",
+  "project_type": "intelligent_two_wheel_mobility_research_platform",
+  "status": "starter_template_only; no repository_or_motorcycle_implementation_verified",
+  "protection_domains": {
+    "cybersecurity": "secure boot/update design, least privilege, secret protection, tamper detection, threat modeling and audit logs",
+    "water_environment": "rain, spray, dust, condensation, corrosion, road debris and thermal exposure; no ingress rating established",
+    "fire_heat_power": "battery management, cell monitoring, overcurrent/overvoltage, isolation, thermal propagation and charging fault analysis",
+    "communications": "GNSS spoofing/denial, network loss, stale commands, sensor bus failure and emergency alert loss",
+    "ai_data": "camera/radar provenance, calibration drift, occlusion, weather degradation, uncertainty and adversarial inputs",
+    "mechanical": "lean angle, balance, traction, wheel slip, braking, suspension, steering, crash and independent safety systems",
+    "human_mission": "rider override, fall detection, rider protection, emergency response, privacy and stability preservation"
+  },
+  "project_specific_hazards": [
+    "rider_fall_or_loss_of_balance",
+    "lean_angle_estimation_failure",
+    "traction_loss_or_wheel_slip",
+    "brake_or_throttle_actuator_fault",
+    "blind_spot_or_rear_collision",
+    "battery_thermal_runaway_or_electrical_fault",
+    "rain_road_surface_and_sensor_degradation",
+    "rider_override_or_emergency_alert_failure"
+  ],
+  "shield_system": {
+    "status": "starter_template_only; implementation_and_physical_validation_not_verified",
+    "warning_states": [
+      "NORMAL",
+      "ADVISORY",
+      "WARNING",
+      "CRITICAL",
+      "EMERGENCY",
+      "UNKNOWN_DEGRADED"
+    ],
+    "required_event_fields": [
+      "event_id",
+      "schema_version",
+      "project",
+      "component",
+      "observed_at",
+      "source_id",
+      "value",
+      "unit",
+      "quality",
+      "evidence_refs",
+      "uncertainty",
+      "hazard",
+      "severity",
+      "warning_state",
+      "decision",
+      "rationale",
+      "human_approval_required",
+      "software_version"
+    ],
+    "fail_safe_rules": [
+      "missing_or_conflicting_sensor_data_must_not_be_treated_as_safe",
+      "AI_outputs_must_not_issue_unvalidated_steering_braking_or_torque_commands",
+      "rider_override_and_emergency_procedures_require_independent_validation",
+      "no_road_operation_or_actuation_without_authorization_and_safety_validation"
+    ],
+    "physical_validation": "NOT_VERIFIED",
+    "project_specific_warning_focus": [
+      "rider_stability_and_fall_detection",
+      "lean_angle_and_traction_integrity",
+      "braking_and_throttle_faults",
+      "road_surface_and_weather",
+      "battery_fire_and_electrical_faults",
+      "rider_override_and_emergency_notification"
+    ]
+  }
+}
