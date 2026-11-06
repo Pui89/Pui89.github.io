@@ -1,19 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
-<title id="title">HOMEGUARD AI NOMAD quadruped robot dog concept</title>
-<desc id="desc">A compact navy and electric-cyan four-legged robotic dog with a sensor head, protected central body, four articulated legs and broad non-slip feet, shown on a neutral technical background.</desc>
-<defs><linearGradient id="body" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#1b3552"/><stop offset="1" stop-color="#071522"/></linearGradient><linearGradient id="cyan" x1="0" x2="1"><stop stop-color="#19d9ef"/><stop offset="1" stop-color="#63f5d5"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
-<rect width="900" height="560" rx="28" fill="#081321"/><path d="M70 450H830" stroke="#28445e" stroke-width="2"/><path d="M130 450L220 450M680 450L770 450" stroke="#1b3851" stroke-width="3" stroke-dasharray="8 12"/>
-<g stroke="#0a0f18" stroke-width="15" stroke-linejoin="round" stroke-linecap="round">
-<path d="M310 300L270 365L250 438" fill="none" stroke="#172d43" stroke-width="35"/><path d="M425 315L405 382L390 438" fill="none" stroke="#172d43" stroke-width="35"/><path d="M580 300L620 365L640 438" fill="none" stroke="#172d43" stroke-width="35"/><path d="M685 285L720 355L742 438" fill="none" stroke="#172d43" stroke-width="35"/>
-<path d="M310 300L270 365L250 438M425 315L405 382L390 438M580 300L620 365L640 438M685 285L720 355L742 438" fill="none" stroke="url(#cyan)" stroke-width="7"/>
-<path d="M225 444Q250 432 276 444L280 458Q250 470 220 458Z M365 444Q390 432 415 444L420 458Q390 470 360 458Z M615 444Q640 432 666 444L670 458Q640 470 610 458Z M715 444Q742 432 768 444L772 458Q742 470 710 458Z" fill="#152b42" stroke="#4bdde8" stroke-width="4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 HOMEGUARD AI NOMAD quadruped robot dog concept</title>
+<desc id="desc">A compact navy and electric-cyan four-legged outdoor guardian robot dog with articulated legs, sensor head, camera eyes, lidar module, protective shell and proposed 8 to 10 kilogram target. Concept only.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#061426"/><stop offset="1" stop-color="#12395b"/></linearGradient>
+ <linearGradient id="shell" x2="1" y2="1"><stop stop-color="#315777"/><stop offset=".55" stop-color="#173650"/><stop offset="1" stop-color="#091a2c"/></linearGradient>
+ <linearGradient id="cyan" x2="1"><stop stop-color="#83f8ff"/><stop offset="1" stop-color="#00bde8"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1400" height="900" rx="32" fill="url(#bg)"/>
+<circle cx="1110" cy="240" r="260" fill="#17bde5" opacity=".07"/><circle cx="230" cy="720" r="250" fill="#17bde5" opacity=".06"/>
+<text x="72" y="76" fill="#83efff" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="5">PUI89  /  PORTABLE INTELLIGENT ROBOT</text>
+<text x="72" y="145" fill="#f4fbff" font-family="Arial,sans-serif" font-size="58" font-weight="800">HOMEGUARD AI NOMAD</text>
+<text x="76" y="190" fill="#78eaff" font-family="Arial,sans-serif" font-size="25" letter-spacing="2">QUADRUPED AI ROBOT DOG  •  OUTDOOR COMPANION</text>
+<!-- floor shadow -->
+<ellipse cx="690" cy="680" rx="480" ry="55" fill="#020a13" opacity=".55"/>
+<!-- rear legs -->
+<g stroke="#789bb5" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none">
+ <path d="M470 510L410 620L430 735"/><path d="M555 525L535 630L565 735"/>
+ <path d="M900 510L960 620L935 735"/><path d="M1000 500L1060 610L1040 735"/>
 </g>
-<g fill="#152d46" stroke="url(#cyan)" stroke-width="5"><circle cx="270" cy="365" r="17"/><circle cx="405" cy="382" r="17"/><circle cx="620" cy="365" r="17"/><circle cx="720" cy="355" r="17"/><circle cx="310" cy="300" r="16"/><circle cx="425" cy="315" r="16"/><circle cx="580" cy="300" r="16"/><circle cx="685" cy="285" r="16"/></g>
-<path d="M285 210Q300 170 355 165L610 165Q675 170 710 215L690 305Q650 340 570 340H365Q300 330 275 285Z" fill="url(#body)" stroke="#43dce8" stroke-width="6"/>
-<path d="M355 190H620Q650 190 670 220L652 275H330L315 235Q325 200 355 190Z" fill="#10243a" stroke="#284c69" stroke-width="3"/>
-<rect x="405" y="210" width="165" height="48" rx="16" fill="#07111d" stroke="#27d9ed" stroke-width="4"/><path d="M425 234H550" stroke="#58f2df" stroke-width="5" filter="url(#glow)"/>
-<path d="M640 185L720 155L765 190L744 250L690 260Z" fill="url(#body)" stroke="#43dce8" stroke-width="6"/><path d="M714 190L746 183L754 206L725 218Z" fill="#020a12" stroke="#5af1e1" stroke-width="4"/><circle cx="739" cy="201" r="6" fill="#a9ffff" filter="url(#glow)"/>
-<path d="M675 155L665 120L690 92L720 120L715 165" fill="#17344f" stroke="#43dce8" stroke-width="5"/><circle cx="692" cy="115" r="10" fill="#61f2e4" filter="url(#glow)"/>
-<path d="M300 235L250 215L230 230" fill="none" stroke="#43dce8" stroke-width="5" stroke-linecap="round"/>
-<text x="70" y="75" fill="#e8f5ff" font-family="Arial,sans-serif" font-size="30" font-weight="700">HOMEGUARD AI NOMAD</text><text x="72" y="108" fill="#6cebe5" font-family="Arial,sans-serif" font-size="17" letter-spacing="3">QUADRUPED ROBOT-DOG CONCEPT</text>
-<text x="72" y="510" fill="#9db6ca" font-family="Arial,sans-serif" font-size="16">PROPOSED DESIGN · NOT BUILT · NOT TESTED · NOT VALIDATED</text></svg>
+<g fill="#0b1b2b" stroke="#4f7897" stroke-width="7">
+ <circle cx="410" cy="620" r="28"/><circle cx="535" cy="630" r="28"/><circle cx="960" cy="620" r="28"/><circle cx="1060" cy="610" r="28"/>
+ <path d="M397 735h68q18 0 18 17v12h-100v-12q0-17 14-17z"/><path d="M532 735h66q18 0 18 17v12H516v-12q0-17 16-17z"/><path d="M903 735h67q18 0 18 17v12H889v-12q0-17 14-17z"/><path d="M1008 735h67q18 0 18 17v12H994v-12q0-17 14-17z"/>
+</g>
+<!-- body -->
+<path d="M390 380Q420 300 535 290L900 290Q1010 305 1050 390L1015 535Q990 585 910 590H505Q420 580 390 510Z" fill="url(#shell)" stroke="#83a9c3" stroke-width="7"/>
+<path d="M450 390Q480 335 555 330H895Q960 340 990 400L975 490Q960 530 900 540H520Q465 530 445 480Z" fill="#0b2036" stroke="url(#cyan)" stroke-width="5"/>
+<path d="M530 355H905" stroke="#4d718e" stroke-width="4"/>
+<path d="M540 510H900" stroke="#1b4e70" stroke-width="5"/>
+<path d="M610 425H835" stroke="url(#cyan)" stroke-width="8" stroke-linecap="round" filter="url(#glow)"/>
+<text x="720" y="475" text-anchor="middle" fill="#f3fbff" font-family="Arial,sans-serif" font-size="43" font-weight="800" letter-spacing="7">PUI89</text>
+<!-- shoulder joints -->
+<g fill="#102b43" stroke="#83eaff" stroke-width="5"><circle cx="465" cy="510" r="34"/><circle cx="555" cy="525" r="34"/><circle cx="910" cy="520" r="34"/><circle cx="1000" cy="500" r="34"/></g>
+<!-- front legs -->
+<g stroke="#789bb5" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" fill="none">
+ <path d="M465 510L350 600L330 735"/><path d="M555 525L500 630L505 735"/>
+ <path d="M910 520L880 625L870 735"/><path d="M1000 500L1110 600L1120 735"/>
+</g>
+<g fill="#0b1b2b" stroke="#4f7897" stroke-width="7">
+ <circle cx="350" cy="600" r="29"/><circle cx="500" cy="630" r="29"/><circle cx="880" cy="625" r="29"/><circle cx="1110" cy="600" r="29"/>
+ <path d="M298 735h67q18 0 18 17v12H284v-12q0-17 14-17z"/><path d="M473 735h66q18 0 18 17v12H457v-12q0-17 16-17z"/><path d="M838 735h67q18 0 18 17v12H824v-12q0-17 14-17z"/><path d="M1088 735h67q18 0 18 17v12h-100v-12q0-17 14-17z"/>
+</g>
+<!-- neck and sensor head -->
+<path d="M900 355Q980 330 1025 285L1080 250" fill="none" stroke="#6e91ac" stroke-width="36" stroke-linecap="round"/>
+<path d="M1000 290L1040 225Q1060 190 1105 190H1210Q1255 190 1270 230L1285 275Q1288 310 1255 325L1150 355Q1090 365 1050 335Z" fill="url(#shell)" stroke="#8eb3cb" stroke-width="7"/>
+<path d="M1090 235Q1110 215 1140 215H1230Q1250 220 1255 250L1260 275L1140 310Q1100 310 1080 280Z" fill="#071a2b" stroke="#36d9f4" stroke-width="4"/>
+<g filter="url(#glow)"><circle cx="1130" cy="260" r="16" fill="#8cfaff"/><circle cx="1210" cy="248" r="16" fill="#8cfaff"/></g>
+<path d="M1170 220V185" stroke="#7eeeff" stroke-width="8" stroke-linecap="round"/><rect x="1142" y="155" width="58" height="36" rx="12" fill="#153d5c" stroke="#7eeeff" stroke-width="4"/>
+<path d="M1065 325L1035 350" stroke="#5c829e" stroke-width="9" stroke-linecap="round"/>
+<!-- sensor callouts -->
+<g font-family="Arial,sans-serif">
+ <path d="M1185 190L1240 120H1320" stroke="#54e6fa" stroke-width="3" fill="none"/><text x="1315" y="105" text-anchor="end" fill="#a7f5ff" font-size="18" font-weight="700">360° AWARENESS*</text>
+ <path d="M720 360L720 260L600 260" stroke="#54e6fa" stroke-width="3" fill="none"/><text x="590" y="250" text-anchor="end" fill="#a7f5ff" font-size="18" font-weight="700">PROTECTED CORE</text>
+ <path d="M330 625L190 560H85" stroke="#54e6fa" stroke-width="3" fill="none"/><text x="85" y="540" fill="#a7f5ff" font-size="18" font-weight="700">ARTICULATED LEGS</text>
+</g>
+<rect x="72" y="790" width="1256" height="66" rx="18" fill="#0b2238" stroke="#245779" stroke-width="2"/>
+<g font-family="Arial,sans-serif" fill="#d9f6ff" font-size="18">
+ <text x="100" y="830">4-LEG QUADRUPED</text><text x="390" y="830">8–10 kg TARGET</text><text x="650" y="830">12 kg MAX TARGET</text><text x="970" y="830">WEATHER-RESISTANT GOAL*</text>
+</g>
+<text x="72" y="882" fill="#9cb9ce" font-family="Arial,sans-serif" font-size="15">*Proposed design features only. Sensors, 360° coverage, weather protection and mobility are not yet implemented or validated.</text>
+</svg>
