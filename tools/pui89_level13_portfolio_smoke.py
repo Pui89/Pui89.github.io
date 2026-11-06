@@ -50,7 +50,6 @@ PROJECTS = [
         "repo": "Pui89/AI-NOMAD",
         "path": "projects/nomad",
         "patterns": [
-            "test_core.py",
             "test_pui89_shared_workflow_contract.py",
             "test_pui89_shield_policy.py",
         ],
@@ -69,6 +68,7 @@ PROJECTS = [
         "path": "projects/motorcycle",
         "patterns": ["test_motorcycle_risk_scenarios.py"],
         "pythonpath": "src",
+        "excluded_suites": ["test_core.py requires pytest; skipped by the no-package-install policy."],
     },
 ]
 
@@ -157,6 +157,7 @@ def main() -> int:
             "repository": f"https://github.com/{project['repo']}",
             "commit": git_sha(project_root) if project_root.is_dir() else None,
             "suites": [],
+            "excluded_suites": project.get("excluded_suites", []),
         }
         if not project_root.is_dir():
             item["status"] = "BLOCKED"
