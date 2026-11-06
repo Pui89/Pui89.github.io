@@ -365,3 +365,11 @@ PUI89 applies a mandatory **non-Chinese model-origin rule** across all current a
 
 See the complete [PUI89 Hugging Face Model Policy](docs/PUI89_HUGGINGFACE_MODEL_POLICY.md) and project-specific model mappings in each project README.
 
+## Robotics foundation models
+
+PUI89 also tracks robotics-specific Vision-Language-Action (VLA) models separately from general vision models. Current compact candidate: [Hugging Face LeRobot SmolVLA (450M)](https://huggingface.co/lerobot/smolvla_base), model-card licence Apache-2.0. It is a research candidate for robot-manipulation proposals only, not a validated general-purpose robot controller. Its 450M size does not guarantee local feasibility; its published fine-tuning guidance uses a GPU.
+
+OpenVLA 7B is on **HOLD — licence review required** because its model card and upstream repository describe potentially different terms for the pretrained weights (Llama 2 Community License inheritance). Do not adopt until reconciled.
+
+PUI89 VLA policy: simulator/offline bounded ActionProposal only; never direct actuator commands. SmolVLA is not a locomotion model for AI NOMAD and must not control AI HOME movement, flood-boat propulsion, cars or motorcycles. See the full [robotics model safety and project-fit policy](docs/PUI89_HUGGINGFACE_MODEL_POLICY.md#robotics-foundation-model-candidates--non-chinese-origin-only).
+
