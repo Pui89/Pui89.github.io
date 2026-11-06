@@ -324,11 +324,11 @@ This is the **single source of truth** for the six projects and their 12 project
 | Coconut Harvest AI | [Repository](https://github.com/Pui89/Coconut-Harvest-AI) | [English](https://pui89.github.io/coconut.html) | [Thai](https://pui89.github.io/coconut-th.html) |
 | Extreme Flood Rescue AI | [Repository](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | [English](https://pui89.github.io/flood-rescue.html) | [Thai](https://pui89.github.io/flood-rescue-th.html) |
 | Multimodal Narcotics Screening AI | [Repository](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | [English](https://pui89.github.io/screening.html) | [Thai](https://pui89.github.io/screening-th.html) |
-| HOMEGUARD AI | [Repository](https://github.com/Pui89/HomeguardAI) | [English](https://pui89.github.io/homeguard.html) | [Thai](https://pui89.github.io/homeguard-th.html) |
+| PUI89 AI HOME — Intelligent Home Assistant Robot | [Repository](https://github.com/Pui89/AI-HOME) | [English](https://pui89.github.io/home.html) | [Thai](https://pui89.github.io/home-th.html) |
 | PUI89 AI Robot Car | [Repository](https://github.com/Pui89/ai-robot-car) | [English](https://pui89.github.io/ai-robot-car.html) | [Thai](https://pui89.github.io/ai-robot-car-th.html) |
 | PUI89 AI Robot Motorcycle — EasyRide | [Repository](https://github.com/Pui89/ai-robot-motorcycle) | [English](https://pui89.github.io/ai-robot-motorcycle.html) | [Thai](https://pui89.github.io/ai-robot-motorcycle-th.html) |
 
-**Count: 6 projects · 6 repositories · 6 English websites · 6 Thai websites = 12 project website links.**
+**HOME website pair:** [PUI89 AI HOME — English](https://pui89.github.io/home.html) · [PUI89 AI HOME — Thai](https://pui89.github.io/home-th.html). Both pages describe the dedicated four-wheel indoor home assistant concept (8 kg target, 10 kg maximum). NOMAD remains a separate mobile assistant project.
 
 General PUI89 resources (not additional projects): [Public portfolio homepage](https://pui89.github.io/) · [Website source repository](https://github.com/Pui89/Pui89.github.io).
 
