@@ -1,0 +1,98 @@
+name: PUI89 Level 13 Cross-Project Verification
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "tools/pui89_level13_portfolio_smoke.py"
+      - "docs/PUI89_LEVEL_13_AUTOMATION.md"
+      - ".github/workflows/pui89-level13-portfolio-verification.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pui89-level13-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  cross-project-smoke:
+    name: Run selected dependency-free project suites
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out portfolio repository
+        uses: actions/checkout@v4
+        with:
+          path: portfolio
+
+      - name: Check out Coconut Harvest AI
+        uses: actions/checkout@v4
+        with:
+          repository: Pui89/Coconut-Harvest-AI
+          ref: main
+          path: portfolio/projects/coconut
+
+      - name: Check out Extreme Flood Rescue AI
+        uses: actions/checkout@v4
+        with:
+          repository: Pui89/Extreme-Flood-Rescue-AI
+          ref: main
+          path: portfolio/projects/flood
+
+      - name: Check out Multimodal Narcotics Screening AI
+        uses: actions/checkout@v4
+        with:
+          repository: Pui89/Multimodal-Narcotics-Screening-AI
+          ref: main
+          path: portfolio/projects/screening
+
+      - name: Check out PUI89 AI HOME
+        continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          repository: Pui89/AI-HOME
+          ref: main
+          path: portfolio/projects/home
+
+      - name: Check out PUI89 AI NOMAD
+        uses: actions/checkout@v4
+        with:
+          repository: Pui89/AI-NOMAD
+          ref: main
+          path: portfolio/projects/nomad
+
+      - name: Check out PUI89 AI Robot Car
+        uses: actions/checkout@v4
+        with:
+          repository: Pui89/ai-robot-car
+          ref: main
+          path: portfolio/projects/car
+
+      - name: Check out PUI89 AI Robot Motorcycle
+        uses: actions/checkout@v4
+        with:
+          repository: Pui89/ai-robot-motorcycle
+          ref: main
+          path: portfolio/projects/motorcycle
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run Level 13 cross-project verification
+        working-directory: portfolio
+        run: python tools/pui89_level13_portfolio_smoke.py
+
+      - name: Upload machine-readable report and test logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pui89-level13-portfolio-report
+          path: |
+            portfolio/reports/level13/pui89-level13-portfolio-report.json
+            portfolio/reports/level13/pui89-level13-portfolio-report.md
+            portfolio/reports/level13/logs/*.txt
+          if-no-files-found: warn
+          retention-days: 14

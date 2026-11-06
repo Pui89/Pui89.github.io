@@ -1,0 +1,55 @@
+# PUI89 Level 13 — Cross-Project Automation
+
+**Status:** automation implemented in this branch; first portfolio run completed successfully with an overall REVIEW_REQUIRED result.  
+**Purpose:** run a small, dependency-free verification set against the current seven-project portfolio.
+
+## What the workflow does
+
+The workflow `.github/workflows/pui89-level13-portfolio-verification.yml` checks out the portfolio repositories and runs selected existing Python `unittest` suites through `tools/pui89_level13_portfolio_smoke.py`.
+
+It records, per project:
+- repository and exact checked-out commit SHA;
+- each selected test suite and its result;
+- a plain-language note when a repository or test suite is unavailable;
+- a machine-readable JSON report, Markdown summary and individual test logs.
+
+## Current selected suites
+
+| Project | Selected suites |
+|---|---|
+| Coconut Harvest AI | `test_pui89_core.py`, `test_pui89_ai_core_conformance.py` |
+| Extreme Flood Rescue AI | `test_pui89_core.py`, `test_pui89_ai_core_conformance.py` |
+| Multimodal Narcotics Screening AI | `test_pui89_core.py`, `test_pui89_ai_core_conformance.py` |
+| PUI89 AI HOME | Existing tests if present; current main checkout has no `tests/` directory and is reported BLOCKED |
+| PUI89 AI NOMAD | `test_pui89_shared_workflow_contract.py`, `test_pui89_shield_policy.py` (`test_core.py` requires pytest and is excluded to avoid installing packages) |
+| PUI89 AI Robot Car | `test_contracts.py`, `test_safety.py` |
+| PUI89 AI Robot Motorcycle | `test_motorcycle_risk_scenarios.py` |
+
+The AI HOME repository checkout succeeded, but the checked-out main branch had no `tests/` directory in the portfolio run. A separate [AI HOME test PR #5](https://github.com/Pui89/AI-HOME/pull/5) adds eight dependency-free adapter guardrail tests and a focused workflow; its GitHub Actions run [42249652249](https://github.com/Pui89/AI-HOME/actions/runs/42249652249) completed successfully. Until PR #5 is merged, the central portfolio run correctly marks AI HOME as BLOCKED because it checks the main branch.
+
+## Trigger and cost controls
+
+- Manual trigger: GitHub Actions → **PUI89 Level 13 Cross-Project Verification** → Run workflow.
+- Pull-request trigger: only when the verifier, this document or its workflow changes.
+- No cron schedule; no recurring runner usage is added.
+- Python standard library only; no `pip install`, model downloads, dataset downloads, hosted inference, paid API, cloud GPU or hardware connection.
+- Read-only repository permissions; no token for cross-repository writes; no automatic merge or release.
+- The GitHub-hosted runner may still count against account Actions quotas. Check current account allowances before repeated use; no unlimited-free usage is claimed.
+
+## Status meanings
+
+- `PASS`: every selected suite for that project discovered at least one test and exited successfully.
+- `FAIL`: one or more selected suites failed or discovered no tests.
+- `BLOCKED`: the repository checkout or tests directory was unavailable; no pass is claimed.
+- Portfolio `REVIEW_REQUIRED`: at least one project is BLOCKED but none of the selected suites failed.
+- Portfolio `FAIL`: at least one selected suite failed.
+- Portfolio `PASS`: all seven project checkouts and selected suites passed.
+
+## Evidence boundary
+
+This is a selected software smoke test, not a full test-suite run. Passing results do not establish AI accuracy, model quality, calibration, sensor truth, simulation realism, hardware readiness, road safety, certification or field performance. Each project result is kept separate; no cross-project score is calculated.
+
+
+## First observed portfolio run — 6 November 2026
+
+The first successful execution of the central Level 13 workflow is [run 42249714511](https://github.com/Pui89/Pui89.github.io/actions/runs/42249714511). It reported PASS for Coconut, Flood Rescue, Screening, NOMAD, AI Car and AI Motorcycle; AI HOME was BLOCKED because its main branch had no tests directory at that point. The portfolio status was therefore REVIEW_REQUIRED, not PASS. The motorcycle pytest-dependent `test_core.py` suite is explicitly excluded under the no-package-install rule; its selected standard-library risk-scenario suite passed. See the workflow artifact for exact commits and logs.
