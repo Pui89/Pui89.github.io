@@ -49,14 +49,18 @@ Coconut's merged dataset audit also passed 15 checks across dataset structure, i
 
 ## PUI89 world-class engineering blueprint
 
-The four products follow one zero-cost, evidence-first AI engineering strategy. Read the [PUI89 World-Class AI Blueprint](PUI89_WORLD_CLASS_AI_BLUEPRINT.md) for the shared AI Core, approved technology direction, automation boundaries, product-specific priorities, quality gates and staged roadmap.
+PUI89 projects follow one zero-cost, evidence-first AI engineering strategy, with shared interfaces and validation tailored to each domain. Read the [PUI89 World-Class AI Blueprint](PUI89_WORLD_CLASS_AI_BLUEPRINT.md) for the shared AI Core, approved technology direction, automation boundaries, product-specific priorities, quality gates and staged roadmap.
 
-## Four-product portfolio
+## Six-project portfolio
 
 1. [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) — agricultural AI application and harvesting robot concept.
 2. [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) — flood-response AI application and amphibious rescue robot concept.
 3. [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) — multimodal inspection and human-review concept.
-4. **[HOMEGUARD AI](https://github.com/Pui89/HomeguardAI)** — multi-modal predictive building intelligence. Its standalone repository now contains an evidence-first Python foundation, deterministic synthetic three-floor scenario, machine-readable report schema, automated tests and GitHub Actions CI. The initial CI run passed; all evidence remains simulation-only, with no real building deployment or trained model claimed.
+4. **[HOMEGUARD AI](https://github.com/Pui89/HomeguardAI)** — multi-modal predictive building intelligence. Its standalone repository contains an evidence-first software foundation and synthetic scenario work; evidence remains simulation-only, with no real building deployment or trained model claimed.
+5. [PUI89 AI Robot Car](https://github.com/Pui89/ai-robot-car) — software-first vehicle intelligence and driver-assistance research concept. AI outputs are advisory; the human driver retains control. [English page](https://pui89.github.io/ai-robot-car.html) · [Thai page](https://pui89.github.io/ai-robot-car-th.html).
+6. [PUI89 AI Robot Motorcycle — EasyRide](https://github.com/Pui89/ai-robot-motorcycle) — inclusive rider-first motorcycle intelligence concept, including low step-through and skirt/dress-conscious design requirements. AI outputs are advisory; the rider retains control. [English page](https://pui89.github.io/ai-robot-motorcycle.html) · [Thai page](https://pui89.github.io/ai-robot-motorcycle-th.html).
+
+The car and motorcycle are early-stage research concepts, not built, road-tested, road-certified or validated vehicles. Their project pages and repository READMEs distinguish design intent from demonstrated evidence.
 
 Each product has its own domain requirements and validation gates. Shared PUI89 engineering contracts should be reused through documented interfaces rather than copying product-specific logic.
 
@@ -324,6 +328,10 @@ No paid API, cloud GPU, subscription, hosted inference service, automatic model 
 | Coconut Harvest AI | https://github.com/Pui89/Coconut-Harvest-AI |
 | Extreme Flood Rescue AI | https://github.com/Pui89/Extreme-Flood-Rescue-AI |
 | Multimodal Narcotics Screening AI | https://github.com/Pui89/Multimodal-Narcotics-Screening-AI |
+| PUI89 AI Robot Car | https://github.com/Pui89/ai-robot-car |
+| PUI89 AI Robot Motorcycle — EasyRide | https://github.com/Pui89/ai-robot-motorcycle |
+| PUI89 AI Car — English / Thai | https://pui89.github.io/ai-robot-car.html · https://pui89.github.io/ai-robot-car-th.html |
+| PUI89 EasyRide Motorcycle — English / Thai | https://pui89.github.io/ai-robot-motorcycle.html · https://pui89.github.io/ai-robot-motorcycle-th.html |
 | PUI89 website source | https://github.com/Pui89/Pui89.github.io |
 
 ---
