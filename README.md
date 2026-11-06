@@ -53,12 +53,7 @@ PUI89 projects follow one zero-cost, evidence-first AI engineering strategy, wit
 
 ## Six-project portfolio
 
-1. [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) — agricultural AI application and harvesting robot concept. [English website](https://pui89.github.io/coconut.html) · [Thai website](https://pui89.github.io/coconut-th.html).
-2. [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) — flood-response AI application and amphibious rescue robot concept. [English website](https://pui89.github.io/flood-rescue.html) · [Thai website](https://pui89.github.io/flood-rescue-th.html).
-3. [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) — multimodal inspection and human-review concept. [English website](https://pui89.github.io/screening.html) · [Thai website](https://pui89.github.io/screening-th.html).
-4. **[HOMEGUARD AI](https://github.com/Pui89/HomeguardAI)** — multi-modal predictive building intelligence. Its standalone repository contains an evidence-first software foundation and synthetic scenario work; evidence remains simulation-only, with no real building deployment or trained model claimed. [English website](https://pui89.github.io/homeguard.html) · [Thai website](https://pui89.github.io/homeguard-th.html).
-5. [PUI89 AI Robot Car](https://github.com/Pui89/ai-robot-car) — software-first vehicle intelligence and driver-assistance research concept. AI outputs are advisory; the human driver retains control. [English website](https://pui89.github.io/ai-robot-car.html) · [Thai website](https://pui89.github.io/ai-robot-car-th.html).
-6. [PUI89 AI Robot Motorcycle — EasyRide](https://github.com/Pui89/ai-robot-motorcycle) — inclusive rider-first motorcycle intelligence concept, including low step-through and skirt/dress-conscious design requirements. AI outputs are advisory; the rider retains control. [English website](https://pui89.github.io/ai-robot-motorcycle.html) · [Thai website](https://pui89.github.io/ai-robot-motorcycle-th.html).
+PUI89's portfolio contains exactly six projects. The single project directory and all 12 bilingual project website links appear in the consolidated table in [Project links](#11-project-directory-and-website-links) below.
 
 The car and motorcycle are early-stage research concepts, not built, road-tested, road-certified or validated vehicles. Their project pages and repository READMEs distinguish design intent from demonstrated evidence.
 
@@ -320,20 +315,22 @@ No paid API, cloud GPU, subscription, hosted inference service, automatic model 
 
 ---
 
-## 11. Project links
+## 11. Project directory and website links
 
-| Project (6 total) | English website | Thai website |
-|---|---|---|
-| Coconut Harvest AI | https://pui89.github.io/coconut.html | https://pui89.github.io/coconut-th.html |
-| Extreme Flood Rescue AI | https://pui89.github.io/flood-rescue.html | https://pui89.github.io/flood-rescue-th.html |
-| Multimodal Narcotics Screening AI | https://pui89.github.io/screening.html | https://pui89.github.io/screening-th.html |
-| HOMEGUARD AI | https://pui89.github.io/homeguard.html | https://pui89.github.io/homeguard-th.html |
-| PUI89 AI Robot Car | https://pui89.github.io/ai-robot-car.html | https://pui89.github.io/ai-robot-car-th.html |
-| PUI89 AI Robot Motorcycle — EasyRide | https://pui89.github.io/ai-robot-motorcycle.html | https://pui89.github.io/ai-robot-motorcycle-th.html |
+This is the **single source of truth** for the six projects and their 12 project websites. Each project appears once; its repository, English page, and Thai page are grouped on the same row.
 
-**Website count: 6 English pages + 6 Thai pages = 12 project websites.**
+| Project (6 total) | GitHub repository | English website | Thai website |
+|---|---|---|---|
+| Coconut Harvest AI | [Repository](https://github.com/Pui89/Coconut-Harvest-AI) | [English](https://pui89.github.io/coconut.html) | [Thai](https://pui89.github.io/coconut-th.html) |
+| Extreme Flood Rescue AI | [Repository](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | [English](https://pui89.github.io/flood-rescue.html) | [Thai](https://pui89.github.io/flood-rescue-th.html) |
+| Multimodal Narcotics Screening AI | [Repository](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | [English](https://pui89.github.io/screening.html) | [Thai](https://pui89.github.io/screening-th.html) |
+| HOMEGUARD AI | [Repository](https://github.com/Pui89/HomeguardAI) | [English](https://pui89.github.io/homeguard.html) | [Thai](https://pui89.github.io/homeguard-th.html) |
+| PUI89 AI Robot Car | [Repository](https://github.com/Pui89/ai-robot-car) | [English](https://pui89.github.io/ai-robot-car.html) | [Thai](https://pui89.github.io/ai-robot-car-th.html) |
+| PUI89 AI Robot Motorcycle — EasyRide | [Repository](https://github.com/Pui89/ai-robot-motorcycle) | [English](https://pui89.github.io/ai-robot-motorcycle.html) | [Thai](https://pui89.github.io/ai-robot-motorcycle-th.html) |
 
-Repository links: [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) · [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) · [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) · [HOMEGUARD AI](https://github.com/Pui89/HomeguardAI) · [PUI89 AI Robot Car](https://github.com/Pui89/ai-robot-car) · [PUI89 AI Robot Motorcycle](https://github.com/Pui89/ai-robot-motorcycle) · [PUI89 website source](https://github.com/Pui89/Pui89.github.io)
+**Count: 6 projects · 6 repositories · 6 English websites · 6 Thai websites = 12 project website links.**
+
+General PUI89 resources (not additional projects): [Public portfolio homepage](https://pui89.github.io/) · [Website source repository](https://github.com/Pui89/Pui89.github.io).
 
 ---
 
