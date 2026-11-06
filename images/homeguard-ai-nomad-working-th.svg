@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 980" role="img" aria-labelledby="title desc">
-<title id="title">HOMEGUARD AI NOMAD robot dog workflow concept</title>
-<desc id="desc">A quadruped robot dog concept and supervised workflow: observe, verify evidence, understand location and context, check safe movement, and report to owner. Simulation and future proposals only.</desc>
+<title id="title">แนวคิดขั้นตอนการทำงานของหุ่นยนต์สุนัข HOMEGUARD AI NOMAD</title>
+<desc id="desc">แนวคิดหุ่นยนต์สุนัขสี่ขาและขั้นตอนภายใต้การดูแล: สังเกต ตรวจสอบหลักฐาน ทำความเข้าใจตำแหน่งและบริบท ตรวจสอบการเคลื่อนที่อย่างปลอดภัย และรายงานเจ้าของ เป็นเพียงแนวคิดและข้อเสนอสำหรับอนาคต</desc>
 <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#061426"/><stop offset="1" stop-color="#12395b"/></linearGradient><linearGradient id="cyan" x2="1"><stop stop-color="#83f8ff"/><stop offset="1" stop-color="#00bde8"/></linearGradient><style>
 .title{font:800 42px Arial,sans-serif;fill:#f3faff}.sub{font:20px Arial,sans-serif;fill:#b7cede}.head{font:800 22px Arial,sans-serif;fill:#f3faff}.copy{font:17px Arial,sans-serif;fill:#bfd2e2}.eyebrow{font:700 16px Arial,sans-serif;letter-spacing:3px;fill:#80edff}.panel{fill:#102943;stroke:#35617e;stroke-width:2}
 </style></defs>
-<rect width="1600" height="980" rx="28" fill="url(#bg)"/><text x="70" y="68" class="eyebrow">PUI89  /  HOMEGUARD AI NOMAD</text><text x="70" y="130" class="title">QUADRUPED ROBOT DOG — HOW IT IS INTENDED TO WORK</text><text x="72" y="170" class="sub">Owner-supervised outdoor awareness • evidence-led decisions • safe-stop first</text>
+<rect width="1600" height="980" rx="28" fill="url(#bg)"/><text x="70" y="68" class="eyebrow">PUI89  /  HOMEGUARD AI NOMAD</text><text x="70" y="130" class="title">หุ่นยนต์สุนัขสี่ขา — แนวคิดการทำงาน</text><text x="72" y="170" class="sub">เฝ้าระวังกลางแจ้งภายใต้การดูแล • ตัดสินใจจากหลักฐาน • หยุดอย่างปลอดภัย</text>
 <!-- simplified dog silhouette -->
 <g transform="translate(95 285)">
 <ellipse cx="260" cy="380" rx="245" ry="28" fill="#020a13" opacity=".5"/>
@@ -17,18 +17,18 @@
 <circle cx="500" cy="65" r="12" fill="#8df8ff"/><circle cx="550" cy="60" r="12" fill="#8df8ff"/>
 <g stroke="#7d9eb8" stroke-width="18" stroke-linecap="round" fill="none"><path d="M100 265L65 360L55 430"/><path d="M190 285L180 365L190 430"/><path d="M355 285L370 365L360 430"/><path d="M420 260L475 350L485 430"/></g>
 <g fill="#0a1a2b" stroke="#7bb6d0" stroke-width="5"><circle cx="65" cy="360" r="20"/><circle cx="180" cy="365" r="20"/><circle cx="370" cy="365" r="20"/><circle cx="475" cy="350" r="20"/></g>
-<text x="255" y="500" text-anchor="middle" class="head">FOUR-LEG ROBOT DOG</text><text x="255" y="530" text-anchor="middle" class="copy">Proposed mechanical platform</text>
+<text x="255" y="500" text-anchor="middle" class="head">หุ่นยนต์สุนัขสี่ขา</text><text x="255" y="530" text-anchor="middle" class="copy">แพลตฟอร์มกลไกที่เสนอ</text>
 </g>
 <!-- flow cards -->
 <g>
-<rect x="700" y="250" width="360" height="145" rx="20" class="panel"/><circle cx="745" cy="295" r="22" fill="url(#cyan)"/><text x="745" y="303" text-anchor="middle" fill="#071727" font-family="Arial" font-size="20" font-weight="800">1</text><text x="785" y="303" class="head">OBSERVE</text><text x="735" y="350" class="copy">Camera and optional validated</text><text x="735" y="375" class="copy">environmental sensor inputs</text>
+<rect x="700" y="250" width="360" height="145" rx="20" class="panel"/><circle cx="745" cy="295" r="22" fill="url(#cyan)"/><text x="745" y="303" text-anchor="middle" fill="#071727" font-family="Arial" font-size="20" font-weight="800">1</text><text x="785" y="303" class="head">สังเกต</text><text x="735" y="350" class="copy">กล้องและเซนเซอร์ที่ผ่านการตรวจสอบ</text><text x="735" y="375" class="copy">สำหรับรับรู้สภาพแวดล้อม</text>
 <path d="M1060 322H1110" stroke="#62e7fa" stroke-width="4"/>
-<rect x="1120" y="250" width="390" height="145" rx="20" class="panel"/><circle cx="1165" cy="295" r="22" fill="url(#cyan)"/><text x="1165" y="303" text-anchor="middle" fill="#071727" font-family="Arial" font-size="20" font-weight="800">2</text><text x="1205" y="303" class="head">VERIFY EVIDENCE</text><text x="1155" y="350" class="copy">Check freshness, calibration,</text><text x="1155" y="375" class="copy">sensor health and uncertainty</text>
-<rect x="700" y="455" width="360" height="145" rx="20" class="panel"/><circle cx="745" cy="500" r="22" fill="url(#cyan)"/><text x="745" y="508" text-anchor="middle" fill="#071727" font-family="Arial" font-size="20" font-weight="800">3</text><text x="785" y="508" class="head">UNDERSTAND</text><text x="735" y="555" class="copy">Track location, context, change</text><text x="735" y="580" class="copy">and known / unknown state</text>
+<rect x="1120" y="250" width="390" height="145" rx="20" class="panel"/><circle cx="1165" cy="295" r="22" fill="url(#cyan)"/><text x="1165" y="303" text-anchor="middle" fill="#071727" font-family="Arial" font-size="20" font-weight="800">2</text><text x="1205" y="303" class="head">ตรวจสอบหลักฐาน</text><text x="1155" y="350" class="copy">ตรวจสอบความใหม่ การสอบเทียบ</text><text x="1155" y="375" class="copy">สุขภาพเซนเซอร์ และความไม่แน่นอน</text>
+<rect x="700" y="455" width="360" height="145" rx="20" class="panel"/><circle cx="745" cy="500" r="22" fill="url(#cyan)"/><text x="745" y="508" text-anchor="middle" fill="#071727" font-family="Arial" font-size="20" font-weight="800">3</text><text x="785" y="508" class="head">ทำความเข้าใจ</text><text x="735" y="555" class="copy">ติดตามตำแหน่ง บริบท และการเปลี่ยนแปลง</text><text x="735" y="580" class="copy">รวมถึงสิ่งที่ทราบและยังไม่ทราบ</text>
 <path d="M1060 527H1110" stroke="#62e7fa" stroke-width="4"/>
-<rect x="1120" y="455" width="390" height="145" rx="20" class="panel"/><circle cx="1165" cy="500" r="22" fill="url(#cyan)"/><text x="1165" y="508" text-anchor="middle" fill="#071727" font-family="Arial" font-size="20" font-weight="800">4</text><text x="1205" y="508" class="head">CHECK SAFE MOVEMENT</text><text x="1155" y="555" class="copy">Respect terrain, obstacles, battery</text><text x="1155" y="580" class="copy">and defined operating limits</text>
-<rect x="910" y="665" width="390" height="125" rx="20" fill="#12334b" stroke="#51dff9" stroke-width="2"/><text x="1105" y="710" text-anchor="middle" class="head">5  REPORT TO OWNER</text><text x="1105" y="750" text-anchor="middle" class="copy">Human review • safe stop if uncertain</text>
+<rect x="1120" y="455" width="390" height="145" rx="20" class="panel"/><circle cx="1165" cy="500" r="22" fill="url(#cyan)"/><text x="1165" y="508" text-anchor="middle" fill="#071727" font-family="Arial" font-size="20" font-weight="800">4</text><text x="1205" y="508" class="head">ตรวจสอบความปลอดภัยในการเคลื่อนที่</text><text x="1155" y="555" class="copy">คำนึงถึงพื้นผิว สิ่งกีดขวาง แบตเตอรี่</text><text x="1155" y="580" class="copy">และขอบเขตการใช้งานที่กำหนด</text>
+<rect x="910" y="665" width="390" height="125" rx="20" fill="#12334b" stroke="#51dff9" stroke-width="2"/><text x="1105" y="710" text-anchor="middle" class="head">5  รายงานเจ้าของ</text><text x="1105" y="750" text-anchor="middle" class="copy">ให้มนุษย์ตรวจสอบ • หยุดอย่างปลอดภัยเมื่อไม่มั่นใจ</text>
 <path d="M1315 600V635H1300V665" fill="none" stroke="#62e7fa" stroke-width="4"/>
 </g>
-<rect x="70" y="850" width="1460" height="72" rx="16" fill="#0b2035" stroke="#315a77" stroke-width="2"/><text x="100" y="895" class="copy">PROPOSED ONLY — no quadruped hardware, autonomous navigation, real sensor integration or outdoor performance is claimed.</text>
+<rect x="70" y="850" width="1460" height="72" rx="16" fill="#0b2035" stroke="#315a77" stroke-width="2"/><text x="100" y="895" class="copy">เป็นเพียงข้อเสนอ — ยังไม่มีฮาร์ดแวร์หุ่นยนต์สี่ขา ระบบนำทางอัตโนมัติ การเชื่อมต่อเซนเซอร์จริง หรือการยืนยันสมรรถนะกลางแจ้ง</text>
 </svg>
