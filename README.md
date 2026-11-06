@@ -352,7 +352,7 @@ Concept images are illustrations, not operational evidence. Synthetic fixtures a
 
 ## Real Hugging Face model integrations
 
-Executable, offline-only OWL-ViT inference has been added to the seven project repositories using the real checkpoint [google/owlvit-base-patch32](https://huggingface.co/google/owlvit-base-patch32) (Apache-2.0 model-card licence). Each project has domain-specific candidate labels, a local-image inference script, JSON evidence output and standard-library report-contract tests.
+Executable, offline-only OWL-ViT inference has been added to the seven project repositories using the real checkpoint [google/owlvit-base-patch32](https://huggingface.co/google/owlvit-base-patch32) (Apache-2.0 model-card licence). Each project has domain-specific candidate labels, a local-image inference script, JSON evidence output and standard-library report-contract tests. The checkpoint is pinned to `cbc355fb364588351c5d51c7f74465e8e7ec6f72`; its safetensors weights are approximately 613 MB.
 
 | Project | Model integration code |
 |---|---|
