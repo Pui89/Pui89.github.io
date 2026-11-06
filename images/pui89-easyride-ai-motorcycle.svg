@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
 <title id="title">PUI89 EasyRide — friendly rounded AI motorcycle concept</title>
-<desc id="desc">A clean, softly rounded step-through electric motorcycle in deep navy, pearl white, mint and electric cyan. It has a broad supportive seat, low floorboard, small friendly front fairing, large wheels and upright handlebars. Concept artwork only.</desc>
+<desc id="desc">A clean, softly rounded, skirt-conscious step-through electric motorcycle in deep navy, pearl white, mint and electric cyan. It has a broad supportive seat, low open mounting step, wide flat floorboard, smooth front leg shield, enclosed drive-cover concept and upright handlebars. Concept artwork only; clothing clearance requires testing.</desc>
 <defs>
   <linearGradient id="back" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10243a"/><stop offset="1" stop-color="#07111f"/></linearGradient>
   <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5fbff"/><stop offset=".48" stop-color="#c9e7ee"/><stop offset="1" stop-color="#75b7c9"/></linearGradient>
@@ -47,6 +47,11 @@
   <!-- low broad floorboard -->
   <path d="M572 575Q690 558 846 575L866 600Q860 617 834 618H588Q561 613 572 575Z" fill="#17364e" stroke="#69dff5" stroke-width="6"/>
   <path d="M610 588H823" stroke="#9beeff" stroke-width="5" stroke-linecap="round"/>
+  <!-- smooth skirt-conscious leg shield: protects the forward footwell while keeping a low step-through opening -->
+  <path d="M850 431Q831 449 826 481L817 541Q814 557 796 566L777 562Q787 535 789 505Q789 468 812 440Z" fill="url(#shell)" stroke="#dff8ff" stroke-width="6"/>
+  <path d="M830 466Q818 506 812 542" fill="none" stroke="#78c8da" stroke-width="5" stroke-linecap="round"/>
+  <!-- smooth rear lower-side cover and enclosed-drive design cue; no exposed chain/belt in the intended production layout -->
+  <path d="M438 550Q493 574 575 568L600 585Q591 601 562 602L466 589Q443 580 438 550Z" fill="#20445c" stroke="#7edff0" stroke-width="5"/>
   <!-- central low battery cover -->
   <path d="M650 500Q663 485 688 485H781Q803 487 811 507L807 548H658Z" fill="#15344b" stroke="#4ad8f4" stroke-width="5"/>
   <text x="684" y="527" fill="#c8f7ff" font-size="17" font-weight="800" letter-spacing="2">EASYRIDE</text>
@@ -75,11 +80,14 @@
     <text x="90" y="308">EASY STEP-THROUGH</text>
     <text x="90" y="338" fill="#a9c4d5" font-size="16" font-weight="500">A low, open centre for easier mounting</text>
     <path d="M300 350L485 405" stroke="#42d9ff" stroke-width="3" fill="none"/>
+    <text x="90" y="405">SKIRT / DRESS CONSCIOUS</text>
+    <text x="90" y="432" fill="#a9c4d5" font-size="16" font-weight="500">Low open step, wide flat footboard, smooth leg area</text>
+    <path d="M330 438L650 570" stroke="#42d9ff" stroke-width="3" fill="none"/>
     <text x="1100" y="365" text-anchor="end">SOFT, FRIENDLY FRONT</text>
     <text x="1100" y="392" text-anchor="end" fill="#a9c4d5" font-size="16" font-weight="500">Rounded panels and clear lighting</text>
     <path d="M1085 405L1047 430" stroke="#42d9ff" stroke-width="3" fill="none"/>
-    <text x="700" y="790" text-anchor="middle">LOW, SUPPORTIVE RIDER POSITION</text>
-    <text x="700" y="820" text-anchor="middle" fill="#a9c4d5" font-size="16" font-weight="500">Concept packaging — fit, handling and safety still require engineering validation</text>
+    <text x="700" y="790" text-anchor="middle">LOW STEP-THROUGH · WIDE FOOTBOARD · SMOOTH CLOTHING-SAFE COVERS</text>
+    <text x="700" y="820" text-anchor="middle" fill="#a9c4d5" font-size="16" font-weight="500">Skirt and dress clearance, foot access and snag resistance still require user testing</text>
   </g>
   <rect x="76" y="846" width="1248" height="1" fill="#29445b"/>
   <text x="76" y="878" fill="#7896ab" font-size="15" letter-spacing="2">CONCEPT ART ONLY · NOT PRODUCTION CAD · NOT A ROAD-VALIDATED VEHICLE</text>
