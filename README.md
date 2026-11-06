@@ -349,3 +349,19 @@ PUI89 distinguishes clearly between:
 Concept images are illustrations, not operational evidence. Synthetic fixtures are software-test inputs, not real-world benchmarks. A passing software test is not proof of model accuracy, physical safety, or deployment readiness.
 
 **PUI89's commitment is to build carefully, test transparently, report limitations honestly, and advance from software foundations toward real-world applications only when evidence justifies the next step.**
+
+## Shared Hugging Face model catalogue — Non-Chinese origin only
+
+PUI89 applies a mandatory **non-Chinese model-origin rule** across all current and future projects. Unknown or unclear developer, ownership, upstream or checkpoint provenance means exclude. The following are research candidates only, not integrated or validated models:
+
+| Candidate | Publisher shown by model card | Model-card licence | Research role |
+|---|---|---|---|
+| [Microsoft Florence-2-base](https://huggingface.co/microsoft/Florence-2-base) | Microsoft | MIT | Image descriptions, candidate object localization and OCR |
+| [Meta DINOv2-base](https://huggingface.co/facebook/dinov2-base) | Meta AI | Apache-2.0 | Visual feature extraction and image similarity |
+| [Google SigLIP 2 Base](https://huggingface.co/google/siglip2-base-patch16-224) | Google | Apache-2.0 | Image-text similarity and zero-shot category exploration |
+| [OpenAI Whisper tiny](https://huggingface.co/openai/whisper-tiny) | OpenAI | Apache-2.0 | Optional multilingual speech-to-text |
+
+**No downloads, installations, fine-tuning, benchmarks, paid APIs, hosted inference or cloud GPU usage were performed or authorized by this documentation update.** Exact checkpoint, origin, licence, dataset provenance, security, resource and commercial-use checks are required before adoption. Florence-2 requires additional source review because its documented loader uses remote model code. General-purpose perception models must not directly control robots or vehicles or make consequential decisions.
+
+See the complete [PUI89 Hugging Face Model Policy](docs/PUI89_HUGGINGFACE_MODEL_POLICY.md) and project-specific model mappings in each project README.
+
