@@ -15,7 +15,7 @@
   <meta property="og:locale" content="en_US">
   <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/d/d8/Coconut_fruits.jpg">
   <meta name="twitter:title" content="PUI89 AI Robotics | Practical AI, responsible robotics">
-  <meta name="twitter:description" content="Evidence-led AI software and robotics concepts for agriculture, disaster response, and multimodal inspection.">
+  <meta name="twitter:description" content="Evidence-led AI software and robotics concepts across agriculture, disaster response, multimodal inspection, home safety and intelligent vehicles.">
   <meta property="og:title" content="PUI89 AI Robotics | Practical AI. Responsible Robotics.">
   <meta property="og:description" content="Independent AI and robotics development focused on useful prototypes, reproducible evidence, responsible engineering, and accessible technology.">
   <meta property="og:url" content="https://pui89.github.io/">
@@ -560,7 +560,7 @@ a:hover{color:#B8F2FF}
     <!-- Project details are consolidated in the single project directory below. -->
 
     <section id="projects" class="section">
-      <h2>Three projects. One evidence-first approach.</h2>
+      <h2>Six projects. One evidence-first approach.</h2>
       <p class="intro">Each project is developed incrementally. Concept visuals, working software, simulations, and real-world validation are kept distinct.</p>
       <div class="grid">
         <article class="card" id="coconut">
@@ -604,13 +604,29 @@ a:hover{color:#B8F2FF}
           <a href="homeguard.html">Explore HOMEGUARD AI NOMAD ↗</a>
           <a href="https://github.com/Pui89/Homeguard-Ai-Nomad">Review HOMEGUARD AI NOMAD repository ↗</a>
         </article>
+        <article class="card" aria-label="PUI89 AI Car concept">
+          <img class="project-art" src="images/pui89-ai-car-concept.svg" alt="PUI89 AI Car premium vehicle intelligence concept illustration" loading="lazy">
+          <div class="num">05 / VEHICLE INTELLIGENCE</div><h3>PUI89 AI Car</h3>
+          <p>Software-first intelligent-vehicle concept focused on 360-degree context awareness, road-hazard analysis, driver assistance, vehicle-health evidence and cyber resilience. Human-driver-first; no autonomous driving capability is claimed.</p>
+          <span class="status">Concept and early software foundation · not road validated</span>
+          <a href="ai-car.html">Explore AI Car concept ↗</a>
+          <a href="https://github.com/Pui89/ai-robot-car">Review AI Car repository ↗</a>
+        </article>
+        <article class="card" aria-label="PUI89 AI Motorcycle concept">
+          <img class="project-art" src="images/pui89-ai-motorcycle-concept.svg" alt="PUI89 AI Motorcycle rider-first concept illustration" loading="lazy">
+          <div class="num">06 / RIDER-FIRST VEHICLE INTELLIGENCE</div><h3>PUI89 AI Motorcycle</h3>
+          <p>Simulation-first concept for rider-risk, traction and road-surface scenarios, with advisory-only outputs and explicit separation from throttle, brake and steering control.</p>
+          <span class="status">Early software and synthetic scenarios · not road validated</span>
+          <a href="ai-motorcycle.html">Explore AI Motorcycle concept ↗</a>
+          <a href="https://github.com/Pui89/ai-robot-motorcycle">Review AI Motorcycle repository ↗</a>
+        </article>
       </div>
     </section>
 
 
     <section id="core" class="section" aria-labelledby="core-heading">
       <h2 id="core-heading">One shared engineering foundation</h2>
-      <p class="intro">PUI89 is being developed as a common AI-software foundation supporting four specialised applications. The shared-core work is being introduced and reviewed incrementally; this section describes the architecture direction, not a claim that every component is already integrated or validated.</p>
+      <p class="intro">PUI89 is being developed as a common AI-software foundation supporting six specialised applications. The shared-core work is being introduced and reviewed incrementally; this section describes the architecture direction, not a claim that every component is already integrated or validated.</p>
       <div class="grid">
         <article class="card"><div class="num">01 / STATE &amp; UNCERTAINTY</div><h3>Know what the system knows</h3><p>Track observation source, timestamp, confidence, calibration status, stale inputs, and conflicting evidence. Represent the changing world state explicitly, propagate uncertainty into task plans, and request human review when evidence is incomplete or unreliable.</p><span class="status">Software contract under review</span></article>
         <article class="card"><div class="num">02 / AUTOMATED CHECKS</div><h3>Make failures visible</h3><p>Use repeatable Python checks and structured test reports to record failures, environment details, and evidence. Passing software tests does not establish field performance or robot safety.</p><span class="status">Development stage: incremental implementation</span></article>
