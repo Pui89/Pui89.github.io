@@ -63,3 +63,29 @@ jobs:
                   print(f"PASS: {page} parsed; title element found")
           raise SystemExit(1 if failed else 0)
           PY
+
+      - name: Enforce English and Thai homepage consistency
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          pages = {"index.html": "en", "th.html": "th"}
+          expected_logo = 'images/pui89-precision-glow-01.svg'
+          errors = []
+          for filename, language in pages.items():
+              text = Path(filename).read_text(encoding="utf-8")
+              if f'<html lang="{language}">' not in text:
+                  errors.append(f"{filename}: incorrect language attribute")
+              if expected_logo not in text:
+                  errors.append(f"{filename}: missing current PUI89 logo")
+              if 'href="favicon.svg"' not in text:
+                  errors.append(f"{filename}: favicon is not the current PUI89 mark")
+              if 'id="share"' in text or 'qr-code' in text or 'pui89-english-qr' in text or 'pui89-thai-qr' in text:
+                  errors.append(f"{filename}: obsolete QR/share block remains")
+              if '<link rel="canonical" href="https://pui89.github.io/' not in text:
+                  errors.append(f"{filename}: canonical URL missing")
+          if errors:
+              print("\\n".join("FAIL: " + item for item in errors))
+              raise SystemExit(1)
+          print("PASS: English and Thai homepages use the same current logo and favicon; QR blocks are absent.")
+          PY
