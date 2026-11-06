@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "project": "pui89-ai-robot-car",
+  "status": "scenario_catalog_only_not_simulation_evidence",
+  "scenarios": [
+    {
+      "id": "CAR-001",
+      "hazard": "Pedestrian/cyclist occlusion",
+      "expected_warning": "UNKNOWN_DEGRADED_OR_WARNING_PROJECT_DEFINED",
+      "required_evidence": [
+        "sensor_source",
+        "timestamp",
+        "visibility_condition",
+        "occlusion_status"
+      ],
+      "response": "Do not infer clear road from missing detection; require validated driver-assistance response."
+    },
+    {
+      "id": "CAR-002",
+      "hazard": "Brake or steering fault",
+      "expected_warning": "CRITICAL",
+      "required_evidence": [
+        "diagnostic_source",
+        "fault_code",
+        "vehicle_state"
+      ],
+      "response": "Use independently validated vehicle safety strategy and driver warning; no generic sudden-stop command."
+    },
+    {
+      "id": "CAR-003",
+      "hazard": "Battery thermal anomaly",
+      "expected_warning": "WARNING_OR_CRITICAL_PROJECT_DEFINED",
+      "required_evidence": [
+        "battery_monitor_source",
+        "temperature",
+        "fault_status"
+      ],
+      "response": "Independent BMS and electrical isolation protections; AI warning is supplemental."
+    },
+    {
+      "id": "CAR-004",
+      "hazard": "GNSS spoofing or network loss",
+      "expected_warning": "UNKNOWN_DEGRADED",
+      "required_evidence": [
+        "position_source",
+        "integrity_check",
+        "message_age"
+      ],
+      "response": "Reject stale remote commands and use tested local degraded behavior."
+    },
+    {
+      "id": "CAR-005",
+      "hazard": "Driver override unavailable",
+      "expected_warning": "CRITICAL",
+      "required_evidence": [
+        "override_input_status",
+        "diagnostic_result"
+      ],
+      "response": "Do not enable any function requiring driver override until inspected."
+    }
+  ]
+}
