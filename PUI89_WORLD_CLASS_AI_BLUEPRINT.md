@@ -214,3 +214,12 @@ These are engineering references, not claims of certification:
 ---
 
 **PUI89 engineering principle:** Observe carefully. Preserve evidence. Represent uncertainty. Test failure. Improve measurably. Keep people in control.
+
+
+## 8. Next controlled milestone — Level 12
+
+The next implementation gate is [PUI89 AI Core — Level 12 Cross-Project Conformance](PUI89_AI_CORE_LEVEL_12_CONFORMANCE.md). It applies to Coconut, Flood Rescue, Screening, AI HOME, AI NOMAD, AI Car and AI Motorcycle.
+
+Before selecting another model, align the four canonical records (Observation, WorldState, ActionProposal and FailureReport), evidence references, uncertainty/abstention, timestamp and provenance validation, failure retention, and simulation/advisory-only action boundaries. Use dependency-light synthetic tests and report each repository's own commit and result.
+
+The current Hugging Face adapters are opt-in documentation/code foundations only. Do not equate an adapter with downloaded weights, successful inference or validated accuracy. The next model experiment must wait until the relevant project's Level 12 conformance checks pass and its data, licence, model origin, resource fit and evaluation split are approved.
