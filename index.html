@@ -599,12 +599,25 @@ a:hover{color:#B8F2FF}
           <img class="project-art" src="/images/homeguard-ai-nomad.svg" alt="HOMEGUARD AI NOMAD compact four-wheel mobile guardian concept" loading="lazy" decoding="async">
           <span class="project-art-note">Portable robot concept · simulation-first foundation</span>
           <div class="num">04 / HOME &amp; OUTDOOR SAFETY</div><h3>HOMEGUARD AI NOMAD</h3>
-          <p>A proposed suitcase-sized outdoor mobile guardian for owner-supervised travel and campsite monitoring. It is separate from HOME, the indoor robot concept, and uses four compact wheels, a retractable handle and a removable battery.</p>
+          <p>A proposed portable outdoor mobile guardian for owner-supervised travel and campsite monitoring. It is separate from HOME, the indoor robot concept, and uses four compact wheels, a retractable handle and a removable battery.</p>
           <p><strong>Proposed physical targets:</strong> height 50–60 cm, width 30–36 cm and depth 20–25 cm. Complete weight target 8–10 kg, with an absolute maximum of 12 kg including battery, sensors and computer. Design goals include four small wheels, retractable travel handle, removable battery and lightweight hard shell.</p>
           <p>These are design targets only. The robot is not built, certified or validated; detection, mobility, battery endurance, weather resistance and safe-return behaviour require testing. It does not guarantee protection from wildlife, fire or other hazards.</p>
           <span class="status">Software foundation · robot concept proposed · validation pending</span>
           <a href="homeguard.html">Explore HOMEGUARD AI NOMAD ↗</a>
           <a href="https://github.com/Pui89/Homeguard-Ai-Nomad">Review HOMEGUARD AI NOMAD repository ↗</a>
+        </article>
+        <article class="card" aria-label="PUI89 AI Robot Car project">
+          <div class="num">05 / INTELLIGENT MOBILITY</div><h3>PUI89 AI Robot Car</h3>
+          <p>A software-first vehicle-intelligence research platform exploring perception, road-scene understanding, risk assessment and driver-support concepts. The current scope is documentation, software foundations and simulation planning—not a built autonomous vehicle.</p>
+          <span class="status">Repository quality checks passed · vehicle validation not performed</span>
+          <a href="https://github.com/Pui89/ai-robot-car">Explore AI Robot Car repository ↗</a>
+        </article>
+        <article class="card" aria-label="PUI89 AI Robot Motorcycle project">
+          <div class="num">06 / TWO-WHEEL MOBILITY</div><h3>PUI89 AI Robot Motorcycle</h3>
+          <p>A rider-centred motorcycle intelligence concept exploring forward and rear awareness, road-risk observations, wheel-state signals and clear advisory alerts. The new motorcycle design concept is proposed in an open pull request; it is not a built or road-tested motorcycle.</p>
+          <span class="status">Main-branch quality checks on an earlier commit · new design PR checks passed</span>
+          <a href="https://github.com/Pui89/ai-robot-motorcycle">Explore AI Robot Motorcycle repository ↗</a>
+          <a href="https://github.com/Pui89/ai-robot-motorcycle/pull/4">Review motorcycle design PR #4 ↗</a>
         </article>
       </div>
     </section>
@@ -612,7 +625,7 @@ a:hover{color:#B8F2FF}
 
     <section id="core" class="section" aria-labelledby="core-heading">
       <h2 id="core-heading">One shared engineering foundation</h2>
-      <p class="intro">PUI89 is being developed as a common AI-software foundation supporting four specialised applications. The shared-core work is being introduced and reviewed incrementally; this section describes the architecture direction, not a claim that every component is already integrated or validated.</p>
+      <p class="intro">PUI89 is being developed as a common AI-software foundation supporting six specialised project areas. The shared-core work is being introduced and reviewed incrementally; this section describes the architecture direction, not a claim that every component is already integrated or validated.</p>
       <div class="grid">
         <article class="card"><div class="num">01 / STATE &amp; UNCERTAINTY</div><h3>Know what the system knows</h3><p>Track observation source, timestamp, confidence, calibration status, stale inputs, and conflicting evidence. Represent the changing world state explicitly, propagate uncertainty into task plans, and request human review when evidence is incomplete or unreliable.</p><span class="status">Software contract under review</span></article>
         <article class="card"><div class="num">02 / AUTOMATED CHECKS</div><h3>Make failures visible</h3><p>Use repeatable Python checks and structured test reports to record failures, environment details, and evidence. Passing software tests does not establish field performance or robot safety.</p><span class="status">Development stage: incremental implementation</span></article>
