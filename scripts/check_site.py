@@ -139,7 +139,7 @@ def main() -> int:
             errors.append(f"{filename} is missing its canonical URL")
         if 'hreflang="en"' not in source or 'hreflang="th"' not in source:
             errors.append(f"{filename} must declare both English and Thai alternate-language links")
-        if requirements["thai_text"] and not any("\\u0e00" <= char <= "\\u0e7f" for char in source):
+        if requirements["thai_text"] and not any(0x0E00 <= ord(char) <= 0x0E7F for char in source):
             errors.append("th.html does not contain Thai-script text")
 
     if errors:
