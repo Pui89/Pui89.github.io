@@ -218,12 +218,14 @@ def main() -> int:
         "|---|---|---|---|",
     ]
     for item in results:
-        suites = ", ".join(suite["pattern"] for suite in item["suites"]) or "not run"
+        suites = ", ".join(f"{suite['pattern']}={suite['status']}" for suite in item["suites"]) or "not run"
         commit = item["commit"][:12] if item["commit"] else "not available"
         lines.append(f"| {item['project']} | **{item['status']}** | `{commit}` | {suites} |")
         if item.get("note"):
             lines.append("")
             lines.append(f"**{item['project']}:** {item['note']}")
+        if item.get("excluded_suites"):
+            lines.append(f"Not run under zero-install policy: {'; '.join(item['excluded_suites'])}.")
     lines.extend(["", "## Limitations", ""])
     lines.extend(f"- {note}" for note in report["limitations"])
     md_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
