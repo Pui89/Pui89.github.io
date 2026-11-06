@@ -20,8 +20,8 @@ It records, per project:
 | Coconut Harvest AI | `test_pui89_core.py`, `test_pui89_ai_core_conformance.py` |
 | Extreme Flood Rescue AI | `test_pui89_core.py`, `test_pui89_ai_core_conformance.py` |
 | Multimodal Narcotics Screening AI | `test_pui89_core.py`, `test_pui89_ai_core_conformance.py` |
-| PUI89 AI HOME | Existing tests if its repository checkout is available |
-| PUI89 AI NOMAD | `test_core.py`, `test_pui89_shared_workflow_contract.py`, `test_pui89_shield_policy.py` |
+| PUI89 AI HOME | Existing tests if present; current main checkout has no `tests/` directory and is reported BLOCKED |
+| PUI89 AI NOMAD | `test_pui89_shared_workflow_contract.py`, `test_pui89_shield_policy.py` (`test_core.py` requires pytest and is excluded to avoid installing packages) |
 | PUI89 AI Robot Car | `test_contracts.py`, `test_safety.py` |
 | PUI89 AI Robot Motorcycle | `test_motorcycle_risk_scenarios.py` |
 
