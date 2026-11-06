@@ -349,3 +349,19 @@ PUI89 distinguishes clearly between:
 Concept images are illustrations, not operational evidence. Synthetic fixtures are software-test inputs, not real-world benchmarks. A passing software test is not proof of model accuracy, physical safety, or deployment readiness.
 
 **PUI89's commitment is to build carefully, test transparently, report limitations honestly, and advance from software foundations toward real-world applications only when evidence justifies the next step.**
+
+## Real Hugging Face model integrations
+
+Executable, offline-only OWL-ViT inference has been added to the seven project repositories using the real checkpoint [google/owlvit-base-patch32](https://huggingface.co/google/owlvit-base-patch32) (Apache-2.0 model-card licence). Each project has domain-specific candidate labels, a local-image inference script, JSON evidence output and standard-library report-contract tests. The checkpoint is pinned to `cbc355fb364588351c5d51c7f74465e8e7ec6f72`; its safetensors weights are approximately 613 MB.
+
+| Project | Model integration code |
+|---|---|
+| Coconut Harvest AI | [Local OWL-ViT demo](https://github.com/Pui89/Coconut-Harvest-AI/blob/docs/non-chinese-hf-model-catalogue/tools/huggingface_local_vision_demo.py) |
+| Extreme Flood Rescue AI | [Local OWL-ViT demo](https://github.com/Pui89/Extreme-Flood-Rescue-AI/blob/docs/non-chinese-hf-model-catalogue/tools/huggingface_local_vision_demo.py) |
+| Multimodal Narcotics Screening AI | [Local OWL-ViT demo](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/blob/docs/non-chinese-hf-model-catalogue/tools/huggingface_local_vision_demo.py) |
+| AI-HOME | [Local OWL-ViT demo](https://github.com/Pui89/AI-HOME/blob/docs/non-chinese-hf-model-catalogue/tools/huggingface_local_vision_demo.py) |
+| AI-NOMAD | [Local OWL-ViT demo](https://github.com/Pui89/AI-NOMAD/blob/docs/non-chinese-hf-model-catalogue/tools/huggingface_local_vision_demo.py) |
+| AI Robot Car | [Local OWL-ViT demo](https://github.com/Pui89/ai-robot-car/blob/docs/non-chinese-hf-model-catalogue/tools/huggingface_local_vision_demo.py) |
+| AI Robot Motorcycle | [Local OWL-ViT demo](https://github.com/Pui89/ai-robot-motorcycle/blob/docs/non-chinese-hf-model-catalogue/tools/huggingface_local_vision_demo.py) |
+
+**Integration status:** real model-loading and inference code is committed to the open PR branches; model weights were not downloaded, dependencies were not installed, and inference has not been executed. Each script uses local-only loading, requires safetensors, and records outputs as uncertain human-review observations. No model result authorizes physical actuation or a consequential decision. Project-specific limits are documented in each README.
