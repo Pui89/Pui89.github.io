@@ -1,6 +1,6 @@
 # PUI89 Level 13 — Cross-Project Automation
 
-**Status:** automation implemented in this branch; execution evidence is pending a GitHub Actions run.  
+**Status:** automation implemented in this branch; first portfolio run completed successfully with an overall REVIEW_REQUIRED result.  
 **Purpose:** run a small, dependency-free verification set against the current seven-project portfolio.
 
 ## What the workflow does
@@ -25,7 +25,7 @@ It records, per project:
 | PUI89 AI Robot Car | `test_contracts.py`, `test_safety.py` |
 | PUI89 AI Robot Motorcycle | `test_motorcycle_risk_scenarios.py` |
 
-The AI HOME repository checkout was not accessible to the setup review (GitHub returned 404). Its step is therefore non-blocking and the report must show it as BLOCKED if it remains unavailable. This is not a pass.
+The AI HOME repository checkout succeeded, but the checked-out main branch had no `tests/` directory in the portfolio run. A separate [AI HOME test PR #5](https://github.com/Pui89/AI-HOME/pull/5) adds eight dependency-free adapter guardrail tests and a focused workflow; its GitHub Actions run [42249652249](https://github.com/Pui89/AI-HOME/actions/runs/42249652249) completed successfully. Until PR #5 is merged, the central portfolio run correctly marks AI HOME as BLOCKED because it checks the main branch.
 
 ## Trigger and cost controls
 
@@ -48,3 +48,8 @@ The AI HOME repository checkout was not accessible to the setup review (GitHub r
 ## Evidence boundary
 
 This is a selected software smoke test, not a full test-suite run. Passing results do not establish AI accuracy, model quality, calibration, sensor truth, simulation realism, hardware readiness, road safety, certification or field performance. Each project result is kept separate; no cross-project score is calculated.
+
+
+## First observed portfolio run — 6 November 2026
+
+The first successful execution of the central Level 13 workflow is [run 42249714511](https://github.com/Pui89/Pui89.github.io/actions/runs/42249714511). It reported PASS for Coconut, Flood Rescue, Screening, NOMAD, AI Car and AI Motorcycle; AI HOME was BLOCKED because its main branch had no tests directory at that point. The portfolio status was therefore REVIEW_REQUIRED, not PASS. The motorcycle pytest-dependent `test_core.py` suite is explicitly excluded under the no-package-install rule; its selected standard-library risk-scenario suite passed. See the workflow artifact for exact commits and logs.
