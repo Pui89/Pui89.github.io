@@ -9,7 +9,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
-HTML_FILES = [ROOT / "index.html", ROOT / "404.html"]
+HTML_FILES = [ROOT / "index.html", ROOT / "th.html", ROOT / "404.html"]
 MARKDOWN_FILES = [
     ROOT / "README.md",
     ROOT / "GROWTH_ROADMAP.md",
@@ -111,6 +111,36 @@ def main() -> int:
         ):
             if required not in html:
                 errors.append(f"index.html is missing expected content: {required}")
+
+    # Treat the English and Thai homepages as one bilingual release unit.
+    localized_pages = {
+        "index.html": {
+            "language": '<html lang="en"',
+            "canonical": 'href="https://pui89.github.io/"',
+            "thai_text": False,
+        },
+        "th.html": {
+            "language": '<html lang="th"',
+            "canonical": 'href="https://pui89.github.io/th.html"',
+            "thai_text": True,
+        },
+    }
+    for filename, requirements in localized_pages.items():
+        path = ROOT / filename
+        if not path.is_file():
+            continue
+        source = path.read_text(encoding="utf-8")
+        for label in ('name=' + chr(34) + 'description' + chr(34), 'name=' + chr(34) + 'viewport' + chr(34)):
+            if label not in source:
+                errors.append(f"{filename} is missing required metadata: {label}")
+        if requirements["language"] not in source:
+            errors.append(f"{filename} has an incorrect or missing language declaration")
+        if requirements["canonical"] not in source:
+            errors.append(f"{filename} is missing its canonical URL")
+        if 'hreflang="en"' not in source or 'hreflang="th"' not in source:
+            errors.append(f"{filename} must declare both English and Thai alternate-language links")
+        if requirements["thai_text"] and not any(0x0E00 <= ord(char) <= 0x0E7F for char in source):
+            errors.append("th.html does not contain Thai-script text")
 
     if errors:
         print("Portfolio site checks FAILED:")
