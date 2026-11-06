@@ -350,31 +350,6 @@ Concept images are illustrations, not operational evidence. Synthetic fixtures a
 
 **PUI89's commitment is to build carefully, test transparently, report limitations honestly, and advance from software foundations toward real-world applications only when evidence justifies the next step.**
 
-## Shared Hugging Face model catalogue — Non-Chinese origin only
-
-PUI89 applies a mandatory **non-Chinese model-origin rule** across all current and future projects. Unknown or unclear developer, ownership, upstream or checkpoint provenance means exclude. The following are research candidates only, not integrated or validated models:
-
-| Candidate | Publisher shown by model card | Model-card licence | Research role |
-|---|---|---|---|
-| [Microsoft Florence-2-base](https://huggingface.co/microsoft/Florence-2-base) | Microsoft | MIT | Image descriptions, candidate object localization and OCR |
-| [Meta DINOv2-base](https://huggingface.co/facebook/dinov2-base) | Meta AI | Apache-2.0 | Visual feature extraction and image similarity |
-| [Google SigLIP 2 Base](https://huggingface.co/google/siglip2-base-patch16-224) | Google | Apache-2.0 | Image-text similarity and zero-shot category exploration |
-| [OpenAI Whisper tiny](https://huggingface.co/openai/whisper-tiny) | OpenAI | Apache-2.0 | Optional multilingual speech-to-text |
-
-**No downloads, installations, fine-tuning, benchmarks, paid APIs, hosted inference or cloud GPU usage were performed or authorized by this documentation update.** Exact checkpoint, origin, licence, dataset provenance, security, resource and commercial-use checks are required before adoption. Florence-2 requires additional source review because its documented loader uses remote model code. General-purpose perception models must not directly control robots or vehicles or make consequential decisions.
-
-See the complete [PUI89 Hugging Face Model Policy](docs/PUI89_HUGGINGFACE_MODEL_POLICY.md) and project-specific model mappings in each project README.
-
-## Robotics foundation models
-
-PUI89 also tracks robotics-specific Vision-Language-Action (VLA) models separately from general vision models. Current compact candidate: [Hugging Face LeRobot SmolVLA (450M)](https://huggingface.co/lerobot/smolvla_base), model-card licence Apache-2.0. It is a research candidate for robot-manipulation proposals only, not a validated general-purpose robot controller. Its 450M size does not guarantee local feasibility; its published fine-tuning guidance uses a GPU.
-
-OpenVLA 7B is on **HOLD — licence review required** because its model card and upstream repository describe potentially different terms for the pretrained weights (Llama 2 Community License inheritance). Do not adopt until reconciled.
-
-PUI89 VLA policy: simulator/offline bounded ActionProposal only; never direct actuator commands. SmolVLA is not a locomotion model for AI NOMAD and must not control AI HOME movement, flood-boat propulsion, cars or motorcycles. See the full [robotics model safety and project-fit policy](docs/PUI89_HUGGINGFACE_MODEL_POLICY.md#robotics-foundation-model-candidates--non-chinese-origin-only).
-
-
-
 ## Real Hugging Face model integrations
 
 Executable, offline-only OWL-ViT inference has been added to the seven project repositories using the real checkpoint [google/owlvit-base-patch32](https://huggingface.co/google/owlvit-base-patch32) (Apache-2.0 model-card licence). Each project has domain-specific candidate labels, a local-image inference script, JSON evidence output and standard-library report-contract tests.
