@@ -1,5 +1,10 @@
 # PUI89 AI Robotics
 
+## Open-source-first engineering
+
+PUI89 prioritises open-source software, transparent licensing, reproducible workflows and evidence-led collaboration. Model weights, datasets, hosted services and hardware are assessed separately for provenance, licence terms, security, data handling, resource requirements and intended use. Public availability alone does not establish permission for reuse or commercial deployment.
+
+
 ## PUI89 main website QR codes
 
 <table><tr><td align="center"><strong>English main website</strong><br><a href="https://pui89.github.io/"><img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&amp;format=png&amp;data=https%3A%2F%2Fpui89.github.io%2F" width="180" alt="QR code linking to the PUI89 English main website"></a><br><a href="https://pui89.github.io/">Open PUI89 English homepage</a></td><td align="center"><strong>เว็บไซต์หลักภาษาไทย</strong><br><a href="https://pui89.github.io/th.html"><img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&amp;format=png&amp;data=https%3A%2F%2Fpui89.github.io%2Fth.html" width="180" alt="QR Code linking to the PUI89 Thai main website"></a><br><a href="https://pui89.github.io/th.html">เปิดเว็บไซต์หลัก PUI89 ภาษาไทย</a></td></tr></table>
@@ -57,7 +62,7 @@ Coconut's merged dataset audit also passed 15 checks across dataset structure, i
 
 ## PUI89 world-class engineering blueprint
 
-PUI89 projects follow one zero-cost, evidence-first AI engineering strategy, with shared interfaces and validation tailored to each domain. Read the [PUI89 World-Class AI Blueprint](PUI89_WORLD_CLASS_AI_BLUEPRINT.md) for the shared AI Core, approved technology direction, automation boundaries, product-specific priorities, quality gates and staged roadmap.
+PUI89 projects follow one open-source-first, evidence-first AI engineering strategy, with shared interfaces and validation tailored to each domain. Read the [PUI89 World-Class AI Blueprint](PUI89_WORLD_CLASS_AI_BLUEPRINT.md) for the shared AI Core, approved technology direction, automation boundaries, product-specific priorities, quality gates and staged roadmap.
 
 ## Portfolio engineering audit — 8 November 2026
 
@@ -87,7 +92,7 @@ Develop a reusable AI engineering foundation that connects perception, world-sta
 - **Human oversight:** keep consequential decisions under appropriate human authority.
 - **Safety by design:** uncertain, missing, stale, or conflicting inputs should lead to conservative handling rather than unsupported action.
 - **Reproducibility:** record code versions, data provenance, configurations, test results, metrics, and failure cases.
-- **Cost-conscious development:** prefer local-first and open-source tools where suitable; review licences, resource requirements, privacy, and total cost before adoption.
+- **Open-source-first engineering:** prefer local-first and open-source tools where suitable; review licences, resource requirements and privacy before adoption.
 - **Responsible collaboration:** seek domain experts, research partners, data stewards, and engineering mentors.
 
 ---
@@ -313,7 +318,7 @@ PUI89 is currently an initiative and project identity in development. This READM
 
 ## 10. Technology governance and responsible engineering policy
 
-PUI89 prioritises useful, reproducible engineering and avoids unnecessary recurring costs.
+PUI89 prioritises useful, reproducible engineering and avoids unnecessary recurring service dependencies.
 
 Preferred approach:
 - Python and standard-library tools for lightweight checks where practical.
@@ -323,7 +328,7 @@ Preferred approach:
 - Structured JSON/CSV reports, hashes, versioned manifests, and clear experiment records.
 - Local-first workflows and optional model runtimes only after resource and licence checks.
 
-No paid API, cloud GPU, subscription, hosted inference service, automatic model download, or recurring-cost commitment should be introduced without explicit approval. Free tiers can have limits and changing terms. Open-source software does not automatically make model weights or datasets unrestricted; check each licence and data-use condition.
+No paid API, cloud GPU, subscription, hosted inference service, automatic model download, or recurring service commitment should be introduced without explicit approval. Hosted service plans can have usage limits and changing terms. Open-source software does not automatically make model weights or datasets unrestricted; check each licence and data-use condition.
 
 ---
 
@@ -397,4 +402,4 @@ All seven projects follow the [PUI89 Simple, Safe & Professional Engineering Sta
 - [English security overview](security.html)
 - [แนวทางความปลอดภัยภาษาไทย](security-th.html)
 
-The seven product repositories maintain project-specific security policies and threat boundaries. Security checks reduce risk but cannot guarantee that a system is malware-free or immune to attack. Review current workflow results and incident guidance before treating a control as verified.
+The seven product repositories maintain project-specific security policies and threat boundaries. Security checks reduce risk but cannot guarantee malware absence or immunity to attack. Review current workflow results and incident guidance before treating a control as verified.
