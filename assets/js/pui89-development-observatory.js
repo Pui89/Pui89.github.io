@@ -64,13 +64,15 @@ function render(root,data){
  root.replaceChildren(section);
 }
 function updateBadges(data){
- document.querySelectorAll("[data-project-id]").forEach(root=>{
-  const p=data.projects.find(item=>item.id===root.dataset.projectId);
-  const badge=root.querySelector(".pui89-progress");
-  if(!p||!badge||badge.dataset.progressScore)return;
-  const score=el("span","pui89-progress__score",(lang==="th"?"ความพร้อมเชิงพาณิชย์ ":"Commercial readiness ")+p.score+"%");
-  badge.append(score);badge.dataset.progressScore="true";
- });
+ const projectRoot=document.querySelector('[data-view="project"][data-project-id]');
+ if(projectRoot){
+  const p=data.projects.find(item=>item.id===projectRoot.dataset.projectId);
+  const badge=document.querySelector(".pui89-progress--hero");
+  if(p&&badge&&!badge.dataset.progressScore){
+   badge.append(el("span","pui89-progress__score",(lang==="th"?"ความพร้อมเชิงพาณิชย์ ":"Commercial readiness ")+p.score+"%"));
+   badge.dataset.progressScore="true";
+  }
+ }
 }
 fetch(DATA_URL,{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error("Progress data unavailable");return r.json();}).then(data=>{
  document.querySelectorAll("[data-pui89-observatory]").forEach(root=>render(root,data));
