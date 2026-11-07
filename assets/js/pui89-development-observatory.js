@@ -109,7 +109,7 @@ async function hydrate(data){
    const response=await fetch(base+"project-progress-history.json",{cache:"no-store"});
    if(response.ok){
     const history=await response.json();
-    if(Array.isArray(history)&&history.length)p.history=history.map(h=>({date:h.date,period:h.date.slice(0,7),score:h.score_percent,note:{en:"Evidence-led "+h.cadence+" review; coverage "+h.evidence_coverage_percent+"%.",th:"บันทึกทบทวนตามหลักฐาน รอบ"+h.cadence+" ครอบคลุมหลักฐาน "+h.evidence_coverage_percent+"%"}}));
+    if(Array.isArray(history)&&history.length){const live=history.map(h=>({date:h.date,period:h.date.slice(0,7),score:h.score_percent,note:{en:"Evidence-led "+h.cadence+" review; coverage "+h.evidence_coverage_percent+"%.",th:"บันทึกทบทวนตามหลักฐาน รอบ"+h.cadence+" ครอบคลุมหลักฐาน "+h.evidence_coverage_percent+"%"}}));const baseline=p.history||[];p.history=[...baseline.filter(b=>!live.some(h=>h.date===b.date)),...live].sort((a,b)=>a.date.localeCompare(b.date));}
    }
   }catch(_){ }
  }));
