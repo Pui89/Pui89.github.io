@@ -59,7 +59,7 @@ Coconut's merged dataset audit also passed 15 checks across dataset structure, i
 
 PUI89 projects follow one zero-cost, evidence-first AI engineering strategy, with shared interfaces and validation tailored to each domain. Read the [PUI89 World-Class AI Blueprint](PUI89_WORLD_CLASS_AI_BLUEPRINT.md) for the shared AI Core, approved technology direction, automation boundaries, product-specific priorities, quality gates and staged roadmap.
 
-## Six-project portfolio
+## Seven-project portfolio
 
 PUI89's portfolio contains exactly seven projects. The single project directory and all 14 bilingual project website links appear in the consolidated table in [Project links](#11-project-directory-and-website-links) below.
 
@@ -325,7 +325,7 @@ No paid API, cloud GPU, subscription, hosted inference service, automatic model 
 
 ## 11. Project directory and website links
 
-This is the **single source of truth** for the seven projects and their 12 project websites. Each project appears once; its repository, English page, and Thai page are grouped on the same row.
+This is the **single source of truth** for the seven projects and their 14 project websites. Each project appears once; its repository, English page, and Thai page are grouped on the same row.
 
 | Project (7 total) | GitHub repository | English website | Thai website |
 |---|---|---|---|
