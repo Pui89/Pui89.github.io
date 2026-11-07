@@ -1,0 +1,35 @@
+name: Daily website date refresh
+
+on:
+  schedule:
+    - cron: "15 16 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-website-date
+  cancel-in-progress: false
+
+jobs:
+  refresh-date:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+      - name: Generate Thailand-local date
+        run: |
+          DATE="$(TZ=Asia/Bangkok date +%F)"
+          printf '{\n  "date": "%s",\n  "timezone": "Asia/Bangkok",\n  "updated_by": "GitHub Actions"\n}\n' "$DATE" > site-date.json
+      - name: Commit date only when changed
+        run: |
+          if git diff --quiet -- site-date.json; then
+            echo "Website date is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site-date.json
+          git commit -m "chore: refresh website date"
+          git push
