@@ -1,0 +1,16 @@
+/* Import tokens, colour-system and typography first. */
+* { box-sizing: border-box; }
+.pui-container { width: min(100% - 2rem, var(--content-width)); margin-inline: auto; }
+.pui-section { padding-block: clamp(2.5rem, 6vw, 5rem); }
+.pui-card { background: var(--color-panel); border: 1px solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-card); padding: clamp(1rem, 3vw, 1.5rem); }
+.pui-button { display: inline-flex; align-items: center; justify-content: center; min-height: 2.75rem; padding: .7rem 1rem; border: 1px solid transparent; border-radius: var(--radius-md); background: var(--pui89-navy); color: var(--pui89-white); font: inherit; font-weight: 650; text-decoration: none; cursor: pointer; }
+.pui-button--secondary { background: transparent; color: var(--color-text); border-color: var(--color-border); }
+.pui-link { color: var(--color-link); text-underline-offset: .18em; }
+.pui-status { display: inline-flex; align-items: center; gap: .4rem; border: 1px solid var(--color-border); border-radius: 999px; padding: .2rem .65rem; font-size: var(--text-sm); font-weight: 650; }
+.pui-status::before { content: ""; width: .5rem; height: .5rem; border-radius: 50%; background: currentColor; }
+.pui-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); gap: var(--space-6); }
+.pui-media { display: block; width: 100%; height: auto; border-radius: var(--radius-md); }
+:focus-visible { outline: 3px solid var(--pui89-focus); outline-offset: 3px; box-shadow: var(--focus-ring); }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
