@@ -13,7 +13,7 @@
 
   const render = () => {
     const parts = dateParts();
-    const date = new Date(Number(parts.year), Number(parts.month) - 1, Number(parts.day), 12);
+    const date = new Date(parts.year + "-" + parts.month + "-" + parts.day + "T12:00:00+07:00");
     const locale = isThai ? "th-TH" : "en-GB";
     const displayDate = new Intl.DateTimeFormat(locale, {
       day: "numeric", month: "long", year: "numeric", timeZone: "Asia/Bangkok"
