@@ -1,0 +1,156 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pui89.github.io/schemas/pui89/observation.schema.json",
+  "title": "PUI89 Observation",
+  "type": "object",
+  "x-pui89-contract-version": "0.1.0-draft",
+  "additionalProperties": false,
+  "properties": {
+    "observation_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "modality": {
+      "type": "string",
+      "enum": [
+        "rgb",
+        "xray",
+        "depth",
+        "chemical",
+        "audio",
+        "thermal",
+        "telemetry",
+        "text",
+        "other"
+      ]
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "value": {},
+    "payload_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "units": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "quality": {
+      "type": "string",
+      "enum": [
+        "good",
+        "degraded",
+        "poor",
+        "unknown"
+      ]
+    },
+    "confidence": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "calibration": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "method": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rights_status": {
+          "type": "string",
+          "enum": [
+            "cleared",
+            "restricted",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "chain_of_custody_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "source_id",
+        "method",
+        "rights_status"
+      ],
+      "additionalProperties": false
+    },
+    "integrity_status": {
+      "type": "string",
+      "enum": [
+        "verified",
+        "unverified",
+        "failed",
+        "unknown"
+      ]
+    },
+    "uncertainty": {
+      "type": "object",
+      "properties": {
+        "level": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "unknown"
+          ]
+        },
+        "reason": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "level",
+        "reason"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "observation_id",
+    "source",
+    "modality",
+    "timestamp",
+    "quality",
+    "provenance",
+    "integrity_status"
+  ],
+  "anyOf": [
+    {
+      "required": [
+        "value"
+      ]
+    },
+    {
+      "required": [
+        "payload_ref"
+      ]
+    }
+  ]
+}
