@@ -73,6 +73,17 @@ function updateBadges(data){
    badge.dataset.progressScore="true";
   }
  }
+ const portfolioRoot=document.querySelector('[data-view="portfolio"]');
+ if(portfolioRoot){
+  const cards=[...document.querySelectorAll("#projects article")];
+  data.projects.forEach((p,index)=>{
+   const badge=cards[index]?.querySelector(".pui89-progress--card");
+   if(badge&&!badge.dataset.progressScore){
+    badge.append(el("span","pui89-progress__score",(lang==="th"?"พร้อมเชิงพาณิชย์ ":"Commercial readiness ")+p.score+"%"));
+    badge.dataset.progressScore="true";
+   }
+  });
+ }
 }
 fetch(DATA_URL,{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error("Progress data unavailable");return r.json();}).then(data=>{
  document.querySelectorAll("[data-pui89-observatory]").forEach(root=>render(root,data));
