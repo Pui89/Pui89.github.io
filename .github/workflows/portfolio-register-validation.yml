@@ -1,0 +1,32 @@
+name: PUI89 Portfolio Register Validation
+
+on:
+  pull_request:
+    paths:
+      - "docs/pui89-portfolio-evidence-register.json"
+      - "tools/validate_portfolio_register.py"
+      - ".github/workflows/portfolio-register-validation.yml"
+  push:
+    branches: [main]
+    paths:
+      - "docs/pui89-portfolio-evidence-register.json"
+      - "tools/validate_portfolio_register.py"
+      - ".github/workflows/portfolio-register-validation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pui89-portfolio-register-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Validate portfolio register
+        run: python tools/validate_portfolio_register.py
