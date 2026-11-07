@@ -1,5 +1,9 @@
 # PUI89 AI Robotics
 
+## PUI89 Global Design System
+
+The permanent company-wide design standard for the PUI89 master brand and all project identities is maintained in [`design-system/`](design-system/README.md). It defines brand rules, project colour identities, design tokens, reusable CSS, accessibility, bilingual website standards, product/robotics guidance and a quality checklist. New projects inherit the PUI89 master identity while using their documented project accent palette.
+
 ## Shared AI Core website QR codes
 
 <table><tr><td align="center"><strong>English website</strong><br><a href="https://pui89.github.io/ai-core.html"><img src="https://pui89.github.io/qr/ai-core-en.png" width="160" alt="PUI89 Shared AI Core English website QR code"></a><br><a href="https://pui89.github.io/ai-core.html">Open English website</a></td><td align="center"><strong>เว็บไซต์ภาษาไทย</strong><br><a href="https://pui89.github.io/ai-core-th.html"><img src="https://pui89.github.io/qr/ai-core-th.png" width="160" alt="QR Code เว็บไซต์ภาษาไทย PUI89 Shared AI Core"></a><br><a href="https://pui89.github.io/ai-core-th.html">เปิดเว็บไซต์ภาษาไทย</a></td></tr></table>
