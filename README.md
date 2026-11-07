@@ -1,5 +1,9 @@
 # PUI89 AI Robotics
 
+## Shared AI Core website QR codes
+
+<table><tr><td align="center"><strong>English website</strong><br><a href="https://pui89.github.io/ai-core.html"><img src="https://pui89.github.io/qr/ai-core-en.png" width="160" alt="PUI89 Shared AI Core English website QR code"></a><br><a href="https://pui89.github.io/ai-core.html">Open English website</a></td><td align="center"><strong>เว็บไซต์ภาษาไทย</strong><br><a href="https://pui89.github.io/ai-core-th.html"><img src="https://pui89.github.io/qr/ai-core-th.png" width="160" alt="QR Code เว็บไซต์ภาษาไทย PUI89 Shared AI Core"></a><br><a href="https://pui89.github.io/ai-core-th.html">เปิดเว็บไซต์ภาษาไทย</a></td></tr></table>
+
 **An independent AI initiative exploring practical intelligence across agriculture, disaster response, public-safety screening, and building safety.**
 
 PUI89 develops AI applications and robotics concepts around a shared engineering question:
