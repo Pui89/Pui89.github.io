@@ -14,7 +14,7 @@ The portfolio already contains substantial project documentation and automation.
 - **97 workflow files** were listed across the seven repositories.
 - A PUI89 security-audit workflow file is present in every repository.
 - Flood Rescue and Screening also expose CodeQL and dependency-review workflow files.
-- Observation, WorldState, ActionProposal and FailureReport are documented across the portfolio. A single canonical versioned implementation consumed by every project was **not verified**.
+- Observation, WorldState, ActionProposal and FailureReport are documented across the portfolio. This PR now proposes four machine-readable JSON Schema drafts (0.1.0-draft) and checks their structure. They are **not yet a released package or integrated across project adapters**.
 - One representative active ruleset per repository was inspected. Each sampled ruleset requires pull requests and prevents non-fast-forward updates, but the sampled settings require **zero approving reviews** and do not require code-owner review or review-thread resolution.
 - The classic branch-protection endpoint returned HTTP 403 for all seven repositories. Its settings and required status checks remain **unverified**.
 - This audit did not execute project tests or recompute maturity scores.
@@ -46,15 +46,15 @@ Exact commit SHAs, ruleset IDs, sampled settings and workflow counts are stored 
 
 ### 1. Shared AI Core — canonical implementation
 
-**Current evidence:** all seven READMEs and supporting standards refer to the four shared contracts. The Robot Car repository has a local `contracts.py`, but its module docstring calls these contracts temporary and local.
+**Current evidence:** all seven READMEs and supporting standards refer to the four shared contracts. This PR adds four machine-readable JSON Schema drafts under `schemas/pui89/`. The Robot Car repository also has a local `contracts.py`, but its module docstring calls these contracts temporary and local.
 
-**Required improvement:** select one canonical, versioned schema/package; define required fields, allowed values, timestamps, provenance, freshness, calibration, uncertainty and evidence references; make adapters consume or validate against it; add compatibility tests; reject stale, malformed, missing or conflicting evidence. Keep ActionProposal advisory-only. Physical actuation remains outside the shared layer.
+**Implemented in this PR:** draft Observation, WorldState, ActionProposal and FailureReport JSON Schemas with explicit version 0.1.0-draft. A dependency-free check verifies the four schema files and enforces the ActionProposal safety constants. **Next:** review the draft, publish a versioned package, migrate adapters and add full schema-conformance tests. Keep ActionProposal advisory-only. Physical actuation remains outside the shared layer.
 
-**Status: AMBER** — documented direction exists; portfolio-wide canonical implementation is not verified.
+**Status: AMBER** — draft schemas and structural checks are proposed; package release and portfolio-wide adapter integration are not yet verified.
 
 ### 2. Evidence register and maturity integrity
 
-A machine-readable register now records repository snapshots, ruleset inventory, workflow counts, observed gaps and next actions. A dependency-free validator checks its structure.
+A machine-readable register now records repository snapshots, ruleset inventory, workflow counts, observed gaps and next actions. A dependency-free validator checks the register and the four draft contract schema files.
 
 For future maturity reporting:
 - derive every percentage or score from named evidence gates;
@@ -128,7 +128,7 @@ Do not imply incorporation, customers, partnerships, certification, waterproofin
 
 This change adds no paid service, API, subscription, cloud GPU, paid runner, runtime dependency or model download. It adds no scheduled workflow, does not command physical hardware, does not change branch rulesets or default branches, and does not merge any pull request.
 
-The new validation workflow runs only on relevant pull requests, relevant pushes and manual dispatch.
+The new validation workflow runs only on relevant pull requests, relevant pushes and manual dispatch. It checks register totals, repository identifiers, full commit SHAs, draft schema metadata and ActionProposal safety constants; it is not a full JSON Schema meta-validator.
 
 ## Recommended implementation order
 
