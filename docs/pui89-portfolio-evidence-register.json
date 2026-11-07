@@ -202,7 +202,7 @@
     {
       "id": "shared-contracts",
       "status": "AMBER",
-      "finding": "All seven project READMEs and supporting standards refer to Observation, WorldState, ActionProposal and FailureReport. A single canonical versioned implementation consumed by all projects was not verified. The Robot Car contracts.py describes itself as temporary/local."
+      "finding": "All seven project READMEs and supporting standards refer to the four shared contracts. This PR adds four draft JSON Schema definitions (version 0.1.0-draft) and a structural validator. The schemas are proposed, not released or consumed by all project adapters. The Robot Car contracts.py remains a temporary/local implementation."
     },
     {
       "id": "ruleset-review",
@@ -240,7 +240,7 @@
       "priority": 1,
       "workstream": "Shared AI Core",
       "status": "AMBER",
-      "action": "Establish one canonical versioned schema/package and migrate project adapters to consume or validate against it."
+      "action": "Review the four draft schemas, then establish a canonical versioned package and migrate project adapters to consume or validate against it."
     },
     {
       "priority": 2,
@@ -278,5 +278,17 @@
       "status": "GREEN",
       "action": "Use IMPLEMENTED, TESTED, MEASURED, SIMULATION-ONLY, PROPOSED and NOT VALIDATED consistently across public materials."
     }
-  ]
+  ],
+  "shared_ai_core_schema_draft": {
+    "version": "0.1.0-draft",
+    "status": "proposed_not_integrated",
+    "files": [
+      "schemas/pui89/observation.schema.json",
+      "schemas/pui89/world-state.schema.json",
+      "schemas/pui89/action-proposal.schema.json",
+      "schemas/pui89/failure-report.schema.json"
+    ],
+    "safety_invariant": "ActionProposal requires human approval, advisory_only authority and actuation_allowed=false",
+    "validation_scope": "Dependency-free structural checks only; full JSON Schema meta-validation and project adapter integration remain future work."
+  }
 }
