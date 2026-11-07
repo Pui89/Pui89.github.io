@@ -63,25 +63,25 @@ function render(root,data){
  section.append(method);
  root.replaceChildren(section);
 }
+function setScore(badge,label){
+ if(!badge)return;
+ let score=badge.querySelector(".pui89-progress__score");
+ if(!score){score=el("span","pui89-progress__score");badge.append(score);}
+ score.textContent=label;
+ badge.dataset.progressScore="true";
+}
 function updateBadges(data){
  const projectRoot=document.querySelector('[data-view="project"][data-project-id]');
  if(projectRoot){
   const p=data.projects.find(item=>item.id===projectRoot.dataset.projectId);
-  const badge=document.querySelector(".pui89-progress--hero");
-  if(p&&badge&&!badge.dataset.progressScore){
-   badge.append(el("span","pui89-progress__score",(lang==="th"?"ความพร้อมเชิงพาณิชย์ ":"Commercial readiness ")+p.score+"%"));
-   badge.dataset.progressScore="true";
-  }
+  setScore(document.querySelector(".pui89-progress--hero"),p?(lang==="th"?"ความพร้อมเชิงพาณิชย์ ":"Commercial readiness ")+p.score+"%":"");
  }
  const portfolioRoot=document.querySelector('[data-view="portfolio"]');
  if(portfolioRoot){
   const cards=[...document.querySelectorAll("#projects article")];
   data.projects.forEach((p,index)=>{
    const badge=cards[index]?.querySelector(".pui89-progress--card");
-   if(badge&&!badge.dataset.progressScore){
-    badge.append(el("span","pui89-progress__score",(lang==="th"?"พร้อมเชิงพาณิชย์ ":"Commercial readiness ")+p.score+"%"));
-    badge.dataset.progressScore="true";
-   }
+   if(badge)setScore(badge,(lang==="th"?"พร้อมเชิงพาณิชย์ ":"Commercial readiness ")+p.score+"%");
   });
  }
 }
