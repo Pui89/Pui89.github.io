@@ -4,40 +4,44 @@
   const footer = document.querySelector("footer");
   if (!footer) return;
 
-  const formatDate = (iso) => {
-    const date = iso ? new Date(iso + "T12:00:00+07:00") : new Date();
-    return new Intl.DateTimeFormat(isThai ? "th-TH" : "en-GB", {
+  const dateParts = () => {
+    const parts = new Intl.DateTimeFormat("en-CA", {
+      year: "numeric", month: "2-digit", day: "2-digit", timeZone: "Asia/Bangkok"
+    }).formatToParts(new Date());
+    return Object.fromEntries(parts.map(part => [part.type, part.value]));
+  };
+
+  const render = () => {
+    const parts = dateParts();
+    const date = new Date(Number(parts.year), Number(parts.month) - 1, Number(parts.day), 12);
+    const locale = isThai ? "th-TH" : "en-GB";
+    const displayDate = new Intl.DateTimeFormat(locale, {
       day: "numeric", month: "long", year: "numeric", timeZone: "Asia/Bangkok"
     }).format(date);
-  };
-
-  const stamp = document.createElement("span");
-  stamp.className = "pui89-site-date";
-  stamp.setAttribute("data-pui89-site-date", "");
-  stamp.style.cssText = "display:inline-block;margin-inline-start:12px;color:inherit;opacity:.82;font-size:.92em";
-  stamp.textContent = (isThai ? "อัปเดตล่าสุด: " : "Last updated: ") + formatDate();
-  footer.appendChild(stamp);
-
-  const update = async () => {
-    let iso = "";
-    try {
-      const response = await fetch("/site-date.json", { cache: "no-store" });
-      if (response.ok) {
-        const data = await response.json();
-        if (typeof data.date === "string" && /^\d{4}-\d{2}-\d{2}$/.test(data.date)) iso = data.date;
-      }
-    } catch (_) {}
-    const date = iso ? new Date(iso + "T12:00:00+07:00") : new Date();
-    const year = new Intl.DateTimeFormat(isThai ? "th-TH" : "en-GB", {
+    const year = new Intl.DateTimeFormat(locale, {
       year: "numeric", timeZone: "Asia/Bangkok"
     }).format(date);
-    footer.innerHTML = footer.innerHTML.replace(/©\s*20\d{2}/g, "© " + year);
-    stamp.textContent = (isThai ? "อัปเดตล่าสุด: " : "Last updated: ") + formatDate(iso);
-    if (!stamp.isConnected) footer.appendChild(stamp);
+
+    let stamp = footer.querySelector("[data-pui89-site-date]");
+    if (!stamp) {
+      stamp = document.createElement("span");
+      stamp.className = "pui89-site-date";
+      stamp.setAttribute("data-pui89-site-date", "");
+      stamp.style.cssText = "display:inline-block;margin-inline-start:12px;color:inherit;opacity:.82;font-size:.92em";
+      footer.appendChild(stamp);
+    }
+    footer.innerHTML = footer.innerHTML.replace(/©\\s*20\\d{2}|©\\s*25\\d{2}/g, "© " + year);
+    stamp = footer.querySelector("[data-pui89-site-date]");
+    if (!stamp) {
+      stamp = document.createElement("span");
+      stamp.className = "pui89-site-date";
+      stamp.setAttribute("data-pui89-site-date", "");
+      stamp.style.cssText = "display:inline-block;margin-inline-start:12px;color:inherit;opacity:.82;font-size:.92em";
+      footer.appendChild(stamp);
+    }
+    stamp.textContent = (isThai ? "อัปเดตล่าสุด: " : "Last updated: ") + displayDate;
   };
 
-  update();
-  document.addEventListener("visibilitychange", () => {
-    if (!document.hidden) update();
-  });
+  render();
+  window.setInterval(render, 60000);
 })();
