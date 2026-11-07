@@ -22,12 +22,12 @@ jobs:
         uses: actions/checkout@v4
       - name: Generate portfolio health report
         env:
-          GH_TOKEN: \${{ github.token }}
+          GH_TOKEN: ${{ github.token }}
         run: python3 tools/pui89_weekly_health_report.py
       - name: Open or update review pull request
         uses: peter-evans/create-pull-request@v7
         with:
-          token: \${{ github.token }}
+          token: ${{ github.token }}
           branch: automation/weekly-health-security-report
           delete-branch: false
           commit-message: "chore: update weekly PUI89 health and security report"
