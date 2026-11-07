@@ -1,0 +1,29 @@
+/* Import design-tokens.css before this file. */
+:root {
+  color-scheme: light;
+  --color-page: var(--pui89-surface);
+  --color-panel: var(--pui89-white);
+  --color-text: var(--pui89-ink);
+  --color-text-muted: var(--pui89-muted);
+  --color-brand: var(--pui89-navy);
+  --color-accent: var(--pui89-cyan);
+  --color-link: #075CA8;
+  --color-border: var(--pui89-border);
+  --color-success: #176B45;
+  --color-warning: #805600;
+  --color-danger: #A32632;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-page: #071426;
+  --color-panel: #10243B;
+  --color-text: #F4F8FC;
+  --color-text-muted: #C5D0DC;
+  --color-brand: #071426;
+  --color-accent: #00D9FF;
+  --color-link: #70DFFF;
+  --color-border: #29435C;
+  --color-success: #73D7A4;
+  --color-warning: #FFD27A;
+  --color-danger: #FF9AA3;
+}
