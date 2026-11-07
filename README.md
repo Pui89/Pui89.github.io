@@ -387,6 +387,10 @@ All seven projects follow the proposed [PUI89 Efficient Engineering Standard](PU
 
 ---
 
+## Simple, safe and professional engineering standard
+
+All seven projects follow the [PUI89 Simple, Safe & Professional Engineering Standard](docs/PUI89_SIMPLE_SAFE_PROFESSIONAL_STANDARD.md). It defines plain-language UX, safe defaults, human approval, evidence status, privacy, repository quality and release checks.
+
 ## Security and repository protection
 
 - [PUI89 website security policy](SECURITY.md)
