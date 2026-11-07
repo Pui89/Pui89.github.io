@@ -1,0 +1,401 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pui89.github.io/schemas/pui89-threat-intelligence.schema.json",
+  "title": "PUI89 Threat Intelligence Record",
+  "description": "Evidence-led defensive threat record shared across PUI89 projects. Records intelligence and remediation status; it does not assert that a PUI89 asset is compromised.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "threat_id",
+    "recorded_at",
+    "threat_category",
+    "title",
+    "status",
+    "confidence",
+    "severity",
+    "sources",
+    "affected_projects",
+    "evidence",
+    "assessment",
+    "mitigations"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "threat_id": {
+      "type": "string",
+      "pattern": "^PUI89-THREAT-[0-9]{4,}$"
+    },
+    "recorded_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "threat_category": {
+      "enum": [
+        "apt_campaign",
+        "ai_assisted_phishing",
+        "malware",
+        "credential_theft",
+        "software_supply_chain",
+        "github_actions_workflow",
+        "dependency_vulnerability",
+        "model_supply_chain",
+        "dataset_integrity",
+        "prompt_injection_agent_abuse",
+        "secrets_exposure",
+        "website_compromise",
+        "ransomware",
+        "cryptographic_transition",
+        "other"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "new",
+        "monitoring",
+        "mitigation_proposed",
+        "mitigation_in_progress",
+        "mitigated",
+        "resolved",
+        "accepted_risk",
+        "not_applicable",
+        "unverified"
+      ]
+    },
+    "confidence": {
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "severity": {
+      "enum": [
+        "critical",
+        "high",
+        "medium",
+        "low",
+        "informational",
+        "unrated"
+      ]
+    },
+    "attribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "claimed_actor": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "attribution_source": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "caveats": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "url",
+          "source_type"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "source_type": {
+            "enum": [
+              "vendor_report",
+              "government_advisory",
+              "cert_advisory",
+              "standards_body",
+              "security_research",
+              "github_advisory",
+              "other"
+            ]
+          },
+          "published_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "accessed_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          }
+        }
+      }
+    },
+    "affected_projects": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "coconut-harvest-ai",
+          "extreme-flood-rescue-ai",
+          "multimodal-narcotics-screening-ai",
+          "ai-home",
+          "ai-nomad",
+          "ai-robot-car",
+          "ai-robot-motorcycle",
+          "pui89-website",
+          "pui89-shared-core",
+          "portfolio-wide",
+          "unknown"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "affected_assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "asset_type",
+          "identifier"
+        ],
+        "properties": {
+          "asset_type": {
+            "enum": [
+              "repository",
+              "workflow",
+              "dependency",
+              "model",
+              "dataset",
+              "website",
+              "credential_class",
+              "cryptographic_protocol",
+              "application_component",
+              "other"
+            ]
+          },
+          "identifier": {
+            "type": "string",
+            "minLength": 1
+          },
+          "repository_url": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "uri"
+          },
+          "commit_sha": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[0-9a-fA-F]{7,40}$"
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "description",
+          "evidence_type"
+        ],
+        "properties": {
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_type": {
+            "enum": [
+              "source_report",
+              "repository_observation",
+              "workflow_log",
+              "advisory",
+              "test_result",
+              "operator_report",
+              "not_verified"
+            ]
+          },
+          "url": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "uri"
+          },
+          "observed_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "commit_sha": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[0-9a-fA-F]{7,40}$"
+          }
+        }
+      }
+    },
+    "assessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "relevance",
+        "pui89_compromise_confirmed"
+      ],
+      "properties": {
+        "relevance": {
+          "enum": [
+            "direct",
+            "indirect",
+            "low",
+            "not_applicable",
+            "unknown"
+          ]
+        },
+        "pui89_compromise_confirmed": {
+          "const": false
+        },
+        "attack_path_summary": {
+          "type": "string"
+        },
+        "attribution_caveats": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "verification_gaps": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "mitigations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "action",
+          "owner_role",
+          "state",
+          "validation_criteria"
+        ],
+        "properties": {
+          "action": {
+            "type": "string",
+            "minLength": 1
+          },
+          "owner_role": {
+            "enum": [
+              "maintainer",
+              "security_reviewer",
+              "project_lead",
+              "operator",
+              "external_advisor"
+            ]
+          },
+          "state": {
+            "enum": [
+              "proposed",
+              "approved",
+              "in_progress",
+              "implemented",
+              "verified",
+              "deferred",
+              "not_applicable"
+            ]
+          },
+          "validation_criteria": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence_url": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "first_seen_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "last_seen_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "next_review_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
