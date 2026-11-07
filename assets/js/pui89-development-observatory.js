@@ -94,7 +94,28 @@ function updateBadges(data){
   });
  }
 }
-fetch(DATA_URL,{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error("Progress data unavailable");return r.json();}).then(data=>{
+async function hydrate(data){
+ await Promise.all(data.projects.map(async p=>{
+  const base="https://raw.githubusercontent.com/"+p.repo+"/main/docs/";
+  try{
+   const response=await fetch(base+"project-health-latest.json",{cache:"no-store"});
+   if(response.ok){
+    const report=await response.json();p.liveReport=report;p.score=report.progress_percent;
+    p.stageLabel=report.progress_percent>=75?{en:"Advanced evidence stage",th:"หลักฐานอยู่ในขั้นก้าวหน้า"}:report.progress_percent>=50?{en:"Developing evidence stage",th:"กำลังพัฒนาหลักฐาน"}:report.progress_percent>=25?{en:"Foundation and prototype stage",th:"วางรากฐานและต้นแบบ"}:{en:"Early foundation stage",th:"ระยะวางรากฐานเริ่มต้น"};
+    if(report.review_date&&report.review_date>data.asOf)data.asOf=report.review_date;
+   }
+  }catch(_){ }
+  try{
+   const response=await fetch(base+"project-progress-history.json",{cache:"no-store"});
+   if(response.ok){
+    const history=await response.json();
+    if(Array.isArray(history)&&history.length)p.history=history.map(h=>({date:h.date,period:h.date.slice(0,7),score:h.score_percent,note:{en:"Evidence-led "+h.cadence+" review; coverage "+h.evidence_coverage_percent+"%.",th:"บันทึกทบทวนตามหลักฐาน รอบ"+h.cadence+" ครอบคลุมหลักฐาน "+h.evidence_coverage_percent+"%"}}));
+   }
+  }catch(_){ }
+ }));
+ return data;
+}
+fetch(DATA_URL,{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error("Progress data unavailable");return r.json();}).then(hydrate).then(data=>{
  document.querySelectorAll("[data-pui89-observatory]").forEach(root=>render(root,data));
  updateBadges(data);
 }).catch(()=>document.querySelectorAll("[data-pui89-observatory]").forEach(root=>{root.textContent=lang==="th"?"ไม่สามารถโหลดข้อมูลความคืบหน้าได้ในขณะนี้":"Progress data is temporarily unavailable.";root.classList.add("pui89-observatory__empty");}));
