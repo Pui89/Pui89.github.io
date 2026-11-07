@@ -4,13 +4,17 @@ on:
   pull_request:
     paths:
       - "docs/pui89-portfolio-evidence-register.json"
-      - "tools/validate_portfolio_register.py"\n      - "schemas/pui89/**"
+      - "docs/PUI89_PORTFOLIO_ENGINEERING_AUDIT_2026-11-08.md"
+      - "tools/validate_portfolio_register.py"
+      - "schemas/pui89/**"
       - ".github/workflows/portfolio-register-validation.yml"
   push:
     branches: [main]
     paths:
       - "docs/pui89-portfolio-evidence-register.json"
+      - "docs/PUI89_PORTFOLIO_ENGINEERING_AUDIT_2026-11-08.md"
       - "tools/validate_portfolio_register.py"
+      - "schemas/pui89/**"
       - ".github/workflows/portfolio-register-validation.yml"
   workflow_dispatch:
 
@@ -28,5 +32,5 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-      - name: Validate portfolio register
+      - name: Validate portfolio register and draft schemas
         run: python tools/validate_portfolio_register.py
