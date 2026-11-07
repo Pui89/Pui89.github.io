@@ -1,0 +1,282 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_date": "2026-11-08",
+  "timezone": "Asia/Bangkok",
+  "purpose": "Dated read-only portfolio audit. This register is not a live dashboard, maturity score, or proof of operational capability.",
+  "policy": {
+    "paid_services_added": false,
+    "new_runtime_dependencies_added": false,
+    "model_downloads_performed": false,
+    "hardware_actuation_performed": false,
+    "scheduled_workflows_added": false,
+    "default_branch_modified": false,
+    "merge_performed_by_this_change": false
+  },
+  "evidence_labels": {
+    "GREEN": "Verified from inspected source or GitHub API response.",
+    "AMBER": "Gap or risk requiring additional engineering or review.",
+    "GREY": "Not verified; do not infer success or failure."
+  },
+  "portfolio": {
+    "project_count": 7,
+    "repositories": [
+      {
+        "id": "coconut",
+        "name": "Coconut Harvest AI",
+        "repository": "Pui89/Coconut-Harvest-AI",
+        "main_commit": "dea9d2ae6c6a1e787eeecf805f16c0d6db4d885a",
+        "active_rulesets": 6,
+        "total_rulesets": 7,
+        "workflow_count": 21,
+        "security_workflows": [
+          "pui89-security-audit.yml",
+          "security.yml"
+        ],
+        "sampled_ruleset": {
+          "id": 26293173,
+          "name": "PUI89 Protect Main",
+          "required_approving_review_count": 0,
+          "require_code_owner_review": false,
+          "required_review_thread_resolution": false,
+          "rules": [
+            "non_fast_forward",
+            "pull_request"
+          ]
+        }
+      },
+      {
+        "id": "flood",
+        "name": "Extreme Flood Rescue AI",
+        "repository": "Pui89/Extreme-Flood-Rescue-AI",
+        "main_commit": "abeb16fb8488ff7212a3e420a8162e346a607c7b",
+        "active_rulesets": 7,
+        "total_rulesets": 7,
+        "workflow_count": 29,
+        "security_workflows": [
+          "pui89-security-audit.yml",
+          "security.yml",
+          "codeql.yml",
+          "dependency-review.yml"
+        ],
+        "sampled_ruleset": {
+          "id": 26293418,
+          "name": "PUI89 Protect Main coco ai",
+          "required_approving_review_count": 0,
+          "require_code_owner_review": false,
+          "required_review_thread_resolution": false,
+          "rules": [
+            "non_fast_forward",
+            "pull_request"
+          ]
+        }
+      },
+      {
+        "id": "sentinel",
+        "name": "Multimodal Narcotics Screening AI",
+        "repository": "Pui89/Multimodal-Narcotics-Screening-AI",
+        "main_commit": "f8a3c4842f2c4b6c80501b1b7e82d09381b76a3e",
+        "active_rulesets": 7,
+        "total_rulesets": 7,
+        "workflow_count": 31,
+        "security_workflows": [
+          "pui89-security-audit.yml",
+          "security.yml",
+          "codeql.yml",
+          "dependency-review.yml"
+        ],
+        "sampled_ruleset": {
+          "id": 26312209,
+          "name": "PUI89 Protect Main Narcotics",
+          "required_approving_review_count": 0,
+          "require_code_owner_review": false,
+          "required_review_thread_resolution": false,
+          "rules": [
+            "deletion",
+            "non_fast_forward",
+            "pull_request"
+          ]
+        }
+      },
+      {
+        "id": "ai-home",
+        "name": "PUI89 AI HOME",
+        "repository": "Pui89/AI-HOME",
+        "main_commit": "a0b657a8b9869f3b0a766a51b97a5631a869b877",
+        "active_rulesets": 1,
+        "total_rulesets": 1,
+        "workflow_count": 3,
+        "security_workflows": [
+          "pui89-security-audit.yml"
+        ],
+        "sampled_ruleset": {
+          "id": 26708581,
+          "name": "Pui89 protect main ai home",
+          "required_approving_review_count": 0,
+          "require_code_owner_review": false,
+          "required_review_thread_resolution": false,
+          "rules": [
+            "non_fast_forward",
+            "pull_request"
+          ]
+        }
+      },
+      {
+        "id": "ai-nomad",
+        "name": "PUI89 AI NOMAD",
+        "repository": "Pui89/AI-NOMAD",
+        "main_commit": "f617fc7d371b8b5226e5f873574dd49992ea89f0",
+        "active_rulesets": 1,
+        "total_rulesets": 1,
+        "workflow_count": 7,
+        "security_workflows": [
+          "pui89-security-audit.yml",
+          "security.yml"
+        ],
+        "sampled_ruleset": {
+          "id": 26369437,
+          "name": "PUI89 Protect main Home",
+          "required_approving_review_count": 0,
+          "require_code_owner_review": false,
+          "required_review_thread_resolution": false,
+          "rules": [
+            "non_fast_forward",
+            "pull_request"
+          ]
+        }
+      },
+      {
+        "id": "robot-car",
+        "name": "PUI89 AI Robot Car",
+        "repository": "Pui89/ai-robot-car",
+        "main_commit": "abf6fa548bc53641f37d6f6e4b1da18b9f3f815b",
+        "active_rulesets": 1,
+        "total_rulesets": 1,
+        "workflow_count": 3,
+        "security_workflows": [
+          "pui89-security-audit.yml"
+        ],
+        "sampled_ruleset": {
+          "id": 26707637,
+          "name": "PUI89 Protect main ai car",
+          "required_approving_review_count": 0,
+          "require_code_owner_review": false,
+          "required_review_thread_resolution": false,
+          "rules": [
+            "non_fast_forward",
+            "pull_request"
+          ]
+        }
+      },
+      {
+        "id": "robot-motorcycle",
+        "name": "PUI89 AI Robot Motorcycle",
+        "repository": "Pui89/ai-robot-motorcycle",
+        "main_commit": "54ccef155e9673fa3bcd606a97ac4948b1b697bd",
+        "active_rulesets": 1,
+        "total_rulesets": 1,
+        "workflow_count": 3,
+        "security_workflows": [
+          "pui89-security-audit.yml"
+        ],
+        "sampled_ruleset": {
+          "id": 26707699,
+          "name": "PUI89 Protect main ai motorcycle",
+          "required_approving_review_count": 0,
+          "require_code_owner_review": false,
+          "required_review_thread_resolution": false,
+          "rules": [
+            "non_fast_forward",
+            "pull_request"
+          ]
+        }
+      }
+    ],
+    "totals": {
+      "active_rulesets": 24,
+      "total_rulesets": 25,
+      "disabled_rulesets": 1,
+      "workflow_files": 97
+    }
+  },
+  "cross_project_findings": [
+    {
+      "id": "shared-contracts",
+      "status": "AMBER",
+      "finding": "All seven project READMEs and supporting standards refer to Observation, WorldState, ActionProposal and FailureReport. A single canonical versioned implementation consumed by all projects was not verified. The Robot Car contracts.py describes itself as temporary/local."
+    },
+    {
+      "id": "ruleset-review",
+      "status": "AMBER",
+      "finding": "All seven repositories have at least one active ruleset. One representative active ruleset per repository was inspected; each requires a pull request and prevents non-fast-forward updates, but each sampled configuration requires zero approving reviews and no code-owner review or review-thread resolution."
+    },
+    {
+      "id": "ruleset-overlap",
+      "status": "AMBER",
+      "finding": "25 rulesets total: 24 active and one disabled. Coconut, Flood and Screening each have seven. Review every ruleset's conditions and effects before consolidation."
+    },
+    {
+      "id": "branch-protection-api",
+      "status": "GREY",
+      "finding": "The classic branch-protection endpoint returned HTTP 403 for all seven repositories. Classic protection and required status checks could not be verified."
+    },
+    {
+      "id": "workflow-inventory",
+      "status": "GREEN",
+      "finding": "97 workflow files were listed across seven repositories. A PUI89 security-audit workflow is present in each repository. Flood and Screening also expose CodeQL and dependency-review workflow files."
+    },
+    {
+      "id": "test-execution",
+      "status": "GREY",
+      "finding": "This audit did not run project test suites or verify latest workflow outcomes. Workflow-file presence is not proof of a passing run."
+    },
+    {
+      "id": "maturity-scores",
+      "status": "GREY",
+      "finding": "No maturity percentages or scores were recomputed; they are excluded until linked to current, reproducible evidence."
+    }
+  ],
+  "next_actions": [
+    {
+      "priority": 1,
+      "workstream": "Shared AI Core",
+      "status": "AMBER",
+      "action": "Establish one canonical versioned schema/package and migrate project adapters to consume or validate against it."
+    },
+    {
+      "priority": 2,
+      "workstream": "Evidence register",
+      "status": "GREEN",
+      "action": "Maintain a dated machine-readable register and dependency-free structural validator; update only from traceable evidence."
+    },
+    {
+      "priority": 3,
+      "workstream": "Bilingual websites",
+      "status": "GREEN",
+      "action": "Link the same dated register from both Shared AI Core language pages; keep equivalent claims and limitations."
+    },
+    {
+      "priority": 4,
+      "workstream": "Project READMEs",
+      "status": "AMBER",
+      "action": "Keep project-specific facts in each README and link to one central portfolio register rather than duplicating portfolio-wide status."
+    },
+    {
+      "priority": 5,
+      "workstream": "Repository protection",
+      "status": "AMBER",
+      "action": "Review all rulesets and classic protection manually, confirm required CI checks, and avoid weakening enforcement during cleanup."
+    },
+    {
+      "priority": 6,
+      "workstream": "Engineering validation",
+      "status": "AMBER",
+      "action": "Add canonical contract conformance tests for missing, malformed, stale, noisy and conflicting inputs, uncertainty, abstention and safe-stop outcomes."
+    },
+    {
+      "priority": 7,
+      "workstream": "Credibility",
+      "status": "GREEN",
+      "action": "Use IMPLEMENTED, TESTED, MEASURED, SIMULATION-ONLY, PROPOSED and NOT VALIDATED consistently across public materials."
+    }
+  ]
+}
