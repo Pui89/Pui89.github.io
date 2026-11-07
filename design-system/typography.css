@@ -1,0 +1,12 @@
+/* Use local fonts or system fallbacks; no paid font service required. */
+html { font-family: var(--font-en); font-size: 100%; line-height: 1.6; }
+html[lang^="th"], body[lang^="th"], [lang^="th"] { font-family: var(--font-th), var(--font-en); }
+body { color: var(--color-text, var(--pui89-ink)); }
+h1, h2, h3, h4 { line-height: 1.2; letter-spacing: -.02em; }
+h1 { font-size: var(--heading-lg); }
+h2 { font-size: var(--heading-md); }
+h3 { font-size: var(--heading-sm); }
+p, li { max-width: var(--reading-width); }
+small, .text-small { font-size: var(--text-sm); }
+code, pre, kbd, samp { font-family: var(--font-mono); }
+:lang(th) { letter-spacing: 0; line-height: 1.75; }
