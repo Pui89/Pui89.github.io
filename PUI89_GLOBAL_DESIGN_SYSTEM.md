@@ -1,7 +1,7 @@
 # PUI89 Global Corporate Design System
 
-**Version:** 1.0  
-**Status:** Adopted as the shared design baseline; implementation is being introduced incrementally.  
+**Version:** 1.1  
+**Status:** Adopted baseline; shared CSS rollout is being applied across the complete bilingual website sitemap.  
 **Scope:** Brand identity, English/Thai digital experience, AI software, robotics concepts, corporate documents, product communication and research environments.
 
 ## Corporate identity
@@ -65,3 +65,33 @@ The canonical web tokens and homepage theme layer live in `assets/css/pui89-desi
 - Prefer accessible, responsive, low-dependency and free-first implementations.
 - Do not introduce paid APIs, subscriptions, cloud services or metered dependencies as part of brand styling.
 - Roll out to project pages and documents in controlled batches; do not mass-rewrite content or remove assets without checking their use.
+
+## Project identity accents
+
+The portfolio shares one Deep Navy foundation and a restrained Electric Cyan interaction language. Each project keeps a distinct accent for recognition and information hierarchy:
+
+| Project | Primary accent | Secondary accent | Design intent |
+|---|---|---|---|
+| Coconut Harvest AI | Research Green `#43B581` | Electric Cyan `#00D9FF` | Agriculture, maturity and field context |
+| Extreme Flood Rescue AI | Technology Blue `#176BCE` | Electric Cyan `#00D9FF` | Water, navigation and emergency context |
+| Multimodal Narcotics Screening AI / PUI89 Sentinel | Electric Cyan `#00D9FF` | Titanium Silver `#C5D0DC` | Precision, evidence and controlled review |
+| PUI89 AI HOME | Teal `#00AFA5` | Deep Navy `#071426` | Calm indoor intelligence |
+| PUI89 AI NOMAD | Electric Cyan `#00D9FF` | Deep Navy `#071426` | Mobile capability and visibility |
+| PUI89 AI Robot Car | Technology Blue `#176BCE` | Graphite / Deep Navy | Intelligent mobility |
+| PUI89 AI Robot Motorcycle — EasyRide | Electric Cyan `#00D9FF` | Graphite / Deep Navy | Human-centred mobility |
+
+Accent colours identify a project; they do not indicate safety, maturity or performance. Status must always include readable text and evidence references.
+
+## Shared stylesheet rollout
+
+`assets/css/pui89-project-design-system.css` is the shared responsive layer for the complete bilingual website sitemap. It standardises typography fallbacks, navigation, content width, cards, buttons, tables, focus visibility, reduced-motion behaviour and mobile layout. Project accent tokens are assigned by page identity. It uses CSS only and does not add JavaScript, third-party font requests, packages or hosted services.
+
+## Premium presentation acceptance checklist
+
+- English and Thai page pairs share the same information architecture and project identity.
+- The project name, stage, date, evidence links and concept/validation boundary agree across both languages.
+- The seven project identities are consistent across the portfolio, individual pages and repository documentation.
+- Every QR code resolves to its intended language-specific destination; direct links remain available.
+- Layout remains usable on narrow screens, keyboard navigation has visible focus, and reduced-motion preferences are respected.
+- No unverified customer, partner, certification, field-performance, autonomy, waterproofing, fire-resistance or commercial-release claim is introduced.
+- No paid service, subscription, API, cloud compute, package or external font dependency is introduced by the design system.
