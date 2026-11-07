@@ -6,7 +6,7 @@ import re
 import sys
 from pathlib import Path
 
-REGISTER = Path(__file__).resolve().parents[1] / "docs" / "pui89-portfolio-evidence-register.json"
+ROOT = Path(__file__).resolve().parents[1]\nREGISTER = ROOT / "docs" / "pui89-portfolio-evidence-register.json"\nSCHEMAS = {\n    "observation": ("schemas/pui89/observation.schema.json", "PUI89 Observation"),\n    "world-state": ("schemas/pui89/world-state.schema.json", "PUI89 WorldState"),\n    "action-proposal": ("schemas/pui89/action-proposal.schema.json", "PUI89 ActionProposal"),\n    "failure-report": ("schemas/pui89/failure-report.schema.json", "PUI89 FailureReport"),\n}
 SHA_RE = re.compile(r"^[0-9a-f]{40}$")
 
 def fail(message: str) -> None:
@@ -54,9 +54,9 @@ def main() -> None:
         fail("cross-project findings are incomplete")
     if len(data.get("next_actions", [])) != 7:
         fail("exactly seven prioritised next actions are required")
-    print("PASS: PUI89 portfolio evidence register is structurally consistent.")
+    for key, (relative_path, expected_title) in SCHEMAS.items():\n        try:\n            schema = json.loads((ROOT / relative_path).read_text(encoding="utf-8"))\n        except (OSError, json.JSONDecodeError) as exc:\n            fail(f"{key}: cannot read valid schema JSON: {exc}")\n        if schema.get("$schema") != "https://json-schema.org/draft/2020-12/schema":\n            fail(f"{key}: unexpected JSON Schema draft")\n        if schema.get("title") != expected_title or schema.get("type") != "object":\n            fail(f"{key}: schema identity or root type is invalid")\n        if schema.get("x-pui89-contract-version") != "0.1.0-draft":\n            fail(f"{key}: contract version must remain explicitly draft")\n        if not schema.get("required"):\n            fail(f"{key}: required fields are missing")\n    action_schema = json.loads((ROOT / SCHEMAS["action-proposal"][0]).read_text(encoding="utf-8"))\n    action_properties = action_schema.get("properties", {})\n    if action_properties.get("human_approval_required", {}).get("const") is not True:\n        fail("ActionProposal must require human approval")\n    if action_properties.get("authority", {}).get("const") != "advisory_only":\n        fail("ActionProposal authority must remain advisory_only")\n    if action_properties.get("actuation_allowed", {}).get("const") is not False:\n        fail("ActionProposal must not enable physical actuation")\n\n    print("PASS: PUI89 portfolio register and four draft contract schemas are structurally consistent.")
     print(f"Projects: 7 | Active rulesets: {active}/{total} | Workflow files: {workflows}")
-    print("Note: this validates register structure, not the truth or freshness of external evidence.")
+    print("Note: this validates JSON structure and safety constants, not full JSON Schema conformance or external evidence truth/freshness.")
 
 if __name__ == "__main__":
     main()
