@@ -1,0 +1,19 @@
+/* PUI89 project maturity indicator — evidence-based stages, not percentage-complete claims. */
+.pui89-progress{box-sizing:border-box;z-index:5;display:flex;flex-direction:column;gap:4px;width:214px;max-width:calc(100% - 20px);padding:9px 11px;border:1px solid rgba(66,217,255,.42);border-radius:12px;background:rgba(7,17,31,.94);color:#F3F7FF;box-shadow:0 8px 26px rgba(0,0,0,.24);font:inherit;line-height:1.25;backdrop-filter:blur(10px)}
+.pui89-progress__eyebrow{font-size:.59rem;font-weight:800;letter-spacing:.12em;color:#42D9FF}
+.pui89-progress strong{font-size:.78rem;letter-spacing:.02em;color:#F3F7FF}
+.pui89-progress__label{font-size:.68rem;color:#C3D4E6;overflow-wrap:anywhere}
+.pui89-progress__steps{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin-top:3px}
+.pui89-progress__steps i{display:block;height:4px;border-radius:99px;background:#30445F}
+.pui89-progress__steps i.is-reached{background:#42D9FF;box-shadow:0 0 8px rgba(66,217,255,.28)}
+.pui89-progress--card{position:absolute;top:12px;right:12px;width:184px}
+.pui89-progress--hero{position:absolute;top:8px;right:0;width:218px}
+.card{position:relative}
+.hero{position:relative}
+@media(max-width:640px){
+ .pui89-progress--card{top:9px;right:9px;width:166px;padding:8px 9px}
+ .pui89-progress--hero{top:4px;right:0;width:min(205px,72%)}
+ .pui89-progress__eyebrow{font-size:.55rem}
+ .pui89-progress__label{font-size:.64rem}
+}
+@media(prefers-reduced-motion:reduce){.pui89-progress *{scroll-behavior:auto}}
