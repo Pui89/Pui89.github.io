@@ -87,7 +87,7 @@ Develop a reusable AI engineering foundation that connects perception, world-sta
 - **Human oversight:** keep consequential decisions under appropriate human authority.
 - **Safety by design:** uncertain, missing, stale, or conflicting inputs should lead to conservative handling rather than unsupported action.
 - **Reproducibility:** record code versions, data provenance, configurations, test results, metrics, and failure cases.
-- **open-source-first development:** prefer local-first and open-source tools where suitable; review licences, resource requirements, privacy, and resource and licensing implications before adoption.
+- **Open-source-first engineering:** prefer local-first and open-source tools where suitable; review licences, resource requirements and privacy before adoption.
 - **Responsible collaboration:** seek domain experts, research partners, data stewards, and engineering mentors.
 
 ---
@@ -323,7 +323,7 @@ Preferred approach:
 - Structured JSON/CSV reports, hashes, versioned manifests, and clear experiment records.
 - Local-first workflows and optional model runtimes only after resource and licence checks.
 
-No paid API, cloud GPU, subscription, hosted inference service, automatic model download, or recurring-resource requirements commitment should be introduced without explicit approval. Hosted service plans can have usage limits and changing terms. Open-source software does not automatically make model weights or datasets unrestricted; check each licence and data-use condition.
+No paid API, cloud GPU, subscription, hosted inference service, automatic model download, or recurring service commitment should be introduced without explicit approval. Hosted service plans can have usage limits and changing terms. Open-source software does not automatically make model weights or datasets unrestricted; check each licence and data-use condition.
 
 ---
 
@@ -397,4 +397,4 @@ All seven projects follow the [PUI89 Simple, Safe & Professional Engineering Sta
 - [English security overview](security.html)
 - [แนวทางความปลอดภัยภาษาไทย](security-th.html)
 
-The seven product repositories maintain project-specific security policies and threat boundaries. Security checks reduce risk but cannot guarantee that a system is absence of malware or immune to attack. Review current workflow results and incident guidance before treating a control as verified.
+The seven product repositories maintain project-specific security policies and threat boundaries. Security checks reduce risk but cannot guarantee malware absence or immunity to attack. Review current workflow results and incident guidance before treating a control as verified.
