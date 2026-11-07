@@ -506,6 +506,60 @@ a:hover{color:#B8F2FF}
  *,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
 }
 
+
+/* PUI89 homepage visual lock — final cascade override */
+:root{
+ color-scheme:dark!important;
+ --bg:#07111F!important;--panel:#101F33!important;--panel2:#172B43!important;
+ --text:#F3F7FF!important;--muted:#B8C7DA!important;--line:#30445F!important;
+ --accent:#42D9FF!important;--accent2:#B8F2FF!important;--mint:#42D9FF!important;
+ --gold:#42D9FF!important;--glow:rgba(66,217,255,.20)!important;
+}
+html,body{background-color:#07111F!important;color:#F3F7FF!important}
+body{
+ background-image:radial-gradient(ellipse at 78% -8%,rgba(24,117,151,.24),transparent 38%),
+                  radial-gradient(ellipse at 5% 42%,rgba(24,70,112,.16),transparent 34%),
+                  linear-gradient(180deg,#07111F 0%,#091626 100%)!important;
+}
+a,.navlinks a:hover,.footer a:hover{color:#42D9FF!important}
+a:hover{color:#B8F2FF!important}
+.eyebrow,.num,.index,.label,.tag,.flagship-kicker,.support-number,
+.service-card .label,.contact-card .label{color:#42D9FF!important}
+.hero h1 span{
+ background:linear-gradient(105deg,#42D9FF 0%,#B8F2FF 100%)!important;
+ -webkit-background-clip:text!important;background-clip:text!important;color:transparent!important;
+}
+.card,.panel,.principle,.service-card,.contact-card,.photo-card,.support-card,
+.sponsor-panel,.flagship-shell,.trust-strip,.qr-panel,.research-card{
+ background:linear-gradient(150deg,#172B43 0%,#101F33 100%)!important;
+ border-color:rgba(66,217,255,.28)!important;
+}
+.card:hover,.panel:hover,.service-card:hover,.contact-card:hover,.support-card:hover{
+ border-color:rgba(66,217,255,.66)!important;
+ box-shadow:0 14px 34px rgba(0,0,0,.24),0 0 22px rgba(66,217,255,.07)!important;
+}
+.btn.primary,.button.primary,.actions .primary{
+ background:linear-gradient(110deg,#42D9FF,#8AEAFF)!important;
+ border-color:#42D9FF!important;color:#041522!important;
+}
+.btn.secondary,.button.secondary,.btn:not(.primary){
+ background:#10233A!important;border-color:#36516D!important;color:#F3F7FF!important;
+}
+.btn.secondary:hover,.btn:not(.primary):hover{border-color:#42D9FF!important;color:#B8F2FF!important}
+.trust-strip,.flagship-shell,.sponsor-panel{border-color:rgba(66,217,255,.30)!important}
+.principle{border-left-color:#42D9FF!important}
+.status,.badge,.pill,.chip,.flagship-tags span{
+ color:#C9F5FF!important;background:rgba(66,217,255,.09)!important;
+ border-color:rgba(66,217,255,.34)!important;
+}
+.notice,.warning,.alert{background:#142338!important;border-color:rgba(66,217,255,.34)!important}
+.visual-tag-mark{background:#42D9FF!important;color:#041522!important}
+.visual-note{background:rgba(7,17,31,.90)!important;border-color:rgba(66,217,255,.30)!important}
+.footer{border-top-color:rgba(66,217,255,.25)!important}
+:where(a,button,.btn,[role="button"]):focus-visible{outline:2px solid #42D9FF!important;outline-offset:4px}
+::selection{background:rgba(66,217,255,.30)!important;color:#F3F7FF!important}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
+
 </style>
   <link rel="stylesheet" href="assets/css/pui89-design-system.css">
   <link rel="stylesheet" href="/assets/css/pui89-project-progress.css">
@@ -535,7 +589,7 @@ a:hover{color:#B8F2FF}
     <section class="hero" id="top">
       <div class="hero-copy">
         <div class="eyebrow"><span class="eyebrow-dot"></span> AI engineering &amp; intelligent systems</div>
-        <h1>Intelligence for the <span>real world.</span></h1>
+        <h1>Intelligent Systems.<br><span>Verifiable Decisions.</span></h1>
         <p>PUI89 develops intelligent software and robotic-system concepts for practical challenges across agriculture, emergency response, multimodal inspection, home environments and mobility. Our engineering brings together perception, contextual reasoning, decision intelligence, safety architecture and evidence-led validation. Implemented capabilities, tested software behaviour and proposed concepts are clearly distinguished.</p>
         <div class="actions">
           <a class="btn primary" href="#projects">Find a project that matters to you <span aria-hidden="true">↗</span></a>
