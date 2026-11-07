@@ -1,95 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
-<title id="title">PUI89 EasyRide — friendly rounded AI motorcycle concept</title>
-<desc id="desc">A clean, softly rounded, skirt-conscious step-through electric motorcycle in deep navy, pearl white, mint and electric cyan. It has a broad supportive seat, low open mounting step, wide flat floorboard, smooth front leg shield, enclosed drive-cover concept and upright handlebars. Concept artwork only; clothing clearance requires testing.</desc>
-<defs>
-  <linearGradient id="back" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10243a"/><stop offset="1" stop-color="#07111f"/></linearGradient>
-  <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5fbff"/><stop offset=".48" stop-color="#c9e7ee"/><stop offset="1" stop-color="#75b7c9"/></linearGradient>
-  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8af0ff"/><stop offset=".55" stop-color="#35c9ec"/><stop offset="1" stop-color="#1685ad"/></linearGradient>
-  <linearGradient id="seat" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#405a70"/><stop offset="1" stop-color="#182c40"/></linearGradient>
-  <linearGradient id="tire" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#263b50"/><stop offset="1" stop-color="#07111d"/></linearGradient>
-  <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="18"/></filter>
-  <filter id="shine" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-</defs>
-<rect width="1400" height="900" rx="42" fill="url(#back)"/>
-<circle cx="1110" cy="180" r="250" fill="#2ec9e8" opacity=".07"/>
-<circle cx="260" cy="700" r="260" fill="#a8edbd" opacity=".045"/>
-<g font-family="Inter,Arial,sans-serif">
-  <text x="76" y="84" fill="#42d9ff" font-size="22" font-weight="800" letter-spacing="7">PUI89  /  EASYRIDE</text>
-  <text x="76" y="140" fill="#f3f8ff" font-size="46" font-weight="750">A little easier. A lot more welcoming.</text>
-  <text x="78" y="181" fill="#b8c7da" font-size="22">Friendly step-through form · relaxed upright posture · rider-first AI advice</text>
-  <ellipse cx="700" cy="704" rx="515" ry="48" fill="#000" opacity=".42" filter="url(#shadow)"/>
-  <path d="M120 706H1280" stroke="#29445b" stroke-width="3" opacity=".9"/>
-  <!-- Wheels -->
-  <g>
-    <circle cx="355" cy="630" r="125" fill="url(#tire)" stroke="#8da6b9" stroke-width="8"/>
-    <circle cx="355" cy="630" r="91" fill="#10243a" stroke="#607b90" stroke-width="8"/>
-    <circle cx="355" cy="630" r="18" fill="#b9dce8"/>
-    <circle cx="1050" cy="630" r="125" fill="url(#tire)" stroke="#8da6b9" stroke-width="8"/>
-    <circle cx="1050" cy="630" r="91" fill="#10243a" stroke="#607b90" stroke-width="8"/>
-    <circle cx="1050" cy="630" r="18" fill="#b9dce8"/>
-    <g stroke="#49667d" stroke-width="7" stroke-linecap="round">
-      <path d="M355 539V721M264 630H446M291 566L419 694M419 566L291 694"/>
-      <path d="M1050 539V721M959 630H1141M986 566L1114 694M1114 566L986 694"/>
-    </g>
-  </g>
-  <!-- rear swing arm and low frame -->
-  <path d="M355 630L490 525L590 590L865 590L967 485L1050 630" fill="none" stroke="#91b9c9" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M485 535L555 584L850 584" fill="none" stroke="#42d9ff" stroke-width="12" stroke-linecap="round"/>
-  <!-- friendly rear body -->
-  <path d="M390 480Q405 433 465 424L560 438Q594 453 602 508L590 565Q560 582 500 568L408 548Q376 532 390 480Z" fill="url(#cyan)" stroke="#c5f5ff" stroke-width="6"/>
-  <path d="M416 470Q449 442 510 455" fill="none" stroke="#e8fcff" stroke-width="8" stroke-linecap="round" opacity=".75"/>
-  <!-- seat, soft rounded -->
-  <path d="M500 385Q523 350 586 350H760Q813 351 843 385L833 419Q818 440 772 440H553Q502 438 482 412Z" fill="url(#seat)" stroke="#b8d2e1" stroke-width="7"/>
-  <path d="M535 381Q567 367 616 368H774" fill="none" stroke="#7893a8" stroke-width="7" stroke-linecap="round" opacity=".8"/>
-  <!-- open step-through and leg space -->
-  <path d="M606 438L628 550Q635 570 661 570H798Q824 567 833 538L855 432" fill="none" stroke="#d7f4fa" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M612 548Q704 565 821 548" fill="none" stroke="#42d9ff" stroke-width="6" stroke-linecap="round"/>
-  <!-- low broad floorboard -->
-  <path d="M572 575Q690 558 846 575L866 600Q860 617 834 618H588Q561 613 572 575Z" fill="#17364e" stroke="#69dff5" stroke-width="6"/>
-  <path d="M610 588H823" stroke="#9beeff" stroke-width="5" stroke-linecap="round"/>
-  <!-- smooth skirt-conscious leg shield: protects the forward footwell while keeping a low step-through opening -->
-  <path d="M850 431Q831 449 826 481L817 541Q814 557 796 566L777 562Q787 535 789 505Q789 468 812 440Z" fill="url(#shell)" stroke="#dff8ff" stroke-width="6"/>
-  <path d="M830 466Q818 506 812 542" fill="none" stroke="#78c8da" stroke-width="5" stroke-linecap="round"/>
-  <!-- smooth rear lower-side cover and enclosed-drive design cue; no exposed chain/belt in the intended production layout -->
-  <path d="M438 550Q493 574 575 568L600 585Q591 601 562 602L466 589Q443 580 438 550Z" fill="#20445c" stroke="#7edff0" stroke-width="5"/>
-  <!-- central low battery cover -->
-  <path d="M650 500Q663 485 688 485H781Q803 487 811 507L807 548H658Z" fill="#15344b" stroke="#4ad8f4" stroke-width="5"/>
-  <text x="684" y="527" fill="#c8f7ff" font-size="17" font-weight="800" letter-spacing="2">EASYRIDE</text>
-  <!-- front fork and fender -->
-  <path d="M957 443L1020 622M1001 438L1050 622" stroke="#c6e1eb" stroke-width="16" stroke-linecap="round"/>
-  <path d="M930 548Q1048 490 1145 562" fill="none" stroke="#35c9ec" stroke-width="20" stroke-linecap="round"/>
-  <!-- front fairing: soft friendly silhouette -->
-  <path d="M865 385Q872 319 916 283Q953 252 1007 269Q1063 286 1076 339L1061 463Q1055 491 1024 505L951 518Q917 509 900 478L865 385Z" fill="url(#shell)" stroke="#e7fbff" stroke-width="7"/>
-  <path d="M895 375Q912 309 961 297Q1007 289 1039 327" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" opacity=".8"/>
-  <!-- rounded headlamp -->
-  <rect x="945" y="340" width="88" height="45" rx="22" fill="#eaffff" stroke="#42d9ff" stroke-width="6" filter="url(#shine)"/>
-  <path d="M960 362H1018" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
-  <!-- handlebar and mirrors -->
-  <path d="M937 281L900 245L850 245M982 278L1018 238L1070 238" fill="none" stroke="#d8eaf2" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M849 245L835 220Q834 207 850 204L879 207Q891 213 882 230L867 245Z" fill="#b7d6e3" stroke="#e8f8ff" stroke-width="5"/>
-  <path d="M1052 238L1045 211Q1045 198 1061 197L1090 201Q1101 207 1092 223L1074 239Z" fill="#b7d6e3" stroke="#e8f8ff" stroke-width="5"/>
-  <!-- display and controls -->
-  <rect x="916" y="276" width="52" height="36" rx="11" fill="#0b1b2b" stroke="#42d9ff" stroke-width="4"/>
-  <circle cx="942" cy="294" r="7" fill="#a8edbd"/>
-  <!-- rear grab rail and simple tail lamp -->
-  <path d="M420 420Q398 385 365 385H333" fill="none" stroke="#b8d1df" stroke-width="10" stroke-linecap="round"/>
-  <rect x="393" y="491" width="24" height="16" rx="8" fill="#fff0e7"/>
-  <!-- details -->
-  <path d="M1000 480Q1025 488 1040 470" fill="none" stroke="#6c9eb1" stroke-width="5" stroke-linecap="round"/>
-  <g fill="#d9f5ff" font-size="19" font-weight="700">
-    <text x="90" y="308">EASY STEP-THROUGH</text>
-    <text x="90" y="338" fill="#a9c4d5" font-size="16" font-weight="500">A low, open centre for easier mounting</text>
-    <path d="M300 350L485 405" stroke="#42d9ff" stroke-width="3" fill="none"/>
-    <text x="90" y="405">SKIRT / DRESS CONSCIOUS</text>
-    <text x="90" y="432" fill="#a9c4d5" font-size="16" font-weight="500">Low open step, wide flat footboard, smooth leg area</text>
-    <path d="M330 438L650 570" stroke="#42d9ff" stroke-width="3" fill="none"/>
-    <text x="1100" y="365" text-anchor="end">SOFT, FRIENDLY FRONT</text>
-    <text x="1100" y="392" text-anchor="end" fill="#a9c4d5" font-size="16" font-weight="500">Rounded panels and clear lighting</text>
-    <path d="M1085 405L1047 430" stroke="#42d9ff" stroke-width="3" fill="none"/>
-    <text x="700" y="790" text-anchor="middle">LOW STEP-THROUGH · WIDE FOOTBOARD · SMOOTH CLOTHING-SAFE COVERS</text>
-    <text x="700" y="820" text-anchor="middle" fill="#a9c4d5" font-size="16" font-weight="500">Skirt and dress clearance, foot access and snag resistance still require user testing</text>
-  </g>
-  <rect x="76" y="846" width="1248" height="1" fill="#29445b"/>
-  <text x="76" y="878" fill="#7896ab" font-size="15" letter-spacing="2">CONCEPT ART ONLY · NOT PRODUCTION CAD · NOT A ROAD-VALIDATED VEHICLE</text>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="t d"><title id="t">PUI89 EasyRide V3 — black seat, continuous floor</title><desc id="d">Two-wheel step-through motorcycle concept with a long black touring bench and a single uninterrupted flat floorboard across the centre, without a middle opening. Concept only, not validated.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#10243A"/><stop offset="1" stop-color="#06101D"/></linearGradient><linearGradient id="shell" x2="1" y2="1"><stop stop-color="#F5FBFF"/><stop offset=".5" stop-color="#C5E6F0"/><stop offset="1" stop-color="#6FAFC5"/></linearGradient><linearGradient id="cyan"><stop stop-color="#8DEEFF"/><stop offset=".5" stop-color="#42D9FF"/><stop offset="1" stop-color="#1688B2"/></linearGradient><linearGradient id="seat" x2="0" y2="1"><stop stop-color="#343941"/><stop offset=".5" stop-color="#11151B"/><stop offset="1" stop-color="#05080D"/></linearGradient><linearGradient id="rubber" x2="1" y2="1"><stop stop-color="#26394B"/><stop offset="1" stop-color="#050A11"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="shadow"><feGaussianBlur stdDeviation="18"/></filter></defs>
+<rect width="1400" height="900" rx="38" fill="url(#bg)"/><circle cx="1110" cy="170" r="250" fill="#42D9FF" opacity=".07"/><g font-family="Inter,Arial,sans-serif"><text x="72" y="78" fill="#42D9FF" font-size="22" font-weight="800" letter-spacing="6">PUI89 / EASYRIDE V3</text><text x="72" y="136" fill="#F3F7FF" font-size="43" font-weight="800">One continuous floor. A confident black seat.</text><text x="75" y="176" fill="#B8C7DA" font-size="21">Inclusive step-through mobility · calm ergonomics · advisory AI concept</text>
+<ellipse cx="705" cy="718" rx="530" ry="38" fill="#000" opacity=".45" filter="url(#shadow)"/><path d="M100 720H1300" stroke="#29445F" stroke-width="3"/>
+<g><circle cx="355" cy="630" r="126" fill="url(#rubber)" stroke="#8298AA" stroke-width="8"/><circle cx="355" cy="630" r="91" fill="#10243A" stroke="#536E83" stroke-width="8"/><circle cx="355" cy="630" r="17" fill="#C7E7F0"/><circle cx="1055" cy="630" r="126" fill="url(#rubber)" stroke="#8298AA" stroke-width="8"/><circle cx="1055" cy="630" r="91" fill="#10243A" stroke="#536E83" stroke-width="8"/><circle cx="1055" cy="630" r="17" fill="#C7E7F0"/><g stroke="#4D687E" stroke-width="7" stroke-linecap="round"><path d="M355 539V721M264 630H446M291 566L419 694M419 566L291 694M1055 539V721M964 630H1146M991 566L1119 694M1119 566L991 694"/></g></g>
+<path d="M355 630L485 530L580 594H865L970 482L1055 630" fill="none" stroke="#91B8C8" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/><path d="M475 540L550 588H858" fill="none" stroke="#42D9FF" stroke-width="11" stroke-linecap="round"/>
+<path d="M410 500Q415 445 478 434L575 450Q610 470 607 532L590 574Q535 590 470 567L420 550Q397 533 410 500Z" fill="url(#cyan)" stroke="#C8F5FF" stroke-width="6"/>
+<!-- Long black touring seat -->
+<path d="M465 382Q488 344 548 344H775Q825 344 866 375L881 393Q884 411 860 423Q824 440 766 439H535Q478 438 454 414Q445 400 465 382Z" fill="url(#seat)" stroke="#65717E" stroke-width="7"/><path d="M500 381Q550 360 625 363H792Q826 366 849 387" fill="none" stroke="#59616B" stroke-width="7" stroke-linecap="round"/>
+<!-- Single uninterrupted platform; deliberately no central gap -->
+<path d="M565 560Q650 548 750 550L870 558Q891 562 896 581L891 607Q885 620 860 621H563Q536 618 536 598L542 577Q546 565 565 560Z" fill="#15364E" stroke="#42D9FF" stroke-width="7"/><path d="M565 581Q690 574 862 585" fill="none" stroke="#B8F2FF" stroke-width="5" stroke-linecap="round"/><path d="M572 599H850" stroke="#2C6E8A" stroke-width="3" stroke-dasharray="10 10"/>
+<path d="M610 452Q630 432 668 432H817Q849 436 860 466L867 557Q861 568 840 570H594Q580 565 585 547L596 477Q599 460 610 452Z" fill="#17364E" stroke="#4BD8F4" stroke-width="6"/><path d="M625 473Q680 455 810 468" fill="none" stroke="#6CA8BC" stroke-width="5" stroke-linecap="round"/><text x="670" y="520" fill="#D5F8FF" font-size="18" font-weight="800" letter-spacing="2">EASYRIDE</text>
+<path d="M850 435Q828 453 825 487L818 541Q816 557 796 566L778 561Q787 532 788 500Q788 465 812 440Z" fill="url(#shell)" stroke="#E7FAFF" stroke-width="6"/><path d="M830 469Q818 507 812 543" fill="none" stroke="#78C8DA" stroke-width="5" stroke-linecap="round"/>
+<path d="M960 445L1025 622M1004 438L1055 622" stroke="#C6E1EB" stroke-width="16" stroke-linecap="round"/><path d="M932 550Q1050 493 1150 562" fill="none" stroke="#35C9EC" stroke-width="20" stroke-linecap="round"/>
+<path d="M865 388Q872 319 916 283Q955 250 1009 269Q1064 287 1080 341L1062 463Q1057 492 1024 505L950 519Q915 510 899 478Z" fill="url(#shell)" stroke="#E7FBFF" stroke-width="7"/><path d="M897 374Q915 309 964 297Q1009 289 1042 328" fill="none" stroke="#FFF" stroke-width="9" stroke-linecap="round" opacity=".8"/><rect x="947" y="340" width="88" height="45" rx="22" fill="#E9FFFF" stroke="#42D9FF" stroke-width="6" filter="url(#glow)"/><path d="M962 362H1020" stroke="#FFF" stroke-width="8" stroke-linecap="round"/>
+<path d="M938 281L900 245L850 245M982 278L1018 238L1070 238" fill="none" stroke="#D8EAF2" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/><rect x="916" y="276" width="52" height="36" rx="11" fill="#0B1B2B" stroke="#42D9FF" stroke-width="4"/><circle cx="942" cy="294" r="7" fill="#A8EDBD"/><path d="M426 421Q402 384 365 385H333" fill="none" stroke="#B8D1DF" stroke-width="10" stroke-linecap="round"/>
+<g fill="#D9F5FF" font-size="18" font-weight="700"><text x="85" y="286">BLACK TOURING BENCH</text><text x="85" y="314" fill="#A9C4D5" font-size="15" font-weight="500">Long supportive seat · ergonomic contour</text><path d="M300 327L500 383" stroke="#42D9FF" stroke-width="3" fill="none"/><text x="85" y="398">ONE-PIECE CONNECTED FLOOR</text><text x="85" y="426" fill="#A9C4D5" font-size="15" font-weight="500">Continuous flat platform · no middle opening</text><path d="M340 435L620 578" stroke="#42D9FF" stroke-width="3" fill="none"/><text x="1280" y="360" text-anchor="end">SMOOTH ENCLOSED BODY</text><text x="1280" y="388" text-anchor="end" fill="#A9C4D5" font-size="15" font-weight="500">Covered drive · protected wiring concept</text><path d="M1110 402L1030 480" stroke="#42D9FF" stroke-width="3" fill="none"/><text x="700" y="790" text-anchor="middle">TWO WHEELS · BLACK SEAT · FULL-LENGTH CONNECTED FLOORBOARD</text><text x="700" y="820" text-anchor="middle" fill="#A9C4D5" font-size="15" font-weight="500">Concept only · dimensions, ergonomics, load rating and safety require validation</text></g><rect x="72" y="846" width="1256" height="1" fill="#29445F"/><text x="72" y="878" fill="#7896AB" font-size="14" letter-spacing="2">PUI89 · CONCEPT ART ONLY · NOT PRODUCTION CAD · NOT ROAD-VALIDATED</text></g></svg>
