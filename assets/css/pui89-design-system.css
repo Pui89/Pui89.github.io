@@ -1,7 +1,8 @@
 /* PUI89 Global Corporate Design System — v1.0
    Shared design tokens and non-destructive homepage theme layer.
    Keep project status, evidence claims and concept labels factual. */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+/* Local/system font stacks only; no remote font requests. */
+500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 :root{
   color-scheme:dark;
   --pui89-navy:#071426;
