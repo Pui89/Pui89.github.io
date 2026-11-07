@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pui89.github.io/schemas/pui89/action-proposal.schema.json",
+  "title": "PUI89 ActionProposal",
+  "type": "object",
+  "x-pui89-contract-version": "0.1.0-draft",
+  "additionalProperties": false,
+  "properties": {
+    "proposal_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "proposed_action": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "preconditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "risk_level": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical",
+        "unknown"
+      ]
+    },
+    "confidence": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "expires_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "human_approval_required": {
+      "const": true
+    },
+    "authority": {
+      "const": "advisory_only"
+    },
+    "actuation_allowed": {
+      "const": false
+    },
+    "simulation_only": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "proposal_id",
+    "created_at",
+    "proposed_action",
+    "rationale",
+    "evidence_refs",
+    "preconditions",
+    "risk_level",
+    "human_approval_required",
+    "authority",
+    "actuation_allowed",
+    "simulation_only"
+  ]
+}

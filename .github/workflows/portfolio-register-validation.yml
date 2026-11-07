@@ -1,0 +1,36 @@
+name: PUI89 Portfolio Register Validation
+
+on:
+  pull_request:
+    paths:
+      - "docs/pui89-portfolio-evidence-register.json"
+      - "docs/PUI89_PORTFOLIO_ENGINEERING_AUDIT_2026-11-08.md"
+      - "tools/validate_portfolio_register.py"
+      - "schemas/pui89/**"
+      - ".github/workflows/portfolio-register-validation.yml"
+  push:
+    branches: [main]
+    paths:
+      - "docs/pui89-portfolio-evidence-register.json"
+      - "docs/PUI89_PORTFOLIO_ENGINEERING_AUDIT_2026-11-08.md"
+      - "tools/validate_portfolio_register.py"
+      - "schemas/pui89/**"
+      - ".github/workflows/portfolio-register-validation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pui89-portfolio-register-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Validate portfolio register and draft schemas
+        run: python tools/validate_portfolio_register.py

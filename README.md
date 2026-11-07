@@ -59,6 +59,10 @@ Coconut's merged dataset audit also passed 15 checks across dataset structure, i
 
 PUI89 projects follow one zero-cost, evidence-first AI engineering strategy, with shared interfaces and validation tailored to each domain. Read the [PUI89 World-Class AI Blueprint](PUI89_WORLD_CLASS_AI_BLUEPRINT.md) for the shared AI Core, approved technology direction, automation boundaries, product-specific priorities, quality gates and staged roadmap.
 
+## Portfolio engineering audit — 8 November 2026
+
+A dated review of the seven project repositories, Shared AI Core integration, GitHub rulesets, workflows and evidence gaps is available in the [PUI89 Portfolio Engineering Audit](docs/PUI89_PORTFOLIO_ENGINEERING_AUDIT_2026-11-08.md), with its [machine-readable evidence register](docs/pui89-portfolio-evidence-register.json). This is a dated snapshot, not a live maturity score.
+
 ## Seven-project portfolio
 
 PUI89's portfolio contains exactly seven projects. The single project directory and all 14 bilingual project website links appear in the consolidated table in [Project links](#11-project-directory-and-website-links) below.
