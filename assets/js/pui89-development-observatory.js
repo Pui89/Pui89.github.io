@@ -15,8 +15,17 @@ function record(p,history){
  const bar=el("div","pui89-observatory__bar");bar.setAttribute("role","img");bar.setAttribute("aria-label",lang==="th"?"ความพร้อมเชิงพาณิชย์ "+p.score+"%":"Commercial readiness "+p.score+"%");
  const fill=el("span");fill.style.width=p.score+"%";bar.append(fill);card.append(bar);
  card.append(el("p","",t(p.summary)));
+ if(p.liveReport){
+  const live=el("div","pui89-observatory__meta");
+  live.append(el("span","pui89-observatory__chip",(lang==="th"?"หลักฐานครอบคลุม ":"Evidence coverage ")+p.liveReport.evidence_coverage_percent+"%"));
+  live.append(el("span","pui89-observatory__chip",(lang==="th"?"ความเชื่อมั่นจากความครอบคลุม: ":"Coverage-derived confidence: ")+p.liveReport.evidence_confidence_proxy));
+  live.append(el("span","pui89-observatory__chip",(lang==="th"?"การเชื่อมต่อ AI Core ที่ยืนยันแล้ว: ":"Shared AI Core verified: ")+p.liveReport.shared_ai_core_integration_percent+"%"));
+  live.append(el("span","pui89-observatory__chip",(lang==="th"?"ตรวจล่าสุด: ":"Report date: ")+p.liveReport.review_date));
+  live.append(el("span","pui89-observatory__chip",(lang==="th"?"รูปแบบความเสี่ยงที่ตรวจพบ: ":"Secret-pattern findings: ")+p.liveReport.security_review.secret_pattern_findings.length));
+  card.append(live);
+ }
  card.append(el("span","pui89-observatory__label",lang==="th"?"เป้าหมายถัดไป":"NEXT MILESTONE"));
- card.append(el("p","",t(p.next)));
+ card.append(el("p","",lang==="en"&&p.liveReport?p.liveReport.next_milestone:t(p.next)));
  card.append(el("span","pui89-observatory__label",lang==="th"?"หลักฐานและข้อจำกัด":"EVIDENCE & LIMITATIONS"));
  card.append(el("p","",t(p.evidence)));
  card.append(el("span","pui89-observatory__label",lang==="th"?"สิ่งที่ยังต้องทำ":"REMAINING BLOCKERS"));
@@ -85,7 +94,28 @@ function updateBadges(data){
   });
  }
 }
-fetch(DATA_URL,{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error("Progress data unavailable");return r.json();}).then(data=>{
+async function hydrate(data){
+ await Promise.all(data.projects.map(async p=>{
+  const base="https://raw.githubusercontent.com/"+p.repo+"/main/docs/";
+  try{
+   const response=await fetch(base+"project-health-latest.json",{cache:"no-store"});
+   if(response.ok){
+    const report=await response.json();p.liveReport=report;p.score=report.progress_percent;
+    p.stageLabel=report.progress_percent>=75?{en:"Advanced evidence stage",th:"หลักฐานอยู่ในขั้นก้าวหน้า"}:report.progress_percent>=50?{en:"Developing evidence stage",th:"กำลังพัฒนาหลักฐาน"}:report.progress_percent>=25?{en:"Foundation and prototype stage",th:"วางรากฐานและต้นแบบ"}:{en:"Early foundation stage",th:"ระยะวางรากฐานเริ่มต้น"};
+    if(report.review_date&&report.review_date>data.asOf)data.asOf=report.review_date;
+   }
+  }catch(_){ }
+  try{
+   const response=await fetch(base+"project-progress-history.json",{cache:"no-store"});
+   if(response.ok){
+    const history=await response.json();
+    if(Array.isArray(history)&&history.length)p.history=history.map(h=>({date:h.date,period:h.date.slice(0,7),score:h.score_percent,note:{en:"Evidence-led "+h.cadence+" review; coverage "+h.evidence_coverage_percent+"%.",th:"บันทึกทบทวนตามหลักฐาน รอบ"+h.cadence+" ครอบคลุมหลักฐาน "+h.evidence_coverage_percent+"%"}}));
+   }
+  }catch(_){ }
+ }));
+ return data;
+}
+fetch(DATA_URL,{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error("Progress data unavailable");return r.json();}).then(hydrate).then(data=>{
  document.querySelectorAll("[data-pui89-observatory]").forEach(root=>render(root,data));
  updateBadges(data);
 }).catch(()=>document.querySelectorAll("[data-pui89-observatory]").forEach(root=>{root.textContent=lang==="th"?"ไม่สามารถโหลดข้อมูลความคืบหน้าได้ในขณะนี้":"Progress data is temporarily unavailable.";root.classList.add("pui89-observatory__empty");}));
