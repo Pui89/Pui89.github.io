@@ -10,18 +10,15 @@
     { "action": "read", "resource": "**/*secret*", "effect": "deny" },
     { "action": "read", "resource": "**/*credential*", "effect": "deny" },
     { "action": "read", "resource": "**/*token*", "effect": "deny" },
+    { "action": "read", "resource": "**/*.pem", "effect": "deny" },
+    { "action": "read", "resource": "**/*.key", "effect": "deny" },
 
     { "action": "glob", "resource": "*", "effect": "allow" },
-    { "action": "grep", "resource": "*", "effect": "allow" },
     { "action": "question", "resource": "*", "effect": "allow" },
 
     { "action": "edit", "resource": "*", "effect": "ask" },
     { "action": "shell", "resource": "*", "effect": "ask" },
     { "action": "external_directory", "resource": "*", "effect": "deny" },
-    { "action": "webfetch", "resource": "*", "effect": "deny" },
-    { "action": "websearch", "resource": "*", "effect": "deny" },
-    { "action": "subagent", "resource": "*", "effect": "deny" },
-    { "action": "skill", "resource": "*", "effect": "deny" },
 
     { "action": "shell", "resource": "git push *", "effect": "deny" },
     { "action": "shell", "resource": "git commit *", "effect": "deny" },
@@ -31,11 +28,19 @@
     { "action": "shell", "resource": "sudo *", "effect": "deny" },
     { "action": "shell", "resource": "rm *", "effect": "deny" },
     { "action": "shell", "resource": "npm install *", "effect": "deny" },
+    { "action": "shell", "resource": "pnpm add *", "effect": "deny" },
+    { "action": "shell", "resource": "yarn add *", "effect": "deny" },
     { "action": "shell", "resource": "pip install *", "effect": "deny" },
+    { "action": "shell", "resource": "python -m pip *", "effect": "deny" },
     { "action": "shell", "resource": "uv add *", "effect": "deny" },
     { "action": "shell", "resource": "curl *", "effect": "deny" },
     { "action": "shell", "resource": "wget *", "effect": "deny" },
     { "action": "shell", "resource": "docker *", "effect": "deny" },
-    { "action": "shell", "resource": "ssh *", "effect": "deny" }
+    { "action": "shell", "resource": "ssh *", "effect": "deny" },
+
+    { "action": "webfetch", "resource": "*", "effect": "deny" },
+    { "action": "websearch", "resource": "*", "effect": "deny" },
+    { "action": "subagent", "resource": "*", "effect": "deny" },
+    { "action": "skill", "resource": "*", "effect": "deny" }
   ]
 }
