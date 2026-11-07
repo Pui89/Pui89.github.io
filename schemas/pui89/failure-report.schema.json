@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pui89.github.io/schemas/pui89/failure-report.schema.json",
+  "title": "PUI89 FailureReport",
+  "type": "object",
+  "x-pui89-contract-version": "0.1.0-draft",
+  "additionalProperties": false,
+  "properties": {
+    "failure_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reported_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "failure_mode": {
+      "type": "string",
+      "minLength": 1
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "info",
+        "low",
+        "medium",
+        "high",
+        "critical",
+        "unknown"
+      ]
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "affected_component": {
+      "type": "string"
+    },
+    "containment": {
+      "type": "string",
+      "minLength": 1
+    },
+    "recovery_recommendation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "unresolved_uncertainty": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "safe_state": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "not_confirmed",
+        "unknown"
+      ]
+    }
+  },
+  "required": [
+    "failure_id",
+    "reported_at",
+    "failure_mode",
+    "severity",
+    "evidence_refs",
+    "containment",
+    "recovery_recommendation",
+    "unresolved_uncertainty",
+    "safe_state"
+  ]
+}
