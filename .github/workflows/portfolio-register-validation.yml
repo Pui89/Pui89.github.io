@@ -4,7 +4,7 @@ on:
   pull_request:
     paths:
       - "docs/pui89-portfolio-evidence-register.json"
-      - "tools/validate_portfolio_register.py"
+      - "tools/validate_portfolio_register.py"\n      - "schemas/pui89/**"
       - ".github/workflows/portfolio-register-validation.yml"
   push:
     branches: [main]
