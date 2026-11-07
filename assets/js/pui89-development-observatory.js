@@ -64,13 +64,12 @@ function render(root,data){
  root.replaceChildren(section);
 }
 function updateBadges(data){
- data.projects.forEach(p=>{
-  document.querySelectorAll(".pui89-progress").forEach(b=>{
-   const aria=b.getAttribute("aria-label")||"";
-   const labels=[t(p.name),p.id,p.repo.split("/")[1]];
-   const page=document.querySelector('[data-project-id="'+p.id+'"]');
-   if(page && !b.dataset.progressScore){const score=el("span","pui89-progress__score",(lang==="th"?"ความพร้อมเชิงพาณิชย์ ":"Commercial readiness ")+p.score+"%");b.append(score);b.dataset.progressScore="true";}
-  });
+ document.querySelectorAll("[data-project-id]").forEach(root=>{
+  const p=data.projects.find(item=>item.id===root.dataset.projectId);
+  const badge=root.querySelector(".pui89-progress");
+  if(!p||!badge||badge.dataset.progressScore)return;
+  const score=el("span","pui89-progress__score",(lang==="th"?"ความพร้อมเชิงพาณิชย์ ":"Commercial readiness ")+p.score+"%");
+  badge.append(score);badge.dataset.progressScore="true";
  });
 }
 fetch(DATA_URL,{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error("Progress data unavailable");return r.json();}).then(data=>{
