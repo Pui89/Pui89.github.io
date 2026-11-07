@@ -17,3 +17,6 @@
  .pui89-progress__label{font-size:.64rem}
 }
 @media(prefers-reduced-motion:reduce){.pui89-progress *{scroll-behavior:auto}}
+
+.pui89-progress__score{font-size:.67rem;font-weight:800;color:#00D9FF;letter-spacing:.01em}
+.pui89-readiness-legend{margin-top:10px;padding:9px 12px;border-left:3px solid #00D9FF;background:rgba(0,217,255,.06);font-size:.88rem;line-height:1.55;color:inherit}
