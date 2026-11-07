@@ -369,3 +369,8 @@ Executable, offline-only OWL-ViT inference has been added to the seven project r
 | AI Robot Motorcycle | [Local OWL-ViT demo](https://github.com/Pui89/ai-robot-motorcycle/blob/docs/non-chinese-hf-model-catalogue/tools/huggingface_local_vision_demo.py) |
 
 **Integration status:** real model-loading and inference code is committed to the open PR branches; model weights were not downloaded, dependencies were not installed, and inference has not been executed. Each script uses local-only loading, requires safetensors, and records outputs as uncertain human-review observations. No model result authorizes physical actuation or a consequential decision. Project-specific limits are documented in each README.
+
+
+## PUI89 Efficient Engineering Standard
+
+All seven projects follow the proposed [PUI89 Efficient Engineering Standard](PUI89_EFFICIENT_ENGINEERING_STANDARD.md): resource-aware RAM/CPU use, electricity and battery efficiency, thermal management, storage, network, latency, software complexity, offline/edge resilience and lifecycle repairability. Performance claims require reproducible, comparable measurements. No paid services, purchases, hardware tests or rewrites are authorised by this standard. Physical power, battery and temperature claims remain unverified until measured with suitable equipment.
