@@ -15,8 +15,17 @@ function record(p,history){
  const bar=el("div","pui89-observatory__bar");bar.setAttribute("role","img");bar.setAttribute("aria-label",lang==="th"?"ความพร้อมเชิงพาณิชย์ "+p.score+"%":"Commercial readiness "+p.score+"%");
  const fill=el("span");fill.style.width=p.score+"%";bar.append(fill);card.append(bar);
  card.append(el("p","",t(p.summary)));
+ if(p.liveReport){
+  const live=el("div","pui89-observatory__meta");
+  live.append(el("span","pui89-observatory__chip",(lang==="th"?"หลักฐานครอบคลุม ":"Evidence coverage ")+p.liveReport.evidence_coverage_percent+"%"));
+  live.append(el("span","pui89-observatory__chip",(lang==="th"?"ความเชื่อมั่นจากความครอบคลุม: ":"Coverage-derived confidence: ")+p.liveReport.evidence_confidence_proxy));
+  live.append(el("span","pui89-observatory__chip",(lang==="th"?"การเชื่อมต่อ AI Core ที่ยืนยันแล้ว: ":"Shared AI Core verified: ")+p.liveReport.shared_ai_core_integration_percent+"%"));
+  live.append(el("span","pui89-observatory__chip",(lang==="th"?"ตรวจล่าสุด: ":"Report date: ")+p.liveReport.review_date));
+  live.append(el("span","pui89-observatory__chip",(lang==="th"?"รูปแบบความเสี่ยงที่ตรวจพบ: ":"Secret-pattern findings: ")+p.liveReport.security_review.secret_pattern_findings.length));
+  card.append(live);
+ }
  card.append(el("span","pui89-observatory__label",lang==="th"?"เป้าหมายถัดไป":"NEXT MILESTONE"));
- card.append(el("p","",t(p.next)));
+ card.append(el("p","",lang==="en"&&p.liveReport?p.liveReport.next_milestone:t(p.next)));
  card.append(el("span","pui89-observatory__label",lang==="th"?"หลักฐานและข้อจำกัด":"EVIDENCE & LIMITATIONS"));
  card.append(el("p","",t(p.evidence)));
  card.append(el("span","pui89-observatory__label",lang==="th"?"สิ่งที่ยังต้องทำ":"REMAINING BLOCKERS"));
