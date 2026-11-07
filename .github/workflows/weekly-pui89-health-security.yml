@@ -1,0 +1,40 @@
+name: PUI89 Weekly Health and Security Report
+
+on:
+  schedule:
+    - cron: "0 10 * * 0" # Sunday 17:00 Asia/Bangkok
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: pui89-weekly-health-security
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out website repository
+        uses: actions/checkout@v4
+      - name: Generate portfolio health report
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/pui89_weekly_health_report.py
+      - name: Open or update review pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ github.token }}
+          branch: automation/weekly-health-security-report
+          delete-branch: false
+          commit-message: "chore: update weekly PUI89 health and security report"
+          title: "Weekly PUI89 health and security report"
+          body: |
+            Automated, read-only portfolio health and security snapshot.
+            Review findings and evidence before merging. No project repositories or settings are modified.
+          add-paths: |
+            reports/weekly-health-security-latest.md
+            reports/weekly-health-security-latest.json
