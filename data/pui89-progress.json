@@ -1,0 +1,357 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-11-07",
+  "title": {
+    "en": "PUI89 Development Observatory",
+    "th": "ศูนย์ติดตามการพัฒนา PUI89"
+  },
+  "method": {
+    "en": "Commercial-readiness estimate, not code completion or a sales forecast. 100% requires an appropriately scoped release candidate, reproducible performance and reliability evidence, applicable safety and real-world validation, verified rights and regulatory checks, plus documentation, deployment/manufacturing, pricing, warranty, maintenance and support.",
+    "th": "คะแนนประเมินความพร้อมเชิงพาณิชย์ ไม่ใช่เปอร์เซ็นต์ความสมบูรณ์ของโค้ดหรือการคาดการณ์ยอดขาย 100% ต้องมีผลิตภัณฑ์รุ่นพร้อมปล่อย หลักฐานประสิทธิภาพและความน่าเชื่อถือที่ทำซ้ำได้ การตรวจสอบความปลอดภัยและโลกจริง สิทธิ์และกฎระเบียบที่เกี่ยวข้อง รวมถึงเอกสาร การผลิต/ติดตั้ง ราคา การรับประกัน การบำรุงรักษา และการสนับสนุน"
+  },
+  "weights": [
+    {
+      "en": "Product purpose & requirements",
+      "th": "วัตถุประสงค์และข้อกำหนดผลิตภัณฑ์",
+      "weight": 10
+    },
+    {
+      "en": "Architecture & engineering design",
+      "th": "สถาปัตยกรรมและการออกแบบวิศวกรรม",
+      "weight": 10
+    },
+    {
+      "en": "Working software baseline",
+      "th": "พื้นฐานซอฟต์แวร์ที่ทำงานได้",
+      "weight": 15
+    },
+    {
+      "en": "Reproducible tests & evaluation",
+      "th": "การทดสอบและประเมินผลที่ทำซ้ำได้",
+      "weight": 15
+    },
+    {
+      "en": "Integrated product prototype",
+      "th": "ต้นแบบผลิตภัณฑ์ที่บูรณาการแล้ว",
+      "weight": 15
+    },
+    {
+      "en": "Safety, reliability & real-world validation",
+      "th": "ความปลอดภัย ความน่าเชื่อถือ และการตรวจสอบในโลกจริง",
+      "weight": 15
+    },
+    {
+      "en": "Licensing, IP & regulatory readiness",
+      "th": "สิทธิ์ทรัพย์สินทางปัญญาและความพร้อมด้านกฎระเบียบ",
+      "weight": 10
+    },
+    {
+      "en": "Commercial release & support",
+      "th": "การปล่อยผลิตภัณฑ์เชิงพาณิชย์และการสนับสนุน",
+      "weight": 10
+    }
+  ],
+  "projects": [
+    {
+      "id": "coconut",
+      "number": 1,
+      "name": {
+        "en": "Coconut Harvest AI",
+        "th": "Coconut Harvest AI"
+      },
+      "repo": "Pui89/Coconut-Harvest-AI",
+      "score": 50,
+      "stage": 2,
+      "stageLabel": {
+        "en": "Software prototype",
+        "th": "ต้นแบบซอฟต์แวร์"
+      },
+      "summary": {
+        "en": "Software and evaluation-preparation work is documented. Real-world detector accuracy and the physical harvesting system are not yet validated.",
+        "th": "มีหลักฐานงานซอฟต์แวร์และการเตรียมประเมินผล แต่ยังไม่ยืนยันความแม่นยำจากข้อมูลจริงหรือระบบเก็บเกี่ยวทางกายภาพ"
+      },
+      "next": {
+        "en": "Establish a rights-checked real-image dataset and reproducible held-out detector evaluation.",
+        "th": "จัดทำชุดภาพจริงที่ตรวจสอบสิทธิ์แล้ว และประเมินโมเดลด้วยชุดทดสอบที่แยกไว้และทำซ้ำได้"
+      },
+      "evidence": {
+        "en": "Documented software tests, benchmark preparation and dataset audit notes; no approved training dataset or validated field detector.",
+        "th": "มีบันทึกการทดสอบซอฟต์แวร์ การเตรียม benchmark และตรวจสอบชุดข้อมูล แต่ยังไม่มีชุดฝึกที่อนุมัติหรือโมเดลที่ผ่านการทดสอบภาคสนาม"
+      },
+      "blockers": {
+        "en": "Dataset rights and quality, held-out accuracy, harvesting mechanism, worker/animal safety and field validation.",
+        "th": "สิทธิ์และคุณภาพข้อมูล ความแม่นยำชุดทดสอบ กลไกเก็บเกี่ยว ความปลอดภัยต่อคนและสัตว์ และการทดสอบภาคสนาม"
+      },
+      "history": [
+        {
+          "period": "2026-11",
+          "date": "2026-11-07",
+          "score": 50,
+          "type": "baseline",
+          "note": {
+            "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
+            "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "flood-rescue",
+      "number": 2,
+      "name": {
+        "en": "Extreme Flood Rescue AI",
+        "th": "Extreme Flood Rescue AI"
+      },
+      "repo": "Pui89/Extreme-Flood-Rescue-AI",
+      "score": 46,
+      "stage": 2,
+      "stageLabel": {
+        "en": "Software + simulation prototype",
+        "th": "ต้นแบบซอฟต์แวร์และการจำลอง"
+      },
+      "summary": {
+        "en": "Software decision-support, safety gates and synthetic scenarios are documented; flood physics, navigation and rescue capability are not physically validated.",
+        "th": "มีระบบช่วยตัดสินใจ ซอฟต์แวร์ safety gates และสถานการณ์จำลอง แต่ยังไม่ยืนยันฟิสิกส์น้ำท่วม การนำทาง หรือสมรรถนะกู้ภัยจริง"
+      },
+      "next": {
+        "en": "Define reproducible, physics-grounded flood scenarios and measurable rescue-system acceptance tests.",
+        "th": "กำหนดสถานการณ์น้ำท่วมที่อิงฟิสิกส์และทำซ้ำได้ พร้อมเกณฑ์ทดสอบระบบกู้ภัยที่วัดผลได้"
+      },
+      "evidence": {
+        "en": "Documented software checks and synthetic simulation scenarios; no validated physical rescue platform.",
+        "th": "มีการตรวจสอบซอฟต์แวร์และสถานการณ์จำลองสังเคราะห์ แต่ยังไม่มีแพลตฟอร์มกู้ภัยทางกายภาพที่ผ่านการตรวจสอบ"
+      },
+      "blockers": {
+        "en": "Validated water/terrain model, buoyancy, current resistance, navigation, communications, rescue safety and field trials.",
+        "th": "แบบจำลองน้ำและภูมิประเทศที่ตรวจสอบแล้ว การลอยตัว การต้านกระแสน้ำ การนำทาง การสื่อสาร ความปลอดภัย และการทดสอบภาคสนาม"
+      },
+      "history": [
+        {
+          "period": "2026-11",
+          "date": "2026-11-07",
+          "score": 46,
+          "type": "baseline",
+          "note": {
+            "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
+            "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sentinel",
+      "number": 3,
+      "name": {
+        "en": "Multimodal Narcotics Screening AI / Sentinel",
+        "th": "Multimodal Narcotics Screening AI / Sentinel"
+      },
+      "repo": "Pui89/Multimodal-Narcotics-Screening-AI",
+      "score": 45,
+      "stage": 2,
+      "stageLabel": {
+        "en": "Software workflow prototype",
+        "th": "ต้นแบบกระบวนการซอฟต์แวร์"
+      },
+      "summary": {
+        "en": "A human-supervised screening workflow and synthetic evaluation work are documented. Substance identification accuracy, sensor integration and robotic deployment are not validated.",
+        "th": "มีหลักฐานกระบวนการตรวจสอบภายใต้การกำกับของมนุษย์และการประเมินแบบสังเคราะห์ แต่ยังไม่ยืนยันความแม่นยำการระบุสาร การเชื่อมต่อเซนเซอร์ หรือหุ่นยนต์"
+      },
+      "next": {
+        "en": "Define lawful, rights-cleared representative test data and modality-specific evaluation with human review.",
+        "th": "กำหนดข้อมูลทดสอบที่ถูกต้องตามกฎหมายและสิทธิ์ พร้อมประเมินแต่ละโมดัลลิตีภายใต้การทบทวนโดยมนุษย์"
+      },
+      "evidence": {
+        "en": "Documented software workflow and synthetic scenarios; no verified X-ray/chemical sensor integration or field accuracy.",
+        "th": "มีหลักฐานกระบวนการซอฟต์แวร์และสถานการณ์สังเคราะห์ แต่ยังไม่มีการเชื่อมต่อ X-ray/เซนเซอร์เคมีหรือความแม่นยำภาคสนามที่ยืนยันแล้ว"
+      },
+      "blockers": {
+        "en": "Lawful datasets, calibrated sensor evidence, false-positive/negative analysis, human oversight and regulatory review.",
+        "th": "ชุดข้อมูลที่ถูกต้อง การสอบเทียบเซนเซอร์ การวิเคราะห์ผลบวกลวง/ลบลวง การกำกับโดยมนุษย์ และการทบทวนกฎระเบียบ"
+      },
+      "history": [
+        {
+          "period": "2026-11",
+          "date": "2026-11-07",
+          "score": 45,
+          "type": "baseline",
+          "note": {
+            "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
+            "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ai-home",
+      "number": 4,
+      "name": {
+        "en": "PUI89 AI HOME",
+        "th": "PUI89 AI HOME"
+      },
+      "repo": "Pui89/AI-HOME",
+      "score": 28,
+      "stage": 1,
+      "stageLabel": {
+        "en": "Foundation & concept",
+        "th": "วางรากฐานและแนวคิด"
+      },
+      "summary": {
+        "en": "Product requirements, software contracts and early adapter/test foundations are documented. No physical robot or validated home-safety performance is established.",
+        "th": "มีข้อกำหนดผลิตภัณฑ์ สัญญาซอฟต์แวร์ และพื้นฐาน adapter/test ระยะแรก แต่ยังไม่มีหุ่นยนต์จริงหรือผลทดสอบความปลอดภัยในบ้านที่ยืนยันแล้ว"
+      },
+      "next": {
+        "en": "Complete a software-only home-safety demonstrator using documented mock sensor inputs and explicit failure states.",
+        "th": "ทำตัวอย่างซอฟต์แวร์ความปลอดภัยในบ้านโดยใช้ข้อมูลเซนเซอร์จำลอง พร้อมระบุสถานะความล้มเหลวอย่างชัดเจน"
+      },
+      "evidence": {
+        "en": "Early requirements, architecture and software foundations; no hardware is currently available for a physical prototype.",
+        "th": "มีข้อกำหนด สถาปัตยกรรม และพื้นฐานซอฟต์แวร์ระยะแรก ปัจจุบันยังไม่มีฮาร์ดแวร์สำหรับต้นแบบทางกายภาพ"
+      },
+      "blockers": {
+        "en": "Working software demonstrator, real sensor integration, alarm safety, reliability testing and later physical validation.",
+        "th": "ตัวอย่างซอฟต์แวร์ที่ทำงานได้ การเชื่อมต่อเซนเซอร์จริง ความปลอดภัยของการแจ้งเตือน การทดสอบความน่าเชื่อถือ และการตรวจสอบทางกายภาพในอนาคต"
+      },
+      "history": [
+        {
+          "period": "2026-11",
+          "date": "2026-11-07",
+          "score": 28,
+          "type": "baseline",
+          "note": {
+            "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
+            "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ai-nomad",
+      "number": 5,
+      "name": {
+        "en": "PUI89 AI NOMAD",
+        "th": "PUI89 AI NOMAD"
+      },
+      "repo": "Pui89/AI-NOMAD",
+      "score": 30,
+      "stage": 1,
+      "stageLabel": {
+        "en": "Foundation & concept",
+        "th": "วางรากฐานและแนวคิด"
+      },
+      "summary": {
+        "en": "Concept requirements, architecture and early deterministic software foundations are documented. No built robot, validated mobility or environmental protection is established.",
+        "th": "มีข้อกำหนดแนวคิด สถาปัตยกรรม และพื้นฐานซอฟต์แวร์แบบ deterministic แต่ยังไม่มีหุ่นยนต์จริง การเคลื่อนที่หรือการป้องกันสภาพแวดล้อมที่ผ่านการทดสอบ"
+      },
+      "next": {
+        "en": "Complete a software-only mission and hazard-state demonstrator; keep locomotion and outdoor protection as unvalidated requirements.",
+        "th": "ทำตัวอย่างซอฟต์แวร์จำลองภารกิจและสถานะอันตราย โดยระบุว่าการเคลื่อนที่และการป้องกันกลางแจ้งยังไม่ผ่านการตรวจสอบ"
+      },
+      "evidence": {
+        "en": "Documented concept and software foundation; no physical robot or field tests.",
+        "th": "มีเอกสารแนวคิดและพื้นฐานซอฟต์แวร์ แต่ยังไม่มีหุ่นยนต์จริงหรือการทดสอบภาคสนาม"
+      },
+      "blockers": {
+        "en": "Integrated prototype, mobility/endurance evidence, weather protection, sensor reliability, safety and field trials.",
+        "th": "ต้นแบบที่บูรณาการแล้ว หลักฐานการเคลื่อนที่และความทนทาน การป้องกันสภาพอากาศ ความน่าเชื่อถือเซนเซอร์ ความปลอดภัย และการทดสอบภาคสนาม"
+      },
+      "history": [
+        {
+          "period": "2026-11",
+          "date": "2026-11-07",
+          "score": 30,
+          "type": "baseline",
+          "note": {
+            "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
+            "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "robot-car",
+      "number": 6,
+      "name": {
+        "en": "PUI89 AI Robot Car",
+        "th": "PUI89 AI Robot Car"
+      },
+      "repo": "Pui89/ai-robot-car",
+      "score": 29,
+      "stage": 1,
+      "stageLabel": {
+        "en": "Early software foundation",
+        "th": "พื้นฐานซอฟต์แวร์ระยะแรก"
+      },
+      "summary": {
+        "en": "Research requirements and an initial software-only safety/contract scaffold are documented. No vehicle integration, road testing or certification is established.",
+        "th": "มีข้อกำหนดวิจัยและโครงสร้างซอฟต์แวร์ด้าน safety/contract ระยะแรก แต่ยังไม่มีการติดตั้งในรถ การทดสอบบนถนน หรือการรับรอง"
+      },
+      "next": {
+        "en": "Build a software-only hazard-awareness demonstrator with traceable mock observations and human-driver decision boundaries.",
+        "th": "สร้างตัวอย่างซอฟต์แวร์รับรู้ความเสี่ยงโดยใช้ข้อมูลจำลองที่ตรวจสอบย้อนกลับได้ และกำหนดขอบเขตการตัดสินใจของผู้ขับขี่"
+      },
+      "evidence": {
+        "en": "Early software scaffold and documented requirements; the human driver remains responsible for driving.",
+        "th": "มีโครงสร้างซอฟต์แวร์ระยะแรกและข้อกำหนด โดยผู้ขับขี่ยังคงรับผิดชอบการขับรถ"
+      },
+      "blockers": {
+        "en": "Validated vehicle signals, robust hazard evaluation, functional safety, integration, controlled testing and applicable approvals.",
+        "th": "สัญญาณรถที่ผ่านการตรวจสอบ การประเมินอันตรายที่ทนทาน ความปลอดภัยเชิงหน้าที่ การบูรณาการ การทดสอบแบบควบคุม และการอนุมัติที่เกี่ยวข้อง"
+      },
+      "history": [
+        {
+          "period": "2026-11",
+          "date": "2026-11-07",
+          "score": 29,
+          "type": "baseline",
+          "note": {
+            "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
+            "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "motorcycle",
+      "number": 7,
+      "name": {
+        "en": "PUI89 EasyRide AI Motorcycle",
+        "th": "PUI89 EasyRide AI Motorcycle"
+      },
+      "repo": "Pui89/ai-robot-motorcycle",
+      "score": 28,
+      "stage": 1,
+      "stageLabel": {
+        "en": "Concept & engineering foundation",
+        "th": "แนวคิดและพื้นฐานวิศวกรรม"
+      },
+      "summary": {
+        "en": "Rider-centred requirements and early engineering/software research are documented. No functioning motorcycle, rider trials or road certification is established.",
+        "th": "มีข้อกำหนดที่คำนึงถึงผู้ขับขี่และงานวิจัยวิศวกรรม/ซอฟต์แวร์ระยะแรก แต่ยังไม่มีรถที่ทำงานได้ การทดสอบผู้ขับขี่ หรือการรับรองบนถนน"
+      },
+      "next": {
+        "en": "Complete a safety-led vehicle requirements and hazard-analysis baseline before any physical design or build.",
+        "th": "จัดทำข้อกำหนดยานยนต์และการวิเคราะห์อันตรายที่ให้ความสำคัญกับความปลอดภัยให้ครบก่อนออกแบบหรือสร้างจริง"
+      },
+      "evidence": {
+        "en": "Concept and early engineering foundation only; no roadworthy prototype or validated rider-safety evidence.",
+        "th": "มีเพียงแนวคิดและพื้นฐานวิศวกรรมระยะแรก ยังไม่มีต้นแบบที่พร้อมใช้บนถนนหรือหลักฐานความปลอดภัยผู้ขับขี่ที่ผ่านการตรวจสอบ"
+      },
+      "blockers": {
+        "en": "Vehicle architecture, stability/braking evidence, ergonomic validation, functional safety, rider trials and regulatory approval.",
+        "th": "สถาปัตยกรรมรถ หลักฐานเสถียรภาพ/เบรก การตรวจสอบสรีรศาสตร์ ความปลอดภัยเชิงหน้าที่ การทดสอบผู้ขับขี่ และการอนุมัติตามกฎระเบียบ"
+      },
+      "history": [
+        {
+          "period": "2026-11",
+          "date": "2026-11-07",
+          "score": 28,
+          "type": "baseline",
+          "note": {
+            "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
+            "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
+          }
+        }
+      ]
+    }
+  ]
+}
