@@ -323,7 +323,7 @@ Preferred approach:
 - Structured JSON/CSV reports, hashes, versioned manifests, and clear experiment records.
 - Local-first workflows and optional model runtimes only after resource and licence checks.
 
-No paid API, cloud GPU, subscription, hosted inference service, automatic model download, or recurring-resource requirements commitment should be introduced without explicit approval. Free tiers can have limits and changing terms. Open-source software does not automatically make model weights or datasets unrestricted; check each licence and data-use condition.
+No paid API, cloud GPU, subscription, hosted inference service, automatic model download, or recurring-resource requirements commitment should be introduced without explicit approval. Hosted service plans can have usage limits and changing terms. Open-source software does not automatically make model weights or datasets unrestricted; check each licence and data-use condition.
 
 ---
 
