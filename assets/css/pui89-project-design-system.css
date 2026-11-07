@@ -1,0 +1,27 @@
+/* PUI89 Premium Digital System — v1.0
+   Shared visual layer for all English and Thai portfolio, project and corporate pages.
+   CSS-only; no scripts, external fonts, packages, APIs or hosted services. */
+:root{--pui89-deep-navy:#071426;--pui89-electric-cyan:#00D9FF;--pui89-teal:#00AFA5;--pui89-technology-blue:#176BCE;--pui89-research-green:#43B581;--pui89-titanium-silver:#C5D0DC;--pui89-soft-white:#F7FBFF;--pui89-project-accent:var(--accent,var(--pui89-electric-cyan))}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{color:#F2F7FC;background:radial-gradient(ellipse at 84% -12%,color-mix(in srgb,var(--pui89-project-accent) 13%,transparent),transparent 38%),radial-gradient(ellipse at 4% 54%,rgba(23,107,206,.09),transparent 36%),#071426!important;font-family:Inter,"Noto Sans Thai",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.72;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+a{color:var(--pui89-project-accent);text-underline-offset:4px;text-decoration-thickness:.08em}a:hover{color:#A8F4FF}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--pui89-electric-cyan)!important;outline-offset:4px;border-radius:5px}
+.wrap{width:min(1200px,calc(100% - 40px));margin-inline:auto}
+.nav{gap:clamp(12px,2vw,24px);border-bottom:1px solid rgba(197,208,220,.18)!important;padding-block:16px}
+.brand{font-weight:850;letter-spacing:.035em;color:#F7FBFF!important}
+.hero{position:relative}.hero h1{font-size:clamp(2.15rem,5vw,4.35rem);line-height:1.08;letter-spacing:-.035em;text-wrap:balance}
+.hero p,.lead,.intro{max-width:74ch;line-height:1.82;color:#B8C7D8}
+.eyebrow,.kicker,.num{color:var(--pui89-project-accent)}.section-head{margin-bottom:18px}.grid{gap:clamp(14px,2vw,22px)}
+.card,.panel,.callout,.notice,.visual,.art{border:1px solid rgba(197,208,220,.17);border-radius:18px}
+.card,.panel{background:linear-gradient(145deg,rgba(17,38,64,.96),rgba(10,26,45,.96));box-shadow:0 12px 34px rgba(0,0,0,.18),inset 0 1px 0 rgba(255,255,255,.025)}
+.card{padding:clamp(18px,2.4vw,26px)}.card h2,.card h3,.panel h2,.panel h3{color:#F7FBFF;letter-spacing:-.015em}.card p,.panel p{color:#B8C7D8}
+.tag,.pill{display:inline-flex;align-items:center;gap:6px;border:1px solid color-mix(in srgb,var(--pui89-project-accent) 38%,transparent);border-radius:999px;padding:5px 10px;background:color-mix(in srgb,var(--pui89-project-accent) 9%,transparent);color:#EAFBFF;font-size:.78rem;font-weight:650}
+.status,.notice,.callout{background:rgba(0,217,255,.055);border-color:rgba(0,217,255,.24);color:#DCECF7}
+.btn,button{transition:transform .18s ease,border-color .18s ease,background-color .18s ease}.btn{border-radius:11px;font-weight:700;text-decoration:none}
+.btn.primary,.primary{background:var(--pui89-project-accent)!important;border-color:var(--pui89-project-accent)!important;color:#071426!important;box-shadow:0 8px 24px color-mix(in srgb,var(--pui89-project-accent) 17%,transparent)}.btn:hover,button:hover{transform:translateY(-1px)}
+table{width:100%;border-collapse:collapse}th,td{padding:11px 13px;border-bottom:1px solid rgba(197,208,220,.14);text-align:left;vertical-align:top}th{color:#EAF6FF;background:rgba(255,255,255,.035);font-weight:700}td{color:#C5D0DC}
+code,pre,.mono,.technical{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Consolas,monospace}img,svg,video{max-width:100%;height:auto}
+footer{border-color:rgba(197,208,220,.16)!important;color:#AFC0D2}.pui89-progress{border-color:color-mix(in srgb,var(--pui89-project-accent) 45%,transparent)}.pui89-progress__eyebrow{color:var(--pui89-project-accent)}
+@media(max-width:760px){.wrap{width:min(100% - 28px,1200px)}.nav{align-items:flex-start;gap:10px;padding-block:13px}.hero h1{font-size:clamp(2rem,9vw,3.1rem)}.grid{grid-template-columns:1fr}table{display:block;overflow-x:auto;white-space:normal}.pui89-progress--hero{position:relative;inset:auto;width:min(100%,280px);margin:0 0 16px auto}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+body[data-pui89-project="coconut"]{--pui89-project-accent:#43B581}body[data-pui89-project="flood"]{--pui89-project-accent:#176BCE}body[data-pui89-project="screening"]{--pui89-project-accent:#00D9FF}body[data-pui89-project="home"]{--pui89-project-accent:#00AFA5}body[data-pui89-project="nomad"]{--pui89-project-accent:#00D9FF}body[data-pui89-project="car"]{--pui89-project-accent:#176BCE}body[data-pui89-project="motorcycle"]{--pui89-project-accent:#00D9FF}body[data-pui89-project="core"]{--pui89-project-accent:#00D9FF}body[data-pui89-project="vehicles"]{--pui89-project-accent:#176BCE}body[data-pui89-project="portfolio"],body[data-pui89-project="corporate"]{--pui89-project-accent:#00D9FF}
