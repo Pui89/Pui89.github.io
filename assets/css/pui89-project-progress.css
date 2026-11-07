@@ -20,3 +20,36 @@
 
 .pui89-progress__score{font-size:.67rem;font-weight:800;color:#00D9FF;letter-spacing:.01em}
 .pui89-readiness-legend{margin-top:10px;padding:9px 12px;border-left:3px solid #00D9FF;background:rgba(0,217,255,.06);font-size:.88rem;line-height:1.55;color:inherit}
+
+
+/* 2026-11-07 visibility fix: keep project readiness inside the card flow,
+   with an explicit percentage bar instead of overlaying the project artwork. */
+.pui89-progress--card{
+  position:relative;
+  inset:auto;
+  display:flex;
+  width:100%;
+  max-width:none;
+  margin:0 0 16px;
+  padding:11px 13px;
+  border-radius:11px;
+}
+.pui89-progress__bar{
+  display:block;
+  width:100%;
+  height:8px;
+  overflow:hidden;
+  margin-top:5px;
+  border-radius:99px;
+  background:#30445F;
+}
+.pui89-progress__bar-fill{
+  display:block;
+  height:100%;
+  border-radius:99px;
+  background:linear-gradient(90deg,#00AFA5,#00D9FF);
+  box-shadow:0 0 9px rgba(0,217,255,.3);
+}
+@media(max-width:640px){
+  .pui89-progress--card{width:100%;max-width:none;margin-bottom:14px}
+}
