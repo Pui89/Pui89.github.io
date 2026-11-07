@@ -20,7 +20,7 @@ PUI89 brings together domain knowledge, independent software development, applie
 
 ![PUI89 Precision Glow 01 primary logo](images/pui89-precision-glow-01.svg)
 
-**Selected identity:** Precision Glow 01 — the PUI89 abstract N symbol with a refined emerald wordmark and controlled glow.
+**Selected identity:** Precision Glow 01 — a bold geometric N with square-cut ends, a controlled electric-cyan diagonal core and a matching cyan wordmark. The corporate palette is Deep Navy, Electric Cyan and Titanium Silver.
 
 Logo assets:
 - [Precision Glow 01 website logo](images/pui89-precision-glow-01.svg)
@@ -59,9 +59,9 @@ Coconut's merged dataset audit also passed 15 checks across dataset structure, i
 
 PUI89 projects follow one zero-cost, evidence-first AI engineering strategy, with shared interfaces and validation tailored to each domain. Read the [PUI89 World-Class AI Blueprint](PUI89_WORLD_CLASS_AI_BLUEPRINT.md) for the shared AI Core, approved technology direction, automation boundaries, product-specific priorities, quality gates and staged roadmap.
 
-## Six-project portfolio
+## Seven-project portfolio
 
-PUI89's portfolio contains exactly six projects. The single project directory and all 12 bilingual project website links appear in the consolidated table in [Project links](#11-project-directory-and-website-links) below.
+PUI89's portfolio contains exactly seven projects. The single project directory and all 14 bilingual project website links appear in the consolidated table in [Project links](#11-project-directory-and-website-links) below.
 
 The car and motorcycle are early-stage research concepts, not built, road-tested, road-certified or validated vehicles. Their project pages and repository READMEs distinguish design intent from demonstrated evidence.
 
@@ -288,7 +288,7 @@ PUI89 welcomes:
 - Agricultural researchers, growers, and potential pilot partners.
 - Disaster-response and humanitarian domain experts.
 - Responsible sensing and screening specialists.
-- Open-source contributors, in-kind technical support, and relevant sponsorship or grant introductions.
+- Technical contributors, in-kind support, and relevant sponsorship or grant introductions.
 
 Useful collaboration should be tied to a clear milestone: for example, dataset review, an independent annotation audit, a reproducible benchmark, a simulator scenario, a hardware feasibility study, or a supervised pilot.
 
@@ -307,7 +307,7 @@ PUI89 is currently an initiative and project identity in development. This READM
 
 ---
 
-## 10. Free-first and responsible technology policy
+## 10. Technology governance and responsible engineering policy
 
 PUI89 prioritises useful, reproducible engineering and avoids unnecessary recurring costs.
 
@@ -325,14 +325,15 @@ No paid API, cloud GPU, subscription, hosted inference service, automatic model 
 
 ## 11. Project directory and website links
 
-This is the **single source of truth** for the six projects and their 12 project websites. Each project appears once; its repository, English page, and Thai page are grouped on the same row.
+This is the **single source of truth** for the seven projects and their 14 project websites. Each project appears once; its repository, English page, and Thai page are grouped on the same row.
 
-| Project (6 total) | GitHub repository | English website | Thai website |
+| Project (7 total) | GitHub repository | English website | Thai website |
 |---|---|---|---|
 | Coconut Harvest AI | [Repository](https://github.com/Pui89/Coconut-Harvest-AI) | [English](https://pui89.github.io/coconut.html) | [Thai](https://pui89.github.io/coconut-th.html) |
 | Extreme Flood Rescue AI | [Repository](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | [English](https://pui89.github.io/flood-rescue.html) | [Thai](https://pui89.github.io/flood-rescue-th.html) |
 | Multimodal Narcotics Screening AI | [Repository](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | [English](https://pui89.github.io/screening.html) | [Thai](https://pui89.github.io/screening-th.html) |
 | PUI89 AI HOME — Intelligent Home Assistant Robot | [Repository](https://github.com/Pui89/AI-HOME) | [English](https://pui89.github.io/home.html) | [Thai](https://pui89.github.io/home-th.html) |
+| PUI89 AI NOMAD — Mobile Assistant Robot | [Repository](https://github.com/Pui89/AI-NOMAD) | [English](https://pui89.github.io/homeguard.html) | [Thai](https://pui89.github.io/homeguard-th.html) |
 | PUI89 AI Robot Car | [Repository](https://github.com/Pui89/ai-robot-car) | [English](https://pui89.github.io/ai-robot-car.html) | [Thai](https://pui89.github.io/ai-robot-car-th.html) |
 | PUI89 AI Robot Motorcycle — EasyRide | [Repository](https://github.com/Pui89/ai-robot-motorcycle) | [English](https://pui89.github.io/ai-robot-motorcycle.html) | [Thai](https://pui89.github.io/ai-robot-motorcycle-th.html) |
 
@@ -358,9 +359,9 @@ Concept images are illustrations, not operational evidence. Synthetic fixtures a
 
 **PUI89's commitment is to build carefully, test transparently, report limitations honestly, and advance from software foundations toward real-world applications only when evidence justifies the next step.**
 
-## Real Hugging Face model integrations
+## Proposed local OWL-ViT evaluation integrations — not yet executed
 
-Executable, offline-only OWL-ViT inference has been added to the seven project repositories using the real checkpoint [google/owlvit-base-patch32](https://huggingface.co/google/owlvit-base-patch32) (Apache-2.0 model-card licence). Each project has domain-specific candidate labels, a local-image inference script, JSON evidence output and standard-library report-contract tests. The checkpoint is pinned to `cbc355fb364588351c5d51c7f74465e8e7ec6f72`; its safetensors weights are approximately 613 MB.
+Offline-only OWL-ViT inference code is present on open project branches for evaluation using the checkpoint [google/owlvit-base-patch32](https://huggingface.co/google/owlvit-base-patch32) (Apache-2.0 model-card licence). Each project has domain-specific candidate labels, a local-image inference script, JSON evidence output and standard-library report-contract tests. The checkpoint is pinned to `cbc355fb364588351c5d51c7f74465e8e7ec6f72`; its safetensors weights are approximately 613 MB.
 
 | Project | Model integration code |
 |---|---|
@@ -372,7 +373,7 @@ Executable, offline-only OWL-ViT inference has been added to the seven project r
 | AI Robot Car | [Local OWL-ViT demo](https://github.com/Pui89/ai-robot-car/blob/docs/non-chinese-hf-model-catalogue/tools/huggingface_local_vision_demo.py) |
 | AI Robot Motorcycle | [Local OWL-ViT demo](https://github.com/Pui89/ai-robot-motorcycle/blob/docs/non-chinese-hf-model-catalogue/tools/huggingface_local_vision_demo.py) |
 
-**Integration status:** real model-loading and inference code is committed to the open PR branches; model weights were not downloaded, dependencies were not installed, and inference has not been executed. Each script uses local-only loading, requires safetensors, and records outputs as uncertain human-review observations. No model result authorizes physical actuation or a consequential decision. Project-specific limits are documented in each README.
+**Integration status:** model-loading and inference code is present on open pull-request branches; these changes are not yet merged to the default branches. Model weights were not downloaded, dependencies were not installed, and inference has not been executed. Each script uses local-only loading, requires safetensors, and records outputs as uncertain human-review observations. No model result authorizes physical actuation or a consequential decision. Project-specific limits are documented in each README.
 
 
 ## PUI89 Efficient Engineering Standard
