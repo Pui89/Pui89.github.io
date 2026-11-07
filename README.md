@@ -1,5 +1,9 @@
 # PUI89 AI Robotics
 
+## PUI89 main website QR codes
+
+<table><tr><td align="center"><strong>English main website</strong><br><a href="https://pui89.github.io/"><img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&amp;format=png&amp;data=https%3A%2F%2Fpui89.github.io%2F" width="180" alt="QR code linking to the PUI89 English main website"></a><br><a href="https://pui89.github.io/">Open PUI89 English homepage</a></td><td align="center"><strong>เว็บไซต์หลักภาษาไทย</strong><br><a href="https://pui89.github.io/th.html"><img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&amp;format=png&amp;data=https%3A%2F%2Fpui89.github.io%2Fth.html" width="180" alt="QR Code linking to the PUI89 Thai main website"></a><br><a href="https://pui89.github.io/th.html">เปิดเว็บไซต์หลัก PUI89 ภาษาไทย</a></td></tr></table>
+
 ## Shared AI Core website QR codes
 
 <table><tr><td align="center"><strong>English website</strong><br><a href="https://pui89.github.io/ai-core.html"><img src="https://pui89.github.io/qr/ai-core-en.png" width="160" alt="PUI89 Shared AI Core English website QR code"></a><br><a href="https://pui89.github.io/ai-core.html">Open English website</a></td><td align="center"><strong>เว็บไซต์ภาษาไทย</strong><br><a href="https://pui89.github.io/ai-core-th.html"><img src="https://pui89.github.io/qr/ai-core-th.png" width="160" alt="QR Code เว็บไซต์ภาษาไทย PUI89 Shared AI Core"></a><br><a href="https://pui89.github.io/ai-core-th.html">เปิดเว็บไซต์ภาษาไทย</a></td></tr></table>
