@@ -378,3 +378,14 @@ Executable, offline-only OWL-ViT inference has been added to the seven project r
 ## PUI89 Efficient Engineering Standard
 
 All seven projects follow the proposed [PUI89 Efficient Engineering Standard](PUI89_EFFICIENT_ENGINEERING_STANDARD.md): resource-aware RAM/CPU use, electricity and battery efficiency, thermal management, storage, network, latency, software complexity, offline/edge resilience and lifecycle repairability. Performance claims require reproducible, comparable measurements. No paid services, purchases, hardware tests or rewrites are authorised by this standard. Physical power, battery and temperature claims remain unverified until measured with suitable equipment.
+
+
+---
+
+## Security and repository protection
+
+- [PUI89 website security policy](SECURITY.md)
+- [English security overview](security.html)
+- [แนวทางความปลอดภัยภาษาไทย](security-th.html)
+
+The seven product repositories maintain project-specific security policies and threat boundaries. Security checks reduce risk but cannot guarantee that a system is malware-free or immune to attack. Review current workflow results and incident guidance before treating a control as verified.
