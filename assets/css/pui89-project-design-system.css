@@ -3,7 +3,7 @@
    CSS-only; no scripts, external fonts, packages, APIs or hosted services. */
 :root{--pui89-deep-navy:#071426;--pui89-electric-cyan:#00D9FF;--pui89-teal:#00AFA5;--pui89-technology-blue:#176BCE;--pui89-research-green:#43B581;--pui89-titanium-silver:#C5D0DC;--pui89-soft-white:#F7FBFF;--pui89-project-accent:var(--accent,var(--pui89-electric-cyan))}
 html{scroll-behavior:smooth;scroll-padding-top:5rem}
-body{color:#F2F7FC;background:radial-gradient(ellipse at 84% -12%,color-mix(in srgb,var(--pui89-project-accent) 13%,transparent),transparent 38%),radial-gradient(ellipse at 4% 54%,rgba(23,107,206,.09),transparent 36%),#071426!important;font-family:Inter,"Noto Sans Thai",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.72;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+body{color:#F2F7FC;background:#071426!important;background:radial-gradient(ellipse at 84% -12%,color-mix(in srgb,var(--pui89-project-accent) 13%,transparent),transparent 38%),radial-gradient(ellipse at 4% 54%,rgba(23,107,206,.09),transparent 36%),#071426!important;font-family:Inter,"Noto Sans Thai",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.72;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
 a{color:var(--pui89-project-accent);text-underline-offset:4px;text-decoration-thickness:.08em}a:hover{color:#A8F4FF}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--pui89-electric-cyan)!important;outline-offset:4px;border-radius:5px}
 .wrap{width:min(1200px,calc(100% - 40px));margin-inline:auto}
