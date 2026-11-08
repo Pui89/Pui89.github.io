@@ -51,7 +51,7 @@ for page in Path(".").glob("*.html"):
     if page.name == "404.html":
         continue
     content = page.read_text(encoding="utf-8")
-    robots = re.search(r'<meta\\s+name=["\\']robots["\\']\\s+content=["\\']([^"\\']+)["\\']', content, re.I)
+    robots = re.search(r"""<meta\s+name=["']robots["']\s+content=["']([^"']+)["']""", content, re.I)
     if robots and "noindex" in robots.group(1).lower():
         if page.name in sitemap_paths:
             errors.append(f"{page.name}: noindex page must not appear in sitemap")
