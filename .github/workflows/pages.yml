@@ -32,10 +32,18 @@ jobs:
           grep -q '<html lang="th"' th.html
           grep -q 'PUI89 AI Robotics' th.html
           test -s README.md
-          for page in coconut.html flood-rescue.html screening.html home.html nomad.html ai-robot-car.html ai-robot-motorcycle.html; do
-            grep -Fq "href=\"$page\"" index.html || { echo "Missing project landing-page link on English homepage: $page"; exit 1; }
-            grep -Fq "href=\"$page\"" th.html || { echo "Missing project landing-page link on Thai homepage: $page"; exit 1; }
-          done
+          while IFS='|' read -r english_page thai_page; do
+            grep -Fq "href=\"$english_page\"" index.html || { echo "Missing project landing-page link on English homepage: $english_page"; exit 1; }
+            grep -Fq "href=\"$thai_page\"" th.html || { echo "Missing project landing-page link on Thai homepage: $thai_page"; exit 1; }
+          done <<'PROJECTS'
+          coconut.html|coconut-th.html
+          flood-rescue.html|flood-rescue-th.html
+          screening.html|screening-th.html
+          home.html|home-th.html
+          nomad.html|nomad-th.html
+          ai-robot-car.html|ai-robot-car-th.html
+          ai-robot-motorcycle.html|ai-robot-motorcycle-th.html
+          PROJECTS
 
       - name: Run all-page local, sitemap, image, QR-asset and accessibility-source checks
         run: python3 scripts/check_site.py
