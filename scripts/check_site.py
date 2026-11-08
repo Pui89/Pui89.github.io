@@ -11,7 +11,9 @@ import argparse
 import concurrent.futures
 import json
 import re
+import struct
 import sys
+import zlib
 import time
 import urllib.error
 import urllib.parse
@@ -259,33 +261,68 @@ def main() -> int:
         except Exception as exc:
             errors.append(f"sitemap.xml: invalid XML: {exc}")
 
-    # Check QR asset files are present and structurally readable. Payload decoding
-    # still requires an actual QR decoder or scan with a second device.
-    qr_dir = ROOT / "qr"
-    qr_assets = sorted(p for p in qr_dir.glob("*") if p.is_file()) if qr_dir.is_dir() else []
+    # Check every QR-named PNG/SVG across the full site. PNG chunk CRCs and IEND
+    # are checked for truncation/corruption; this still does not decode QR payloads.
+    qr_assets = sorted(
+        p for p in ROOT.rglob("*")
+        if p.is_file()
+        and "qr" in p.stem.lower()
+        and p.suffix.lower() in (".png", ".svg")
+        and not any(part in SKIP_DIRS for part in p.relative_to(ROOT).parts)
+    )
     png_count = svg_count = 0
     for path in qr_assets:
+        rel = path.relative_to(ROOT).as_posix()
         if path.suffix.lower() == ".png":
             png_count += 1
             try:
                 data = path.read_bytes()
-                if len(data) < 33 or data[:8] != PNG_SIGNATURE or data[12:16] != b"IHDR":
-                    errors.append(f"qr/{path.name}: invalid or incomplete PNG structure")
-                else:
-                    width = int.from_bytes(data[16:20], "big")
-                    height = int.from_bytes(data[20:24], "big")
-                    if width < 1 or height < 1:
-                        errors.append(f"qr/{path.name}: invalid image dimensions")
-            except OSError as exc:
-                errors.append(f"qr/{path.name}: cannot read image: {exc}")
+                if len(data) < 45 or data[:8] != PNG_SIGNATURE:
+                    errors.append(f"{rel}: invalid or incomplete PNG structure")
+                    continue
+                offset = 8
+                saw_ihdr = saw_iend = False
+                while offset < len(data):
+                    if offset + 12 > len(data):
+                        errors.append(f"{rel}: truncated PNG chunk header")
+                        break
+                    chunk_len = struct.unpack(">I", data[offset:offset + 4])[0]
+                    chunk_type = data[offset + 4:offset + 8]
+                    chunk_end = offset + 12 + chunk_len
+                    if chunk_end > len(data):
+                        errors.append(f"{rel}: truncated PNG chunk {chunk_type!r}")
+                        break
+                    chunk_data = data[offset + 8:offset + 8 + chunk_len]
+                    expected_crc = struct.unpack(">I", data[offset + 8 + chunk_len:chunk_end])[0]
+                    actual_crc = zlib.crc32(chunk_type + chunk_data) & 0xFFFFFFFF
+                    if expected_crc != actual_crc:
+                        errors.append(f"{rel}: PNG CRC mismatch in {chunk_type.decode('ascii', 'replace')}")
+                        break
+                    if chunk_type == b"IHDR":
+                        saw_ihdr = chunk_len == 13
+                        width, height = struct.unpack(">II", chunk_data[:8])
+                        if width < 1 or height < 1:
+                            errors.append(f"{rel}: invalid PNG dimensions")
+                    if chunk_type == b"IEND":
+                        saw_iend = chunk_len == 0
+                        if chunk_end != len(data):
+                            errors.append(f"{rel}: unexpected trailing data after PNG IEND")
+                        break
+                    offset = chunk_end
+                if not saw_ihdr or not saw_iend:
+                    errors.append(f"{rel}: PNG is missing a valid IHDR or IEND chunk")
+            except (OSError, struct.error) as exc:
+                errors.append(f"{rel}: cannot validate PNG: {exc}")
         elif path.suffix.lower() == ".svg":
             svg_count += 1
             try:
-                ET.parse(path)
+                root = ET.parse(path).getroot()
+                if not root.tag.lower().endswith("svg"):
+                    errors.append(f"{rel}: XML root is not an SVG element")
             except Exception as exc:
-                errors.append(f"qr/{path.name}: invalid SVG/XML: {exc}")
+                errors.append(f"{rel}: invalid SVG/XML: {exc}")
     if not qr_assets:
-        warnings.append("No files found in qr/; confirm QR assets are stored elsewhere.")
+        warnings.append("No QR-named PNG or SVG assets found anywhere in the site.")
 
     external_report: list[dict[str, str]] = []
     if args.external and external_urls:
