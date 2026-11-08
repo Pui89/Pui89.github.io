@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "definition": "Counts only completed project-review records with a valid review date, scope, reviewer role, outcome and at least one evidence reference. Drafts, ratings, stars, views, comments and unsupported claims are not counted. Record reviewer role only; do not store personal information.",
+  "projects": [
+    {
+      "id": "coconut",
+      "name_en": "Coconut Harvest AI",
+      "name_th": "Coconut Harvest AI",
+      "review_records": []
+    },
+    {
+      "id": "flood-rescue",
+      "name_en": "Extreme Flood Rescue AI",
+      "name_th": "Extreme Flood Rescue AI",
+      "review_records": []
+    },
+    {
+      "id": "sentinel",
+      "name_en": "PUI89 Sentinel — Multimodal Screening AI",
+      "name_th": "PUI89 Sentinel — AI ตรวจคัดกรองหลายรูปแบบ",
+      "review_records": []
+    },
+    {
+      "id": "ai-home",
+      "name_en": "PUI89 AI HOME",
+      "name_th": "PUI89 AI HOME",
+      "review_records": []
+    },
+    {
+      "id": "ai-nomad",
+      "name_en": "PUI89 AI NOMAD",
+      "name_th": "PUI89 AI NOMAD",
+      "review_records": []
+    },
+    {
+      "id": "ai-robot-car",
+      "name_en": "PUI89 AI Robot Car",
+      "name_th": "PUI89 AI Robot Car",
+      "review_records": []
+    },
+    {
+      "id": "ai-robot-motorcycle",
+      "name_en": "PUI89 AI Robot Motorcycle",
+      "name_th": "PUI89 AI Robot Motorcycle",
+      "review_records": []
+    }
+  ]
+}
