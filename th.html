@@ -538,9 +538,22 @@ a:hover{color:var(--accent2)!important}
 .card a:not(.project-art-link){position:relative;z-index:2}
 .card .project-art-link img{cursor:pointer}
 @media(hover:hover){.card:has(.project-art-link):hover{border-color:rgba(66,217,255,.72);box-shadow:0 18px 42px rgba(0,0,0,.24),0 0 24px rgba(66,217,255,.12)}}
+.skip-link{position:absolute;left:12px;top:-60px;z-index:1000;padding:10px 14px;border-radius:9px;background:#42D9FF;color:#041522;font-weight:800}
+.skip-link:focus{top:12px}
+.hero-points{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:22px;color:var(--muted);font-size:.9rem}
+.hero-points span{display:inline-flex;align-items:center;gap:8px}
+.hero-points i{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(66,217,255,.10)}
+.trust-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 0 34px;padding:18px;border:1px solid rgba(120,165,198,.22);border-radius:16px;background:linear-gradient(110deg,rgba(16,31,51,.94),rgba(10,23,39,.9))}
+.trust-strip>div{display:flex;align-items:center;gap:12px;min-width:0}
+.trust-strip>div>span:last-child{display:grid;gap:2px}
+.trust-strip strong{color:var(--text)}
+.trust-strip small{color:var(--muted)}
+.strip-index{font-size:1.35rem;font-weight:850;color:var(--accent)}
+@media(max-width:650px){.trust-strip{grid-template-columns:1fr;gap:14px}.hero-points{gap:8px 14px}}
 </style>
 </head>
 <body data-pui89-project="portfolio">
+  <a class="skip-link" href="#main-content">ข้ามไปยังเนื้อหาหลัก</a>
     <div class="wrap">
     <nav class="nav" aria-label="เมนูหลัก">
       <a class="brand" href="th.html" aria-label="PUI89 AI Robotics หน้าหลัก"><img src="images/pui89-precision-glow-01.svg" alt="PUI89 AI Robotics" width="184" height="55"></a>
@@ -564,17 +577,24 @@ a:hover{color:var(--accent2)!important}
     </nav>
     <main id="main-content">
       
-    <section class="hero" id="about">
+    <section class="hero" id="top">
         <div class="hero-copy">
         <div class="eyebrow">วิศวกรรม AI · ระบบอัจฉริยะ</div>
         <h1>ระบบอัจฉริยะ<br><span>ตัดสินใจบนหลักฐาน</span></h1>
         <p>PUI89 พัฒนาซอฟต์แวร์อัจฉริยะและแนวคิดระบบหุ่นยนต์สำหรับโจทย์สำคัญในภาคเกษตร การกู้ภัยและเหตุฉุกเฉิน การตรวจสอบหลายรูปแบบ บ้านอัจฉริยะ และการเดินทาง โดยผสานการรับรู้ข้อมูล การเข้าใจบริบท การสนับสนุนการตัดสินใจ วิศวกรรมความปลอดภัย และการตรวจสอบด้วยหลักฐาน พร้อมแยกความสามารถที่พัฒนาและทดสอบแล้วออกจากแนวคิดที่อยู่ระหว่างการวิจัยอย่างชัดเจน</p>
         <div class="actions"><a class="btn primary" href="#projects">เลือกดูโครงการที่ตรงกับปัญหาของคุณ</a><a class="btn" href="evidence-th.html">ดูหลักฐานและความคืบหน้า ↗</a><a class="btn" href="support-th.html">ร่วมพัฒนา PUI89 ↗</a></div>
+        <div class="hero-points" aria-label="หลักการพัฒนา PUI89"><span><i></i> พัฒนาบนหลักฐาน</span><span><i></i> ออกแบบโดยคำนึงถึงความปลอดภัย</span><span><i></i> มนุษย์กำกับการตัดสินใจ</span></div>
         <div class="notice"><strong>ความโปร่งใส:</strong> ภาพแนวคิดและการจำลองไม่ใช่หลักฐานว่าหุ่นยนต์ทำงานจริงแล้ว ผลการทดสอบและความสามารถที่ยังไม่ผ่านการตรวจสอบจะระบุไว้อย่างชัดเจน</div>
         </div>
         <div class="hero-photo">
           <img src="assets/images/pui89-intelligent-systems-hero.svg" alt="ภาพไอโซเมตริก PUI89 แสดงแนวคิดโครงการ AI แบบไม่ใช่มนุษย์ทั้ง 7 โครงการล้อมรอบอัตลักษณ์ PUI89 ตรงกลาง โดยภาพแนวคิดไม่ใช่การยืนยันว่าหุ่นยนต์ผ่านการทดสอบจริงแล้ว" fetchpriority="high" decoding="async">
         </div>
+      </section>
+
+      <section class="trust-strip" aria-label="หลักการทำงานสามขั้นตอน">
+        <div><span class="strip-index">01</span><span><strong>พัฒนา</strong><small>สร้างต้นแบบที่มีประโยชน์</small></span></div>
+        <div><span class="strip-index">02</span><span><strong>ทดสอบ</strong><small>ตรวจสอบซ้ำได้</small></span></div>
+        <div><span class="strip-index">03</span><span><strong>พิสูจน์</strong><small>ก่อนสื่อสารว่าใช้งานได้</small></span></div>
       </section>
       
       <section class="section" id="projects">
