@@ -32,8 +32,9 @@ jobs:
           grep -q '<html lang="th"' th.html
           grep -q 'PUI89 AI Robotics' th.html
           test -s README.md
-          for project in 'Coconut Harvest AI' 'Flood Rescue AI' 'Multimodal Screening AI' 'AI Home Safety Robot' 'AI Mobile Assistant Robot' 'AI Autonomous Robot Car' 'AI Motorcycle Robotics'; do
-            grep -Fq "$project" index.html || { echo "Missing project on English homepage: $project"; exit 1; }
+          for page in coconut.html flood-rescue.html screening.html home.html nomad.html ai-robot-car.html ai-robot-motorcycle.html; do
+            grep -Fq "href=\"$page\"" index.html || { echo "Missing project landing-page link on English homepage: $page"; exit 1; }
+            grep -Fq "href=\"$page\"" th.html || { echo "Missing project landing-page link on Thai homepage: $page"; exit 1; }
           done
 
       - name: Run all-page local, sitemap, image, QR-asset and accessibility-source checks
