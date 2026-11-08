@@ -56,7 +56,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: pui89-site-qa-report
-          path: pui89-site-qa-report.json
+          path: ${{ runner.temp }}/pui89-site-qa-report.json
           if-no-files-found: warn
           retention-days: 14
 
