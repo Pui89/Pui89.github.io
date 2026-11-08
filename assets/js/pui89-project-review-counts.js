@@ -30,7 +30,7 @@
   }
   function valid(record) {
     return record && record.status === "completed" &&
-      /^\\d{4}-\\d{2}-\\d{2}$/.test(record.reviewed_on || "") &&
+      /^\d{4}-\d{2}-\d{2}$/.test(record.reviewed_on || "") &&
       !!(record.scope && record.scope.trim()) &&
       !!(record.reviewer_role && record.reviewer_role.trim()) &&
       !!(record.outcome && record.outcome.trim()) &&
