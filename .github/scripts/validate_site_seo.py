@@ -71,13 +71,13 @@ if not ROBOTS.is_file() or f"Sitemap: {ROOT}/sitemap.xml" not in ROBOTS.read_tex
 # Every indexable page in the sitemap must expose basic discovery metadata.
 for filename in sorted(indexable_html):
     content = Path(filename).read_text(encoding="utf-8")
-    if not re.search(r"<title>\\s*[^<]+\\s*</title>", content, re.I):
+    if not re.search(r'<title>\s*[^<]+\s*</title>', content, re.I):
         errors.append(f"{filename}: missing title")
-    if not re.search(r"<meta\\s+name=[\"']description[\"']\\s+content=[\"'][^\"']+[\"']", content, re.I):
+    if not re.search(r'<meta\s+name=["\']description["\']\s+content=["\'][^"\']+["\']', content, re.I):
         errors.append(f"{filename}: missing meta description")
-    if not re.search(r"<meta\\s+name=[\"']robots[\"']\\s+content=[\"']index,\\s*follow[\"']", content, re.I):
+    if not re.search(r'<meta\s+name=["\']robots["\']\s+content=["\']index,\s*follow["\']', content, re.I):
         errors.append(f"{filename}: missing explicit index,follow directive")
-    canonical = re.search(r"<link\\s+rel=[\"']canonical[\"']\\s+href=[\"']([^\"']+)[\"']", content, re.I)
+    canonical = re.search(r'<link\s+rel=["\']canonical["\']\s+href=["\']([^"\']+)["\']', content, re.I)
     expected = ROOT + ("/" + filename if filename != "index.html" else "/")
     if not canonical or canonical.group(1) != expected:
         errors.append(f"{filename}: missing or incorrect canonical URL")
@@ -86,5 +86,5 @@ if errors:
     for error in errors:
         print("FAIL:", error)
     raise SystemExit(1)
-print(f"PASS: sitemap XML, {len(sitemap_paths)} public HTML URLs, robots.txt, and four bilingual SEO page pairs.")
+print(f"PASS: sitemap XML, {len(sitemap_paths)} indexable HTML URLs, robots.txt, and page-level SEO metadata.")
 print("NOTE: This validates repository files only; Google crawling, indexing, and ranking must be checked in Search Console.")
