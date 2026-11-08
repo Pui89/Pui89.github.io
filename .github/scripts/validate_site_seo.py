@@ -64,9 +64,9 @@ pairs = {
 }
 for filename, (language, canonical, peer) in pairs.items():
     content = Path(filename).read_text(encoding="utf-8")
-    if not re.search(r"<title>\\s*[^<]+\\s*</title>", content, re.I):
+    if not re.search(r"<title>\s*[^<]+\s*</title>", content, re.I):
         errors.append(f"{filename}: missing title")
-    if not re.search(r'<meta\\s+name="description"\\s+content="[^"]+"', content, re.I):
+    if not re.search(r'<meta\s+name="description"\s+content="[^"]+"', content, re.I):
         errors.append(f"{filename}: missing meta description")
     if f'<meta name="robots" content="index,follow">' not in content:
         errors.append(f"{filename}: missing index,follow directive")
