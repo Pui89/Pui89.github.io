@@ -100,7 +100,7 @@ footer{border-top:1px solid var(--pui-line)}
 .pui89-explore-button span{color:var(--pui-cyan);font-size:1.1rem}
 .pui89-project-footnote{max-width:90ch;margin:18px 0 0;color:var(--pui-muted);font-size:.82rem;line-height:1.6}
 .pui89-project-showcase .pui89-quick-explore{margin:24px 0}
-@media(min-width:1120px){.pui89-project-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.pui89-project-card:nth-child(7){grid-column:2}}
+@media(min-width:1120px){.pui89-project-grid{grid-template-columns:repeat(3,minmax(0,1fr))}/* Keep Project 07 in natural reading order, left-aligned on the final row. */}
 @media(max-width:900px){.pui89-project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pui89-section-heading{grid-template-columns:1fr;gap:12px}}
 @media(max-width:600px){.pui89-project-grid{grid-template-columns:1fr;gap:14px}.pui89-project-image{aspect-ratio:16/9}.pui89-project-content{padding:17px}.pui89-brand-lockup{margin-bottom:19px}.pui89-project-showcase{padding-top:42px}}
 @media(hover:none){.pui89-project-card:hover{transform:none}.pui89-project-card:hover .pui89-project-image img{transform:none}}
