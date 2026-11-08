@@ -63,6 +63,17 @@ a:hover{color:#B8F2FF}
  *,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
 }
 
+
+/* PUI89 image viewer: tap/click any project image to inspect it larger. */
+.pui89-zoomable{cursor:zoom-in;touch-action:manipulation}
+.pui89-zoomable:focus-visible{outline:3px solid #42D9FF;outline-offset:4px}
+#pui89-image-viewer{width:min(96vw,1500px);max-width:96vw;max-height:94vh;padding:12px;border:1px solid rgba(66,217,255,.45);border-radius:16px;background:#07111F;color:#F3F7FF;box-shadow:0 24px 90px rgba(0,0,0,.65)}
+#pui89-image-viewer::backdrop{background:rgba(2,8,18,.88);backdrop-filter:blur(5px)}
+#pui89-image-viewer .pui89-viewer-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px}
+#pui89-image-viewer button{min-width:44px;min-height:44px;border:1px solid #42D9FF;border-radius:10px;background:#102B43;color:#F3F7FF;font-size:1.35rem;font-weight:800;cursor:pointer}
+#pui89-image-viewer img{display:block;max-width:100%;max-height:calc(94vh - 90px);width:auto;height:auto;object-fit:contain;margin:auto;border-radius:8px}
+#pui89-image-viewer .pui89-viewer-caption{margin:9px 4px 2px;color:#B8C7DA;font-size:.9rem;text-align:center}
+@media(prefers-reduced-motion:no-preference){#pui89-image-viewer{animation:pui89-viewer-in .14s ease-out}@keyframes pui89-viewer-in{from{opacity:0;transform:scale(.985)}to{opacity:1;transform:scale(1)}}}
 </style><meta name="googlebot" content="index,follow,max-image-preview:large">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="PUI89 AI Robotics">
@@ -78,16 +89,6 @@ a:hover{color:#B8F2FF}
 <link rel="stylesheet" href="/assets/css/pui89-development-observatory.css">
   <link rel="stylesheet" href="assets/css/pui89-project-design-system.css?v=20261108-professional">
 
-/* PUI89 image viewer: tap/click any project image to inspect it larger. */
-.pui89-zoomable{cursor:zoom-in;touch-action:manipulation}
-.pui89-zoomable:focus-visible{outline:3px solid #42D9FF;outline-offset:4px}
-#pui89-image-viewer{width:min(96vw,1500px);max-width:96vw;max-height:94vh;padding:12px;border:1px solid rgba(66,217,255,.45);border-radius:16px;background:#07111F;color:#F3F7FF;box-shadow:0 24px 90px rgba(0,0,0,.65)}
-#pui89-image-viewer::backdrop{background:rgba(2,8,18,.88);backdrop-filter:blur(5px)}
-#pui89-image-viewer .pui89-viewer-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px}
-#pui89-image-viewer button{min-width:44px;min-height:44px;border:1px solid #42D9FF;border-radius:10px;background:#102B43;color:#F3F7FF;font-size:1.35rem;font-weight:800;cursor:pointer}
-#pui89-image-viewer img{display:block;max-width:100%;max-height:calc(94vh - 90px);width:auto;height:auto;object-fit:contain;margin:auto;border-radius:8px}
-#pui89-image-viewer .pui89-viewer-caption{margin:9px 4px 2px;color:#B8C7DA;font-size:.9rem;text-align:center}
-@media(prefers-reduced-motion:no-preference){#pui89-image-viewer{animation:pui89-viewer-in .14s ease-out}@keyframes pui89-viewer-in{from{opacity:0;transform:scale(.985)}to{opacity:1;transform:scale(1)}}}
 </head>
 <body data-pui89-project="coconut"><div class="wrap">
 <nav class="nav"><a class="brand" href="index.html">PUI89 / PROJECTS</a><a href="index.html">PUI89 Home</a><a href="coconut-th.html">ภาษาไทย</a><a href="support.html">Support & partnership</a><a href="https://github.com/Pui89/Coconut-Harvest-AI">GitHub ↗</a><a href="docs/PUI89_SIMPLE_SAFE_PROFESSIONAL_STANDARD.md">Engineering standard</a></nav>
