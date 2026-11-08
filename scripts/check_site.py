@@ -266,7 +266,7 @@ def main() -> int:
     qr_assets = sorted(
         p for p in ROOT.rglob("*")
         if p.is_file()
-        and "qr" in p.stem.lower()
+        and ("qr" in p.stem.lower() or "qr" in {part.lower() for part in p.relative_to(ROOT).parts})
         and p.suffix.lower() in (".png", ".svg")
         and not any(part in SKIP_DIRS for part in p.relative_to(ROOT).parts)
     )
