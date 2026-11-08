@@ -1,45 +1,49 @@
-# PUI89 website access and QR verification
+# PUI89 website access, responsive and QR verification
 
-**Purpose:** a release checklist for website availability, project navigation, contact routes, mobile layout, and static QR codes. Items are not marked passed until a real browser/device check is recorded.
+**Rule:** never mark a browser/device check as passed based only on source code. Record the exact page, date, viewport/device, browser, and evidence.
 
-## Canonical entry point
+## Automated checks in the Pages workflow
 
-- Preferred portfolio URL: https://pui89.github.io/
-- Custom domain to check separately: https://pui89.com/
-- Alternate hostname to check separately: https://www.pui89.com/
-- Do not print or publish a QR code until its exact HTTPS destination has been opened and checked.
+The dependency-free `scripts/check_site.py` checks every HTML file in the repository for:
+- HTML parseability, language/title/viewport/H1 metadata gaps, duplicate IDs and missing image alt attributes.
+- Broken local page, fragment, stylesheet, script and image references.
+- Sitemap URLs that do not map to local site files or use an unexpected canonical host.
+- QR PNG file signature/IHDR integrity and QR SVG XML integrity.
+- With `--external`, unique external HTTP(S) links using standard-library HTTP requests. A host that blocks automated checks is reported as inconclusive, not as a pass.
 
-## Link checks
+The Pages workflow runs these checks on pull requests and main-branch changes. A successful run validates source-level checks only; it does not prove that the deployed site renders correctly.
 
-- [ ] HTTPS canonical URL resolves without a certificate warning.
-- [ ] www and apex custom-domain behavior is understood; any redirect ends at the canonical URL.
-- [ ] Each project card opens the intended canonical repository:
-  - https://github.com/Pui89/Coconut-Harvest-AI
-  - https://github.com/Pui89/Extreme-Flood-Rescue-AI
-  - https://github.com/Pui89/Multimodal-Narcotics-Screening-AI
-- [ ] Contact links have valid destinations and do not expose private information.
-- [ ] Broken links, mixed-content resources, missing images, and browser-console errors are checked.
+## Manual browser/device release gate
 
-## Mobile and accessibility
+- [ ] Test the English and Thai homepages at 360px, 390px, 768px, 1024px and 1440px widths.
+- [ ] Test all sitemap pages at narrow mobile and desktop widths; check horizontal overflow, clipped headings/cards, nav wrapping, footer and fixed elements.
+- [ ] Test keyboard-only navigation, visible focus, skip links, menus, contrast, text zoom and screen-reader names.
+- [ ] Test representative current Chrome, Firefox and Safari/ iOS Safari where available.
+- [ ] Inspect browser console and network panel for JavaScript errors, failed fonts, missing images, mixed content and 404/403 resources.
+- [ ] Confirm both language-switch directions for every bilingual page pair.
 
-- [ ] Test at narrow phone width and desktop width; no horizontal overflow.
-- [ ] Navigation and project/contact links are keyboard reachable with visible focus.
-- [ ] Every informative image has meaningful alt text; decorative images have empty alt text.
-- [ ] Text contrast and tap target size are adequate; links are not distinguished by colour alone.
-- [ ] Thai and English copy fit without clipping; language choice is clear if a language switch is provided.
+## QR release gate
 
-## QR code rules
+Static QR files are checked for file integrity by CI, but that does **not** decode their payload or prove a camera can scan them.
+- [ ] Scan every project QR from a second device at its intended screen and print size.
+- [ ] Verify the decoded URL is the exact canonical HTTPS page for that project, not a branch, PR, redirect shortener or stale repository.
+- [ ] Confirm the destination loads and its main project/repository link works.
+- [ ] Keep a readable text URL beside each QR; do not require a user to scan a QR displayed on the same phone they are using.
+- [ ] Recheck the seven project QR codes plus the English/Thai overview QR codes after any destination change.
 
-- Use a static QR code encoding the complete canonical HTTPS URL directly; avoid subscription-dependent dynamic QR services and third-party shorteners.
-- Prefer a stable project landing page for project-specific QR codes; do not use a temporary branch, pull-request URL, or tracking-heavy URL.
-- Place a readable text URL next to each QR code and provide useful alt text.
-- Test scanning from another device, at intended display/print size and contrast. A successful decode is not sufficient: verify the destination and complete the visitor journey.
-- Keep QR codes hidden on small/mobile layouts when the person is already using the same device and cannot scan their own screen.
+## Lighthouse / accessibility gate
 
-## Verification log template
+Use Google's PageSpeed Insights for both Mobile and Desktop on the homepage and each important landing page. It reports Lighthouse Performance, Accessibility, Best Practices and SEO categories; CrUX field data may be unavailable for low-traffic pages. Record report URLs, scores, date and key failed audits. A Lighthouse accessibility score is an automated subset, not proof of WCAG 2.2 conformance.
 
-Record date/time, tester, device/browser, exact URL, HTTP/redirect result, mobile viewport, contact-link result, QR payload, scan result, and outstanding failures. Use NOT TESTED where no actual check was performed; do not infer a pass from the source code alone.
+- Tool: https://pagespeed.web.dev/
+- Google PSI methodology: https://developers.google.com/speed/docs/insights/v5/about
 
-## Cost guard
+## Evidence log template
 
-Prefer direct links, static hosting, and locally generated static QR images. No paid QR subscription, analytics service, or third-party shortener is required.
+| Date/time | URL | Device / viewport | Browser | Mobile/desktop Lighthouse | QR scan / destination | Result / issue |
+|---|---|---|---|---|---|---|
+| Not yet recorded | All pages | Not tested | Not tested | Not run | Not decoded on a second device | Pending |
+
+## Cost and privacy guard
+
+No paid service, API key, subscription, QR shortener, new model or runtime dependency is required for the repository-side checks. PageSpeed Insights is an external Google service; submit only public page URLs. Browser/device and camera checks require an actual device.
