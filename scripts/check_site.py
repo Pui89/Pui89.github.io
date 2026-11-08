@@ -303,7 +303,9 @@ def main() -> int:
             "No Lighthouse or full WCAG 2.2 audit is run by this dependency-free script."
         ]
     }
-    print(json.dumps(report, indent=2, ensure_ascii=False))
+    report_text = json.dumps(report, indent=2, ensure_ascii=False)
+    (ROOT / "pui89-site-qa-report.json").write_text(report_text + "\\n", encoding="utf-8")
+    print(report_text)
     return 1 if errors else 0
 
 
