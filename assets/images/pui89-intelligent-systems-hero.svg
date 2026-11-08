@@ -1,47 +1,125 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="t d">
-<title id="t">N PUI89 — Seven intelligent machine concepts</title><desc id="d">Seven non-humanoid AI machine concepts arranged around the N PUI89 identity: coconut harvesting robot, amphibious flood rescue craft, Sentinel inspection rover, AI HOME, AI NOMAD, AI Robot Car and EasyRide AI Motorcycle.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 — Seven non-humanoid AI engineering projects</title>
+<desc id="desc">A dark navy isometric engineering portfolio illustration. Seven distinct non-humanoid project concepts surround a central PUI89 identity: Coconut Harvest AI, Flood Rescue AI, PUI89 Sentinel, AI HOME, AI NOMAD, AI Robot Car and AI Robot Motorcycle. Visuals are conceptual and do not imply validated physical systems.</desc>
 <defs>
-<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#050f1e"/><stop offset=".55" stop-color="#102b46"/><stop offset="1" stop-color="#030914"/></linearGradient>
-<linearGradient id="m" x2=".8" y2="1"><stop stop-color="#f5fbff"/><stop offset=".3" stop-color="#b8c7d2"/><stop offset=".7" stop-color="#627a8e"/><stop offset="1" stop-color="#e0e9ef"/></linearGradient>
-<linearGradient id="b" x2="1" y2="1"><stop stop-color="#315978"/><stop offset=".55" stop-color="#102a43"/><stop offset="1" stop-color="#071625"/></linearGradient>
-<linearGradient id="g" x2="1" y2="1"><stop stop-color="#8adcf0"/><stop offset=".5" stop-color="#1d4866"/><stop offset="1" stop-color="#071725"/></linearGradient>
-<linearGradient id="c"><stop stop-color="#00a9d5"/><stop offset=".5" stop-color="#a1f7ff"/><stop offset="1" stop-color="#00b9e8"/></linearGradient>
-<pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#7adcf5" stroke-opacity=".08"/></pattern>
-<filter id="glow"><feGaussianBlur stdDeviation="5" result="x"/><feMerge><feMergeNode in="x"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071426"/><stop offset=".55" stop-color="#0b2037"/><stop offset="1" stop-color="#030914"/></linearGradient>
+ <radialGradient id="aura"><stop stop-color="#174766" stop-opacity=".8"/><stop offset="1" stop-color="#071426" stop-opacity="0"/></radialGradient>
+ <linearGradient id="ti" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7fbff"/><stop offset=".22" stop-color="#a9bac8"/><stop offset=".46" stop-color="#eef5fa"/><stop offset=".72" stop-color="#71889b"/><stop offset="1" stop-color="#dbe5ec"/></linearGradient>
+ <linearGradient id="tiSide" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6f879b"/><stop offset=".5" stop-color="#263e54"/><stop offset="1" stop-color="#0a192b"/></linearGradient>
+ <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d1ffff"/><stop offset=".4" stop-color="#42eaff"/><stop offset="1" stop-color="#008fc8"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#1c4663"/><stop offset="1" stop-color="#071a2d"/></linearGradient>
+ <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#18354d"/><stop offset="1" stop-color="#081727"/></linearGradient>
+ <filter id="shadow" x="-40%" y="-40%" width="180%" height="190%"><feGaussianBlur in="SourceAlpha" stdDeviation="12"/><feOffset dy="13"/><feComponentTransfer><feFuncA type="linear" slope=".55"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse"><path d="M52 0H0V52" fill="none" stroke="#4bbbd9" stroke-opacity=".11"/></pattern>
+ <g id="wheel"><ellipse rx="13" ry="20" fill="#06111e" stroke="#9aafbe" stroke-width="3"/><ellipse rx="5" ry="10" fill="#29465e" stroke="#43eaff" stroke-width="2"/></g>
+ <g id="pin"><circle r="5" fill="#a9fbff" filter="url(#glow)"/><circle r="11" fill="none" stroke="#36e5ff" stroke-opacity=".55"/></g>
 </defs>
+<!-- Atmosphere and technical ground -->
 <rect width="1600" height="1000" fill="url(#bg)"/><rect width="1600" height="1000" fill="url(#grid)"/>
-<path d="M0 780L800 500 1600 780V1000H0Z" fill="#071421"/><g stroke="#47809a" stroke-opacity=".2" fill="none"><path d="M0 780L800 500 1600 780M0 875L800 595 1600 875M0 970L800 690 1600 970"/></g>
-<g fill="#b9d8e8" font-family="Arial" font-size="13" letter-spacing="4"><text x="55" y="55">PUI89 / INTELLIGENT SYSTEMS</text><text x="1540" y="950" text-anchor="end">ENGINEERING CONCEPT PORTFOLIO</text></g>
-<g stroke="#20d5f4" stroke-opacity=".3" stroke-width="2" fill="none"><path d="M800 490L240 245M800 490L800 175M800 490L1360 245M800 490L220 735M800 490L600 775M800 490L1010 775M800 490L1390 735"/></g>
-<g fill="#77eaff"><circle cx="240" cy="245" r="4"/><circle cx="800" cy="175" r="4"/><circle cx="1360" cy="245" r="4"/><circle cx="220" cy="735" r="4"/><circle cx="600" cy="775" r="4"/><circle cx="1010" cy="775" r="4"/><circle cx="1390" cy="735" r="4"/></g>
-<!-- central N identity -->
-<circle cx="800" cy="490" r="145" fill="#061626" stroke="#25d9f5" stroke-width="3"/><circle cx="800" cy="490" r="128" fill="none" stroke="#d4faff" stroke-opacity=".4"/>
-<path d="M744 550V430L856 550V430" fill="none" stroke="url(#c)" stroke-width="19" stroke-linecap="square" filter="url(#glow)"/>
-<text x="800" y="594" fill="#f4fbff" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold" letter-spacing="4">N PUI89</text><text x="800" y="620" fill="#79eaff" text-anchor="middle" font-family="Arial" font-size="11" letter-spacing="3">INTELLIGENT SYSTEMS</text>
-
-<!-- 01 coconut harvester -->
-<g transform="translate(65 105)" stroke-linejoin="round">
-<path d="M52 154Q60 76 49 20" stroke="#98754e" stroke-width="12" fill="none"/><g stroke="#4d9a70" stroke-width="9" fill="none" stroke-linecap="round"><path d="M50 23Q5 -5 -8 25M50 23Q82 -8 116 0M50 23Q110 25 132 57M50 23Q7 53 -12 79"/></g><ellipse cx="78" cy="52" rx="9" ry="13" fill="#a87b48"/><ellipse cx="94" cy="55" rx="9" ry="13" fill="#a87b48"/>
-<path d="M22 160L78 130L250 147L294 177L245 210L72 201Z" fill="url(#b)" stroke="url(#m)" stroke-width="3"/><path d="M22 160L72 201V218L22 178Z" fill="#071727"/><g fill="#071321" stroke="url(#m)" stroke-width="4"><circle cx="82" cy="209" r="16"/><circle cx="244" cy="221" r="16"/></g>
-<path d="M157 150L160 108L201 81L219 47" stroke="#aebdca" stroke-width="17" fill="none" stroke-linecap="round"/><g fill="url(#m)" stroke="#50697e" stroke-width="3"><circle cx="160" cy="108" r="12"/><circle cx="201" cy="81" r="11"/></g><path d="M219 47L239 29L253 37L238 58M219 47L202 34L191 44L209 61" stroke="#e4edf2" stroke-width="7" fill="none"/>
-<text x="160" y="260" fill="#f5fbff" stroke="none" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">01 · COCONUT HARVEST</text><text x="160" y="280" fill="#79eaff" stroke="none" text-anchor="middle" font-family="Arial" font-size="10" letter-spacing="2">AGRICULTURAL ROBOT</text></g>
-
-<!-- 02 amphibious rescue craft -->
-<g transform="translate(625 45)"><path d="M12 130L60 82H286L342 130L300 190H61Z" fill="url(#b)" stroke="url(#m)" stroke-width="4"/><path d="M65 82L103 49H249L286 82Z" fill="url(#m)" stroke="#e7f0f5" stroke-width="3"/><path d="M103 49L127 20H225L249 49Z" fill="url(#g)" stroke="#9eb6c8" stroke-width="3"/><path d="M144 22H208" stroke="#20d9f4" stroke-width="4"/><path d="M91 126H273L300 151H108Z" fill="#071727" stroke="#7895a8" stroke-width="2"/><rect x="155" y="91" width="53" height="28" rx="5" fill="url(#m)"/><path d="M169 91V72H196V91" fill="#173954" stroke="#21d8f4" stroke-width="3"/><path d="M0 202Q38 188 76 202T152 202T228 202T304 202T380 202" fill="none" stroke="#23cdeb" stroke-width="4"/><text x="176" y="245" fill="#f5fbff" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">02 · FLOOD RESCUE AI</text><text x="176" y="265" fill="#79eaff" text-anchor="middle" font-family="Arial" font-size="10" letter-spacing="2">AMPHIBIOUS RESCUE CRAFT</text></g>
-
-<!-- 03 Sentinel inspection rover -->
-<g transform="translate(1190 110)"><path d="M15 127L57 94H218L267 127L233 174H54Z" fill="url(#b)" stroke="url(#m)" stroke-width="4"/><path d="M15 127L54 174V190L15 145Z" fill="#071727"/><path d="M91 94V51H185V94" fill="url(#m)" stroke="#536d80" stroke-width="3"/><rect x="105" y="62" width="67" height="24" rx="5" fill="#0a2034" stroke="#22d7f4" stroke-width="3"/><circle cx="125" cy="74" r="6" fill="#7bf2ff"/><circle cx="153" cy="74" r="6" fill="#7bf2ff"/><path d="M138 51V22M123 22H153" stroke="#c8d5de" stroke-width="6"/><g fill="#071321" stroke="url(#m)" stroke-width="4"><circle cx="67" cy="180" r="15"/><circle cx="218" cy="180" r="15"/></g><text x="140" y="230" fill="#f5fbff" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">03 · PUI89 SENTINEL</text><text x="140" y="250" fill="#79eaff" text-anchor="middle" font-family="Arial" font-size="10" letter-spacing="2">MULTIMODAL INSPECTION</text></g>
-
-<!-- 04 AI HOME indoor rover -->
-<g transform="translate(55 650)"><path d="M22 55L60 23H192L226 55L195 111H55Z" fill="url(#m)" stroke="#62798b" stroke-width="3"/><path d="M22 55L55 111V127L22 72Z" fill="#102a43"/><rect x="81" y="40" width="82" height="36" rx="8" fill="#0a2034" stroke="#20d9f4" stroke-width="3"/><circle cx="106" cy="58" r="6" fill="#7cf1ff"/><circle cx="139" cy="58" r="6" fill="#7cf1ff"/><path d="M122 23V3" stroke="#c4d3dc" stroke-width="5"/><circle cx="122" cy="0" r="6" fill="#3be5ff"/><g fill="#071321" stroke="url(#m)" stroke-width="4"><circle cx="62" cy="118" r="13"/><circle cx="187" cy="118" r="13"/></g><text x="125" y="166" fill="#f5fbff" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">04 · AI HOME</text><text x="125" y="186" fill="#79eaff" text-anchor="middle" font-family="Arial" font-size="10" letter-spacing="2">INDOOR SAFETY ROVER</text></g>
-
-<!-- 05 AI NOMAD suitcase-style mobile robot -->
-<g transform="translate(425 690)"><path d="M64 15Q64 4 78 4H180Q194 4 194 18V91Q194 103 182 103H76Q64 103 64 91Z" fill="url(#b)" stroke="url(#m)" stroke-width="4"/><path d="M96 5V-15Q96 -24 108 -24H150Q162 -24 162 -15V5" fill="none" stroke="#c8d5df" stroke-width="7"/><rect x="91" y="29" width="75" height="32" rx="6" fill="#071a2c" stroke="#20d9f4" stroke-width="3"/><circle cx="112" cy="45" r="6" fill="#7af1ff"/><circle cx="145" cy="45" r="6" fill="#7af1ff"/><g fill="#071321" stroke="url(#m)" stroke-width="4"><circle cx="77" cy="104" r="13"/><circle cx="180" cy="104" r="13"/></g><text x="130" y="146" fill="#f5fbff" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">05 · AI NOMAD</text><text x="130" y="166" fill="#79eaff" text-anchor="middle" font-family="Arial" font-size="10" letter-spacing="2">PORTABLE FIELD ROBOT</text></g>
-
-<!-- 06 passenger car -->
-<g transform="translate(875 690)"><path d="M14 77L43 53L82 46L112 12H220L258 50L291 62L310 91L290 105H25Z" fill="url(#b)" stroke="url(#m)" stroke-width="4"/><path d="M97 45L123 19H211L239 48Z" fill="url(#g)" stroke="#b7c9d5" stroke-width="3"/><path d="M16 78H307" stroke="#22d8f4" stroke-width="4"/><path d="M65 55H82M245 58H265" stroke="#dff7ff" stroke-width="6"/><g fill="#071321" stroke="url(#m)" stroke-width="5"><circle cx="79" cy="101" r="20"/><circle cx="253" cy="101" r="20"/></g><g fill="#71899b"><circle cx="79" cy="101" r="8"/><circle cx="253" cy="101" r="8"/></g><path d="M165 12V-2M151 -2H179" stroke="#cbd8e1" stroke-width="5"/><circle cx="165" cy="-5" r="5" fill="#4ce8ff"/><text x="160" y="148" fill="#f5fbff" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">06 · AI ROBOT CAR</text><text x="160" y="168" fill="#79eaff" text-anchor="middle" font-family="Arial" font-size="10" letter-spacing="2">INTELLIGENT MOBILITY</text></g>
-
-<!-- 07 two-wheel step-through scooter -->
-<g transform="translate(1260 640)"><g fill="#071321" stroke="url(#m)" stroke-width="6"><circle cx="48" cy="139" r="29"/><circle cx="218" cy="139" r="29"/></g><g fill="#70899b"><circle cx="48" cy="139" r="11"/><circle cx="218" cy="139" r="11"/></g><path d="M48 139L90 88L161 91L218 139M90 88L118 48L168 54L186 99" fill="none" stroke="url(#m)" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/><path d="M91 88L130 109L183 110" fill="none" stroke="#153954" stroke-width="17" stroke-linecap="round"/><path d="M115 48L104 29L149 25L168 54" fill="url(#b)" stroke="#b7c8d4" stroke-width="3"/><path d="M116 27L108 10M108 10H89M157 52L179 28" stroke="#c5d3dd" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M88 86L64 79" stroke="#22d8f4" stroke-width="4"/><text x="135" y="205" fill="#f5fbff" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">07 · EASYRIDE AI</text><text x="135" y="225" fill="#79eaff" text-anchor="middle" font-family="Arial" font-size="10" letter-spacing="2">TWO-WHEEL AI MOTORCYCLE</text></g>
-<text x="800" y="890" fill="#b6d5e6" text-anchor="middle" font-family="Arial" font-size="13" letter-spacing="3">PERCEPTION · CONTEXT · DECISION · SAFETY · EVIDENCE</text>
+<circle cx="800" cy="490" r="520" fill="url(#aura)"/>
+<path d="M0 790 800 510 1600 790V1000H0Z" fill="#061321" opacity=".75"/>
+<g fill="none" stroke="#3b7897" stroke-opacity=".2"><path d="M0 790 800 510 1600 790M0 875 800 595 1600 875M0 960 800 680 1600 960"/></g>
+<!-- Header -->
+<text x="800" y="62" text-anchor="middle" fill="#eff7fc" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="7">PUI89  /  INTELLIGENT SYSTEMS PORTFOLIO</text>
+<text x="800" y="96" text-anchor="middle" fill="#9eb6c8" font-family="Arial,sans-serif" font-size="12" letter-spacing="3">ISOMETRIC ENGINEERING CONCEPTS  •  EVIDENCE-LED DEVELOPMENT</text>
+<path d="M515 120H1085" stroke="#36e4fa" stroke-opacity=".6"/><circle cx="515" cy="120" r="3" fill="#5cf1ff"/><circle cx="1085" cy="120" r="3" fill="#5cf1ff"/>
+<!-- Network links -->
+<g fill="none" stroke="#37def7" stroke-width="2" stroke-opacity=".42"><path d="M800 500 270 265M800 500 800 225M800 500 1330 265M800 500 225 600M800 500 470 790M800 500 1130 790M800 500 1375 600"/></g>
+<g fill="none" stroke="#a8f7ff" stroke-opacity=".2" stroke-dasharray="4 10"><path d="M270 265 225 600 470 790 800 850 1130 790 1375 600 1330 265"/></g>
+<use href="#pin" x="270" y="265"/><use href="#pin" x="800" y="225"/><use href="#pin" x="1330" y="265"/><use href="#pin" x="225" y="600"/><use href="#pin" x="470" y="790"/><use href="#pin" x="1130" y="790"/><use href="#pin" x="1375" y="600"/>
+<!-- Seven floating isometric platforms -->
+<g filter="url(#shadow)">
+ <path d="M85 220 270 158 455 220 455 310 270 372 85 310Z" fill="url(#glass)" stroke="#6b93aa" stroke-width="1.5"/><path d="M85 310 270 372 455 310" fill="none" stroke="#37e4fa" stroke-opacity=".6"/>
+ <path d="M615 175 800 113 985 175 985 265 800 327 615 265Z" fill="url(#glass)" stroke="#6b93aa" stroke-width="1.5"/><path d="M615 265 800 327 985 265" fill="none" stroke="#37e4fa" stroke-opacity=".6"/>
+ <path d="M1145 220 1330 158 1515 220 1515 310 1330 372 1145 310Z" fill="url(#glass)" stroke="#6b93aa" stroke-width="1.5"/><path d="M1145 310 1330 372 1515 310" fill="none" stroke="#37e4fa" stroke-opacity=".6"/>
+ <path d="M40 550 225 488 410 550 410 640 225 702 40 640Z" fill="url(#glass)" stroke="#6b93aa" stroke-width="1.5"/><path d="M40 640 225 702 410 640" fill="none" stroke="#37e4fa" stroke-opacity=".6"/>
+ <path d="M285 735 470 673 655 735 655 825 470 887 285 825Z" fill="url(#glass)" stroke="#6b93aa" stroke-width="1.5"/><path d="M285 825 470 887 655 825" fill="none" stroke="#37e4fa" stroke-opacity=".6"/>
+ <path d="M945 735 1130 673 1315 735 1315 825 1130 887 945 825Z" fill="url(#glass)" stroke="#6b93aa" stroke-width="1.5"/><path d="M945 825 1130 887 1315 825" fill="none" stroke="#37e4fa" stroke-opacity=".6"/>
+ <path d="M1190 550 1375 488 1560 550 1560 640 1375 702 1190 640Z" fill="url(#glass)" stroke="#6b93aa" stroke-width="1.5"/><path d="M1190 640 1375 702 1560 640" fill="none" stroke="#37e4fa" stroke-opacity=".6"/>
+</g>
+<!-- 01 Coconut harvesting robot -->
+<g transform="translate(155 190)">
+ <path d="M75 92 83 20" stroke="#b6c8d4" stroke-width="8" stroke-linecap="round"/>
+ <g fill="none" stroke="#6ab78e" stroke-width="7" stroke-linecap="round"><path d="M82 22Q35 -5 12 15M82 22Q92 -12 133 -10M82 22Q133 14 151 43M82 22Q48 48 26 60"/></g>
+ <g fill="#9a7044" stroke="#e2bb80"><ellipse cx="100" cy="50" rx="7" ry="10"/><ellipse cx="113" cy="57" rx="7" ry="10"/><ellipse cx="103" cy="66" rx="7" ry="10"/></g>
+ <path d="M26 125 82 105 140 126 82 147Z" fill="url(#ti)" stroke="#e5f2f8"/><path d="M26 125v12l56 21v-11Z" fill="#233f56"/><path d="M82 147v11l58-21v-11Z" fill="#08192a"/>
+ <use href="#wheel" x="48" y="150"/><use href="#wheel" x="120" y="124"/>
+ <path d="M76 112 81 85 105 75 118 90 103 117Z" fill="url(#ti)" stroke="#e5f2f8"/><path d="M103 88 132 70 145 75 117 97" fill="none" stroke="#dbe7ee" stroke-width="7" stroke-linecap="round"/><path d="M144 74 155 62" stroke="url(#cyan)" stroke-width="4"/>
+</g>
+<text x="270" y="337" text-anchor="middle" fill="#f1f8fc" font-family="Arial" font-size="15" font-weight="700" letter-spacing=".8">01  COCONUT HARVEST AI</text>
+<text x="270" y="356" text-anchor="middle" fill="#59eaff" font-family="Arial" font-size="9.5" letter-spacing="1.7">AGRICULTURAL ROBOT CONCEPT</text>
+<!-- 02 Flood rescue craft -->
+<g transform="translate(685 150)">
+ <path d="M30 116 110 88 190 116 110 145Z" fill="url(#ti)" stroke="#eff8fc" stroke-width="1.5"/><path d="M30 116v13l80 29v-13Z" fill="#27465d"/><path d="M110 145v13l80-29v-13Z" fill="#091a2a"/>
+ <path d="M62 105 82 67 139 67 161 106Z" fill="url(#tiSide)" stroke="#d6e5ed" stroke-width="2"/><path d="M79 73h64l13 25H66Z" fill="#08283f" stroke="#42eaff" stroke-width="2"/>
+ <path d="M108 65V42h8v23M116 43l25-11" stroke="#c7d6df" stroke-width="5"/><path d="M20 148q22 18 44 0t44 0t44 0t44 0" fill="none" stroke="#40e8ff" stroke-width="3" opacity=".8"/>
+ <path d="M60 153v15M160 153v15" stroke="#a5b9c7" stroke-width="5"/>
+</g>
+<text x="800" y="292" text-anchor="middle" fill="#f1f8fc" font-family="Arial" font-size="15" font-weight="700" letter-spacing=".8">02  FLOOD RESCUE AI</text>
+<text x="800" y="311" text-anchor="middle" fill="#59eaff" font-family="Arial" font-size="9.5" letter-spacing="1.7">AMPHIBIOUS RESCUE CONCEPT</text>
+<!-- 03 Sentinel multimodal inspection -->
+<g transform="translate(1215 190)">
+ <path d="M48 120 112 98 176 120 112 143Z" fill="url(#ti)" stroke="#dce9f0"/><path d="M48 120v12l64 23v-12Z" fill="#263f55"/><path d="M112 143v12l64-23v-12Z" fill="#091a2a"/>
+ <path d="M75 106V52q0-10 10-10h55q10 0 10 10v54" fill="none" stroke="url(#ti)" stroke-width="11"/><path d="M87 56h51v42H87Z" fill="#092b45" stroke="#41eaff" stroke-width="2"/>
+ <path d="M95 66h35M95 77h35M95 88h22" stroke="#a9faff" stroke-width="3"/><circle cx="112" cy="105" r="7" fill="#43eaff" filter="url(#glow)"/>
+ <path d="M54 72h20M151 72h20" stroke="#c5d3dc" stroke-width="5" stroke-linecap="round"/>
+</g>
+<text x="1330" y="337" text-anchor="middle" fill="#f1f8fc" font-family="Arial" font-size="15" font-weight="700" letter-spacing=".8">03  PUI89 SENTINEL</text>
+<text x="1330" y="356" text-anchor="middle" fill="#59eaff" font-family="Arial" font-size="9.5" letter-spacing="1.7">MULTIMODAL SCREENING CONCEPT</text>
+<!-- 04 AI HOME sensor hub -->
+<g transform="translate(110 520)">
+ <path d="M45 108 115 83 185 108 115 133Z" fill="url(#ti)" stroke="#dce9f0"/><path d="M45 108v12l70 26v-13Z" fill="#263f55"/><path d="M115 133v13l70-26v-12Z" fill="#091a2a"/>
+ <path d="M78 90V48l37-22 37 22v42l-37 22Z" fill="url(#tiSide)" stroke="#dce8ef" stroke-width="2"/><path d="M91 51 115 37 139 51 115 65Z" fill="url(#ti)"/><path d="M91 51v27l24 14V65Z" fill="#71889a"/><path d="M115 65v27l24-14V51Z" fill="#1a344b"/>
+ <circle cx="115" cy="64" r="8" fill="#42eaff" filter="url(#glow)"/><path d="M115 26V13M78 48 65 38M152 48l13-10" stroke="#43eaff" stroke-width="3"/>
+</g>
+<text x="225" y="667" text-anchor="middle" fill="#f1f8fc" font-family="Arial" font-size="15" font-weight="700" letter-spacing=".8">04  AI HOME</text>
+<text x="225" y="686" text-anchor="middle" fill="#59eaff" font-family="Arial" font-size="9.5" letter-spacing="1.7">INDOOR SAFETY PLATFORM</text>
+<!-- 05 AI NOMAD portable unit -->
+<g transform="translate(355 705)">
+ <path d="M40 105 115 79 190 105 115 132Z" fill="url(#ti)" stroke="#dce9f0"/><path d="M40 105v12l75 27v-12Z" fill="#263f55"/><path d="M115 132v12l75-27v-12Z" fill="#091a2a"/>
+ <path d="M82 27q0-8 9-8h48q9 0 9 8v73q0 8-9 8H91q-9 0-9-8Z" fill="url(#ti)" stroke="#f0f8fc" stroke-width="2"/><path d="M94 33h42v48H94Z" fill="#0b2b44" stroke="#43eaff" stroke-width="2"/>
+ <path d="M102 45h26M102 56h26M102 67h16" stroke="#b3fbff" stroke-width="2"/><path d="M105 19V8h20v11" fill="none" stroke="#dce8ef" stroke-width="4"/><use href="#wheel" x="83" y="116"/><use href="#wheel" x="149" y="140"/>
+</g>
+<text x="470" y="852" text-anchor="middle" fill="#f1f8fc" font-family="Arial" font-size="15" font-weight="700" letter-spacing=".8">05  AI NOMAD</text>
+<text x="470" y="871" text-anchor="middle" fill="#59eaff" font-family="Arial" font-size="9.5" letter-spacing="1.7">PORTABLE SAFETY CONCEPT</text>
+<!-- 06 AI Robot Car -->
+<g transform="translate(1015 705)">
+ <path d="M30 112 112 83 194 112 112 141Z" fill="url(#ti)" stroke="#dce9f0"/><path d="M30 112v12l82 30v-13Z" fill="#263f55"/><path d="M112 141v13l82-30v-12Z" fill="#091a2a"/>
+ <path d="M57 99 76 60h70l28 39-62 22Z" fill="url(#ti)" stroke="#edf6fb" stroke-width="2"/><path d="M85 65h54l15 27H72Z" fill="#0a2a43" stroke="#42eaff" stroke-width="2"/>
+ <use href="#wheel" x="62" y="127"/><use href="#wheel" x="161" y="151"/><path d="M112 58V44M106 44h12" stroke="#43eaff" stroke-width="3"/>
+</g>
+<text x="1130" y="852" text-anchor="middle" fill="#f1f8fc" font-family="Arial" font-size="15" font-weight="700" letter-spacing=".8">06  AI ROBOT CAR</text>
+<text x="1130" y="871" text-anchor="middle" fill="#59eaff" font-family="Arial" font-size="9.5" letter-spacing="1.7">INTELLIGENT MOBILITY CONCEPT</text>
+<!-- 07 AI Robot Motorcycle -->
+<g transform="translate(1260 520)">
+ <path d="M42 112 112 87 182 112 112 137Z" fill="url(#ti)" stroke="#dce9f0"/><path d="M42 112v12l70 25v-12Z" fill="#263f55"/><path d="M112 137v12l70-25v-12Z" fill="#091a2a"/>
+ <circle cx="70" cy="101" r="22" fill="#07121f" stroke="#a9bdca" stroke-width="5"/><circle cx="70" cy="101" r="7" fill="#38eaff"/>
+ <circle cx="153" cy="101" r="22" fill="#07121f" stroke="#a9bdca" stroke-width="5"/><circle cx="153" cy="101" r="7" fill="#38eaff"/>
+ <path d="M70 101 96 66 125 101 153 101 133 67 113 67" fill="none" stroke="url(#ti)" stroke-width="8" stroke-linejoin="round"/>
+ <path d="M96 66 108 54 132 60 137 72 111 78Z" fill="url(#tiSide)" stroke="#e1edf4" stroke-width="2"/><path d="M116 58 127 48h18" fill="none" stroke="#43eaff" stroke-width="3"/>
+</g>
+<text x="1375" y="667" text-anchor="middle" fill="#f1f8fc" font-family="Arial" font-size="15" font-weight="700" letter-spacing=".8">07  AI ROBOT MOTORCYCLE</text>
+<text x="1375" y="686" text-anchor="middle" fill="#59eaff" font-family="Arial" font-size="9.5" letter-spacing="1.7">RIDER-ASSIST CONCEPT</text>
+<!-- Central PUI89 identity -->
+<g filter="url(#shadow)">
+ <path d="M630 430 800 370 970 430 970 540 800 600 630 540Z" fill="#071b30" stroke="#49eaff" stroke-width="2.5"/>
+ <path d="M630 430 800 490 970 430" fill="none" stroke="#a6c0d0" stroke-opacity=".5"/>
+ <path d="M630 540 800 600 970 540" fill="none" stroke="#36e4fa" stroke-opacity=".7" stroke-width="2"/>
+ <path d="M666 438 800 391 934 438 800 485Z" fill="url(#ti)"/>
+ <path d="M666 438v75l134 49v-77Z" fill="#24445e"/><path d="M800 485v77l134-49v-75Z" fill="#091a2c"/>
+ <path d="M687 440 800 400 913 440 800 480Z" fill="#0b2138" stroke="#49eaff" stroke-width="1.5"/>
+ <text x="800" y="458" text-anchor="middle" fill="#f7fcff" font-family="Arial,sans-serif" font-size="49" font-weight="800" letter-spacing="2">PUI89</text>
+ <text x="800" y="519" text-anchor="middle" fill="#5beaff" font-family="Arial" font-size="12" font-weight="700" letter-spacing="4">AI  /  ROBOTICS</text>
+ <text x="800" y="543" text-anchor="middle" fill="#c3d5e1" font-family="Arial" font-size="10" letter-spacing="2">SHARED INTELLIGENCE CORE</text>
+</g>
+<!-- Truthful status note -->
+<g transform="translate(590 625)">
+ <rect width="420" height="70" rx="10" fill="#07182a" stroke="#3b718e"/>
+ <text x="210" y="23" text-anchor="middle" fill="#e4f2fa" font-family="Arial" font-size="10" font-weight="700" letter-spacing="2">PORTFOLIO STATUS</text>
+ <circle cx="45" cy="45" r="5" fill="#f2bd6b"/><text x="58" y="49" fill="#c5d6e1" font-family="Arial" font-size="10">Concept</text>
+ <circle cx="155" cy="45" r="5" fill="#4ce7ff"/><text x="168" y="49" fill="#c5d6e1" font-family="Arial" font-size="10">Software work</text>
+ <circle cx="305" cy="45" r="5" fill="#9ee3b3"/><text x="318" y="49" fill="#c5d6e1" font-family="Arial" font-size="10">Tests</text>
+</g>
+<text x="800" y="966" text-anchor="middle" fill="#7895aa" font-family="Arial" font-size="10" letter-spacing="2">INTELLIGENT SYSTEMS  •  VERIFIABLE DECISIONS  •  HUMAN-LED SAFETY</text>
 </svg>
