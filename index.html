@@ -560,7 +560,29 @@ a:hover{color:#B8F2FF!important}
 ::selection{background:rgba(66,217,255,.30)!important;color:#F3F7FF!important}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
 
-</style>
+
+    /* PUI89: show the complete seven-project hero illustration */
+    .hero-visual{
+      aspect-ratio: 8 / 5;
+      min-height: 0 !important;
+      height: auto;
+      background:#071625 !important;
+    }
+    .hero-visual > img{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:contain !important;
+      object-position:center !important;
+      transform:none !important;
+    }
+    .hero-visual:hover > img{transform:none !important}
+    @media(max-width:760px){
+      .hero-visual{aspect-ratio: 8 / 5; min-height:0 !important}
+    }
+
+  </style>
   <link rel="stylesheet" href="assets/css/pui89-design-system.css?v=20261107-2">
   <link rel="stylesheet" href="/assets/css/pui89-project-progress.css?v=20261107-2">
 <link rel="stylesheet" href="/assets/css/pui89-development-observatory.css?v=20261107-2">
