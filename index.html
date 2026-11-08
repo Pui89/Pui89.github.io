@@ -583,27 +583,97 @@ a:hover{color:#B8F2FF!important}
     }
 
   </style>
-  <link rel="stylesheet" href="assets/css/pui89-design-system.css?v=20261107-2">
+  <link rel="stylesheet" href="assets/css/pui89-design-system.css?v=20261108-professional">
   <link rel="stylesheet" href="/assets/css/pui89-project-progress.css?v=20261107-2">
 <link rel="stylesheet" href="/assets/css/pui89-development-observatory.css?v=20261107-2">
 
   <!-- Final homepage theme: intentionally loaded after every linked stylesheet. -->
   <style id="pui89-homepage-final-theme">
-    :root{color-scheme:dark!important;--bg:#07111F!important;--panel:#101F33!important;--panel2:#172B43!important;--text:#F3F7FF!important;--muted:#B8C7DA!important;--line:#30445F!important;--accent:#42D9FF!important;--accent2:#B8F2FF!important;--pui89-bg:#07111F!important;--pui89-panel:#101F33!important;--pui89-panel-2:#172B43!important;--pui89-text:#F3F7FF!important;--pui89-muted:#B8C7DA!important;--pui89-cyan:#42D9FF!important;--pui89-line:rgba(66,217,255,.25)!important;--pui89-glow:0 0 28px rgba(66,217,255,.16)!important}
-    html,body{background-color:#07111F!important;color:#F3F7FF!important}
-    body{background-image:radial-gradient(ellipse at 78% -8%,rgba(24,117,151,.24),transparent 38%),radial-gradient(ellipse at 5% 42%,rgba(24,70,112,.16),transparent 34%),linear-gradient(180deg,#07111F 0%,#091626 100%)!important}
-    a,.navlinks a:hover,.footer a:hover{color:#42D9FF!important}a:hover{color:#B8F2FF!important}
-    .eyebrow,.num,.index,.label,.tag,.flagship-kicker,.support-number,.service-card .label,.contact-card .label{color:#42D9FF!important}
-    .hero h1 span{background:linear-gradient(105deg,#42D9FF,#B8F2FF)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important}
-    .card,.panel,.principle,.service-card,.contact-card,.photo-card,.support-card,.sponsor-panel,.flagship-shell,.trust-strip,.qr-panel,.research-card{background:linear-gradient(150deg,#172B43,#101F33)!important;border-color:rgba(66,217,255,.28)!important}
-    .btn.primary,.button.primary,.actions .primary{background:linear-gradient(110deg,#42D9FF,#8AEAFF)!important;border-color:#42D9FF!important;color:#041522!important}
-    .btn.secondary,.button.secondary,.btn:not(.primary){background:#10233A!important;border-color:#36516D!important;color:#F3F7FF!important}
-    .status,.badge,.pill,.chip,.flagship-tags span{color:#C9F5FF!important;background:rgba(66,217,255,.09)!important;border-color:rgba(66,217,255,.34)!important}
-    .principle{border-left-color:#42D9FF!important}.footer{border-top-color:rgba(66,217,255,.25)!important}
-  </style>
 
-  <link rel="stylesheet" href="assets/css/pui89-project-design-system.css?v=20261107-1">
-<link rel="stylesheet" href="/assets/css/pui89-project-design-system.css?v=20261108-polish">
+:root{
+ color-scheme:dark!important;
+ --bg:#07111F;--panel:#101F33;--panel2:#172B43;--text:#F3F7FF;--muted:#B8C7DA;
+ --line:rgba(174,198,222,.19);--accent:#42D9FF;--accent2:#B8F2FF;--max:1200px;
+}
+html{scroll-behavior:smooth;scroll-padding-top:28px}
+body{
+ background:radial-gradient(ellipse at 78% -8%,rgba(24,117,151,.22),transparent 38%),
+ radial-gradient(ellipse at 5% 42%,rgba(24,70,112,.15),transparent 34%),
+ linear-gradient(180deg,#07111F 0%,#091626 100%)!important;
+ color:var(--text)!important;line-height:1.7;
+}
+.wrap{width:min(calc(100% - 48px),var(--max))}
+a{color:var(--accent)!important;text-underline-offset:4px}
+a:hover{color:var(--accent2)!important}
+.nav{padding:18px 0;gap:22px;border-bottom:1px solid var(--line)!important}
+.brand{font-size:.98rem;font-weight:850;letter-spacing:.07em;color:var(--text)!important}
+.navlinks{gap:5px 8px}
+.navlinks a{font-size:.86rem;font-weight:650;padding:8px 10px;border-radius:8px;text-decoration:none;color:var(--muted)!important}
+.navlinks a:hover{background:rgba(66,217,255,.08);color:var(--accent)!important}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,.96fr);align-items:center;gap:clamp(28px,4vw,60px);max-width:none;padding:64px 0 44px}
+.hero-copy{min-width:0}
+.eyebrow,.num,.label,.flagship-kicker,.support-number{color:var(--accent)!important}
+.hero h1{font-size:clamp(3rem,5.7vw,5.4rem);line-height:1.02;letter-spacing:-.06em;margin:18px 0 20px;text-wrap:balance}
+.hero h1 span{background:linear-gradient(105deg,#42D9FF,#B8F2FF)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important}
+.hero p{font-size:clamp(1.02rem,1.45vw,1.18rem);max-width:62ch;color:var(--muted)!important}
+.hero-visual{aspect-ratio:8/5;min-height:0!important;height:auto;position:relative;overflow:hidden;border:1px solid rgba(66,217,255,.26);border-radius:22px;background:#071625!important;box-shadow:0 24px 64px rgba(0,0,0,.32),0 0 34px rgba(66,217,255,.06)}
+.hero-visual>img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain!important;object-position:center!important;transform:none!important}
+.hero-visual:hover>img{transform:none!important}
+.visual-shade{pointer-events:none}
+.actions{gap:12px;margin-top:25px}
+.btn{min-height:44px;padding:11px 17px;border-radius:10px;font-weight:750}
+.btn.primary,.button.primary,.actions .primary{background:linear-gradient(110deg,#42D9FF,#8AEAFF)!important;border-color:#42D9FF!important;color:#041522!important;box-shadow:0 8px 24px rgba(66,217,255,.13)}
+.btn.secondary,.button.secondary,.btn:not(.primary){background:#10233A!important;border-color:#36516D!important;color:var(--text)!important}
+.btn:hover{transform:translateY(-2px)}
+.hero-points{gap:10px 17px;color:#C4D2E1}
+.trust-strip{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:19px 22px;margin:0 0 34px;background:linear-gradient(110deg,rgba(18,34,53,.9),rgba(14,25,40,.8));border:1px solid var(--line);border-radius:16px}
+.trust-strip>div{gap:12px;padding:4px 12px}
+.strip-index{color:var(--accent)}
+.section{padding:36px 0 60px}
+.section h2{font-size:clamp(1.8rem,3.5vw,2.55rem);line-height:1.15;letter-spacing:-.04em}
+.intro{max-width:76ch;color:var(--muted)!important}
+.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:26px}
+.card,.service-card,.contact-card,.support-card,.photo-card,.sponsor-panel,.flagship-shell,.trust-strip,.principle{
+ background:linear-gradient(150deg,#172B43 0%,#101F33 100%)!important;
+ border:1px solid var(--line)!important;border-radius:17px;
+}
+.card{padding:24px;min-width:0;box-shadow:0 12px 32px rgba(0,0,0,.16);transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.card:hover,.service-card:hover,.contact-card:hover,.support-card:hover{transform:translateY(-3px);border-color:rgba(66,217,255,.58)!important;box-shadow:0 18px 42px rgba(0,0,0,.24),0 0 22px rgba(66,217,255,.06)}
+.card h3{font-size:1.25rem;line-height:1.25;letter-spacing:-.02em}
+.card p,.principle p,.service-card p,.contact-card p{color:var(--muted)!important}
+.project-art{width:calc(100% + 48px);height:190px;object-fit:contain!important;object-position:center;background:linear-gradient(135deg,#0B1B2D,#132A42);margin:-24px -24px 18px;border-radius:16px 16px 0 0;border-bottom:1px solid var(--line);padding:8px}
+.project-art-note{color:#9FB3C8!important}
+.pui89-progress{border-color:rgba(66,217,255,.25)!important;background:rgba(6,18,32,.72)!important;border-radius:12px}
+.pui89-progress__eyebrow{color:var(--accent)!important}
+.pui89-progress__score,.pui89-progress__bar{display:none!important}
+.status,.badge,.pill,.chip,.flagship-tags span{color:#C9F5FF!important;background:rgba(66,217,255,.09)!important;border-color:rgba(66,217,255,.34)!important}
+.principle{border-left:2px solid var(--accent)!important;padding:21px}
+.notice{background:#142338!important;border-color:rgba(66,217,255,.34)!important;color:#EAF6FF!important}
+.photo-card img{object-fit:contain;background:#0D1D32}
+.footer{border-top-color:var(--line)!important;color:var(--muted)!important}
+.flagship-shell{box-shadow:0 20px 54px rgba(0,0,0,.2)}
+:where(a,button,.btn,[role="button"]):focus-visible{outline:2px solid var(--accent)!important;outline-offset:4px}
+::selection{background:rgba(66,217,255,.3);color:var(--text)}
+@media(max-width:980px){.hero{grid-template-columns:minmax(0,1fr) minmax(300px,.9fr);gap:25px}.hero h1{font-size:clamp(2.8rem,6vw,4.5rem)}}
+@media(max-width:760px){
+ .wrap{width:min(calc(100% - 32px),var(--max))}
+ .nav{align-items:flex-start;flex-direction:column;gap:12px}
+ .navlinks{justify-content:flex-start}
+ .hero{grid-template-columns:1fr;padding:45px 0 32px;gap:24px}
+ .hero h1{font-size:clamp(2.8rem,12vw,4.4rem)}
+ .hero-visual{aspect-ratio:8/5;min-height:0!important}
+ .trust-strip{grid-template-columns:1fr;padding:14px}
+ .trust-strip>div{padding:5px 8px}
+ .grid,.principles,.service-grid,.photo-grid,.contact-grid{grid-template-columns:1fr}
+ .card{min-height:0}
+ .project-art{height:205px}
+ .section{padding:28px 0 46px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+</style>
+
+  <link rel="stylesheet" href="/assets/css/pui89-project-design-system.css?v=20261108-professional">
 </head>
 <body data-pui89-project="portfolio">
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -715,7 +785,7 @@ a:hover{color:#B8F2FF!important}
         </article>
         <article class="card" aria-label="PUI89 AI Robot Car project">
           <img class="project-art" src="/images/pui89-ai-car-concept.svg" alt="PUI89 AI Robot Car premium electric crossover concept artwork" loading="lazy" decoding="async"><div class="pui89-progress pui89-progress--card" role="img" aria-label="PROJECT MATURITY: Stage 1 of 5 — Early software foundation; Progress snapshot: 7 November 2026"><span class="pui89-progress__eyebrow">PROJECT MATURITY</span><strong>Stage 1 of 5</strong><span class="pui89-progress__score">29% commercial readiness</span><time class="pui89-progress__updated" datetime="2026-11-07">Progress snapshot · 7 November 2026</time><span class="pui89-progress__bar" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="29" aria-label="29% readiness"><span class="pui89-progress__bar-fill" style="width:29%"></span></span><span class="pui89-progress__label">Early software foundation</span><span class="pui89-progress__steps" aria-hidden="true"><i class="is-reached"></i><i></i><i></i><i></i><i></i></span></div>
-          <div class="num">05 / INTELLIGENT MOBILITY</div><h3>PUI89 AI Robot Car</h3>
+          <div class="num">06 / INTELLIGENT MOBILITY</div><h3>PUI89 AI Robot Car</h3>
           <p>A software-first vehicle-intelligence research platform exploring road-scene perception, risk assessment, vehicle health and helpful driver-support intelligence. Human driver remains in control; this is not a built autonomous vehicle.</p>
           <span class="status">Concept and software foundation · vehicle validation pending</span>
           <a href="ai-robot-car.html">Explore AI Car design ↗</a>
@@ -723,7 +793,7 @@ a:hover{color:#B8F2FF!important}
         </article>
         <article class="card" aria-label="PUI89 AI Robot Motorcycle project">
           <img class="project-art" src="/images/pui89-easyride-ai-motorcycle.svg" alt="PUI89 EasyRide V3 motorcycle concept with black touring seat and one continuous connected floorboard" loading="lazy" decoding="async"><div class="pui89-progress pui89-progress--card" role="img" aria-label="PROJECT MATURITY: Stage 1 of 5 — Concept &amp; engineering foundation; Progress snapshot: 7 November 2026"><span class="pui89-progress__eyebrow">PROJECT MATURITY</span><strong>Stage 1 of 5</strong><span class="pui89-progress__score">28% commercial readiness</span><time class="pui89-progress__updated" datetime="2026-11-07">Progress snapshot · 7 November 2026</time><span class="pui89-progress__bar" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="28" aria-label="28% readiness"><span class="pui89-progress__bar-fill" style="width:28%"></span></span><span class="pui89-progress__label">Concept &amp; engineering foundation</span><span class="pui89-progress__steps" aria-hidden="true"><i class="is-reached"></i><i></i><i></i><i></i><i></i></span></div>
-          <div class="num">06 / TWO-WHEEL MOBILITY</div><h3>PUI89 EasyRide AI Motorcycle</h3>
+          <div class="num">07 / TWO-WHEEL MOBILITY</div><h3>PUI89 EasyRide AI Motorcycle</h3>
           <p>A low step-through, upright, rider-first motorcycle concept designed to study easier mounting, comfortable reach, manageable proportions and AI advisory support for a broad range of adult riders. It is not a built or road-tested motorcycle.</p>
           <span class="status">Inclusive design concept · engineering validation pending</span>
           <a href="ai-robot-motorcycle.html">Explore EasyRide design ↗</a>
@@ -734,7 +804,7 @@ a:hover{color:#B8F2FF!important}
 
     <section id="core" class="section" aria-labelledby="core-heading">
       <h2 id="core-heading">One shared engineering foundation</h2>
-      <p class="intro">PUI89 is being developed as a common AI-software foundation supporting six specialised project areas. The shared-core work is being introduced and reviewed incrementally; this section describes the architecture direction, not a claim that every component is already integrated or validated.</p>
+      <p class="intro">PUI89 is being developed as a common AI-software foundation supporting seven specialised project areas. The shared-core work is being introduced and reviewed incrementally; this section describes the architecture direction, not a claim that every component is already integrated or validated.</p>
       <div class="grid">
         <article class="card"><div class="num">01 / STATE &amp; UNCERTAINTY</div><h3>Know what the system knows</h3><p>Track observation source, timestamp, confidence, calibration status, stale inputs, and conflicting evidence. Represent the changing world state explicitly, propagate uncertainty into task plans, and request human review when evidence is incomplete or unreliable.</p><span class="status">Software contract under review</span></article>
         <article class="card"><div class="num">02 / AUTOMATED CHECKS</div><h3>Make failures visible</h3><p>Use repeatable Python checks and structured test reports to record failures, environment details, and evidence. Passing software tests does not establish field performance or robot safety.</p><span class="status">Development stage: incremental implementation</span></article>
