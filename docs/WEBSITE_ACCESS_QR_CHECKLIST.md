@@ -47,3 +47,19 @@ Use Google's PageSpeed Insights for both Mobile and Desktop on the homepage and 
 ## Cost and privacy guard
 
 No paid service, API key, subscription, QR shortener, new model or runtime dependency is required for the repository-side checks. PageSpeed Insights is an external Google service; submit only public page URLs. Browser/device and camera checks require an actual device.
+
+## Latest QA findings and repairs — 9 November 2026
+
+The first full external-link pass found one outdated WHO ENDS/ENNDS URL returning 404. It has been replaced on both Screening language pages with the current WHO ENDS/ENNDS page. The next automated pass reported 120 external links responding successfully and 4 inconclusive links (HTTP 403 from depa.or.th and three ISO pages); these are not counted as passed.
+
+The QR audit found truncated/corrupt Thai PNG files and stale payloads. Six replacement vector QR assets were generated for canonical destinations and the corresponding page references were updated:
+- `qr/ai-core-th.svg` → `https://pui89.github.io/ai-core-th.html`
+- `qr/ai-robot-car-th.svg` → `https://pui89.github.io/ai-robot-car-th.html`
+- `qr/home-th.svg` → `https://pui89.github.io/home-th.html`
+- `qr/screening-th.svg` → `https://pui89.github.io/screening-th.html`
+- `qr/nomad-en.svg` → `https://pui89.github.io/nomad.html`
+- `qr/nomad-th.svg` → `https://pui89.github.io/nomad-th.html`
+
+The stale Screening Thai QR that previously opened the HOME page and the NOMAD QR codes that opened legacy `homeguard` redirects were replaced. Internal NOMAD links on the company, support, HOME and AI Core pages now point to the canonical `nomad.html` / `nomad-th.html` pages. Corrupt/stale PNG files were removed only after all active references were switched to the replacements.
+
+**Still not signed off:** real mobile/desktop browser rendering at the listed widths; second-device camera scanning of each active QR code after deployment; Lighthouse Mobile/Desktop reports; manual keyboard/screen-reader/contrast review; and manual review of the four external hosts that return HTTP 403. Source-level CI success is not a substitute for those checks.
