@@ -10,9 +10,11 @@ from __future__ import annotations
 import argparse
 import concurrent.futures
 import json
+import os
 import re
 import struct
 import sys
+import tempfile
 import zlib
 import time
 import urllib.error
@@ -361,7 +363,7 @@ def main() -> int:
         ]
     }
     report_text = json.dumps(report, indent=2, ensure_ascii=False)
-    (Path(tempfile.gettempdir()) / "pui89-site-qa-report.json").write_text(report_text + "\n", encoding="utf-8")
+    (Path(os.environ.get("RUNNER_TEMP", tempfile.gettempdir())) / "pui89-site-qa-report.json").write_text(report_text + "\n", encoding="utf-8")
     print(report_text)
     return 1 if errors else 0
 
