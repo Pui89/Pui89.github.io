@@ -104,3 +104,6 @@ footer{border-top:1px solid var(--pui-line)}
 @media(max-width:900px){.pui89-project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pui89-section-heading{grid-template-columns:1fr;gap:12px}}
 @media(max-width:600px){.pui89-project-grid{grid-template-columns:1fr;gap:14px}.pui89-project-image{aspect-ratio:16/9}.pui89-project-content{padding:17px}.pui89-brand-lockup{margin-bottom:19px}.pui89-project-showcase{padding-top:42px}}
 @media(hover:none){.pui89-project-card:hover{transform:none}.pui89-project-card:hover .pui89-project-image img{transform:none}}
+
+.skip-link{position:absolute;left:12px;top:-60px;z-index:1000;padding:10px 14px;border-radius:9px;background:#42D9FF;color:#041522;font-weight:800}
+.skip-link:focus{top:12px}
