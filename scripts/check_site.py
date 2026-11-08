@@ -361,7 +361,7 @@ def main() -> int:
         ]
     }
     report_text = json.dumps(report, indent=2, ensure_ascii=False)
-    (ROOT / "pui89-site-qa-report.json").write_text(report_text + "\\n", encoding="utf-8")
+    (Path(tempfile.gettempdir()) / "pui89-site-qa-report.json").write_text(report_text + "\\n", encoding="utf-8")
     print(report_text)
     return 1 if errors else 0
 
