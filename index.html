@@ -588,7 +588,24 @@ a:hover{color:#B8F2FF!important}
     .project-art-link img{transition:filter .18s ease,transform .18s ease}
     .project-art-link:hover img{filter:brightness(1.08);transform:scale(1.01)}
     @media(prefers-reduced-motion:reduce){.project-art-link img{transition:none}}
-</style>
+
+    /* Compact, accessible navigation: one primary row with secondary links grouped under More. */
+    .navlinks{display:flex;align-items:center;justify-content:flex-end;gap:clamp(3px,.55vw,9px);flex-wrap:nowrap;white-space:nowrap}
+    .navlinks>a,.nav-more>summary{font-size:.82rem;font-weight:700;color:var(--muted);text-decoration:none;padding:8px 9px;border-radius:8px;cursor:pointer;list-style:none}
+    .nav-more>summary::-webkit-details-marker{display:none}
+    .nav-more>summary:after{content:" ▾";color:var(--accent)}
+    .navlinks>a:hover,.nav-more>summary:hover{background:rgba(255,255,255,.07);color:var(--text)}
+    .nav-more{position:relative}
+    .nav-more-menu{position:absolute;z-index:30;right:0;top:calc(100% + 8px);min-width:230px;padding:8px;border:1px solid var(--line);border-radius:12px;background:#101d2d;box-shadow:0 18px 42px rgba(0,0,0,.35);display:grid;gap:3px}
+    .nav-more-menu a{display:block;padding:9px 11px;border-radius:7px;color:var(--muted);font-size:.86rem;text-decoration:none;white-space:normal}
+    .nav-more-menu a:hover{background:rgba(255,255,255,.07);color:var(--text)}
+    .nav-more[open] .nav-more-menu{animation:nav-in .12s ease-out}
+    @keyframes nav-in{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:980px){.navlinks{justify-content:flex-start;flex-wrap:wrap;white-space:normal}.navlinks>a,.nav-more>summary{font-size:.8rem;padding:7px 8px}}
+    @media(max-width:600px){.navlinks{gap:2px}.navlinks>a,.nav-more>summary{font-size:.78rem;padding:6px 7px}.nav-more-menu{left:0;right:auto;max-width:min(86vw,300px)}}
+    @media(prefers-reduced-motion:reduce){.nav-more[open] .nav-more-menu{animation:none}}
+
+  </style>
   <link rel="stylesheet" href="assets/css/pui89-design-system.css?v=20261108-professional">
   <link rel="stylesheet" href="/assets/css/pui89-project-progress.css?v=20261107-2">
 <link rel="stylesheet" href="/assets/css/pui89-development-observatory.css?v=20261107-2">
@@ -696,18 +713,20 @@ a:hover{color:var(--accent2)!important}
     <a class="brand" href="#top" aria-label="PUI89 AI Robotics home"><img src="images/pui89-precision-glow-01.svg" alt="PUI89 AI Robotics" width="184" height="55"></a>
     <nav class="navlinks" aria-label="Main navigation">
       <a href="#projects">Projects</a>
-      <a href="ai-vehicles.html">AI Car &amp; Motorcycle</a>
-      <a href="company.html">About PUI89</a>
-      <a href="growth.html">Growth roadmap</a>
-      <a href="evidence.html">Evidence &amp; validation</a>
-      <a href="open-source-resources.html">Open-Source &amp; Engineering resources</a>
+      <a href="ai-vehicles.html">Vehicles</a>
       <a href="ai-core.html">AI Core</a>
-      <a href="#development-observatory">Progress dashboard</a>
-      <a href="#contact">Contact</a>
-      <a href="support.html">Partner</a>
-      <a href="support.html#trust-and-safety">Trust &amp; Safety</a>
-      <a href="https://github.com/Pui89">GitHub ↗</a>
-      <a href="th.html" lang="th" aria-label="อ่านเว็บไซต์ภาษาไทย">ภาษาไทย</a>
+      <a href="growth.html">Roadmap</a>
+      <a href="evidence.html">Evidence</a>
+      <details class="nav-more"><summary>More</summary><div class="nav-more-menu">
+        <a href="company.html">About PUI89</a>
+        <a href="open-source-resources.html">Open-source resources</a>
+        <a href="#development-observatory">Progress dashboard</a>
+        <a href="#contact">Contact</a>
+        <a href="support.html">Partner</a>
+        <a href="support.html#trust-and-safety">Trust &amp; Safety</a>
+        <a href="https://github.com/Pui89">GitHub ↗</a>
+        <a href="th.html" lang="th" aria-label="อ่านเว็บไซต์ภาษาไทย">ภาษาไทย</a>
+      </div></details>
     </nav>
   </header>
   <main id="main-content" class="wrap">
