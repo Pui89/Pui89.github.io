@@ -19,10 +19,10 @@ PROJECTS = [
     ("Coconut Harvest AI", "Pui89/Coconut-Harvest-AI"),
     ("Extreme Flood Rescue AI", "Pui89/Extreme-Flood-Rescue-AI"),
     ("PUI89 Sentinel", "Pui89/Multimodal-Narcotics-Screening-AI"),
-    ("PUI89 AI HOME", "Pui89/AI-HOME"),
-    ("PUI89 AI NOMAD", "Pui89/AI-NOMAD"),
-    ("PUI89 AI Robot Car", "Pui89/ai-robot-car"),
-    ("PUI89 AI Robot Motorcycle", "Pui89/ai-robot-motorcycle"),
+    ("PUI89 AI HOME", "Pui89/AI-Home-Safety-Robot"),
+    ("PUI89 AI NOMAD", "Pui89/AI-Mobile-Assistant-Robot"),
+    ("PUI89 AI Robot Car", "Pui89/AI-Autonomous-Robot-Car"),
+    ("PUI89 AI Robot Motorcycle", "Pui89/AI-Motorcycle-Robotics"),
 ]
 API_ROOT = "https://api.github.com"
 FEEDBACK_MARKER = "<!-- PUI89_PROJECT_FEEDBACK_V1 -->"
