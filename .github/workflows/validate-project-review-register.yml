@@ -1,0 +1,23 @@
+name: Validate project review register
+on:
+  pull_request:
+    paths:
+      - "assets/data/project-review-register.json"
+      - "tools/validate_project_review_register.py"
+      - ".github/workflows/validate-project-review-register.yml"
+  push:
+    paths:
+      - "assets/data/project-review-register.json"
+      - "tools/validate_project_review_register.py"
+      - ".github/workflows/validate-project-review-register.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate-review-register:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Validate review records
+        run: python tools/validate_project_review_register.py
