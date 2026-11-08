@@ -511,6 +511,15 @@ a:hover{color:var(--accent2)!important}
 </style>
 
   <link rel="stylesheet" href="/assets/css/pui89-project-design-system.css?v=20261108-professional">
+
+/* Make the entire seven-project card an easy target for opening its detail page. */
+.card{position:relative}
+.card .project-art-link{position:static}
+.card .project-art-link::after{content:"";position:absolute;inset:0;z-index:1;border-radius:inherit;cursor:pointer}
+.card .project-art-link:focus-visible::after{outline:3px solid var(--accent,#42D9FF);outline-offset:4px}
+.card a:not(.project-art-link){position:relative;z-index:2}
+.card .project-art-link img{cursor:pointer}
+@media(hover:hover){.card:has(.project-art-link):hover{border-color:rgba(66,217,255,.72);box-shadow:0 18px 42px rgba(0,0,0,.24),0 0 24px rgba(66,217,255,.12)}}
 </head>
 <body data-pui89-project="portfolio">
   <a class="lang" href="index.html" style="position:absolute;top:10px;right:12px">English</a>
