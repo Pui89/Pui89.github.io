@@ -2,7 +2,7 @@ name: Deploy static portfolio to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, 'website-full-qa-*']
   pull_request:
     branches: [main]
   workflow_dispatch:
@@ -18,15 +18,13 @@ concurrency:
 
 jobs:
   build:
-    permissions:
-      contents: read
-      pages: read
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Validate static site files
+      - name: Validate required portfolio pages and seven project lines
         run: |
           test -s index.html
           test -s th.html
@@ -34,13 +32,33 @@ jobs:
           grep -q '<html lang="th"' th.html
           grep -q 'PUI89 AI Robotics' th.html
           test -s README.md
-          grep -q 'Coconut Harvest AI' index.html
-          grep -q 'Flood Rescue AI' index.html
-          grep -q 'Multimodal Screening AI' index.html
-          grep -q 'Development stage' index.html
+          while IFS='|' read -r english_page thai_page; do
+            grep -Fq "href=\"$english_page\"" index.html || { echo "Missing project landing-page link on English homepage: $english_page"; exit 1; }
+            grep -Fq "href=\"$thai_page\"" th.html || { echo "Missing project landing-page link on Thai homepage: $thai_page"; exit 1; }
+          done <<'PROJECTS'
+          coconut.html|coconut-th.html
+          flood-rescue.html|flood-rescue-th.html
+          screening.html|screening-th.html
+          home.html|home-th.html
+          nomad.html|nomad-th.html
+          ai-robot-car.html|ai-robot-car-th.html
+          ai-robot-motorcycle.html|ai-robot-motorcycle-th.html
+          PROJECTS
 
-      - name: Check local portfolio links and required content
+      - name: Run all-page local, sitemap, image, QR-asset and accessibility-source checks
         run: python3 scripts/check_site.py
+
+      - name: Check every unique external HTTP(S) link
+        run: python3 scripts/check_site.py --external
+
+      - name: Upload source-level website QA report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pui89-site-qa-report
+          path: ${{ runner.temp }}/pui89-site-qa-report.json
+          if-no-files-found: warn
+          retention-days: 14
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
