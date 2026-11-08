@@ -403,3 +403,8 @@ All seven projects follow the [PUI89 Simple, Safe & Professional Engineering Sta
 - [แนวทางความปลอดภัยภาษาไทย](security-th.html)
 
 The seven product repositories maintain project-specific security policies and threat boundaries. Security checks reduce risk but cannot guarantee malware absence or immunity to attack. Review current workflow results and incident guidance before treating a control as verified.
+
+
+## Shared hardware and safety standard
+
+The proposed [PUI89 Common Hardware & Safety Standard](docs/PUI89_COMMON_HARDWARE_SAFETY_STANDARD.md) defines reusable hardware, environmental protection, power, compute, sensor, human-override, safe-state, and verification requirements for all seven projects. It is a documentation standard only; it does not claim physical hardware has been built, tested, validated, or certified.
