@@ -89,3 +89,6 @@ jobs:
               raise SystemExit(1)
           print("PASS: English and Thai homepages use the current logo, favicon, language metadata, and no obsolete QR asset references.")
           PY
+
+      - name: Validate sitemap and bilingual SEO metadata
+        run: python3 .github/scripts/validate_site_seo.py
