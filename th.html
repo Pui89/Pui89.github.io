@@ -436,7 +436,17 @@ a:hover{color:#B8F2FF!important}
     @media(max-width:600px){.navlinks{gap:2px}.navlinks>a,.nav-more>summary{font-size:.78rem;padding:6px 7px}.nav-more-menu{left:0;right:auto;max-width:min(86vw,300px)}}
     @media(prefers-reduced-motion:reduce){.nav-more[open] .nav-more-menu{animation:none}}
 
-  </style>
+  
+/* Make the entire seven-project card an easy target for opening its detail page. */
+.card{position:relative}
+.card .project-art-link{position:static}
+.card .project-art-link::after{content:"";position:absolute;inset:0;z-index:1;border-radius:inherit;cursor:pointer}
+.card .project-art-link:focus-visible::after{outline:3px solid var(--accent,#42D9FF);outline-offset:4px}
+.card a:not(.project-art-link){position:relative;z-index:2}
+.card .project-art-link img{cursor:pointer}
+@media(hover:hover){.card:has(.project-art-link):hover{border-color:rgba(66,217,255,.72);box-shadow:0 18px 42px rgba(0,0,0,.24),0 0 24px rgba(66,217,255,.12)}}
+
+</style>
   <link rel="stylesheet" href="assets/css/pui89-design-system.css?v=20261108-professional">
   <link rel="stylesheet" href="/assets/css/pui89-project-progress.css?v=20261107-2">
 <link rel="stylesheet" href="/assets/css/pui89-development-observatory.css?v=20261107-2">
@@ -528,15 +538,6 @@ a:hover{color:var(--accent2)!important}
 </style>
 
   <link rel="stylesheet" href="/assets/css/pui89-project-design-system.css?v=20261108-professional">
-
-/* Make the entire seven-project card an easy target for opening its detail page. */
-.card{position:relative}
-.card .project-art-link{position:static}
-.card .project-art-link::after{content:"";position:absolute;inset:0;z-index:1;border-radius:inherit;cursor:pointer}
-.card .project-art-link:focus-visible::after{outline:3px solid var(--accent,#42D9FF);outline-offset:4px}
-.card a:not(.project-art-link){position:relative;z-index:2}
-.card .project-art-link img{cursor:pointer}
-@media(hover:hover){.card:has(.project-art-link):hover{border-color:rgba(66,217,255,.72);box-shadow:0 18px 42px rgba(0,0,0,.24),0 0 24px rgba(66,217,255,.12)}}
   <link rel="stylesheet" href="/assets/css/pui89-visual-system.css">
 </head>
 <body data-pui89-project="portfolio">
