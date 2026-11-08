@@ -1,0 +1,65 @@
+/* PUI89 visual system — shared responsive layer, no external dependencies. */
+:root{
+ --pui-bg:#07111f;--pui-panel:#101f33;--pui-panel-2:#152943;--pui-line:#2d4662;
+ --pui-text:#f3f7ff;--pui-muted:#b8c7da;--pui-cyan:#42d9ff;--pui-silver:#c5d0dc;
+ --pui-radius:20px;--pui-shadow:0 18px 48px rgba(0,0,0,.24)
+}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{background-color:var(--pui-bg);color:var(--pui-text);overflow-wrap:anywhere}
+img,svg,video{max-width:100%}
+a{transition:color .18s ease,background-color .18s ease,border-color .18s ease,transform .18s ease}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--pui-cyan);outline-offset:4px;border-radius:5px}
+header,nav{min-width:0}
+nav a,.navlinks a{border-radius:9px}
+nav a:hover,.navlinks a:hover{background:rgba(66,217,255,.09);color:#fff}
+.hero{position:relative}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(66,217,255,.3),transparent);pointer-events:none}
+.hero h1{letter-spacing:-.045em;text-wrap:balance}
+.hero p,.lead,.intro{max-width:75ch}
+.hero-visual,.visual,.art,.project-art-link{border:1px solid rgba(66,217,255,.2);border-radius:var(--pui-radius);overflow:hidden;background:linear-gradient(145deg,rgba(21,41,67,.92),rgba(7,17,31,.92));box-shadow:var(--pui-shadow)}
+.hero-visual img,.visual img,.art img{display:block;width:100%;height:auto;transition:transform .55s cubic-bezier(.2,.7,.2,1),filter .35s ease}
+.hero-visual:hover img,.visual:hover img,.art:hover img{transform:scale(1.018);filter:saturate(1.08)}
+.grid,.project-grid,.contact-grid{align-items:stretch}
+.card,.contact-card,.trust-strip>div,.pui89-progress--card{min-width:0}
+.card,.contact-card{border:1px solid var(--pui-line);border-radius:16px;background:linear-gradient(155deg,rgba(21,41,67,.9),rgba(12,27,46,.94));box-shadow:0 10px 28px rgba(0,0,0,.13);transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.card:hover,.contact-card:hover{transform:translateY(-3px);border-color:rgba(66,217,255,.58);box-shadow:0 18px 38px rgba(0,0,0,.23)}
+.card h3,.contact-card h3{color:var(--pui-text);text-wrap:balance}
+.card p,.contact-card p{color:var(--pui-muted)}
+.project-art-link{display:block;position:relative}
+.project-art{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:linear-gradient(145deg,#0c1b2d,#142943);transition:transform .35s ease}
+.project-art-link:hover .project-art{transform:scale(1.025)}
+.btn,button{min-height:44px}
+.btn{border-radius:11px;font-weight:750;letter-spacing:.005em}
+.btn.primary{box-shadow:0 8px 22px rgba(66,217,255,.16)}
+.eyebrow,.kicker,.num,.label{letter-spacing:.12em}
+.status,.badge,.pui89-readiness-legend{max-width:100%;overflow-wrap:anywhere}
+.section{scroll-margin-top:24px}
+.section>h2,.section h2{text-wrap:balance}
+table{width:100%;border-collapse:collapse}
+th,td{overflow-wrap:anywhere}
+footer{border-top:1px solid var(--pui-line)}
+/* The shared-core diagram is an explanatory software architecture, not a hardware schematic. */
+.pui89-core-diagram{margin:24px 0;padding:clamp(14px,3vw,28px);border:1px solid rgba(66,217,255,.28);border-radius:22px;background:radial-gradient(ellipse at 50% 0,rgba(66,217,255,.11),transparent 60%),linear-gradient(145deg,#10233a,#081525);box-shadow:var(--pui-shadow)}
+.pui89-core-diagram img{display:block;width:100%;height:auto}
+.pui89-core-caption{margin:12px 2px 0;color:var(--pui-muted);font-size:.9rem}
+.pui89-project-link{display:inline-flex;align-items:center;gap:8px;margin-top:12px;color:var(--pui-cyan);font-weight:750;text-decoration:none}
+.pui89-project-link:after{content:"↗";transition:transform .2s ease}
+.pui89-project-link:hover:after{transform:translate(3px,-2px)}
+.pui89-quick-explore{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
+.pui89-quick-explore a{padding:9px 13px;border:1px solid var(--pui-line);border-radius:999px;background:rgba(16,31,51,.8);text-decoration:none;font-size:.92rem}
+.pui89-quick-explore a:hover{border-color:var(--pui-cyan);background:rgba(66,217,255,.1)}
+@media(max-width:760px){
+ .wrap{width:min(calc(100% - 28px),var(--max,1160px))}
+ .hero{grid-template-columns:1fr!important;gap:22px!important;padding-top:34px!important}
+ .hero-visual{order:2}
+ .grid{grid-template-columns:1fr!important}
+ .card,.contact-card{padding:clamp(14px,4vw,20px)}
+ .actions,.nav,.navlinks{gap:9px;flex-wrap:wrap}
+ .actions .btn{width:100%;justify-content:center;text-align:center}
+ .project-art{aspect-ratio:16/10}
+ .trust-strip{grid-template-columns:1fr 1fr!important}
+ table{display:block;overflow-x:auto}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
