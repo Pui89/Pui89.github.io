@@ -18,15 +18,13 @@ concurrency:
 
 jobs:
   build:
-    permissions:
-      contents: read
-      pages: read
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Validate static site files
+      - name: Validate required portfolio pages and seven project lines
         run: |
           test -s index.html
           test -s th.html
@@ -34,13 +32,15 @@ jobs:
           grep -q '<html lang="th"' th.html
           grep -q 'PUI89 AI Robotics' th.html
           test -s README.md
-          grep -q 'Coconut Harvest AI' index.html
-          grep -q 'Flood Rescue AI' index.html
-          grep -q 'Multimodal Screening AI' index.html
-          grep -q 'Development stage' index.html
+          for project in 'Coconut Harvest AI' 'Flood Rescue AI' 'Multimodal Screening AI' 'AI Home Safety Robot' 'AI Mobile Assistant Robot' 'AI Autonomous Robot Car' 'AI Motorcycle Robotics'; do
+            grep -Fq "$project" index.html || { echo "Missing project on English homepage: $project"; exit 1; }
+          done
 
-      - name: Check local portfolio links and required content
+      - name: Run all-page local, sitemap, image, QR-asset and accessibility-source checks
         run: python3 scripts/check_site.py
+
+      - name: Check every unique external HTTP(S) link
+        run: python3 scripts/check_site.py --external
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
