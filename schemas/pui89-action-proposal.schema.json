@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Pui89/Pui89.github.io/blob/main/schemas/pui89-action-proposal.schema.json",
+  "title": "PUI89 Action Proposal",
+  "description": "A non-executable recommendation. A separate safety gate and, where required, an authorised human must approve before any project adapter can act.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "proposal_id", "project_id", "created_at", "world_state_id", "intent", "preconditions", "risk", "authorization", "decision"],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "proposal_id": { "type": "string", "minLength": 1 },
+    "project_id": { "enum": ["coconut-harvest-ai", "extreme-flood-rescue-ai", "multimodal-narcotics-screening-ai", "pui89-home-nomad"] },
+    "created_at": { "type": "string", "format": "date-time" },
+    "world_state_id": { "type": "string", "minLength": 1 },
+    "intent": { "type": "string", "minLength": 1 },
+    "preconditions": { "type": "array", "items": { "type": "string" } },
+    "supporting_observation_ids": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+    "expected_outcome": { "type": ["string", "null"] },
+    "uncertainty": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status"],
+      "properties": {
+        "status": { "enum": ["measured", "estimated", "unknown", "not_applicable"] },
+        "value": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+        "method": { "type": ["string", "null"] },
+        "limitations": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "risk": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["level", "hazards", "mitigations"],
+      "properties": {
+        "level": { "enum": ["critical", "high", "medium", "low", "unknown"] },
+        "hazards": { "type": "array", "items": { "type": "string" } },
+        "mitigations": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "authorization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "status"],
+      "properties": {
+        "required": { "type": "boolean" },
+        "status": { "enum": ["not_required", "pending", "approved", "rejected", "expired"] },
+        "approver_id": { "type": ["string", "null"] },
+        "approved_at": { "type": ["string", "null"], "format": "date-time" }
+      }
+    },
+    "decision": { "enum": ["PROPOSED", "HOLD", "BLOCKED", "REJECTED"] },
+    "gate_results": { "type": "array", "items": { "type": "object" } },
+    "not_before": { "type": ["string", "null"], "format": "date-time" },
+    "expires_at": { "type": ["string", "null"], "format": "date-time" },
+    "execution_adapter": { "type": ["string", "null"] }
+  }
+}
