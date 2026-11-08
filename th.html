@@ -529,7 +529,6 @@ a:hover{color:var(--accent2)!important}
 
   <link rel="stylesheet" href="/assets/css/pui89-project-design-system.css?v=20261108-professional">
 
-<style>
 /* Make the entire seven-project card an easy target for opening its detail page. */
 .card{position:relative}
 .card .project-art-link{position:static}
@@ -538,23 +537,12 @@ a:hover{color:var(--accent2)!important}
 .card a:not(.project-art-link){position:relative;z-index:2}
 .card .project-art-link img{cursor:pointer}
 @media(hover:hover){.card:has(.project-art-link):hover{border-color:rgba(66,217,255,.72);box-shadow:0 18px 42px rgba(0,0,0,.24),0 0 24px rgba(66,217,255,.12)}}
-.skip-link{position:absolute;left:12px;top:-60px;z-index:1000;padding:10px 14px;border-radius:9px;background:#42D9FF;color:#041522;font-weight:800}
-.skip-link:focus{top:12px}
-.hero-points{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:22px;color:var(--muted);font-size:.9rem}
-.hero-points span{display:inline-flex;align-items:center;gap:8px}
-.hero-points i{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(66,217,255,.10)}
-.trust-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 0 34px;padding:18px;border:1px solid rgba(120,165,198,.22);border-radius:16px;background:linear-gradient(110deg,rgba(16,31,51,.94),rgba(10,23,39,.9))}
-.trust-strip>div{display:flex;align-items:center;gap:12px;min-width:0}
-.trust-strip>div>span:last-child{display:grid;gap:2px}
-.trust-strip strong{color:var(--text)}
-.trust-strip small{color:var(--muted)}
-.strip-index{font-size:1.35rem;font-weight:850;color:var(--accent)}
-@media(max-width:650px){.trust-strip{grid-template-columns:1fr;gap:14px}.hero-points{gap:8px 14px}}
-</style>
+  <link rel="stylesheet" href="/assets/css/pui89-visual-system.css">
 </head>
 <body data-pui89-project="portfolio">
   <a class="skip-link" href="#main-content">ข้ามไปยังเนื้อหาหลัก</a>
-    <div class="wrap">
+  <a class="lang" href="index.html" style="position:absolute;top:10px;right:12px">English</a>
+  <div class="wrap">
     <nav class="nav" aria-label="เมนูหลัก">
       <a class="brand" href="th.html" aria-label="PUI89 AI Robotics หน้าหลัก"><img src="images/pui89-precision-glow-01.svg" alt="PUI89 AI Robotics" width="184" height="55"></a>
       <div class="navlinks">
@@ -577,89 +565,33 @@ a:hover{color:var(--accent2)!important}
     </nav>
     <main id="main-content">
       
-    <section class="hero" id="top">
+    <section class="hero" id="about">
         <div class="hero-copy">
-        <div class="eyebrow">วิศวกรรม AI · ระบบอัจฉริยะ</div>
+        <div class="pui89-brand-lockup" aria-label="PUI89 วิศวกรรม AI"><span class="pui89-brand-word">PUI89</span><span class="pui89-brand-rule"></span><span class="pui89-brand-caption">AI ENGINEERING<br>&amp; ROBOTIC SYSTEMS</span></div>
+        <div class="eyebrow">7 โครงการอิสระ · พื้นฐานวิศวกรรมร่วม</div>
         <h1>ระบบอัจฉริยะ<br><span>ตัดสินใจบนหลักฐาน</span></h1>
         <p>PUI89 พัฒนาซอฟต์แวร์อัจฉริยะและแนวคิดระบบหุ่นยนต์สำหรับโจทย์สำคัญในภาคเกษตร การกู้ภัยและเหตุฉุกเฉิน การตรวจสอบหลายรูปแบบ บ้านอัจฉริยะ และการเดินทาง โดยผสานการรับรู้ข้อมูล การเข้าใจบริบท การสนับสนุนการตัดสินใจ วิศวกรรมความปลอดภัย และการตรวจสอบด้วยหลักฐาน พร้อมแยกความสามารถที่พัฒนาและทดสอบแล้วออกจากแนวคิดที่อยู่ระหว่างการวิจัยอย่างชัดเจน</p>
         <div class="actions"><a class="btn primary" href="#projects">เลือกดูโครงการที่ตรงกับปัญหาของคุณ</a><a class="btn" href="evidence-th.html">ดูหลักฐานและความคืบหน้า ↗</a><a class="btn" href="support-th.html">ร่วมพัฒนา PUI89 ↗</a></div>
-        <div class="hero-points" aria-label="หลักการพัฒนา PUI89"><span><i></i> พัฒนาบนหลักฐาน</span><span><i></i> ออกแบบโดยคำนึงถึงความปลอดภัย</span><span><i></i> มนุษย์กำกับการตัดสินใจ</span></div>
         <div class="notice"><strong>ความโปร่งใส:</strong> ภาพแนวคิดและการจำลองไม่ใช่หลักฐานว่าหุ่นยนต์ทำงานจริงแล้ว ผลการทดสอบและความสามารถที่ยังไม่ผ่านการตรวจสอบจะระบุไว้อย่างชัดเจน</div>
         </div>
         <div class="hero-photo">
           <img src="assets/images/pui89-intelligent-systems-hero.svg" alt="ภาพไอโซเมตริก PUI89 แสดงแนวคิดโครงการ AI แบบไม่ใช่มนุษย์ทั้ง 7 โครงการล้อมรอบอัตลักษณ์ PUI89 ตรงกลาง โดยภาพแนวคิดไม่ใช่การยืนยันว่าหุ่นยนต์ผ่านการทดสอบจริงแล้ว" fetchpriority="high" decoding="async">
         </div>
       </section>
-
-      <section class="trust-strip" aria-label="หลักการทำงานสามขั้นตอน">
-        <div><span class="strip-index">01</span><span><strong>พัฒนา</strong><small>สร้างต้นแบบที่มีประโยชน์</small></span></div>
-        <div><span class="strip-index">02</span><span><strong>ทดสอบ</strong><small>ตรวจสอบซ้ำได้</small></span></div>
-        <div><span class="strip-index">03</span><span><strong>พิสูจน์</strong><small>ก่อนสื่อสารว่าใช้งานได้</small></span></div>
-      </section>
       
-      <section class="section" id="projects">
-        <h2>7 โครงการผลิตภัณฑ์ หนึ่งพื้นฐานวิศวกรรมร่วม</h2>
-        <p class="intro">พัฒนาทีละขั้น โดยแยกแนวคิด ซอฟต์แวร์ที่ทำงานได้ การจำลอง และผลทดสอบในโลกจริงออกจากกัน</p>
-        <p class="pui89-readiness-legend"><strong>ความพร้อมเชิงพาณิชย์:</strong> คะแนนประเมินตามหลักฐานแบบถ่วงน้ำหนัก 100% หมายถึงพร้อมจำหน่ายเชิงพาณิชย์หรือยื่นจัดซื้ออย่างเป็นทางการหลังผ่านการตรวจสอบที่เกี่ยวข้อง ไม่ใช่เปอร์เซ็นต์ความสมบูรณ์ของโค้ด ตรวจทานล่าสุด 7 พฤศจิกายน 2026 คะแนนเป็นค่าประเมินชั่วคราวและต้องมีหลักฐานใน repository รองรับ</p>
-        <div class="grid">
-          <article class="card">
-            <a class="project-art-link" href="coconut-th.html" aria-label="Open Coconut Harvest AI project page"><img src="https://raw.githubusercontent.com/Pui89/Coconut-Harvest-AI/main/docs/images/coconut-harvest-realistic-all-stage-concept.svg" alt="ภาพแนวคิด Coconut Harvest AI แสดงมะพร้าวเขียวแก่ สีเหลือง และสีน้ำตาล พร้อมแนวคิดหุ่นยนต์เก็บเกี่ยว" loading="lazy" decoding="async"></a><div class="pui89-progress pui89-progress--card" role="img" aria-label="ระดับความพร้อมโครงการ: ขั้นที่ 2 จาก 5 — ต้นแบบซอฟต์แวร์; ข้อมูลความก้าวหน้า ณ วันที่ 7 พฤศจิกายน 2569 (2026)"><span class="pui89-progress__eyebrow">ระดับความพร้อมโครงการ</span><strong>ขั้นที่ 2 จาก 5</strong><span class="pui89-progress__score">ความพร้อมเชิงพาณิชย์ 50%</span><time class="pui89-progress__updated" datetime="2026-11-07">ข้อมูลความก้าวหน้า ณ วันที่ 7 พฤศจิกายน 2569 (2026)</time><span class="pui89-progress__bar" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-label="50% readiness"><span class="pui89-progress__bar-fill" style="width:50%"></span></span><span class="pui89-progress__label">ต้นแบบซอฟต์แวร์</span><span class="pui89-progress__steps" aria-hidden="true"><i class="is-reached"></i><i class="is-reached"></i><i></i><i></i><i></i></span></div>
-            <p class="small" style="font-size:.75rem;margin:-10px 0 12px">ภาพประกอบแนวคิด · <a href="https://github.com/Pui89/Coconut-Harvest-AI/blob/main/docs/images/coconut-harvest-realistic-all-stage-concept.svg">ดูไฟล์ภาพต้นฉบับ ↗</a></p>
-            <div class="tag">01 / เกษตรกรรม</div><h3>Coconut Harvest AI</h3>
-            <p>ระบบ AI สำหรับวิเคราะห์ระยะของมะพร้าว 3 กลุ่ม ได้แก่ มะพร้าวเขียวแก่ มะพร้าวสีเหลือง และมะพร้าวแก่สีน้ำตาล</p>
-            <p>ช่วงความสูงต้นมะพร้าว 0–30 เมตรเป็นเป้าหมายการออกแบบระยะยาว ยังไม่ได้ยืนยันความสามารถในการจำแนกระยะ ตรวจจับ เอื้อมถึง หรือเก็บเกี่ยวจริง แขนกลและตะกร้าเก็บผลผลิตเป็นแนวคิดที่ต้องผ่านการออกแบบทางวิศวกรรมและการทดสอบความปลอดภัย</p>
-            <a href="coconut-th.html">ดูรายละเอียดโครงการ ↗</a><a href="https://github.com/Pui89/Coconut-Harvest-AI">ดูซอร์สโค้ดบน GitHub ↗</a>
-          </article>
-          <article class="card">
-            <a class="project-art-link" href="flood-rescue-th.html" aria-label="Open Extreme Flood Rescue AI project page"><img src="images/flood-rescue-ai-concept.svg" alt="ภาพแนวคิด AI สำหรับสำรวจและช่วยเหลือในสถานการณ์น้ำท่วมรุนแรง" loading="lazy"></a><div class="pui89-progress pui89-progress--card" role="img" aria-label="ระดับความพร้อมโครงการ: ขั้นที่ 2 จาก 5 — ต้นแบบซอฟต์แวร์และจำลอง; ข้อมูลความก้าวหน้า ณ วันที่ 7 พฤศจิกายน 2569 (2026)"><span class="pui89-progress__eyebrow">ระดับความพร้อมโครงการ</span><strong>ขั้นที่ 2 จาก 5</strong><span class="pui89-progress__score">ความพร้อมเชิงพาณิชย์ 46%</span><time class="pui89-progress__updated" datetime="2026-11-07">ข้อมูลความก้าวหน้า ณ วันที่ 7 พฤศจิกายน 2569 (2026)</time><span class="pui89-progress__bar" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="46" aria-label="46% readiness"><span class="pui89-progress__bar-fill" style="width:46%"></span></span><span class="pui89-progress__label">ต้นแบบซอฟต์แวร์และจำลอง</span><span class="pui89-progress__steps" aria-hidden="true"><i class="is-reached"></i><i class="is-reached"></i><i></i><i></i><i></i></span></div>
-            <div class="tag">02 / ภัยพิบัติ</div><h3>Extreme Flood Rescue AI</h3>
-            <p>การวางแผนและจำลองสถานการณ์น้ำท่วมช่วง 0–15 เมตร เพื่อศึกษาการสำรวจพื้นที่ การทำแผนที่อันตราย และการสนับสนุนการตัดสินใจโดยมนุษย์ แนวคิดหุ่นยนต์กู้ภัยรุ่นนี้ใช้ตัวเรือทรงแพหรือเรือขนาดกะทัดรัด พร้อมล้อที่พับเก็บได้ โดยกางล้อเมื่อเคลื่อนที่บนบกหรือบริเวณน้ำตื้นที่เหมาะสม และพับเก็บในช่องป้องกันเมื่อลอยน้ำ</p>
-            <p>แพลตฟอร์มมีแนวคิดรองรับผู้ประสบภัย สัตว์ในพื้นที่แยกที่ปลอดภัย และอุปกรณ์ช่วยเหลือ ส่วนระบบขับเคลื่อนในกระแสน้ำ การทรงตัว น้ำหนักบรรทุก ระดับขอบเรือ และความปลอดภัยขณะเปลี่ยนโหมดต้องผ่านการวิเคราะห์และทดสอบแบบไร้คนโดยเป็นขั้นตอนก่อน ระดับน้ำ 0–15 เมตรเป็นเพียงสถานการณ์จำลอง ไม่ใช่พิกัดความลึกหรือความสามารถในการจมน้ำของตัวเรือ และยังไม่มีการยืนยันการใช้งานในกระแสน้ำเชี่ยวหรือการขนส่งผู้โดยสารจริง</p>
-            <a href="flood-rescue-th.html">ดูรายละเอียดโครงการ ↗</a><a href="https://github.com/Pui89/Extreme-Flood-Rescue-AI">ดูซอร์สโค้ดบน GitHub ↗</a>
-          </article>
-          <article class="card">
-            <a class="project-art-link" href="screening-th.html" aria-label="Open PUI89 Sentinel project page"><img src="images/multimodal-screening-ai-concept.svg" alt="ภาพประกอบแนวคิดการตรวจคัดกรองด้วยข้อมูลหลายรูปแบบ" loading="lazy"></a><div class="pui89-progress pui89-progress--card" role="img" aria-label="ระดับความพร้อมโครงการ: ขั้นที่ 2 จาก 5 — ต้นแบบกระบวนการซอฟต์แวร์; ข้อมูลความก้าวหน้า ณ วันที่ 7 พฤศจิกายน 2569 (2026)"><span class="pui89-progress__eyebrow">ระดับความพร้อมโครงการ</span><strong>ขั้นที่ 2 จาก 5</strong><span class="pui89-progress__score">ความพร้อมเชิงพาณิชย์ 45%</span><time class="pui89-progress__updated" datetime="2026-11-07">ข้อมูลความก้าวหน้า ณ วันที่ 7 พฤศจิกายน 2569 (2026)</time><span class="pui89-progress__bar" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="45" aria-label="45% readiness"><span class="pui89-progress__bar-fill" style="width:45%"></span></span><span class="pui89-progress__label">ต้นแบบกระบวนการซอฟต์แวร์</span><span class="pui89-progress__steps" aria-hidden="true"><i class="is-reached"></i><i class="is-reached"></i><i></i><i></i><i></i></span></div>
-            <div class="tag">03 / การตรวจคัดกรอง</div><h3>Multimodal Narcotics Screening AI</h3>
-            <p>แนวคิดผู้ช่วยตรวจคัดกรองแบบเคลื่อนที่ สำหรับตรวจทานหลักฐานหลายรูปแบบที่ได้รับอนุญาต เช่น ภาพ RGB และอาจรวมภาพเอกซเรย์หรือผลจากเซนเซอร์เคมีที่ผ่านการตรวจสอบแล้ว เมื่อมีอุปกรณ์และชุดข้อมูลที่เหมาะสม แต่ละรูปแบบข้อมูลและการผสานข้อมูลต้องได้รับการประเมินแยกกัน</p>
-            <p>แยกอุปกรณ์บุหรี่ไฟฟ้าออกจากหมวดสารเสพติดอย่างชัดเจน รูปลักษณ์เพียงอย่างเดียวไม่สามารถยืนยันส่วนประกอบของน้ำยาหรือชนิดสารเคมีได้ การแจ้งเตือนจาก AI ไม่ใช่หลักฐานยืนยันว่ามีสารเสพติด และระบบจะไม่กล่าวหา กักตัว ตรวจค้น หรือบังคับใช้กฎหมายโดยอัตโนมัติ การตัดสินใจที่มีผลกระทบต้องดำเนินการโดยเจ้าหน้าที่ผู้มีอำนาจตามกฎหมาย ระบบตรวจจับยังไม่ได้ผ่านการรับรอง</p>
-            <a href="screening-th.html">ดูรายละเอียดโครงการและขอบเขตการตรวจสอบ ↗</a>
-            <a href="https://github.com/Pui89/Multimodal-Narcotics-Screening-AI">ดูโครงการและซอร์สโค้ด ↗</a>
-          </article>
-          <article class="card">
-            <a class="project-art-link" href="home-th.html" aria-label="Open AI HOME project page"><img src="images/homeguard-ai-home-concept.svg" alt="ภาพแนวคิดหุ่นยนต์ HOMEGUARD AI HOME แบบ 4 ล้อสำหรับภายในบ้าน" loading="lazy"></a><div class="pui89-progress pui89-progress--card" role="img" aria-label="ระดับความพร้อมโครงการ: ขั้นที่ 1 จาก 5 — วางรากฐานและแนวคิด; ข้อมูลความก้าวหน้า ณ วันที่ 7 พฤศจิกายน 2569 (2026)"><span class="pui89-progress__eyebrow">ระดับความพร้อมโครงการ</span><strong>ขั้นที่ 1 จาก 5</strong><span class="pui89-progress__score">ความพร้อมเชิงพาณิชย์ 28%</span><time class="pui89-progress__updated" datetime="2026-11-07">ข้อมูลความก้าวหน้า ณ วันที่ 7 พฤศจิกายน 2569 (2026)</time><span class="pui89-progress__bar" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="28" aria-label="28% readiness"><span class="pui89-progress__bar-fill" style="width:28%"></span></span><span class="pui89-progress__label">วางรากฐานและแนวคิด</span><span class="pui89-progress__steps" aria-hidden="true"><i class="is-reached"></i><i></i><i></i><i></i><i></i></span></div>
-            <div class="tag">04 / ความปลอดภัยภายในบ้าน</div><h3>HOMEGUARD AI HOME</h3>
-            <p>โครงการหุ่นยนต์ภายในบ้านแยกต่างหาก ใช้ฐานล้อ 4 ล้อเพื่อเก็บข้อมูลสภาพแวดล้อม ตรวจสอบคุณภาพหลักฐาน ติดตามการเปลี่ยนแปลง และเสนอข้อมูลให้เจ้าของตรวจสอบ</p>
-            <p><strong>น้ำหนักรวมที่เสนอ:</strong> เป้าหมาย 8 กก. และสูงสุด 10 กก. รวมแบตเตอรี่ เซนเซอร์ คอมพิวเตอร์ และตัวถัง</p>
-            <span class="status">แนวคิดภายในบ้าน · ยังไม่ได้สร้าง · ยังไม่ผ่านการตรวจสอบ</span>
-            <a href="home-th.html">ดูโครงการ HOME ↗</a>
-            <a href="https://github.com/Pui89/AI-Home-Safety-Robot">ดูคลังโครงการ HOME ↗</a>
-          </article>
-          <article class="card">
-            <a class="project-art-link" href="nomad-th.html" aria-label="Open AI NOMAD project page"><img src="images/homeguard-ai-nomad.svg" alt="ภาพแนวคิดหุ่นยนต์สุนัข AI HOMEGUARD NOMAD แบบสี่ขา" loading="lazy"></a><div class="pui89-progress pui89-progress--card" role="img" aria-label="ระดับความพร้อมโครงการ: ขั้นที่ 1 จาก 5 — วางรากฐานและแนวคิด; ข้อมูลความก้าวหน้า ณ วันที่ 7 พฤศจิกายน 2569 (2026)"><span class="pui89-progress__eyebrow">ระดับความพร้อมโครงการ</span><strong>ขั้นที่ 1 จาก 5</strong><span class="pui89-progress__score">ความพร้อมเชิงพาณิชย์ 30%</span><time class="pui89-progress__updated" datetime="2026-11-07">ข้อมูลความก้าวหน้า ณ วันที่ 7 พฤศจิกายน 2569 (2026)</time><span class="pui89-progress__bar" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="30" aria-label="30% readiness"><span class="pui89-progress__bar-fill" style="width:30%"></span></span><span class="pui89-progress__label">วางรากฐานและแนวคิด</span><span class="pui89-progress__steps" aria-hidden="true"><i class="is-reached"></i><i></i><i></i><i></i><i></i></span></div>
-            <div class="tag">05 / ความปลอดภัยกลางแจ้งและการเดินทาง</div><h3>HOMEGUARD AI NOMAD</h3>
-            <p>แนวคิดหุ่นยนต์สุนัข AI แบบสี่ขาสำหรับการเดินทางและตั้งแคมป์กลางแจ้งภายใต้การดูแลของเจ้าของ เป็นผลิตภัณฑ์แยกจาก HOME ซึ่งเป็นหุ่นยนต์ภายในบ้านแบบ 4 ล้อ</p>
-            <p><strong>เป้าหมายด้านกายภาพ:</strong> สูง 50–60 ซม. กว้าง 30–36 ซม. ลึก 20–25 ซม. น้ำหนักรวมเป้าหมาย 8–10 กก. และสูงสุด 12 กก. รวมแบตเตอรี่ เซนเซอร์ และคอมพิวเตอร์</p>
-            <span class="status">แนวคิดกลางแจ้ง · ยังไม่ได้สร้าง · ยังไม่ผ่านการตรวจสอบ</span>
-            <a href="nomad-th.html">ดูโครงการ NOMAD ↗</a>
-            <a href="https://github.com/Pui89/Homeguard-Ai-Nomad">ดูคลังโครงการ NOMAD ↗</a>
-          </article>
-          <article class="card">
-            <a class="project-art-link" href="ai-robot-car-th.html" aria-label="Open AI Robot Car project page"><img src="images/pui89-ai-car-concept.svg" alt="ภาพแนวคิดรถยนต์ AI Robot Car ของ PUI89" loading="lazy" decoding="async"></a><div class="pui89-progress pui89-progress--card" role="img" aria-label="ระดับความพร้อมโครงการ: ขั้นที่ 1 จาก 5 — พื้นฐานซอฟต์แวร์ระยะแรก; ข้อมูลความก้าวหน้า ณ วันที่ 7 พฤศจิกายน 2569 (2026)"><span class="pui89-progress__eyebrow">ระดับความพร้อมโครงการ</span><strong>ขั้นที่ 1 จาก 5</strong><span class="pui89-progress__score">ความพร้อมเชิงพาณิชย์ 29%</span><time class="pui89-progress__updated" datetime="2026-11-07">ข้อมูลความก้าวหน้า ณ วันที่ 7 พฤศจิกายน 2569 (2026)</time><span class="pui89-progress__bar" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="29" aria-label="29% readiness"><span class="pui89-progress__bar-fill" style="width:29%"></span></span><span class="pui89-progress__label">พื้นฐานซอฟต์แวร์ระยะแรก</span><span class="pui89-progress__steps" aria-hidden="true"><i class="is-reached"></i><i></i><i></i><i></i><i></i></span></div>
-            <div class="tag">06 / ยานยนต์อัจฉริยะ</div><h3>PUI89 AI Robot Car</h3>
-            <p>แพลตฟอร์มวิจัย AI สำหรับยานยนต์ที่เริ่มจากซอฟต์แวร์ ศึกษาการรับรู้ฉากถนน การประเมินความเสี่ยง สุขภาพรถ และระบบช่วยผู้ขับขี่ โดยมนุษย์ยังคงควบคุมรถ โครงการนี้ยังไม่ใช่รถอัตโนมัติที่สร้างจริง</p>
-            <span class="status">แนวคิดและพื้นฐานซอฟต์แวร์ · รอการตรวจสอบยานยนต์จริง</span>
-            <a href="ai-robot-car-th.html">ดูแนวคิดการออกแบบ AI Car ↗</a>
-            <a href="https://github.com/Pui89/ai-robot-car">ดูคลังโครงการ AI Robot Car ↗</a>
-          </article>
-          <article class="card">
-            <a class="project-art-link" href="ai-robot-motorcycle-th.html" aria-label="Open AI Motorcycle project page"><img src="images/pui89-easyride-ai-motorcycle.svg" alt="ภาพแนวคิด PUI89 EasyRide V3 เบาะสีดำและพื้นวางเท้าต่อเนื่องเป็นชิ้นเดียว ไม่มีช่องว่างตรงกลาง" loading="lazy" decoding="async"></a><div class="pui89-progress pui89-progress--card" role="img" aria-label="ระดับความพร้อมโครงการ: ขั้นที่ 1 จาก 5 — แนวคิดและพื้นฐานวิศวกรรม; ข้อมูลความก้าวหน้า ณ วันที่ 7 พฤศจิกายน 2569 (2026)"><span class="pui89-progress__eyebrow">ระดับความพร้อมโครงการ</span><strong>ขั้นที่ 1 จาก 5</strong><span class="pui89-progress__score">ความพร้อมเชิงพาณิชย์ 28%</span><time class="pui89-progress__updated" datetime="2026-11-07">ข้อมูลความก้าวหน้า ณ วันที่ 7 พฤศจิกายน 2569 (2026)</time><span class="pui89-progress__bar" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="28" aria-label="28% readiness"><span class="pui89-progress__bar-fill" style="width:28%"></span></span><span class="pui89-progress__label">แนวคิดและพื้นฐานวิศวกรรม</span><span class="pui89-progress__steps" aria-hidden="true"><i class="is-reached"></i><i></i><i></i><i></i><i></i></span></div>
-            <div class="tag">07 / ยานยนต์สองล้อ</div><h3>PUI89 EasyRide AI Motorcycle</h3>
-            <p>แนวคิดรถจักรยานยนต์แบบก้าวขึ้นคร่อมง่าย ท่านั่งหลังตรง และออกแบบโดยคำนึงถึงผู้ขับขี่หลากหลายกลุ่ม ศึกษาการขึ้นลงรถที่สะดวก ระยะเอื้อมที่สบาย ขนาดที่ควบคุมได้ และ AI ให้คำแนะนำ โดยผู้ขับขี่ยังคงควบคุมรถเอง รถยังไม่ได้สร้างหรือทดสอบบนถนน</p>
-            <span class="status">แนวคิดการออกแบบที่ครอบคลุม · รอการตรวจสอบทางวิศวกรรม</span>
-            <a href="ai-robot-motorcycle-th.html">ดูแนวคิด EasyRide ↗</a>
-            <a href="https://github.com/Pui89/ai-robot-motorcycle">ดูคลังโครงการ AI Motorcycle ↗</a>
-          </article>
+      <section class="section pui89-project-showcase" id="projects">
+        <div class="pui89-section-heading"><div><span class="eyebrow">พอร์ตโฟลิโอโครงการ PUI89</span><h2>7 โจทย์สำคัญ หนึ่งวิสัยทัศน์ทางวิศวกรรม</h2></div><p>เจ็ดโครงการอิสระ แต่ละโครงการมีเป้าหมาย การออกแบบ และเส้นทางพัฒนาของตนเอง โดยใช้แนวทางวิศวกรรม AI ที่ตรวจสอบด้วยหลักฐานร่วมกัน</p></div>
+        <nav class="pui89-quick-explore" aria-label="สำรวจโครงการ PUI89 ทั้งเจ็ด"><a href="#coconut">01 · เกษตร</a><a href="#flood">02 · กู้ภัย</a><a href="#sentinel">03 · Sentinel</a><a href="#home">04 · HOME</a><a href="#nomad">05 · NOMAD</a><a href="#car">06 · รถยนต์</a><a href="#motorcycle">07 · รถจักรยานยนต์</a></nav>
+        <div class="pui89-project-grid">
+          <article class="pui89-project-card" id="coconut"><a class="pui89-project-image" href="coconut-th.html" aria-label="ดูโครงการ Coconut Harvest AI"><img src="/images/coconut-harvest-ai-overview.svg" alt="ภาพไอโซเมตริกแนวคิดหุ่นยนต์เก็บเกี่ยวมะพร้าว" loading="lazy" decoding="async"><span class="pui89-image-index">01 / 07</span></a><div class="pui89-project-content"><span class="pui89-project-domain">หุ่นยนต์เพื่อการเกษตร</span><h3>Coconut Harvest AI</h3><p>AI ช่วยประเมินระยะของมะพร้าวและแนวคิดกระบวนการเก็บเกี่ยวด้วยหุ่นยนต์สำหรับต้นปาล์มสูง</p><div class="pui89-project-tags"><span>การรับรู้ภาพ</span><span>เก็บเกี่ยว</span><span>ความปลอดภัย</span></div><a class="pui89-explore-button" href="coconut-th.html">สำรวจโครงการ <span aria-hidden="true">↗</span></a></div></article>
+          <article class="pui89-project-card" id="flood"><a class="pui89-project-image" href="flood-rescue-th.html" aria-label="ดูโครงการ Extreme Flood Rescue AI"><img src="/images/flood-rescue-ai-concept.svg" alt="ภาพไอโซเมตริกแนวคิดระบบกู้ภัยน้ำท่วมและหุ่นยนต์สะเทินน้ำสะเทินบก" loading="lazy" decoding="async"><span class="pui89-image-index">02 / 07</span></a><div class="pui89-project-content"><span class="pui89-project-domain">การตอบสนองภัยพิบัติ</span><h3>Extreme Flood Rescue AI</h3><p>ระบบรับรู้สถานการณ์น้ำท่วมและวางแผนช่วยเหลือโดยมีมนุษย์กำกับการตัดสินใจ</p><div class="pui89-project-tags"><span>แผนที่อันตราย</span><span>กู้ภัย</span><span>จำลองสถานการณ์</span></div><a class="pui89-explore-button" href="flood-rescue-th.html">สำรวจโครงการ <span aria-hidden="true">↗</span></a></div></article>
+          <article class="pui89-project-card" id="sentinel"><a class="pui89-project-image" href="screening-th.html" aria-label="ดูโครงการ PUI89 Sentinel"><img src="/images/multimodal-screening-ai-concept.svg" alt="ภาพไอโซเมตริกแนวคิดการตรวจสอบหลายรูปแบบของ PUI89 Sentinel" loading="lazy" decoding="async"><span class="pui89-image-index">03 / 07</span></a><div class="pui89-project-content"><span class="pui89-project-domain">การตรวจสอบหลายรูปแบบ</span><h3>PUI89 Sentinel</h3><p>แนวคิดผู้ช่วยตรวจสอบหลายรูปแบบ พร้อมที่มาของหลักฐาน ความไม่แน่นอน และการตรวจทานโดยผู้มีอำนาจ</p><div class="pui89-project-tags"><span>Multimodal AI</span><span>หลักฐาน</span><span>มนุษย์ตรวจทาน</span></div><a class="pui89-explore-button" href="screening-th.html">สำรวจโครงการ <span aria-hidden="true">↗</span></a></div></article>
+          <article class="pui89-project-card" id="home"><a class="pui89-project-image" href="home-th.html" aria-label="ดูโครงการ PUI89 AI HOME"><img src="/images/homeguard-ai-home-concept.svg" alt="ภาพไอโซเมตริกแนวคิดหุ่นยนต์ดูแลความปลอดภัยภายในบ้าน PUI89 AI HOME" loading="lazy" decoding="async"><span class="pui89-image-index">04 / 07</span></a><div class="pui89-project-content"><span class="pui89-project-domain">ความปลอดภัยภายในบ้าน</span><h3>PUI89 AI HOME</h3><p>แนวคิดระบบรับรู้สภาพบ้าน ติดตามการเปลี่ยนแปลง และสนับสนุนคำแนะนำที่ตรวจสอบหลักฐานได้</p><div class="pui89-project-tags"><span>ความปลอดภัย</span><span>ติดตามสภาพ</span><span>ความเป็นส่วนตัว</span></div><a class="pui89-explore-button" href="home-th.html">สำรวจโครงการ <span aria-hidden="true">↗</span></a></div></article>
+          <article class="pui89-project-card" id="nomad"><a class="pui89-project-image" href="nomad-th.html" aria-label="ดูโครงการ PUI89 AI NOMAD"><img src="/images/homeguard-ai-nomad.svg" alt="ภาพไอโซเมตริกแนวคิดหุ่นยนต์ผู้ช่วยเคลื่อนที่ PUI89 AI NOMAD" loading="lazy" decoding="async"><span class="pui89-image-index">05 / 07</span></a><div class="pui89-project-content"><span class="pui89-project-domain">ผู้ช่วยเคลื่อนที่</span><h3>PUI89 AI NOMAD</h3><p>แนวคิดผู้ช่วยเคลื่อนที่สำหรับการใช้งานในร่มและกลางแจ้งภายใต้การกำกับ การเดินทาง และการรับรู้สภาพแวดล้อม</p><div class="pui89-project-tags"><span>การเคลื่อนที่</span><span>ผู้ช่วย</span><span>รับรู้บริบท</span></div><a class="pui89-explore-button" href="nomad-th.html">สำรวจโครงการ <span aria-hidden="true">↗</span></a></div></article>
+          <article class="pui89-project-card" id="car"><a class="pui89-project-image" href="ai-robot-car-th.html" aria-label="ดูโครงการ PUI89 AI Robot Car"><img src="/images/pui89-ai-car-concept.svg" alt="ภาพไอโซเมตริกแนวคิดรถยนต์อัจฉริยะ PUI89 AI Robot Car" loading="lazy" decoding="async"><span class="pui89-image-index">06 / 07</span></a><div class="pui89-project-content"><span class="pui89-project-domain">การเดินทางอัจฉริยะ</span><h3>PUI89 AI Robot Car</h3><p>แนวคิดซอฟต์แวร์อัจฉริยะสำหรับเข้าใจบริบทถนน ประเมินความเสี่ยง และช่วยเหลือผู้ขับขี่</p><div class="pui89-project-tags"><span>บริบทถนน</span><span>ความเสี่ยง</span><span>ผู้ขับขี่</span></div><a class="pui89-explore-button" href="ai-robot-car-th.html">สำรวจโครงการ <span aria-hidden="true">↗</span></a></div></article>
+          <article class="pui89-project-card" id="motorcycle"><a class="pui89-project-image" href="ai-robot-motorcycle-th.html" aria-label="ดูโครงการ PUI89 AI Motorcycle"><img src="/images/pui89-easyride-ai-motorcycle.svg" alt="ภาพไอโซเมตริกแนวคิดรถจักรยานยนต์ PUI89 EasyRide AI" loading="lazy" decoding="async"><span class="pui89-image-index">07 / 07</span></a><div class="pui89-project-content"><span class="pui89-project-domain">ยานยนต์สองล้อ</span><h3>PUI89 EasyRide AI Motorcycle</h3><p>แนวคิดรถจักรยานยนต์ที่ให้ความสำคัญกับผู้ขับขี่ การออกแบบที่เข้าถึงง่าย และ AI ช่วยรับรู้ถนน</p><div class="pui89-project-tags"><span>ความปลอดภัย</span><span>บริบทถนน</span><span>สรีรศาสตร์</span></div><a class="pui89-explore-button" href="ai-robot-motorcycle-th.html">สำรวจโครงการ <span aria-hidden="true">↗</span></a></div></article>
         </div>
+        <p class="pui89-project-footnote">ทั้งเจ็ดเป็นโครงการพัฒนาแยกจากกัน ภาพประกอบเป็นภาพแนวคิด ไม่ใช่ภาพถ่ายหุ่นยนต์ที่สร้างหรือผ่านการตรวจสอบแล้ว สถานะการพัฒนาและหลักฐานระบุไว้ในหน้าโครงการแต่ละหน้า</p>
       </section>
 
       <!-- Project details are consolidated in the single project directory above. -->
