@@ -43,13 +43,27 @@ for entry in entries:
         except ValueError:
             errors.append(f"Invalid lastmod date for {loc}: {lastmod}")
 
-expected_html = {p.name for p in Path(".").glob("*.html") if p.name != "404.html"}
-missing = sorted(expected_html - sitemap_paths)
-extra = sorted(sitemap_paths - expected_html)
+# Only indexable HTML pages belong in the sitemap. Legacy compatibility
+# redirects marked noindex,follow must remain reachable for old bookmarks,
+# but should not be submitted as canonical search results.
+indexable_html = set()
+for page in Path(".").glob("*.html"):
+    if page.name == "404.html":
+        continue
+    content = page.read_text(encoding="utf-8")
+    robots = re.search(r"""<meta\s+name=["']robots["']\s+content=["']([^"']+)["']""", content, re.I)
+    if robots and "noindex" in robots.group(1).lower():
+        if page.name in sitemap_paths:
+            errors.append(f"{page.name}: noindex page must not appear in sitemap")
+        continue
+    indexable_html.add(page.name)
+
+missing = sorted(indexable_html - sitemap_paths)
+extra = sorted(sitemap_paths - indexable_html)
 if missing:
-    errors.append("Public HTML pages missing from sitemap: " + ", ".join(missing))
+    errors.append("Indexable HTML pages missing from sitemap: " + ", ".join(missing))
 if extra:
-    errors.append("Sitemap paths not matching public HTML pages: " + ", ".join(extra))
+    errors.append("Sitemap paths are not indexable HTML pages: " + ", ".join(extra))
 
 if not ROBOTS.is_file() or f"Sitemap: {ROOT}/sitemap.xml" not in ROBOTS.read_text(encoding="utf-8"):
     errors.append("robots.txt must reference the canonical sitemap URL")
