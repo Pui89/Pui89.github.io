@@ -87,7 +87,7 @@ def all_html_files() -> list[Path]:
 
 def resolve_local(source: Path, raw_url: str) -> tuple[Path | None, str | None]:
     value = raw_url.strip()
-    if not value or value.startswith(("#", "data:", "blob:", "javascript:", "mailto:", "tel:")):
+    if not value or value.startswith(("data:", "blob:", "javascript:", "mailto:", "tel:")):
         return None, None
     parsed = urllib.parse.urlsplit(value)
     if parsed.scheme or parsed.netloc:
