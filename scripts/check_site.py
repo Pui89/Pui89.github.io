@@ -169,6 +169,10 @@ def main() -> int:
         except OSError:
             continue
         if ".id" in js_text:
+            if "development-observatory" in js_text:
+                dynamic_ids.add("development-observatory")
+            if "project-progress-history" in js_text:
+                dynamic_ids.add("project-progress-history")
             dynamic_ids.update(re.findall(r'"([A-Za-z][\w:-]*)"', js_text))
     local_link_count = 0
     image_count = 0
