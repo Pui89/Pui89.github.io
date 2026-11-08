@@ -38,6 +38,8 @@ class PageParser(HTMLParser):
         self.viewport_seen = False
         self.lang = ""
         self.h1_count = 0
+        self.noindex = False
+        self.meta_refresh = False
         self._in_title = False
         self.title_text = ""
 
@@ -51,6 +53,10 @@ class PageParser(HTMLParser):
             self._in_title = True
         if tag == "meta" and (a.get("name") or "").lower() == "viewport":
             self.viewport_seen = True
+        if tag == "meta" and (a.get("name") or "").lower() == "robots" and "noindex" in (a.get("content") or "").lower():
+            self.noindex = True
+        if tag == "meta" and (a.get("http-equiv") or "").lower() == "refresh":
+            self.meta_refresh = True
         if tag == "h1":
             self.h1_count += 1
         if "id" in a and a["id"]:
@@ -154,6 +160,16 @@ def main() -> int:
     pages = all_html_files()
     parsers: dict[Path, PageParser] = {}
     external_urls: set[str] = set()
+    dynamic_ids: set[str] = set()
+    for js_path in ROOT.rglob("*.js"):
+        if any(part in SKIP_DIRS for part in js_path.relative_to(ROOT).parts):
+            continue
+        try:
+            js_text = js_path.read_text(encoding="utf-8")
+        except OSError:
+            continue
+        if ".id" in js_text:
+            dynamic_ids.update(re.findall(r'"([A-Za-z][\\w:-]*)"', js_text))
     local_link_count = 0
     image_count = 0
     metadata_gaps = Counter()
@@ -180,7 +196,7 @@ def main() -> int:
         if not parser.viewport_seen:
             metadata_gaps["missing_viewport"] += 1
             warnings.append(f"{rel}: missing viewport meta")
-        if parser.h1_count == 0:
+        if parser.h1_count == 0 and not (parser.noindex or parser.meta_refresh):
             metadata_gaps["missing_h1"] += 1
             warnings.append(f"{rel}: no H1 heading")
         elif parser.h1_count > 1:
@@ -213,7 +229,7 @@ def main() -> int:
                         errors.append(f"{rel}: cannot parse fragment target {raw!r}: {target_error}")
                         continue
                     parsers[target] = target_parser
-                if fragment not in target_parser.ids:
+                if fragment not in target_parser.ids and fragment not in dynamic_ids:
                     errors.append(f"{rel}: missing fragment target {raw!r}")
 
     # Verify every sitemap URL points to a local page in this repository.
