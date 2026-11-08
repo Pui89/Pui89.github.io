@@ -7,7 +7,7 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: "29 5 * * 0" # Weekly Sunday validation; UTC
+    - cron: "0 0 * * *" # Daily metrics refresh and site deployment; UTC
 
 permissions:
   contents: read
@@ -24,7 +24,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+      - name: Refresh PUI89 project metrics
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/update_project_metrics.py
 
       - name: Validate static site files
         run: |
@@ -51,7 +56,7 @@ jobs:
           path: .
 
   deploy:
-    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch' || github.event_name == 'schedule')
     permissions:
       pages: write
       id-token: write

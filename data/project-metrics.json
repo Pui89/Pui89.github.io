@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "generated_at": null,
+  "source": "GitHub REST API",
+  "status": "awaiting_first_automated_refresh",
+  "projects": [
+    {
+      "name": "Coconut Harvest AI",
+      "repository": "Pui89/Coconut-Harvest-AI",
+      "repository_url": "https://github.com/Pui89/Coconut-Harvest-AI",
+      "feedback_url": "https://github.com/Pui89/Coconut-Harvest-AI/issues/new?template=project-feedback.yml",
+      "stars": null,
+      "forks": null,
+      "open_issues": null,
+      "feedback_submissions": null,
+      "rating_count": null,
+      "average_feedback_score": null,
+      "last_repository_update": null
+    },
+    {
+      "name": "Extreme Flood Rescue AI",
+      "repository": "Pui89/Extreme-Flood-Rescue-AI",
+      "repository_url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI",
+      "feedback_url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/issues/new?template=project-feedback.yml",
+      "stars": null,
+      "forks": null,
+      "open_issues": null,
+      "feedback_submissions": null,
+      "rating_count": null,
+      "average_feedback_score": null,
+      "last_repository_update": null
+    },
+    {
+      "name": "PUI89 Sentinel",
+      "repository": "Pui89/Multimodal-Narcotics-Screening-AI",
+      "repository_url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI",
+      "feedback_url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/issues/new?template=project-feedback.yml",
+      "stars": null,
+      "forks": null,
+      "open_issues": null,
+      "feedback_submissions": null,
+      "rating_count": null,
+      "average_feedback_score": null,
+      "last_repository_update": null
+    },
+    {
+      "name": "PUI89 AI HOME",
+      "repository": "Pui89/AI-HOME",
+      "repository_url": "https://github.com/Pui89/AI-HOME",
+      "feedback_url": "https://github.com/Pui89/AI-HOME/issues/new?template=project-feedback.yml",
+      "stars": null,
+      "forks": null,
+      "open_issues": null,
+      "feedback_submissions": null,
+      "rating_count": null,
+      "average_feedback_score": null,
+      "last_repository_update": null
+    },
+    {
+      "name": "PUI89 AI NOMAD",
+      "repository": "Pui89/AI-NOMAD",
+      "repository_url": "https://github.com/Pui89/AI-NOMAD",
+      "feedback_url": "https://github.com/Pui89/AI-NOMAD/issues/new?template=project-feedback.yml",
+      "stars": null,
+      "forks": null,
+      "open_issues": null,
+      "feedback_submissions": null,
+      "rating_count": null,
+      "average_feedback_score": null,
+      "last_repository_update": null
+    },
+    {
+      "name": "PUI89 AI Robot Car",
+      "repository": "Pui89/ai-robot-car",
+      "repository_url": "https://github.com/Pui89/ai-robot-car",
+      "feedback_url": "https://github.com/Pui89/ai-robot-car/issues/new?template=project-feedback.yml",
+      "stars": null,
+      "forks": null,
+      "open_issues": null,
+      "feedback_submissions": null,
+      "rating_count": null,
+      "average_feedback_score": null,
+      "last_repository_update": null
+    },
+    {
+      "name": "PUI89 AI Robot Motorcycle",
+      "repository": "Pui89/ai-robot-motorcycle",
+      "repository_url": "https://github.com/Pui89/ai-robot-motorcycle",
+      "feedback_url": "https://github.com/Pui89/ai-robot-motorcycle/issues/new?template=project-feedback.yml",
+      "stars": null,
+      "forks": null,
+      "open_issues": null,
+      "feedback_submissions": null,
+      "rating_count": null,
+      "average_feedback_score": null,
+      "last_repository_update": null
+    }
+  ]
+}

@@ -413,6 +413,20 @@ a:hover{color:#B8F2FF!important}
 ::selection{background:rgba(66,217,255,.30)!important;color:#F3F7FF!important}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
 
+
+    .metrics-panel{margin:26px 0 30px;padding:22px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,rgba(18,38,58,.92),rgba(10,24,39,.94))}
+    .metrics-panel h3{margin:0 0 6px;font-size:1.25rem}
+    .metrics-panel .metrics-intro,.metrics-note,.metrics-updated{color:var(--muted);font-size:.88rem}
+    .metrics-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+    .metric-card{border:1px solid var(--line);border-radius:12px;padding:15px;background:rgba(6,16,28,.42);min-width:0}
+    .metric-card h4{font-size:1rem;margin:0 0 10px;line-height:1.4}
+    .metric-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+    .metric-stat{display:flex;flex-direction:column;gap:2px}
+    .metric-stat strong{font-size:1.25rem;font-variant-numeric:tabular-nums}
+    .metric-stat span{font-size:.76rem;color:var(--muted)}
+    .metric-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px;font-size:.82rem}
+    @media(max-width:760px){.metrics-grid{grid-template-columns:1fr}.metrics-panel{padding:17px}}
+
 </style>
   <link rel="stylesheet" href="assets/css/pui89-design-system.css?v=20261107-2">
   <link rel="stylesheet" href="/assets/css/pui89-project-progress.css?v=20261107-2">
@@ -442,6 +456,7 @@ a:hover{color:#B8F2FF!important}
       <a class="brand" href="th.html" aria-label="PUI89 AI Robotics หน้าหลัก"><img src="images/pui89-precision-glow-01.svg" alt="PUI89 AI Robotics" width="184" height="55"></a>
       <div class="navlinks">
         <a href="#projects">โครงการ</a>
+        <a href="#project-metrics">สถิติโครงการ</a>
         <a href="ai-vehicles-th.html">AI Car &amp; Motorcycle</a>
         <a href="company-th.html">ข้อมูล PUI89</a>
         <a href="growth-th.html">แผนการเติบโต</a>
@@ -477,6 +492,15 @@ a:hover{color:#B8F2FF!important}
         <h2>7 โครงการผลิตภัณฑ์ หนึ่งพื้นฐานวิศวกรรมร่วม</h2>
         <p class="intro">พัฒนาทีละขั้น โดยแยกแนวคิด ซอฟต์แวร์ที่ทำงานได้ การจำลอง และผลทดสอบในโลกจริงออกจากกัน</p>
         <p class="pui89-readiness-legend"><strong>ความพร้อมเชิงพาณิชย์:</strong> คะแนนประเมินตามหลักฐานแบบถ่วงน้ำหนัก 100% หมายถึงพร้อมจำหน่ายเชิงพาณิชย์หรือยื่นจัดซื้ออย่างเป็นทางการหลังผ่านการตรวจสอบที่เกี่ยวข้อง ไม่ใช่เปอร์เซ็นต์ความสมบูรณ์ของโค้ด ตรวจทานล่าสุด 7 พฤศจิกายน 2026 คะแนนเป็นค่าประเมินชั่วคราวและต้องมีหลักฐานใน repository รองรับ</p>
+
+        <section class="metrics-panel" id="project-metrics" aria-labelledby="project-metrics-heading">
+          <h3 id="project-metrics-heading">รีวิวโครงการและสถิติอัตโนมัติ</h3>
+          <p class="metrics-intro">ข้อมูลสาธารณะจาก GitHub สำหรับทั้ง 7 โครงการ อัปเดตโดยระบบอัตโนมัติ คะแนนสะท้อนข้อเสนอแนะจากชุมชนที่ส่งเข้ามา ไม่ใช่รีวิวจากลูกค้าที่ผ่านการยืนยันหรือคะแนนผลิตภัณฑ์จากหน่วยงานอิสระ</p>
+          <div class="metrics-grid" id="pui89-project-metrics-grid" aria-live="polite"><p>กำลังโหลดข้อมูลโครงการ…</p></div>
+          <p class="metrics-note">ยังไม่ได้เชื่อมต่อรีวิวจาก Google Business Profile ไม่มีการสร้างจำนวนรีวิวหรือคะแนนขึ้นเอง และโครงการที่ยังไม่มีผู้ส่งข้อเสนอแนะจะไม่แสดงคะแนน</p>
+          <p class="metrics-updated" id="pui89-metrics-updated">รอการอัปเดตอัตโนมัติครั้งแรก</p>
+        </section>
+
         <div class="grid">
           <article class="card">
             <img src="https://raw.githubusercontent.com/Pui89/Coconut-Harvest-AI/main/docs/images/coconut-harvest-realistic-all-stage-concept.svg" alt="ภาพแนวคิด Coconut Harvest AI แสดงมะพร้าวเขียวแก่ สีเหลือง และสีน้ำตาล พร้อมแนวคิดหุ่นยนต์เก็บเกี่ยว" loading="lazy" decoding="async"><div class="pui89-progress pui89-progress--card" role="img" aria-label="ระดับความพร้อมโครงการ: ขั้นที่ 2 จาก 5 — ต้นแบบซอฟต์แวร์; ข้อมูลความก้าวหน้า ณ วันที่ 7 พฤศจิกายน 2569 (2026)"><span class="pui89-progress__eyebrow">ระดับความพร้อมโครงการ</span><strong>ขั้นที่ 2 จาก 5</strong><span class="pui89-progress__score">ความพร้อมเชิงพาณิชย์ 50%</span><time class="pui89-progress__updated" datetime="2026-11-07">ข้อมูลความก้าวหน้า ณ วันที่ 7 พฤศจิกายน 2569 (2026)</time><span class="pui89-progress__bar" role="meter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-label="50% readiness"><span class="pui89-progress__bar-fill" style="width:50%"></span></span><span class="pui89-progress__label">ต้นแบบซอฟต์แวร์</span><span class="pui89-progress__steps" aria-hidden="true"><i class="is-reached"></i><i class="is-reached"></i><i></i><i></i><i></i></span></div>
@@ -591,5 +615,76 @@ a:hover{color:#B8F2FF!important}
 
 <section class="pui89-observatory__individual" aria-label="PUI89 development progress"><div data-pui89-observatory data-view="portfolio"></div></section>
 <script src="/assets/js/pui89-development-observatory.js" defer></script>
+
+  <script>
+  (function () {
+    const grid = document.getElementById("pui89-project-metrics-grid");
+    if (!grid) return;
+    const isThai = document.documentElement.lang.toLowerCase().startsWith("th");
+    const labels = isThai
+      ? {stars:"GitHub Stars",issues:"ประเด็นที่เปิดอยู่",feedback:"ข้อเสนอแนะที่ส่งแล้ว",average:"คะแนนเฉลี่ย",noScore:"ยังไม่มีคะแนน",repo:"Repository",submit:"ส่งข้อเสนอแนะ",updated:"อัปเดตข้อมูลล่าสุด",loading:"กำลังโหลดข้อมูล",error:"ยังโหลดข้อมูลไม่ได้ โปรดลองใหม่ภายหลัง"}
+      : {stars:"GitHub stars",issues:"Open issues",feedback:"Feedback submissions",average:"Average score",noScore:"Not rated yet",repo:"Repository",submit:"Submit feedback",updated:"Last updated",loading:"Loading project metrics…",error:"Metrics are temporarily unavailable. Please try again later."};
+    const makeStat = (value, label) => {
+      const wrapper = document.createElement("div");
+      wrapper.className = "metric-stat";
+      const strong = document.createElement("strong");
+      strong.textContent = value === null || value === undefined ? "—" : String(value);
+      const caption = document.createElement("span");
+      caption.textContent = label;
+      wrapper.append(strong, caption);
+      return wrapper;
+    };
+    fetch("data/project-metrics.json", {cache:"no-store"})
+      .then(response => {
+        if (!response.ok) throw new Error("HTTP " + response.status);
+        return response.json();
+      })
+      .then(data => {
+        if (!Array.isArray(data.projects)) throw new Error("Invalid metrics payload");
+        grid.replaceChildren();
+        for (const project of data.projects) {
+          const card = document.createElement("article");
+          card.className = "metric-card";
+          const heading = document.createElement("h4");
+          heading.textContent = project.name || project.repository;
+          const stats = document.createElement("div");
+          stats.className = "metric-stats";
+          const score = Number.isFinite(project.average_feedback_score)
+            ? project.average_feedback_score.toFixed(2) + " / 5"
+            : labels.noScore;
+          stats.append(
+            makeStat(project.stars, labels.stars),
+            makeStat(project.open_issues, labels.issues),
+            makeStat(project.feedback_submissions, labels.feedback),
+            makeStat(score, labels.average)
+          );
+          const links = document.createElement("div");
+          links.className = "metric-links";
+          const repoLink = document.createElement("a");
+          repoLink.href = project.repository_url;
+          repoLink.textContent = labels.repo;
+          repoLink.rel = "noopener";
+          const feedbackLink = document.createElement("a");
+          feedbackLink.href = project.feedback_url;
+          feedbackLink.textContent = labels.submit;
+          feedbackLink.rel = "noopener";
+          links.append(repoLink, feedbackLink);
+          card.append(heading, stats, links);
+          grid.append(card);
+        }
+        const updated = document.getElementById("pui89-metrics-updated");
+        if (updated) {
+          const stamp = data.generated_at ? new Date(data.generated_at) : null;
+          updated.textContent = stamp && !Number.isNaN(stamp.valueOf())
+            ? labels.updated + ": " + stamp.toLocaleString(isThai ? "th-TH" : "en-GB", {timeZone:"Asia/Bangkok"})
+            : (isThai ? "รอการอัปเดตอัตโนมัติครั้งแรก" : "Awaiting first automated refresh");
+        }
+      })
+      .catch(() => {
+        grid.textContent = labels.error;
+      });
+  })();
+  </script>
+
 </body>
 </html>
