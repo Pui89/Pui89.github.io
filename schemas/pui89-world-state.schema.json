@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Pui89/Pui89.github.io/blob/main/schemas/pui89-world-state.schema.json",
+  "title": "PUI89 World State",
+  "description": "A versioned, evidence-linked snapshot of what the system currently believes, including unknowns and conflicts.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "state_id", "project_id", "created_at", "revision", "status", "claims", "observation_ids"],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "state_id": { "type": "string", "minLength": 1 },
+    "project_id": { "enum": ["coconut-harvest-ai", "extreme-flood-rescue-ai", "multimodal-narcotics-screening-ai", "pui89-home-nomad"] },
+    "created_at": { "type": "string", "format": "date-time" },
+    "revision": { "type": "integer", "minimum": 1 },
+    "previous_state_id": { "type": ["string", "null"] },
+    "status": { "enum": ["CURRENT", "DEGRADED", "CONFLICTED", "STALE", "UNKNOWN"] },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["claim_id", "subject", "predicate", "value_status", "evidence_ids"],
+        "properties": {
+          "claim_id": { "type": "string", "minLength": 1 },
+          "subject": { "type": "string", "minLength": 1 },
+          "predicate": { "type": "string", "minLength": 1 },
+          "value_status": { "enum": ["KNOWN", "UNKNOWN", "CONFLICTED", "STALE", "NOT_APPLICABLE"] },
+          "value": {},
+          "unit": { "type": ["string", "null"] },
+          "confidence": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+          "calibration_status": { "enum": ["calibrated", "uncalibrated", "not_measured", "not_applicable", "unknown"] },
+          "evidence_ids": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+          "limitations": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "observation_ids": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+    "active_hazards": { "type": "array", "items": { "type": "string" } },
+    "missing_information": { "type": "array", "items": { "type": "string" } }
+  }
+}

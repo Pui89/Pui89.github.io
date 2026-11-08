@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Pui89/Pui89.github.io/blob/main/schemas/pui89-observation.schema.json",
+  "title": "PUI89 Observation",
+  "description": "A provenance-aware observation supplied to the shared AI Core. An observation is evidence input, not a verified fact or command.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "observation_id", "source", "observed_at", "modality", "status", "payload"],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "observation_id": { "type": "string", "minLength": 1 },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "source_type"],
+      "properties": {
+        "source_id": { "type": "string", "minLength": 1 },
+        "source_type": { "enum": ["sensor", "camera", "user", "dataset", "simulator", "external_system", "operator"] },
+        "device_or_dataset": { "type": ["string", "null"] },
+        "provenance_uri": { "type": ["string", "null"], "format": "uri" },
+        "integrity_status": { "enum": ["verified", "unverified", "failed", "unknown"] }
+      }
+    },
+    "observed_at": { "type": "string", "format": "date-time" },
+    "received_at": { "type": ["string", "null"], "format": "date-time" },
+    "modality": { "enum": ["rgb", "depth", "thermal", "audio", "xray", "chemical_sensor", "environmental", "position", "text", "other"] },
+    "status": { "enum": ["valid", "degraded", "stale", "missing", "conflicting", "rejected", "unknown"] },
+    "quality": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "score": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+        "method": { "type": ["string", "null"] },
+        "calibration_status": { "enum": ["calibrated", "uncalibrated", "expired", "not_applicable", "unknown"] }
+      }
+    },
+    "payload": { "type": "object" },
+    "uncertainty": { "type": ["object", "null"] },
+    "related_observation_ids": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+    "limitations": { "type": "array", "items": { "type": "string" } }
+  }
+}
