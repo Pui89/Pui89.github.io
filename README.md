@@ -403,3 +403,12 @@ All seven projects follow the [PUI89 Simple, Safe & Professional Engineering Sta
 - [แนวทางความปลอดภัยภาษาไทย](security-th.html)
 
 The seven product repositories maintain project-specific security policies and threat boundaries. Security checks reduce risk but cannot guarantee malware absence or immunity to attack. Review current workflow results and incident guidance before treating a control as verified.
+
+
+## Hardware & materials engineering
+
+PUI89's bilingual hardware and materials research programme documents shared robotics architecture, candidate materials, sensors, components, project-specific engineering directions and evidence gates. It is an early-stage research reference, not a claim of manufactured or validated robots.
+
+- [Hardware, Materials & Robotics Engineering — English](https://pui89.github.io/hardware.html)
+- [วัสดุ ฮาร์ดแวร์ และวิศวกรรมหุ่นยนต์ — ภาษาไทย](https://pui89.github.io/hardware-th.html)
+- [Complete hardware and materials engineering standard](docs/PUI89_HARDWARE_MATERIALS_INTELLIGENCE.md)
