@@ -220,6 +220,29 @@ def main() -> int:
         for raw in parser.links:
             parsed = urllib.parse.urlsplit(raw)
             if parsed.scheme.lower() in ("http", "https") and parsed.netloc:
+                # Treat absolute links back to this GitHub Pages site as local files.
+                # This keeps PR validation independent of whether new pages are deployed yet.
+                if parsed.netloc.lower() == SITE_HOST:
+                    local_url = parsed.path or "/"
+                    if parsed.fragment:
+                        local_url += "#" + parsed.fragment
+                    target, fragment = resolve_local(page, local_url)
+                    if target is None:
+                        continue
+                    local_link_count += 1
+                    if not target.exists() or not target.is_file():
+                        errors.append(f"{rel}: missing local target {raw!r}")
+                    elif fragment and target.suffix.lower() in (".html", ".htm"):
+                        target_parser = parsers.get(target)
+                        if target_parser is None:
+                            target_parser, target_error = parse_page(target)
+                            if target_parser is None:
+                                errors.append(f"{rel}: cannot parse fragment target {raw!r}: {target_error}")
+                                continue
+                            parsers[target] = target_parser
+                        if fragment not in target_parser.ids and fragment not in dynamic_ids:
+                            errors.append(f"{rel}: missing fragment target {raw!r}")
+                    continue
                 external_urls.add(urllib.parse.urldefrag(raw)[0])
                 continue
             target, fragment = resolve_local(page, raw)
