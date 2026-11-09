@@ -3,7 +3,7 @@ name: PUI89 cross-project command centre
 on:
   workflow_dispatch:
   schedule:
-    - cron: "23 6 * * 1"
+    - cron: "23 6 * * *"
   push:
     branches:
       - main
