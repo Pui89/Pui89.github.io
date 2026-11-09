@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a free, read-only status dashboard for PUI89's three public project repositories.
+"""Build a free, read-only status dashboard for PUI89's all seven PUI89 project repositories.
 
 Uses only Python's standard library and GitHub's public REST API. No token, hosted AI,
 model downloads, third-party package, or repository write is performed by this script.
@@ -18,9 +18,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PROJECTS = [
-    ("Coconut Harvest AI", "Pui89/Coconut-Harvest-AI", "Priority 1: dataset provenance, reviewed labels, leakage-safe evaluation."),
-    ("Extreme Flood Rescue AI", "Pui89/Extreme-Flood-Rescue-AI", "Simulation-first: scenario coverage, navigation and fail-safe evidence."),
-    ("Multimodal Screening AI", "Pui89/Multimodal-Narcotics-Screening-AI", "Data provenance, uncertainty, modality failures and human review."),
+    ("Coconut Harvest AI", "Pui89/Coconut-Harvest-AI", "Agricultural perception, dataset provenance, reviewed labels and leakage-safe evaluation."),
+    ("Extreme Flood Rescue AI", "Pui89/Extreme-Flood-Rescue-AI", "Flood perception, scenario coverage, navigation and fail-safe evidence."),
+    ("Multimodal Screening AI", "Pui89/Multimodal-Narcotics-Screening-AI", "Multimodal evidence, uncertainty, lawful evaluation and human review."),
+    ("AI HOME", "Pui89/AI-Home-Safety-Robot", "Indoor home-safety observations, deterioration signals and supervised assistance."),
+    ("AI NOMAD", "Pui89/AI-Mobile-Assistant-Robot", "Owner-supervised mobile assistance, environmental awareness and safe-stop behaviour."),
+    ("AI Robot Car", "Pui89/AI-Autonomous-Robot-Car", "Human-driver-first vehicle intelligence and advisory-only software research."),
+    ("AI Robot Motorcycle", "Pui89/AI-Motorcycle-Robotics", "Rider-centred mobility intelligence, safety advisories and simulation-first evaluation."),
 ]
 API = "https://api.github.com"
 
@@ -154,6 +158,7 @@ def main() -> int:
             "This report reads public repository metadata and recent workflow runs; it does not execute project tests.",
             "A missing workflow run is unknown, not a passing result or proof of failure.",
             "Only the most recent 50 repository workflow runs are scanned; a safeguard absent from that window is unknown.",
+            "Seven product repositories are monitored; the Shared AI Core and website repository are platform infrastructure, not additional product projects.",
             "Headline workflow and safeguard status is filtered to the repository default branch; other-branch runs are counted separately and do not prove default-branch health.",
             "A successful workflow does not validate real-world robot performance or dataset correctness.",
             "The Coconut dataset evidence audit runs only where its workflow is configured; not_seen_in_recent_runs for other projects means not observed, not a failure.",
