@@ -539,6 +539,15 @@ a:hover{color:var(--accent2)!important}
 
   <link rel="stylesheet" href="/assets/css/pui89-project-design-system.css?v=20261108-professional">
   <link rel="stylesheet" href="/assets/css/pui89-visual-system.css">
+
+<style id="pui89-hero-parity">
+/* Match the English homepage hero geometry and image fitting. */
+.hero{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(360px,.96fr)!important;align-items:center!important;gap:clamp(28px,4vw,60px)!important;max-width:none!important;padding:64px 0 44px!important}
+.hero-photo{position:relative!important;width:100%!important;aspect-ratio:8/5!important;min-height:0!important;height:auto!important;overflow:hidden!important;border-radius:22px!important;border:1px solid rgba(66,217,255,.26)!important;background:#071625!important;box-shadow:0 24px 64px rgba(0,0,0,.32),0 0 34px rgba(66,217,255,.06)!important}
+.hero-photo img{position:absolute!important;inset:0!important;display:block!important;width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;transform:none!important}
+@media(max-width:980px){.hero{grid-template-columns:minmax(0,1fr) minmax(300px,.9fr)!important;gap:25px!important}}
+@media(max-width:760px){.hero{grid-template-columns:1fr!important;padding:44px 0 38px!important;gap:26px!important}.hero-photo{aspect-ratio:8/5!important;min-height:0!important;height:auto!important}}
+</style>
 </head>
 <body data-pui89-project="portfolio">
   <a class="skip-link" href="#main-content">ข้ามไปยังเนื้อหาหลัก</a>
