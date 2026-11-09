@@ -50,3 +50,47 @@ nav.nav > a:not(.brand){
   letter-spacing:.005em;
   line-height:1.35;
 }
+
+/* Portfolio-wide primary navigation normalization.
+   Excludes the homepage's in-page project quick links. */
+.nav,
+header nav:not(.pui89-quick-explore),
+nav:has(> .pui89-language-switch){
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  flex-wrap:wrap;
+  gap:clamp(8px,1.35vw,16px);
+  min-height:56px;
+}
+.nav > a:not(.brand),
+header nav:not(.pui89-quick-explore) > a:not(.brand),
+nav:has(> .pui89-language-switch) > a:not(.brand){
+  display:inline-flex;
+  align-items:center;
+  min-height:36px;
+  padding:7px 9px;
+  border-radius:8px;
+  font-size:.86rem!important;
+  font-weight:550!important;
+  letter-spacing:.005em;
+  line-height:1.35;
+  text-decoration:none;
+}
+.nav > a:not(.brand):hover,
+header nav:not(.pui89-quick-explore) > a:not(.brand):hover,
+nav:has(> .pui89-language-switch) > a:not(.brand):hover{
+  background:rgba(66,217,255,.08);
+}
+@media(max-width:760px){
+  .nav,header nav:not(.pui89-quick-explore),nav:has(> .pui89-language-switch){
+    gap:7px 10px;
+    min-height:48px;
+  }
+  .nav > a:not(.brand),
+  header nav:not(.pui89-quick-explore) > a:not(.brand),
+  nav:has(> .pui89-language-switch) > a:not(.brand){
+    min-height:34px;
+    padding:6px 8px;
+  }
+}
