@@ -1,6 +1,6 @@
 /* PUI89 shared site navigation and footer — dependency-free, responsive, bilingual. */
 :root{--pui89-navy:#071426;--pui89-cyan:#42d9ff;--pui89-ink:#eef7ff;--pui89-muted:#a9bdd0;--pui89-line:rgba(110,190,225,.24)}
-#pui89-global-nav{position:sticky;top:0;z-index:1000;width:100%;min-height:64px;display:flex;align-items:center;gap:clamp(8px,1.5vw,20px);padding:9px clamp(14px,3vw,34px);background:rgba(5,15,29,.96);border-bottom:1px solid var(--pui89-line);box-shadow:0 8px 28px rgba(0,0,0,.18);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);font:500 14px/1.25 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--pui89-ink)}
+#pui89-global-nav{position:sticky;top:0;left:0;z-index:1000;width:100vw;max-width:100vw;margin-left:calc(50% - 50vw);min-height:64px;display:flex;align-items:center;gap:clamp(8px,1.5vw,20px);padding:9px clamp(14px,3vw,34px);background:rgba(5,15,29,.96);border-bottom:1px solid var(--pui89-line);box-shadow:0 8px 28px rgba(0,0,0,.18);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);font:500 14px/1.25 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--pui89-ink)}
 #pui89-global-nav *{box-sizing:border-box}
 #pui89-global-nav a,#pui89-global-nav summary{color:inherit;text-decoration:none;white-space:nowrap}
 #pui89-global-nav .pui89-brand{display:inline-flex;align-items:center;gap:8px;flex:0 0 auto;color:#fff;font-weight:800;letter-spacing:.08em;font-size:15px}
