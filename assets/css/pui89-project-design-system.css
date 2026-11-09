@@ -42,3 +42,11 @@ footer,.footer,.foot{border-color:var(--pui89-border)!important;color:var(--pui8
 @media(max-width:760px){.wrap,.w,.container,.shell{width:min(100% - 28px,var(--pui89-content))}.nav,.top{align-items:flex-start}.navlinks,.links,header nav{gap:8px 12px}.hero{padding-top:42px}.hero h1,h1{font-size:clamp(2rem,9vw,3.2rem)}.grid,.two,.principles,.service-grid,.photo-grid,.contact-grid{grid-template-columns:1fr}.card{min-height:0}table{display:block;max-width:100%;overflow-x:auto}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 body[data-pui89-project="coconut"],body[data-pui89-project="flood"],body[data-pui89-project="screening"],body[data-pui89-project="home"],body[data-pui89-project="nomad"],body[data-pui89-project="car"],body[data-pui89-project="motorcycle"],body[data-pui89-project="core"],body[data-pui89-project="vehicles"],body[data-pui89-project="portfolio"],body[data-pui89-project="corporate"]{--pui89-project-accent:var(--pui89-cyan)}
+
+/* Unified project navigation: lighter, consistent typography across project pages. */
+nav.nav > a:not(.brand){
+  font-size:.86rem!important;
+  font-weight:550!important;
+  letter-spacing:.005em;
+  line-height:1.35;
+}
