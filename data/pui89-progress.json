@@ -231,7 +231,7 @@
         "en": "PUI89 AI NOMAD",
         "th": "PUI89 AI NOMAD"
       },
-      "repo": "Pui89/Homeguard-Ai-Nomad",
+      "repo": "Pui89/AI-Mobile-Assistant-Robot",
       "score": 30,
       "stage": 1,
       "stageLabel": {
@@ -274,7 +274,7 @@
         "en": "PUI89 AI Robot Car",
         "th": "PUI89 AI Robot Car"
       },
-      "repo": "Pui89/ai-robot-car",
+      "repo": "Pui89/AI-Autonomous-Robot-Car",
       "score": 29,
       "stage": 1,
       "stageLabel": {
@@ -317,7 +317,7 @@
         "en": "PUI89 EasyRide AI Motorcycle",
         "th": "PUI89 EasyRide AI Motorcycle"
       },
-      "repo": "Pui89/ai-robot-motorcycle",
+      "repo": "Pui89/AI-Motorcycle-Robotics",
       "score": 28,
       "stage": 1,
       "stageLabel": {
