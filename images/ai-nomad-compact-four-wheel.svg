@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 AI NOMAD compact four-wheel concept</title>
+<desc id="desc">A compact rounded suitcase-style mobile robot concept with four protected wheels, a retractable handle, emergency stop and target dimensions of 28 centimetres wide, 22 centimetres deep and 45 centimetres high excluding the extended handle.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071426"/><stop offset="1" stop-color="#102d49"/></linearGradient>
+ <linearGradient id="body" x2="1" y2="1"><stop stop-color="#214967"/><stop offset="1" stop-color="#091a2e"/></linearGradient>
+ <linearGradient id="cyan"><stop stop-color="#16b9d8"/><stop offset="1" stop-color="#7cecff"/></linearGradient>
+ <filter id="shadow"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1200" height="820" rx="28" fill="url(#bg)"/>
+<text x="64" y="72" fill="#79e8fa" font-family="Arial,sans-serif" font-size="22" letter-spacing="5">PUI89 / CONCEPT DESIGN</text>
+<text x="64" y="132" fill="#fff" font-family="Arial,sans-serif" font-size="52" font-weight="700">AI NOMAD</text>
+<text x="66" y="172" fill="#b9d3e4" font-family="Arial,sans-serif" font-size="21">COMPACT FOUR-WHEEL MOBILE ASSISTANT</text>
+<ellipse cx="570" cy="682" rx="245" ry="35" fill="#000" opacity=".42" filter="url(#shadow)"/>
+<!-- retractable handle -->
+<path d="M500 290 V222 Q500 202 522 202 H665 Q687 202 687 222 V290" fill="none" stroke="#9ab9cb" stroke-width="14" stroke-linecap="round"/>
+<rect x="488" y="185" width="211" height="31" rx="15" fill="#173a56" stroke="#70e4f6" stroke-width="3"/>
+<!-- shell -->
+<path d="M397 294 Q400 260 438 252 L708 252 Q746 260 753 299 L791 626 Q796 660 762 670 H390 Q356 660 360 626 Z" fill="url(#body)" stroke="#2d7898" stroke-width="5"/>
+<path d="M420 311 Q423 282 451 278 H695 Q725 282 731 313 L765 620 Q768 642 746 647 H407 Q385 642 388 620 Z" fill="none" stroke="#456b84" stroke-width="3"/>
+<path d="M433 318 H715" stroke="url(#cyan)" stroke-width="7" stroke-linecap="round"/>
+<!-- display / sensor panel -->
+<rect x="474" y="358" width="202" height="142" rx="27" fill="#07192a" stroke="#22c4e2" stroke-width="3"/>
+<circle cx="575" cy="411" r="30" fill="#123a55" stroke="#75eaff" stroke-width="4"/>
+<circle cx="575" cy="411" r="10" fill="#78eaff"/>
+<path d="M526 465 Q575 439 624 465" fill="none" stroke="#45c7df" stroke-width="4" stroke-linecap="round"/>
+<text x="575" y="546" text-anchor="middle" fill="#e5faff" font-family="Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="3">NOMAD</text>
+<text x="575" y="575" text-anchor="middle" fill="#8bb5c9" font-family="Arial,sans-serif" font-size="14" letter-spacing="2">PUI89 INTELLIGENCE</text>
+<!-- e-stop -->
+<circle cx="721" cy="349" r="17" fill="#d94b54" stroke="#ffd3d3" stroke-width="4"/>
+<!-- protected wheel pods, four wheels represented front/rear -->
+<g fill="#07111e" stroke="#4b7892" stroke-width="4">
+ <rect x="348" y="566" width="62" height="103" rx="24"/>
+ <rect x="742" y="566" width="62" height="103" rx="24"/>
+ <rect x="394" y="642" width="66" height="46" rx="18"/>
+ <rect x="694" y="642" width="66" height="46" rx="18"/>
+</g>
+<g fill="#172c3d" stroke="#6b9ab2" stroke-width="3">
+ <rect x="360" y="584" width="38" height="69" rx="18"/>
+ <rect x="754" y="584" width="38" height="69" rx="18"/>
+ <rect x="407" y="650" width="40" height="31" rx="13"/>
+ <rect x="707" y="650" width="40" height="31" rx="13"/>
+</g>
+<path d="M390 630 Q575 658 765 630" fill="none" stroke="#22c4e2" stroke-width="7"/>
+<!-- callouts -->
+<g font-family="Arial,sans-serif">
+ <path d="M693 203 H856 L884 176" stroke="#69e4f6" stroke-width="2" fill="none"/>
+ <text x="895" y="174" fill="#fff" font-size="21" font-weight="700">Retractable handle</text>
+ <path d="M738 350 H860 L884 324" stroke="#69e4f6" stroke-width="2" fill="none"/>
+ <text x="895" y="322" fill="#fff" font-size="21" font-weight="700">Emergency stop</text>
+ <path d="M787 610 H865 L887 584" stroke="#69e4f6" stroke-width="2" fill="none"/>
+ <text x="895" y="582" fill="#fff" font-size="21" font-weight="700">4 protected wheels</text>
+ <text x="895" y="610" fill="#aec8d8" font-size="16">Recessed wheel housings</text>
+ <path d="M405 420 H252 L226 392" stroke="#69e4f6" stroke-width="2" fill="none"/>
+ <text x="64" y="382" fill="#fff" font-size="21" font-weight="700">Rounded compact shell</text>
+ <text x="64" y="410" fill="#aec8d8" font-size="16">Designed for a small footprint</text>
+</g>
+<!-- dimension footer -->
+<rect x="64" y="722" width="1072" height="66" rx="15" fill="#071a2b" stroke="#285a76" stroke-width="2"/>
+<g font-family="Arial,sans-serif" text-anchor="middle">
+ <text x="235" y="749" fill="#79e8fa" font-size="14" letter-spacing="2">WIDTH</text><text x="235" y="775" fill="#fff" font-size="22" font-weight="700">28 cm</text>
+ <text x="485" y="749" fill="#79e8fa" font-size="14" letter-spacing="2">DEPTH</text><text x="485" y="775" fill="#fff" font-size="22" font-weight="700">22 cm</text>
+ <text x="735" y="749" fill="#79e8fa" font-size="14" letter-spacing="2">HEIGHT*</text><text x="735" y="775" fill="#fff" font-size="22" font-weight="700">45 cm</text>
+ <text x="985" y="749" fill="#79e8fa" font-size="14" letter-spacing="2">WEIGHT TARGET</text><text x="985" y="775" fill="#fff" font-size="22" font-weight="700">≤ 8 kg</text>
+</g>
+<text x="65" y="810" fill="#8ba8bb" font-family="Arial,sans-serif" font-size="13">*Body height excluding extended handle. Concept only; dimensions, stability, mass and safety require engineering validation.</text>
+</svg>
