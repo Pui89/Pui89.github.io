@@ -107,3 +107,54 @@ footer{border-top:1px solid var(--pui-line)}
 
 .skip-link{position:absolute;left:12px;top:-60px;z-index:1000;padding:10px 14px;border-radius:9px;background:#42D9FF;color:#041522;font-weight:800}
 .skip-link:focus{top:12px}
+
+
+/* PUI89 SITE-WIDE NAVIGATION STANDARD
+   Shared across English and Thai pages. Brand marks and content links stay distinct. */
+:root{
+  --pui89-nav-size:.9rem;
+  --pui89-nav-weight:600;
+  --pui89-nav-line-height:1.4;
+  --pui89-nav-letter-spacing:.005em;
+  --pui89-nav-gap:clamp(10px,1.4vw,18px);
+}
+.navlinks,.links,header nav,.nav{
+  column-gap:var(--pui89-nav-gap);
+  row-gap:10px;
+}
+.navlinks > a,
+.links > a,
+header nav > a:not(.brand),
+header nav .navlinks > a,
+header nav .links > a,
+nav.nav > a:not(.brand),
+.nav-more > summary,
+.nav-more-menu > a{
+  font-size:var(--pui89-nav-size)!important;
+  font-weight:var(--pui89-nav-weight)!important;
+  line-height:var(--pui89-nav-line-height)!important;
+  letter-spacing:var(--pui89-nav-letter-spacing)!important;
+}
+.pui89-language-switch a,
+.pui89-language-switch span{
+  font-size:var(--pui89-nav-size)!important;
+  font-weight:var(--pui89-nav-weight)!important;
+  line-height:var(--pui89-nav-line-height)!important;
+}
+.nav .brand,.brand{
+  font-weight:850!important;
+}
+@media(max-width:760px){
+  .navlinks,.links,header nav,.nav{
+    column-gap:12px;
+    row-gap:9px;
+  }
+  .navlinks > a,
+  .links > a,
+  header nav > a:not(.brand),
+  nav.nav > a:not(.brand),
+  .nav-more > summary,
+  .nav-more-menu > a{
+    font-size:.9rem!important;
+  }
+}
