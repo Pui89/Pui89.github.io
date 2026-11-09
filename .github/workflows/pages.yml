@@ -35,6 +35,14 @@ jobs:
           grep -q '<html lang="th"' th.html
           grep -q 'PUI89 AI Robotics' th.html
           test -s README.md
+          test -s command-centre.html
+          test -s command-centre-th.html
+          grep -Fq 'command-centre.html' index.html
+          grep -Fq 'command-centre-th.html' th.html
+          grep -Fq 'https://pui89.github.io/command-centre.html' sitemap.xml
+          grep -Fq 'https://pui89.github.io/command-centre-th.html' sitemap.xml
+          python3 -m py_compile tools/pui89_command_centre.py
+          python3 -c "import ast; p=ast.parse(open('tools/pui89_command_centre.py', encoding='utf-8').read()); n=next(x for x in p.body if isinstance(x, ast.Assign) and any(isinstance(t, ast.Name) and t.id == 'PROJECTS' for t in x.targets)); assert len(ast.literal_eval(n.value)) == 7, 'Expected exactly seven projects'; print('Seven-project registry: PASS')"
           while IFS='|' read -r english_page thai_page; do
             grep -Fq "href=\"$english_page\"" index.html || { echo "Missing project landing-page link on English homepage: $english_page"; exit 1; }
             grep -Fq "href=\"$thai_page\"" th.html || { echo "Missing project landing-page link on Thai homepage: $thai_page"; exit 1; }
