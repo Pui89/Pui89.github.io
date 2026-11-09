@@ -158,3 +158,74 @@ nav.nav > a:not(.brand),
     font-size:.9rem!important;
   }
 }
+
+
+/* PUI89 BILINGUAL HEADER POSITION STANDARD
+   Normalize the two existing English/Thai header structures. */
+.wrap.nav,
+.wrap > nav.nav{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:clamp(12px,1.6vw,22px)!important;
+  box-sizing:border-box;
+}
+.wrap.nav > .brand,
+.wrap > nav.nav > .brand{
+  flex:0 0 auto;
+  display:flex;
+  align-items:center;
+}
+.wrap.nav > nav.navlinks,
+.wrap > nav.nav > .navlinks{
+  display:flex!important;
+  flex:1 1 auto!important;
+  min-width:0;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  flex-wrap:wrap;
+  gap:var(--pui89-nav-gap)!important;
+}
+.wrap.nav > nav.navlinks{
+  flex-direction:row;
+}
+.wrap.nav > nav.navlinks > .pui89-language-switch{
+  margin-left:clamp(8px,1vw,16px);
+  flex:0 0 auto;
+}
+.wrap > nav.nav > .pui89-language-switch{
+  margin-left:clamp(8px,1vw,16px);
+  flex:0 0 auto;
+}
+.wrap.nav > nav.navlinks .nav-more,
+.wrap > nav.nav > .navlinks .nav-more{
+  flex:0 0 auto;
+}
+@media(max-width:900px){
+  .wrap.nav,
+  .wrap > nav.nav{
+    flex-wrap:wrap;
+    align-items:center!important;
+  }
+  .wrap.nav > nav.navlinks,
+  .wrap > nav.nav > .navlinks{
+    flex:1 1 100%!important;
+    justify-content:flex-start!important;
+  }
+  .wrap.nav > nav.navlinks > .pui89-language-switch,
+  .wrap > nav.nav > .pui89-language-switch{
+    margin-left:auto;
+  }
+}
+@media(max-width:600px){
+  .wrap.nav,
+  .wrap > nav.nav{
+    gap:10px!important;
+  }
+  .wrap.nav > nav.navlinks,
+  .wrap > nav.nav > .navlinks{
+    width:100%;
+    flex-basis:100%!important;
+    justify-content:flex-start!important;
+  }
+}
