@@ -548,7 +548,8 @@ a:hover{color:var(--accent2)!important}
 @media(max-width:980px){.hero{grid-template-columns:minmax(0,1fr) minmax(300px,.9fr)!important;gap:25px!important}}
 @media(max-width:760px){.hero{grid-template-columns:1fr!important;padding:44px 0 38px!important;gap:26px!important}.hero-photo{aspect-ratio:8/5!important;min-height:0!important;height:auto!important}}
 </style>
-<style id="pui89-language-switch-style">.pui89-language-switch{display:inline-flex;align-items:center;gap:3px;margin-left:auto;padding:4px;border:1px solid rgba(66,217,255,.34);border-radius:999px;background:rgba(7,17,31,.82);white-space:nowrap;font-size:.82rem;line-height:1.35;flex-shrink:0}.pui89-language-switch a,.pui89-language-switch span{display:inline-flex;align-items:center;justify-content:center;min-height:32px;padding:5px 11px;border-radius:999px;text-decoration:none;font-weight:750;color:#c5d5e6}.pui89-language-switch .is-current{background:linear-gradient(110deg,#42d9ff,#8aeaff);color:#041522;box-shadow:0 2px 12px rgba(66,217,255,.18)}.pui89-language-switch a:hover{background:rgba(66,217,255,.13);color:#fff}.pui89-language-switch .is-current:hover{background:#b8f2ff;color:#041522}@media(max-width:780px){.pui89-language-switch{margin-left:0}.nav,.links{gap:10px}}</style></head>
+<style id="pui89-language-switch-style">.pui89-language-switch{display:inline-flex;align-items:center;gap:3px;margin-left:auto;padding:4px;border:1px solid rgba(66,217,255,.34);border-radius:999px;background:rgba(7,17,31,.82);white-space:nowrap;font-size:.82rem;line-height:1.35;flex-shrink:0}.pui89-language-switch a,.pui89-language-switch span{display:inline-flex;align-items:center;justify-content:center;min-height:32px;padding:5px 11px;border-radius:999px;text-decoration:none;font-weight:750;color:#c5d5e6}.pui89-language-switch .is-current{background:linear-gradient(110deg,#42d9ff,#8aeaff);color:#041522;box-shadow:0 2px 12px rgba(66,217,255,.18)}.pui89-language-switch a:hover{background:rgba(66,217,255,.13);color:#fff}.pui89-language-switch .is-current:hover{background:#b8f2ff;color:#041522}@media(max-width:780px){.pui89-language-switch{margin-left:0}.nav,.links{gap:10px}}</style>  <link rel="stylesheet" href="/assets/css/pui89-ai-discovery.css">
+</head>
 <body data-pui89-project="portfolio">
   <a class="skip-link" href="#main-content">ข้ามไปยังเนื้อหาหลัก</a>
   
@@ -556,6 +557,7 @@ a:hover{color:var(--accent2)!important}
     <a class="brand" href="th.html" aria-label="PUI89 AI Robotics หน้าหลัก"><img src="images/pui89-precision-glow-01.svg" alt="PUI89 AI Robotics" width="184" height="55"></a>
       <nav class="navlinks" aria-label="เมนูหลัก">
         <a href="#projects">โครงการ</a>
+        <a href="#ai-discovery">AI Discovery</a>
         <a href="ai-vehicles-th.html">ยานยนต์ AI</a>
         <a href="ai-core-th.html">AI Core</a>
         <a href="engineering-atlas-th.html">Engineering Atlas</a>
@@ -609,6 +611,26 @@ a:hover{color:var(--accent2)!important}
 
       <!-- Project details are consolidated in the single project directory above. -->
 
+
+      <section id="ai-discovery" class="section pui89-ai-lab" aria-labelledby="ai-discovery-heading">
+        <span class="eyebrow">PUI89 AI DISCOVERY LAB</span>
+        <h2 id="ai-discovery-heading">ค้นหาโครงการ PUI89 ที่เกี่ยวข้อง</h2>
+        <p class="intro">ค้นหาความสามารถและหัวข้อจากทั้ง 7 โครงการได้ทั้งภาษาไทยและภาษาอังกฤษ เวอร์ชันแรกทำงานภายในเบราว์เซอร์ด้วยดัชนีข้อความขนาดเล็ก ไม่ต้องมีบัญชี บริการ AI ภายนอก API key หรือดาวน์โหลดโมเดล</p>
+        <div class="pui89-ai-search">
+          <label for="pui89-project-query">ค้นหาโครงการ ความสามารถ หรือปัญหา</label>
+          <div class="pui89-ai-search-row"><input id="pui89-project-query" type="search" autocomplete="off" placeholder="เช่น น้ำท่วม มะพร้าว ความปลอดภัยในบ้าน รถจักรยานยนต์…" aria-describedby="pui89-search-help"><button id="pui89-project-search" type="button">ค้นหา</button></div>
+          <p id="pui89-search-help" class="pui89-ai-help">การค้นหาทำงานในเบราว์เซอร์และไม่ส่งคำค้นไปที่อื่น</p>
+          <div id="pui89-project-results" class="pui89-ai-results" aria-live="polite"><p class="pui89-ai-empty">พิมพ์หัวข้อเพื่อค้นหาโครงการที่เกี่ยวข้อง</p></div>
+        </div>
+        <div class="pui89-ai-model-heading"><div><span class="eyebrow">MODEL CANDIDATES</span><h3>โมเดลที่เสนอให้ประเมิน — ไม่มีการโหลดอัตโนมัติ</h3></div><p class="intro">มีโมเดล Hugging Face ที่ไม่ใช่โมเดลจากจีน 3 รายการ โดยยังไม่ดาวน์โหลดน้ำหนักโมเดล ต้องตรวจสอบใบอนุญาต ทรัพยากรเครื่อง การจัดการข้อมูล และผล benchmark ก่อนเปิดใช้งาน</p></div>
+        <div class="pui89-ai-model-grid">
+          <article class="pui89-ai-model"><span class="pui89-ai-model-tag">01 · SEARCH / EMBEDDINGS</span><h3>multilingual-e5-small</h3><p>ตัวเลือกสำหรับค้นหาความหมายข้ามภาษาไทย–อังกฤษและแนะนำโครงการที่เกี่ยวข้อง ควรเริ่มจาก benchmark เทียบกับระบบค้นหาข้อความที่ทำงานในเบราว์เซอร์</p><dl><div><dt>ผู้พัฒนา</dt><dd>intfloat</dd></div><div><dt>พารามิเตอร์</dt><dd>118M</dd></div><div><dt>ใบอนุญาต</dt><dd>MIT · ตรวจสอบ model card ล่าสุด</dd></div><div><dt>สถานะเว็บไซต์</dt><dd>ตัวเลือกประเมิน · ยังไม่โหลด</dd></div></dl><a href="https://huggingface.co/intfloat/multilingual-e5-small" target="_blank" rel="noopener noreferrer">ดู Hugging Face model card ↗</a></article>
+          <article class="pui89-ai-model"><span class="pui89-ai-model-tag">02 · SEARCH / ONNX</span><h3>multilingual-embedding-small</h3><p>โมเดล embedding หลายภาษาขนาดกะทัดรัดสำหรับเปรียบเทียบคุณภาพการค้นหาภาษาไทย การใช้หน่วยความจำในเบราว์เซอร์ และขนาดไฟล์กับ E5</p><dl><div><dt>ผู้พัฒนา</dt><dd>Horizon Labs</dd></div><div><dt>พารามิเตอร์</dt><dd>141M</dd></div><div><dt>ใบอนุญาต</dt><dd>Apache-2.0 · ตรวจสอบ model card ล่าสุด</dd></div><div><dt>สถานะเว็บไซต์</dt><dd>ตัวเลือกเปรียบเทียบ · ยังไม่โหลด</dd></div></dl><a href="https://huggingface.co/Horizon-Labs/multilingual-embedding-small" target="_blank" rel="noopener noreferrer">ดู Hugging Face model card ↗</a></article>
+          <article class="pui89-ai-model"><span class="pui89-ai-model-tag">03 · ASSISTANT / LOCAL R&amp;D</span><h3>Phi-3.5-mini-instruct</h3><p>ตัวเลือกในอนาคตสำหรับตอบคำถามจากเอกสาร PUI89 ที่เปิดเผยต่อสาธารณะ มีขนาดใหญ่เกินกว่าจะโหลดอัตโนมัติบนหน้าแรก จึงควรประเมินแบบ offline ก่อน</p><dl><div><dt>ผู้พัฒนา</dt><dd>Microsoft</dd></div><div><dt>พารามิเตอร์</dt><dd>3.8B</dd></div><div><dt>ใบอนุญาต</dt><dd>MIT · ตรวจสอบ model card ล่าสุด</dd></div><div><dt>สถานะเว็บไซต์</dt><dd>ตัวเลือกวิจัย · ยังไม่ติดตั้งใช้งาน</dd></div></dl><a href="https://huggingface.co/microsoft/Phi-3.5-mini-instruct" target="_blank" rel="noopener noreferrer">ดู Hugging Face model card ↗</a></article>
+        </div>
+        <p class="pui89-ai-boundary"><strong>ขอบเขตด้านหลักฐานและต้นทุน:</strong> ตัวค้นหาโครงการข้างต้นเป็นต้นแบบจัดอันดับด้วยคำค้น ไม่ใช่ neural semantic search ยังไม่มี inference endpoint การดาวน์โหลดน้ำหนักโมเดล analytics ภายนอก หรือการส่งคำค้นของผู้ใช้ไปยังเซิร์ฟเวอร์ ต้องให้ E5 และ Horizon ผ่าน benchmark การค้นหาภาษาไทย–อังกฤษก่อน ส่วน Phi เป็นเพียงตัวเลือกวิจัยแบบ offline ยังไม่มีการยืนยันความแม่นยำหรือการให้บริการ chatbot</p>
+      </section>
+
     <section class="section" id="core">
       <h2>พื้นฐานวิศวกรรมร่วมของ PUI89</h2>
       <p class="intro">แนวทางของ PUI89 คือพัฒนาพื้นฐานซอฟต์แวร์ AI ร่วมกัน แล้วต่อยอดเป็น 7 โครงการผลิตภัณฑ์เฉพาะทาง งาน shared core กำลังทยอยพัฒนาและตรวจทาน ส่วนนี้อธิบายทิศทางสถาปัตยกรรม ไม่ใช่การยืนยันว่าทุกส่วนเชื่อมต่อหรือผ่านการตรวจสอบแล้ว</p>
@@ -627,7 +649,8 @@ a:hover{color:var(--accent2)!important}
     
       
       
-      <section class="section" id="partner"><h2>ร่วมพัฒนา PUI89 ไปด้วยกัน</h2><p class="intro">คุณมีปัญหาจริงที่อยากเห็นการแก้ไขหรือไม่? PUI89 เปิดรับเกษตรกร นักวิจัย วิศวกร มหาวิทยาลัย ผู้ใช้งาน องค์กรเพื่อสังคม และผู้สนับสนุนที่มีความรับผิดชอบ เล่าให้เราฟังว่าปัญหาคืออะไร ส่งผลต่อใคร และผลลัพธ์แบบใดจึงจะมีประโยชน์ เริ่มต้นจากการพูดคุย โดยไม่สมมติว่ามีเงินทุนหรือความร่วมมือเกิดขึ้นแล้ว</p><div class="actions"><a class="btn primary" href="mailto:puinuanmanee@gmail.com?subject=PUI89%20Real-world%20Challenge">ส่งโจทย์ปัญหาจริงให้ PUI89 ↗</a><a class="btn" href="support-th.html">ดูแนวทางความร่วมมือ ↗</a></div></section>\n      <section class="section" id="contact">
+      <section class="section" id="partner"><h2>ร่วมพัฒนา PUI89 ไปด้วยกัน</h2><p class="intro">คุณมีปัญหาจริงที่อยากเห็นการแก้ไขหรือไม่? PUI89 เปิดรับเกษตรกร นักวิจัย วิศวกร มหาวิทยาลัย ผู้ใช้งาน องค์กรเพื่อสังคม และผู้สนับสนุนที่มีความรับผิดชอบ เล่าให้เราฟังว่าปัญหาคืออะไร ส่งผลต่อใคร และผลลัพธ์แบบใดจึงจะมีประโยชน์ เริ่มต้นจากการพูดคุย โดยไม่สมมติว่ามีเงินทุนหรือความร่วมมือเกิดขึ้นแล้ว</p><div class="actions"><a class="btn primary" href="mailto:puinuanmanee@gmail.com?subject=PUI89%20Real-world%20Challenge">ส่งโจทย์ปัญหาจริงให้ PUI89 ↗</a><a class="btn" href="support-th.html">ดูแนวทางความร่วมมือ ↗</a></div></section>
+      <section class="section" id="contact">
         <h2>ติดต่อ</h2>
         <div class="two">
           <div class="panel"><h3>ติดต่อโดยตรง</h3><p>สำหรับความร่วมมือด้านวิศวกรรม การทดลองนำร่องด้านเกษตร การพัฒนาผลิตภัณฑ์ และโอกาสทางธุรกิจในอนาคต</p><a class="btn primary" href="mailto:puinuanmanee@gmail.com?subject=PUI89%20AI%20Robotics%20Enquiry">puinuanmanee@gmail.com</a></div>
@@ -678,5 +701,6 @@ a:hover{color:var(--accent2)!important}
 <section class="pui89-observatory__individual" aria-label="PUI89 development progress"><div data-pui89-observatory data-view="portfolio"></div></section>
 <script src="/assets/js/pui89-development-observatory.js" defer></script>
 <script src="/assets/js/pui89-project-review-counts.js" data-portfolio="true" defer></script>
+<script src="/assets/js/pui89-ai-discovery.js" defer></script>
 </body>
 </html>
