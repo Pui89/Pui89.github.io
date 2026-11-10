@@ -609,7 +609,26 @@ a:hover{color:var(--accent2)!important}
 
       <!-- Project details are consolidated in the single project directory above. -->
 
-    <section class="section" id="core">
+
+      <section id="ai-discovery" class="section pui89-ai-lab" aria-labelledby="ai-discovery-heading">
+        <span class="eyebrow">PUI89 AI DISCOVERY LAB</span>
+        <h2 id="ai-discovery-heading">ค้นหาโครงการ PUI89 ที่เกี่ยวข้อง</h2>
+        <p class="intro">ค้นหาความสามารถและหัวข้อจากทั้ง 7 โครงการได้ทั้งภาษาไทยและภาษาอังกฤษ เวอร์ชันแรกทำงานภายในเบราว์เซอร์ด้วยดัชนีข้อความขนาดเล็ก ไม่ต้องมีบัญชี บริการ AI ภายนอก API key หรือดาวน์โหลดโมเดล</p>
+        <div class="pui89-ai-search">
+          <label for="pui89-project-query">ค้นหาโครงการ ความสามารถ หรือปัญหา</label>
+          <div class="pui89-ai-search-row"><input id="pui89-project-query" type="search" autocomplete="off" placeholder="เช่น น้ำท่วม มะพร้าว ความปลอดภัยในบ้าน รถจักรยานยนต์…" aria-describedby="pui89-search-help"><button id="pui89-project-search" type="button">ค้นหา</button></div>
+          <p id="pui89-search-help" class="pui89-ai-help">การค้นหาทำงานในเบราว์เซอร์และไม่ส่งคำค้นไปที่อื่น</p>
+          <div id="pui89-project-results" class="pui89-ai-results" aria-live="polite"><p class="pui89-ai-empty">พิมพ์หัวข้อเพื่อค้นหาโครงการที่เกี่ยวข้อง</p></div>
+        </div>
+        <div class="pui89-ai-model-heading"><div><span class="eyebrow">MODEL CANDIDATES</span><h3>โมเดลที่เสนอให้ประเมิน — ไม่มีการโหลดอัตโนมัติ</h3></div><p class="intro">มีโมเดล Hugging Face ที่ไม่ใช่โมเดลจากจีน 3 รายการ โดยยังไม่ดาวน์โหลดน้ำหนักโมเดล ต้องตรวจสอบใบอนุญาต ทรัพยากรเครื่อง การจัดการข้อมูล และผล benchmark ก่อนเปิดใช้งาน</p></div>
+        <div class="pui89-ai-model-grid">
+          <article class="pui89-ai-model"><span class="pui89-ai-model-tag">01 · SEARCH / EMBEDDINGS</span><h3>multilingual-e5-small</h3><p>ตัวเลือกสำหรับค้นหาความหมายข้ามภาษาไทย–อังกฤษและแนะนำโครงการที่เกี่ยวข้อง ควรเริ่มจาก benchmark เทียบกับระบบค้นหาข้อความที่ทำงานในเบราว์เซอร์</p><dl><div><dt>ผู้พัฒนา</dt><dd>intfloat</dd></div><div><dt>พารามิเตอร์</dt><dd>118M</dd></div><div><dt>ใบอนุญาต</dt><dd>MIT · ตรวจสอบ model card ล่าสุด</dd></div><div><dt>สถานะเว็บไซต์</dt><dd>ตัวเลือกประเมิน · ยังไม่โหลด</dd></div></dl><a href="https://huggingface.co/intfloat/multilingual-e5-small" target="_blank" rel="noopener noreferrer">ดู Hugging Face model card ↗</a></article>
+          <article class="pui89-ai-model"><span class="pui89-ai-model-tag">02 · SEARCH / ONNX</span><h3>multilingual-embedding-small</h3><p>โมเดล embedding หลายภาษาขนาดกะทัดรัดสำหรับเปรียบเทียบคุณภาพการค้นหาภาษาไทย การใช้หน่วยความจำในเบราว์เซอร์ และขนาดไฟล์กับ E5</p><dl><div><dt>ผู้พัฒนา</dt><dd>Horizon Labs</dd></div><div><dt>พารามิเตอร์</dt><dd>141M</dd></div><div><dt>ใบอนุญาต</dt><dd>Apache-2.0 · ตรวจสอบ model card ล่าสุด</dd></div><div><dt>สถานะเว็บไซต์</dt><dd>ตัวเลือกเปรียบเทียบ · ยังไม่โหลด</dd></div></dl><a href="https://huggingface.co/Horizon-Labs/multilingual-embedding-small" target="_blank" rel="noopener noreferrer">ดู Hugging Face model card ↗</a></article>
+          <article class="pui89-ai-model"><span class="pui89-ai-model-tag">03 · ASSISTANT / LOCAL R&amp;D</span><h3>Phi-3.5-mini-instruct</h3><p>ตัวเลือกในอนาคตสำหรับตอบคำถามจากเอกสาร PUI89 ที่เปิดเผยต่อสาธารณะ มีขนาดใหญ่เกินกว่าจะโหลดอัตโนมัติบนหน้าแรก จึงควรประเมินแบบ offline ก่อน</p><dl><div><dt>ผู้พัฒนา</dt><dd>Microsoft</dd></div><div><dt>พารามิเตอร์</dt><dd>3.8B</dd></div><div><dt>ใบอนุญาต</dt><dd>MIT · ตรวจสอบ model card ล่าสุด</dd></div><div><dt>สถานะเว็บไซต์</dt><dd>ตัวเลือกวิจัย · ยังไม่ติดตั้งใช้งาน</dd></div></dl><a href="https://huggingface.co/microsoft/Phi-3.5-mini-instruct" target="_blank" rel="noopener noreferrer">ดู Hugging Face model card ↗</a></article>
+        </div>
+        <p class="pui89-ai-boundary"><strong>ขอบเขตด้านหลักฐานและต้นทุน:</strong> ตัวค้นหาโครงการข้างต้นเป็นต้นแบบจัดอันดับด้วยคำค้น ไม่ใช่ neural semantic search ยังไม่มี inference endpoint การดาวน์โหลดน้ำหนักโมเดล analytics ภายนอก หรือการส่งคำค้นของผู้ใช้ไปยังเซิร์ฟเวอร์ ต้องให้ E5 และ Horizon ผ่าน benchmark การค้นหาภาษาไทย–อังกฤษก่อน ส่วน Phi เป็นเพียงตัวเลือกวิจัยแบบ offline ยังไม่มีการยืนยันความแม่นยำหรือการให้บริการ chatbot</p>
+      </section>
+\n    <section class="section" id="core">
       <h2>พื้นฐานวิศวกรรมร่วมของ PUI89</h2>
       <p class="intro">แนวทางของ PUI89 คือพัฒนาพื้นฐานซอฟต์แวร์ AI ร่วมกัน แล้วต่อยอดเป็น 7 โครงการผลิตภัณฑ์เฉพาะทาง งาน shared core กำลังทยอยพัฒนาและตรวจทาน ส่วนนี้อธิบายทิศทางสถาปัตยกรรม ไม่ใช่การยืนยันว่าทุกส่วนเชื่อมต่อหรือผ่านการตรวจสอบแล้ว</p>
       <div class="grid">
