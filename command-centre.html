@@ -10,11 +10,47 @@
 <style>
 :root{color-scheme:dark;--bg:#07111f;--panel:#101f33;--panel2:#172b43;--text:#f3f7ff;--muted:#b8c7da;--line:#30445f;--accent:#42d9ff;--good:#8fe0b0;--warn:#ffd18a}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 78% -8%,rgba(66,217,255,.16),transparent 36%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}a{color:var(--accent)}header{padding:22px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.brand{font-weight:850;letter-spacing:.08em;color:var(--text);text-decoration:none}.links{display:flex;gap:16px;flex-wrap:wrap}.hero{padding:52px 0 26px}.eyebrow{color:var(--accent);font-size:.78rem;font-weight:800;letter-spacing:.14em}.hero h1{font-size:clamp(2.2rem,6vw,4rem);line-height:1.05;margin:12px 0}.muted{color:var(--muted)}.notice{border:1px solid #6d5833;background:#251f16;color:#f5e8cb;padding:14px 17px;border-radius:12px;margin:18px 0}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:22px 0}.stat,.card{border:1px solid var(--line);background:linear-gradient(150deg,var(--panel2),var(--panel));border-radius:14px;padding:18px}.stat strong{font-size:1.7rem;display:block}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0 34px}.card h2{font-size:1.18rem;margin:0 0 5px}.meta{font-size:.86rem;color:var(--muted);overflow-wrap:anywhere}.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:3px 9px;font-size:.76rem;margin:7px 0}.pill.ok{color:var(--good)}.pill.partial{color:var(--warn)}.runs{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}.runs a{display:block;font-size:.87rem;margin:5px 0}.focus{color:var(--muted);font-size:.92rem}.footer{border-top:1px solid var(--line);padding:22px 0 38px;color:var(--muted);font-size:.88rem}@media(max-width:700px){.grid,.stats{grid-template-columns:1fr}.hero{padding-top:36px}}
+
+.decision-flow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:18px 0 22px}
+.decision-step{position:relative;border:1px solid rgba(66,217,255,.28);border-radius:12px;background:linear-gradient(145deg,#142b43,#0e1c2d);padding:15px;min-width:0}
+.decision-step b{display:block;color:var(--accent);font-size:.76rem;letter-spacing:.1em;margin-bottom:5px}
+.decision-step strong{display:block;font-size:1rem}
+.decision-step span{display:block;color:var(--muted);font-size:.83rem;margin-top:5px}
+.hub-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:16px 0 30px}
+.hub-card{display:block;padding:17px;border:1px solid var(--line);border-radius:13px;background:var(--panel);text-decoration:none;color:var(--text);min-width:0}
+.hub-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.hub-card b{display:block;color:var(--accent);margin-bottom:5px}
+.hub-card span{display:block;color:var(--muted);font-size:.86rem}
+.section-note{color:var(--muted);font-size:.9rem;max-width:78ch}
+@media(max-width:850px){.decision-flow{grid-template-columns:repeat(2,minmax(0,1fr))}.hub-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.decision-flow,.hub-grid{grid-template-columns:1fr}}
 </style><style id="pui89-language-switch-style">.pui89-language-switch{display:inline-flex;align-items:center;gap:3px;margin-left:auto;padding:4px;border:1px solid rgba(66,217,255,.34);border-radius:999px;background:rgba(7,17,31,.82);white-space:nowrap;font-size:.82rem;line-height:1.35;flex-shrink:0}.pui89-language-switch a,.pui89-language-switch span{display:inline-flex;align-items:center;justify-content:center;min-height:32px;padding:5px 11px;border-radius:999px;text-decoration:none;font-weight:750;color:#c5d5e6}.pui89-language-switch .is-current{background:linear-gradient(110deg,#42d9ff,#8aeaff);color:#041522;box-shadow:0 2px 12px rgba(66,217,255,.18)}.pui89-language-switch a:hover{background:rgba(66,217,255,.13);color:#fff}.pui89-language-switch .is-current:hover{background:#b8f2ff;color:#041522}@media(max-width:780px){.pui89-language-switch{margin-left:0}.nav,.links{gap:10px}}</style></head>
 <body><div class="wrap">
 <header><a class="brand" href="index.html">PUI89</a><nav class="links"><a href="index.html">Home</a><a href="ai-core.html">AI Core</a><a href="https://github.com/Pui89/Pui89.github.io">GitHub</a><div class="pui89-language-switch" role="group" aria-label="Choose language"><span class="is-current" lang="en" aria-current="page">English</span><a class="" href="command-centre-th.html" lang="th" >ไทย</a></div></nav></header>
 <main><section class="hero"><div class="eyebrow">PUI89 · READ-ONLY MONITORING</div><h1>PUI89 Project Command Centre</h1><p class="muted">One view of all seven projects using public GitHub metadata, latest commits and GitHub Actions. Monitoring only: this page never commands robots or changes repositories.</p><div class="notice">Missing evidence is UNKNOWN, not pass or fail. Passing software checks do not prove AI accuracy, physical robot safety, certification or field performance.</div></section>
 <section class="stats"><div class="stat"><strong id="project-count">7</strong>Projects</div><div class="stat"><strong id="available-count">—</strong>Repositories available</div><div class="stat"><strong id="updated-at">—</strong>Report updated (UTC)</div></section>
+
+<section aria-labelledby="decision-heading" style="margin:8px 0 34px">
+  <h2 id="decision-heading">Evidence-to-Decision Intelligence</h2>
+  <p class="muted">PUI89's engineering method connects observations to cautious, reviewable decisions. This is a shared design framework; individual capabilities are implemented and validated project by project.</p>
+  <div class="decision-flow" aria-label="Five-stage PUI89 intelligence workflow">
+    <div class="decision-step"><b>01 · PERCEIVE</b><strong>Collect observations</strong><span>Record source, time, quality and provenance.</span></div>
+    <div class="decision-step"><b>02 · UNDERSTAND</b><strong>Build world state</strong><span>Track what is known, missing, stale or conflicting.</span></div>
+    <div class="decision-step"><b>03 · REASON</b><strong>Assess uncertainty</strong><span>Compare evidence, context, risk and alternatives.</span></div>
+    <div class="decision-step"><b>04 · VALIDATE</b><strong>Test proposals</strong><span>Use software checks, scenarios and human review.</span></div>
+    <div class="decision-step"><b>05 · IMPROVE</b><strong>Preserve evidence</strong><span>Record outcomes, failures and verified changes.</span></div>
+  </div>
+  <p class="section-note">Safety boundary: the shared workflow is advisory and evidence-led. It does not authorise physical robot movement, enforcement decisions or unattended high-impact actions.</p>
+  <h2>Explore the engineering system</h2>
+  <div class="hub-grid">
+    <a class="hub-card" href="ai-core.html"><b>Shared AI Core ↗</b><span>Reusable contracts, world-state and safety architecture.</span></a>
+    <a class="hub-card" href="evidence.html"><b>Evidence &amp; Validation ↗</b><span>Public test records, evaluation boundaries and source evidence.</span></a>
+    <a class="hub-card" href="security.html"><b>Security &amp; Trust ↗</b><span>Repository defence, responsible disclosure and security principles.</span></a>
+    <a class="hub-card" href="support.html"><b>Research &amp; Partnership ↗</b><span>Collaboration routes for researchers, universities and sponsors.</span></a>
+    <a class="hub-card" href="growth.html"><b>Public Roadmap ↗</b><span>Staged development, priorities and responsible growth.</span></a>
+    <a class="hub-card" href="https://github.com/Pui89" rel="noopener"><b>Open GitHub Portfolio ↗</b><span>Inspect source repositories, pull requests and workflow evidence.</span></a>
+  </div>
+</section>
 <h2>Project status</h2><div id="projects" class="grid" aria-live="polite"><article class="card">Loading the latest report…</article></div></main>
 <footer class="footer">Source: automated report from the public GitHub API · No paid API or model download. <a href="reports/pui89-command-centre.md">Full report</a></footer></div>
 <script>
