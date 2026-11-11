@@ -1,41 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 150" role="img" aria-labelledby="title desc">
-<title id="title">PUI89 Cyber Edge</title>
-<desc id="desc">A square-cut metallic N crossed by one sharp electric-cyan diagonal edge, paired with a silver PUI89 wordmark. No orbit, ring or circular element.</desc>
-<defs>
-  <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#FFFFFF"/>
-    <stop offset=".28" stop-color="#B8D5EA"/>
-    <stop offset=".58" stop-color="#477DA7"/>
-    <stop offset=".82" stop-color="#E8F7FF"/>
-    <stop offset="1" stop-color="#719AB8"/>
-  </linearGradient>
-  <linearGradient id="edge" x1="0" y1="1" x2="1" y2="0">
-    <stop offset="0" stop-color="#007BFF"/>
-    <stop offset=".42" stop-color="#00D9FF"/>
-    <stop offset=".7" stop-color="#B7FAFF"/>
-    <stop offset="1" stop-color="#00A9FF"/>
-  </linearGradient>
-  <linearGradient id="word" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#FFFFFF"/>
-    <stop offset=".55" stop-color="#D7E9F6"/>
-    <stop offset="1" stop-color="#8CB6D5"/>
-  </linearGradient>
-  <filter id="cyanGlow" x="-70%" y="-70%" width="240%" height="240%">
-    <feGaussianBlur stdDeviation="5" result="blur"/>
-    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-  </filter>
-</defs>
-<!-- Bold geometric N with flat, square-cut terminals. -->
-<path d="M24 22H54L146 102V22H176V128H146L54 48V128H24Z"
-      fill="url(#metal)" stroke="#7FB8E5" stroke-width="1.5"/>
-<path d="M54 39L146 119" stroke="#163D5F" stroke-width="3" opacity=".75"/>
-<!-- One clean Cyber Edge slash: no orbit, ring, loop or circular motif. -->
-<path d="M12 119L184 14" stroke="url(#edge)" stroke-width="7"
-      stroke-linecap="square" filter="url(#cyanGlow)"/>
-<path d="M12 119L184 14" stroke="#D8FCFF" stroke-width="1.5"/>
-<!-- Wordmark. -->
-<text x="218" y="101" fill="url(#word)"
-      font-family="Arial, Helvetica, sans-serif" font-size="68"
-      font-weight="900" letter-spacing="1.5">PUI89</text>
-<path d="M220 119H490" stroke="#00CFFF" stroke-width="1.4" opacity=".78"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" role="img" aria-labelledby="title desc">
+  <title id="title">PUI89 Titanium Core Signature</title>
+  <desc id="desc">A large brushed-titanium geometric N with a soft electric-cyan ambient glow behind it, paired with a silver PUI89 wordmark and a restrained cyan underline. The N is not crossed by a blue line.</desc>
+  <defs>
+    <linearGradient id="titanium" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".18" stop-color="#DCE6EE"/>
+      <stop offset=".38" stop-color="#8799A9"/>
+      <stop offset=".54" stop-color="#F4F8FC"/>
+      <stop offset=".73" stop-color="#AAB8C5"/>
+      <stop offset="1" stop-color="#64788B"/>
+    </linearGradient>
+    <linearGradient id="wordMetal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".42" stop-color="#D9E2EA"/>
+      <stop offset="1" stop-color="#91A4B5"/>
+    </linearGradient>
+    <linearGradient id="cyanRule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00BFEF" stop-opacity=".12"/>
+      <stop offset=".5" stop-color="#48E5FF" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#00BFEF" stop-opacity=".12"/>
+    </linearGradient>
+    <filter id="ambientGlow" x="-45%" y="-35%" width="190%" height="170%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-25%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset dy="4" result="offset"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".34"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="brush" width="7" height="7" patternUnits="userSpaceOnUse">
+      <path d="M0 1H7 M0 4H7" stroke="#FFFFFF" stroke-opacity=".11" stroke-width=".55"/>
+    </pattern>
+  </defs>
+
+  <!-- Ambient cyan light stays behind the titanium mark; no slash crosses the N. -->
+  <path d="M40 28H80L166 132V28H206V190H166L80 86V190H40Z"
+        fill="none" stroke="#00DFFF" stroke-width="7" opacity=".34"
+        filter="url(#ambientGlow)"/>
+
+  <!-- Signature N: solid, square-cut geometry with a brushed-metal finish. -->
+  <path d="M40 28H80L166 132V28H206V190H166L80 86V190H40Z"
+        fill="url(#titanium)" stroke="#EAF5FC" stroke-opacity=".72"
+        stroke-width="1.4" filter="url(#softShadow)"/>
+  <path d="M40 28H80L166 132V28H206V190H166L80 86V190H40Z"
+        fill="url(#brush)" opacity=".5"/>
+  <path d="M46 34H76L160 135" fill="none" stroke="#FFFFFF"
+        stroke-width="1.2" stroke-opacity=".52"/>
+
+  <!-- Wordmark. -->
+  <text x="250" y="145" fill="url(#wordMetal)"
+        font-family="Arial, Helvetica, sans-serif" font-size="112"
+        font-weight="800" letter-spacing="2.2">PUI89</text>
+
+  <!-- Restrained cyan signature rule below the wordmark only. -->
+  <path d="M254 174H694" stroke="url(#cyanRule)" stroke-width="2"
+        stroke-linecap="round"/>
+  <circle cx="694" cy="174" r="2.2" fill="#43DFFF" opacity=".68"/>
 </svg>
