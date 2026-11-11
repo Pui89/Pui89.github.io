@@ -385,6 +385,15 @@ Offline-only OWL-ViT inference code is present on open project branches for eval
 **Integration status:** model-loading and inference code is present on open pull-request branches; these changes are not yet merged to the default branches. Model weights were not downloaded, dependencies were not installed, and inference has not been executed. Each script uses local-only loading, requires safetensors, and records outputs as uncertain human-review observations. No model result authorizes physical actuation or a consequential decision. Project-specific limits are documented in each README.
 
 
+
+## AI Robotics Compute Intelligence — development direction
+
+PUI89 is exploring software that helps AI robots use heterogeneous compute resources—CPU, GPU, NPU/AI accelerators and microcontrollers—more efficiently. The aim is to evaluate task placement against declared capability, memory, latency and power constraints, while keeping safety-critical decisions under human oversight.
+
+The first Shared AI Core module, **Compute Intelligence v0.1**, is a deterministic, proposal-only software prototype under development. It uses declared/synthetic hardware profiles; it does not discover hardware, run models, measure energy, control devices or execute robot actions. No reduction in hardware cost or energy consumption is claimed.
+
+PUI89 is focused on practical AI software and robotics integration, not manufacturing semiconductor chips. Development follows a strict zero-cost policy: no paid APIs, subscriptions, cloud GPUs, new hardware purchases or automatic model downloads.
+
 ## PUI89 Efficient Engineering Standard
 
 All seven projects follow the proposed [PUI89 Efficient Engineering Standard](PUI89_EFFICIENT_ENGINEERING_STANDARD.md): resource-aware RAM/CPU use, electricity and battery efficiency, thermal management, storage, network, latency, software complexity, offline/edge resilience and lifecycle repairability. Performance claims require reproducible, comparable measurements. No paid services, purchases, hardware tests or rewrites are authorised by this standard. Physical power, battery and temperature claims remain unverified until measured with suitable equipment.
