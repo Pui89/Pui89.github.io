@@ -1,59 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 150" role="img" aria-labelledby="title desc">
-<title id="title">PUI89 — Bold N, Brighter Internal Electric Core</title>
-<desc id="desc">A bold, square-cut deep navy N with a vivid electric cyan luminous core contained inside its central diagonal, followed by a bright cyan PUI89 wordmark.</desc>
+<title id="title">PUI89 Cyber Edge</title>
+<desc id="desc">PUI89 geometric metallic N mark with an electric cyan forward slash and a restrained orbital arc, paired with a silver wordmark on a transparent background.</desc>
 <defs>
-  <linearGradient id="pui89Navy" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#245789"/>
-    <stop offset=".55" stop-color="#0B2444"/>
-    <stop offset="1" stop-color="#06152C"/>
+  <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset=".28" stop-color="#B8D5EA"/>
+    <stop offset=".58" stop-color="#477DA7"/><stop offset=".82" stop-color="#E8F7FF"/>
+    <stop offset="1" stop-color="#719AB8"/>
   </linearGradient>
-  <linearGradient id="pui89Core" x1="54" y1="40" x2="146" y2="110" gradientUnits="userSpaceOnUse">
-    <stop offset="0" stop-color="#00BFFF"/>
-    <stop offset=".34" stop-color="#A8F8FF"/>
-    <stop offset=".52" stop-color="#FFFFFF"/>
-    <stop offset=".72" stop-color="#73F4FF"/>
-    <stop offset="1" stop-color="#00CFFF"/>
+  <linearGradient id="edge" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#007BFF"/><stop offset=".42" stop-color="#00D9FF"/>
+    <stop offset=".7" stop-color="#B7FAFF"/><stop offset="1" stop-color="#00A9FF"/>
   </linearGradient>
-  <linearGradient id="pui89Word" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#FFFFFF"/>
-    <stop offset=".34" stop-color="#A8F8FF"/>
-    <stop offset=".68" stop-color="#42D9FF"/>
-    <stop offset="1" stop-color="#00AEEF"/>
+  <linearGradient id="word" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset=".55" stop-color="#D7E9F6"/><stop offset="1" stop-color="#8CB6D5"/>
   </linearGradient>
-  <filter id="pui89CoreGlow" x="-55%" y="-65%" width="210%" height="230%">
-    <feGaussianBlur stdDeviation="8.5" result="wide"/>
-    <feGaussianBlur stdDeviation="3.2" result="tight"/>
-    <feMerge>
-      <feMergeNode in="wide"/>
-      <feMergeNode in="tight"/>
-      <feMergeNode in="SourceGraphic"/>
-    </feMerge>
+  <filter id="cyanGlow" x="-70%" y="-70%" width="240%" height="240%">
+    <feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
-  <filter id="pui89WordGlow" x="-25%" y="-45%" width="150%" height="190%">
-    <feGaussianBlur in="SourceAlpha" stdDeviation="3.4" result="blur"/>
-    <feFlood flood-color="#00CFFF" flood-opacity=".62" result="cyan"/>
-    <feComposite in="cyan" in2="blur" operator="in" result="halo"/>
-    <feMerge><feMergeNode in="halo"/><feMergeNode in="SourceGraphic"/></feMerge>
+  <filter id="softGlow" x="-30%" y="-60%" width="160%" height="220%">
+    <feGaussianBlur stdDeviation="2.5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
-  <clipPath id="pui89NClip">
-    <path d="M24 24H54L146 103V24H176V126H146L54 47V126H24Z"/>
-  </clipPath>
 </defs>
-<!-- Bold geometric N with flat, square-cut terminals. -->
-<path d="M24 24H54L146 103V24H176V126H146L54 47V126H24Z"
-      fill="url(#pui89Navy)" stroke="#3475A5" stroke-width="1.6" stroke-linejoin="miter"/>
-<!-- Brighter electric core stays clipped inside the N's diagonal. -->
-<g clip-path="url(#pui89NClip)">
-  <path d="M54 40L146 110" fill="none" stroke="#00D9FF"
-        stroke-width="21" opacity=".78" filter="url(#pui89CoreGlow)"/>
-  <path d="M54 40L146 110" fill="none" stroke="url(#pui89Core)"
-        stroke-width="8.2" stroke-linecap="butt" filter="url(#pui89CoreGlow)"/>
-  <path d="M54 40L146 110" fill="none" stroke="#FFFFFF"
-        stroke-width="2" opacity="1" stroke-linecap="butt"/>
-</g>
-<!-- Bright but legible side wordmark. -->
-<text x="211" y="101" fill="url(#pui89Word)"
-      font-family="Arial, Helvetica, sans-serif" font-size="69"
-      font-weight="900" letter-spacing="1.8"
-      filter="url(#pui89WordGlow)">PUI89</text>
+<!-- Square-cut N: deliberately simple and recognisable at small sizes. -->
+<path d="M24 22H54L146 102V22H176V128H146L54 48V128H24Z" fill="url(#metal)" stroke="#7FB8E5" stroke-width="1.5"/>
+<path d="M54 39L146 119" stroke="#163D5F" stroke-width="3" opacity=".75"/>
+<!-- The Cyber Edge: a crisp cyan diagonal crossing the mark. -->
+<path d="M12 119L184 14" stroke="url(#edge)" stroke-width="7" stroke-linecap="square" filter="url(#cyanGlow)"/>
+<path d="M12 119L184 14" stroke="#D8FCFF" stroke-width="1.5" opacity=".95"/>
+<!-- A restrained orbital sweep reinforces motion without enclosing the mark. -->
+<path d="M18 103C58 5 153 -5 194 36" fill="none" stroke="#00BFFF" stroke-width="2.1" opacity=".88" filter="url(#softGlow)"/>
+<path d="M191 32L198 38L188 39" fill="none" stroke="#55E9FF" stroke-width="2"/>
+<text x="218" y="101" fill="url(#word)" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="900" letter-spacing="1.5">PUI89</text>
+<path d="M220 119H490" stroke="#00CFFF" stroke-width="1.4" opacity=".78"/>
+<circle cx="490" cy="119" r="2.6" fill="#55E9FF" filter="url(#softGlow)"/>
 </svg>
