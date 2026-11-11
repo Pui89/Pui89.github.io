@@ -807,40 +807,13 @@ a:hover{color:var(--accent2)!important}
 
 
     <section id="ai-discovery" class="section pui89-ai-lab" aria-labelledby="ai-discovery-heading">
-      <span class="eyebrow">PUI89 AI DISCOVERY LAB</span>
-      <h2 id="ai-discovery-heading">Find the right PUI89 project</h2>
-      <p class="intro">Search across seven project areas in English or Thai. This first version runs locally in your browser using a small, transparent text index—no account, hosted AI service, API key or model download.</p>
-      <div class="pui89-ai-search">
-        <label for="pui89-project-query">Search projects, capabilities or problems</label>
-        <div class="pui89-ai-search-row"><input id="pui89-project-query" type="search" autocomplete="off" placeholder="Try: flood mapping, coconut, home safety, รถจักรยานยนต์…" aria-describedby="pui89-search-help"><button id="pui89-project-search" type="button">Search</button></div>
-        <p id="pui89-search-help" class="pui89-ai-help">Search is local and does not send your query anywhere.</p>
-        <div id="pui89-project-results" class="pui89-ai-results" aria-live="polite"><p class="pui89-ai-empty">Enter a topic to find related projects.</p></div>
-      </div>
-      <div class="pui89-ai-model-heading"><div><span class="eyebrow">MODEL CANDIDATES</span><h3>Models to evaluate—not silently load</h3></div><p class="intro">Three non-Chinese Hugging Face candidates are documented below. Model weights are not downloaded automatically. Licence, hardware, data handling and benchmark fit must be checked before activation.</p></div>
-      <div class="pui89-ai-model-grid">
-        <article class="pui89-ai-model"><span class="pui89-ai-model-tag">01 · SEARCH / EMBEDDINGS</span><h3>multilingual-e5-small</h3><p>Candidate for Thai–English semantic search and related-project recommendations. Start with a benchmark against the local text-search baseline.</p><dl><div><dt>Publisher</dt><dd>intfloat</dd></div><div><dt>Parameters</dt><dd>118M</dd></div><div><dt>Licence</dt><dd>MIT · verify current model card</dd></div><div><dt>Website status</dt><dd>Candidate · not loaded</dd></div></dl><a href="https://huggingface.co/intfloat/multilingual-e5-small" target="_blank" rel="noopener noreferrer">Hugging Face model card ↗</a></article>
-        <article class="pui89-ai-model"><span class="pui89-ai-model-tag">02 · SEARCH / ONNX</span><h3>multilingual-embedding-small</h3><p>Alternative compact multilingual embedding candidate. Compare relevance, Thai retrieval quality, browser memory and download size against E5.</p><dl><div><dt>Publisher</dt><dd>Horizon Labs</dd></div><div><dt>Parameters</dt><dd>141M</dd></div><div><dt>Licence</dt><dd>Apache-2.0 · verify current model card</dd></div><div><dt>Website status</dt><dd>Alternative · not loaded</dd></div></dl><a href="https://huggingface.co/Horizon-Labs/multilingual-embedding-small" target="_blank" rel="noopener noreferrer">Hugging Face model card ↗</a></article>
-        <article class="pui89-ai-model"><span class="pui89-ai-model-tag">03 · ASSISTANT / LOCAL R&amp;D</span><h3>Phi-3.5-mini-instruct</h3><p>Potential future assistant for answering questions about public PUI89 documentation. Too large for automatic homepage loading; evaluate offline first.</p><dl><div><dt>Publisher</dt><dd>Microsoft</dd></div><div><dt>Parameters</dt><dd>3.8B</dd></div><div><dt>Licence</dt><dd>MIT · verify current model card</dd></div><div><dt>Website status</dt><dd>Research candidate · not deployed</dd></div></dl><a href="https://huggingface.co/microsoft/Phi-3.5-mini-instruct" target="_blank" rel="noopener noreferrer">Hugging Face model card ↗</a></article>
-      </div>
-      <p class="pui89-ai-boundary"><strong>Evidence and cost boundary:</strong> the project finder above is a lightweight keyword-ranked prototype, not neural semantic search. No inference endpoint, model weight, external analytics or user-query transmission is enabled. E5 and Horizon must pass a measured Thai/English retrieval benchmark before replacing it. Phi remains an offline research candidate; no chatbot accuracy or availability is claimed.</p>
-    </section>
+<span class="eyebrow">PUI89 PROJECT FINDER</span><h2 id="ai-discovery-heading">Find the right PUI89 project</h2><p class="intro">Search seven project areas in English or Thai. This lightweight search runs in your browser; queries are not sent to a server.</p>
+<div class="pui89-ai-search"><label for="pui89-project-query">Search projects, capabilities or problems</label><div class="pui89-ai-search-row"><input id="pui89-project-query" type="search" autocomplete="off" placeholder="Try: flood mapping, coconut, home safety…" aria-describedby="pui89-search-help"><button id="pui89-project-search" type="button">Search</button></div><p id="pui89-search-help" class="pui89-ai-help">Local keyword search · no hosted AI, API key or model download.</p><div id="pui89-project-results" class="pui89-ai-results" aria-live="polite"><p class="pui89-ai-empty">Enter a topic to find related projects.</p></div></div>
+<p class="pui89-ai-boundary">Model candidates and evaluation notes are kept on the <a href="knowledge-centre.html#model-candidates">Research &amp; Knowledge Centre</a>.</p></section>
 
-    <section id="core" class="section" aria-labelledby="core-heading">
-      <h2 id="core-heading">One shared engineering foundation</h2>
-      <p class="intro">PUI89 is being developed as a common AI-software foundation supporting seven specialised project areas. The shared-core work is being introduced and reviewed incrementally; this section describes the architecture direction, not a claim that every component is already integrated or validated.</p>
-      <div class="grid">
-        <article class="card"><div class="num">01 / STATE &amp; UNCERTAINTY</div><h3>Know what the system knows</h3><p>Track observation source, timestamp, confidence, calibration status, stale inputs, and conflicting evidence. Represent the changing world state explicitly, propagate uncertainty into task plans, and request human review when evidence is incomplete or unreliable.</p><span class="status">Software contract under review</span></article>
-        <article class="card"><div class="num">02 / AUTOMATED CHECKS</div><h3>Make failures visible</h3><p>Use repeatable Python checks and structured test reports to record failures, environment details, and evidence. Passing software tests does not establish field performance or robot safety.</p><span class="status">Development stage: incremental implementation</span></article>
-        <article class="card"><div class="num">03 / SAFE TASK FLOW</div><h3>Separate proposals from actions</h3><p>Keep perception, world-state tracking, task planning, safety monitoring, and physical actuation as distinct interfaces. Simulation and human review come before any hardware integration; no physical capability is implied.</p><span class="status">Simulation-first roadmap</span></article>
-      </div>
-      <article class="card" style="margin-top:18px">
-        <div class="num">04 / RESEARCH ROADMAP</div>
-        <h3>Agentic AI, VLM and VLA — staged evaluation</h3>
-        <p>The technology roadmap explores agentic task workflows, vision-language models (VLMs), and vision-language-action (VLA) interfaces through staged software evaluation and simulation. Each capability advances through defined engineering checks, evidence review and human approval before any real-world integration is considered.</p>
-        <span class="status">Planned evaluation — not yet validated</span>
-      </article>
-      <div class="actions"><a class="btn primary" href="reports/pui89-command-centre.md">View cross-project status ↗</a><a class="btn secondary" href="https://github.com/Pui89/Coconut-Harvest-AI/pull/123">Shared-core review: Coconut ↗</a><a class="btn secondary" href="https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/91">Flood ↗</a><a class="btn secondary" href="https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/66">Screening ↗</a></div>
-    </section>
+    <section id="core" class="section" aria-labelledby="core-heading"><span class="eyebrow">SHARED ENGINEERING FOUNDATION</span><h2 id="core-heading">One foundation. Seven specialised projects.</h2><p class="intro">PUI89 is building reusable AI software foundations while each project keeps its own sensors, models and engineering constraints. Integration and validation status varies by component.</p>
+<div class="grid"><article class="card"><div class="num">01 / EVIDENCE</div><h3>Know what is known</h3><p>Track sources, timestamps, uncertainty, missing information and conflicting observations.</p></article><article class="card"><div class="num">02 / TESTING</div><h3>Make failures visible</h3><p>Use repeatable checks and structured reports. Software tests do not prove field performance or robot safety.</p></article><article class="card"><div class="num">03 / SAFETY</div><h3>Propose before acting</h3><p>Separate AI recommendations from physical actions, with simulation and human review before hardware integration.</p></article></div>
+<p class="intro" style="margin-top:18px">The Shared AI Core also develops compute coordination, benchmark evidence and network-topology tools. Detailed architecture and implementation status are on the <a href="ai-core.html">Shared AI Core page</a>.</p><div class="actions"><a class="btn primary" href="ai-core.html">Explore Shared AI Core ↗</a><a class="btn secondary" href="evidence.html">View evidence &amp; progress ↗</a></div></section>
 
     
 
@@ -852,19 +825,7 @@ a:hover{color:var(--accent2)!important}
       <p class="intro">Project documentation: <a href="SAFETY_AND_RESILIENCE.md">Safety and resilience</a> · <a href="PRODUCT_STATUS.md">Product development status</a>.</p>
     </section>
     
-    <section class="section" id="compute-intelligence" aria-labelledby="compute-intelligence-heading">
-      <span class="eyebrow">SHARED AI CORE · COMPUTE INTELLIGENCE &amp; PROOFBENCH</span>
-      <h2 id="compute-intelligence-heading">AI robotics that use compute resources intelligently</h2>
-      <p class="intro">PUI89 is developing software to help AI robots coordinate CPU, GPU, NPU / AI accelerators, DSPs and microcontrollers according to workload needs, memory limits, latency requirements and evidence-backed benchmark records.</p>
-      <div class="grid">
-        <article class="card"><div class="num">01 / TASK ALLOCATION</div><h3>Match workloads to processors</h3><p>Evaluate declared capabilities and constraints before recommending where an AI workload could run.</p><span class="status">Compute Intelligence v0.1 · implemented</span></article>
-        <article class="card"><div class="num">02 / BENCHMARK EVIDENCE</div><h3>Compare like with like</h3><p>Compute Benchmark v0.2 validates supplied samples, separates measured, synthetic and estimated records, and compares only matching workloads and protocols.</p><span class="status">v0.2 merged · automated CI passed</span></article>
-        <article class="card"><div class="num">03 / SAFE INTEGRATION</div><h3>Keep control bounded</h3><p>Recommendations do not execute tasks or issue robot commands. Safety-critical work remains subject to human review and project-specific safeguards.</p><span class="status">No hardware control enabled</span></article>
-        <article class="card"><div class="num">04 / NETWORK INTELLIGENCE</div><h3>Map declared network topology</h3><p>Validate user-declared devices, links, IP addresses and VLANs, then render a static network topology diagram.</p><span class="status">v0.1 merged · main CI passed</span></article>
-      </div>
-      <div class="notice"><strong>Development boundary:</strong> Compute Intelligence v0.1, Compute Benchmark v0.2 and Network Intelligence v0.1 are implemented in the Shared AI Core. Benchmark comparisons use caller-supplied records; Network Intelligence uses only user-declared inventory. These modules do not run workloads, probe hardware, scan or discover live devices, verify instruments, collect telemetry, monitor network reachability, change network settings, or prove energy savings. Synthetic examples are fictional. PUI89 develops AI software and robotics integration—not semiconductor chip manufacturing. Work follows a strict zero-cost policy.</div>
-      <div class="actions"><a class="btn primary" href="#core">Explore Shared AI Core ↗</a><a class="btn secondary" href="https://pui89.github.io/ai-core.html">Read Compute Benchmark v0.2 ↗</a></div>
-    </section>
+    
 
     <section id="partner" aria-labelledby="partner-heading"><h2 id="partner-heading">Help shape the next milestone</h2><p class="intro">Have a real problem worth solving? PUI89 welcomes growers, researchers, engineers, universities, public-interest organisations, potential users and responsible sponsors. Tell us the challenge, who it affects, and what a useful outcome would look like. Start with a conversation—no funding or partnership is assumed.</p><div class="actions"><a class="btn primary" href="mailto:puinuanmanee@gmail.com?subject=PUI89%20Real-world%20Challenge">Bring us a real-world challenge ↗</a><a class="btn secondary" href="support.html">Explore collaboration ↗</a></div></section>
     <section id="contact" class="section" aria-labelledby="contact-heading">
@@ -896,22 +857,7 @@ a:hover{color:var(--accent2)!important}
   </div>
 </section>
 
-<!-- PUI89_OPTIONAL_VYRIONVISION_RESOURCE:START -->
 
-    <section class="section" id="optional-cv-tools" aria-labelledby="optional-cv-tools-heading">
-      <div class="pui89-section-heading">
-        <div><span class="eyebrow">OPTIONAL RESEARCH RESOURCE</span><h2 id="optional-cv-tools-heading">Computer-vision model inspection</h2></div>
-        <p>Explore external learning and visualisation tools without making them a dependency of PUI89 engineering.</p>
-      </div>
-      <article class="card">
-        <div class="num">THIRD-PARTY TOOL · YOLO / COMPUTER VISION</div>
-        <h3><a href="https://www.vyrionvision.cloud/" rel="noopener noreferrer" target="_blank">Vyrion Vision ↗</a></h3>
-        <p>An optional platform advertising YOLO model-structure graphs, layer inspection, feature-map visualisation and browser-based computer-vision experiments. Its free tier and zero-credit browser features are provider-advertised and may change; verify the current plan before use.</p>
-        <p><strong>PUI89 use boundary:</strong> use only public, non-sensitive samples. Do not upload proprietary weights, private datasets, operational footage, personal data or credentials. Do not buy credits, subscribe or enable auto-refill for PUI89 work. Treat displayed metrics as demonstrations—not PUI89 validation evidence.</p>
-        <span class="status">Optional external resource · Not a PUI89 dependency or endorsement</span>
-      </article>
-    </section>
-<!-- PUI89_OPTIONAL_VYRIONVISION_RESOURCE:END -->
 
 <footer class="footer"><div class="wrap footerrow"><span>© 2026 PUI89 AI Robotics · Independent AI &amp; robotics initiative</span><span><a href="support.html">Support &amp; partnership</a> · <a href="reports/pui89-command-centre.md">Project status &amp; checks</a> · <a href="https://github.com/Pui89">GitHub</a></span></div></footer>
 
