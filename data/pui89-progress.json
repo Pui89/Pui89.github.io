@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-11-07",
+  "asOf": "2026-11-11",
   "title": {
     "en": "PUI89 Development Observatory",
     "th": "ศูนย์ติดตามการพัฒนา PUI89"
@@ -93,7 +93,28 @@
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
-      ]
+      ],
+      "maturityLevel": 4,
+      "maturityLabel": {
+        "en": "Tested software prototype",
+        "th": "ต้นแบบซอฟต์แวร์ที่ผ่านการทดสอบ"
+      },
+      "engineeringStrength": {
+        "en": "Moderate — documented software and evaluation tooling",
+        "th": "ปานกลาง — มีซอฟต์แวร์และเครื่องมือประเมินผลที่บันทึกไว้"
+      },
+      "evidenceConfidence": {
+        "en": "High for specified CI and simulation checks; low for real-world detection",
+        "th": "สูงสำหรับ CI และการจำลองที่ระบุไว้; ต่ำสำหรับการตรวจจับในโลกจริง"
+      },
+      "implementationLevel": {
+        "en": "Software prototype; detector and physical harvesting system unvalidated",
+        "th": "มีต้นแบบซอฟต์แวร์; โมเดลตรวจจับและระบบเก็บเกี่ยวจริงยังไม่ผ่านการยืนยัน"
+      },
+      "nextMaturityMilestone": {
+        "en": "Complete rights-cleared dataset review, then run a reproducible held-out detector benchmark",
+        "th": "ตรวจสอบสิทธิ์ชุดข้อมูลให้ครบ แล้วประเมินโมเดลด้วยชุดทดสอบที่แยกไว้และทำซ้ำได้"
+      }
     },
     {
       "id": "flood-rescue",
@@ -136,7 +157,28 @@
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
-      ]
+      ],
+      "maturityLevel": 4,
+      "maturityLabel": {
+        "en": "Tested software + simulation prototype",
+        "th": "ต้นแบบซอฟต์แวร์และการจำลองที่ผ่านการทดสอบ"
+      },
+      "engineeringStrength": {
+        "en": "Moderate — safety gates, simulation and evidence tooling documented",
+        "th": "ปานกลาง — มี safety gates การจำลอง และเครื่องมือหลักฐาน"
+      },
+      "evidenceConfidence": {
+        "en": "High for defined software scenarios; low for flood physics and rescue outcomes",
+        "th": "สูงสำหรับสถานการณ์ซอฟต์แวร์ที่กำหนด; ต่ำสำหรับฟิสิกส์น้ำท่วมและผลการกู้ภัย"
+      },
+      "implementationLevel": {
+        "en": "Tested software simulation; no validated amphibious hardware",
+        "th": "ซอฟต์แวร์จำลองผ่านการทดสอบ; ยังไม่มีฮาร์ดแวร์สะเทินน้ำสะเทินบกที่ผ่านการยืนยัน"
+      },
+      "nextMaturityMilestone": {
+        "en": "Define physics-grounded flood scenarios and measurable system acceptance criteria",
+        "th": "กำหนดสถานการณ์น้ำท่วมที่อิงฟิสิกส์และเกณฑ์ยอมรับระบบที่วัดผลได้"
+      }
     },
     {
       "id": "sentinel",
@@ -179,7 +221,28 @@
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
-      ]
+      ],
+      "maturityLevel": 4,
+      "maturityLabel": {
+        "en": "Tested screening-workflow software prototype",
+        "th": "ต้นแบบซอฟต์แวร์กระบวนการคัดกรองที่ผ่านการทดสอบ"
+      },
+      "engineeringStrength": {
+        "en": "Moderate — human-review gates and multimodal evidence workflow",
+        "th": "ปานกลาง — มี human-review gates และกระบวนการหลักฐานหลายรูปแบบ"
+      },
+      "evidenceConfidence": {
+        "en": "High for defined software checks; low for substance identification and sensors",
+        "th": "สูงสำหรับการตรวจสอบซอฟต์แวร์ที่กำหนด; ต่ำสำหรับการระบุสารและเซนเซอร์"
+      },
+      "implementationLevel": {
+        "en": "Tested workflow software; no validated chemical/X-ray integration or robot",
+        "th": "ซอฟต์แวร์กระบวนการผ่านการทดสอบ; ยังไม่มีการเชื่อมต่อเคมี/X-ray หรือหุ่นยนต์ที่ผ่านการยืนยัน"
+      },
+      "nextMaturityMilestone": {
+        "en": "Establish lawful, rights-cleared test data and modality-specific human-reviewed evaluation",
+        "th": "จัดทำข้อมูลทดสอบที่ถูกต้องตามกฎหมายและสิทธิ์ พร้อมประเมินแต่ละ modality ภายใต้การทบทวนของมนุษย์"
+      }
     },
     {
       "id": "ai-home",
@@ -222,7 +285,28 @@
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
-      ]
+      ],
+      "maturityLevel": 3,
+      "maturityLabel": {
+        "en": "Software prototype foundation",
+        "th": "พื้นฐานต้นแบบซอฟต์แวร์"
+      },
+      "engineeringStrength": {
+        "en": "Early–moderate — requirements, deterministic foundation and synthetic scenario",
+        "th": "เริ่มต้นถึงปานกลาง — ข้อกำหนด พื้นฐาน deterministic และสถานการณ์สังเคราะห์"
+      },
+      "evidenceConfidence": {
+        "en": "Moderate for initial CI and synthetic report generation; no sensor evidence",
+        "th": "ปานกลางสำหรับ CI ระยะแรกและรายงานสังเคราะห์; ยังไม่มีหลักฐานจากเซนเซอร์"
+      },
+      "implementationLevel": {
+        "en": "Early software prototype; no calibrated sensors or physical robot",
+        "th": "ต้นแบบซอฟต์แวร์ระยะแรก; ยังไม่มีเซนเซอร์สอบเทียบหรือหุ่นยนต์จริง"
+      },
+      "nextMaturityMilestone": {
+        "en": "Complete an end-to-end mock-sensor demonstrator with failure-state and alarm tests",
+        "th": "ทำตัวอย่างครบวงจรด้วยข้อมูลเซนเซอร์จำลอง พร้อมทดสอบสถานะผิดพลาดและการแจ้งเตือน"
+      }
     },
     {
       "id": "ai-nomad",
@@ -265,7 +349,28 @@
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
-      ]
+      ],
+      "maturityLevel": 2,
+      "maturityLabel": {
+        "en": "Architecture defined",
+        "th": "กำหนดสถาปัตยกรรมแล้ว"
+      },
+      "engineeringStrength": {
+        "en": "Early — product requirements and four-wheel/safety design direction documented",
+        "th": "เริ่มต้น — มีข้อกำหนดผลิตภัณฑ์และแนวทางออกแบบสี่ล้อ/ความปลอดภัย"
+      },
+      "evidenceConfidence": {
+        "en": "Low–moderate; design documentation only, no mobility test evidence",
+        "th": "ต่ำถึงปานกลาง; มีเอกสารการออกแบบ ยังไม่มีผลทดสอบการเคลื่อนที่"
+      },
+      "implementationLevel": {
+        "en": "Architecture and concept; no integrated software/robot prototype verified",
+        "th": "สถาปัตยกรรมและแนวคิด; ยังไม่มีต้นแบบซอฟต์แวร์/หุ่นยนต์ที่บูรณาการและตรวจสอบแล้ว"
+      },
+      "nextMaturityMilestone": {
+        "en": "Complete mission, hazard-state and power/environmental software specifications before integration",
+        "th": "จัดทำข้อกำหนดซอฟต์แวร์ภารกิจ สถานะอันตราย พลังงาน และสภาพแวดล้อมให้ครบก่อนบูรณาการ"
+      }
     },
     {
       "id": "robot-car",
@@ -308,7 +413,28 @@
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
-      ]
+      ],
+      "maturityLevel": 2,
+      "maturityLabel": {
+        "en": "Architecture defined",
+        "th": "กำหนดสถาปัตยกรรมแล้ว"
+      },
+      "engineeringStrength": {
+        "en": "Early — shared mobility intelligence direction and vehicle-specific requirements",
+        "th": "เริ่มต้น — มีทิศทาง mobility intelligence ร่วมและข้อกำหนดเฉพาะรถ"
+      },
+      "evidenceConfidence": {
+        "en": "Low–moderate; concept and requirements, no vehicle test evidence",
+        "th": "ต่ำถึงปานกลาง; มีแนวคิดและข้อกำหนด ยังไม่มีหลักฐานทดสอบยานยนต์"
+      },
+      "implementationLevel": {
+        "en": "Architecture/research foundation; no vehicle integration or road testing",
+        "th": "พื้นฐานสถาปัตยกรรม/วิจัย; ยังไม่มีการบูรณาการในรถหรือทดสอบบนถนน"
+      },
+      "nextMaturityMilestone": {
+        "en": "Build a software-only hazard-awareness demonstrator using traceable mock vehicle signals",
+        "th": "สร้างตัวอย่างซอฟต์แวร์รับรู้ความเสี่ยงโดยใช้สัญญาณรถจำลองที่ตรวจสอบย้อนกลับได้"
+      }
     },
     {
       "id": "motorcycle",
@@ -351,7 +477,103 @@
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
-      ]
+      ],
+      "maturityLevel": 2,
+      "maturityLabel": {
+        "en": "Architecture defined",
+        "th": "กำหนดสถาปัตยกรรมแล้ว"
+      },
+      "engineeringStrength": {
+        "en": "Early — rider-centred requirements and integrated mobility direction",
+        "th": "เริ่มต้น — มีข้อกำหนดที่คำนึงถึงผู้ขับขี่และทิศทาง mobility ร่วม"
+      },
+      "evidenceConfidence": {
+        "en": "Low; concept and early engineering research only",
+        "th": "ต่ำ; มีเพียงแนวคิดและงานวิจัยวิศวกรรมระยะแรก"
+      },
+      "implementationLevel": {
+        "en": "Concept and engineering foundation; no functioning vehicle or rider trials",
+        "th": "แนวคิดและพื้นฐานวิศวกรรม; ยังไม่มีรถที่ทำงานได้หรือการทดสอบผู้ขับขี่"
+      },
+      "nextMaturityMilestone": {
+        "en": "Complete vehicle hazard analysis and safety requirements before any physical build",
+        "th": "จัดทำการวิเคราะห์อันตรายและข้อกำหนดความปลอดภัยของรถให้ครบก่อนสร้างจริง"
+      }
     }
-  ]
+  ],
+  "maturityFramework": {
+    "title": {
+      "en": "Seven-level development maturity",
+      "th": "ระดับวุฒิภาวะการพัฒนา 7 ระดับ"
+    },
+    "levels": [
+      {
+        "level": 1,
+        "en": "Concept",
+        "th": "แนวคิด"
+      },
+      {
+        "level": 2,
+        "en": "Architecture Defined",
+        "th": "กำหนดสถาปัตยกรรม"
+      },
+      {
+        "level": 3,
+        "en": "Software Prototype",
+        "th": "ต้นแบบซอฟต์แวร์"
+      },
+      {
+        "level": 4,
+        "en": "Tested Prototype",
+        "th": "ต้นแบบที่ผ่านการทดสอบ"
+      },
+      {
+        "level": 5,
+        "en": "Integrated System",
+        "th": "ระบบที่บูรณาการแล้ว"
+      },
+      {
+        "level": 6,
+        "en": "Field Validated",
+        "th": "ผ่านการตรวจสอบภาคสนาม"
+      },
+      {
+        "level": 7,
+        "en": "Operationally Demonstrated",
+        "th": "สาธิตการปฏิบัติงานจริงแล้ว"
+      }
+    ],
+    "note": {
+      "en": "Maturity describes the strongest evidenced development stage, not a percentage. Software/simulation tests do not validate physical hardware, AI accuracy, safety, weather resistance, fire resistance or field performance.",
+      "th": "ระดับวุฒิภาวะสะท้อนขั้นการพัฒนาสูงสุดที่มีหลักฐาน ไม่ใช่เปอร์เซ็นต์ การทดสอบซอฟต์แวร์/การจำลองไม่ใช่การยืนยันฮาร์ดแวร์จริง ความแม่นยำ AI ความปลอดภัย การกันน้ำ/ทนไฟ หรือสมรรถนะภาคสนาม"
+    }
+  },
+  "platform": {
+    "name": {
+      "en": "PUI89 Shared AI Core",
+      "th": "PUI89 Shared AI Core"
+    },
+    "repo": "Pui89/PUI89-Shared-AI-Core",
+    "maturityLevel": 4,
+    "maturityLabel": {
+      "en": "Tested software prototype",
+      "th": "ต้นแบบซอฟต์แวร์ที่ผ่านการทดสอบ"
+    },
+    "engineeringStrength": {
+      "en": "Moderate–strong — versioned contracts, deterministic validators, evidence and safety modules, compute-intelligence proposal logic",
+      "th": "ปานกลางถึงแข็งแรง — มี contracts แบบ versioned, validators แบบ deterministic, โมดูล evidence/safety และตรรกะเสนอการจัดสรร compute"
+    },
+    "evidenceConfidence": {
+      "en": "High for the recorded dependency-free software tests; no hardware measurements or field validation",
+      "th": "สูงสำหรับการทดสอบซอฟต์แวร์แบบไม่พึ่ง dependency ที่บันทึกไว้; ยังไม่มีการวัดฮาร์ดแวร์หรือการตรวจสอบภาคสนาม"
+    },
+    "implementationLevel": {
+      "en": "Core contracts and selected modules implemented; Compute Intelligence tested (11 tests) within a 164-test suite; adapters and production enforcement remain incomplete",
+      "th": "มี contracts และบางโมดูลที่พัฒนาแล้ว; Compute Intelligence ผ่าน 11 tests ภายในชุดทดสอบ 164 รายการ; adapters และการบังคับใช้ระดับ production ยังไม่ครบ"
+    },
+    "next": {
+      "en": "Extend project adapters and conformance tests; add measured hardware profiles only when instruments and evidence are available",
+      "th": "ขยาย project adapters และ conformance tests; เพิ่มโปรไฟล์ฮาร์ดแวร์ที่วัดจริงเมื่อมีเครื่องมือและหลักฐาน"
+    }
+  }
 }
