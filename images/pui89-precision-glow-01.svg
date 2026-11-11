@@ -1,60 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" role="img" aria-labelledby="title desc">
-  <title id="title">PUI89 Titanium Core Signature</title>
-  <desc id="desc">A large brushed-titanium geometric N with a soft electric-cyan ambient glow behind it, paired with a silver PUI89 wordmark and a restrained cyan underline. The N is not crossed by a blue line.</desc>
+  <title id="title">PUI89 Titanium Power Signature</title>
+  <desc id="desc">A continuous solid capital N with two full-height vertical pillars joined by one diagonal, finished in titanium silver with a soft electric cyan ambient halo. PUI89 wordmark sits to the right.</desc>
   <defs>
-    <linearGradient id="titanium" x1="0" y1="0" x2="0.9" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/>
-      <stop offset=".18" stop-color="#DCE6EE"/>
-      <stop offset=".38" stop-color="#8799A9"/>
-      <stop offset=".54" stop-color="#F4F8FC"/>
-      <stop offset=".73" stop-color="#AAB8C5"/>
-      <stop offset="1" stop-color="#64788B"/>
+    <linearGradient id="n09Titanium" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset=".22" stop-color="#DCE5EE"/>
+      <stop offset=".48" stop-color="#8295A8"/><stop offset=".68" stop-color="#F5F8FC"/>
+      <stop offset="1" stop-color="#71869B"/>
     </linearGradient>
-    <linearGradient id="wordMetal" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/>
-      <stop offset=".42" stop-color="#D9E2EA"/>
-      <stop offset="1" stop-color="#91A4B5"/>
+    <linearGradient id="n09Wordmark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset=".48" stop-color="#D6E0EA"/><stop offset="1" stop-color="#8FA2B5"/>
     </linearGradient>
-    <linearGradient id="cyanRule" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#00BFEF" stop-opacity=".12"/>
-      <stop offset=".5" stop-color="#48E5FF" stop-opacity=".72"/>
-      <stop offset="1" stop-color="#00BFEF" stop-opacity=".12"/>
-    </linearGradient>
-    <filter id="ambientGlow" x="-45%" y="-35%" width="190%" height="170%">
-      <feGaussianBlur stdDeviation="10"/>
-    </filter>
-    <filter id="softShadow" x="-30%" y="-25%" width="160%" height="160%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
-      <feOffset dy="4" result="offset"/>
-      <feComponentTransfer><feFuncA type="linear" slope=".34"/></feComponentTransfer>
+    <filter id="n09Ambient" x="-55%" y="-45%" width="210%" height="190%"><feGaussianBlur stdDeviation="9"/></filter>
+    <filter id="n09Shadow" x="-30%" y="-25%" width="160%" height="160%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5" result="blur"/><feOffset dy="3" result="offset"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".28"/></feComponentTransfer>
       <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <pattern id="brush" width="7" height="7" patternUnits="userSpaceOnUse">
-      <path d="M0 1H7 M0 4H7" stroke="#FFFFFF" stroke-opacity=".11" stroke-width=".55"/>
+    <pattern id="n09Brush" width="6" height="6" patternUnits="userSpaceOnUse">
+      <path d="M0 1H6 M0 4H6" stroke="#FFFFFF" stroke-opacity=".10" stroke-width=".5"/>
     </pattern>
   </defs>
-
-  <!-- Ambient cyan light stays behind the titanium mark; no slash crosses the N. -->
-  <path d="M40 28H80L166 132V28H206V190H166L80 86V190H40Z"
-        fill="none" stroke="#00DFFF" stroke-width="7" opacity=".34"
-        filter="url(#ambientGlow)"/>
-
-  <!-- Signature N: solid, square-cut geometry with a brushed-metal finish. -->
-  <path d="M40 28H80L166 132V28H206V190H166L80 86V190H40Z"
-        fill="url(#titanium)" stroke="#EAF5FC" stroke-opacity=".72"
-        stroke-width="1.4" filter="url(#softShadow)"/>
-  <path d="M40 28H80L166 132V28H206V190H166L80 86V190H40Z"
-        fill="url(#brush)" opacity=".5"/>
-  <path d="M46 34H76L160 135" fill="none" stroke="#FFFFFF"
-        stroke-width="1.2" stroke-opacity=".52"/>
-
-  <!-- Wordmark. -->
-  <text x="250" y="145" fill="url(#wordMetal)"
-        font-family="Arial, Helvetica, sans-serif" font-size="112"
-        font-weight="800" letter-spacing="2.2">PUI89</text>
-
-  <!-- Restrained cyan signature rule below the wordmark only. -->
-  <path d="M254 174H694" stroke="url(#cyanRule)" stroke-width="2"
-        stroke-linecap="round"/>
-  <circle cx="694" cy="174" r="2.2" fill="#43DFFF" opacity=".68"/>
+  <path d="M38 27 H86 L158 122 V27 H206 V190 H158 L86 95 V190 H38 Z" fill="none" stroke="#00C8F4" stroke-width="9" opacity=".62" filter="url(#n09Ambient)"/>
+  <path d="M38 27 H86 L158 122 V27 H206 V190 H158 L86 95 V190 H38 Z" fill="url(#n09Titanium)" stroke="#F4F8FC" stroke-opacity=".78" stroke-width="1.4" stroke-linejoin="miter" filter="url(#n09Shadow)"/>
+  <path d="M38 27 H86 L158 122 V27 H206 V190 H158 L86 95 V190 H38 Z" fill="url(#n09Brush)" opacity=".45"/>
+  <path d="M44 33 H82 L151 123" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-opacity=".42"/>
+  <text x="250" y="139" fill="url(#n09Wordmark)" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="800" letter-spacing="2.2">PUI89</text>
+  <text x="256" y="174" fill="#7BCDE7" opacity=".88" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="4.2">INTELLIGENCE ENGINEERING</text>
 </svg>
