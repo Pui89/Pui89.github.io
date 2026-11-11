@@ -129,7 +129,7 @@ Useful collaboration begins with a clearly scoped problem, access to appropriate
 
 - **Portfolio and project information:** [pui89.github.io](https://pui89.github.io/)
 - **Initiative profile:** [English](https://pui89.github.io/company.html) · [ภาษาไทย](https://pui89.github.io/company-th.html)
-- **Research and innovation:** [English](https://pui89.github.io/research.html) · [ภาษาไทย](https://pui89.github.io/research-th.html)
+- **Open-source resources:** [English](https://pui89.github.io/open-source-resources.html) · [ภาษาไทย](https://pui89.github.io/open-source-resources-th.html)
 - **Evidence and progress:** [English](https://pui89.github.io/evidence.html) · [ภาษาไทย](https://pui89.github.io/evidence-th.html)
 - **GitHub:** [github.com/Pui89](https://github.com/Pui89)
 - **Contact:** puinuanmanee@gmail.com
