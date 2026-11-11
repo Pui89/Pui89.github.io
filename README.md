@@ -64,7 +64,7 @@ Coconut's merged dataset audit also passed 15 checks across dataset structure, i
 
 The PUI89 Shared AI Core includes Compute Intelligence v0.1 and Compute Benchmark v0.2. The benchmark module validates caller-supplied CPU/GPU/NPU/MCU/DSP records, separates measured, synthetic and estimated evidence, and compares only matching workloads and protocol versions. It reports descriptive medians and latency ranks; throughput-per-watt is calculated only for records labelled measured with supplied throughput and power samples.
 
-This is software integration and evidence handling, not semiconductor manufacturing. No hardware is probed, no workload is executed, and no energy or cost reduction is claimed. Synthetic examples are fictional. See the [Compute Benchmark v0.2 specification](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/compute/PUI89_COMPUTE_BENCHMARK_V0.2.md).
+This is software integration and evidence handling, not semiconductor manufacturing. No hardware is probed, no workload is executed, and no energy or cost reduction is claimed. Synthetic examples are fictional. See the [Compute Benchmark v0.2 specification](https://pui89.github.io/ai-core.html).
 
 ## PUI89 world-class engineering blueprint
 
