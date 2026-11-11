@@ -12,6 +12,21 @@ function record(p,history){
  const line=el("div","pui89-observatory__scoreline");
  line.append(el("span","pui89-observatory__score",p.score+"%"),el("span","pui89-observatory__stage",t(p.stageLabel)));
  card.append(line);
+ const maturity=el("div","pui89-observatory__maturity");
+ maturity.append(el("span","pui89-observatory__label",lang==="th"?"ระดับวุฒิภาวะ":"DEVELOPMENT MATURITY"));
+ maturity.append(el("strong","pui89-observatory__maturity-stage","L"+p.maturityLevel+" · "+t(p.maturityLabel)));
+ const indicators=el("div","pui89-observatory__meta");
+ [["Engineering strength",p.engineeringStrength,"ความแข็งแรงทางวิศวกรรม"],["Evidence confidence",p.evidenceConfidence,"ความเชื่อมั่นของหลักฐาน"],["Implementation level",p.implementationLevel,"ระดับการพัฒนาใช้งาน"]].forEach(([enKey,value,thKey])=>{
+   const item=el("div","pui89-observatory__indicator");
+   item.append(el("strong","",lang==="th"?thKey:enKey));
+   item.append(el("p","",t(value)));
+   indicators.append(item);
+ });
+ maturity.append(indicators);
+ maturity.append(el("span","pui89-observatory__label",lang==="th"?"เป้าหมายยกระดับวุฒิภาวะ":"NEXT MATURITY GATE"));
+ maturity.append(el("p","",t(p.nextMaturityMilestone)));
+ card.append(maturity);
+
  const bar=el("div","pui89-observatory__bar");bar.setAttribute("role","img");bar.setAttribute("aria-label",lang==="th"?"ความพร้อมเชิงพาณิชย์ "+p.score+"%":"Commercial readiness "+p.score+"%");
  const fill=el("span");fill.style.width=p.score+"%";bar.append(fill);card.append(bar);
  card.append(el("p","",t(p.summary)));
@@ -53,7 +68,19 @@ function render(root,data){
  meta.append(el("span","pui89-observatory__chip",(lang==="th"?"วันที่ทบทวนล่าสุด: ":"Last reviewed: ")+data.asOf));
  meta.append(el("span","pui89-observatory__chip",lang==="th"?"ข้อมูลจากแหล่งเดียวกันทั้งเว็บ EN/TH":"One shared source for English and Thai pages"));
  section.append(meta);
- const grid=el("div","pui89-observatory__grid");
+ 
+ if(data.platform){
+  const platform=el("article","pui89-observatory__platform");
+  platform.append(el("span","pui89-observatory__eyebrow",lang==="th"?"แพลตฟอร์มพื้นฐานร่วม":"SHARED FOUNDATION"));
+  platform.append(el("h3","",t(data.platform.name)));
+  platform.append(el("div","pui89-observatory__maturity-stage","L"+data.platform.maturityLevel+" · "+t(data.platform.maturityLabel)));
+  const pmeta=el("div","pui89-observatory__meta");
+  [["Engineering strength",data.platform.engineeringStrength,"ความแข็งแรงทางวิศวกรรม"],["Evidence confidence",data.platform.evidenceConfidence,"ความเชื่อมั่นของหลักฐาน"],["Implementation level",data.platform.implementationLevel,"ระดับการพัฒนาใช้งาน"]].forEach(([enKey,value,thKey])=>{const item=el("div","pui89-observatory__indicator");item.append(el("strong","",lang==="th"?thKey:enKey));item.append(el("p","",t(value)));pmeta.append(item);});
+  platform.append(pmeta);platform.append(el("p","",t(data.platform.next)));
+  const link=el("a","","GitHub ↗");link.href="https://github.com/"+data.platform.repo;link.target="_blank";link.rel="noopener noreferrer";platform.append(link);
+  section.append(platform);
+ }
+const grid=el("div","pui89-observatory__grid");
  projects.forEach(p=>grid.append(record(p,p.history)));section.append(grid);
  const timeline=el("div","pui89-observatory__timeline");timeline.append(el("h3","",lang==="th"?"ประวัติรายเดือน":"Monthly development history"));
  const entries=[];
