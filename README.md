@@ -390,7 +390,7 @@ Offline-only OWL-ViT inference code is present on open project branches for eval
 
 PUI89 is exploring software that helps AI robots use heterogeneous compute resources—CPU, GPU, NPU/AI accelerators and microcontrollers—more efficiently. The aim is to evaluate task placement against declared capability, memory, latency and power constraints, while keeping safety-critical decisions under human oversight.
 
-The first Shared AI Core module, **Compute Intelligence v0.1**, is a deterministic, proposal-only software prototype under development. It uses declared/synthetic hardware profiles; it does not discover hardware, run models, measure energy, control devices or execute robot actions. No reduction in hardware cost or energy consumption is claimed.
+The first Shared AI Core module, **Compute Intelligence v0.1**, is implemented and has passed its focused automated software tests. It is a deterministic, proposal-only prototype. It uses declared/synthetic hardware profiles; it does not discover hardware, run models, measure energy, control devices or execute robot actions. No reduction in hardware cost or energy consumption is claimed.
 
 PUI89 is focused on practical AI software and robotics integration, not manufacturing semiconductor chips. Development follows a strict zero-cost policy: no paid APIs, subscriptions, cloud GPUs, new hardware purchases or automatic model downloads.
 
