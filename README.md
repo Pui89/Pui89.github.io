@@ -121,11 +121,17 @@ PUI89 prioritises open-source tools, transparent licences, reproducible workflow
 - Public availability does not automatically grant permission for reuse or commercial deployment.
 - Cost and resource assumptions must be stated; do not claim savings without measured evidence.
 
-## Collaboration
+## Funding, hardware, technology support, and partnerships
 
-PUI89 welcomes responsible discussions with researchers, universities, engineers, domain specialists, data stewards, public-interest organisations, and potential strategic partners.
+PUI89 is independently developed from Thailand and designed with international markets in mind. We welcome enquiries from companies, organisations, and supporters worldwide about:
 
-Useful collaboration begins with a clearly scoped problem, access to appropriate domain expertise or lawful data, measurable outcomes, and an agreed evidence and safety plan. A discussion does not imply a signed partnership, grant award, product availability, or validated capability.
+- **Funding support:** funding for defined development, research, engineering, and testing milestones.
+- **Hardware support:** AI/GPU computing, cameras, LiDAR, sensors, robotics platforms, test instruments, and engineering equipment, whether donated, loaned, or made available under agreed terms.
+- **Technology support:** software, technical tools, documentation, and engineering resources, subject to licence, security, cost, and usage review.
+- **Strategic partnerships:** discussions with technology companies and industry organisations about suitable collaboration, integration, development, or evaluation.
+- **Development and testing:** support for controlled experiments, independent review, evaluation, and access to appropriate test environments under an agreed scope.
+
+PUI89 remains an independent early-stage initiative. An enquiry does not mean a partnership, grant, customer relationship, or sponsorship is already confirmed. Before accepting money, equipment, data, or services, the scope, costs, ownership, licences, responsibilities, safety requirements, and reporting terms must be reviewed and agreed in writing.
 
 - **Portfolio and project information:** [pui89.github.io](https://pui89.github.io/)
 - **Initiative profile:** [English](https://pui89.github.io/company.html) · [ภาษาไทย](https://pui89.github.io/company-th.html)
