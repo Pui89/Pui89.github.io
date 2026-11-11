@@ -220,8 +220,15 @@ def main() -> int:
         for raw in parser.links:
             parsed = urllib.parse.urlsplit(raw)
             if parsed.scheme.lower() in ("http", "https") and parsed.netloc:
-                external_urls.add(urllib.parse.urldefrag(raw)[0])
-                continue
+                if parsed.netloc.lower() == SITE_HOST:
+                    # Validate same-site absolute URLs against this checkout. During
+                    # pull-request checks, new canonical/alternate URLs are not live yet.
+                    # Resolving them locally preserves strict validation without a false
+                    # 404 from the published site.
+                    raw = urllib.parse.urlunsplit(("", "", parsed.path, parsed.query, parsed.fragment))
+                else:
+                    external_urls.add(urllib.parse.urldefrag(raw)[0])
+                    continue
             target, fragment = resolve_local(page, raw)
             if target is None:
                 continue
