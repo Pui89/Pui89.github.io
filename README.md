@@ -1,6 +1,8 @@
-# PUI89 — Intelligent Systems & AI Engineering
+# PUI89 — Independent Development & Strategic Partnerships
 
-**Intelligent Systems. Verifiable Decisions. Safer Outcomes.**
+**Founded in Thailand. Built for the World.**
+
+Independent AI and robotics development, open to aligned global funding, hardware, technology support, and strategic partnerships.
 
 PUI89 is an independent AI engineering initiative developing practical AI software, shared engineering foundations, and robotics-system concepts. The work spans agriculture, disaster response, multimodal inspection, home environments, mobile assistance, and intelligent mobility.
 
