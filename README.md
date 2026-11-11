@@ -60,6 +60,12 @@ Coconut's merged dataset audit also passed 15 checks across dataset structure, i
 
 **Evidence boundary:** these are rule-based scenario and software-verification results. They are not model accuracy metrics, proof of dataset licensing or annotation correctness, validated simulator physics, physical robot performance, safety certification, or commercial deployment. The PUI89 Command Centre dataset-monitoring addition is proposed in [PR #33](https://github.com/Pui89/Pui89.github.io/pull/33) and is not yet merged.
 
+## Compute Intelligence and Compute Benchmark — 11 November 2026
+
+The PUI89 Shared AI Core includes Compute Intelligence v0.1 and Compute Benchmark v0.2. The benchmark module validates caller-supplied CPU/GPU/NPU/MCU/DSP records, separates measured, synthetic and estimated evidence, and compares only matching workloads and protocol versions. It reports descriptive medians and latency ranks; throughput-per-watt is calculated only for records labelled measured with supplied throughput and power samples.
+
+This is software integration and evidence handling, not semiconductor manufacturing. No hardware is probed, no workload is executed, and no energy or cost reduction is claimed. Synthetic examples are fictional. See the [Compute Benchmark v0.2 specification](https://pui89.github.io/ai-core.html).
+
 ## PUI89 world-class engineering blueprint
 
 PUI89 projects follow one open-source-first, evidence-first AI engineering strategy, with shared interfaces and validation tailored to each domain. Read the [PUI89 World-Class AI Blueprint](PUI89_WORLD_CLASS_AI_BLUEPRINT.md) for the shared AI Core, approved technology direction, automation boundaries, product-specific priorities, quality gates and staged roadmap.
