@@ -33,3 +33,14 @@
 .pui89-observatory__individual{margin:24px auto;max-width:1100px}
 @media(max-width:600px){.pui89-observatory{padding:16px;border-radius:16px}.pui89-observatory__score{font-size:1.35rem}}
 @media(prefers-reduced-motion:reduce){.pui89-observatory *{scroll-behavior:auto}}
+
+
+/* Evidence-based maturity indicators added 11 November 2026. */
+.pui89-observatory__maturity{margin:18px 0;padding:16px;border:1px solid rgba(66,217,255,.22);border-radius:13px;background:rgba(7,20,34,.62)}
+.pui89-observatory__maturity-stage{display:block;margin:6px 0 12px;color:#42d9ff;font-weight:800}
+.pui89-observatory__indicator{flex:1 1 190px;min-width:0;padding:10px 12px;border:1px solid rgba(170,197,220,.14);border-radius:10px;background:rgba(255,255,255,.025)}
+.pui89-observatory__indicator strong{display:block;font-size:.78rem;color:#dcecff}
+.pui89-observatory__indicator p{margin:5px 0 0;font-size:.83rem;color:#aebfd1}
+.pui89-observatory__platform{margin:22px 0;padding:22px;border:1px solid rgba(66,217,255,.32);border-radius:16px;background:linear-gradient(135deg,rgba(13,35,54,.96),rgba(9,20,35,.96))}
+.pui89-observatory__platform h3{margin:8px 0;font-size:1.35rem}
+.pui89-observatory__platform>p{color:#c0d0df}
