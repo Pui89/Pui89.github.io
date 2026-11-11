@@ -568,8 +568,8 @@
       "th": "สูงสำหรับการทดสอบซอฟต์แวร์แบบไม่พึ่ง dependency ที่บันทึกไว้; ยังไม่มีการวัดฮาร์ดแวร์หรือการตรวจสอบภาคสนาม"
     },
     "implementationLevel": {
-      "en": "Core contracts and selected modules implemented; Compute Intelligence tested (11 tests) within a 164-test suite; adapters and production enforcement remain incomplete",
-      "th": "มี contracts และบางโมดูลที่พัฒนาแล้ว; Compute Intelligence ผ่าน 11 tests ภายในชุดทดสอบ 164 รายการ; adapters และการบังคับใช้ระดับ production ยังไม่ครบ"
+      "en": "Core contracts and selected modules implemented; Compute Intelligence passed 11 tests within the latest 187-test dependency-free main-branch CI suite (11 Nov 2026); adapters and production enforcement remain incomplete.",
+      "th": "มี contracts และบางโมดูลที่พัฒนาแล้ว; Compute Intelligence ผ่าน 11 tests ภายในชุด CI ล่าสุด 187 tests แบบไม่พึ่ง dependency บน main (11 พ.ย. 2026); adapters และการบังคับใช้ระดับ production ยังไม่ครบ"
     },
     "next": {
       "en": "Extend project adapters and conformance tests; add measured hardware profiles only when instruments and evidence are available",
