@@ -610,57 +610,18 @@ a:hover{color:var(--accent2)!important}
       <!-- Project details are consolidated in the single project directory above. -->
 
 
-      <section id="ai-discovery" class="section pui89-ai-lab" aria-labelledby="ai-discovery-heading">
-        <span class="eyebrow">PUI89 AI DISCOVERY LAB</span>
-        <h2 id="ai-discovery-heading">ค้นหาโครงการ PUI89 ที่เกี่ยวข้อง</h2>
-        <p class="intro">ค้นหาความสามารถและหัวข้อจากทั้ง 7 โครงการได้ทั้งภาษาไทยและภาษาอังกฤษ เวอร์ชันแรกทำงานภายในเบราว์เซอร์ด้วยดัชนีข้อความขนาดเล็ก ไม่ต้องมีบัญชี บริการ AI ภายนอก API key หรือดาวน์โหลดโมเดล</p>
-        <div class="pui89-ai-search">
-          <label for="pui89-project-query">ค้นหาโครงการ ความสามารถ หรือปัญหา</label>
-          <div class="pui89-ai-search-row"><input id="pui89-project-query" type="search" autocomplete="off" placeholder="เช่น น้ำท่วม มะพร้าว ความปลอดภัยในบ้าน รถจักรยานยนต์…" aria-describedby="pui89-search-help"><button id="pui89-project-search" type="button">ค้นหา</button></div>
-          <p id="pui89-search-help" class="pui89-ai-help">การค้นหาทำงานในเบราว์เซอร์และไม่ส่งคำค้นไปที่อื่น</p>
-          <div id="pui89-project-results" class="pui89-ai-results" aria-live="polite"><p class="pui89-ai-empty">พิมพ์หัวข้อเพื่อค้นหาโครงการที่เกี่ยวข้อง</p></div>
-        </div>
-        <div class="pui89-ai-model-heading"><div><span class="eyebrow">MODEL CANDIDATES</span><h3>โมเดลที่เสนอให้ประเมิน — ไม่มีการโหลดอัตโนมัติ</h3></div><p class="intro">มีโมเดล Hugging Face ที่ไม่ใช่โมเดลจากจีน 3 รายการ โดยยังไม่ดาวน์โหลดน้ำหนักโมเดล ต้องตรวจสอบใบอนุญาต ทรัพยากรเครื่อง การจัดการข้อมูล และผล benchmark ก่อนเปิดใช้งาน</p></div>
-        <div class="pui89-ai-model-grid">
-          <article class="pui89-ai-model"><span class="pui89-ai-model-tag">01 · SEARCH / EMBEDDINGS</span><h3>multilingual-e5-small</h3><p>ตัวเลือกสำหรับค้นหาความหมายข้ามภาษาไทย–อังกฤษและแนะนำโครงการที่เกี่ยวข้อง ควรเริ่มจาก benchmark เทียบกับระบบค้นหาข้อความที่ทำงานในเบราว์เซอร์</p><dl><div><dt>ผู้พัฒนา</dt><dd>intfloat</dd></div><div><dt>พารามิเตอร์</dt><dd>118M</dd></div><div><dt>ใบอนุญาต</dt><dd>MIT · ตรวจสอบ model card ล่าสุด</dd></div><div><dt>สถานะเว็บไซต์</dt><dd>ตัวเลือกประเมิน · ยังไม่โหลด</dd></div></dl><a href="https://huggingface.co/intfloat/multilingual-e5-small" target="_blank" rel="noopener noreferrer">ดู Hugging Face model card ↗</a></article>
-          <article class="pui89-ai-model"><span class="pui89-ai-model-tag">02 · SEARCH / ONNX</span><h3>multilingual-embedding-small</h3><p>โมเดล embedding หลายภาษาขนาดกะทัดรัดสำหรับเปรียบเทียบคุณภาพการค้นหาภาษาไทย การใช้หน่วยความจำในเบราว์เซอร์ และขนาดไฟล์กับ E5</p><dl><div><dt>ผู้พัฒนา</dt><dd>Horizon Labs</dd></div><div><dt>พารามิเตอร์</dt><dd>141M</dd></div><div><dt>ใบอนุญาต</dt><dd>Apache-2.0 · ตรวจสอบ model card ล่าสุด</dd></div><div><dt>สถานะเว็บไซต์</dt><dd>ตัวเลือกเปรียบเทียบ · ยังไม่โหลด</dd></div></dl><a href="https://huggingface.co/Horizon-Labs/multilingual-embedding-small" target="_blank" rel="noopener noreferrer">ดู Hugging Face model card ↗</a></article>
-          <article class="pui89-ai-model"><span class="pui89-ai-model-tag">03 · ASSISTANT / LOCAL R&amp;D</span><h3>Phi-3.5-mini-instruct</h3><p>ตัวเลือกในอนาคตสำหรับตอบคำถามจากเอกสาร PUI89 ที่เปิดเผยต่อสาธารณะ มีขนาดใหญ่เกินกว่าจะโหลดอัตโนมัติบนหน้าแรก จึงควรประเมินแบบ offline ก่อน</p><dl><div><dt>ผู้พัฒนา</dt><dd>Microsoft</dd></div><div><dt>พารามิเตอร์</dt><dd>3.8B</dd></div><div><dt>ใบอนุญาต</dt><dd>MIT · ตรวจสอบ model card ล่าสุด</dd></div><div><dt>สถานะเว็บไซต์</dt><dd>ตัวเลือกวิจัย · ยังไม่ติดตั้งใช้งาน</dd></div></dl><a href="https://huggingface.co/microsoft/Phi-3.5-mini-instruct" target="_blank" rel="noopener noreferrer">ดู Hugging Face model card ↗</a></article>
-        </div>
-        <p class="pui89-ai-boundary"><strong>ขอบเขตด้านหลักฐานและต้นทุน:</strong> ตัวค้นหาโครงการข้างต้นเป็นต้นแบบจัดอันดับด้วยคำค้น ไม่ใช่ neural semantic search ยังไม่มี inference endpoint การดาวน์โหลดน้ำหนักโมเดล analytics ภายนอก หรือการส่งคำค้นของผู้ใช้ไปยังเซิร์ฟเวอร์ ต้องให้ E5 และ Horizon ผ่าน benchmark การค้นหาภาษาไทย–อังกฤษก่อน ส่วน Phi เป็นเพียงตัวเลือกวิจัยแบบ offline ยังไม่มีการยืนยันความแม่นยำหรือการให้บริการ chatbot</p>
-      </section>
+      <section id="ai-discovery" class="section pui89-ai-lab" aria-labelledby="ai-discovery-heading"><span class="eyebrow">PUI89 PROJECT FINDER</span><h2 id="ai-discovery-heading">ค้นหาโครงการ PUI89 ที่เกี่ยวข้อง</h2><p class="intro">ค้นหาโครงการทั้ง 7 ด้านได้ทั้งภาษาไทยและอังกฤษ ระบบค้นหาแบบข้อความทำงานภายในเบราว์เซอร์ และไม่ส่งคำค้นไปยังเซิร์ฟเวอร์</p>
+<div class="pui89-ai-search"><label for="pui89-project-query">ค้นหาโครงการ ความสามารถ หรือปัญหา</label><div class="pui89-ai-search-row"><input id="pui89-project-query" type="search" autocomplete="off" placeholder="เช่น น้ำท่วม มะพร้าว ความปลอดภัยในบ้าน…" aria-describedby="pui89-search-help"><button id="pui89-project-search" type="button">ค้นหา</button></div><p id="pui89-search-help" class="pui89-ai-help">ค้นหาในเบราว์เซอร์ · ไม่ใช้ Hosted AI, API key หรือดาวน์โหลดโมเดล</p><div id="pui89-project-results" class="pui89-ai-results" aria-live="polite"><p class="pui89-ai-empty">พิมพ์หัวข้อเพื่อค้นหาโครงการที่เกี่ยวข้อง</p></div></div>
+<p class="pui89-ai-boundary">รายละเอียดโมเดลและแนวทางประเมินอยู่ใน <a href="knowledge-centre-th.html#model-candidates">ศูนย์ความรู้และงานวิจัย</a></p></section>
 
-    <section class="section" id="core">
-      <h2>พื้นฐานวิศวกรรมร่วมของ PUI89</h2>
-      <p class="intro">แนวทางของ PUI89 คือพัฒนาพื้นฐานซอฟต์แวร์ AI ร่วมกัน แล้วต่อยอดเป็น 7 โครงการผลิตภัณฑ์เฉพาะทาง งาน shared core กำลังทยอยพัฒนาและตรวจทาน ส่วนนี้อธิบายทิศทางสถาปัตยกรรม ไม่ใช่การยืนยันว่าทุกส่วนเชื่อมต่อหรือผ่านการตรวจสอบแล้ว</p>
-      <div class="grid">
-        <article class="panel"><h3>ติดตามสถานะและความไม่แน่นอน</h3><p>ติดตามแหล่งที่มาของข้อมูล เวลา ระดับความเชื่อมั่น สถานะการสอบเทียบ ข้อมูลที่ล้าสมัย และหลักฐานที่ขัดแย้งกัน พร้อมแทนสถานะของสภาพแวดล้อมอย่างเป็นระบบ ส่งต่อความไม่แน่นอนไปยังแผนงาน และขอให้มนุษย์ตรวจสอบเมื่อหลักฐานไม่ครบถ้วนหรือไม่น่าเชื่อถือ</p></article>
-        <article class="panel"><h3>ทดสอบและรายงานข้อผิดพลาด</h3><p>ใช้การทดสอบ Python ที่ทำซ้ำได้และรายงานแบบมีโครงสร้าง ผลทดสอบซอฟต์แวร์ไม่ใช่หลักฐานยืนยันสมรรถนะภาคสนามหรือความปลอดภัยของหุ่นยนต์จริง</p></article>
-        <article class="panel"><h3>แยกข้อเสนอจากการสั่งงานจริง</h3><p>แยกการรับรู้ข้อมูล การติดตามสถานะสภาพแวดล้อม การวางแผนงาน การเฝ้าระวังความปลอดภัย และการสั่งงานฮาร์ดแวร์ออกจากกัน เริ่มจากการจำลองและการตรวจสอบโดยมนุษย์ก่อนพิจารณาทดลองกับฮาร์ดแวร์</p></article>
-      </div>
-      <article class="panel" style="margin-top:18px">
-        <h3>Agentic AI, VLM และ VLA — แผนประเมินเป็นลำดับ</h3>
-        <p>แผนงานด้านเทคโนโลยีครอบคลุมกระบวนการทำงานแบบ Agentic AI โมเดล Vision-Language Model (VLM) และอินเทอร์เฟซ Vision-Language-Action (VLA) โดยเริ่มจากการประเมินซอฟต์แวร์และการจำลองเป็นลำดับ แต่ละความสามารถต้องผ่านการตรวจสอบทางวิศวกรรม การทบทวนหลักฐาน และการอนุมัติจากมนุษย์ ก่อนพิจารณาการเชื่อมต่อกับการทำงานจริง</p>
-      </article>
-      <p><a href="reports/pui89-command-centre.md">ดูสถานะและผลตรวจสอบข้ามโครงการ ↗</a></p>
-    </section>
+    <section class="section" id="core"><span class="eyebrow">SHARED ENGINEERING FOUNDATION</span><h2>รากฐานวิศวกรรมร่วมสำหรับ 7 โครงการ</h2><p class="intro">PUI89 พัฒนาพื้นฐานซอฟต์แวร์ AI ที่ใช้ร่วมกัน ขณะที่แต่ละโครงการยังมีเซนเซอร์ โมเดล และข้อจำกัดทางวิศวกรรมเฉพาะของตนเอง สถานะการเชื่อมต่อและการตรวจสอบแตกต่างกันในแต่ละส่วน</p>
+<div class="grid"><article class="panel"><h3>หลักฐานและความไม่แน่นอน</h3><p>ติดตามแหล่งข้อมูล เวลา ข้อมูลที่ขาดหาย ความไม่แน่นอน และหลักฐานที่ขัดแย้งกัน</p></article><article class="panel"><h3>การทดสอบที่ทำซ้ำได้</h3><p>ใช้การตรวจสอบและรายงานข้อผิดพลาดที่ตรวจสอบซ้ำได้ การทดสอบซอฟต์แวร์ไม่ใช่การรับรองสมรรถนะภาคสนาม</p></article><article class="panel"><h3>ความปลอดภัยก่อนการสั่งงาน</h3><p>แยกคำแนะนำจาก AI ออกจากการสั่งงานจริง ใช้การจำลองและให้มนุษย์ตรวจทานก่อนเชื่อมต่อฮาร์ดแวร์</p></article></div>
+<p class="intro" style="margin-top:18px">Shared AI Core ยังพัฒนาเครื่องมือจัดสรรงานประมวลผล benchmark และแผนภาพเครือข่าย ดูรายละเอียดสถาปัตยกรรมและสถานะการพัฒนาได้ที่หน้า <a href="ai-core-th.html">Shared AI Core</a></p><div class="actions"><a class="btn primary" href="ai-core-th.html">ดู Shared AI Core ↗</a><a class="btn" href="evidence-th.html">ดูหลักฐานและความก้าวหน้า ↗</a></div></section>
 
     
       
       
-      <section class="section" id="compute-intelligence" aria-labelledby="compute-intelligence-heading">
-        <span class="eyebrow">SHARED AI CORE · COMPUTE INTELLIGENCE &amp; PROOFBENCH</span>
-        <h2 id="compute-intelligence-heading">หุ่นยนต์ AI ที่ใช้ทรัพยากรประมวลผลอย่างชาญฉลาด</h2>
-        <p class="intro">PUI89 พัฒนาซอฟต์แวร์เพื่อช่วยให้หุ่นยนต์ AI ประสานการทำงานของ CPU, GPU, NPU / AI Accelerator, DSP และไมโครคอนโทรลเลอร์ โดยพิจารณาความเหมาะสมของงาน หน่วยความจำ เวลาแฝง และหลักฐานจากผลทดสอบ</p>
-        <div class="two">
-          <div class="panel"><h3>การจัดสรรงานประมวลผล</h3><p>ตรวจสอบความสามารถและข้อจำกัดที่ระบุไว้ ก่อนเสนอว่าควรนำงาน AI ไปประมวลผลบนหน่วยใด</p><span class="small">Compute Intelligence v0.1 · พัฒนาแล้ว</span></div>
-          <div class="panel"><h3>การเปรียบเทียบผลทดสอบ</h3><p>Compute Benchmark v0.2 ตรวจสอบชุดข้อมูลตัวอย่าง แยกผลวัดจริง ข้อมูลสังเคราะห์ และค่าประมาณ และเปรียบเทียบเฉพาะงานกับระเบียบวิธีที่ตรงกัน</p><span class="small">v0.2 รวมเข้าโครงการแล้ว · CI ผ่าน</span></div>
-          <div class="panel"><h3>การเชื่อมต่ออย่างปลอดภัย</h3><p>ระบบเสนอแนะเท่านั้น ไม่สั่งงานหุ่นยนต์หรือควบคุมอุปกรณ์ งานที่มีความเสี่ยงต้องผ่านการตรวจสอบโดยมนุษย์</p><span class="small">ยังไม่เปิดใช้การควบคุมฮาร์ดแวร์</span></div>
-          <div class="panel"><h3>แนวทางของ PUI89</h3><p>พัฒนาซอฟต์แวร์ AI และการผสานระบบชิป ไม่ใช่การผลิตชิปเซมิคอนดักเตอร์ โดยยึดนโยบาย zero-cost อย่างเคร่งครัด</p><span class="small">ต่อยอดจาก Shared AI Core</span></div>
-          <div class="panel"><h3>Network Intelligence</h3><p>ตรวจสอบรายการอุปกรณ์ ลิงก์ IP และ VLAN ที่ผู้ใช้ระบุ แล้วสร้างแผนภาพโครงสร้างเครือข่ายแบบคงที่</p><span class="small">v0.1 รวมเข้า main แล้ว · CI ผ่าน</span></div>
-        </div>
-        <div class="notice"><strong>ขอบเขตการพัฒนา:</strong> Compute Intelligence v0.1, Compute Benchmark v0.2 และ Network Intelligence v0.1 พัฒนาไว้ใน Shared AI Core แล้ว ระบบ benchmark ใช้ข้อมูลที่ผู้ใช้ส่งเข้ามา ส่วน Network Intelligence ใช้เฉพาะรายการเครือข่ายที่ผู้ใช้ระบุเอง โมดูลเหล่านี้ไม่รันงานบนฮาร์ดแวร์ ไม่สแกนหรือค้นหาอุปกรณ์จริง ไม่ตรวจสอบการเชื่อมต่อแบบสด ไม่เปลี่ยนการตั้งค่าเครือข่าย ไม่ตรวจสอบเครื่องมือวัด ไม่เก็บ telemetry และไม่พิสูจน์การประหยัดพลังงาน ข้อมูลตัวอย่างเป็นข้อมูลสมมติ</div>
-        <div class="actions"><a class="btn primary" href="#core">ดู Shared AI Core ↗</a><a class="btn" href="https://pui89.github.io/ai-core.html">อ่านเอกสาร Compute Benchmark v0.2 ↗</a></div>
-      </section>
+      
 
     <section class="section" id="partner"><h2>ร่วมพัฒนา PUI89 ไปด้วยกัน</h2><p class="intro">คุณมีปัญหาจริงที่อยากเห็นการแก้ไขหรือไม่? PUI89 เปิดรับเกษตรกร นักวิจัย วิศวกร มหาวิทยาลัย ผู้ใช้งาน องค์กรเพื่อสังคม และผู้สนับสนุนที่มีความรับผิดชอบ เล่าให้เราฟังว่าปัญหาคืออะไร ส่งผลต่อใคร และผลลัพธ์แบบใดจึงจะมีประโยชน์ เริ่มต้นจากการพูดคุย โดยไม่สมมติว่ามีเงินทุนหรือความร่วมมือเกิดขึ้นแล้ว</p><div class="actions"><a class="btn primary" href="mailto:puinuanmanee@gmail.com?subject=PUI89%20Real-world%20Challenge">ส่งโจทย์ปัญหาจริงให้ PUI89 ↗</a><a class="btn" href="support-th.html">ดูแนวทางความร่วมมือ ↗</a></div></section>
       <section class="section" id="contact">
@@ -691,22 +652,7 @@ a:hover{color:var(--accent2)!important}
   </div>
 </section>
 
-<!-- PUI89_OPTIONAL_VYRIONVISION_RESOURCE:START -->
 
-    <section class="section" id="optional-cv-tools" aria-labelledby="optional-cv-tools-heading">
-      <div class="pui89-section-heading">
-        <div><span class="eyebrow">แหล่งเรียนรู้และวิจัยเพิ่มเติม</span><h2 id="optional-cv-tools-heading">เครื่องมือตรวจสอบโครงสร้างโมเดล Computer Vision</h2></div>
-        <p>แนะนำเครื่องมือภายนอกเพื่อการเรียนรู้และทดลอง โดยไม่ทำให้เป็นส่วนพึ่งพาที่จำเป็นของ PUI89</p>
-      </div>
-      <article class="card">
-        <div class="num">เครื่องมือจากผู้ให้บริการภายนอก · YOLO / COMPUTER VISION</div>
-        <h3><a href="https://www.vyrionvision.cloud/" rel="noopener noreferrer" target="_blank">Vyrion Vision ↗</a></h3>
-        <p>แพลตฟอร์มที่ผู้ให้บริการระบุว่ามีกราฟโครงสร้างโมเดล YOLO การตรวจสอบเลเยอร์ การแสดง Feature Maps และการทดลอง Computer Vision ผ่านเบราว์เซอร์ แพ็กเกจฟรีและฟังก์ชันที่ไม่ใช้เครดิตเป็นข้อมูลที่ผู้ให้บริการประกาศ ซึ่งอาจเปลี่ยนแปลงได้ โปรดตรวจสอบเงื่อนไขล่าสุดก่อนใช้งาน</p>
-        <p><strong>ข้อกำหนดการใช้งานของ PUI89:</strong> ใช้เฉพาะภาพตัวอย่างสาธารณะที่ไม่มีข้อมูลอ่อนไหว ห้ามอัปโหลดโมเดล proprietary, ชุดข้อมูลส่วนตัว, วิดีโอปฏิบัติงาน, ข้อมูลส่วนบุคคล หรือ credentials ห้ามซื้อเครดิต สมัครแพ็กเกจ หรือเปิด auto-refill เพื่อทำงานของ PUI89 และห้ามถือว่าตัวเลขสาธิตเป็นผลการทดสอบยืนยันของ PUI89</p>
-        <span class="status">ทรัพยากรภายนอกที่เป็นทางเลือก · ไม่ใช่ dependency หรือการรับรองโดย PUI89</span>
-      </article>
-    </section>
-<!-- PUI89_OPTIONAL_VYRIONVISION_RESOURCE:END -->
 
 <footer class="footer">© 2026 PUI89 AI Robotics · โครงการ AI และหุ่นยนต์อิสระ · </footer>
   </div>
