@@ -6,51 +6,9 @@
     "th": "ศูนย์ติดตามการพัฒนา PUI89"
   },
   "method": {
-    "en": "Commercial-readiness estimate, not code completion or a sales forecast. 100% requires an appropriately scoped release candidate, reproducible performance and reliability evidence, applicable safety and real-world validation, verified rights and regulatory checks, plus documentation, deployment/manufacturing, pricing, warranty, maintenance and support.",
-    "th": "คะแนนประเมินความพร้อมเชิงพาณิชย์ ไม่ใช่เปอร์เซ็นต์ความสมบูรณ์ของโค้ดหรือการคาดการณ์ยอดขาย 100% ต้องมีผลิตภัณฑ์รุ่นพร้อมปล่อย หลักฐานประสิทธิภาพและความน่าเชื่อถือที่ทำซ้ำได้ การตรวจสอบความปลอดภัยและโลกจริง สิทธิ์และกฎระเบียบที่เกี่ยวข้อง รวมถึงเอกสาร การผลิต/ติดตั้ง ราคา การรับประกัน การบำรุงรักษา และการสนับสนุน"
+    "en": "Project stages describe documented development work only. They are not commercial-readiness scores, product certifications or proof of physical performance.",
+    "th": "ขั้นการพัฒนาแสดงเฉพาะงานที่มีการบันทึกหลักฐาน ไม่ใช่คะแนนความพร้อมเชิงพาณิชย์ การรับรองผลิตภัณฑ์ หรือหลักฐานสมรรถนะทางกายภาพ"
   },
-  "weights": [
-    {
-      "en": "Product purpose & requirements",
-      "th": "วัตถุประสงค์และข้อกำหนดผลิตภัณฑ์",
-      "weight": 10
-    },
-    {
-      "en": "Architecture & engineering design",
-      "th": "สถาปัตยกรรมและการออกแบบวิศวกรรม",
-      "weight": 10
-    },
-    {
-      "en": "Working software baseline",
-      "th": "พื้นฐานซอฟต์แวร์ที่ทำงานได้",
-      "weight": 15
-    },
-    {
-      "en": "Reproducible tests & evaluation",
-      "th": "การทดสอบและประเมินผลที่ทำซ้ำได้",
-      "weight": 15
-    },
-    {
-      "en": "Integrated product prototype",
-      "th": "ต้นแบบผลิตภัณฑ์ที่บูรณาการแล้ว",
-      "weight": 15
-    },
-    {
-      "en": "Safety, reliability & real-world validation",
-      "th": "ความปลอดภัย ความน่าเชื่อถือ และการตรวจสอบในโลกจริง",
-      "weight": 15
-    },
-    {
-      "en": "Licensing, IP & regulatory readiness",
-      "th": "สิทธิ์ทรัพย์สินทางปัญญาและความพร้อมด้านกฎระเบียบ",
-      "weight": 10
-    },
-    {
-      "en": "Commercial release & support",
-      "th": "การปล่อยผลิตภัณฑ์เชิงพาณิชย์และการสนับสนุน",
-      "weight": 10
-    }
-  ],
   "projects": [
     {
       "id": "coconut",
@@ -60,8 +18,6 @@
         "th": "Coconut Harvest AI"
       },
       "repo": "Pui89/Coconut-Harvest-AI",
-      "score": 50,
-      "stage": 2,
       "stageLabel": {
         "en": "Software prototype",
         "th": "ต้นแบบซอฟต์แวร์"
@@ -86,35 +42,13 @@
         {
           "period": "2026-11",
           "date": "2026-11-07",
-          "score": 50,
           "type": "baseline",
           "note": {
             "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
-      ],
-      "maturityLevel": 4,
-      "maturityLabel": {
-        "en": "Tested software prototype",
-        "th": "ต้นแบบซอฟต์แวร์ที่ผ่านการทดสอบ"
-      },
-      "engineeringStrength": {
-        "en": "Moderate — documented software and evaluation tooling",
-        "th": "ปานกลาง — มีซอฟต์แวร์และเครื่องมือประเมินผลที่บันทึกไว้"
-      },
-      "evidenceConfidence": {
-        "en": "High for specified CI and simulation checks; low for real-world detection",
-        "th": "สูงสำหรับ CI และการจำลองที่ระบุไว้; ต่ำสำหรับการตรวจจับในโลกจริง"
-      },
-      "implementationLevel": {
-        "en": "Software prototype; detector and physical harvesting system unvalidated",
-        "th": "มีต้นแบบซอฟต์แวร์; โมเดลตรวจจับและระบบเก็บเกี่ยวจริงยังไม่ผ่านการยืนยัน"
-      },
-      "nextMaturityMilestone": {
-        "en": "Complete rights-cleared dataset review, then run a reproducible held-out detector benchmark",
-        "th": "ตรวจสอบสิทธิ์ชุดข้อมูลให้ครบ แล้วประเมินโมเดลด้วยชุดทดสอบที่แยกไว้และทำซ้ำได้"
-      }
+      ]
     },
     {
       "id": "flood-rescue",
@@ -124,8 +58,6 @@
         "th": "Extreme Flood Rescue AI"
       },
       "repo": "Pui89/Extreme-Flood-Rescue-AI",
-      "score": 46,
-      "stage": 2,
       "stageLabel": {
         "en": "Software + simulation prototype",
         "th": "ต้นแบบซอฟต์แวร์และการจำลอง"
@@ -150,35 +82,13 @@
         {
           "period": "2026-11",
           "date": "2026-11-07",
-          "score": 46,
           "type": "baseline",
           "note": {
             "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
-      ],
-      "maturityLevel": 4,
-      "maturityLabel": {
-        "en": "Tested software + simulation prototype",
-        "th": "ต้นแบบซอฟต์แวร์และการจำลองที่ผ่านการทดสอบ"
-      },
-      "engineeringStrength": {
-        "en": "Moderate — safety gates, simulation and evidence tooling documented",
-        "th": "ปานกลาง — มี safety gates การจำลอง และเครื่องมือหลักฐาน"
-      },
-      "evidenceConfidence": {
-        "en": "High for defined software scenarios; low for flood physics and rescue outcomes",
-        "th": "สูงสำหรับสถานการณ์ซอฟต์แวร์ที่กำหนด; ต่ำสำหรับฟิสิกส์น้ำท่วมและผลการกู้ภัย"
-      },
-      "implementationLevel": {
-        "en": "Tested software simulation; no validated amphibious hardware",
-        "th": "ซอฟต์แวร์จำลองผ่านการทดสอบ; ยังไม่มีฮาร์ดแวร์สะเทินน้ำสะเทินบกที่ผ่านการยืนยัน"
-      },
-      "nextMaturityMilestone": {
-        "en": "Define physics-grounded flood scenarios and measurable system acceptance criteria",
-        "th": "กำหนดสถานการณ์น้ำท่วมที่อิงฟิสิกส์และเกณฑ์ยอมรับระบบที่วัดผลได้"
-      }
+      ]
     },
     {
       "id": "sentinel",
@@ -188,8 +98,6 @@
         "th": "Multimodal Narcotics Screening AI / Sentinel"
       },
       "repo": "Pui89/Multimodal-Narcotics-Screening-AI",
-      "score": 45,
-      "stage": 2,
       "stageLabel": {
         "en": "Software workflow prototype",
         "th": "ต้นแบบกระบวนการซอฟต์แวร์"
@@ -214,35 +122,13 @@
         {
           "period": "2026-11",
           "date": "2026-11-07",
-          "score": 45,
           "type": "baseline",
           "note": {
             "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
-      ],
-      "maturityLevel": 4,
-      "maturityLabel": {
-        "en": "Tested screening-workflow software prototype",
-        "th": "ต้นแบบซอฟต์แวร์กระบวนการคัดกรองที่ผ่านการทดสอบ"
-      },
-      "engineeringStrength": {
-        "en": "Moderate — human-review gates and multimodal evidence workflow",
-        "th": "ปานกลาง — มี human-review gates และกระบวนการหลักฐานหลายรูปแบบ"
-      },
-      "evidenceConfidence": {
-        "en": "High for defined software checks; low for substance identification and sensors",
-        "th": "สูงสำหรับการตรวจสอบซอฟต์แวร์ที่กำหนด; ต่ำสำหรับการระบุสารและเซนเซอร์"
-      },
-      "implementationLevel": {
-        "en": "Tested workflow software; no validated chemical/X-ray integration or robot",
-        "th": "ซอฟต์แวร์กระบวนการผ่านการทดสอบ; ยังไม่มีการเชื่อมต่อเคมี/X-ray หรือหุ่นยนต์ที่ผ่านการยืนยัน"
-      },
-      "nextMaturityMilestone": {
-        "en": "Establish lawful, rights-cleared test data and modality-specific human-reviewed evaluation",
-        "th": "จัดทำข้อมูลทดสอบที่ถูกต้องตามกฎหมายและสิทธิ์ พร้อมประเมินแต่ละ modality ภายใต้การทบทวนของมนุษย์"
-      }
+      ]
     },
     {
       "id": "ai-home",
@@ -252,8 +138,6 @@
         "th": "PUI89 AI HOME"
       },
       "repo": "Pui89/AI-Home-Safety-Robot",
-      "score": 28,
-      "stage": 1,
       "stageLabel": {
         "en": "Foundation & concept",
         "th": "วางรากฐานและแนวคิด"
@@ -278,35 +162,13 @@
         {
           "period": "2026-11",
           "date": "2026-11-07",
-          "score": 28,
           "type": "baseline",
           "note": {
             "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
-      ],
-      "maturityLevel": 3,
-      "maturityLabel": {
-        "en": "Software prototype foundation",
-        "th": "พื้นฐานต้นแบบซอฟต์แวร์"
-      },
-      "engineeringStrength": {
-        "en": "Early–moderate — requirements, deterministic foundation and synthetic scenario",
-        "th": "เริ่มต้นถึงปานกลาง — ข้อกำหนด พื้นฐาน deterministic และสถานการณ์สังเคราะห์"
-      },
-      "evidenceConfidence": {
-        "en": "Moderate for initial CI and synthetic report generation; no sensor evidence",
-        "th": "ปานกลางสำหรับ CI ระยะแรกและรายงานสังเคราะห์; ยังไม่มีหลักฐานจากเซนเซอร์"
-      },
-      "implementationLevel": {
-        "en": "Early software prototype; no calibrated sensors or physical robot",
-        "th": "ต้นแบบซอฟต์แวร์ระยะแรก; ยังไม่มีเซนเซอร์สอบเทียบหรือหุ่นยนต์จริง"
-      },
-      "nextMaturityMilestone": {
-        "en": "Complete an end-to-end mock-sensor demonstrator with failure-state and alarm tests",
-        "th": "ทำตัวอย่างครบวงจรด้วยข้อมูลเซนเซอร์จำลอง พร้อมทดสอบสถานะผิดพลาดและการแจ้งเตือน"
-      }
+      ]
     },
     {
       "id": "ai-nomad",
@@ -316,8 +178,6 @@
         "th": "PUI89 AI NOMAD"
       },
       "repo": "Pui89/AI-Mobile-Assistant-Robot",
-      "score": 30,
-      "stage": 1,
       "stageLabel": {
         "en": "Foundation & concept",
         "th": "วางรากฐานและแนวคิด"
@@ -342,35 +202,13 @@
         {
           "period": "2026-11",
           "date": "2026-11-07",
-          "score": 30,
           "type": "baseline",
           "note": {
             "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
-      ],
-      "maturityLevel": 2,
-      "maturityLabel": {
-        "en": "Architecture defined",
-        "th": "กำหนดสถาปัตยกรรมแล้ว"
-      },
-      "engineeringStrength": {
-        "en": "Early — product requirements and four-wheel/safety design direction documented",
-        "th": "เริ่มต้น — มีข้อกำหนดผลิตภัณฑ์และแนวทางออกแบบสี่ล้อ/ความปลอดภัย"
-      },
-      "evidenceConfidence": {
-        "en": "Low–moderate; design documentation only, no mobility test evidence",
-        "th": "ต่ำถึงปานกลาง; มีเอกสารการออกแบบ ยังไม่มีผลทดสอบการเคลื่อนที่"
-      },
-      "implementationLevel": {
-        "en": "Architecture and concept; no integrated software/robot prototype verified",
-        "th": "สถาปัตยกรรมและแนวคิด; ยังไม่มีต้นแบบซอฟต์แวร์/หุ่นยนต์ที่บูรณาการและตรวจสอบแล้ว"
-      },
-      "nextMaturityMilestone": {
-        "en": "Complete mission, hazard-state and power/environmental software specifications before integration",
-        "th": "จัดทำข้อกำหนดซอฟต์แวร์ภารกิจ สถานะอันตราย พลังงาน และสภาพแวดล้อมให้ครบก่อนบูรณาการ"
-      }
+      ]
     },
     {
       "id": "robot-car",
@@ -380,8 +218,6 @@
         "th": "PUI89 AI Robot Car"
       },
       "repo": "Pui89/AI-Autonomous-Robot-Car",
-      "score": 29,
-      "stage": 1,
       "stageLabel": {
         "en": "Early software foundation",
         "th": "พื้นฐานซอฟต์แวร์ระยะแรก"
@@ -406,35 +242,13 @@
         {
           "period": "2026-11",
           "date": "2026-11-07",
-          "score": 29,
           "type": "baseline",
           "note": {
             "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
-      ],
-      "maturityLevel": 2,
-      "maturityLabel": {
-        "en": "Architecture defined",
-        "th": "กำหนดสถาปัตยกรรมแล้ว"
-      },
-      "engineeringStrength": {
-        "en": "Early — shared mobility intelligence direction and vehicle-specific requirements",
-        "th": "เริ่มต้น — มีทิศทาง mobility intelligence ร่วมและข้อกำหนดเฉพาะรถ"
-      },
-      "evidenceConfidence": {
-        "en": "Low–moderate; concept and requirements, no vehicle test evidence",
-        "th": "ต่ำถึงปานกลาง; มีแนวคิดและข้อกำหนด ยังไม่มีหลักฐานทดสอบยานยนต์"
-      },
-      "implementationLevel": {
-        "en": "Architecture/research foundation; no vehicle integration or road testing",
-        "th": "พื้นฐานสถาปัตยกรรม/วิจัย; ยังไม่มีการบูรณาการในรถหรือทดสอบบนถนน"
-      },
-      "nextMaturityMilestone": {
-        "en": "Build a software-only hazard-awareness demonstrator using traceable mock vehicle signals",
-        "th": "สร้างตัวอย่างซอฟต์แวร์รับรู้ความเสี่ยงโดยใช้สัญญาณรถจำลองที่ตรวจสอบย้อนกลับได้"
-      }
+      ]
     },
     {
       "id": "motorcycle",
@@ -444,8 +258,6 @@
         "th": "PUI89 EasyRide AI Motorcycle"
       },
       "repo": "Pui89/AI-Motorcycle-Robotics",
-      "score": 28,
-      "stage": 1,
       "stageLabel": {
         "en": "Concept & engineering foundation",
         "th": "แนวคิดและพื้นฐานวิศวกรรม"
@@ -470,35 +282,13 @@
         {
           "period": "2026-11",
           "date": "2026-11-07",
-          "score": 28,
           "type": "baseline",
           "note": {
             "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
-      ],
-      "maturityLevel": 2,
-      "maturityLabel": {
-        "en": "Architecture defined",
-        "th": "กำหนดสถาปัตยกรรมแล้ว"
-      },
-      "engineeringStrength": {
-        "en": "Early — rider-centred requirements and integrated mobility direction",
-        "th": "เริ่มต้น — มีข้อกำหนดที่คำนึงถึงผู้ขับขี่และทิศทาง mobility ร่วม"
-      },
-      "evidenceConfidence": {
-        "en": "Low; concept and early engineering research only",
-        "th": "ต่ำ; มีเพียงแนวคิดและงานวิจัยวิศวกรรมระยะแรก"
-      },
-      "implementationLevel": {
-        "en": "Concept and engineering foundation; no functioning vehicle or rider trials",
-        "th": "แนวคิดและพื้นฐานวิศวกรรม; ยังไม่มีรถที่ทำงานได้หรือการทดสอบผู้ขับขี่"
-      },
-      "nextMaturityMilestone": {
-        "en": "Complete vehicle hazard analysis and safety requirements before any physical build",
-        "th": "จัดทำการวิเคราะห์อันตรายและข้อกำหนดความปลอดภัยของรถให้ครบก่อนสร้างจริง"
-      }
+      ]
     }
   ],
   "maturityFramework": {
@@ -554,23 +344,6 @@
       "th": "PUI89 Shared AI Core"
     },
     "repo": "Pui89/PUI89-Shared-AI-Core",
-    "maturityLevel": 4,
-    "maturityLabel": {
-      "en": "Tested software prototype",
-      "th": "ต้นแบบซอฟต์แวร์ที่ผ่านการทดสอบ"
-    },
-    "engineeringStrength": {
-      "en": "Moderate–strong — versioned contracts, deterministic validators, evidence and safety modules, compute-intelligence proposal logic",
-      "th": "ปานกลางถึงแข็งแรง — มี contracts แบบ versioned, validators แบบ deterministic, โมดูล evidence/safety และตรรกะเสนอการจัดสรร compute"
-    },
-    "evidenceConfidence": {
-      "en": "High for the recorded dependency-free software tests; no hardware measurements or field validation",
-      "th": "สูงสำหรับการทดสอบซอฟต์แวร์แบบไม่พึ่ง dependency ที่บันทึกไว้; ยังไม่มีการวัดฮาร์ดแวร์หรือการตรวจสอบภาคสนาม"
-    },
-    "implementationLevel": {
-      "en": "Core contracts and selected modules implemented; Compute Intelligence tested (11 tests) within a 164-test suite; adapters and production enforcement remain incomplete",
-      "th": "มี contracts และบางโมดูลที่พัฒนาแล้ว; Compute Intelligence ผ่าน 11 tests ภายในชุดทดสอบ 164 รายการ; adapters และการบังคับใช้ระดับ production ยังไม่ครบ"
-    },
     "next": {
       "en": "Extend project adapters and conformance tests; add measured hardware profiles only when instruments and evidence are available",
       "th": "ขยาย project adapters และ conformance tests; เพิ่มโปรไฟล์ฮาร์ดแวร์ที่วัดจริงเมื่อมีเครื่องมือและหลักฐาน"
