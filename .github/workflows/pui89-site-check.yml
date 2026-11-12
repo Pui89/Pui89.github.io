@@ -70,7 +70,7 @@ jobs:
           from pathlib import Path
           import re
           pages = {"index.html": "en", "th.html": "th"}
-          expected_logo = 'images/pui89-precision-glow-01.svg'
+          expected_logo = 'images/pui89-cyber-edge-wordmark.svg'
           errors = []
           for filename, language in pages.items():
               text = Path(filename).read_text(encoding="utf-8")
