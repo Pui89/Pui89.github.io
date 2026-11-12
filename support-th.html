@@ -43,6 +43,15 @@ a{color:#42D9FF;text-underline-offset:4px;transition:color .22s ease,opacity .22
 ::selection{background:rgba(66,217,255,.28);color:#F3F7FF}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
 
+
+.table-wrap{width:100%;overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:rgba(16,30,46,.62);margin:18px 0}
+.outcome-table{width:100%;border-collapse:collapse;min-width:620px;text-align:left}
+.outcome-table th,.outcome-table td{padding:15px 17px;border-bottom:1px solid var(--line);vertical-align:top}
+.outcome-table thead th{background:rgba(66,217,255,.09);color:var(--text);font-size:.9rem}
+.outcome-table tbody th{width:30%;color:var(--text);font-size:.94rem}
+.outcome-table td{color:var(--muted);font-size:.94rem}
+.outcome-table tbody tr:last-child th,.outcome-table tbody tr:last-child td{border-bottom:0}
+
 </style>  <link rel="stylesheet" href="assets/css/pui89-project-design-system.css?v=20261108-professional">
   <link rel="stylesheet" href="/assets/css/pui89-visual-system.css">
 <style id="pui89-language-switch-style">.pui89-language-switch{display:inline-flex;align-items:center;gap:3px;margin-left:auto;padding:4px;border:1px solid rgba(66,217,255,.34);border-radius:999px;background:rgba(7,17,31,.82);white-space:nowrap;font-size:.82rem;line-height:1.35;flex-shrink:0}.pui89-language-switch a,.pui89-language-switch span{display:inline-flex;align-items:center;justify-content:center;min-height:32px;padding:5px 11px;border-radius:999px;text-decoration:none;font-weight:750;color:#c5d5e6}.pui89-language-switch .is-current{background:linear-gradient(110deg,#42d9ff,#8aeaff);color:#041522;box-shadow:0 2px 12px rgba(66,217,255,.18)}.pui89-language-switch a:hover{background:rgba(66,217,255,.13);color:#fff}.pui89-language-switch .is-current:hover{background:#b8f2ff;color:#041522}@media(max-width:780px){.pui89-language-switch{margin-left:0}.nav,.links{gap:10px}}</style></head><body data-pui89-project="corporate">
@@ -96,6 +105,28 @@ a{color:#42D9FF;text-underline-offset:4px;transition:color .22s ease,opacity .22
 <article class="card"><h2>07 · การสนับสนุนและทุนจากองค์กร</h2><p>ทรัพยากรสนับสนุน การสนับสนุนในรูปแบบสิ่งของหรือบริการ ทุนจากองค์กร การเข้าร่วมโครงการ และความช่วยเหลือเฉพาะทาง โดยพิจารณาคุณสมบัติและเงื่อนไขอย่างโปร่งใส</p><a href="mailto:puinuanmanee@gmail.com?subject=PUI89%20Organisational%20Support">หารือการสนับสนุนจากองค์กร ↗</a></article>
 <article class="card"><h2>08 · โอกาสวิจัยระดับนานาชาติ</h2><p>ประกาศทุนวิจัย โอกาสแลกเปลี่ยนหรือเยี่ยมเยือนตามคุณสมบัติ เครือข่ายวิจัยนานาชาติ การประชุมวิชาการ และโครงการวิจัยข้ามประเทศ</p><a href="mailto:puinuanmanee@gmail.com?subject=PUI89%20International%20Research%20Opportunities">หารือโอกาสระดับนานาชาติ ↗</a></article>
 </div>
+
+<section id="support-outcomes" aria-labelledby="support-outcomes-heading">
+<h2 id="support-outcomes-heading">สิ่งที่ PUI89 คาดว่าจะได้รับจากการสนับสนุน</h2>
+<p class="intro">นอกเหนือจากประเภทการสนับสนุนข้างต้น PUI89 กำลังมองหาความเชี่ยวชาญ การเข้าถึงทรัพยากร และข้อเสนอแนะที่เป็นอิสระ โดยผลลัพธ์ด้านล่างเป็นประโยชน์ที่คาดหวัง ไม่ใช่การยืนยันว่าได้รับข้อเสนอ แต่งตั้งผู้เชี่ยวชาญ หรือมีสถานที่และทรัพยากรพร้อมใช้งานแล้ว</p>
+<div class="table-wrap" role="region" aria-label="ประเภทการสนับสนุนและประโยชน์ที่คาดหวัง" tabindex="0">
+<table class="outcome-table">
+<thead><tr><th scope="col">ประเภทการสนับสนุน</th><th scope="col">สิ่งที่ PUI89 คาดว่าจะได้รับ</th></tr></thead>
+<tbody>
+<tr><th scope="row">ที่ปรึกษาด้านเทคนิค</th><td>คำแนะนำด้าน AI และหุ่นยนต์ สถาปัตยกรรมระบบ การเลือกแนวทางวิศวกรรม คุณภาพโค้ด และความปลอดภัย</td></tr>
+<tr><th scope="row">ผู้ประเมินงานวิจัยอิสระ</th><td>ความเห็นทางเทคนิคที่เป็นอิสระ การชี้จุดที่ยังขาด และข้อเสนอแนะเพื่อปรับปรุงวิธีประเมินผล ทั้งนี้ไม่ถือเป็นการรับรองหรือให้การสนับสนุนอย่างเป็นทางการ</td></tr>
+<tr><th scope="row">สถานที่และสิ่งอำนวยความสะดวกสำหรับทดสอบ</th><td>โอกาสเข้าถึงสภาพแวดล้อมควบคุมเพื่อทดลองตามแผน ภายใต้เงื่อนไข การกำกับดูแล การอนุญาต และการบันทึกผลที่ตกลงร่วมกัน</td></tr>
+<tr><th scope="row">ผู้สนับสนุนอุปกรณ์</th><td>การสนับสนุนกล้อง เซนเซอร์ ชิ้นส่วน เครื่องมือทดสอบ หรือฮาร์ดแวร์หุ่นยนต์ในรูปแบบสิ่งของหรือการให้ใช้ โดยตกลงเรื่องกรรมสิทธิ์และการบำรุงรักษาล่วงหน้า</td></tr>
+<tr><th scope="row">ผู้สนับสนุน Compute</th><td>GPU และทรัพยากรประมวลผลในรูปแบบที่ได้รับการสนับสนุนหรือให้ใช้โดยไม่คิดค่าใช้จ่าย จะไม่เปิดบัญชีแบบชำระเงิน สมัครสมาชิก หรือเริ่มใช้บริการที่อาจก่อค่าใช้จ่ายโดยไม่ได้รับอนุมัติเป็นลายลักษณ์อักษรล่วงหน้า</td></tr>
+<tr><th scope="row">ผู้ร่วมพัฒนา Open Source</th><td>การตรวจสอบโค้ด การร่วมพัฒนา การเพิ่มชุดทดสอบ เอกสาร และการปรับปรุงที่ทำซ้ำได้ ภายใต้ใบอนุญาตของแต่ละ Repository</td></tr>
+<tr><th scope="row">ที่ปรึกษาอุตสาหกรรม</th><td>ข้อมูลความต้องการใช้งานจริง ข้อจำกัดในการปฏิบัติงาน กระบวนการทำงานของผู้ใช้ และข้อกำหนดที่ช่วยกำหนดลำดับความสำคัญของโครงการ</td></tr>
+<tr><th scope="row">โอกาสเผยแพร่ผลงาน</th><td>โอกาสนำเสนอผลงานที่มีคุณสมบัติเหมาะสมผ่านวารสารวิชาการ การประชุมวิชาการ หรือเวทีด้านเทคนิค เพื่อเพิ่มการมองเห็นในระดับนานาชาติ ทั้งนี้ไม่รับประกันการตอบรับหรือการตีพิมพ์</td></tr>
+</tbody>
+</table>
+</div>
+<p class="small">การสนับสนุนทุกประเภทต้องพิจารณาคุณสมบัติ ความปลอดภัย การคุ้มครองข้อมูล สิทธิในทรัพย์สินทางปัญญา การให้เครดิต ค่าใช้จ่าย และข้อตกลงเป็นลายลักษณ์อักษร การหารือเบื้องต้นไม่ทำให้ PUI89 มีภาระผูกพันทางการเงิน กฎหมาย หรือการดำเนินงาน</p>
+</section>
+
 <p class="intro"><strong>หลักการพิจารณา:</strong> ก่อนตอบรับการสนับสนุน จะตรวจสอบความเหมาะสม ขอบเขตงาน ค่าใช้จ่าย สิทธิในข้อมูลและทรัพย์สินทางปัญญา ความปลอดภัย และภาระผูกพันให้ชัดเจนเป็นลายลักษณ์อักษร โดยไม่มีการเริ่มใช้บริการหรือก่อค่าใช้จ่ายโดยไม่ได้รับการพิจารณาล่วงหน้า</p>
 <div class="cta"><h2>มีข้อเสนอสนับสนุน PUI89 หรือไม่?</h2><p>โปรดแจ้งประเภทการสนับสนุน โครงการที่เกี่ยวข้อง คุณสมบัติ เงื่อนไข ระยะเวลา และทรัพยากรที่เสนอ เพื่อให้พิจารณาความเหมาะสมและความเป็นไปได้</p><a class="btn primary" href="mailto:puinuanmanee@gmail.com?subject=PUI89%20Support%20and%20Opportunities">ติดต่อ PUI89 เกี่ยวกับโอกาสสนับสนุน ↗</a></div>
 </section>
