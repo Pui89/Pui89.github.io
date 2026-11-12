@@ -1,0 +1,71 @@
+/* PUI89 Cyber Edge identity — shared bilingual brand layer. */
+:root {
+  --pui89-navy: #07111F;
+  --pui89-cyan: #42D9FF;
+  --pui89-titanium: #C5D0DC;
+  --pui89-ink: #F3F7FF;
+}
+body {
+  background-color: var(--pui89-navy);
+  color: var(--pui89-ink);
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  min-height: 54px;
+  text-decoration: none;
+}
+.brand img {
+  display: block;
+  width: clamp(176px, 19vw, 218px);
+  max-height: 56px;
+  height: auto;
+  object-fit: contain;
+}
+.pui89-brand-lockup {
+  display: block;
+  width: min(100%, 410px);
+  margin: 0 0 26px;
+}
+.pui89-brand-lockup img {
+  display: block;
+  width: min(100%, 390px);
+  height: auto;
+  filter: drop-shadow(0 5px 18px rgba(66,217,255,.10));
+}
+.nav {
+  border-bottom-color: rgba(197,208,220,.18);
+}
+.navlinks a {
+  color: #C5D0DC;
+}
+.navlinks a:hover {
+  color: #FFFFFF;
+  background: rgba(66,217,255,.09);
+}
+.hero h1 span {
+  color: var(--pui89-cyan);
+  background: none;
+  -webkit-text-fill-color: currentColor;
+}
+.btn.primary, .primary {
+  color: #041522;
+  background: linear-gradient(110deg,#42D9FF,#A9F1FF);
+  border-color: #42D9FF;
+  box-shadow: 0 8px 26px rgba(66,217,255,.15);
+}
+.btn.primary:hover, .primary:hover {
+  color: #041522;
+  background: #B8F2FF;
+}
+.card, .contact-card, .panel, .pui89-project-card {
+  border-color: rgba(197,208,220,.17);
+}
+@media (max-width: 760px) {
+  .brand img { width: 190px; max-height: 50px; }
+  .pui89-brand-lockup { margin-bottom: 20px; }
+  .pui89-brand-lockup img { width: min(100%, 340px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: .01ms !important; }
+}
