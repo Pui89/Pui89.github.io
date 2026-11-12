@@ -6,7 +6,9 @@
 .pui89-review-counts__table{width:100%;margin-top:12px;border-collapse:collapse}
 .pui89-review-counts__table th,.pui89-review-counts__table td{padding:10px 8px;border-bottom:1px solid rgba(197,208,220,.13);text-align:left;font-size:.94rem}
 .pui89-review-counts__table th{color:#eaf2fa;font-weight:650}
+.pui89-review-counts__table thead th{color:#9fdff0;font-size:.78rem;text-transform:uppercase;letter-spacing:.04em}
 .pui89-review-counts__number{width:1%;white-space:nowrap;color:#00d9ff;font-weight:800;text-align:right!important}
+.pui89-review-counts__status{color:#b8c7d8;font-size:.88rem;white-space:normal}
 .pui89-review-counts__total{margin:14px 0 0;color:#f7fbff}
 .pui89-review-counts__note{margin-top:12px;font-size:.82rem}
 @media(max-width:560px){.pui89-review-counts{padding:18px 16px}.pui89-review-counts__table th,.pui89-review-counts__table td{padding:9px 5px;font-size:.85rem}}
