@@ -7,17 +7,23 @@
   var thai = (document.documentElement.lang || "").toLowerCase().indexOf("th") === 0;
   var text = thai ? {
     title: "จำนวนการทบทวนโครงการที่มีหลักฐาน",
-    intro: "นับเฉพาะการทบทวนที่เสร็จสมบูรณ์ มีวันที่ ขอบเขต และหลักฐานอ้างอิง",
+    intro: "นับเฉพาะรายการที่เสร็จสมบูรณ์ มีวันที่ ขอบเขต บทบาทผู้ทบทวน ผลการทบทวน และหลักฐานอ้างอิง",
     count: "ครั้ง",
-    total: "รวมทุกโครงการ",
+    total: "สถานะภาพรวม",
+    projectsReviewed: "โครงการที่มีการทบทวน",
+    reviewedStatus: "มีบันทึกการทบทวน",
+    notReviewedStatus: "ยังไม่มีการทบทวนที่ผ่านเกณฑ์",
     empty: "ยังไม่มีบันทึกการทบทวนที่ผ่านเกณฑ์",
     note: "ไม่นับคะแนนดาว ความคิดเห็น ยอดเข้าชม หรือรายการร่าง",
     unavailable: "ไม่สามารถโหลดข้อมูลจำนวนการทบทวนได้ในขณะนี้"
   } : {
     title: "Evidence-backed project reviews",
-    intro: "Counts only completed reviews with a date, defined scope and supporting evidence.",
+    intro: "Counts only completed records with a date, defined scope, reviewer role, outcome and supporting evidence.",
     count: "reviews",
-    total: "Portfolio total",
+    total: "Portfolio status",
+    projectsReviewed: "projects reviewed",
+    reviewedStatus: "Review recorded",
+    notReviewedStatus: "Not yet reviewed",
     empty: "No qualifying review records yet",
     note: "Ratings, stars, page views, comments and draft records are excluded.",
     unavailable: "Review counts are temporarily unavailable."
@@ -41,6 +47,7 @@
   }
   function panel() {
     var section = el("section", "pui89-review-counts");
+    section.id = "evidence-backed-project-reviews";
     section.setAttribute("aria-live", "polite");
     section.setAttribute("aria-label", text.title);
     var heading = el("h2", "pui89-review-counts__title", text.title);
@@ -67,20 +74,31 @@
       var section = panel();
       if (portfolio) {
         var table = el("table", "pui89-review-counts__table");
+        table.setAttribute("aria-label", text.title);
+        var head = document.createElement("thead");
+        var headerRow = document.createElement("tr");
+        headerRow.appendChild(el("th", "", thai ? "โครงการ" : "Project"));
+        headerRow.appendChild(el("th", "", thai ? "จำนวนครั้ง" : "Completed reviews"));
+        headerRow.appendChild(el("th", "", thai ? "สถานะ" : "Status"));
+        head.appendChild(headerRow);
+        table.appendChild(head);
         var body = document.createElement("tbody");
         var total = 0;
+        var reviewedProjects = 0;
         data.projects.forEach(function (project) {
-          var n = count(project); total += n;
+          var n = count(project);
+          total += n;
+          if (n > 0) reviewedProjects += 1;
           var row = document.createElement("tr");
           row.appendChild(el("th", "", thai ? project.name_th : project.name_en));
           row.appendChild(el("td", "pui89-review-counts__number", String(n) + " " + text.count));
+          row.appendChild(el("td", "pui89-review-counts__status", n > 0 ? text.reviewedStatus : text.notReviewedStatus));
           body.appendChild(row);
         });
         table.appendChild(body);
         section.appendChild(table);
         var totalRow = el("p", "pui89-review-counts__total");
-        totalRow.appendChild(el("strong", "", text.total + ": "));
-        totalRow.appendChild(el("strong", "", String(total) + " " + text.count));
+        totalRow.textContent = text.total + ": " + reviewedProjects + " / " + data.projects.length + " " + text.projectsReviewed + " · " + total + " " + text.count;
         section.appendChild(totalRow);
       } else {
         var project = data.projects.find(function (item) { return item.id === projectId; });
