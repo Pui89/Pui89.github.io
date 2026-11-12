@@ -17,6 +17,19 @@ function projectCard(p){
  card.append(el("span","pui89-observatory__label",lang==="th"?"ขั้นการพัฒนา":"DOCUMENTED DEVELOPMENT STAGE"));
  card.append(el("strong","pui89-observatory__stage",t(p.stageLabel)));
  card.append(el("p","",t(p.summary)));
+ if(p.commercialReadiness&&Number.isInteger(p.commercialReadiness.percent)&&p.commercialReadiness.percent>=0&&p.commercialReadiness.percent<=100){
+  const scoreline=el("div","pui89-observatory__scoreline");
+  scoreline.append(el("span","pui89-observatory__label",lang==="th"?"ความพร้อมเชิงพาณิชย์โดยประมาณ":"COMMERCIAL READINESS ESTIMATE"));
+  scoreline.append(el("strong","pui89-observatory__score",p.commercialReadiness.percent+"%"));
+  card.append(scoreline);
+  const bar=el("div","pui89-observatory__bar");
+  bar.setAttribute("role","progressbar");
+  bar.setAttribute("aria-label",lang==="th"?"ความพร้อมเชิงพาณิชย์โดยประมาณ":"Commercial readiness estimate");
+  bar.setAttribute("aria-valuemin","0");bar.setAttribute("aria-valuemax","100");
+  bar.setAttribute("aria-valuenow",String(p.commercialReadiness.percent));
+  const fill=el("span","");fill.style.width=p.commercialReadiness.percent+"%";bar.append(fill);card.append(bar);
+  card.append(el("p","pui89-observatory__empty",(lang==="th"?"ค่าฐาน ณ ":"Baseline: ")+p.commercialReadiness.reviewedOn));
+ }
  addField(card,lang==="th"?"หลักฐานที่มี":"DOCUMENTED EVIDENCE",p.evidence);
  addField(card,lang==="th"?"ข้อจำกัดและสิ่งที่ยังไม่ยืนยัน":"LIMITATIONS & UNVALIDATED CAPABILITIES",p.blockers);
  addField(card,lang==="th"?"เป้าหมายถัดไป":"NEXT MILESTONE",p.next);
@@ -41,6 +54,10 @@ function render(root,data){
  meta.append(el("span","pui89-observatory__chip",(lang==="th"?"ทบทวนข้อมูลล่าสุด: ":"Last reviewed: ")+data.asOf));
  meta.append(el("span","pui89-observatory__chip",lang==="th"?"ข้อมูลชุดเดียวกันสำหรับเว็บไซต์ภาษาไทยและอังกฤษ":"One shared source for English and Thai pages"));
  section.append(meta);
+ if(data.readinessBaseline){
+  const method=el("p","pui89-observatory__method",t(data.readinessBaseline.definition)+" "+t(data.readinessBaseline.note));
+  section.append(method);
+ }
  if(data.platform){
   const platform=el("article","pui89-observatory__platform");
   platform.append(el("span","pui89-observatory__eyebrow",lang==="th"?"โครงสร้างพื้นฐานร่วม":"SHARED FOUNDATION"));
