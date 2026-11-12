@@ -48,7 +48,11 @@
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
-      ]
+      ],
+      "commercialReadiness": {
+        "percent": 50,
+        "reviewedOn": "2026-11-07"
+      }
     },
     {
       "id": "flood-rescue",
@@ -88,7 +92,11 @@
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
-      ]
+      ],
+      "commercialReadiness": {
+        "percent": 46,
+        "reviewedOn": "2026-11-07"
+      }
     },
     {
       "id": "sentinel",
@@ -128,7 +136,11 @@
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
-      ]
+      ],
+      "commercialReadiness": {
+        "percent": 45,
+        "reviewedOn": "2026-11-07"
+      }
     },
     {
       "id": "ai-home",
@@ -168,7 +180,11 @@
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
-      ]
+      ],
+      "commercialReadiness": {
+        "percent": 28,
+        "reviewedOn": "2026-11-07"
+      }
     },
     {
       "id": "ai-nomad",
@@ -208,7 +224,11 @@
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
-      ]
+      ],
+      "commercialReadiness": {
+        "percent": 30,
+        "reviewedOn": "2026-11-07"
+      }
     },
     {
       "id": "robot-car",
@@ -248,7 +268,11 @@
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
-      ]
+      ],
+      "commercialReadiness": {
+        "percent": 29,
+        "reviewedOn": "2026-11-07"
+      }
     },
     {
       "id": "motorcycle",
@@ -288,7 +312,11 @@
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
-      ]
+      ],
+      "commercialReadiness": {
+        "percent": 28,
+        "reviewedOn": "2026-11-07"
+      }
     }
   ],
   "maturityFramework": {
@@ -347,6 +375,17 @@
     "next": {
       "en": "Extend project adapters and conformance tests; add measured hardware profiles only when instruments and evidence are available",
       "th": "ขยาย project adapters และ conformance tests; เพิ่มโปรไฟล์ฮาร์ดแวร์ที่วัดจริงเมื่อมีเครื่องมือและหลักฐาน"
+    }
+  },
+  "readinessBaseline": {
+    "asOf": "2026-11-07",
+    "definition": {
+      "en": "Commercial-readiness estimate, not code completion or a sales forecast. 100% requires an appropriately scoped release candidate, reproducible performance and reliability evidence, applicable safety and real-world validation, verified rights and regulatory checks, plus documentation, deployment, pricing, warranty, maintenance and support.",
+      "th": "ค่าประมาณความพร้อมเชิงพาณิชย์ ไม่ใช่เปอร์เซ็นต์ความสมบูรณ์ของโค้ดหรือการคาดการณ์ยอดขาย โดย 100% ต้องมี release candidate ที่กำหนดขอบเขตเหมาะสม หลักฐานสมรรถนะและความน่าเชื่อถือที่ทำซ้ำได้ การตรวจสอบความปลอดภัยและการใช้งานจริงตามความเหมาะสม การตรวจสอบสิทธิ์และกฎระเบียบ ตลอดจนเอกสาร การส่งมอบ ราคา การรับประกัน การบำรุงรักษา และการสนับสนุน"
+    },
+    "note": {
+      "en": "This is the first shared portfolio baseline dated 7 November 2026. Each project's percentage is shown with its baseline date; later changes require a dated evidence review. It does not imply a built, certified or field-validated product.",
+      "th": "นี่คือค่าฐานร่วมของทั้งพอร์ตโฟลิโอ ณ วันที่ 7 พฤศจิกายน 2026 โดยแสดงเปอร์เซ็นต์พร้อมวันที่กำกับ การเปลี่ยนแปลงในภายหลังต้องมีการทบทวนหลักฐานและวันที่ใหม่ ตัวเลขนี้ไม่ได้หมายความว่ามีผลิตภัณฑ์ที่สร้างจริง ผ่านการรับรอง หรือผ่านการทดสอบภาคสนามแล้ว"
     }
   }
 }
