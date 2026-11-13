@@ -5,7 +5,7 @@ const DATA_URL="/data/pui89-progress.json";
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const lang=(document.documentElement.lang||"en").toLowerCase().startsWith("th")?"th":"en";
 const t=o=>typeof o==="string"?o:(o?.[lang]||o?.en||"");
-const formatDate=value=>{if(!/^\\d{4}-\\d{2}-\\d{2}$/.test(String(value||"")))return value||"";const d=new Date(value+"T12:00:00Z");return new Intl.DateTimeFormat(lang==="th"?"th-TH-u-ca-buddhist":"en-GB",{day:"numeric",month:"long",year:"numeric",timeZone:"UTC"}).format(d);};
+const formatDate=value=>{if(!/^\d{4}-\d{2}-\d{2}$/.test(String(value||"")))return value||"";const d=new Date(value+"T12:00:00Z");return new Intl.DateTimeFormat(lang==="th"?"th-TH-u-ca-buddhist":"en-GB",{day:"numeric",month:"long",year:"numeric",timeZone:"UTC"}).format(d);};
 const el=(tag,cls,txt)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(txt!==undefined)n.textContent=txt;return n;};
 function addField(card,label,value){
  if(!value)return;
