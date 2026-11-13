@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 AI Global SUV — concept illustration</title>
+<desc id="desc">A medium-size five-door Deep Navy SUV concept with Electric Cyan accents, shown in a dramatic three-quarter front view on a dark studio background. Concept artwork only; no production specifications or validated capabilities are implied.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#07111f"/><stop offset=".55" stop-color="#102a43"/><stop offset="1" stop-color="#050b14"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#42d9ff" stop-opacity=".24"/><stop offset="1" stop-color="#42d9ff" stop-opacity="0"/></radialGradient>
+ <linearGradient id="body" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#35536c"/><stop offset=".22" stop-color="#142b43"/><stop offset=".58" stop-color="#081827"/><stop offset=".82" stop-color="#1d3c56"/><stop offset="1" stop-color="#06111e"/></linearGradient>
+ <linearGradient id="hood" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#68839a"/><stop offset=".28" stop-color="#29465e"/><stop offset="1" stop-color="#0a1b2b"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a8d5e8" stop-opacity=".72"/><stop offset=".35" stop-color="#244a65" stop-opacity=".9"/><stop offset="1" stop-color="#071521"/></linearGradient>
+ <linearGradient id="cyan" x2="1"><stop stop-color="#1a9fcb"/><stop offset=".5" stop-color="#8bf0ff"/><stop offset="1" stop-color="#22bfe9"/></linearGradient>
+ <linearGradient id="tire" x2="0" y2="1"><stop stop-color="#263746"/><stop offset=".5" stop-color="#05090e"/><stop offset="1" stop-color="#172633"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur stdDeviation="24"/></filter>
+ <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>
+ </defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<ellipse cx="920" cy="465" rx="650" ry="430" fill="url(#glow)"/>
+<path d="M0 690H1600" stroke="#23445e" stroke-width="2" opacity=".6"/>
+<path d="M120 760L1480 760" stroke="#42d9ff" stroke-opacity=".15" stroke-width="2"/>
+<ellipse cx="860" cy="710" rx="570" ry="75" fill="#000" opacity=".7" filter="url(#shadow)"/>
+<g opacity=".18" stroke="#42d9ff" fill="none"><path d="M90 160H510M1090 120H1510M130 210H360M1250 190H1500" stroke-width="2"/><circle cx="1340" cy="270" r="150"/><circle cx="1340" cy="270" r="190"/></g>
+<!-- vehicle body -->
+<g stroke-linejoin="round">
+ <path d="M280 566L335 482Q361 447 425 424L594 365Q646 337 705 330L930 321Q1010 320 1072 366L1193 454Q1241 489 1290 501L1371 531Q1402 543 1415 580L1406 651L1320 683L1200 689L1100 690L518 710L365 676L278 635Z" fill="url(#body)" stroke="#68869b" stroke-width="4"/>
+ <path d="M443 432L612 376Q655 359 707 356L914 349Q974 348 1020 384L1112 457L870 461L481 482Z" fill="url(#hood)" stroke="#7896aa" stroke-width="3"/>
+ <!-- windows -->
+ <path d="M622 380Q659 365 708 365L801 364L796 449L516 469Z" fill="url(#glass)" stroke="#91b6c9" stroke-width="3"/>
+ <path d="M819 364L913 360Q962 360 999 391L1067 451L819 449Z" fill="url(#glass)" stroke="#91b6c9" stroke-width="3"/>
+ <path d="M1091 471L1191 501Q1230 516 1242 544L1094 548Z" fill="#0a1b29" stroke="#7897aa" stroke-width="3"/>
+ <path d="M807 355L807 621" stroke="#8ba4b6" stroke-opacity=".6" stroke-width="4"/>
+ <path d="M1074 379L1092 606" stroke="#8ba4b6" stroke-opacity=".55" stroke-width="4"/>
+ <!-- roof rails -->
+ <path d="M650 333L932 323Q974 324 1007 348" fill="none" stroke="#a9c2d1" stroke-width="7" stroke-linecap="round"/>
+ <path d="M664 326L938 316" fill="none" stroke="#42d9ff" stroke-opacity=".7" stroke-width="3" stroke-linecap="round"/>
+ <!-- front fascia / grille -->
+ <path d="M1190 465L1307 500Q1360 518 1385 557L1397 614L1334 651L1240 641L1197 582Z" fill="#07121d" stroke="#66869c" stroke-width="4"/>
+ <path d="M1241 532L1354 558L1369 595L1260 589Z" fill="#102b40" stroke="#42d9ff" stroke-opacity=".55" stroke-width="3"/>
+ <path d="M1261 548L1354 570M1256 562L1362 584M1264 578L1360 598" stroke="#54788f" stroke-width="5" opacity=".8"/>
+ <path d="M1267 518L1362 547" stroke="#42d9ff" stroke-width="5" stroke-linecap="round"/>
+ <!-- headlight -->
+ <path d="M1196 474L1295 505L1329 528L1231 510Z" fill="#d7faff" stroke="#42d9ff" stroke-width="4"/>
+ <path d="M1212 481L1290 507" stroke="#fff" stroke-width="7" filter="url(#soft)"/>
+ <path d="M1212 481L1290 507" stroke="#e8fdff" stroke-width="3"/>
+ <!-- front bumper -->
+ <path d="M1240 640L1341 650L1398 616L1390 656Q1379 679 1345 689L1240 680Z" fill="#091522" stroke="#47667d" stroke-width="4"/>
+ <path d="M1275 665L1362 671" stroke="url(#cyan)" stroke-width="7" stroke-linecap="round"/>
+ <!-- side sculpting -->
+ <path d="M356 506Q620 472 882 479L1180 481" fill="none" stroke="#9bb1c1" stroke-opacity=".45" stroke-width="4"/>
+ <path d="M365 617Q700 642 1097 620L1263 612" fill="none" stroke="#42d9ff" stroke-opacity=".5" stroke-width="4"/>
+ <path d="M475 490L465 610M790 474L786 625M1100 475L1113 611" stroke="#7896a8" stroke-opacity=".4" stroke-width="3"/>
+ <path d="M916 526L970 524" stroke="#b8d5e2" stroke-width="7" stroke-linecap="round"/>
+ <path d="M1150 530L1191 541" stroke="#b8d5e2" stroke-width="7" stroke-linecap="round"/>
+ <!-- wheel arches -->
+ <path d="M365 650Q373 554 468 545Q565 535 594 637" fill="#050b12" stroke="#617d91" stroke-width="7"/>
+ <path d="M1010 650Q1025 548 1121 544Q1222 539 1252 642" fill="#050b12" stroke="#617d91" stroke-width="7"/>
+ <!-- wheels -->
+ <g>
+  <ellipse cx="479" cy="650" rx="104" ry="112" fill="url(#tire)" stroke="#71889a" stroke-width="5"/>
+  <ellipse cx="479" cy="650" rx="70" ry="78" fill="#152a3a" stroke="#9bb4c3" stroke-width="5"/>
+  <ellipse cx="479" cy="650" rx="48" ry="54" fill="#0a1724" stroke="#42d9ff" stroke-opacity=".8" stroke-width="4"/>
+  <circle cx="479" cy="650" r="18" fill="#8fa9b9"/>
+  <g stroke="#91aebe" stroke-width="8"><path d="M479 580V720M414 625L544 675M424 694L534 606M437 590L521 710"/></g>
+  <ellipse cx="1120" cy="650" rx="105" ry="112" fill="url(#tire)" stroke="#71889a" stroke-width="5"/>
+  <ellipse cx="1120" cy="650" rx="70" ry="78" fill="#152a3a" stroke="#9bb4c3" stroke-width="5"/>
+  <ellipse cx="1120" cy="650" rx="48" ry="54" fill="#0a1724" stroke="#42d9ff" stroke-opacity=".8" stroke-width="4"/>
+  <circle cx="1120" cy="650" r="18" fill="#8fa9b9"/>
+  <g stroke="#91aebe" stroke-width="8"><path d="M1120 580V720M1055 625L1185 675M1065 694L1175 606M1078 590L1162 710"/></g>
+ </g>
+ <!-- lower cladding and rocker -->
+ <path d="M580 686Q815 702 1002 682L1060 698Q819 733 586 716Z" fill="#030a11" stroke="#42627a" stroke-width="3"/>
+ <path d="M620 697L1007 688" stroke="#42d9ff" stroke-width="5" opacity=".85"/>
+ <!-- mirrors -->
+ <path d="M1048 449L1090 438L1110 458L1081 474L1050 466Z" fill="#10283b" stroke="#a3bfce" stroke-width="3"/>
+ <path d="M1080 467L1095 472" stroke="#42d9ff" stroke-width="4"/>
+ <!-- subtle badge -->
+ <path d="M1322 608L1349 616" stroke="#42d9ff" stroke-width="4" stroke-linecap="round"/>
+</g>
+<!-- typography -->
+<g font-family="Arial,Helvetica,sans-serif">
+ <text x="92" y="102" fill="#42d9ff" font-size="22" font-weight="700" letter-spacing="8">PUI89 · VEHICLE INTELLIGENCE</text>
+ <text x="88" y="168" fill="#f2f8ff" font-size="56" font-weight="800" letter-spacing="1">AI GLOBAL SUV</text>
+ <text x="92" y="211" fill="#b7cadb" font-size="22" letter-spacing="3">MEDIUM-SIZE · FIVE-DOOR · CONCEPT STUDY</text>
+ <path d="M92 244H390" stroke="#42d9ff" stroke-width="4"/>
+ <text x="94" y="810" fill="#dff8ff" font-size="18" font-weight="700" letter-spacing="4">DEEP NAVY  /  ELECTRIC CYAN</text>
+ <text x="94" y="844" fill="#8ea5b8" font-size="15" letter-spacing="2">ILLUSTRATIVE DESIGN — NOT A PRODUCTION VEHICLE</text>
+ <text x="1502" y="844" fill="#42d9ff" font-size="14" text-anchor="end" letter-spacing="2">PUI89 · CONCEPT 01</text>
+</g>
+</svg>
