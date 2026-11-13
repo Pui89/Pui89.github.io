@@ -151,8 +151,8 @@
       },
       "repo": "Pui89/AI-Home-Safety-Robot",
       "stageLabel": {
-        "en": "Foundation & concept",
-        "th": "วางรากฐานและแนวคิด"
+        "en": "Architecture defined · early software foundation",
+        "th": "กำหนดสถาปัตยกรรม · พื้นฐานซอฟต์แวร์ระยะแรก"
       },
       "summary": {
         "en": "Product requirements, software contracts and early adapter/test foundations are documented. No physical robot or validated home-safety performance is established.",
@@ -184,7 +184,8 @@
       "commercialReadiness": {
         "percent": 28,
         "reviewedOn": "2026-11-07"
-      }
+      },
+      "maturityLevel": 2
     },
     {
       "id": "ai-nomad",
