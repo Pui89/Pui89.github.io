@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-<title id="title">PUI89 AI Car — Vehicle Intelligence Concept</title>
-<desc id="desc">A premium futuristic electric crossover concept in deep navy and electric cyan, shown from a front three-quarter angle with camera, radar, lidar and proximity sensor zones, driver-assistance intelligence overlays, and simulation-first safety architecture. Concept artwork only, not a built or road-validated vehicle.</desc>
+<title id="title">PUI89 Compact Smart EV — Vehicle Intelligence Concept</title>
+<desc id="desc">A premium futuristic compact electric crossover concept in deep navy and electric cyan, shown from a front three-quarter angle with camera, radar, lidar and proximity sensor zones, driver-assistance intelligence overlays, and simulation-first safety architecture. Concept artwork only, not a built or road-validated vehicle.</desc>
 <defs>
  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#06101d"/><stop offset=".52" stop-color="#10243b"/><stop offset="1" stop-color="#07111f"/></linearGradient>
  <linearGradient id="paint" x1="0" y1="0" x2=".85" y2="1"><stop stop-color="#f4fbff"/><stop offset=".22" stop-color="#a9c4d8"/><stop offset=".52" stop-color="#45657f"/><stop offset="1" stop-color="#172d45"/></linearGradient>
@@ -16,7 +16,7 @@
 <g fill="none" stroke="#42d9ff" stroke-opacity=".22"><path d="M0 730H1600M0 770H1600M0 810H1600M0 850H1600"/><path d="M1100 0V900M1200 0V900M1300 0V900M1400 0V900M1500 0V900"/></g>
 <g font-family="Arial,Helvetica,sans-serif">
  <text x="82" y="86" fill="#42d9ff" font-size="22" font-weight="700" letter-spacing="8">PUI89  /  VEHICLE INTELLIGENCE</text>
- <text x="80" y="168" fill="#f3f7ff" font-size="76" font-weight="800" letter-spacing="-3">AI CAR</text>
+ <text x="80" y="168" fill="#f3f7ff" font-size="52" font-weight="800" letter-spacing="-2">COMPACT SMART EV</text>
  <text x="84" y="211" fill="#b8c7da" font-size="24" letter-spacing="2">HUMAN-DRIVER-FIRST · EVIDENCE-LED · SIMULATION-FIRST</text>
 </g>
 <!-- sensor field -->
