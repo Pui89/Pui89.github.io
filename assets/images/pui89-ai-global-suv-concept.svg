@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 760" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 AI Global SUV — Concept 01</title>
+<desc id="desc">Illustrative medium-size five-seat global SUV concept in deep navy metallic with electric cyan lighting. Not a production vehicle.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#102942"/><stop offset="1" stop-color="#050c17"/></linearGradient>
+ <radialGradient id="halo"><stop stop-color="#1c6685" stop-opacity=".48"/><stop offset="1" stop-color="#0a1727" stop-opacity="0"/></radialGradient>
+ <linearGradient id="body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9eb5c6"/><stop offset=".18" stop-color="#425f79"/><stop offset=".48" stop-color="#142d48"/><stop offset=".78" stop-color="#0b1b2e"/><stop offset="1" stop-color="#6d879c"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#8bb6ca"/><stop offset=".35" stop-color="#294b65"/><stop offset="1" stop-color="#0b1c2e"/></linearGradient>
+ <linearGradient id="cyan"><stop stop-color="#31cce9"/><stop offset=".55" stop-color="#a5f6ff"/><stop offset="1" stop-color="#37cce9"/></linearGradient>
+ <linearGradient id="floor"><stop stop-color="#102d43" stop-opacity="0"/><stop offset=".5" stop-color="#38d8f3" stop-opacity=".38"/><stop offset="1" stop-color="#102d43" stop-opacity="0"/></linearGradient>
+ <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1440" height="760" rx="28" fill="url(#bg)"/>
+<ellipse cx="820" cy="330" rx="650" ry="360" fill="url(#halo)"/>
+<path d="M0 590 Q650 535 1440 590 V760 H0Z" fill="#050b14"/>
+<path d="M70 610 Q720 565 1370 610" fill="none" stroke="#284b64" stroke-width="2" opacity=".55"/>
+<ellipse cx="760" cy="605" rx="520" ry="34" fill="#000" opacity=".72" filter="url(#shadow)"/>
+<ellipse cx="760" cy="604" rx="480" ry="9" fill="url(#floor)" filter="url(#glow)"/>
+<!-- sculpted medium SUV body -->
+<path d="M175 472 L208 411 Q228 378 301 355 L425 321 L532 222 Q565 190 630 184 L851 181 Q914 184 962 231 L1082 351 L1195 383 Q1244 399 1272 446 L1280 506 L1192 534 L1127 548 L1048 548 Q1037 435 941 431 Q842 427 817 548 L548 548 Q534 435 438 431 Q338 428 316 548 L220 529 L170 505Z" fill="url(#body)" stroke="#9bb6c8" stroke-width="4"/>
+<!-- roofline and windows -->
+<path d="M456 316 L548 231 Q576 205 631 201 L846 199 Q901 202 939 245 L1034 344 L850 336 L694 328Z" fill="url(#glass)" stroke="#a9c5d5" stroke-width="4"/>
+<path d="M700 205 L690 330 M866 205 L916 340" stroke="#9cb9ca" stroke-width="4" opacity=".65"/>
+<path d="M557 237 L612 202" stroke="#d9e9f1" stroke-width="3" opacity=".45"/>
+<!-- hood and shoulder highlights -->
+<path d="M213 410 L425 339 L545 347 L830 355 L1080 370 L1192 411" fill="none" stroke="#d3e2eb" stroke-width="5" opacity=".32"/>
+<path d="M270 446 Q580 390 900 405 Q1090 413 1225 455" fill="none" stroke="#9bb5c7" stroke-width="3" opacity=".34"/>
+<path d="M610 367 L610 520 M1000 377 L1020 518" stroke="#8ca8ba" stroke-width="3" opacity=".25"/>
+<!-- front fascia -->
+<path d="M175 472 L220 414 L295 396 L321 449 L300 518 L220 529 L170 505Z" fill="#091827" stroke="#6c899d" stroke-width="3"/>
+<path d="M192 432 Q242 412 292 412" fill="none" stroke="url(#cyan)" stroke-width="10" stroke-linecap="round" filter="url(#glow)"/>
+<path d="M205 468 L290 459 L279 491 L209 498Z" fill="#0b1b2a" stroke="#42627a" stroke-width="3"/>
+<path d="M216 481 L278 474" stroke="#43dff5" stroke-width="5" stroke-linecap="round"/>
+<path d="M193 520 L307 530 L331 548 L218 540Z" fill="#8da5b5" stroke="#c6d5df" stroke-width="2"/>
+<!-- grille geometric signature -->
+<path d="M310 437 L522 430 L536 491 L326 505Z" fill="#0a1725" stroke="#48657b" stroke-width="3"/>
+<path d="M335 450 L510 445 M330 465 L515 460 M327 480 L520 475" stroke="#52748b" stroke-width="3" opacity=".7"/>
+<path d="M350 442 L497 437" stroke="#42d9ff" stroke-width="3" opacity=".8"/>
+<!-- rear lamp -->
+<path d="M1120 370 L1201 396 L1242 433" fill="none" stroke="url(#cyan)" stroke-width="9" stroke-linecap="round" filter="url(#glow)"/>
+<!-- arches -->
+<path d="M316 548 Q326 426 438 426 Q540 426 548 548 M817 548 Q830 426 941 426 Q1040 426 1048 548" fill="#07111d" stroke="#9bb4c4" stroke-width="7"/>
+<!-- wheels -->
+<g fill="#05090f" stroke="#71899a" stroke-width="5">
+ <circle cx="438" cy="548" r="83"/><circle cx="941" cy="548" r="83"/>
+</g>
+<g fill="#1a3044" stroke="#b3c5d0" stroke-width="5">
+ <circle cx="438" cy="548" r="57"/><circle cx="941" cy="548" r="57"/>
+</g>
+<g stroke="#91aabd" stroke-width="8" stroke-linecap="round">
+ <path d="M438 497 V599 M387 548 H489 M402 512 L474 584 M474 512 L402 584"/>
+ <path d="M941 497 V599 M890 548 H992 M905 512 L977 584 M977 512 L905 584"/>
+</g>
+<g fill="#b9cad5"><circle cx="438" cy="548" r="15"/><circle cx="941" cy="548" r="15"/></g>
+<!-- mirrors, roof rails, handles -->
+<path d="M420 320 L466 309 L488 325 L460 340Z" fill="#152c42" stroke="#9bb5c5" stroke-width="3"/>
+<path d="M570 183 L850 180" stroke="#c3d3dd" stroke-width="5" opacity=".6"/>
+<path d="M670 382 L744 382 M868 390 L934 392" stroke="#d3e2eb" stroke-width="5" stroke-linecap="round" opacity=".6"/>
+<text x="78" y="86" fill="#f2f8ff" font-family="Arial,sans-serif" font-size="28" font-weight="800" letter-spacing="8">PUI89</text>
+<path d="M80 104 H230" stroke="#42d9ff" stroke-width="4"/>
+<text x="78" y="158" fill="#f3f7ff" font-family="Arial,sans-serif" font-size="43" font-weight="800" letter-spacing="2">AI GLOBAL SUV</text>
+<text x="82" y="190" fill="#a9c2d2" font-family="Arial,sans-serif" font-size="17" letter-spacing="4">CONCEPT 01 · MEDIUM-SIZE · 5 SEATS</text>
+<text x="78" y="698" fill="#d8e9f5" font-family="Arial,sans-serif" font-size="17" letter-spacing="3">HEV-FIRST · POWERTRAIN-NEUTRAL AI CORE</text>
+<text x="1360" y="698" text-anchor="end" fill="#42d9ff" font-family="Arial,sans-serif" font-size="16" letter-spacing="2">ILLUSTRATIVE CONCEPT ONLY</text>
+</svg>
