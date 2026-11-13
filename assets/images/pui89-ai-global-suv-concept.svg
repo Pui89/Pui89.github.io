@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 AI Global SUV — medium-size global SUV concept</title>
+<desc id="desc">A premium dark navy five-door SUV concept with electric cyan lighting, surrounded by advisory graphics for weather, road awareness, flood-risk avoidance, thermal and battery health. Concept artwork only.</desc>
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#122b46"/><stop offset=".58" stop-color="#071321"/><stop offset="1" stop-color="#040a12"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#1b7899" stop-opacity=".48"/><stop offset="1" stop-color="#0b1b2d" stop-opacity="0"/></radialGradient>
+ <linearGradient id="body" x2=".1" y2="1"><stop stop-color="#53718b"/><stop offset=".18" stop-color="#1d3854"/><stop offset=".58" stop-color="#0c1c30"/><stop offset=".86" stop-color="#213c56"/><stop offset="1" stop-color="#07111f"/></linearGradient>
+ <linearGradient id="glass" x2="0" y2="1"><stop stop-color="#6c9db9"/><stop offset=".4" stop-color="#19354f"/><stop offset="1" stop-color="#081321"/></linearGradient>
+ <linearGradient id="cyan" x2="1"><stop stop-color="#3be0ff"/><stop offset=".5" stop-color="#a8f5ff"/><stop offset="1" stop-color="#28a9ed"/></linearGradient>
+ <linearGradient id="road" x2="0" y2="1"><stop stop-color="#172a3b"/><stop offset="1" stop-color="#03070d"/></linearGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="28"/></filter>
+ <filter id="shadow"><feGaussianBlur stdDeviation="18"/></filter>
+ <filter id="neon"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#42d9ff" stroke-opacity=".08" stroke-width="1"/></pattern>
+</defs>
+<rect width="1600" height="900" fill="url(#sky)"/><rect width="1600" height="900" fill="url(#grid)"/>
+<ellipse cx="840" cy="530" rx="650" ry="300" fill="url(#glow)"/>
+<path d="M0 540Q220 450 390 500T760 470T1200 500T1600 440V710H0Z" fill="#0a2032" opacity=".8"/>
+<g opacity=".35" fill="#17344a"><path d="M0 510l60-75 30 28 52-90 44 57 54-40 70 95 65-45 58 70v90H0Z"/><path d="M1120 500l55-80 32 25 48-83 42 61 46-42 64 82 54-50 90 85v100h-431Z"/></g>
+<path d="M0 700Q390 620 820 675T1600 640V900H0Z" fill="url(#road)"/>
+<path d="M0 804Q420 715 800 765T1600 735" fill="none" stroke="#42d9ff" stroke-opacity=".28" stroke-width="3"/>
+<path d="M80 840Q470 740 800 800T1510 760" fill="none" stroke="#8ceeff" stroke-opacity=".16" stroke-width="2" stroke-dasharray="22 18"/>
+<ellipse cx="810" cy="724" rx="500" ry="68" fill="#000" opacity=".8" filter="url(#shadow)"/>
+<!-- vehicle silhouette -->
+<g id="suv">
+ <path d="M280 622Q302 572 371 550L485 526Q555 426 665 385Q723 363 840 362L1054 371Q1126 377 1184 435L1282 512Q1356 530 1390 582L1410 640Q1407 681 1360 694L1265 708H390L290 678Q260 655 280 622Z" fill="url(#body)" stroke="#7da2bd" stroke-opacity=".7" stroke-width="4"/>
+ <path d="M485 523L584 424Q632 389 714 385L838 384L839 515Z" fill="url(#glass)" stroke="#8db5cb" stroke-width="4"/>
+ <path d="M861 384L1047 392Q1102 398 1148 450L1207 520L861 515Z" fill="url(#glass)" stroke="#8db5cb" stroke-width="4"/>
+ <path d="M845 382V522" stroke="#081421" stroke-width="13"/>
+ <path d="M1190 527L1305 548Q1351 562 1374 600L1390 636L1223 641Z" fill="#0b1b2c" stroke="#6d8da7" stroke-width="3"/>
+ <path d="M314 606Q350 567 409 559L476 550L463 626L299 650Z" fill="#0a1a2b" stroke="#55738d" stroke-width="3"/>
+ <path d="M475 550L1197 550" stroke="#9bb4c6" stroke-opacity=".35" stroke-width="3"/>
+ <path d="M496 558L1186 558" stroke="#42d9ff" stroke-opacity=".45" stroke-width="3"/>
+ <path d="M522 623H1205M522 627H1205" stroke="#6e8da5" stroke-opacity=".5" stroke-width="3"/>
+ <path d="M675 574V616M1036 574V616" stroke="#07111f" stroke-width="5"/>
+ <path d="M697 579h76M1057 579h74" stroke="#8ea8bb" stroke-opacity=".65" stroke-width="3"/>
+ <path d="M1282 562L1360 593L1380 619L1290 615Z" fill="#a6f4ff" filter="url(#neon)" opacity=".9"/>
+ <path d="M310 612L435 597L427 615L303 637Z" fill="url(#cyan)" filter="url(#neon)"/>
+ <path d="M308 641Q410 661 525 664L1185 663Q1300 658 1390 645" fill="none" stroke="url(#cyan)" stroke-width="6" filter="url(#neon)"/>
+ <path d="M610 393Q770 350 1045 396" fill="none" stroke="#9fc3d9" stroke-opacity=".45" stroke-width="4"/>
+ <path d="M610 389L1050 395" stroke="#42d9ff" stroke-opacity=".55" stroke-width="2"/>
+ <path d="M570 535L596 532M1164 537L1192 541" stroke="#c7e2f3" stroke-width="4"/>
+ <path d="M800 366L800 344" stroke="#8defff" stroke-width="5" filter="url(#neon)"/>
+ <path d="M782 345h36" stroke="#8defff" stroke-width="4" filter="url(#neon)"/>
+ <!-- front grille -->
+ <path d="M292 627Q350 610 458 613L447 657Q363 667 297 652Z" fill="#050c14" stroke="#496780" stroke-width="3"/>
+ <path d="M314 630L442 629M310 639L438 638M307 648L434 647" stroke="#42647e" stroke-width="3"/>
+ <path d="M454 613L480 616" stroke="#baf8ff" stroke-width="5" filter="url(#neon)"/>
+ <!-- wheels -->
+ <g>
+  <circle cx="520" cy="664" r="93" fill="#03070b" stroke="#617b90" stroke-width="8"/>
+  <circle cx="520" cy="664" r="66" fill="#101d2b" stroke="#a6b9c9" stroke-width="5"/>
+  <circle cx="520" cy="664" r="17" fill="#7e9aaf" stroke="#d7e9f4" stroke-width="4"/>
+  <g stroke="#7f9db2" stroke-width="7"><path d="M520 602V646M520 682V726M458 664H502M538 664H582M476 620L508 652M532 676L564 708M564 620L532 652M508 676L476 708"/></g>
+  <circle cx="520" cy="664" r="83" fill="none" stroke="#42d9ff" stroke-opacity=".45" stroke-width="3"/>
+  <circle cx="1190" cy="664" r="93" fill="#03070b" stroke="#617b90" stroke-width="8"/>
+  <circle cx="1190" cy="664" r="66" fill="#101d2b" stroke="#a6b9c9" stroke-width="5"/>
+  <circle cx="1190" cy="664" r="17" fill="#7e9aaf" stroke="#d7e9f4" stroke-width="4"/>
+  <g stroke="#7f9db2" stroke-width="7"><path d="M1190 602V646M1190 682V726M1128 664H1172M1208 664H1252M1146 620L1178 652M1202 676L1234 708M1234 620L1202 652M1178 676L1146 708"/></g>
+  <circle cx="1190" cy="664" r="83" fill="none" stroke="#42d9ff" stroke-opacity=".45" stroke-width="3"/>
+ </g>
+ <path d="M387 716H1320" stroke="#42d9ff" stroke-opacity=".22" stroke-width="2"/>
+</g>
+<!-- sensor and advisory overlays -->
+<g fill="none" stroke="#42d9ff" stroke-opacity=".58">
+ <path d="M330 505Q790 175 1315 500" stroke-width="2" stroke-dasharray="9 11"/>
+ <path d="M210 670Q800 850 1460 650" stroke-width="2" stroke-dasharray="6 10"/>
+ <circle cx="830" cy="365" r="22" stroke-width="2"/><circle cx="830" cy="365" r="38" stroke-width="1" opacity=".5"/>
+ <path d="M520 565L420 300M1180 565L1340 300" stroke-dasharray="6 8"/>
+</g>
+<g font-family="Arial,sans-serif">
+ <g transform="translate(70 100)"><rect width="350" height="118" rx="18" fill="#071827" fill-opacity=".88" stroke="#42d9ff" stroke-opacity=".65"/><circle cx="44" cy="44" r="19" fill="none" stroke="#75eaff" stroke-width="3"/><path d="M31 48h26M44 31v26" stroke="#75eaff" stroke-width="3"/><text x="82" y="43" fill="#b9f6ff" font-size="18" font-weight="700">WEATHER AWARENESS</text><text x="82" y="75" fill="#eaf7ff" font-size="16">Rain · visibility · heat context</text></g>
+ <g transform="translate(1170 92)"><rect width="360" height="118" rx="18" fill="#071827" fill-opacity=".88" stroke="#42d9ff" stroke-opacity=".65"/><rect x="28" y="28" width="34" height="55" rx="8" fill="none" stroke="#75eaff" stroke-width="3"/><path d="M38 43h14M38 55h14M38 67h14" stroke="#75eaff" stroke-width="3"/><text x="82" y="43" fill="#b9f6ff" font-size="18" font-weight="700">VEHICLE HEALTH</text><text x="82" y="75" fill="#eaf7ff" font-size="16">Thermal · battery · maintenance</text></g>
+ <g transform="translate(70 735)"><rect width="360" height="108" rx="18" fill="#071827" fill-opacity=".9" stroke="#42d9ff" stroke-opacity=".65"/><path d="M28 65L45 30L62 65Z" fill="none" stroke="#75eaff" stroke-width="3"/><path d="M45 42v11M45 59v2" stroke="#75eaff" stroke-width="3"/><text x="82" y="43" fill="#b9f6ff" font-size="18" font-weight="700">FLOOD-RISK ADVISORY</text><text x="82" y="73" fill="#eaf7ff" font-size="16">Avoid unsafe roads · never wade</text></g>
+ <g transform="translate(1160 735)"><rect width="370" height="108" rx="18" fill="#071827" fill-opacity=".9" stroke="#42d9ff" stroke-opacity=".65"/><path d="M28 65h42M34 53l12-18 12 18" fill="none" stroke="#75eaff" stroke-width="3"/><text x="88" y="43" fill="#b9f6ff" font-size="18" font-weight="700">ROAD AWARENESS</text><text x="88" y="73" fill="#eaf7ff" font-size="16">Surface · obstacles · visibility</text></g>
+</g>
+<text x="800" y="875" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" letter-spacing="5" fill="#9eddec">PUI89 · INTELLIGENCE YOU CAN VERIFY · CONCEPT ART ONLY</text>
+</svg>
