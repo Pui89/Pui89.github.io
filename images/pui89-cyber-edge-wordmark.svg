@@ -1,28 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 128" role="img" aria-labelledby="title desc">
-<title id="title">PUI89 Cyber Edge</title>
-<desc id="desc">Angular titanium N symbol with an electric-cyan upper-left accent, followed by the PUI89 wordmark.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" role="img" aria-labelledby="title desc">
+<title id="title">PUI89</title>
+<desc id="desc">Bold standard titanium-silver capital N with a solid electric-blue upper third on its right pillar, followed by the PUI89 wordmark.</desc>
 <defs>
-  <linearGradient id="titanium" x1="0" y1="0" x2="0.95" y2="1">
-    <stop offset="0" stop-color="#FFFFFF"/>
-    <stop offset=".28" stop-color="#DCE5EE"/>
-    <stop offset=".58" stop-color="#8799AC"/>
-    <stop offset=".82" stop-color="#E6EDF4"/>
-    <stop offset="1" stop-color="#AAB8C7"/>
+  <linearGradient id="titanium" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#F7F9FC"/>
+    <stop offset=".48" stop-color="#D5DEE8"/>
+    <stop offset="1" stop-color="#899BAF"/>
   </linearGradient>
-  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#8AF0FF"/>
-    <stop offset="1" stop-color="#19BDEB"/>
-  </linearGradient>
-  <filter id="edgeGlow" x="-60%" y="-60%" width="220%" height="220%">
-    <feGaussianBlur stdDeviation="4" result="blur"/>
+  <filter id="blueGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="5" result="blur"/>
     <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
 </defs>
-<g transform="translate(8 10)">
-  <path d="M8 12H31L91 91V12H116V108H91L33 34V108H8Z" fill="url(#titanium)" stroke="#F4F8FC" stroke-width="1.4" stroke-linejoin="bevel"/>
-  <path d="M8 12H31L43 28H8Z" fill="url(#cyan)" filter="url(#edgeGlow)"/>
-  <path d="M8 12H31L43 28" fill="none" stroke="#D6FBFF" stroke-width="2.2" stroke-linecap="square"/>
+<g>
+  <path d="M70 35H142L278 215V35H350V265H278L142 85V265H70Z" fill="url(#titanium)"/>
+  <path d="M278 35H350V112H278Z" fill="#087EFF" filter="url(#blueGlow)"/>
+  <path d="M278 35H350V112H278Z" fill="#087EFF"/>
 </g>
-<text x="158" y="91" fill="url(#titanium)" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="800" letter-spacing="2">PUI89</text>
-<path d="M160 108H430" stroke="#42D9FF" stroke-opacity=".58" stroke-width="2"/>
+<text x="445" y="204" fill="#F3F6FA" font-family="Arial, Helvetica, sans-serif" font-size="142" font-weight="850" letter-spacing="-3">PUI89</text>
 </svg>
