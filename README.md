@@ -44,10 +44,23 @@ Each project has its own repository, requirements, risks, and validation gates. 
 | **PUI89 Sentinel** | Multimodal screening and inspection support with authorised human review | [Repository](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | [EN](https://pui89.github.io/screening.html) · [TH](https://pui89.github.io/screening-th.html) |
 | **PUI89 AI HOME** | Indoor home-condition awareness and evidence-led assistance | [Repository](https://github.com/Pui89/AI-Home-Safety-Robot) | [EN](https://pui89.github.io/home.html) · [TH](https://pui89.github.io/home-th.html) |
 | **PUI89 AI NOMAD** | Compact, owner-supervised mobile assistant concept | [Repository](https://github.com/Pui89/AI-Mobile-Assistant-Robot) | [EN](https://pui89.github.io/nomad.html) · [TH](https://pui89.github.io/nomad-th.html) |
-| **PUI89 AI Global SUV** | Medium-size global SUV concept; HEV-first evaluation with powertrain-neutral AI software | [Repository](https://github.com/Pui89/PUI89-Compact-Smart-Car) | [EN](https://pui89.github.io/ai-robot-car.html) · [TH](https://pui89.github.io/ai-robot-car-th.html) |
+| **PUI89 AI Global SUV** | Medium-size global SUV concept; HEV-first evaluation with powertrain-neutral AI software | [Repository](https://github.com/Pui89/PUI89-Compact-Smart-Car) | [EN](https://pui89.github.io/ai-global-suv.html) · [TH](https://pui89.github.io/ai-global-suv-th.html) |
 | **PUI89 EasyRide AI Motorcycle** | Rider-centred mobility intelligence and road-awareness research | [Repository](https://github.com/Pui89/AI-Motorcycle-Robotics) | [EN](https://pui89.github.io/ai-robot-motorcycle.html) · [TH](https://pui89.github.io/ai-robot-motorcycle-th.html) |
 
 **Project maturity:** these are independent development tracks. Some contain implemented software and automated tests; others remain at requirements, architecture, or concept stages. A concept image is not evidence of a built robot. Each repository and project page must state its current evidence and limitations.
+
+
+### PUI89 AI Global SUV — flagship mobility concept
+
+The PUI89 AI Global SUV is a proposed medium-size, five-door global SUV design study. Its current styling direction uses Deep Navy, restrained Electric Cyan lighting and Titanium Silver details. Full Hybrid (HEV) is the first powertrain architecture proposed for evaluation; no production drivetrain has been selected.
+
+**AI concept:** authorised observations → input-quality and provenance checks → Shared AI Core `WorldState` → hazard analysis → safety gate → human-facing advisory. The system is intended to remain advisory-only. The driver retains control; the current software-stage scope has no steering, throttle, braking, propulsion, ECU/CAN or battery-management command path.
+
+**Research areas:** road-scene awareness, weather and route context, flood-risk avoidance, explainable driver advisories, and future read-only vehicle-health awareness where authorised interfaces exist. Missing, stale, conflicting or insufficient evidence must be visible; uncertain conditions must not be presented as safe.
+
+**Evidence boundary:** this is an early software foundation and design concept. It does not establish a physical SUV prototype, validated perception model, road test, selected supplier, production specification, vehicle certification, autonomous-driving capability, safe flood-wading depth, fuel economy, range or performance result.
+
+**Project pages:** [English](https://pui89.github.io/ai-global-suv.html) · [ภาษาไทย](https://pui89.github.io/ai-global-suv-th.html) · [AI Vehicles overview](https://pui89.github.io/ai-vehicles.html).
 
 ## Shared AI Core
 
