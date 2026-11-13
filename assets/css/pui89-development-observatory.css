@@ -44,3 +44,10 @@
 .pui89-observatory__platform{margin:22px 0;padding:22px;border:1px solid rgba(66,217,255,.32);border-radius:16px;background:linear-gradient(135deg,rgba(13,35,54,.96),rgba(9,20,35,.96))}
 .pui89-observatory__platform h3{margin:8px 0;font-size:1.35rem}
 .pui89-observatory__platform>p{color:#c0d0df}
+
+/* Consistent seven-level maturity display in project status cards. */
+.pui89-observatory__maturity{margin:12px 0 8px;padding:12px;border:1px solid rgba(66,217,255,.2);border-radius:11px;background:rgba(7,20,34,.48)}
+.pui89-observatory__maturity-stage{display:block;margin:5px 0 9px;color:#42d9ff;font-size:.84rem;font-weight:800}
+.pui89-observatory__maturity-steps{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px}
+.pui89-observatory__maturity-steps span{height:6px;border-radius:99px;background:#30445f}
+.pui89-observatory__maturity-steps span.is-reached{background:#42d9ff;box-shadow:0 0 7px rgba(66,217,255,.24)}
