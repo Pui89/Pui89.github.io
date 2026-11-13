@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
 <title id="title">PUI89 — Seven non-humanoid AI engineering projects</title>
-<desc id="desc">A dark navy isometric engineering portfolio illustration. Seven distinct non-humanoid project concepts surround a central PUI89 identity: Coconut Harvest AI, Flood Rescue AI, PUI89 Sentinel, AI HOME, AI NOMAD, AI Robot Car and AI Robot Motorcycle. Visuals are conceptual and do not imply validated physical systems.</desc>
+<desc id="desc">A dark navy isometric engineering portfolio illustration. Seven distinct non-humanoid project concepts surround a central PUI89 identity: Coconut Harvest AI, Flood Rescue AI, PUI89 Sentinel, AI HOME, AI NOMAD, PUI89 Compact Smart EV and AI Robot Motorcycle. Visuals are conceptual and do not imply validated physical systems.</desc>
 <defs>
  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071426"/><stop offset=".55" stop-color="#0b2037"/><stop offset="1" stop-color="#030914"/></linearGradient>
  <radialGradient id="aura"><stop stop-color="#174766" stop-opacity=".8"/><stop offset="1" stop-color="#071426" stop-opacity="0"/></radialGradient>
@@ -89,7 +89,7 @@
  <path d="M57 99 76 60h70l28 39-62 22Z" fill="url(#ti)" stroke="#edf6fb" stroke-width="2"/><path d="M85 65h54l15 27H72Z" fill="#0a2a43" stroke="#42eaff" stroke-width="2"/>
  <use href="#wheel" x="62" y="127"/><use href="#wheel" x="161" y="151"/><path d="M112 58V44M106 44h12" stroke="#43eaff" stroke-width="3"/>
 </g>
-<text x="1130" y="852" text-anchor="middle" fill="#f1f8fc" font-family="Arial" font-size="15" font-weight="700" letter-spacing=".8">06  AI ROBOT CAR</text>
+<text x="1130" y="852" text-anchor="middle" fill="#f1f8fc" font-family="Arial" font-size="15" font-weight="700" letter-spacing=".8">06  COMPACT SMART EV</text>
 <text x="1130" y="871" text-anchor="middle" fill="#59eaff" font-family="Arial" font-size="9.5" letter-spacing="1.7">INTELLIGENT MOBILITY CONCEPT</text>
 <!-- 07 AI Robot Motorcycle -->
 <g transform="translate(1260 520)">
