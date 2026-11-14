@@ -26,18 +26,16 @@
   var th=/-th\.html$/.test(en)||en==="th.html";
   var other=pairs[en]|| (th?"index.html":"th.html");
   var t=th?{
-    home:"หน้าหลัก",core:"AI Core",projects:"โครงการ",mobility:"ยานยนต์",insight:"ศูนย์ข้อมูล",about:"เกี่ยวกับ",partners:"ความร่วมมือ",github:"GitHub",language:"English",
-    projectItems:[["เกษตร: Coconut Harvest AI","coconut-th.html"],["กู้ภัย: Flood Rescue AI","flood-rescue-th.html"],["Sentinel Screening AI","screening-th.html"],["HOME","home-th.html"],["NOMAD","nomad-th.html"]],
-    mobilityItems:[["AI Vehicles","ai-vehicles-th.html"],["AI Car","ai-robot-car-th.html"],["AI Motorcycle","ai-robot-motorcycle-th.html"]],
-    insightItems:[["Command Centre","command-centre-th.html"],["Evidence & Validation","evidence-th.html"],["Development Observatory","development-th.html"]],
-    aboutItems:[["Company","company-th.html"],["Growth Roadmap","growth-th.html"],["Research & Innovation","research-th.html"],["Open-source Resources","open-source-resources-th.html"],["Security & Trust","security-th.html"]],
+    home:"หน้าหลัก",engineering:"วิศวกรรม AI",products:"ผลิตภัณฑ์",evidence:"หลักฐานและความคืบหน้า",research:"วิจัยและเทคโนโลยี",collaboration:"ความร่วมมือ",github:"GitHub",language:"English",
+    productItems:[["ภาพรวมยานยนต์ AI","ai-vehicles-th.html"],["Coconut Harvest AI","coconut-th.html"],["Flood Rescue AI","flood-rescue-th.html"],["Sentinel Screening AI","screening-th.html"],["AI HOME","home-th.html"],["AI NOMAD","nomad-th.html"],["AI Car","ai-robot-car-th.html"],["AI Step-Through Motorcycle","ai-robot-motorcycle-th.html"]],
+    evidenceItems:[["Project Command Centre","command-centre-th.html"],["Evidence & Validation","evidence-th.html"],["Development Observatory","development-th.html"],["Growth Roadmap","growth-th.html"]],
+    researchItems:[["Research & Innovation","research-th.html"],["Open-source Resources","open-source-resources-th.html"],["Security & Trust","security-th.html"]],
     footer:"แนวคิดและสถานะซอฟต์แวร์นำเสนอพร้อมหลักฐาน ขีดความสามารถทางกายภาพต้องผ่านการตรวจสอบก่อนใช้งานจริง"
   }:{
-    home:"Home",core:"AI Core",projects:"Projects",mobility:"Mobility",insight:"Observatory",about:"About",partners:"Partnership",github:"GitHub",language:"ไทย",
-    projectItems:[["Agriculture · Coconut Harvest AI","coconut.html"],["Rescue · Flood Rescue AI","flood-rescue.html"],["Sentinel Screening AI","screening.html"],["HOME","home.html"],["NOMAD","nomad.html"]],
-    mobilityItems:[["AI Vehicles","ai-vehicles.html"],["AI Car","ai-robot-car.html"],["AI Motorcycle","ai-robot-motorcycle.html"]],
-    insightItems:[["Project Command Centre","command-centre.html"],["Evidence & Validation","evidence.html"],["Development Observatory","development.html"]],
-    aboutItems:[["Company","company.html"],["Growth Roadmap","growth.html"],["Research & Innovation","research.html"],["Open-source Resources","open-source-resources.html"],["Security & Trust","security.html"]],
+    home:"Home",engineering:"AI Engineering",products:"Products",evidence:"Evidence & Progress",research:"Research & Intelligence",collaboration:"Collaboration",github:"GitHub",language:"ไทย",
+    productItems:[["AI Vehicle Portfolio","ai-vehicles.html"],["Coconut Harvest AI","coconut.html"],["Flood Rescue AI","flood-rescue.html"],["Sentinel Screening AI","screening.html"],["AI HOME","home.html"],["AI NOMAD","nomad.html"],["AI Car","ai-robot-car.html"],["AI Step-Through Motorcycle","ai-robot-motorcycle.html"]],
+    evidenceItems:[["Project Command Centre","command-centre.html"],["Evidence & Validation","evidence.html"],["Development Observatory","development.html"],["Growth Roadmap","growth.html"]],
+    researchItems:[["Research & Innovation","research.html"],["Open-source Resources","open-source-resources.html"],["Security & Trust","security.html"]],
     footer:"Project concepts and software status are presented with evidence. Physical capabilities require independent validation."
   };
   function el(tag,cls,txt){var n=document.createElement(tag);if(cls)n.className=cls;if(txt)n.textContent=txt;return n;}
@@ -47,8 +45,8 @@
     var nav=el("nav","");nav.id="pui89-global-nav";nav.setAttribute("aria-label",th?"เมนูหลัก PUI89":"PUI89 main navigation");
     var brand=el("a","pui89-brand");brand.href=th?"th.html":"index.html";var mark=el("span","pui89-brand-mark","P");brand.appendChild(mark);brand.appendChild(document.createTextNode("PUI89"));
     var links=el("div","pui89-nav-links");
-    links.appendChild(link(t.home,th?"th.html":"index.html"));links.appendChild(link(t.core,th?"ai-core-th.html":"ai-core.html"));
-    links.appendChild(group(t.projects,t.projectItems));links.appendChild(group(t.mobility,t.mobilityItems));links.appendChild(group(t.insight,t.insightItems));links.appendChild(group(t.about,t.aboutItems));links.appendChild(link(t.partners,th?"support-th.html":"support.html"));
+    links.appendChild(link(t.home,th?"th.html":"index.html"));links.appendChild(link(t.engineering,th?"ai-core-th.html":"ai-core.html"));
+    links.appendChild(group(t.products,t.productItems));links.appendChild(group(t.evidence,t.evidenceItems));links.appendChild(group(t.research,t.researchItems));links.appendChild(link(t.collaboration,th?"support-th.html":"support.html"));
     var lang=el("div","pui89-language");lang.setAttribute("role","group");lang.setAttribute("aria-label",th?"เลือกภาษา":"Choose language");
     var active=el("span","is-current",th?"ไทย":"English");active.setAttribute("aria-current","page");active.lang=th?"th":"en";
     var switcher=el("a","",t.language);switcher.href=other;switcher.lang=th?"en":"th";
@@ -68,7 +66,7 @@
     if(oldNavs.length){oldNavs[0].replaceWith(nav);oldNavs.slice(1).forEach(function(n){n.remove();});}
     else document.body.insertBefore(nav,document.body.firstChild);
     if(local.length>1){var localNav=el("div","");localNav.id="pui89-local-nav";localNav.setAttribute("aria-label",th?"ลิงก์ในหน้านี้":"On this page");local.forEach(function(x){var a=el("a","",x.label);a.href=x.href;localNav.appendChild(a);});nav.insertAdjacentElement("afterend",localNav);}
-    var foot=el("div","pui89-site-footer-links");foot.appendChild(link(t.core,th?"ai-core-th.html":"ai-core.html"));foot.appendChild(link(t.insight,th?"evidence-th.html":"evidence.html"));foot.appendChild(link(t.about,th?"security-th.html":"security.html"));foot.appendChild(link(t.partners,th?"support-th.html":"support.html"));var gh=el("a","",t.github);gh.href="https://github.com/Pui89";gh.target="_blank";gh.rel="noopener noreferrer";foot.appendChild(gh);foot.appendChild(el("div","pui89-footer-note",t.footer));
+    var foot=el("div","pui89-site-footer-links");foot.appendChild(link(t.engineering,th?"ai-core-th.html":"ai-core.html"));foot.appendChild(link(t.evidence,th?"evidence-th.html":"evidence.html"));foot.appendChild(link(t.research,th?"research-th.html":"research.html"));foot.appendChild(link(t.collaboration,th?"support-th.html":"support.html"));var gh=el("a","",t.github);gh.href="https://github.com/Pui89";gh.target="_blank";gh.rel="noopener noreferrer";foot.appendChild(gh);foot.appendChild(el("div","pui89-footer-note",t.footer));
     var existingFooter=document.querySelector("footer");if(existingFooter)existingFooter.appendChild(foot);else document.body.appendChild(foot);
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init,{once:true});else init();
