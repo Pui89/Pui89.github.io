@@ -1,1 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="t d"><title id="t">PUI89 AI HOME compact indoor assistant concept</title><desc id="d">Four-wheel compact indoor assistant, small tray, no handle. Proposed dimensions 25–28 cm wide, 30–33 cm long, 30–35 cm high; target mass 4–6 kg; payload target 1–2 kg.</desc><defs><linearGradient id="b" x2="1" y2="1"><stop stop-color="#071426"/><stop offset="1" stop-color="#12334d"/></linearGradient><linearGradient id="s" x2="1" y2="1"><stop stop-color="#42647a"/><stop offset="1" stop-color="#091a2b"/></linearGradient><linearGradient id="m" x2="0" y2="1"><stop stop-color="#f0f7fa"/><stop offset="1" stop-color="#819aaa"/></linearGradient></defs><rect width="1200" height="820" rx="28" fill="url(#b)"/><text x="60" y="66" fill="#76e8fa" font-family="Arial" font-size="22" letter-spacing="5">PUI89 / INDOOR ROBOTICS</text><text x="60" y="128" fill="#fff" font-family="Arial" font-size="56" font-weight="700">AI HOME</text><text x="62" y="166" fill="#b9cedd" font-family="Arial" font-size="21">COMPACT FOUR-WHEEL HOME ASSISTANT · CONCEPT DESIGN</text><ellipse cx="570" cy="664" rx="280" ry="38" fill="#000" opacity=".35"/><g fill="#07111d" stroke="#5a8aa3" stroke-width="5"><ellipse cx="385" cy="575" rx="36" ry="68"/><ellipse cx="752" cy="565" rx="36" ry="68"/><ellipse cx="365" cy="620" rx="23" ry="43"/><ellipse cx="782" cy="606" rx="23" ry="43"/></g><path d="M340 380 Q350 337 405 330 H697 Q747 340 762 385 L808 560 Q817 598 778 615 L402 644 Q360 644 350 608Z" fill="url(#s)" stroke="#5590aa" stroke-width="5"/><path d="M378 398 Q390 360 430 358 H685 Q727 365 740 402 L776 558 Q783 582 752 591 L414 617 Q387 617 380 590Z" fill="none" stroke="#65859a" stroke-width="3"/><path d="M404 330 L690 330 L720 363 L431 394 L390 365Z" fill="url(#m)" stroke="#f0f8fc" stroke-width="4"/><path d="M421 341 H683" stroke="#42d9ff" stroke-width="5"/><path d="M553 330 V274" stroke="#a9c0ce" stroke-width="13" stroke-linecap="round"/><rect x="500" y="218" width="112" height="70" rx="22" fill="url(#m)" stroke="#eaf7fc" stroke-width="4"/><rect x="518" y="236" width="76" height="35" rx="12" fill="#071827" stroke="#42d9ff" stroke-width="2"/><circle cx="542" cy="253" r="8" fill="#7cecff"/><circle cx="570" cy="253" r="5" fill="#fff"/><rect x="520" y="448" width="155" height="75" rx="18" fill="#071827" stroke="#42d9ff" stroke-width="3"/><text x="597" y="480" fill="#83eaff" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700">PUI89</text><text x="597" y="506" fill="#fff" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">HOME</text><path d="M400 580 Q570 610 755 570" fill="none" stroke="#42d9ff" stroke-width="8" stroke-linecap="round"/><g font-family="Arial" fill="#fff"><text x="880" y="232" font-size="22" font-weight="700">Sensor head</text><text x="880" y="260" font-size="16" fill="#b8cedd">Camera / sensing zone proposed</text><path d="M610 250 H850 L870 230" stroke="#6de8f8" fill="none" stroke-width="2"/><text x="890" y="354" font-size="22" font-weight="700">Utility tray</text><text x="890" y="382" font-size="16" fill="#b8cedd">Payload target 1–2 kg</text><path d="M700 355 H850 L875 350" stroke="#6de8f8" fill="none" stroke-width="2"/><text x="890" y="552" font-size="22" font-weight="700">4 protected wheels</text><text x="890" y="580" font-size="16" fill="#b8cedd">Indoor mobility · no handle</text><path d="M780 570 H860 L875 550" stroke="#6de8f8" fill="none" stroke-width="2"/><text x="65" y="250" font-size="21" font-weight="700">Low compact form</text><text x="65" y="278" font-size="16" fill="#b8cedd">Designed for indoor spaces</text></g><rect x="60" y="700" width="1080" height="88" rx="15" fill="#061a2b" stroke="#285a76" stroke-width="2"/><g font-family="Arial" text-anchor="middle"><text x="165" y="730" fill="#79e8fa" font-size="14">WIDTH</text><text x="165" y="762" fill="#fff" font-size="22" font-weight="700">25–28 cm</text><text x="375" y="730" fill="#79e8fa" font-size="14">LENGTH</text><text x="375" y="762" fill="#fff" font-size="22" font-weight="700">30–33 cm</text><text x="585" y="730" fill="#79e8fa" font-size="14">HEIGHT</text><text x="585" y="762" fill="#fff" font-size="22" font-weight="700">30–35 cm</text><text x="795" y="730" fill="#79e8fa" font-size="14">TARGET MASS</text><text x="795" y="762" fill="#fff" font-size="22" font-weight="700">4–6 kg</text><text x="1010" y="730" fill="#79e8fa" font-size="14">MAX / PAYLOAD</text><text x="1010" y="762" fill="#fff" font-size="20" font-weight="700">10 kg / 1–2 kg</text></g><text x="62" y="810" fill="#91a9ba" font-family="Arial" font-size="13">PROPOSED DESIGN TARGETS ONLY · Not built, measured, tested or validated.</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 AI HOME — compact indoor four-wheel assistant</title>
+<desc id="desc">A low-profile indoor home assistant with four protected wheels, a compact rounded body, a small utility deck and a short sensor mast. Proposed envelope 25–28 cm wide, 30–33 cm long and 30–35 cm high. Target mass 4–6 kg with a 6 kg design ceiling. Initial payload target 1 kg.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#061426"/><stop offset="1" stop-color="#12344c"/></linearGradient>
+ <linearGradient id="shell" x2="1" y2="1"><stop stop-color="#31566e"/><stop offset=".55" stop-color="#122b40"/><stop offset="1" stop-color="#081827"/></linearGradient>
+ <linearGradient id="deck" x2="0" y2="1"><stop stop-color="#f4f8fa"/><stop offset="1" stop-color="#829aa8"/></linearGradient>
+ <linearGradient id="cyan" x2="1"><stop stop-color="#1bbbdc"/><stop offset="1" stop-color="#83efff"/></linearGradient>
+ <filter id="shadow"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1200" height="820" rx="28" fill="url(#bg)"/>
+<text x="64" y="70" fill="#78eaff" font-family="Arial,sans-serif" font-size="21" letter-spacing="5">PUI89 / INDOOR ROBOTICS</text>
+<text x="64" y="132" fill="#fff" font-family="Arial,sans-serif" font-size="56" font-weight="700">AI HOME</text>
+<text x="66" y="172" fill="#b9d0df" font-family="Arial,sans-serif" font-size="20" letter-spacing="1">COMPACT INDOOR HOME ASSISTANT · FOUR-WHEEL FORM</text>
+<ellipse cx="555" cy="680" rx="290" ry="34" fill="#000" opacity=".42" filter="url(#shadow)"/>
+<!-- low sensor mast -->
+<path d="M555 338 V267" stroke="#9eb7c6" stroke-width="13" stroke-linecap="round"/>
+<rect x="494" y="220" width="122" height="62" rx="19" fill="url(#deck)" stroke="#e8f6fb" stroke-width="4"/>
+<rect x="512" y="237" width="86" height="30" rx="10" fill="#071a2a" stroke="#43d9f4" stroke-width="2"/>
+<circle cx="538" cy="252" r="7" fill="#80efff"/><circle cx="570" cy="252" r="5" fill="#fff"/>
+<!-- compact utility deck -->
+<path d="M355 390 Q365 352 407 347 H704 Q746 352 759 393 L792 562 Q800 599 765 614 L390 640 Q353 638 346 602Z" fill="url(#shell)" stroke="#4b829e" stroke-width="5"/>
+<path d="M390 395 Q399 370 430 369 H686 Q722 372 732 404 L766 559 Q772 582 747 590 L407 614 Q381 612 376 589Z" fill="none" stroke="#5d7f94" stroke-width="3"/>
+<path d="M409 349 L700 349 L729 380 L433 411 L385 381Z" fill="url(#deck)" stroke="#d8e6ec" stroke-width="4"/>
+<path d="M421 361 H691" stroke="url(#cyan)" stroke-width="5" stroke-linecap="round"/>
+<!-- front fascia -->
+<rect x="492" y="455" width="154" height="74" rx="17" fill="#061827" stroke="#32c9e8" stroke-width="3"/>
+<text x="569" y="485" text-anchor="middle" fill="#8cefff" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="2">PUI89</text>
+<text x="569" y="511" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="22" font-weight="700">HOME</text>
+<path d="M392 578 Q565 614 753 575" fill="none" stroke="#29c8e7" stroke-width="7" stroke-linecap="round"/>
+<!-- four protected wheels -->
+<g fill="#050f1a" stroke="#62879c" stroke-width="4">
+ <rect x="328" y="522" width="70" height="125" rx="28"/>
+ <rect x="740" y="514" width="70" height="125" rx="28"/>
+ <rect x="390" y="620" width="75" height="48" rx="19"/>
+ <rect x="684" y="611" width="75" height="48" rx="19"/>
+</g>
+<g fill="#1a3447" stroke="#8aaabd" stroke-width="3">
+ <rect x="343" y="540" width="40" height="88" rx="17"/>
+ <rect x="755" y="532" width="40" height="88" rx="17"/>
+ <rect x="405" y="629" width="43" height="29" rx="12"/>
+ <rect x="699" y="620" width="43" height="29" rx="12"/>
+</g>
+<!-- annotation leaders -->
+<g font-family="Arial,sans-serif">
+ <path d="M610 248 H843 L872 220" stroke="#70e7f8" stroke-width="2" fill="none"/>
+ <text x="885" y="218" fill="#fff" font-size="21" font-weight="700">Low sensor mast</text>
+ <text x="885" y="245" fill="#b4cbd9" font-size="16">Camera / sensing position proposed</text>
+ <path d="M700 371 H844 L872 348" stroke="#70e7f8" stroke-width="2" fill="none"/>
+ <text x="885" y="347" fill="#fff" font-size="21" font-weight="700">Small utility deck</text>
+ <text x="885" y="374" fill="#b4cbd9" font-size="16">Initial payload target: 1 kg</text>
+ <path d="M780 584 H845 L872 555" stroke="#70e7f8" stroke-width="2" fill="none"/>
+ <text x="885" y="554" fill="#fff" font-size="21" font-weight="700">Four protected wheels</text>
+ <text x="885" y="581" fill="#b4cbd9" font-size="16">Indoor floors · no pull handle</text>
+ <text x="65" y="250" fill="#fff" font-size="21" font-weight="700">Low, compact footprint</text>
+ <text x="65" y="278" fill="#b4cbd9" font-size="16">Designed for indoor circulation</text>
+</g>
+<rect x="64" y="712" width="1072" height="76" rx="15" fill="#061827" stroke="#285a76" stroke-width="2"/>
+<g font-family="Arial,sans-serif" text-anchor="middle">
+ <text x="190" y="740" fill="#78eaff" font-size="13" letter-spacing="2">WIDTH</text><text x="190" y="770" fill="#fff" font-size="21" font-weight="700">25–28 cm</text>
+ <text x="410" y="740" fill="#78eaff" font-size="13" letter-spacing="2">LENGTH</text><text x="410" y="770" fill="#fff" font-size="21" font-weight="700">30–33 cm</text>
+ <text x="630" y="740" fill="#78eaff" font-size="13" letter-spacing="2">HEIGHT</text><text x="630" y="770" fill="#fff" font-size="21" font-weight="700">30–35 cm</text>
+ <text x="850" y="740" fill="#78eaff" font-size="13" letter-spacing="2">TARGET MASS</text><text x="850" y="770" fill="#fff" font-size="21" font-weight="700">4–6 kg</text>
+ <text x="1040" y="740" fill="#78eaff" font-size="13" letter-spacing="2">DESIGN CEILING</text><text x="1040" y="770" fill="#fff" font-size="21" font-weight="700">6 kg</text>
+</g>
+<text x="65" y="808" fill="#91a9ba" font-family="Arial,sans-serif" font-size="13">PROPOSED DESIGN ONLY · Not built, weighed, tested or validated. Payload: 1 kg initial target; 2 kg stretch target requires separate validation.</text>
+</svg>
