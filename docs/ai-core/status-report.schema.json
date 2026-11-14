@@ -1,0 +1,448 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pui89.github.io/schemas/pui89-ai-core-status-report.schema.json",
+  "title": "PUI89 AI Core Project Status Report",
+  "description": "Evidence-led status record for a PUI89 project. A status report is not a safety certificate or deployment approval.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "project",
+    "report",
+    "readiness",
+    "capabilities",
+    "evidence",
+    "risks"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "project": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "repository"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "repository": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "report": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "generated_at",
+        "scope",
+        "commit"
+      ],
+      "properties": {
+        "generated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "commit": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9a-f]{7,40}$"
+        },
+        "workflow_run": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "reporting_mode": {
+          "type": "string",
+          "enum": [
+            "automated",
+            "manual",
+            "mixed"
+          ]
+        }
+      }
+    },
+    "readiness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "software",
+        "data",
+        "model",
+        "simulation",
+        "hardware",
+        "safety",
+        "deployment"
+      ],
+      "properties": {
+        "software": {
+          "$ref": "#/$defs/status"
+        },
+        "data": {
+          "$ref": "#/$defs/status"
+        },
+        "model": {
+          "$ref": "#/$defs/status"
+        },
+        "simulation": {
+          "$ref": "#/$defs/status"
+        },
+        "hardware": {
+          "$ref": "#/$defs/status"
+        },
+        "safety": {
+          "$ref": "#/$defs/status"
+        },
+        "deployment": {
+          "$ref": "#/$defs/status"
+        }
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "description",
+          "status",
+          "evidence_level",
+          "limitations"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "$ref": "#/$defs/status"
+          },
+          "evidence_level": {
+            "$ref": "#/$defs/evidenceLevel"
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "kind",
+          "description",
+          "result",
+          "limitations"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "test",
+              "simulation",
+              "dataset_audit",
+              "benchmark",
+              "field_trial",
+              "review",
+              "other"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "result": {
+            "type": "string",
+            "enum": [
+              "passed",
+              "failed",
+              "partial",
+              "informational",
+              "not_verified"
+            ]
+          },
+          "source": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "uri"
+          },
+          "run_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "commit": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[0-9a-f]{7,40}$"
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "data_provenance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "dataset_id",
+          "source_status",
+          "licence_status",
+          "annotation_status",
+          "split_status"
+        ],
+        "properties": {
+          "dataset_id": {
+            "type": "string"
+          },
+          "source_status": {
+            "$ref": "#/$defs/status"
+          },
+          "licence_status": {
+            "type": "string",
+            "enum": [
+              "verified",
+              "pending",
+              "restricted",
+              "unknown",
+              "not_applicable"
+            ]
+          },
+          "annotation_status": {
+            "type": "string",
+            "enum": [
+              "verified",
+              "partial",
+              "pending",
+              "not_applicable"
+            ]
+          },
+          "split_status": {
+            "type": "string",
+            "enum": [
+              "leakage_checked",
+              "not_checked",
+              "not_applicable"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "uncertainty": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source",
+          "condition",
+          "handling"
+        ],
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "condition": {
+            "type": "string",
+            "enum": [
+              "missing",
+              "stale",
+              "noisy",
+              "conflicting",
+              "out_of_distribution",
+              "unknown"
+            ]
+          },
+          "handling": {
+            "type": "string"
+          },
+          "residual_risk": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "description",
+          "severity",
+          "status",
+          "mitigation"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high",
+              "critical",
+              "unassessed"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "open",
+              "mitigating",
+              "closed",
+              "accepted",
+              "unassessed"
+            ]
+          },
+          "mitigation": {
+            "type": "string"
+          },
+          "owner": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "retest_evidence": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "costs_and_dependencies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "type",
+          "status"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "licence",
+              "compute",
+              "hardware",
+              "service",
+              "data",
+              "maintenance",
+              "other"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "free",
+              "paid",
+              "planned",
+              "unknown",
+              "not_applicable"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "overall_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$defs": {
+    "status": {
+      "type": "string",
+      "enum": [
+        "implemented",
+        "tested",
+        "simulated",
+        "proposed",
+        "blocked",
+        "not_assessed",
+        "not_applicable"
+      ]
+    },
+    "evidenceLevel": {
+      "type": "string",
+      "enum": [
+        "E0_concept",
+        "E1_software",
+        "E2_controlled_simulation",
+        "E3_bench_lab",
+        "E4_field_pilot",
+        "E5_independent_validation"
+      ]
+    }
+  }
+}
