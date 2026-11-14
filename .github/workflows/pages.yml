@@ -49,7 +49,7 @@ jobs:
           done <<'PROJECTS'
           coconut.html|coconut-th.html
           flood-rescue.html|flood-rescue-th.html
-          screening.html|screening-th.html
+          sentinel.html|sentinel-th.html
           home.html|home-th.html
           nomad.html|nomad-th.html
           ai-global-suv.html|ai-global-suv-th.html
