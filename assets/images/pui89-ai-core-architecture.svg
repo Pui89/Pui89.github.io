@@ -1,8 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
-<title id="title">PUI89 AI Core architecture</title><desc id="desc">Application adapters feed evidence into a shared world state, uncertainty and safety evaluation, simulation-only planner, and auditable report output.</desc>
-<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#172a42"/><stop offset="1" stop-color="#0b1220"/></linearGradient><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L9 3 L0 6" fill="none" stroke="#9bd4c5" stroke-width="1.5"/></marker></defs>
-<rect width="1200" height="650" rx="28" fill="url(#bg)"/>
-<g fill="#14263b" stroke="#49647d" stroke-width="2"><rect x="45" y="85" width="220" height="100" rx="16"/><rect x="45" y="275" width="220" height="100" rx="16"/><rect x="45" y="465" width="220" height="100" rx="16"/><rect x="350" y="85" width="235" height="480" rx="20"/><rect x="675" y="85" width="235" height="210" rx="20"/><rect x="675" y="345" width="235" height="220" rx="20"/><rect x="1000" y="205" width="160" height="240" rx="18"/></g>
-<g stroke="#9bd4c5" stroke-width="3" fill="none" marker-end="url(#arrow)"><path d="M265 135 H350"/><path d="M265 325 H350"/><path d="M265 515 H350"/><path d="M585 205 H675"/><path d="M585 440 H675"/><path d="M910 190 H1000"/><path d="M910 455 H1000"/></g>
-<g font-family="system-ui,sans-serif" fill="#eef4ff" text-anchor="middle"><g font-size="19" font-weight="750"><text x="155" y="128">Coconut adapter</text><text x="155" y="318">Flood adapter</text><text x="155" y="508">Screening adapter</text><text x="467" y="145">World state</text><text x="792" y="145">Uncertainty &amp;</text><text x="792" y="171">safety evaluation</text><text x="792" y="410">Task planner</text><text x="1080" y="285">Audit</text><text x="1080" y="312">reports</text></g><g font-size="14" fill="#c4d5e5"><text x="155" y="157">Project-specific inputs</text><text x="155" y="347">Project-specific inputs</text><text x="155" y="537">Project-specific inputs</text><text x="467" y="205">Objects · timestamps</text><text x="467" y="233">observations · status</text><text x="467" y="261">missing / stale data</text><text x="467" y="289">tracked state snapshot</text><text x="792" y="215">Confidence bounds</text><text x="792" y="241">sensor health</text><text x="792" y="267">unknown-state handling</text><text x="792" y="480">Proposal only</text><text x="792" y="506">Human review required</text><text x="1080" y="350">JSON</text><text x="1080" y="376">failure codes</text><text x="1080" y="402">run metadata</text></g></g>
-<text x="600" y="620" fill="#9bd4c5" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15">Simulation-first · fail-safe defaults · no direct hardware actuation</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 Shared AI Core architecture for all seven independent projects</title>
+<desc id="desc">Seven separate project adapters—Coconut Harvest AI, Extreme Flood Rescue AI, PUI89 Sentinel, AI HOME, AI NOMAD, AI Global SUV and AI Step-Through Scooter—connect to reusable shared AI Core interfaces for perception, world state, uncertainty, safety evaluation, simulation-first task proposals and auditable evidence. Each project retains its own requirements, validation gates and safety policy. No direct hardware actuation is shown.</desc>
+<defs>
+  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#172a42"/><stop offset="1" stop-color="#0b1220"/></linearGradient>
+  <linearGradient id="core" x2="1" y2="1"><stop stop-color="#225c62"/><stop offset="1" stop-color="#183c4d"/></linearGradient>
+  <linearGradient id="card" x2="1" y2="1"><stop stop-color="#1a3049"/><stop offset="1" stop-color="#112238"/></linearGradient>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L9 3 L0 6" fill="none" stroke="#9bd4c5" stroke-width="1.5"/></marker>
+</defs>
+<rect width="1200" height="820" rx="28" fill="url(#bg)"/>
+<text x="600" y="42" text-anchor="middle" fill="#9bd4c5" font-family="system-ui,sans-serif" font-size="17" font-weight="750" letter-spacing="2">ONE REUSABLE FOUNDATION · SEVEN INDEPENDENT PROJECTS</text>
+<g fill="url(#card)" stroke="#49647d" stroke-width="2">
+  <rect x="40" y="65" width="390" height="70" rx="14"/>
+  <rect x="40" y="154" width="390" height="70" rx="14"/>
+  <rect x="40" y="243" width="390" height="70" rx="14"/>
+  <rect x="40" y="332" width="390" height="70" rx="14"/>
+  <rect x="40" y="421" width="390" height="70" rx="14"/>
+  <rect x="40" y="510" width="390" height="70" rx="14"/>
+  <rect x="40" y="599" width="390" height="70" rx="14"/>
+  <rect x="490" y="160" width="330" height="430" rx="24" fill="url(#core)" stroke="#9bd4c5" stroke-width="3"/>
+  <rect x="875" y="205" width="285" height="340" rx="22"/>
+</g>
+<g stroke="#9bd4c5" stroke-width="2.5" fill="none" opacity=".9" marker-end="url(#arrow)">
+  <path d="M430 100 H490"/>
+  <path d="M430 189 H490"/>
+  <path d="M430 278 H490"/>
+  <path d="M430 367 H490"/>
+  <path d="M430 456 H490"/>
+  <path d="M430 545 H490"/>
+  <path d="M430 634 H490"/>
+  <path d="M820 375 H875"/>
+</g>
+<g font-family="system-ui,sans-serif" fill="#eef4ff">
+  <g font-size="13" fill="#9bd4c5" font-weight="800">
+    <text x="62" y="91">PROJECT ADAPTER 01</text>
+    <text x="62" y="180">PROJECT ADAPTER 02</text>
+    <text x="62" y="269">PROJECT ADAPTER 03</text>
+    <text x="62" y="358">PROJECT ADAPTER 04</text>
+    <text x="62" y="447">PROJECT ADAPTER 05</text>
+    <text x="62" y="536">PROJECT ADAPTER 06</text>
+    <text x="62" y="625">PROJECT ADAPTER 07</text>
+  </g>
+  <g font-size="18" font-weight="800">
+    <text x="62" y="119">Coconut Harvest AI</text>
+    <text x="62" y="208">Extreme Flood Rescue AI</text>
+    <text x="62" y="297">PUI89 Sentinel</text>
+    <text x="62" y="386">AI HOME</text>
+    <text x="62" y="475">AI NOMAD</text>
+    <text x="62" y="564">AI Global SUV</text>
+    <text x="62" y="653">AI Step-Through Scooter</text>
+  </g>
+  <g text-anchor="middle">
+    <text x="655" y="205" font-size="14" letter-spacing="2" fill="#9bd4c5" font-weight="800">SHARED ENGINEERING FOUNDATION</text>
+    <text x="655" y="252" font-size="31" font-weight="850">PUI89 Shared AI Core</text>
+    <g font-size="17" fill="#d2e3ef">
+      <text x="655" y="315">Perception &amp; Task Intelligence</text>
+      <text x="655" y="355">Shared World State &amp; Contracts</text>
+      <text x="655" y="395">Uncertainty &amp; Abstention</text>
+      <text x="655" y="435">Project-Bounded Safety Gates</text>
+      <text x="655" y="475">Simulation &amp; Evaluation</text>
+      <text x="655" y="515">Evidence &amp; Audit Trail</text>
+    </g>
+    <text x="655" y="558" font-size="13" fill="#9bd4c5" font-weight="800">REUSABLE INFRASTRUCTURE · NOT A PRODUCT LINE</text>
+    <text x="1017" y="250" font-size="17" fill="#9bd4c5" font-weight="800" letter-spacing="1">PROJECT-SPECIFIC</text>
+    <text x="1017" y="277" font-size="17" fill="#9bd4c5" font-weight="800" letter-spacing="1">OUTPUTS</text>
+    <g font-size="16" fill="#d2e3ef">
+      <text x="1017" y="333">Evidence-backed</text>
+      <text x="1017" y="359">observations</text>
+      <text x="1017" y="407">Bounded action</text>
+      <text x="1017" y="433">proposals</text>
+      <text x="1017" y="481">Uncertainty,</text>
+      <text x="1017" y="507">failure &amp; audit reports</text>
+    </g>
+  </g>
+</g>
+<text x="600" y="724" text-anchor="middle" fill="#9bd4c5" font-family="system-ui,sans-serif" font-size="16" font-weight="750">Each project keeps its own mission, requirements, evidence and validation path.</text>
+<text x="600" y="758" text-anchor="middle" fill="#c4d5e5" font-family="system-ui,sans-serif" font-size="14">Conceptual architecture only · human review and project-specific safety policies remain mandatory</text>
+<text x="600" y="785" text-anchor="middle" fill="#c4d5e5" font-family="system-ui,sans-serif" font-size="14">No physical capability, direct hardware actuation or field validation is implied.</text>
+</svg>
