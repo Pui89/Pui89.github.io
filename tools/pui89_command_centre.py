@@ -26,7 +26,20 @@ PROJECTS = [
     ("PUI89 AI Global SUV", "Pui89/PUI89-AI-Global-SUV", "Medium-size SUV concept; human-driver-first mobility intelligence and advisory-only software research."),
     ("EasyRide AI Motorcycle", "Pui89/AI-Motorcycle-Robotics", "Rider-centred step-through mobility concept, safety advisories and simulation-first evaluation."),
 ]
-PLATFORM = ("Shared AI Core", "Pui89/PUI89-Shared-AI-Core", "Shared contracts, orchestration, compute intelligence, evidence gates and reusable engineering infrastructure; not an eighth product.")
+PLATFORM = {
+    "name": "Shared AI Core",
+    "repository": "Private platform repository — not publicly monitored",
+    "url": None,
+    "focus": "Shared contracts, orchestration, compute intelligence, evidence gates and reusable engineering infrastructure; not an eighth product.",
+    "status": "NOT_PUBLICLY_MONITORED",
+    "default_branch": None,
+    "latest_commit": None,
+    "latest_commit_url": None,
+    "latest_workflows": [],
+    "non_default_branch_run_count": None,
+    "key_workflows": [],
+    "warnings": ["The platform repository is private; public reporting does not expose its repository activity."],
+}
 API = "https://api.github.com"
 
 
@@ -151,7 +164,7 @@ def collect(project: tuple[str, str, str]) -> dict:
 def main() -> int:
     timestamp = datetime.now(timezone.utc).isoformat()
     projects = [collect(project) for project in PROJECTS]
-    platform = collect(PLATFORM)
+    platform = PLATFORM
     report = {
         "generated_at_utc": timestamp,
         "mode": "read-only public GitHub status summary",
@@ -213,7 +226,7 @@ def main() -> int:
         "",
         "## Shared AI Core — platform infrastructure (not an eighth product)",
         "",
-        "- Repository: [{}]({})".format(platform["repository"], platform["url"]),
+        "- Repository: {}".format(platform["repository"]),
         "- Status: {}".format(platform["status"]),
         "- Latest default-branch commit: {}".format(platform_commit),
         "- Latest workflow summary: {}".format(platform_workflows),
