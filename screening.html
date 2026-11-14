@@ -132,6 +132,20 @@ a:hover{color:#B8F2FF}
     <li>Capture timestamped RGB, depth, thermal and other authorised sensor evidence; associate it with the container/task only after identifier verification by an authorised workflow.</li>
     <li>Flag visible anomalies for human review; AI output is not proof of wrongdoing or chemical identity.</li>
   </ul>
+  <h3>Difficult container environments</h3>
+  <table>
+    <thead><tr><th>Environment</th><th>Required capability</th></tr></thead>
+    <tbody>
+      <tr><td>Narrow entrance</td><td>Accurate approach and alignment</td></tr>
+      <tr><td>Raised floor threshold</td><td>Controlled step-over</td></tr>
+      <tr><td>Dark interior</td><td>Low-light imaging and onboard illumination</td></tr>
+      <tr><td>Crowded cargo</td><td>Narrow-space navigation and safe retreat</td></tr>
+      <tr><td>Uneven floor</td><td>Adaptive foot placement and slip detection</td></tr>
+      <tr><td>Long container</td><td>Mapping and return-route planning</td></tr>
+      <tr><td>Lost communication</td><td>Safe hold and recovery procedure; no blind continuation</td></tr>
+    </tbody>
+  </table>
+  <p>If Sentinel cannot confirm clearance, stable footing, localisation or a viable exit route, it must stop safely and request operator assistance. These are proposed requirements pending representative testing, not validated capabilities.</p>
   <p><strong>Entry safety:</strong> containers may contain fumigants, oxygen-deficient or hazardous atmospheres, chemicals, heat, dust, unstable cargo or other risks that cameras and LiDAR cannot reliably detect. Entry is conditional on a site-specific risk assessment and confirmation by the responsible port operator. Sentinel is not an atmosphere-safety certification device; dedicated calibrated instruments and approved procedures are required where relevant.</p>
   <p><strong>X-ray boundary:</strong> X-ray emission is prohibited while Sentinel is walking, entering, exiting or navigating. Scanning is a separate stationary operation requiring a certified complete system, controlled-area arrangements, independent safety permissives, qualified operator authorisation and applicable site/regulatory approvals. Suitability for use inside a container must be assessed for the exact equipment and site.</p>
   <p><em>These are proposed requirements, not validated capabilities or an approved port deployment. See the <a href="https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/blob/docs/sentinel-engineering-spec-xray-payload/docs/SENTINEL_MOBILE_XRAY_ENGINEERING_SPEC_V0.1.md">engineering specification and port/container validation gates</a>.</em></p>
