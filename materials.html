@@ -77,6 +77,22 @@
 </div>
 <p class="note">No supplier quotes, current stock, landed prices or manufacturing-country claims are made here. Prefer non-Chinese-origin supply only when the specific part and supplied lot have verifiable origin evidence and meet the engineering requirements. Do not treat a candidate as selected or purchase-ready.</p>
 </section>
+<section class="section" id="chip-price-guide">
+<h2>Chip pricing and cost method · Read before comparing</h2>
+<p class="muted">No chip models have been approved for the seven products, and there are no complete, verifiable quotations for the portfolio. We therefore do not publish figures that could be mistaken for actual purchase prices. The chip list above describes engineering needs, not a purchase order.</p>
+<div class="grid">
+<div class="card"><h3>Verified price</h3><p class="muted">Publish only when supported by the manufacturer or an authorized distributor, with exact part number, quantity, currency, date/expiry and tax/shipping terms.</p></div>
+<div class="card"><h3>Planning estimate</h3><p class="muted">For budgeting only. Show a range, source, date and confidence level. Never label it a quotation or actual purchase price.</p></div>
+<div class="card"><h3>Not priced</h3><p class="muted">Use when the model is not selected or no verifiable price source exists. Do not guess; retain the status NOT PRICED.</p></div>
+</div>
+<div class="table-scroll"><table><thead><tr><th>Price level</th><th>Evidence required</th><th>PUI89 treatment</th></tr></thead><tbody>
+<tr><td>Standalone IC unit price</td><td>Full part number, package, order quantity, distributor, date and currency</td><td>Use only when designing a board or actually buying the IC separately</td></tr>
+<tr><td>Module / development-board price</td><td>Exact board model, included items, seller, stock and date</td><td>Use as the primary cost when buying a finished board; chips already mounted are included</td></tr>
+<tr><td>Landed cost in Thailand</td><td>Item price + freight + insurance + duty/tax + customs/brokerage + local delivery</td><td>Keep separate from storefront price; mark NOT VERIFIED until all inputs are evidenced</td></tr>
+</tbody></table></div>
+<p class="note"><strong>No-double-counting rule:</strong> When buying a complete AI compute board, camera, LiDAR, GNSS, IMU or BMS module, count the module price once. Do not add its onboard CPU, memory, CMOS, IMU or power IC again unless evidence shows that the component must be purchased separately.</p>
+<p class="note"><strong>Current chip-register price status:</strong> NOT PRICED / NOT SELECTED wherever the exact chip model and matching quotation are unavailable. The project BOM budgets are equipment-level planning allowances, not standalone chip prices, and must not be compared as if they were.</p>
+</section>
 <section class="section" id="project-boms">
 <h2>Project-specific bills of materials (BOMs)</h2>
 <p class="muted">Preliminary quantities for one research prototype per product. These are planning estimates, not frozen specifications or live quotations. Shared items are reused, not bought seven times. Do not combine all project ranges into one purchase order.</p>
