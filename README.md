@@ -87,6 +87,10 @@ The Shared AI Core is being integrated incrementally. The presence of a shared c
 
 **Shared AI Core overview:** [English](https://pui89.github.io/ai-core.html) · [ภาษาไทย](https://pui89.github.io/ai-core-th.html)
 
+## Innovation strategy
+
+PUI89 evaluates emerging technologies by user value, differentiation, feasibility, safety, evidence, and product fit — not by hype. See the [PUI89 Innovation Selection Framework](docs/innovation-selection-framework.md) for the seven decision gates, Technology Radar states, portfolio application, and 1–5 year execution discipline.
+
 ## Engineering method
 
 PUI89 uses a staged workflow:
