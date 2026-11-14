@@ -16,6 +16,24 @@
 <span class="status">Concept stage · not built or validated</span>
 <div class="art"><img src="images/homeguard-ai-home-concept.svg" alt="PUI89 AI Home Assistant Robot — four-wheel indoor concept" loading="eager" decoding="async" fetchpriority="high"></div>
 </section>
+<section id="compact-spec">
+<h2>Compact indoor robot — proposed design targets</h2>
+<div class="grid">
+<article class="card"><strong>External dimensions</strong><p>Width 25–28 cm · depth 30–33 cm · height 30–35 cm</p></article>
+<article class="card"><strong>Complete robot mass</strong><p>4–6 kg target, including battery. 10 kg is the maximum design ceiling, not the target.</p></article>
+<article class="card"><strong>Initial payload target</strong><p>1–2 kg, separate from robot mass and subject to stability and drive testing.</p></article>
+<article class="card"><strong>Mobility</strong><p>Four wheels · indoor use · supervised operation</p></article>
+</div>
+<p><strong>Design direction:</strong> compact, low-profile and serviceable. Keep heavy components low; minimise unnecessary brackets, duplicate electronics and optional accessories. Preserve structural strength, battery/electrical protection, wheel guarding, ventilation and safe stopping.</p>
+<p><strong>Status: PROPOSED / NOT MEASURED / NOT VALIDATED.</strong> Dimensions and mass are design targets, not prototype measurements. The complete envelope includes wheels and fixed sensor housings. Robot mass includes all installed hardware; payload is separate. CAD fit, component-level mass ledger, centre of gravity, stopping, thermal and payload tests are required before design freeze.</p>
+</section>
+<section id="pricing-status">
+<h2>Pricing and prototype cost</h2>
+<p><strong>Retail price: not announced.</strong> AI HOME is still at the design and hardware-research stage; there is no validated prototype or complete bill of materials.</p>
+<p>Public component listings are being compared, but partial component subtotals are not a complete robot cost or a product selling price. Battery, drive electronics, chassis, enclosure, wiring, safety hardware, fabrication, testing, warranty, support, taxes and delivery must be costed before a responsible price can be published.</p>
+<p>PUI89 will publish a price only after a traceable BOM and Thailand landed-cost estimate have been reviewed. No orders or sales are currently offered.</p>
+</section>
+
 <section class="pui89-observatory__individual" aria-label="PUI89 development progress"><div data-pui89-observatory data-view="project" data-project-id="ai-home">
   <section class="pui89-observatory pui89-observatory__individual" aria-label="PUI89 AI HOME development status">
     <div class="pui89-observatory__eyebrow">PUI89 · PROJECT DEVELOPMENT RECORD</div>
@@ -47,7 +65,18 @@
 <article class="card"><h3>3. Explain</h3><p>Separate observations from interpretations and state what is unknown.</p></article>
 <article class="card"><h3>4. Support</h3><p>Provide clear reports and human-reviewed suggestions, not autonomous household actions.</p></article>
 </div></section>
-<section id="engineering-layout"><h2>Preliminary internal layout and component budget</h2><p>The proposed 40 cm body is divided into low drive/battery zones, a central compute and power area, and upper sensing zones. Heavy components should remain low and near the centreline; final placement depends on CAD, exact component datasheets and thermal/stability review.</p><div class="grid"><article class="card"><strong>Maximum complete mass</strong><div class="metric">8.00 kg</div><p>Hard design ceiling including battery, chassis, wheels, motors, electronics, sensors, wiring and enclosure.</p></article><article class="card"><strong>Planning allocation</strong><div class="metric">6.75 kg</div><p>Preliminary subsystem allowance, not measured hardware mass.</p></article><article class="card"><strong>Unallocated margin</strong><div class="metric">1.25 kg</div><p>Reserved for tolerances, mounts, wiring and design changes; not an automatic feature allowance.</p></article></div><p><strong>BOM status:</strong> category-level only. Exact models, quantities, supplier, price, origin, licence, safety approvals and measured weights remain TBD. No purchases or supplier contact are authorised.</p><p><a href="https://github.com/Pui89/AI-Home-Safety-Robot/blob/main/docs/AI_HOME_INTERNAL_LAYOUT_AND_MASS_BUDGET.md">Read the preliminary internal layout, mass budget and BOM ↗</a></p><p><strong>Design gate:</strong> verify CAD fit, total measured mass ≤8.00 kg, centre of gravity, tip resistance, drive/braking calculations, battery/thermal safety, sensor coverage, ventilation, privacy and supervised safe-stop behaviour before freezing the design.</p></section>
+<section id="engineering-layout">
+<h2>Compact internal layout and target mass plan</h2>
+<p>The revised proposed body envelope is 25–28 cm wide × 30–33 cm deep × 30–35 cm high. Keep the battery and other heavy components low and near the centreline; use CAD and exact component datasheets to determine final packaging, thermal paths and service access.</p>
+<div class="grid">
+<article class="card"><strong>Complete robot mass target</strong><div class="metric">4–6 kg</div><p>Includes battery, chassis, wheels, motors, electronics, sensors, wiring and enclosure.</p></article>
+<article class="card"><strong>Maximum design ceiling</strong><div class="metric">10 kg</div><p>Upper engineering limit, not the target build mass.</p></article>
+<article class="card"><strong>Initial payload target</strong><div class="metric">1–2 kg</div><p>Additional to robot mass; requires stability, drive and stopping validation.</p></article>
+</div>
+<p><strong>BOM status:</strong> category-level only. Exact models, quantities, supplier, price, origin, licence, safety approvals and measured weights remain TBD. No purchases or supplier contact are authorised.</p>
+<p><a href="https://github.com/Pui89/AI-Home-Safety-Robot/blob/main/docs/AI_HOME_INTERNAL_LAYOUT_AND_MASS_BUDGET.md">Read the revised compact layout and 4–6 kg target mass plan ↗</a></p>
+<p><strong>Design gate:</strong> verify the CAD envelope, component-level mass ledger, measured assembled mass, centre of gravity, tip resistance, payload, drive/braking calculations, battery/thermal safety, sensor coverage, ventilation, privacy and supervised safe-stop behaviour before freezing the design.</p>
+</section>
 <section><h2>Shared PUI89 AI Core</h2><p>Planned integration uses versioned observations and world-state records, evidence provenance, uncertainty handling, safety gates and human-reviewed recommendations. HOME and AI NOMAD remain separate products with different hardware and validation requirements.</p></section>
 <section><h2>Safety and privacy</h2><ul>
 <li>Certified smoke, fire, carbon-monoxide and electrical protection devices remain the primary safeguards.</li>
