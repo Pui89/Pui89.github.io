@@ -23,9 +23,23 @@ PROJECTS = [
     ("Multimodal Screening AI", "Pui89/Multimodal-Narcotics-Screening-AI", "Multimodal evidence, uncertainty, lawful evaluation and human review."),
     ("AI HOME", "Pui89/AI-Home-Safety-Robot", "Indoor home-safety observations, deterioration signals and supervised assistance."),
     ("AI NOMAD", "Pui89/AI-Mobile-Assistant-Robot", "Owner-supervised mobile assistance, environmental awareness and safe-stop behaviour."),
-    ("PUI89 AI Global SUV", "Pui89/PUI89-Compact-Smart-Car", "Medium-size SUV concept; human-driver-first mobility intelligence and advisory-only software research."),
+    ("PUI89 AI Global SUV", "Pui89/PUI89-AI-Global-SUV", "Medium-size SUV concept; human-driver-first mobility intelligence and advisory-only software research."),
     ("EasyRide AI Motorcycle", "Pui89/AI-Motorcycle-Robotics", "Rider-centred step-through mobility concept, safety advisories and simulation-first evaluation."),
 ]
+PLATFORM = {
+    "name": "Shared AI Core",
+    "repository": "Private platform repository — not publicly monitored",
+    "url": None,
+    "focus": "Shared contracts, orchestration, compute intelligence, evidence gates and reusable engineering infrastructure; not an eighth product.",
+    "status": "NOT_PUBLICLY_MONITORED",
+    "default_branch": None,
+    "latest_commit": None,
+    "latest_commit_url": None,
+    "latest_workflows": [],
+    "non_default_branch_run_count": None,
+    "key_workflows": [],
+    "warnings": ["The platform repository is private; public reporting does not expose its repository activity."],
+}
 API = "https://api.github.com"
 
 
@@ -150,15 +164,17 @@ def collect(project: tuple[str, str, str]) -> dict:
 def main() -> int:
     timestamp = datetime.now(timezone.utc).isoformat()
     projects = [collect(project) for project in PROJECTS]
+    platform = PLATFORM
     report = {
         "generated_at_utc": timestamp,
         "mode": "read-only public GitHub status summary",
         "projects": projects,
+        "platform": platform,
         "limitations": [
             "This report reads public repository metadata and recent workflow runs; it does not execute project tests.",
             "A missing workflow run is unknown, not a passing result or proof of failure.",
             "Only the most recent 50 repository workflow runs are scanned; a safeguard absent from that window is unknown.",
-            "Seven product repositories are monitored; the Shared AI Core and website repository are platform infrastructure, not additional product projects.",
+            "Exactly seven product repositories are monitored; Shared AI Core is monitored separately as shared platform infrastructure and is not counted as an eighth product. The website repository is not a product.",
             "Headline workflow and safeguard status is filtered to the repository default branch; other-branch runs are counted separately and do not prove default-branch health.",
             "A successful workflow does not validate real-world robot performance or dataset correctness.",
             "The Coconut dataset evidence audit runs only where its workflow is configured; not_seen_in_recent_runs for other projects means not observed, not a failure.",
@@ -198,7 +214,23 @@ def main() -> int:
             f'| [{project["name"]}]({project["url"]}) | {project["status"]} | '
             f'{commit} | {workflow_text} | {focus} |'
         )
+    platform_latest = platform["latest_workflows"]
+    platform_workflows = "; ".join(
+        "{}: {} [{}]".format(w["name"], w["conclusion"] or w["status"] or "unknown", w.get("branch") or "branch unknown")
+        for w in platform_latest[:3]
+    ) if platform_latest else "No recent run data"
+    platform_commit = platform["latest_commit"] or "unavailable"
+    if platform["latest_commit_url"] and platform["latest_commit"]:
+        platform_commit = "[{}]({})".format(platform_commit, platform["latest_commit_url"])
     lines += [
+        "",
+        "## Shared AI Core — platform infrastructure (not an eighth product)",
+        "",
+        "- Repository: {}".format(platform["repository"]),
+        "- Status: {}".format(platform["status"]),
+        "- Latest default-branch commit: {}".format(platform_commit),
+        "- Latest workflow summary: {}".format(platform_workflows),
+        "- Focus: {}".format(platform["focus"]),
         "",
         "## Key engineering safeguards",
         "",
