@@ -26,17 +26,53 @@
 <section class="hero"><div class="pui89-progress pui89-progress--hero" role="img" aria-label="DEVELOPMENT STAGE: Stage 2 of 5 — Architecture &amp; software foundation; Progress snapshot: 7 November 2026"><span class="pui89-progress__eyebrow">DEVELOPMENT STAGE</span><strong>Stage 2 of 5</strong><time class="pui89-progress__updated" datetime="2026-11-07">Progress snapshot · 7 November 2026</time><span class="pui89-progress__label">Foundation &amp; concept</span><span class="pui89-progress__steps" aria-hidden="true"><i class="is-reached"></i><i class="is-reached"></i><i></i><i></i><i></i></span></div><div class="eyebrow">PUI89 / AI Mobile Assistant Robot / INDOOR &amp; OUTDOOR PLATFORM</div><h1>PUI89 AI Mobile Assistant Robot</h1><h2>Indoor &amp; Outdoor Mobile Assistant Robot</h2><p>A compact four-wheel mobile assistant concept for everyday indoor and outdoor help, carrying belongings, supervised accompaniment, travel and environmental awareness. HOME remains the dedicated indoor home-safety product.</p><span class="status">Proposed concept · not built · not tested · not certified</span><div class="art"><img src="images/ai-nomad-compact-four-wheel.svg" alt="PUI89 AI Mobile Assistant Robot compact four-wheel mobile assistant robot concept" loading="eager" decoding="async" fetchpriority="high"></div></section>
 
 <section id="compact-spec">
-<h2>Compact lightweight four-wheel assistant — revised design targets</h2>
+<h2>Compact four-wheel assistant — 6 kg product target</h2>
 <div class="grid">
-<article class="card"><strong>Body dimensions</strong><p>Width 30–33 cm · length/depth 35–40 cm · height 35–40 cm, excluding extended handle</p></article>
-<article class="card"><strong>Complete robot mass</strong><p><strong>7 kg target</strong>, including battery and handle. 10 kg is the maximum design ceiling, not the target.</p></article>
-<article class="card"><strong>Mobility</strong><p>Four protected/recessed wheels with a retractable pull handle.</p></article>
-<article class="card"><strong>Operating scope</strong><p>Owner-supervised everyday indoor/outdoor use on suitable, separately validated surfaces.</p></article>
+<article class="card"><strong>Body dimensions</strong><p>Width 30–33 cm · length/depth 35–40 cm · height 35–40 cm, excluding the extended handle</p></article>
+<article class="card"><strong>Complete robot mass</strong><p><strong>Maximum 6.0 kg</strong>, including battery, handle, wiring and fixed sensors</p></article>
+<article class="card"><strong>Initial payload target</strong><p><strong>1.0 kg</strong>, carried in addition to the robot's own mass; not yet validated</p></article>
+<article class="card"><strong>Mobility and control</strong><p>Four protected/recessed wheels, manual override, physical emergency stop and owner-supervised operation</p></article>
+<article class="card"><strong>First operating domain</strong><p>Controlled, flat indoor surfaces first; outdoor operation only after separate validation</p></article>
+<article class="card"><strong>Compute direction</strong><p>CPU-first, low-power, local/offline-capable software; AI advice remains separate from motor control</p></article>
 </div>
-<div class="callout"><strong>Weight revision:</strong> the 7 kg target supersedes the earlier 8 kg target. The 10 kg ceiling is retained as an upper engineering limit. Payload remains TBD and is separate from robot mass.</div>
-<p><strong>Design direction:</strong> reduce chassis and enclosure mass through load-path optimisation, appropriately sized drive components, consolidated electronics and removal of redundant brackets or accessories. Keep heavy components low and central. Do not compromise wheel guarding, braking, battery protection, structural strength or environmental protection to reduce weight.</p>
-<p><strong>Status: PROPOSED / NOT MEASURED / NOT VALIDATED.</strong> The dimensions and 7 kg target have not been demonstrated by a physical prototype. The body envelope includes wheels and fixed sensor housings; handle height is excluded but handle mass is included. CAD packaging, component-level mass ledger, centre of gravity, handle loads, drive torque, braking, payload and environmental tests are required before design freeze. No stair-climbing, all-terrain, deep-water or waterproof capability is claimed.</p>
+<div class="callout"><strong>Mass definition:</strong> 6.0 kg is the complete robot mass including battery and handle. The 1.0 kg payload is additional, so the chassis and drive system must be designed and tested for up to 7.0 kg total moving mass. Handle extension is excluded from body height, but handle mass is included.</div>
+<h3>Preliminary mass allocation — planning only</h3>
+<div class="grid">
+<article class="card"><strong>Frame and enclosure</strong><p class="metric">1.4 kg</p></article>
+<article class="card"><strong>Wheels, motors and drivetrain</strong><p class="metric">1.2 kg</p></article>
+<article class="card"><strong>Battery and power protection</strong><p class="metric">1.0 kg</p></article>
+<article class="card"><strong>Compute and control electronics</strong><p class="metric">0.7 kg</p></article>
+<article class="card"><strong>Cameras and sensors</strong><p class="metric">0.4 kg</p></article>
+<article class="card"><strong>Handle, wiring and safety hardware</strong><p class="metric">0.5 kg</p></article>
+<article class="card"><strong>Engineering allowance / reserve</strong><p class="metric">0.8 kg</p></article>
+<article class="card"><strong>Complete robot mass budget</strong><p class="metric">6.0 kg</p></article>
+</div>
+<p><strong>Mass-budget note:</strong> these are top-down planning allocations, not measured component weights or a supplier-verified bill of materials. The 0.8 kg reserve is included within the 6.0 kg ceiling. Every component, fastener, cable, connector, guard, handle and battery must appear in the final mass ledger.</p>
+<h3>First physical prototype — what to build</h3>
+<ul>
+<li>Four-wheel chassis, guarded wheels, stable payload deck and low-mounted battery.</li>
+<li>Motor/drive system, wheel encoders and controller; final drive layout and torque remain to be calculated.</li>
+<li>Protected battery, fuse/over-current protection, accessible isolation, thermal monitoring and guarded wiring.</li>
+<li>Physical emergency stop and manual control/recovery method.</li>
+<li>Basic camera observation and obstacle alerts; depth sensing is optional after compute, power, cost and origin review.</li>
+<li>Battery/state telemetry and clear owner-facing status.</li>
+<li>CPU-first local software; deterministic safety/control functions stay separate from AI perception.</li>
+</ul>
+<h3>Prototype 1 capability boundary</h3>
+<p>Prototype 1 is a supervised mobile base, not an autonomous companion. Owner-following, public-space autonomy, stair climbing, all-terrain use, water crossing, waterproof performance, emergency response and road operation are excluded until separately engineered and validated. AI outputs are observations or bounded recommendations, never direct authority to drive actuators.</p>
+<h3>Engineering and validation gates</h3>
+<ol>
+<li><strong>CAD and packaging:</strong> confirm body envelope, service access, handle loads, payload position, centre of gravity and wheel guarding.</li>
+<li><strong>Mass closure:</strong> create a part-by-part mass ledger and demonstrate no more than 6.0 kg complete robot mass, including the reserve.</li>
+<li><strong>Mechanical analysis:</strong> calculate wheel loads, motor torque, traction, turning clearance, slope limits, braking and stopping distance at up to 7.0 kg total moving mass.</li>
+<li><strong>Electrical and thermal safety:</strong> select battery capacity only after power/runtime budgeting; verify fusing, isolation, charge protection, wiring, temperature limits and emergency stop.</li>
+<li><strong>Software tests:</strong> exercise command limits, stale/missing sensors, communication loss, low battery, obstacle states, safe hold and recovery in deterministic tests and documented simulation.</li>
+<li><strong>Controlled physical trials:</strong> start unloaded at low speed on a closed, flat indoor surface; then test payload, braking, stability, turning, thresholds and endurance under supervision.</li>
+<li><strong>Outdoor expansion:</strong> assess each surface, slope, rain/splash and dust condition separately before claiming support.</li>
+</ol>
+<p><strong>Status: PROPOSED / NOT MEASURED / NOT VALIDATED.</strong> No built prototype, measured 6 kg mass, validated payload, runtime, speed, braking distance, slope limit, ingress rating or field reliability is established. Do not claim waterproof, all-terrain, stair-climbing or emergency-response capability. Software tests and simulation do not prove physical performance.</p>
 </section>
+
 <section id="pricing-status">
 <h2>Pricing and prototype cost</h2>
 <p><strong>Retail price: not announced.</strong> AI NOMAD remains a proposed design. Its complete BOM, manufacturing method, environmental validation, service plan and Thailand landed cost have not been established.</p>
