@@ -23,7 +23,7 @@ PROJECTS = [
     ("Multimodal Screening AI", "Pui89/Multimodal-Narcotics-Screening-AI", "Multimodal evidence, uncertainty, lawful evaluation and human review."),
     ("AI HOME", "Pui89/AI-Home-Safety-Robot", "Indoor home-safety observations, deterioration signals and supervised assistance."),
     ("AI NOMAD", "Pui89/AI-Mobile-Assistant-Robot", "Owner-supervised mobile assistance, environmental awareness and safe-stop behaviour."),
-    ("PUI89 AI Global SUV", "Pui89/PUI89-Compact-Smart-Car", "Medium-size SUV concept; human-driver-first mobility intelligence and advisory-only software research."),
+    ("PUI89 AI Global SUV", "Pui89/PUI89-AI-Global-SUV", "Medium-size SUV concept; human-driver-first mobility intelligence and advisory-only software research."),
     ("EasyRide AI Motorcycle", "Pui89/AI-Motorcycle-Robotics", "Rider-centred step-through mobility concept, safety advisories and simulation-first evaluation."),
 ]
 PLATFORM = ("Shared AI Core", "Pui89/PUI89-Shared-AI-Core", "Shared contracts, orchestration, compute intelligence, evidence gates and reusable engineering infrastructure; not an eighth product.")
