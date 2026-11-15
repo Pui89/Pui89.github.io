@@ -116,6 +116,10 @@ Use these labels consistently across READMEs, website pages, reports, and releas
 
 A passing software test does not prove model accuracy, sensor calibration, simulator fidelity, physical safety, water or fire resistance, regulatory compliance, or commercial readiness.
 
+## PUI89 AI 2030 Vision
+
+**From intelligent software to evidence-led Physical AI products.** The bilingual [AI 2030 Vision (English)](https://pui89.github.io/ai-2030.html) · [วิสัยทัศน์ AI 2030 (ภาษาไทย)](https://pui89.github.io/ai-2030-th.html) sets out how PUI89 connects governed AI-agent workflows, Perception & Task Intelligence (PTI), the Shared AI Core, heterogeneous edge computing, simulation, safety and evidence across the seven-product portfolio. It is a strategic roadmap, not a claim that future agents, robots, vehicle systems or product capabilities are already implemented or validated.
+
 ## Safety, privacy, and security
 
 - Keep consequential decisions under appropriate human authority.
