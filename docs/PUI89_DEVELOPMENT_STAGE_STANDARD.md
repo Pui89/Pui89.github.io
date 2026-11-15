@@ -18,7 +18,7 @@
 |---|---:|---|
 | Coconut Harvest AI | 2 of 5 | Software prototype and evaluation preparation |
 | Extreme Flood Rescue AI | 2 of 5 | Software decision support and synthetic-scenario evaluation |
-| PUI89 Sentinel | 2 of 5 | Human-supervised screening workflow prototype |
+| All-Terrain Inspection Robot Dog (PUI89 Sentinel) | 1 of 5 | Concept and engineering requirements |
 | AI HOME | 2 of 5 | Architecture and early software foundation |
 | AI NOMAD | 2 of 5 | Architecture and early software foundation |
 | AI Robot Car | 2 of 5 | Early software foundation and hazard-awareness requirements |
