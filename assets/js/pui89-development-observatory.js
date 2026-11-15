@@ -59,52 +59,35 @@ function renderTopStatus(project,framework){
  document.querySelectorAll(".pui89-progress--hero").forEach(node=>node.remove());
  const history=(project.history||[]).slice().sort((a,b)=>a.date.localeCompare(b.date));
  const last=history.length?history[history.length-1].date:(project.commercialReadiness?.reviewedOn||"");
- const level=Number.isInteger(project.maturityLevel)?project.maturityLevel:null;
- const maturity=level&&framework?.levels?.find(x=>x.level===level);
  const panel=el("aside","pui89-global-status");
  panel.id="pui89-global-project-status";
- panel.setAttribute("aria-label",lang==="th"?"แถบสถานะ ความพร้อม และข้อมูลหลักฐานของโครงการ":"Project status, readiness and evidence strip");
- const addItem=(label,value,cls)=>{
-  if(!value)return;
-  const item=el("div","pui89-global-status__item");
-  item.append(el("span","pui89-global-status__label",label));
-  item.append(el("strong",cls||"pui89-global-status__value",value));
-  panel.append(item);
- };
- const status=el("div","pui89-global-status__item pui89-global-status__item--status");
- status.append(el("span","pui89-global-status__dot",""));
- status.append(el("strong","pui89-global-status__status",lang==="th"?"กำลังพัฒนา":"In development"));
- panel.append(status);
- addItem(lang==="th"?"อัปเดตหลักฐาน":"EVIDENCE UPDATED",formatDate(last),"pui89-global-status__value");
- addItem(lang==="th"?"ขั้นการพัฒนา":"STAGE",t(project.stageLabel),"pui89-global-status__value");
- if(level&&maturity)addItem(lang==="th"?"วุฒิภาวะ":"MATURITY",(lang==="th"?"ระดับ ":"Level ")+level+"/7 · "+(lang==="th"?maturity.th:maturity.en),"pui89-global-status__value");
- if(project.commercialReadiness&&Number.isInteger(project.commercialReadiness.percent)){
-  const readiness=el("div","pui89-global-status__item pui89-global-status__item--readiness");
-  readiness.append(el("span","pui89-global-status__label",lang==="th"?"ความพร้อมโดยประมาณ":"READINESS ESTIMATE"));
-  readiness.append(el("strong","pui89-global-status__readiness-value",project.commercialReadiness.percent+"%"));
+ panel.setAttribute("aria-label",lang==="th"?"สถานะโครงการและแถบความคืบหน้า":"Project status and progress");
+ const row=el("div","pui89-global-status__row");
+ const status=el("span","pui89-global-status__status",lang==="th"?"กำลังพัฒนา":"In development");
+ const dot=el("span","pui89-global-status__dot","");
+ status.prepend(dot);
+ row.append(status);
+ const updated=el("span","pui89-global-status__meta",(lang==="th"?"อัปเดต ":"Updated ")+formatDate(last));
+ row.append(updated);
+ const stage=el("span","pui89-global-status__stage",t(project.stageLabel));
+ stage.title=t(project.stageLabel);
+ row.append(stage);
+ const percent=project.commercialReadiness&&Number.isInteger(project.commercialReadiness.percent)?project.commercialReadiness.percent:null;
+ if(percent!==null){
+  row.append(el("strong","pui89-global-status__percent",percent+"%"));
+ }
+ panel.append(row);
+ if(percent!==null){
   const bar=el("div","pui89-global-status__bar");
   bar.setAttribute("role","progressbar");
-  bar.setAttribute("aria-label",lang==="th"?"ประมาณการความพร้อมเชิงพาณิชย์":"Commercial readiness estimate");
+  bar.setAttribute("aria-label",lang==="th"?"ประมาณการความพร้อมเชิงพาณิชย์":"Estimated commercial readiness");
   bar.setAttribute("aria-valuemin","0");bar.setAttribute("aria-valuemax","100");
-  bar.setAttribute("aria-valuenow",String(project.commercialReadiness.percent));
-  const fill=el("span","");fill.style.width=project.commercialReadiness.percent+"%";bar.append(fill);
-  readiness.append(bar);
-  readiness.append(el("span","pui89-global-status__reviewed",(lang==="th"?"ทบทวนเมื่อ ":"Reviewed ")+formatDate(project.commercialReadiness.reviewedOn)));
-  panel.append(readiness);
+  bar.setAttribute("aria-valuenow",String(percent));
+  const fill=el("span","");
+  fill.style.width=percent+"%";
+  bar.append(fill);
+  panel.append(bar);
  }
- const details=el("details","pui89-global-status__details");
- details.append(el("summary","",lang==="th"?"เป้าหมายถัดไป · หลักฐาน · อุปสรรค":"Next milestone · Evidence · Key blocker"));
- const addDetail=(label,value)=>{
-  if(!value)return;
-  const group=el("div","pui89-global-status__detail");
-  group.append(el("span","pui89-global-status__label",label));
-  group.append(el("p","pui89-global-status__detail-text",t(value)));
-  details.append(group);
- };
- addDetail(lang==="th"?"เป้าหมายถัดไป":"NEXT MILESTONE",project.next);
- addDetail(lang==="th"?"สถานะหลักฐาน":"EVIDENCE STATUS",project.evidence);
- addDetail(lang==="th"?"อุปสรรคสำคัญ":"KEY BLOCKER",project.blockers);
- panel.append(details);
  const header=document.querySelector("body > header")||document.querySelector("header");
  if(header)header.insertAdjacentElement("afterend",panel);
  else document.body.prepend(panel);
