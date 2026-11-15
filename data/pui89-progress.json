@@ -102,44 +102,44 @@
       "id": "sentinel",
       "number": 3,
       "name": {
-        "en": "Multimodal Narcotics Screening AI / Sentinel",
-        "th": "Multimodal Narcotics Screening AI / Sentinel"
+        "en": "PUI89 Sentinel — All-Terrain Inspection Robot Dog",
+        "th": "PUI89 Sentinel — หุ่นยนต์สุนัขสี่ขาสำหรับตรวจสอบทุกสภาพพื้นที่"
       },
-      "repo": "Pui89/Multimodal-Narcotics-Screening-AI",
+      "repo": "Pui89/All-Terrain-Inspection-Robot",
       "stageLabel": {
-        "en": "Software workflow prototype",
-        "th": "ต้นแบบกระบวนการซอฟต์แวร์"
+        "en": "Quadruped concept + software workflow",
+        "th": "แนวคิดหุ่นยนต์สี่ขาและกระบวนงานซอฟต์แวร์"
       },
       "summary": {
-        "en": "A human-supervised screening workflow and synthetic evaluation work are documented. Substance identification accuracy, sensor integration and robotic deployment are not validated.",
-        "th": "มีหลักฐานกระบวนการตรวจสอบภายใต้การกำกับของมนุษย์และการประเมินแบบสังเคราะห์ แต่ยังไม่ยืนยันความแม่นยำการระบุสาร การเชื่อมต่อเซนเซอร์ หรือหุ่นยนต์"
+        "en": "A supervised quadruped inspection concept and software workflow are documented. No physical robot, validated locomotion, sensor integration, terrain performance or field deployment is established.",
+        "th": "มีเอกสารแนวคิดหุ่นยนต์สี่ขาและกระบวนงานซอฟต์แวร์ แต่ยังไม่มีหุ่นยนต์จริง การเคลื่อนที่ที่ผ่านการตรวจสอบ การติดตั้งเซนเซอร์ สมรรถนะบนพื้นผิวต่าง ๆ หรือการใช้งานภาคสนาม"
       },
       "next": {
-        "en": "Define lawful, rights-cleared representative test data and modality-specific evaluation with human review.",
-        "th": "กำหนดข้อมูลทดสอบที่ถูกต้องตามกฎหมายและสิทธิ์ พร้อมประเมินแต่ละโมดัลลิตีภายใต้การทบทวนโดยมนุษย์"
+        "en": "Complete the mechanical/control architecture, then run safe bench tests, controlled locomotion trials and sensor validation before any field pilot.",
+        "th": "จัดทำสถาปัตยกรรมกลไกและระบบควบคุมให้ครบ จากนั้นทดสอบบนโต๊ะ ทดสอบการเดินในพื้นที่ควบคุม และตรวจสอบเซนเซอร์ก่อนทดลองภาคสนาม"
       },
       "evidence": {
-        "en": "Documented software workflow and synthetic scenarios; no verified X-ray/chemical sensor integration or field accuracy.",
-        "th": "มีหลักฐานกระบวนการซอฟต์แวร์และสถานการณ์สังเคราะห์ แต่ยังไม่มีการเชื่อมต่อ X-ray/เซนเซอร์เคมีหรือความแม่นยำภาคสนามที่ยืนยันแล้ว"
+        "en": "Documented quadruped concept, SVG design, software workflow and engineering requirements; no physical prototype or field-test evidence.",
+        "th": "มีเอกสารแนวคิดหุ่นยนต์สี่ขา ภาพ SVG กระบวนงานซอฟต์แวร์ และข้อกำหนดวิศวกรรม ยังไม่มีต้นแบบจริงหรือหลักฐานทดสอบภาคสนาม"
       },
       "blockers": {
-        "en": "Lawful datasets, calibrated sensor evidence, false-positive/negative analysis, human oversight and regulatory review.",
-        "th": "ชุดข้อมูลที่ถูกต้อง การสอบเทียบเซนเซอร์ การวิเคราะห์ผลบวกลวง/ลบลวง การกำกับโดยมนุษย์ และการทบทวนกฎระเบียบ"
+        "en": "Mechanical design, actuators and joints, gait/balance control, safe-stop behaviour, sensor selection, power budget, environmental protection and controlled testing.",
+        "th": "แบบกลไก แอกชูเอเตอร์และข้อต่อ ระบบเดินและทรงตัว การหยุดอย่างปลอดภัย การเลือกเซนเซอร์ งบพลังงาน การป้องกันสภาพแวดล้อม และการทดสอบในพื้นที่ควบคุม"
       },
       "history": [
         {
           "period": "2026-11",
-          "date": "2026-11-07",
-          "type": "baseline",
+          "date": "2026-11-15",
+          "type": "scope_reset",
           "note": {
-            "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
-            "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
+            "en": "Product scope reset to the PUI89 Sentinel quadruped inspection robot dog. Previous readiness figures are not comparable; a new baseline is pending an evidence review for the current scope.",
+            "th": "ปรับขอบเขตผลิตภัณฑ์เป็น PUI89 Sentinel หุ่นยนต์สุนัขสี่ขาสำหรับตรวจสอบ ตัวเลขความพร้อมเดิมไม่สามารถเปรียบเทียบได้ จึงรอการทบทวนหลักฐานเพื่อกำหนดค่าฐานใหม่ตามขอบเขตปัจจุบัน"
           }
         }
       ],
       "commercialReadiness": {
-        "percent": 45,
-        "reviewedOn": "2026-11-07"
+        "percent": 0,
+        "reviewedOn": "2026-11-15"
       }
     },
     {
