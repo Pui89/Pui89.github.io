@@ -406,4 +406,25 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/technical-visual-standard-th.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/technical-visual-standard.html"/>
   </url>
+  <url>
+    <loc>https://pui89.github.io/ai-2030.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/ai-2030.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/ai-2030-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/ai-2030.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/ai-2030-th.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/ai-2030.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/ai-2030-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/ai-2030.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/ai-2030-vision.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/ai-2030-vision.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/ai-2030-vision.html#th"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/ai-2030-vision.html"/>
+  </url>
 </urlset>
