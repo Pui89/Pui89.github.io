@@ -80,3 +80,7 @@
  .pui89-global-status{max-height:calc(100vh - 16px)}
  .pui89-global-status__detail-text{font-size:.68rem}
 }
+
+/* Keep the project-view counter below the taller default status panel. */
+.pui89-project-views{top:238px!important}
+@media(max-width:640px){.pui89-project-views{top:214px!important}}
