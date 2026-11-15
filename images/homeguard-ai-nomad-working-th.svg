@@ -1,47 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="820" viewBox="0 0 1440 820" role="img" aria-labelledby="title desc">
-<title id="title">PUI89 AI NOMAD — travel suitcase AI architecture</title>
-<desc id="desc">Proposed architecture for a suitcase-form AI assistant: removable battery and device telemetry, camera and optional depth/IMU/wheel inputs, local perception, travel and luggage world state, dashboard and evidence, with a separate independent safety controller. Travel mode is manual, flight mode powers off, and future robot mode is supervised in permitted controlled areas only.</desc>
+<title id="title">PUI89 AI NOMAD — สถาปัตยกรรม AI กระเป๋าเดินทางอัจฉริยะ</title>
+<desc id="desc">แผนภาพแนวคิดการทำงาน AI ภายในเครื่องของกระเป๋าเดินทางอัจฉริยะ: เซนเซอร์และข้อมูลอุปกรณ์ การตรวจสอบแหล่งที่มาและคุณภาพ การทำความเข้าใจบริบทการเดินทาง Dashboard และระบบความปลอดภัยอิสระ พร้อม Travel Mode, Flight Mode และ Robot Mode ในอนาคต</desc>
 <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111F"/><stop offset="1" stop-color="#0C1B2D"/></linearGradient><linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#42D9FF"/><stop offset="1" stop-color="#B8F2FF"/></linearGradient></defs>
 <rect width="1440" height="820" rx="28" fill="url(#bg)"/>
 <text x="56" y="76" fill="#42D9FF" font-size="17" font-weight="800" letter-spacing="4">PUI89 / TECHNICAL VISUALS</text>
 <text x="56" y="132" fill="#F3F7FF" font-size="39" font-weight="850">PUI89 AI NOMAD</text>
-<text x="58" y="164" fill="#B8C7DA" font-size="18" letter-spacing="2">AI TRAVEL SUITCASE · FOUR WHEELS · RETRACTABLE HANDLE · REMOVABLE BATTERY</text>
+<text x="58" y="164" fill="#B8C7DA" font-size="18">กระเป๋าเดินทางอัจฉริยะ AI · ล้อ 4 ล้อ · ด้ามลากยืดหด · แบตเตอรี่ถอดได้</text>
 <path d="M56 194H1384" stroke="#29445E" stroke-width="2"/>
-<text x="56" y="236" fill="#B8F2FF" font-size="16" font-weight="800" letter-spacing="2">LOCAL AI INTELLIGENCE FLOW (PROPOSED)</text>
-<g font-family="Arial,sans-serif">
+<text x="56" y="236" fill="#B8F2FF" font-size="16" font-weight="800">ลำดับการทำงาน AI ภายในเครื่อง (แนวคิด)</text>
+<g font-family="Arial,'Noto Sans Thai',sans-serif">
  <rect x="56" y="270" width="300" height="180" rx="20" fill="#10243A" stroke="#29445E" stroke-width="2"/>
- <text x="82" y="312" fill="#42D9FF" font-size="16" font-weight="800">01 / INPUTS</text>
- <text x="82" y="354" fill="#F3F7FF" font-size="24" font-weight="750">Local sensors</text>
- <text x="82" y="392" fill="#B8C7DA" font-size="17">RGB · optional depth · IMU</text>
- <text x="82" y="420" fill="#B8C7DA" font-size="17">Wheel / battery telemetry</text>
+ <text x="82" y="312" fill="#42D9FF" font-size="16" font-weight="800">01 / INPUTS</text><text x="82" y="354" fill="#F3F7FF" font-size="23" font-weight="750">เซนเซอร์ภายใน</text><text x="82" y="392" fill="#B8C7DA" font-size="17">กล้อง RGB · Depth (ทางเลือก)</text><text x="82" y="420" fill="#B8C7DA" font-size="17">IMU · ล้อ · ข้อมูลแบตเตอรี่</text>
  <rect x="392" y="270" width="300" height="180" rx="20" fill="#10243A" stroke="#29445E" stroke-width="2"/>
- <text x="418" y="312" fill="#42D9FF" font-size="16" font-weight="800">02 / VALIDATE</text>
- <text x="418" y="354" fill="#F3F7FF" font-size="24" font-weight="750">Evidence gate</text>
- <text x="418" y="392" fill="#B8C7DA" font-size="17">Source · time · quality</text>
- <text x="418" y="420" fill="#B8C7DA" font-size="17">Calibration · uncertainty</text>
+ <text x="418" y="312" fill="#42D9FF" font-size="16" font-weight="800">02 / VALIDATE</text><text x="418" y="354" fill="#F3F7FF" font-size="23" font-weight="750">ตรวจสอบข้อมูล</text><text x="418" y="392" fill="#B8C7DA" font-size="17">แหล่งที่มา · เวลา · คุณภาพ</text><text x="418" y="420" fill="#B8C7DA" font-size="17">การสอบเทียบ · ความไม่แน่นอน</text>
  <rect x="728" y="270" width="300" height="180" rx="20" fill="#10243A" stroke="#29445E" stroke-width="2"/>
- <text x="754" y="312" fill="#42D9FF" font-size="16" font-weight="800">03 / UNDERSTAND</text>
- <text x="754" y="354" fill="#F3F7FF" font-size="24" font-weight="750">Travel WorldState</text>
- <text x="754" y="392" fill="#B8C7DA" font-size="17">Luggage · scene · obstacles</text>
- <text x="754" y="420" fill="#B8C7DA" font-size="17">Mode · device health · events</text>
+ <text x="754" y="312" fill="#42D9FF" font-size="16" font-weight="800">03 / UNDERSTAND</text><text x="754" y="354" fill="#F3F7FF" font-size="23" font-weight="750">Travel WorldState</text><text x="754" y="392" fill="#B8C7DA" font-size="17">สัมภาระ · ฉาก · สิ่งกีดขวาง</text><text x="754" y="420" fill="#B8C7DA" font-size="17">โหมด · สุขภาพอุปกรณ์ · เหตุการณ์</text>
  <rect x="1064" y="270" width="320" height="180" rx="20" fill="#10243A" stroke="#29445E" stroke-width="2"/>
- <text x="1090" y="312" fill="#42D9FF" font-size="16" font-weight="800">04 / ASSIST</text>
- <text x="1090" y="354" fill="#F3F7FF" font-size="24" font-weight="750">Owner dashboard</text>
- <text x="1090" y="392" fill="#B8C7DA" font-size="17">Checklist · alerts · evidence</text>
- <text x="1090" y="420" fill="#B8C7DA" font-size="17">Human review · reminders</text>
- <path d="M360 360H386M696 360H722M1032 360H1058" stroke="url(#line)" stroke-width="4" stroke-linecap="round"/>
- <path d="M380 352L390 360L380 368M716 352L726 360L716 368M1052 352L1062 360L1052 368" fill="none" stroke="#42D9FF" stroke-width="3"/>
+ <text x="1090" y="312" fill="#42D9FF" font-size="16" font-weight="800">04 / ASSIST</text><text x="1090" y="354" fill="#F3F7FF" font-size="23" font-weight="750">Dashboard เจ้าของ</text><text x="1090" y="392" fill="#B8C7DA" font-size="17">รายการตรวจสอบ · แจ้งเตือน</text><text x="1090" y="420" fill="#B8C7DA" font-size="17">หลักฐาน · การตรวจทานโดยคน</text>
+ <path d="M360 360H386M696 360H722M1032 360H1058" stroke="url(#line)" stroke-width="4" stroke-linecap="round"/><path d="M380 352L390 360L380 368M716 352L726 360L716 368M1052 352L1062 360L1052 368" fill="none" stroke="#42D9FF" stroke-width="3"/>
  <rect x="56" y="510" width="1328" height="110" rx="18" fill="#0B1E31" stroke="#35556E" stroke-width="2"/>
- <text x="82" y="550" fill="#42D9FF" font-size="16" font-weight="800" letter-spacing="2">INDEPENDENT SAFETY SUPERVISOR — REQUIRED BEFORE POWERED MOBILITY</text>
- <text x="82" y="590" fill="#F3F7FF" font-size="19">Mode interlocks · motor disable · watchdog · braking · emergency stop · manual override · safe hold</text>
- <rect x="56" y="660" width="420" height="105" rx="16" fill="#122B43" stroke="#36546D"/>
- <text x="82" y="700" fill="#42D9FF" font-size="16" font-weight="800">TRAVEL MODE</text>
- <text x="82" y="736" fill="#F3F7FF" font-size="18">Manual pull / push · drive disabled</text>
- <rect x="510" y="660" width="420" height="105" rx="16" fill="#122B43" stroke="#36546D"/>
- <text x="536" y="700" fill="#42D9FF" font-size="16" font-weight="800">FLIGHT MODE</text>
- <text x="536" y="736" fill="#F3F7FF" font-size="18">Fully powered off · no onboard operation</text>
- <rect x="964" y="660" width="420" height="105" rx="16" fill="#122B43" stroke="#36546D"/>
- <text x="990" y="700" fill="#42D9FF" font-size="16" font-weight="800">ROBOT MODE — FUTURE</text>
- <text x="990" y="736" fill="#F3F7FF" font-size="18">Supervised · permitted controlled areas only</text>
-</g>
-</svg>
+ <text x="82" y="550" fill="#42D9FF" font-size="16" font-weight="800">ระบบความปลอดภัยอิสระ — ต้องมี ก่อนเปิดใช้การขับเคลื่อนด้วยมอเตอร์</text><text x="82" y="590" fill="#F3F7FF" font-size="19">Mode Interlock · ปิดมอเตอร์ · Watchdog · เบรก · Emergency Stop · Manual Override · Safe Hold</text>
+ <rect x="56" y="660" width="420" height="105" rx="16" fill="#122B43" stroke="#36546D"/><text x="82" y="700" fill="#42D9FF" font-size="16" font-weight="800">TRAVEL MODE</text><text x="82" y="736" fill="#F3F7FF" font-size="18">ลาก/เข็นด้วยมือ · ปิดระบบขับเคลื่อน</text>
+ <rect x="510" y="660" width="420" height="105" rx="16" fill="#122B43" stroke="#36546D"/><text x="536" y="700" fill="#42D9FF" font-size="16" font-weight="800">FLIGHT MODE</text><text x="536" y="736" fill="#F3F7FF" font-size="18">ปิดระบบทั้งหมด · ไม่ทำงานบนเครื่องบิน</text>
+ <rect x="964" y="660" width="420" height="105" rx="16" fill="#122B43" stroke="#36546D"/><text x="990" y="700" fill="#42D9FF" font-size="16" font-weight="800">ROBOT MODE — อนาคต</text><text x="990" y="736" fill="#F3F7FF" font-size="18">มีมนุษย์กำกับ · เฉพาะพื้นที่ควบคุมที่อนุญาต</text>
+</g></svg>
