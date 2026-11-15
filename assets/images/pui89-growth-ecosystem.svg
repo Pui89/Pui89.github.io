@@ -31,7 +31,7 @@
  <g font-size="14" fill="#9bd4c5" font-weight="750">
   <text x="205" y="116">01 · AGRICULTURE</text><text x="995" y="82">02 · EMERGENCY RESPONSE</text>
   <text x="205" y="316">03 · RESPONSIBLE INSPECTION</text><text x="995" y="242">04 · HOME ROBOTICS</text>
-  <text x="205" y="534">05 · MOBILE ROBOTICS</text><text x="995" y="402">06 · SMART MOBILITY</text>
+  <text x="205" y="534">05 · AI TRAVEL LUGGAGE</text><text x="995" y="402">06 · SMART MOBILITY</text>
   <text x="995" y="562">07 · SMART MOBILITY</text>
  </g>
  <g font-size="21" font-weight="800">
@@ -48,7 +48,7 @@
   <text x="205" y="379">Flood response and rescue-system research</text>
   <text x="205" y="597">Multimodal screening · human review</text>
   <text x="995" y="145">Indoor home-assistance robotics</text>
-  <text x="995" y="305">Outdoor mobile-assistant robotics</text>
+  <text x="995" y="305">AI travel suitcase</text>
   <text x="995" y="465">Vehicle-context safety intelligence</text>
   <text x="995" y="625">Rider-focused safety intelligence</text>
  </g>
