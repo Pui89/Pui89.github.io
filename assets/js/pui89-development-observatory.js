@@ -63,18 +63,51 @@ function renderTopStatus(project,framework){
  const maturity=level&&framework?.levels?.find(x=>x.level===level);
  const panel=el("aside","pui89-global-status");
  panel.id="pui89-global-project-status";
- panel.setAttribute("aria-label",lang==="th"?"สถานะโครงการ วันที่อัปเดต และขั้นการพัฒนา":"Project status, update date and development stage");
- const heading=el("span","pui89-global-status__eyebrow",lang==="th"?"สถานะโครงการ":"PROJECT STATUS");
- const status=el("strong","pui89-global-status__status",lang==="th"?"กำลังพัฒนา":"In development");
- const dateLabel=el("span","pui89-global-status__label",lang==="th"?"อัปเดตล่าสุด":"LAST UPDATED");
- const date=el("strong","pui89-global-status__date",formatDate(last));
- const stageLabel=el("span","pui89-global-status__label",lang==="th"?"ขั้นการพัฒนา":"DEVELOPMENT STAGE");
- const stage=el("strong","pui89-global-status__stage",t(project.stageLabel));
- panel.append(heading,status,dateLabel,date,stageLabel,stage);
- if(level&&maturity){
-  panel.append(el("span","pui89-global-status__level",(lang==="th"?"ระดับวุฒิภาวะ ":"MATURITY LEVEL ")+level+"/7 · "+(lang==="th"?maturity.th:maturity.en)));
+ panel.setAttribute("aria-label",lang==="th"?"แถบสถานะ ความพร้อม และข้อมูลหลักฐานของโครงการ":"Project status, readiness and evidence strip");
+ const addItem=(label,value,cls)=>{
+  if(!value)return;
+  const item=el("div","pui89-global-status__item");
+  item.append(el("span","pui89-global-status__label",label));
+  item.append(el("strong",cls||"pui89-global-status__value",value));
+  panel.append(item);
+ };
+ const status=el("div","pui89-global-status__item pui89-global-status__item--status");
+ status.append(el("span","pui89-global-status__dot",""));
+ status.append(el("strong","pui89-global-status__status",lang==="th"?"กำลังพัฒนา":"In development"));
+ panel.append(status);
+ addItem(lang==="th"?"อัปเดตหลักฐาน":"EVIDENCE UPDATED",formatDate(last),"pui89-global-status__value");
+ addItem(lang==="th"?"ขั้นการพัฒนา":"STAGE",t(project.stageLabel),"pui89-global-status__value");
+ if(level&&maturity)addItem(lang==="th"?"วุฒิภาวะ":"MATURITY",(lang==="th"?"ระดับ ":"Level ")+level+"/7 · "+(lang==="th"?maturity.th:maturity.en),"pui89-global-status__value");
+ if(project.commercialReadiness&&Number.isInteger(project.commercialReadiness.percent)){
+  const readiness=el("div","pui89-global-status__item pui89-global-status__item--readiness");
+  readiness.append(el("span","pui89-global-status__label",lang==="th"?"ความพร้อมโดยประมาณ":"READINESS ESTIMATE"));
+  readiness.append(el("strong","pui89-global-status__readiness-value",project.commercialReadiness.percent+"%"));
+  const bar=el("div","pui89-global-status__bar");
+  bar.setAttribute("role","progressbar");
+  bar.setAttribute("aria-label",lang==="th"?"ประมาณการความพร้อมเชิงพาณิชย์":"Commercial readiness estimate");
+  bar.setAttribute("aria-valuemin","0");bar.setAttribute("aria-valuemax","100");
+  bar.setAttribute("aria-valuenow",String(project.commercialReadiness.percent));
+  const fill=el("span","");fill.style.width=project.commercialReadiness.percent+"%";bar.append(fill);
+  readiness.append(bar);
+  readiness.append(el("span","pui89-global-status__reviewed",(lang==="th"?"ทบทวนเมื่อ ":"Reviewed ")+formatDate(project.commercialReadiness.reviewedOn)));
+  panel.append(readiness);
  }
- document.body.append(panel);
+ const details=el("details","pui89-global-status__details");
+ details.append(el("summary","",lang==="th"?"เป้าหมายถัดไป · หลักฐาน · อุปสรรค":"Next milestone · Evidence · Key blocker"));
+ const addDetail=(label,value)=>{
+  if(!value)return;
+  const group=el("div","pui89-global-status__detail");
+  group.append(el("span","pui89-global-status__label",label));
+  group.append(el("p","pui89-global-status__detail-text",t(value)));
+  details.append(group);
+ };
+ addDetail(lang==="th"?"เป้าหมายถัดไป":"NEXT MILESTONE",project.next);
+ addDetail(lang==="th"?"สถานะหลักฐาน":"EVIDENCE STATUS",project.evidence);
+ addDetail(lang==="th"?"อุปสรรคสำคัญ":"KEY BLOCKER",project.blockers);
+ panel.append(details);
+ const header=document.querySelector("body > header")||document.querySelector("header");
+ if(header)header.insertAdjacentElement("afterend",panel);
+ else document.body.prepend(panel);
 }
 function render(root,data){
  const portfolio=root.dataset.view==="portfolio",id=root.dataset.projectId;
