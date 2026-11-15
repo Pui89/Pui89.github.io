@@ -179,92 +179,20 @@
       "warnings": []
     },
     {
-      "name": "Multimodal Screening AI",
-      "repository": "Pui89/Multimodal-Narcotics-Screening-AI",
-      "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI",
-      "focus": "Multimodal evidence, uncertainty, lawful evaluation and human review.",
-      "status": "CHECKS_AVAILABLE",
+      "name": "All-Terrain Inspection Robot Dog",
+      "repository": "Pui89/All-Terrain-Inspection-Robot",
+      "url": "https://github.com/Pui89/All-Terrain-Inspection-Robot",
+      "focus": "PUI89 Sentinel: four-legged quadruped robot dog concept for supervised industrial, infrastructure, logistics and selected outdoor inspection.",
+      "status": "SCOPE_RESET",
       "default_branch": "main",
-      "latest_commit": "c2caefadfc89",
-      "latest_commit_url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/commit/c2caefadfc8937097378a5c676bc841425a2a999",
-      "latest_workflows": [
-        {
-          "name": "Free local-first app regression checks",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-14T10:42:00Z",
-          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/43586490974",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Shared Interface Smoke",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-14T10:42:05Z",
-          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/43586490976",
-          "branch": "main"
-        }
-      ],
-      "non_default_branch_run_count": 32,
-      "key_workflows": [
-        {
-          "name": "Free cloud verification",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Dataset recovery audit",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Free-resource link audit",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Rule-based simulation evaluation",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Coconut dataset evidence audit",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Simulation benchmark + report validator",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Autonomy / safety regression tests",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-14T10:42:00Z",
-          "url": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/43586490974",
-          "branch": "main"
-        }
-      ],
-      "warnings": []
+      "latest_commit": null,
+      "latest_commit_url": null,
+      "latest_workflows": [],
+      "non_default_branch_run_count": 0,
+      "key_workflows": [],
+      "warnings": [
+        "Current product baseline reset to concept and engineering requirements. Previous software-workflow runs are not evidence for the quadruped robot dog. The new product-scope documentation is under review in PR #187."
+      ]
     },
     {
       "name": "AI HOME",
