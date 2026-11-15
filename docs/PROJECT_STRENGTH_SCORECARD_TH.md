@@ -39,7 +39,7 @@
 
 ## รายการโครงการในพอร์ตโฟลิโอ
 
-ทั้งเจ็ดรายการ ได้แก่ Coconut Harvest AI, Extreme Flood Rescue AI, PUI89 Sentinel — Multimodal Screening AI, PUI89 AI HOME, PUI89 AI NOMAD, PUI89 AI Robot Car และ PUI89 AI Robot Motorcycle โดย HOME และ NOMAD ยังคงเป็นหนึ่งกลุ่มโครงการ แต่สามารถมีรายงานตรวจสอบแยกกันได้เมื่อขอบเขตหลักฐานแตกต่างกัน
+ทั้งเจ็ดรายการ ได้แก่ Coconut Harvest AI, Extreme Flood Rescue AI, All-Terrain Inspection Robot Dog — PUI89 Sentinel, PUI89 AI HOME, PUI89 AI NOMAD, PUI89 AI Robot Car และ PUI89 AI Robot Motorcycle โดย HOME และ NOMAD ยังคงเป็นหนึ่งกลุ่มโครงการ แต่สามารถมีรายงานตรวจสอบแยกกันได้เมื่อขอบเขตหลักฐานแตกต่างกัน
 
 ## ความแตกต่างจากตัวชี้วัดอื่น
 
