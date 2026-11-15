@@ -21,7 +21,7 @@
 - Award points only for evidence that exists, is accessible and matches the stated project and scope.
 - A planned feature, concept illustration, roadmap item, tool inventory or unrun test earns no implementation or test credit.
 - Synthetic simulation results count only for the software/scenario behavior actually tested; they do not prove physical-world performance.
-- Physical robot, sensor, vehicle, rescue, screening, road-safety or environmental claims require their own appropriate validation.
+- Physical robot, sensor, vehicle, rescue, inspection, road-safety or environmental claims require their own appropriate validation.
 - Missing, stale, contradictory or unverifiable evidence receives no credit until resolved.
 - Each review must record date, reviewer/scope, commit or version, evidence links, findings, limitations and next actions.
 - The score is not a certification, safety approval, sales forecast, investment rating or commercial-readiness percentage.
@@ -40,7 +40,7 @@ A completed review must include:
 
 ## Portfolio entries
 
-The seven assessed entries are Coconut Harvest AI; Extreme Flood Rescue AI; PUI89 Sentinel — Multimodal Screening AI; PUI89 AI HOME; PUI89 AI NOMAD; PUI89 AI Robot Car; and PUI89 AI Robot Motorcycle. HOME and NOMAD remain one project family but may have separate evidence reviews when their scopes differ.
+The seven assessed entries are Coconut Harvest AI; Extreme Flood Rescue AI; All-Terrain Inspection Robot Dog — PUI89 Sentinel; PUI89 AI HOME; PUI89 AI NOMAD; PUI89 AI Robot Car; and PUI89 AI Robot Motorcycle. HOME and NOMAD remain one project family but may have separate evidence reviews when their scopes differ.
 
 ## Relationship to other indicators
 
