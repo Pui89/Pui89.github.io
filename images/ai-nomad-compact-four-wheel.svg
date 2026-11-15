@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
 <title id="title">PUI89 AI NOMAD — AI travel suitcase with four wheels and retractable pull handle</title>
-<desc id="desc">A separate compact four-wheel mobile assistant with a rounded vertical suitcase-like body, telescopic pull handle, recessed protected wheels and a front sensing panel. Proposed body envelope 30–33 cm wide, 35–40 cm long and 35–40 cm high excluding the handle. Complete robot mass target 8–10 kg, 12 kg absolute design ceiling including battery, handle and installed hardware; payload remains TBD. Suitcase form does not guarantee airline cabin acceptance.</desc>
+<desc id="desc">A separate compact four-wheel mobile assistant with a rounded vertical suitcase-like body, telescopic pull handle, recessed protected wheels and a front sensing panel. Proposed overall envelope 30–33 cm wide × 35–40 cm high × 20–25 cm deep, including wheels and retracted handle; cabin-size-oriented, not airline-approved. Complete robot mass target 8–10 kg, 12 kg absolute design ceiling including battery, handle and installed hardware; payload remains TBD. Suitcase form does not guarantee airline cabin acceptance.</desc>
 <defs>
  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#061426"/><stop offset="1" stop-color="#153650"/></linearGradient>
  <linearGradient id="shell" x2="1" y2="1"><stop stop-color="#315b76"/><stop offset=".52" stop-color="#142f46"/><stop offset="1" stop-color="#071827"/></linearGradient>
@@ -63,9 +63,9 @@
 <rect x="64" y="712" width="1072" height="76" rx="15" fill="#061827" stroke="#285a76" stroke-width="2"/>
 <g font-family="Arial,sans-serif" text-anchor="middle">
  <text x="190" y="740" fill="#78eaff" font-size="13" letter-spacing="2">WIDTH</text><text x="190" y="770" fill="#fff" font-size="21" font-weight="700">30–33 cm</text>
- <text x="410" y="740" fill="#78eaff" font-size="13" letter-spacing="2">LENGTH</text><text x="410" y="770" fill="#fff" font-size="21" font-weight="700">35–40 cm</text>
- <text x="630" y="740" fill="#78eaff" font-size="13" letter-spacing="2">BODY HEIGHT</text><text x="630" y="770" fill="#fff" font-size="21" font-weight="700">35–40 cm</text>
+ <text x="410" y="740" fill="#78eaff" font-size="13" letter-spacing="2" >HEIGHT</text><text x="410" y="770" fill="#fff" font-size="21" font-weight="700">35–40 cm</text>
+ <text x="630" y="740" fill="#78eaff" font-size="13" letter-spacing="2" >DEPTH</text><text x="630" y="770" fill="#fff" font-size="21" font-weight="700">20–25 cm</text>
  <text x="870" y="740" fill="#78eaff" font-size="13" letter-spacing="2">COMPLETE MASS TARGET</text><text x="870" y="770" fill="#fff" font-size="21" font-weight="700">8–10 kg target</text>
 </g>
-<text x="65" y="808" fill="#91a9ba" font-family="Arial,sans-serif" font-size="13">PROPOSED DESIGN ONLY · Complete mass target 8–10 kg; absolute ceiling 12 kg. Airline size/weight acceptance, payload and mobility remain unvalidated.</text>
+<text x="65" y="808" fill="#91a9ba" font-family="Arial,sans-serif" font-size="13">PROPOSED DESIGN ONLY · Complete mass target 8–10 kg; absolute ceiling 12 kg. Dimensions are cabin-size-oriented but carrier acceptance and weight compliance are unvalidated.</text>
 </svg>
