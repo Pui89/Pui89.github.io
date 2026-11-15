@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 AI NOMAD quadruped robot concept</title>
+<desc id="desc">Concept illustration of a compact four-legged mobile robot with a central equipment body, sensor head, articulated legs and cyan status lighting. Not a built or validated robot.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#142b43"/><stop offset="1" stop-color="#07111f"/></linearGradient>
+ <linearGradient id="body" x2="0" y2="1"><stop stop-color="#344c65"/><stop offset="1" stop-color="#111f30"/></linearGradient>
+ <linearGradient id="metal" x2="1" y2="1"><stop stop-color="#d7e1e9"/><stop offset="1" stop-color="#71869a"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1200" height="700" fill="url(#bg)"/>
+<g opacity=".22" stroke="#42d9ff"><path d="M0 560H1200M0 600H1200M0 640H1200"/><path d="M100 0V700M200 0V700M300 0V700M400 0V700M500 0V700M600 0V700M700 0V700M800 0V700M900 0V700M1000 0V700M1100 0V700"/></g>
+<ellipse cx="600" cy="565" rx="370" ry="48" fill="#020810" opacity=".65"/>
+<g stroke="#07111d" stroke-width="18" stroke-linejoin="round" stroke-linecap="round">
+ <!-- rear legs -->
+ <path d="M420 370L360 455L325 555" fill="none" stroke="#263b50" stroke-width="58"/>
+ <path d="M420 370L360 455L325 555" fill="none" stroke="url(#metal)" stroke-width="34"/>
+ <path d="M760 370L825 455L860 555" fill="none" stroke="#263b50" stroke-width="58"/>
+ <path d="M760 370L825 455L860 555" fill="none" stroke="url(#metal)" stroke-width="34"/>
+ <!-- front legs -->
+ <path d="M510 390L485 475L470 565" fill="none" stroke="#263b50" stroke-width="60"/>
+ <path d="M510 390L485 475L470 565" fill="none" stroke="url(#metal)" stroke-width="35"/>
+ <path d="M690 390L720 475L745 565" fill="none" stroke="#263b50" stroke-width="60"/>
+ <path d="M690 390L720 475L745 565" fill="none" stroke="url(#metal)" stroke-width="35"/>
+</g>
+<g fill="#14283c" stroke="#42d9ff" stroke-width="5">
+ <circle cx="360" cy="455" r="27"/><circle cx="825" cy="455" r="27"/>
+ <circle cx="485" cy="475" r="28"/><circle cx="720" cy="475" r="28"/>
+ <circle cx="325" cy="555" r="22"/><circle cx="860" cy="555" r="22"/>
+ <circle cx="470" cy="565" r="22"/><circle cx="745" cy="565" r="22"/>
+</g>
+<path d="M390 285Q410 220 500 215L710 215Q795 225 815 300L785 405Q760 438 700 440H495Q425 430 400 395Z" fill="url(#body)" stroke="#6f8ba4" stroke-width="8"/>
+<path d="M430 290Q450 245 510 242H695Q755 248 775 295L755 355H450Z" fill="#203b56" stroke="#42d9ff" stroke-width="4"/>
+<path d="M485 275H715L740 330H460Z" fill="#0b1725" stroke="#6c8da8" stroke-width="3"/>
+<path d="M520 295H680" stroke="#42d9ff" stroke-width="8" stroke-linecap="round" filter="url(#glow)"/>
+<rect x="560" y="185" width="80" height="42" rx="12" fill="#263d55" stroke="#8da5bb" stroke-width="5"/>
+<path d="M600 185V150" stroke="#9eb4c8" stroke-width="12" stroke-linecap="round"/>
+<rect x="548" y="112" width="104" height="54" rx="16" fill="#162b40" stroke="#42d9ff" stroke-width="5"/>
+<circle cx="580" cy="139" r="10" fill="#42d9ff" filter="url(#glow)"/><circle cx="620" cy="139" r="10" fill="#42d9ff" filter="url(#glow)"/>
+<path d="M450 385H750" stroke="#42d9ff" stroke-width="6" opacity=".8"/>
+<text x="70" y="90" fill="#42d9ff" font-family="Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="6">PUI89 / AI NOMAD</text>
+<text x="70" y="130" fill="#e8f1fa" font-family="Arial,sans-serif" font-size="40" font-weight="700">QUADRUPED ROBOT CONCEPT</text>
+<text x="72" y="660" fill="#b7c9d9" font-family="Arial,sans-serif" font-size="19">Illustrative design direction only · no physical prototype or locomotion performance validated</text>
+</svg>
