@@ -9,9 +9,9 @@
 
 - **Shared AI Core:** the central portfolio now contains the dependency-light agent-message/evidence contract, adaptive policy orchestrator, long-horizon sequence evaluator, and standardised failure-report contract. These are software policy and evaluation components, not deployed autonomous agents.
 - **Safety gate:** identical standard-library health-gate modules, regression tests and dedicated workflows have been added to all three application repositories. The workflow results must be checked individually before calling the new gates verified.
-- **Project adapters:** Coconut has the first four-class observation adapter; Flood has model-agnostic vision/action data contracts; Screening has a model-optional agentic workflow and safety/human-review boundaries. Full end-to-end model inference is not established.
+- **Project adapters:** Coconut has the first four-class observation adapter; Flood has model-agnostic vision/action data contracts; Sentinel is a quadruped inspection robot-dog concept with concept-level engineering requirements. Physical hardware integration is not established.
 - **Test evidence:** prior recorded scopes include selected shared-core tests, project-specific test runs and synthetic scenario results. Quote each run only with its exact workflow link and scope; do not combine unlike test counts into one headline.
-- **AI performance:** no new held-out detector, flood perception/navigation, or chemical-screening performance benchmark is established by the latest shared-core work.
+- **AI performance:** no new held-out detector, flood perception/navigation, or Sentinel mobility/perception benchmark is established by the latest shared-core work.
 - **Advanced technology:** VLM/VLA, ONNX model execution, ROS 2 and Gazebo remain optional adoption candidates unless a repository-specific integration and successful test are explicitly recorded.
 - **Physical systems:** none of the three robot concepts is declared physically validated.
 - **Cost policy:** no paid API, cloud GPU, subscription, automatic model download or hardware actuation is required for the current phase.
@@ -25,7 +25,7 @@
 | Health-gate regression modules | **Added to all three repositories; latest workflow confirmation pending** | Inspect all three dedicated Actions runs |
 | Coconut observation adapter | **Implemented; adapter workflow result pending confirmation** | Verify workflow, then align adapters |
 | Flood vision/action interfaces | **Implemented as dependency-free contracts** | Add a narrow, tested adapter to shared evidence/policy format |
-| Screening agentic workflow | **Model-optional, synthetic workflow documented** | Connect shared evidence format without bypassing human review |
+| Sentinel inspection-robot requirements | **Concept and engineering requirements documented** | Define quadruped observation/action contracts and safety gates; physical integration remains unvalidated |
 | OpenCV / ONNX Runtime / OpenVINO | **Optional candidates; not assumed integrated** | Check exact package/model licence, hardware fit and measured need |
 | VLM / VLA model weights | **Not downloaded; not approved for automatic installation** | Model-card, licence, size, RAM/VRAM and offline preflight |
 | ROS 2 Jazzy / Gazebo Harmonic / Nav2 | **Planned robotics-simulation candidates, not installed by this roadmap** | First prove a minimal supported Ubuntu simulation is feasible |
@@ -128,10 +128,10 @@
 - **Level E — field research:** only with qualified rescue partners, safety review, controlled trials and appropriate approvals.
 - **Longer term:** SLAM/GPS-denied navigation, multimodal human/animal detection, water/current sensing, communication resilience and coordinated rescue workflow. The 15 m design target must not be represented as proven capability.
 
-## 3. Multimodal Narcotics Screening AI
+## 3. All-Terrain Inspection Robot Dog
 
-**Overall stage:** screening workflow software prototype and robotic concept.  
-**Latest verified full suite:** 385 tests passed on the feature branch in [run 40919469797](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40919469797) across Python 3.10, 3.11 and 3.12. The feature-branch simulation [run 40919469891](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40919469891) passed 7/7 rule-based scenarios and 9/9 steps; hardware actuation was disabled. These tests do not validate chemical identification or physical screening.
+**Overall stage:** concept and engineering requirements only. No physical robot or validated field capability is claimed.
+**Current evidence:** product concept, engineering requirements and a proposed validation plan. Previous software-workflow test results belong to an earlier scope and are not carried forward as evidence for the quadruped robot dog.
 
 ### Done — verified
 - Shared PUI89 core contract tests passed in the recorded combined run.
@@ -148,7 +148,7 @@
 - Earlier broad test runs reported optional-dependency and import/setup errors; they remain separate from the shared-core pass.
 - The scenario matrix has not been established as executed simulation or sensor testing.
 - No class-specific held-out performance has been measured by the latest combined run.
-- No validated chemical sensor, X-ray capability, physical quadruped or real-world screening performance is established.
+- No physical prototype, validated locomotion, terrain rating, payload, endurance, integrated sensor suite or field inspection performance is established.
 - RGB images alone cannot confirm that a substance is present.
 
 ### Next process (in order)
@@ -213,13 +213,13 @@
 - [ ] Coconut real dataset preflight run or explicitly marked blocked because a reviewed manifest is unavailable.
 - [ ] No detector metric published without real held-out predictions and labels.
 - [ ] Flood simulator selected and a baseline scenario actually run, or simulator work explicitly marked blocked.
-- [ ] Screening sensor requirements and validation data source documented, or sensing work explicitly marked blocked.
+- [ ] Define the first inspection mission, quadruped mobility requirements, candidate sensors and measurable validation criteria.
 - [ ] README, dashboard and portfolio use matching status labels.
 - [ ] Optional model/simulator adoption has a documented licence/resource/cost decision.
 
 ## Bottom line
 
-The immediate upgrade is **evidence quality and reliable test infrastructure**, not adding a large model just to appear more advanced. The strongest next milestone is a clean, reproducible CI run plus one real, auditable Coconut AI benchmark. Flood simulation and screening-sensor validation follow as separate, measured workstreams.
+The immediate upgrade is **evidence quality and reliable test infrastructure**, not adding a large model just to appear more advanced. The strongest next milestone is a clean, reproducible CI run plus one real, auditable Coconut AI benchmark. Flood simulation and Sentinel quadruped mobility/sensor validation follow as separate, measured workstreams.
 
 
 ### New verified evidence — Coconut simulation-only run (29 October 2026)
@@ -235,15 +235,15 @@ After inspecting the newest default-branch workflow jobs and their logs:
 
 - **Coconut Harvest AI:** [run 40881602888](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40881602888) passed the lightweight verification job. Report: Python 3.11.17, compile errors 0, observability smoke PASS, failure count 0. Full dependency-backed tests explicitly were not run by this preflight. [Artifact](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40881602888/artifacts/12901395117).
 - **Extreme Flood Rescue AI:** [run 40878523954](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40878523954) passed the lightweight verification job. Report: Python 3.11.17, compile errors 0, observability smoke PASS, failure count 0. Full dependency-backed tests explicitly were not run by this preflight. [Artifact](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40878523954/artifacts/12898129816).
-- **Multimodal Narcotics Screening AI:** [run 40878549402](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40878549402) passed syntax compilation and the dependency-free observability smoke test. This does not establish sensor or model performance. [Artifact](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40878549402/artifacts/12899860349).
+- **Sentinel:** the current product baseline is concept and engineering requirements only; previous software-workflow records are not evidence for the quadruped robot dog.
 - **Shared combined scope:** [run 40877473235](https://github.com/Pui89/Pui89.github.io/actions/runs/40877473235) passed 52 selected tests: 39 shared-core, 5 Coconut evaluator, 4 Coconut dataset-preflight.
 - **Coconut simulation:** [run 40881372992](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40881372992) passed 7/7 configured scenarios and 9/9 steps, with hardware actuation disabled.
 
 ### What these new checks change
 
-**Now verified:** the newest per-project lightweight verification jobs succeeded, with zero Python compile errors reported for Coconut and Flood, and successful syntax/observability checks for Narcotics. The selected combined test scope and Coconut simulation-only scenario run also passed.
+**Now verified:** the newest per-project lightweight verification jobs succeeded, with zero Python compile errors reported for Coconut and Flood. The selected combined test scope and Coconut simulation-only scenario run also passed. Sentinel remains at concept and engineering requirements stage.
 
-**Still not finished:** broad dependency-backed test coverage is not established by these lightweight jobs; actual Coconut dataset provenance/annotation validation and held-out detector metrics remain blocked on real reviewed inputs; Flood simulator scenarios and Narcotics sensor/calibration evaluations have not been demonstrated by these runs. Do not interpret CI green status as AI accuracy or physical robot readiness.
+**Still not finished:** broad dependency-backed test coverage is not established by these lightweight jobs; actual Coconut dataset provenance/annotation validation and held-out detector metrics remain blocked on real reviewed inputs; Flood simulator scenarios and Sentinel mobility, sensor-integration and safety evaluations have not been demonstrated. Do not interpret CI green status as AI accuracy or physical robot readiness.
 
 ### Immediate engineering queue
 
@@ -252,7 +252,7 @@ After inspecting the newest default-branch workflow jobs and their logs:
 3. Run the Coconut dataset validator against a real rights-reviewed manifest and annotation file once those inputs are available.
 4. Build the first measured Coconut detector baseline only after a real held-out split and actual detector prediction CSV exist.
 5. Implement deterministic, dependency-light Flood fault-injection scenarios before installing a large simulator.
-6. Specify Narcotics sensor modality, calibration, permitted claims and human-review behavior before sensor-performance testing.
+6. Specify Sentinel locomotion, terrain, sensor calibration, operating envelope, human supervision and safety requirements before physical testing.
 7. Check GitHub Actions usage and keep optional model/simulator installation gated by licence, disk/RAM/VRAM and cost review.
 
 
@@ -333,7 +333,7 @@ The new workflows use Python standard library only, no model downloads, no exter
 ### Verification status
 - Initial run [41115190461](https://github.com/Pui89/Pui89.github.io/actions/runs/41115190461) exposed one failing regression test; this was used to correct the fail-safe precedence.
 - The corrected commit automatically triggers a new evaluation run. Its result must be checked before claiming the framework passes.
-- The evaluator currently runs in the central portfolio repository. Project-specific adapters for Coconut, Flood Rescue and Narcotics Screening are the next integration task; do not claim the three project applications are already benchmarked end-to-end.
+- The evaluator currently runs in the central portfolio repository. Project-specific adapters for Coconut, Flood Rescue and Sentinel inspection are the next integration task; do not claim the three project applications are already benchmarked end-to-end.
 
 ### Limits and next gates
 - Current uncertainty is a policy-level synthetic input, not statistically calibrated confidence.
@@ -370,7 +370,7 @@ The new workflows use Python standard library only, no model downloads, no exter
 - The adapter does not run a detector, infer maturity from images, calibrate confidence, or control a robot. Synthetic fixtures are used for policy tests.
 - The contract and orchestrator are vendored snapshots in the Coconut repository; they must be synchronized when the central implementation changes.
 - Repository files and README documentation have been fetched after commit. The adapter workflow's completed result has not yet been independently confirmed.
-- Next: verify the Coconut adapter workflow, then implement separate adapters for Extreme Flood Rescue and Multimodal Narcotics Screening. Do not call these live agents or validated domain systems.
+- Next: verify the Coconut adapter workflow, then define separate adapters for Extreme Flood Rescue and Sentinel inspection. Do not call these live agents or validated domain systems.
 
 
 ## New free-first resource gate — 31 October 2026
@@ -389,20 +389,20 @@ Added a read-only, standard-library resource preflight and adoption standard:
 
 - **Coconut Harvest AI — main branch:** [PUI89 Automated Verification run 41205734749](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41205734749) completed successfully at commit `1929c44d790418cc9c3b7220a0ed624a75a3fa7a`. The same main-branch commit also has successful [Free Local Checks](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41205734813) and [Pitfall Detector Checks](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41205734752).
 - **Extreme Flood Rescue AI — feature branch:** [Python tests run 41163791357](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41163791357), [Shared Interface Smoke run 41163791338](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41163791338), [Automated Verification run 41163791367](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41163791367), and [Pitfall Detector Checks run 41163791443](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41163791443) completed successfully on branch `fix/world-state-update-input-types-20261031`, commit `78a7007b3026cb0789cf5e1ddaaa9ce7d0696f7a`. These are feature-branch results, not proof that the same commit is on main.
-- **Multimodal Narcotics Screening AI — feature branch:** [Python tests run 41163794461](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41163794461), [Shared Interface Smoke run 41163794492](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41163794492), [Automated Verification run 41163794524](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41163794524), and [Screening regression checks run 41163794423](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41163794423) completed successfully on branch `fix/world-state-update-input-types-20261031`, commit `2db304b640766e97fe4306bc778e938c0471e7c1`. These are feature-branch results, not proof that the same commit is on main.
+- **Sentinel:** prior feature-branch software checks are historical records and are not evidence for the current All-Terrain Inspection Robot Dog. Current engineering requirements are under review in [PR #187](https://github.com/Pui89/All-Terrain-Inspection-Robot/pull/187).
 
 ### What is actually integrated today
 
 - **Coconut:** a project adapter exists and maps caller-supplied four-class maturity observations into the shared evidence/message contract and policy simulator. It does not run a detector or infer maturity from an image.
 - **Flood Rescue:** dependency-free vision-finding/action-plan contracts and a project-specific shared-core integration specification exist. A matching project adapter has not yet been verified.
-- **Narcotics Screening:** a model-optional, standard-library workflow, modality safety tests, evidence provenance and human-review gates exist. A matching project adapter to the central agent-message/orchestrator contract has not yet been verified.
+- **Sentinel:** define quadruped inspection observation, world-state, action-proposal and failure-report adapters; preserve provenance, uncertainty, human approval and safe-hold behavior.
 - **Central platform:** the adaptive orchestrator, evidence/message contract, sequence evaluator and failure-report standard exist. Vendored project snapshots must be kept synchronised with the central protocol.
 
 ### Next engineering task — adapter parity, not another model
 
-1. Inspect and merge the Flood and Screening feature-branch changes only after reviewing their diffs and confirming the intended base commit.
+1. Review the Flood feature-branch changes and Sentinel engineering requirements only after inspecting their diffs and confirming the intended base commit.
 2. Implement a narrow Flood adapter that maps time-stamped hazard, water, localisation and rescue-observation records into shared evidence messages; unknown or stale safety data must route to SAFE_HOLD/STOP or human review.
-3. Implement a narrow Screening adapter that preserves modality identity, calibration/provenance, disagreement and abstention; it must never emit a substance identity or enforcement action as a verified fact.
+3. Define a narrow Sentinel inspection adapter that preserves sensor identity, calibration/provenance, disagreement, uncertainty and abstention; it must not bypass motion-safety gates or human approval.
 4. Add unit tests for valid, missing, stale, malformed and conflicting inputs, plus policy routing. Use synthetic fixtures only and label them clearly.
 5. Add dedicated read-only CI workflows and inspect their completed results.
 6. Add project adapter status to the dashboard only after those runs pass.
@@ -454,7 +454,7 @@ A review-gated Hugging Face discovery layer was merged into `main` through [PR #
 2. Measure local disk/RAM/VRAM needs without downloading by default; then obtain explicit approval before any optional local download.
 3. Build a model adapter that emits evidence/proposals only and passes through PUI89 provenance, uncertainty, world-state and safety policies.
 4. Evaluate in offline simulation and synthetic tests before using any lawful, rights-reviewed project dataset.
-5. Keep Screening outputs limited to human-reviewed observations; no chemical identity, guilt or enforcement conclusions from VLM output.
+5. Keep Sentinel outputs limited to reviewable inspection observations and bounded action proposals; no autonomous consequential action or unsupported capability claims.
 6. Keep Flood and Coconut actions as simulated proposals; no direct physical actuation.
 
 **Cost and safety boundary:** no paid inference, cloud GPU, automatic download, package installation, external data upload or hardware actuation. A valid registry is a governance/software check, not evidence of model capability or project performance.
@@ -482,7 +482,7 @@ A review-gated Hugging Face discovery layer was merged into `main` through [PR #
 
 ### Remaining boundaries and next step
 - This proves a software interface and deterministic policy routing only; it does not prove VLM/VLA capability, model accuracy, calibrated confidence, sensor truth or project performance.
-- Next: create narrow project-specific adapter mappings for Coconut, Flood Rescue and Screening, with separate domain-specific tests and preserved human-review / simulation-only boundaries.
+- Next: create narrow project-specific adapter mappings for Coconut, Flood Rescue and Sentinel inspection, with separate domain-specific tests and preserved human-review / simulation-only boundaries.
 - Only after those interfaces pass should PUI89 consider an optional local model-runtime experiment, preceded by exact licence, dependency, model-size and measured hardware-fit review.
 - No paid service, cloud GPU, automatic model download, external data upload or physical robot command is part of this milestone.
 
@@ -493,13 +493,13 @@ A review-gated Hugging Face discovery layer was merged into `main` through [PR #
 
 - **Coconut Harvest AI:** PR [#161](https://github.com/Pui89/Coconut-Harvest-AI/pull/161), merge commit \`6fc5924de6cd3285ad64aac241c5eb5c8381c26b\`. Added \`tools/pui89_coconut_model_adapter.py\`, shared project adapter validation, six domain regression tests and project documentation. Candidate maturity labels remain unverified observations for human review; no image inference or harvest action is performed.
 - **Extreme Flood Rescue AI:** PR [#125](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/125), merge commit \`c25b03391852da5656728907e8889fbec2ec82ea\`. Added \`tools/pui89_flood_model_adapter.py\`, six regression tests and project documentation. The 0–15 m value is only a bounded simulation scenario input, not demonstrated robot capability.
-- **Multimodal Narcotics Screening AI:** PR [#102](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/102), merge commit \`10c3ee093056281f77fb53c0bf0c26ad9373c93f\`. Added \`tools/pui89_screening_model_adapter.py\`, seven regression tests and project documentation. Chemical identity, guilt, suspect scoring and enforcement fields are rejected; outputs always require human review.
+- **Sentinel:** the former software-workflow adapter is not part of the current product baseline. The current quadruped inspection requirements and validation plan are documented in [PR #187](https://github.com/Pui89/All-Terrain-Inspection-Robot/pull/187).
 
 ### Adapter verification
 
 - Coconut dedicated adapter workflow passed: [run 41223699585](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41223699585).
 - Flood dedicated adapter workflow passed: [run 41223702436](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41223702436).
-- Screening dedicated adapter workflow passed: [run 41223718640](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41223718640).
+- No current Sentinel physical-mobility, sensor-integration or field-validation workflow result is asserted.
 - Post-merge main-branch workflows were triggered; their final conclusions remain pending at this roadmap update.
 
 ### Shared guarantees and limitations
