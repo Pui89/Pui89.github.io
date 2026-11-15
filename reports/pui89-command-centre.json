@@ -179,10 +179,10 @@
       "warnings": []
     },
     {
-      "name": "All-Terrain Inspection Robot Dog",
+      "name": "PUI89 Sentinel — All-Terrain Exploration & Inspection Robot",
       "repository": "Pui89/All-Terrain-Inspection-Robot",
       "url": "https://github.com/Pui89/All-Terrain-Inspection-Robot",
-      "focus": "PUI89 Sentinel: four-legged quadruped robot dog concept for supervised industrial, infrastructure, logistics and selected outdoor inspection.",
+      "focus": "Quadruped exploration and inspection robot concept for supervised observation in varied environments. Software workflows and concept documentation do not establish physical mobility, sensor integration or field performance.",
       "status": "SCOPE_RESET",
       "default_branch": "main",
       "latest_commit": null,
@@ -191,7 +191,7 @@
       "non_default_branch_run_count": 0,
       "key_workflows": [],
       "warnings": [
-        "Current product baseline reset to concept and engineering requirements. Previous software-workflow runs are not evidence for the quadruped robot dog. The new product-scope documentation is under review in PR #187."
+        "No physical Sentinel robot, validated locomotion, real sensor integration or field inspection performance is claimed. Software workflow success is not physical validation."
       ]
     },
     {
@@ -283,10 +283,10 @@
       "warnings": []
     },
     {
-      "name": "AI NOMAD",
+      "name": "PUI89 AI NOMAD — Four-Wheel Mobile Assistant Robot",
       "repository": "Pui89/AI-Mobile-Assistant-Robot",
       "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot",
-      "focus": "Owner-supervised mobile assistance, environmental awareness and safe-stop behaviour.",
+      "focus": "Compact four-wheel mobile-assistant concept with an upright suitcase-inspired body and retractable manual pull handle; supervised mobility, carrying assistance and environmental awareness, distinct from indoor-focused AI HOME. Physical mobility and performance remain unvalidated.",
       "status": "CHECKS_AVAILABLE",
       "default_branch": "main",
       "latest_commit": "7b54dc4c395c",
@@ -368,7 +368,9 @@
           "branch": null
         }
       ],
-      "warnings": []
+      "warnings": [
+        "PUI89 AI NOMAD is a four-wheel mobile assistant, not a quadruped. Its 8–10 kg complete-mass target (10 kg maximum) and proposed body envelope are design targets, not measured prototype specifications. Successful software workflows do not validate physical mobility, sensors or AI performance."
+      ]
     },
     {
       "name": "PUI89 AI Global SUV",
@@ -459,7 +461,7 @@
       "warnings": []
     },
     {
-      "name": "EasyRide AI Motorcycle",
+      "name": "PUI89 AI Step-Through Scooter · EasyRide AI",
       "repository": "Pui89/AI-Motorcycle-Robotics",
       "url": "https://github.com/Pui89/AI-Motorcycle-Robotics",
       "focus": "Rider-centred step-through mobility concept, safety advisories and simulation-first evaluation.",
