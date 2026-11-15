@@ -17,7 +17,7 @@ The first rollout covers these seven repositories:
 
 1. [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI)
 2. [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI)
-3. [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI)
+3. [All-Terrain Inspection Robot Dog](https://github.com/Pui89/All-Terrain-Inspection-Robot)
 4. [PUI89 AI HOME](https://github.com/Pui89/AI-HOME)
 5. [PUI89 AI NOMAD](https://github.com/Pui89/AI-NOMAD)
 6. [PUI89 AI Robot Car](https://github.com/Pui89/ai-robot-car)
@@ -100,7 +100,7 @@ Rules for every future model:
 |---|---|---|
 | Coconut | tree/source identity, four maturity labels, image provenance, bounding boxes, reachability evidence | no harvest action; no maturity or 0–30 m claim without held-out evidence |
 | Flood Rescue | platform ID, water/terrain modality, depth/current units, localization quality, communication state | ground/boat/aerial results remain separate; no rescue or depth capability claim from generic vision |
-| Screening | modality, sensor physics, calibration, sample provenance, reviewer authority | RGB/object proposals cannot establish chemical identity, guilt or enforcement action |
+| Sentinel inspection robot dog | RGB/depth/LiDAR/IMU and joint-foot state, calibration, terrain and localisation uncertainty, operator authority | AI proposals cannot override motion safety limits or authorize unsupervised physical action |
 | HOME | building/floor/room, sensor placement, calibration, time-series baseline | not a certified fire/electrical/structural alarm or diagnosis |
 | NOMAD | terrain, localization, gait/sensor state, battery reserve, owner-supervision state | no autonomous roaming, unsafe terrain entry or physical locomotion claim |
 | AI Car | road-scene source, weather/visibility, vehicle-health evidence, driver advisory context | driver retains control; no steering/braking/throttle authority or road-certified ADAS claim |
