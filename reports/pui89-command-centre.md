@@ -9,9 +9,9 @@
 |---|---|---|---|
 | [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | Pui89/Coconut-Harvest-AI | [208ec8cd22ac](https://github.com/Pui89/Coconut-Harvest-AI/commit/208ec8cd22ac1a4c898f4e03ea691b9fb3cdceaf) | PUI89 Shared Interface Smoke: success; PUI89 Three-Layer Security Baseline: success |
 | [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | Pui89/Extreme-Flood-Rescue-AI | [c8a4c99764ea](https://github.com/Pui89/Extreme-Flood-Rescue-AI/commit/c8a4c99764eaaf173129356bfe565cc8706af275) | PUI89 Shared Interface Smoke: success; .github/workflows/pr-status-monitor.yml: failure |
-| [PUI89 Sentinel](https://github.com/Pui89/All-Terrain-Inspection-Robot) | Pui89/All-Terrain-Inspection-Robot | Multimodal exploration and inspection concept · existing repository scope requires alignment before its workflows can be treated as current Sentinel evidence | No verified real-sensor integration, exploration coverage, detection accuracy or field performance is asserted |
+| [PUI89 Sentinel — All-Terrain Exploration & Inspection Robot](https://github.com/Pui89/All-Terrain-Inspection-Robot) | Pui89/All-Terrain-Inspection-Robot | Quadruped exploration and inspection concept with software workflow records | No physical robot, validated locomotion, real sensor integration or field inspection performance is claimed |
 | [AI HOME](https://github.com/Pui89/AI-Home-Safety-Robot) | Pui89/AI-Home-Safety-Robot | [8479aace194e](https://github.com/Pui89/AI-Home-Safety-Robot/commit/8479aace194e0d979e2be2ef8b256a7c1d4c556c) | PUI89 Security Audit: success; PUI89 project intelligence reviews: failure |
-| [PUI89 AI NOMAD — Quadruped Robot](https://github.com/Pui89/AI-Mobile-Assistant-Robot) | Pui89/AI-Mobile-Assistant-Robot | [7b54dc4c395c](https://github.com/Pui89/AI-Mobile-Assistant-Robot/commit/7b54dc4c395c945773c5ee7ab3c5bee73836b940) | PUI89 Security Audit: success; HOMEGUARD CI: success |
+| [PUI89 AI NOMAD — Four-Wheel Mobile Assistant Robot](https://github.com/Pui89/AI-Mobile-Assistant-Robot) | Pui89/AI-Mobile-Assistant-Robot | [7b54dc4c395c](https://github.com/Pui89/AI-Mobile-Assistant-Robot/commit/7b54dc4c395c945773c5ee7ab3c5bee73836b940) | PUI89 Security Audit: success; HOMEGUARD CI: success |
 | [PUI89 AI Global SUV](https://github.com/Pui89/PUI89-AI-Global-SUV) | Pui89/PUI89-AI-Global-SUV | [27a9b31be480](https://github.com/Pui89/PUI89-AI-Global-SUV/commit/27a9b31be480f01cdf9bd52c8a46d8beab7ee58f) | PUI89 Security Audit: success; PUI89 AI Robot Car Quality and Shared Core Contract Checks: success |
 | [PUI89 AI Step-Through Scooter · EasyRide AI](https://github.com/Pui89/AI-Motorcycle-Robotics) | Pui89/AI-Motorcycle-Robotics | [37671ba0f2de](https://github.com/Pui89/AI-Motorcycle-Robotics/commit/37671ba0f2dec2c0c0d3c4afc21de138a867fce3) | PUI89 Security Audit: success; PUI89 Motorcycle Quality and Shared Core Contract Checks: success |
 
@@ -48,8 +48,8 @@
 
 ## Canonical product-name and scope alignment (16 November 2026)
 
-- PUI89 Sentinel is the multimodal exploration and inspection project; it is not the quadruped robot and is no longer a narcotics-screening project.
-- PUI89 AI NOMAD is the quadruped robot. Existing repository metadata and historical workflow records that describe a four-wheel mobile assistant are legacy-scope evidence and must not be presented as quadruped validation.
+- PUI89 Sentinel is the separate quadruped exploration and inspection concept; physical mobility and sensor performance remain unvalidated.
+- PUI89 AI NOMAD is the compact four-wheel mobile assistant with a suitcase-inspired upright body and retractable manual pull handle. It is not a quadruped. Its physical mobility and performance remain unvalidated.
 - PUI89 AI Global SUV is the human-driver-first SUV intelligence concept; no autonomous-driving capability is claimed.
 - PUI89 AI Step-Through Scooter · EasyRide AI is the step-through two-wheel mobility concept; no autonomous throttle, steering or braking is claimed.
 - Workflow status describes only the configured repository checks. It does not prove product performance or physical validation.
