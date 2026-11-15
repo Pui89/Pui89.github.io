@@ -3,7 +3,7 @@
 **Version:** 1.0  
 **Effective date:** 15 November 2026  
 **Applies to:** Seven PUI89 products, PUI89 Shared AI Core, PTI, simulation and shared engineering infrastructure  
-**Status:** Proposed portfolio standard — review and approval required  
+**Status:** Adopted portfolio engineering standard — effective 15 November 2026  
 **Implementation principle:** Open-source-first, evidence-led, safety-first, modular and cost-conscious
 
 ## 1. Purpose and governing principles
