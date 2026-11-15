@@ -1,0 +1,116 @@
+/* PUI89 Reading Focus v1.0
+   Clear topic separation, comfortable reading rhythm and visible navigation.
+   CSS-only; preserves the Deep Navy / Electric Cyan brand without making every
+   content surface the same blue. */
+:root{
+  --read-bg:#0b121b;
+  --read-surface:#151d25;
+  --read-surface-alt:#1a2024;
+  --read-text:#f2f4f2;
+  --read-muted:#c0c9c8;
+  --read-line:rgba(205,220,220,.18);
+  --read-topic:#73d7e8;
+  --read-topic-soft:rgba(115,215,232,.10);
+}
+html{scroll-padding-top:5rem}
+body{
+  background-color:var(--read-bg)!important;
+  background-image:
+    radial-gradient(ellipse at 88% 0%,var(--read-topic-soft),transparent 38%),
+    linear-gradient(180deg,#0b121b 0%,#101820 52%,#0b121b 100%)!important;
+  color:var(--read-text)!important;
+  line-height:1.78!important;
+}
+body[data-pui89-project="coconut"]{--read-topic:#a6d68b;--read-topic-soft:rgba(166,214,139,.12)}
+body[data-pui89-project="flood"]{--read-topic:#70c9e8;--read-topic-soft:rgba(74,164,207,.13)}
+body[data-pui89-project="sentinel"],body[data-pui89-project="screening"]{--read-topic:#b6a5ed;--read-topic-soft:rgba(157,133,220,.13)}
+body[data-pui89-project="home"]{--read-topic:#e6c58b;--read-topic-soft:rgba(210,169,102,.12)}
+body[data-pui89-project="nomad"]{--read-topic:#83d4bd;--read-topic-soft:rgba(91,190,160,.12)}
+body[data-pui89-project="car"]{--read-topic:#8fb9ee;--read-topic-soft:rgba(91,143,211,.14)}
+body[data-pui89-project="motorcycle"]{--read-topic:#c4cbd4;--read-topic-soft:rgba(177,190,204,.12)}
+body[data-pui89-project="core"]{--read-topic:#73d7e8;--read-topic-soft:rgba(66,190,220,.13)}
+body[data-pui89-project="portfolio"]{--read-topic:#73d7e8;--read-topic-soft:rgba(66,190,220,.10)}
+main{isolation:isolate}
+main p,main li{color:var(--read-muted)}
+main p{max-width:78ch}
+main h1,main h2,main h3{color:var(--read-text);line-height:1.22}
+main h2{letter-spacing:-.025em}
+main section[id],main [id].section,main article[id]{scroll-margin-top:5rem}
+main > section:not(.hero){
+  position:relative;
+  border-radius:18px;
+  margin-block:clamp(20px,3vw,34px);
+  padding:clamp(20px,3vw,34px);
+  background:linear-gradient(135deg,rgba(24,33,41,.82),rgba(17,25,32,.72));
+  border:1px solid var(--read-line);
+  border-top:2px solid color-mix(in srgb,var(--read-topic) 60%,transparent);
+}
+main > section:not(.hero):nth-of-type(even){
+  background:linear-gradient(135deg,rgba(31,34,34,.82),rgba(18,27,33,.78));
+}
+main > section:not(.hero) > h2:first-child,
+main > section:not(.hero) .section-heading h2{
+  text-wrap:balance;
+}
+main > section:not(.hero) > h2:first-child:after{
+  content:"";
+  display:block;
+  width:54px;
+  height:3px;
+  margin-top:13px;
+  border-radius:4px;
+  background:var(--read-topic);
+  opacity:.85;
+}
+main .panel,main .card,main .content-section,main .pui89-pti,
+main .suv-section,main .research-card,main .step{
+  border-color:var(--read-line);
+}
+main .panel,main .content-section,main .pui89-pti,main .suv-section{
+  background-color:rgba(24,32,38,.78);
+}
+main .panel h2,main .panel h3,main .content-section h2,
+main .content-section h3,main .pui89-pti h2,main .pui89-pti h3{
+  color:var(--read-text);
+}
+main a:not(.btn){text-decoration-thickness:.08em;text-underline-offset:3px}
+main a:focus-visible,main button:focus-visible,main input:focus-visible,
+main select:focus-visible,main textarea:focus-visible{
+  outline:3px solid var(--read-topic)!important;
+  outline-offset:4px!important;
+}
+main :target{
+  outline:2px solid color-mix(in srgb,var(--read-topic) 70%,transparent);
+  outline-offset:7px;
+  border-radius:10px;
+}
+main table{background:rgba(10,17,23,.42);border-radius:10px;overflow:hidden}
+main th{background:rgba(255,255,255,.07);color:#f5f7f5}
+main td{color:#c7d0cf}
+main blockquote,main .notice,main .callout{
+  border-left:3px solid var(--read-topic);
+  background:rgba(255,255,255,.045);
+}
+main .eyebrow,main .label,main .kicker{color:var(--read-topic)}
+/* Homepage: give each project a quiet visual identity for faster scanning. */
+.pui89-project-card{border-top:3px solid var(--read-topic)}
+.pui89-project-card:nth-child(1){--card-topic:#a6d68b}
+.pui89-project-card:nth-child(2){--card-topic:#70c9e8}
+.pui89-project-card:nth-child(3){--card-topic:#b6a5ed}
+.pui89-project-card:nth-child(4){--card-topic:#e6c58b}
+.pui89-project-card:nth-child(5){--card-topic:#83d4bd}
+.pui89-project-card:nth-child(6){--card-topic:#8fb9ee}
+.pui89-project-card:nth-child(7){--card-topic:#c4cbd4}
+.pui89-project-card .pui89-project-domain,
+.pui89-project-card .pui89-image-index{color:var(--card-topic);border-color:color-mix(in srgb,var(--card-topic) 45%,transparent)}
+.pui89-project-card .pui89-project-image{background:linear-gradient(145deg,color-mix(in srgb,var(--card-topic) 13%,#142338),#0b1722)}
+.pui89-project-card .pui89-explore-button{border-color:color-mix(in srgb,var(--card-topic) 55%,transparent)}
+.pui89-ai-search{background:linear-gradient(145deg,#202a31,#151e25)!important;border-color:var(--read-line)!important}
+.pui89-ai-search-row input{background:#0b131a!important;color:var(--read-text)!important}
+.pui89-ai-result{background:#111a21!important;border-color:var(--read-line)!important}
+.pui89-ai-result p,.pui89-ai-help,.pui89-ai-empty{color:var(--read-muted)!important}
+@media(max-width:760px){
+  main > section:not(.hero){padding:18px;margin-block:18px;border-radius:14px}
+  main p,main li{line-height:1.8}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
