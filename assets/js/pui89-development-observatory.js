@@ -72,7 +72,7 @@ function renderTopStatus(project,framework){
  const stage=el("strong","pui89-global-status__stage",t(project.stageLabel));
  panel.append(heading,status,dateLabel,date,stageLabel,stage);
  if(level&&maturity){
-  panel.append(el("span","pui89-global-status__level",(lang==="th"?"ระดับวุฒิภาวะ ":"MATURITY LEVEL ")+level+"/7 · "+(lang==="th"?maturity.th:maturity.en));
+  panel.append(el("span","pui89-global-status__level",(lang==="th"?"ระดับวุฒิภาวะ ":"MATURITY LEVEL ")+level+"/7 · "+(lang==="th"?maturity.th:maturity.en)));
  }
  document.body.append(panel);
 }
