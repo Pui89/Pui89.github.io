@@ -51,3 +51,14 @@
 .pui89-observatory__maturity-steps{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px}
 .pui89-observatory__maturity-steps span{height:6px;border-radius:99px;background:#30445f}
 .pui89-observatory__maturity-steps span.is-reached{background:#42d9ff;box-shadow:0 0 7px rgba(66,217,255,.24)}
+
+ 
+/* Unified fixed top-right project status panel across all seven product pages. */
+.pui89-global-status{position:fixed;top:12px;right:12px;z-index:10001;display:flex;flex-direction:column;gap:3px;width:min(270px,calc(100vw - 24px));padding:12px 14px;border:1px solid rgba(66,217,255,.48);border-radius:14px;background:rgba(7,17,31,.97);color:#F3F7FF;box-shadow:0 10px 32px rgba(0,0,0,.42);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);font:inherit;line-height:1.35}
+.pui89-global-status__eyebrow{color:#42D9FF;font-size:.64rem;font-weight:850;letter-spacing:.13em}
+.pui89-global-status__status{font-size:.9rem;color:#F3F7FF}
+.pui89-global-status__label{margin-top:5px;color:#9FB4C9;font-size:.58rem;font-weight:800;letter-spacing:.1em}
+.pui89-global-status__date,.pui89-global-status__stage{font-size:.76rem;font-weight:750;color:#EAF6FF;overflow-wrap:anywhere}
+.pui89-global-status__level{margin-top:3px;color:#42D9FF;font-size:.66rem;font-weight:750}
+.pui89-project-views{top:178px!important}
+@media(max-width:640px){.pui89-global-status{top:8px;right:8px;width:min(236px,calc(100vw - 16px));padding:9px 11px}.pui89-global-status__eyebrow{font-size:.58rem}.pui89-global-status__status{font-size:.82rem}.pui89-global-status__label{font-size:.54rem}.pui89-global-status__date,.pui89-global-status__stage{font-size:.7rem}.pui89-project-views{top:158px!important}}
