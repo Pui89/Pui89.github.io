@@ -124,3 +124,7 @@
  .pui89-global-status__value{font-size:.67rem}
  .pui89-global-status__detail-text{font-size:.68rem}
 }
+
+/* Keep the project-view counter out of the header and the in-flow status strip. */
+.pui89-project-views{position:static!important;top:auto!important;right:auto!important;bottom:auto!important;margin:14px 18px 14px auto!important;width:max-content;max-width:calc(100% - 36px)}
+@media(max-width:640px){.pui89-project-views{margin:12px 14px 12px auto!important}}
