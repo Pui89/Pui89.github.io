@@ -84,3 +84,43 @@
 /* Keep the project-view counter below the taller default status panel. */
 .pui89-project-views{top:238px!important}
 @media(max-width:640px){.pui89-project-views{top:214px!important}}
+
+
+/* Replace the floating card with an in-flow status strip below the site header.
+   This keeps the EN/TH switcher and navigation fully visible on every project page. */
+.pui89-global-status{
+ position:relative!important;top:auto!important;right:auto!important;z-index:1;
+ display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-end;
+ gap:8px 18px;width:min(1100px,calc(100% - 36px));max-width:none;
+ margin:10px auto 0;padding:9px 0 11px;
+ border:0;border-top:1px solid rgba(66,217,255,.38);border-bottom:1px solid rgba(66,217,255,.2);
+ border-radius:0;background:transparent;color:#F3F7FF;box-shadow:none;
+ backdrop-filter:none;-webkit-backdrop-filter:none;line-height:1.35;
+}
+.pui89-global-status__item{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 7px;min-width:0}
+.pui89-global-status__item--status{align-items:center}
+.pui89-global-status__dot{width:7px;height:7px;flex:0 0 7px;border-radius:50%;background:#42D9FF;box-shadow:0 0 8px rgba(66,217,255,.65)}
+.pui89-global-status__status{font-size:.78rem;color:#F3F7FF}
+.pui89-global-status__label{display:inline;margin:0;color:#8FA9C0;font-size:.58rem;font-weight:800;letter-spacing:.08em}
+.pui89-global-status__value{font-size:.72rem;font-weight:750;color:#EAF6FF;overflow-wrap:anywhere}
+.pui89-global-status__item--readiness{display:grid;grid-template-columns:auto auto;align-items:center;gap:2px 7px;min-width:112px}
+.pui89-global-status__item--readiness .pui89-global-status__label{margin:0}
+.pui89-global-status__readiness-value{font-size:.78rem;color:#42D9FF;font-weight:850;font-variant-numeric:tabular-nums}
+.pui89-global-status__bar{grid-column:1/-1;width:100%;height:4px;overflow:hidden;border-radius:99px;background:#30445f}
+.pui89-global-status__bar span{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#00AFA5,#42D9FF)}
+.pui89-global-status__reviewed{grid-column:1/-1;color:#9FB4C9;font-size:.58rem}
+.pui89-global-status__details{flex:1 0 100%;margin:0;padding-top:5px;border-top:1px solid rgba(159,180,201,.13)}
+.pui89-global-status__details summary{cursor:pointer;color:#65E7FF;font-size:.68rem;font-weight:800;line-height:1.4;text-align:right}
+.pui89-global-status__details summary:focus-visible{outline:2px solid #42D9FF;outline-offset:3px;border-radius:3px}
+.pui89-global-status__detail{margin-top:8px}
+.pui89-global-status__detail-text{margin:3px 0 0;color:#D5E1EC;font-size:.72rem;line-height:1.45;overflow-wrap:anywhere}
+@media(max-width:780px){
+ .pui89-global-status{justify-content:flex-start;gap:8px 13px;margin-top:8px;padding:8px 0}
+ .pui89-global-status__details summary{text-align:left}
+}
+@media(max-width:480px){
+ .pui89-global-status{width:calc(100% - 28px);gap:7px 10px}
+ .pui89-global-status__label{font-size:.54rem}
+ .pui89-global-status__value{font-size:.67rem}
+ .pui89-global-status__detail-text{font-size:.68rem}
+}
