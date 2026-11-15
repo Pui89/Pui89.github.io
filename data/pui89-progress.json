@@ -132,8 +132,8 @@
           "date": "2026-11-15",
           "type": "scope_reset",
           "note": {
-            "en": "Product scope reset from the former screening concept to the PUI89 Sentinel quadruped inspection robot dog. Previous readiness figures are not comparable; the baseline is reset pending an evidence review for the new scope.",
-            "th": "ปรับขอบเขตผลิตภัณฑ์จากแนวคิดคัดกรองเดิมเป็น PUI89 Sentinel หุ่นยนต์สุนัขสี่ขาสำหรับตรวจสอบ ตัวเลขความพร้อมเดิมไม่สามารถนำมาเปรียบเทียบได้ จึงตั้งค่าฐานใหม่และรอการทบทวนหลักฐานตามขอบเขตใหม่"
+            "en": "Product scope reset to the PUI89 Sentinel quadruped inspection robot dog. Previous readiness figures are not comparable; a new baseline is pending an evidence review for the current scope.",
+            "th": "ปรับขอบเขตผลิตภัณฑ์เป็น PUI89 Sentinel หุ่นยนต์สุนัขสี่ขาสำหรับตรวจสอบ ตัวเลขความพร้อมเดิมไม่สามารถเปรียบเทียบได้ จึงรอการทบทวนหลักฐานเพื่อกำหนดค่าฐานใหม่ตามขอบเขตปัจจุบัน"
           }
         }
       ],
