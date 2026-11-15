@@ -46,7 +46,7 @@ function projectCard(p,framework){
  addField(card,lang==="th"?"ข้อจำกัดและสิ่งที่ยังไม่ยืนยัน":"LIMITATIONS & UNVALIDATED CAPABILITIES",p.blockers);
  addField(card,lang==="th"?"เป้าหมายถัดไป":"NEXT MILESTONE",p.next);
  const links=el("div","pui89-observatory__links");
- const urls={coconut:["coconut.html","coconut-th.html"],"flood-rescue":["flood-rescue.html","flood-rescue-th.html"],sentinel:["sentinel.html","sentinel-th.html"],"ai-home":["home.html","home-th.html"],"ai-nomad":["homeguard.html","homeguard-th.html"],"robot-car":["ai-global-suv.html","ai-global-suv-th.html"],motorcycle:["ai-robot-motorcycle.html","ai-robot-motorcycle-th.html"]};
+ const urls={coconut:["coconut.html","coconut-th.html"],"flood-rescue":["flood-rescue.html","flood-rescue-th.html"],sentinel:["sentinel.html","sentinel-th.html"],"ai-home":["home.html","home-th.html"],"ai-nomad":["nomad.html","nomad-th.html"],"robot-car":["ai-global-suv.html","ai-global-suv-th.html"],motorcycle:["ai-robot-motorcycle.html","ai-robot-motorcycle-th.html"]};
  const pair=urls[p.id]||["#","#"],page=lang==="th"?pair[1]:pair[0];
  const a=el("a","",lang==="th"?"เปิดหน้าโครงการ ↗":"Project page ↗");a.href="/"+page;links.append(a);
  const gh=el("a","","GitHub ↗");gh.href="https://github.com/"+p.repo;gh.target="_blank";gh.rel="noopener noreferrer";links.append(gh);
