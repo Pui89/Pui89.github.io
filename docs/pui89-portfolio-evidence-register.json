@@ -122,8 +122,8 @@
       },
       {
         "id": "ai-nomad",
-        "name": "PUI89 AI NOMAD",
-        "repository": "Pui89/AI-NOMAD",
+        "name": "PUI89 AI NOMAD — AI Travel Suitcase Robot",
+        "repository": "Pui89/AI-Mobile-Assistant-Robot",
         "main_commit": "f617fc7d371b8b5226e5f873574dd49992ea89f0",
         "active_rulesets": 1,
         "total_rulesets": 1,
@@ -142,7 +142,21 @@
             "non_fast_forward",
             "pull_request"
           ]
-        }
+        },
+        "product_form": "upright_hard_shell_travel_suitcase_four_wheels",
+        "design_targets": {
+          "body_envelope_cm": "30–33 W × 35–40 D × 35–40 H (target; final dimensions TBD)",
+          "complete_mass_kg": "8–10 target; 12 absolute ceiling including battery and installed hardware",
+          "handle": "retractable telescopic manual pull handle",
+          "battery": "removable protected pack; Wh TBD"
+        },
+        "operating_modes": {
+          "travel": "manual pull/push; powered drive disabled",
+          "flight": "fully powered off; comply with operating carrier rules",
+          "robot": "future supervised use in permitted controlled areas only"
+        },
+        "airline_acceptance": "not_verified; no universal cabin-baggage acceptance claim",
+        "evidence_boundary": "No physical prototype, measured mass/dimensions, airline acceptance, selected battery, integrated sensors or validated mobility is claimed."
       },
       {
         "id": "robot-car",
