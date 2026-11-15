@@ -53,6 +53,29 @@ function projectCard(p,framework){
  if(p.history?.length){const h=p.history[p.history.length-1];links.append(el("span","pui89-observatory__empty",(lang==="th"?"บันทึกล่าสุด: ":"Latest evidence record: ")+formatDate(h.date)));}
  card.append(links);return card;
 }
+function renderTopStatus(project,framework){
+ const old=document.getElementById("pui89-global-project-status");
+ if(old)old.remove();
+ document.querySelectorAll(".pui89-progress--hero").forEach(node=>node.remove());
+ const history=(project.history||[]).slice().sort((a,b)=>a.date.localeCompare(b.date));
+ const last=history.length?history[history.length-1].date:(project.commercialReadiness?.reviewedOn||"");
+ const level=Number.isInteger(project.maturityLevel)?project.maturityLevel:null;
+ const maturity=level&&framework?.levels?.find(x=>x.level===level);
+ const panel=el("aside","pui89-global-status");
+ panel.id="pui89-global-project-status";
+ panel.setAttribute("aria-label",lang==="th"?"สถานะโครงการ วันที่อัปเดต และขั้นการพัฒนา":"Project status, update date and development stage");
+ const heading=el("span","pui89-global-status__eyebrow",lang==="th"?"สถานะโครงการ":"PROJECT STATUS");
+ const status=el("strong","pui89-global-status__status",lang==="th"?"กำลังพัฒนา":"In development");
+ const dateLabel=el("span","pui89-global-status__label",lang==="th"?"อัปเดตล่าสุด":"LAST UPDATED");
+ const date=el("strong","pui89-global-status__date",formatDate(last));
+ const stageLabel=el("span","pui89-global-status__label",lang==="th"?"ขั้นการพัฒนา":"DEVELOPMENT STAGE");
+ const stage=el("strong","pui89-global-status__stage",t(project.stageLabel));
+ panel.append(heading,status,dateLabel,date,stageLabel,stage);
+ if(level&&maturity){
+  panel.append(el("span","pui89-global-status__level",(lang==="th"?"ระดับวุฒิภาวะ ":"MATURITY LEVEL ")+level+"/7 · "+(lang==="th"?maturity.th:maturity.en));
+ }
+ document.body.append(panel);
+}
 function render(root,data){
  const portfolio=root.dataset.view==="portfolio",id=root.dataset.projectId;
  const projects=id?data.projects.filter(p=>p.id===id):data.projects;
@@ -80,6 +103,7 @@ function render(root,data){
   section.append(platform);
  }
  const grid=el("div","pui89-observatory__grid");projects.forEach(p=>grid.append(projectCard(p,data.maturityFramework)));section.append(grid);
+ if(!portfolio&&projects.length===1)renderTopStatus(projects[0],data.maturityFramework);
  const timeline=el("div","pui89-observatory__timeline");
  timeline.append(el("h3","",lang==="th"?"ประวัติบันทึกหลักฐาน":"Evidence record history"));
  const entries=[];projects.forEach(p=>(p.history||[]).forEach(h=>entries.push({p,h})));
