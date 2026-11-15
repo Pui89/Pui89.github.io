@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PROJECTS = [
     ("Coconut Harvest AI", "Pui89/Coconut-Harvest-AI", "Agricultural perception, dataset provenance, reviewed labels and leakage-safe evaluation."),
     ("Extreme Flood Rescue AI", "Pui89/Extreme-Flood-Rescue-AI", "Flood perception, scenario coverage, navigation and fail-safe evidence."),
-    ("Multimodal Screening AI", "Pui89/Multimodal-Narcotics-Screening-AI", "Multimodal evidence, uncertainty, lawful evaluation and human review."),
+    ("PUI89 Sentinel — All-Terrain Inspection Robot Dog", "Pui89/All-Terrain-Inspection-Robot", "Supervised quadruped inspection, terrain-aware mobility, sensor evidence and human review."),
     ("AI HOME", "Pui89/AI-Home-Safety-Robot", "Indoor home-safety observations, deterioration signals and supervised assistance."),
     ("AI NOMAD", "Pui89/AI-Mobile-Assistant-Robot", "Owner-supervised mobile assistance, environmental awareness and safe-stop behaviour."),
     ("PUI89 AI Global SUV", "Pui89/PUI89-AI-Global-SUV", "Medium-size SUV concept; human-driver-first mobility intelligence and advisory-only software research."),
@@ -124,7 +124,7 @@ def collect(project: tuple[str, str, str]) -> dict:
                     "coconut simulation evaluation",
                     "coconut harvest ai simulation evaluation",
                     "flood rescue ai simulation evaluation",
-                    "multimodal narcotics screening ai simulation evaluation",
+                    "quadruped robot dog industrial inspection terrain mobility simulation evaluation",
                 ),
                 "Coconut dataset evidence audit": ("coconut dataset evidence audit", "dataset provenance, hashes and split integrity"),
                 "Simulation benchmark + report validator": ("simulation benchmark", "pui89-simulation-benchmark"),

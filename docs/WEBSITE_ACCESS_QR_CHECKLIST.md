@@ -38,7 +38,7 @@ Use Google's PageSpeed Insights for both Mobile and Desktop on the homepage and 
 - Tool: https://pagespeed.web.dev/
 - Google PSI methodology: https://developers.google.com/speed/docs/insights/v5/about
 
-## Evidence log template
+## Latest update — Sentinel QR and project URL refresh (15 November 2026)\n\n- Canonical English page: `https://pui89.github.io/sentinel.html`; Thai page: `https://pui89.github.io/sentinel-th.html`.\n- New static QR assets: `qr/sentinel-en.svg` and `qr/sentinel-th.svg`; each encodes its corresponding canonical HTTPS page directly.\n- Local QR decoder verification returned the exact expected URL for both generated codes. A second-device camera scan after deployment remains pending.\n- The previous `qr/screening-en.png` and `qr/screening-th.svg` assets are obsolete and have been removed. Legacy `screening.html` and `screening-th.html` remain redirects for old bookmarks and printed codes.\n\n## Evidence log template
 
 | Date/time | URL | Device / viewport | Browser | Mobile/desktop Lighthouse | QR scan / destination | Result / issue |
 |---|---|---|---|---|---|---|

@@ -11,7 +11,7 @@ These are the latest default-branch commits returned by GitHub's commit search a
 |---|---|---|
 | [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | `main` | [`24a58ab`](https://github.com/Pui89/Coconut-Harvest-AI/commit/24a58abcc700d293f4c54a304c87fe4269930f62) |
 | [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | `main` | [`3a4c55e`](https://github.com/Pui89/Extreme-Flood-Rescue-AI/commit/3a4c55e43888e197bf426bdc4006fa92b653bf8f) |
-| [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | `main` | [`a8f7500`](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/commit/a8f750055428a6f9aeaf89d62e5278b690218546) |
+| [All-Terrain Inspection Robot Dog](https://github.com/Pui89/All-Terrain-Inspection-Robot) | `main` | New product-scope baseline under review in [PR #187](https://github.com/Pui89/All-Terrain-Inspection-Robot/pull/187); no new baseline commit on `main` yet. |
 | [PUI89 website](https://github.com/Pui89/Pui89.github.io) | `main` | [`5fac7ad`](https://github.com/Pui89/Pui89.github.io/commit/5fac7ad3a860f1f346506cb3db16a5cb49e7ad46) |
 
 **Verification limitation:** GitHub's combined commit-status endpoint returned no status records for these four SHAs during this review. This does not prove that no GitHub Actions workflows ran; it means this dashboard does not claim a current passing result for those exact commits. Use the Actions links below to inspect workflow runs and their commit SHAs before citing a pass.
@@ -22,7 +22,7 @@ These are the latest default-branch commits returned by GitHub's commit search a
 |---|---|---|---|
 | [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | Repository includes software and documented dataset/annotation audit and detector-comparison tooling. Historical test claims require checking the exact workflow and commit before reuse. | Strong detector performance, orchard generalization, customer value, autonomous harvesting, physical safety. The previously documented initial HSV baseline scored precision 0 and recall 0 at IoU ≥ 0.50 on only two images. | Build a permissioned, representative held-out dataset; review labels; run a reproducible detector comparison on the same images. |
 | [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | Repository includes software safety-gate input-validation tests and a proposed rescue-robot concept. Current passing CI is not asserted here without a matching run. | Real flood navigation, amphibious mobility, human evacuation performance, field rescue capability, physical safety. | Create repeatable simulation scenarios and report mission success, collisions, mapping error, recovery, and human interventions. |
-| [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | Repository includes a local-first screening concept and software checks; current passing CI is not asserted here without a matching run. | Validated narcotics detector, chemical identity, real-world screening performance, operational or enforcement suitability. | Define a narrow lawful task and obtain authorized expert-reviewed ground truth before reporting performance. Appearance alone cannot establish chemical identity. |
+| [All-Terrain Inspection Robot Dog](https://github.com/Pui89/All-Terrain-Inspection-Robot) | Product concept and engineering requirements are under review in PR #187. Current evidence is concept-level only. | Physical prototype, validated locomotion, terrain ratings, payload, endurance, integrated sensors, inspection accuracy and field performance. | Define the first inspection mission, operating envelope, hazard analysis, candidate components, simulation scenarios and validation plan. |
 
 ## Status labels
 
@@ -39,7 +39,7 @@ Automated tests help detect regressions in code. They do not prove that a detect
 
 - [Coconut Harvest AI Actions](https://github.com/Pui89/Coconut-Harvest-AI/actions)
 - [Extreme Flood Rescue AI Actions](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions)
-- [Multimodal Screening AI Actions](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions)
+- [All-Terrain Inspection Robot Dog engineering repository](https://github.com/Pui89/All-Terrain-Inspection-Robot)
 - [PUI89 website deployment and link checks](https://github.com/Pui89/Pui89.github.io/actions)
 
 ## Shared product standard

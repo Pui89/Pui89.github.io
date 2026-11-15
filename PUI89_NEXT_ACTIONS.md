@@ -25,10 +25,13 @@ Updated: 2026-10-30
 - [ ] Verify safe-hold and controlled-resume rules in software tests.
 - [ ] Add simulator telemetry only when a real configured simulator emits it.
 
-### Multimodal Narcotics Screening AI
-- [ ] Test missing, conflicting and low-quality modalities with explicit abstention.
-- [ ] Keep human review mandatory for consequential outcomes.
-- [ ] Do not treat ordinary RGB imagery or model scores as chemical identification.
+### All-Terrain Inspection Robot Dog — PUI89 Sentinel
+- [ ] Define the first narrow industrial inspection mission and measurable operating envelope.
+- [ ] Complete quadruped system requirements and a product-specific hazard analysis.
+- [ ] Compare leg, actuator, joint, foot, power and compute candidates with verified origin and compatibility evidence.
+- [ ] Define RGB, depth, LiDAR, IMU and joint/foot-state interfaces and calibration requirements.
+- [ ] Establish repeatable gait, terrain, obstacle, slip, fall and communications-fault simulation scenarios.
+- [ ] Keep all physical mobility and inspection claims unvalidated until controlled tests produce evidence.
 
 ## Later, gated upgrades
 

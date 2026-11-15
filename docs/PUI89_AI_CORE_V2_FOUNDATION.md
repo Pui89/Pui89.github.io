@@ -2,7 +2,7 @@
 
 **Status:** Architecture baseline proposed for review  
 **Version:** 2.0.0  
-**Scope:** Coconut Harvest AI, Extreme Flood Rescue AI, PUI89 Sentinel Screening AI, and PUI89 AI HOME / NOMAD.
+**Scope:** Coconut Harvest AI, Extreme Flood Rescue AI, All-Terrain Inspection Robot Dog, and PUI89 AI HOME / NOMAD.
 
 ## Purpose
 
@@ -31,8 +31,8 @@ All contracts are versioned JSON Schema. Consumers must reject unknown schema ve
 
 - **Proposal is not execution.** An ActionProposal is advisory until a separate gate authorizes it.
 - **Fail closed.** Missing safety-critical inputs, stale evidence, invalid provenance, conflicting critical observations, out-of-envelope conditions, or failed checks produce HOLD / BLOCKED.
-- **Human authorization.** Required for consequential screening decisions, rescue deployment, harvesting actuation, and any action with material risk to people, animals, property, or the environment.
-- **No autonomous enforcement.** Screening output is decision support only; authorised personnel make consequential decisions.
+- **Human authorization.** Required for consequential inspection actions, rescue deployment, harvesting actuation, and any action with material risk to people, animals, property, or the environment.
+- **No autonomous enforcement.** Inspection observations and action proposals are decision support only; authorised personnel make consequential decisions.
 - **Simulation boundary.** Synthetic or simulated success does not prove real-world performance, physical safety, buoyancy, reach, sensor accuracy, or field readiness.
 - **Traceability.** Every state claim and proposal links to evidence IDs, timestamps, source IDs, and applicable policy/version.
 - **Uncertainty is data.** Record confidence and calibration status only when measured; otherwise use unknown / not_estimated.
@@ -44,7 +44,7 @@ All contracts are versioned JSON Schema. Consumers must reject unknown schema ve
 |---|---|---|
 | Coconut Harvest AI | fruit observations, tree context, arm workspace | worker/animal exclusion zone; cutter and reach interlocks |
 | Extreme Flood Rescue AI | water level, current, obstacles, victim reports | human mission authorization; environmental envelope; rescue crew override |
-| Sentinel Screening AI | RGB / authorised sensor observations | human review; no autonomous accusation, detention, or enforcement |
+| Sentinel Inspection Robot Dog | RGB, depth, LiDAR, IMU and joint/foot-state observations | human supervision; bounded motion proposals; independent stop/hold controls |
 | AI HOME / NOMAD | environmental readings, device status, user reports | certified alarms remain independent; no replacement for electrical/fire protection |
 
 ## Evidence and release gates
