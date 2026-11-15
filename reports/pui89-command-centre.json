@@ -283,10 +283,10 @@
       "warnings": []
     },
     {
-      "name": "PUI89 AI NOMAD — Four-Wheel Mobile Assistant Robot",
+      "name": "PUI89 AI NOMAD — AI Travel Suitcase Robot",
       "repository": "Pui89/AI-Mobile-Assistant-Robot",
       "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot",
-      "focus": "Compact four-wheel mobile-assistant concept with an upright suitcase-inspired body and retractable manual pull handle; supervised mobility, carrying assistance and environmental awareness, distinct from indoor-focused AI HOME. Physical mobility and performance remain unvalidated.",
+      "focus": "Suitcase-form AI travel assistant with four protected wheels, retractable manual pull handle, internal storage, removable battery and local travel awareness. Travel Mode is manual; Flight Mode powers off; future Robot Mode is supervised in permitted controlled areas. Airline acceptance and physical performance are not validated.",
       "status": "CHECKS_AVAILABLE",
       "default_branch": "main",
       "latest_commit": "7b54dc4c395c",
@@ -369,7 +369,7 @@
         }
       ],
       "warnings": [
-        "PUI89 AI NOMAD is a four-wheel mobile assistant, not a quadruped. Its 8–10 kg complete-mass target (10 kg maximum) and proposed body envelope are design targets, not measured prototype specifications. Successful software workflows do not validate physical mobility, sensors or AI performance."
+        "The active product definition is an AI travel suitcase, not a quadruped or generic mobile robot. Body envelope and 8–10 kg target / 12 kg ceiling are proposed design targets, not measured specifications. Cabin acceptance varies by carrier, route, aircraft and weight allowance; no airline approval is claimed. Software workflows do not validate physical mobility, sensors or AI performance."
       ]
     },
     {
