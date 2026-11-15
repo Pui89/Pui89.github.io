@@ -162,3 +162,36 @@
  .pui89-global-status__stage{font-size:.62rem}
  .pui89-global-status__percent{font-size:.66rem}
 }
+
+
+/* Compact seven-project overview: right-aligned below the header, never over navigation. */
+.pui89-global-status{
+ position:relative!important;top:auto!important;right:auto!important;z-index:2;
+ display:block!important;width:min(370px,calc(100% - 28px))!important;
+ max-height:none!important;overflow:visible!important;overscroll-behavior:auto!important;
+ margin:8px 18px 12px auto!important;padding:9px 11px!important;
+ border:1px solid rgba(66,217,255,.28)!important;border-radius:11px!important;
+ background:rgba(7,20,36,.94)!important;color:#F3F7FF!important;
+ box-shadow:0 6px 20px rgba(0,0,0,.14)!important;
+ backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+}
+.pui89-global-status__heading{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:5px}
+.pui89-global-status__title{color:#65E7FF;font-size:.68rem;font-weight:850;letter-spacing:.08em}
+.pui89-global-status__overall{color:#AFC5D8;font-size:.57rem;font-weight:750;white-space:nowrap}
+.pui89-global-status__list{display:grid;gap:5px}
+.pui89-global-status__project{min-width:0;padding:3px 0 4px;border-top:1px solid rgba(159,180,201,.12)}
+.pui89-global-status__project-top{display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
+.pui89-global-status__name{display:block;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#EAF6FF!important;font-size:.67rem;font-weight:750;text-decoration:none}
+.pui89-global-status__name:hover{text-decoration:underline}
+.pui89-global-status__percent{flex:0 0 auto;color:#42D9FF;font-size:.65rem;font-weight:850;font-variant-numeric:tabular-nums}
+.pui89-global-status__meta{display:flex;align-items:center;justify-content:space-between;gap:7px;min-width:0;margin-top:1px}
+.pui89-global-status__stage{display:block;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#9FB4C9;font-size:.59rem}
+.pui89-global-status__date{flex:0 0 auto;color:#9FB4C9;font-size:.57rem;white-space:nowrap}
+.pui89-global-status__bar{width:100%;height:2px;margin-top:3px;overflow:hidden;border-radius:99px;background:rgba(93,119,145,.3)}
+.pui89-global-status__bar span{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#00AFA5,#00D9FF)}
+@media(max-width:640px){
+ .pui89-global-status{width:calc(100% - 24px)!important;margin:7px 12px 10px auto!important;padding:8px 9px!important}
+ .pui89-global-status__name{font-size:.64rem}
+ .pui89-global-status__stage{font-size:.56rem}
+ .pui89-global-status__date{font-size:.54rem}
+}
