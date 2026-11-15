@@ -392,4 +392,18 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/news-th.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/news.html"/>
   </url>
+  <url>
+    <loc>https://pui89.github.io/technical-visual-standard.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/technical-visual-standard.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/technical-visual-standard-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/technical-visual-standard.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/technical-visual-standard-th.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/technical-visual-standard.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/technical-visual-standard-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/technical-visual-standard.html"/>
+  </url>
 </urlset>
