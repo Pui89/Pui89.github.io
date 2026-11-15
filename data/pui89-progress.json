@@ -52,7 +52,8 @@
       "commercialReadiness": {
         "percent": 50,
         "reviewedOn": "2026-11-07"
-      }
+      },
+      "maturityLevel": 3
     },
     {
       "id": "flood-rescue",
@@ -96,7 +97,8 @@
       "commercialReadiness": {
         "percent": 46,
         "reviewedOn": "2026-11-07"
-      }
+      },
+      "maturityLevel": 3
     },
     {
       "id": "sentinel",
@@ -140,7 +142,8 @@
       "commercialReadiness": {
         "percent": 0,
         "reviewedOn": "2026-11-15"
-      }
+      },
+      "maturityLevel": 1
     },
     {
       "id": "ai-home",
@@ -229,7 +232,8 @@
       "commercialReadiness": {
         "percent": 30,
         "reviewedOn": "2026-11-07"
-      }
+      },
+      "maturityLevel": 2
     },
     {
       "id": "robot-car",
@@ -273,7 +277,8 @@
       "commercialReadiness": {
         "percent": 29,
         "reviewedOn": "2026-11-07"
-      }
+      },
+      "maturityLevel": 2
     },
     {
       "id": "motorcycle",
@@ -317,7 +322,8 @@
       "commercialReadiness": {
         "percent": 28,
         "reviewedOn": "2026-11-07"
-      }
+      },
+      "maturityLevel": 1
     }
   ],
   "maturityFramework": {
