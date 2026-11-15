@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
-<title id="title">PUI89 AI NOMAD — compact mobile assistant with retractable handle</title>
-<desc id="desc">A separate compact four-wheel mobile assistant with a rounded vertical suitcase-like body, telescopic pull handle, recessed protected wheels and a front sensing panel. Proposed body envelope 30–33 cm wide, 35–40 cm long and 35–40 cm high excluding the handle. Complete robot mass target 8–10 kg, 10 kg maximum including battery, handle and installed hardware; payload remains TBD.</desc>
+<title id="title">PUI89 AI NOMAD — integrated four-wheel robotic travel companion with impact-protected chassis</title>
+<desc id="desc">An integrated four-wheel mobile robot in a compact travel-suitcase form factor, with motorised wheel modules, reinforced impact-protected chassis, shock-isolated electronics, protected battery enclosure, human-handling handle and secondary storage. Proposed body envelope 30–33 cm wide, 35–40 cm long and 35–40 cm high excluding the handle. Complete robot mass target 8–10 kg, 10 kg maximum including battery, handle and installed hardware; payload remains TBD.</desc>
 <defs>
  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#061426"/><stop offset="1" stop-color="#153650"/></linearGradient>
  <linearGradient id="shell" x2="1" y2="1"><stop stop-color="#315b76"/><stop offset=".52" stop-color="#142f46"/><stop offset="1" stop-color="#071827"/></linearGradient>
@@ -11,7 +11,7 @@
 <rect width="1200" height="820" rx="28" fill="url(#bg)"/>
 <text x="64" y="70" fill="#78eaff" font-family="Arial,sans-serif" font-size="21" letter-spacing="5">PUI89 / MOBILE ROBOTICS</text>
 <text x="64" y="132" fill="#fff" font-family="Arial,sans-serif" font-size="56" font-weight="700">AI NOMAD</text>
-<text x="66" y="172" fill="#b9d0df" font-family="Arial,sans-serif" font-size="20" letter-spacing="1">COMPACT MOBILE ASSISTANT · SUITCASE-INSPIRED FORM</text>
+<text x="66" y="172" fill="#b9d0df" font-family="Arial,sans-serif" font-size="20" letter-spacing="1">INTEGRATED FOUR-WHEEL ROBOT · GROUND-TRAVEL COMPANION</text>
 <ellipse cx="555" cy="680" rx="270" ry="34" fill="#000" opacity=".42" filter="url(#shadow)"/>
 <!-- telescopic pull handle, deliberately distinct from HOME -->
 <path d="M477 285 V192 Q477 177 494 177 H654 Q671 177 671 192 V285" fill="none" stroke="url(#metal)" stroke-width="15" stroke-linecap="round"/>
@@ -29,10 +29,13 @@
 <circle cx="594" cy="432" r="10" fill="#081d2d" stroke="#91efff" stroke-width="3"/>
 <path d="M510 487 Q566 465 622 487" fill="none" stroke="#42d3ec" stroke-width="4" stroke-linecap="round"/>
 <text x="566" y="560" text-anchor="middle" fill="#e7faff" font-family="Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="3">NOMAD</text>
-<text x="566" y="588" text-anchor="middle" fill="#91b9cc" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">PUI89 MOBILE ASSISTANT</text>
+<text x="566" y="588" text-anchor="middle" fill="#91b9cc" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">INTEGRATED MOBILE ROBOT</text>
 <!-- visible emergency stop -->
 <circle cx="710" cy="349" r="17" fill="#d84c56" stroke="#ffd6d6" stroke-width="4"/>
-<!-- recessed wheel pods -->
+<!-- reinforced corner guards and impact-protected chassis -->
+<path d="M378 318 Q382 274 422 258 L702 258 Q744 267 750 307 L783 604 Q788 648 748 660" fill="none" stroke="#83efff" stroke-width="12" opacity=".72" stroke-linecap="round"/>
+<path d="M359 605 Q354 649 394 660 L748 660 Q788 648 783 604" fill="none" stroke="#83efff" stroke-width="9" opacity=".55"/>
+<!-- recessed motorised wheel modules -->
 <g fill="#050f1a" stroke="#63869b" stroke-width="4">
  <rect x="337" y="548" width="70" height="120" rx="26"/>
  <rect x="735" y="548" width="70" height="120" rx="26"/>
@@ -45,20 +48,22 @@
  <rect x="405" y="649" width="43" height="28" rx="12"/>
  <rect x="697" y="649" width="43" height="28" rx="12"/>
 </g>
+<!-- visible wheel hubs indicate integrated powered wheel modules; drivetrain layout remains a design decision -->
+<g fill="#071827" stroke="#42d9ff" stroke-width="3"><circle cx="372" cy="607" r="12"/><circle cx="770" cy="607" r="12"/><circle cx="426" cy="663" r="8"/><circle cx="718" cy="663" r="8"/></g>
 <path d="M385 624 Q566 655 758 624" fill="none" stroke="#2ac8e6" stroke-width="7"/>
 <!-- callouts -->
 <g font-family="Arial,sans-serif">
  <path d="M680 175 H850 L877 148" stroke="#70e7f8" stroke-width="2" fill="none"/>
  <text x="890" y="147" fill="#fff" font-size="21" font-weight="700">Telescopic pull handle</text>
- <text x="890" y="174" fill="#b4cbd9" font-size="16">For manual repositioning</text>
+ <text x="890" y="174" fill="#b4cbd9" font-size="16">Human handling and safe recovery</text>
  <path d="M710 349 H850 L877 322" stroke="#70e7f8" stroke-width="2" fill="none"/>
  <text x="890" y="321" fill="#fff" font-size="21" font-weight="700">Emergency-stop control</text>
- <text x="890" y="348" fill="#b4cbd9" font-size="16">Physical design requirement</text>
+ <text x="890" y="348" fill="#b4cbd9" font-size="16">Manual stop / emergency control</text>
  <path d="M783 607 H850 L877 580" stroke="#70e7f8" stroke-width="2" fill="none"/>
- <text x="890" y="579" fill="#fff" font-size="21" font-weight="700">Four recessed wheels</text>
- <text x="890" y="606" fill="#b4cbd9" font-size="16">Protected wheel housings</text>
- <text x="65" y="250" fill="#fff" font-size="21" font-weight="700">Portable upright body</text>
- <text x="65" y="278" fill="#b4cbd9" font-size="16">Distinct from the low-profile AI HOME</text>
+ <text x="890" y="579" fill="#fff" font-size="21" font-weight="700">Four robotic wheel modules</text>
+ <text x="890" y="606" fill="#b4cbd9" font-size="16">Motorised drive architecture TBD</text>
+ <text x="65" y="250" fill="#fff" font-size="21" font-weight="700">Reinforced robot enclosure</text>
+ <text x="65" y="278" fill="#b4cbd9" font-size="16">Protected corners and internal load frame</text>
 </g>
 <rect x="64" y="712" width="1072" height="76" rx="15" fill="#061827" stroke="#285a76" stroke-width="2"/>
 <g font-family="Arial,sans-serif" text-anchor="middle">
@@ -67,5 +72,5 @@
  <text x="630" y="740" fill="#78eaff" font-size="13" letter-spacing="2">BODY HEIGHT</text><text x="630" y="770" fill="#fff" font-size="21" font-weight="700">35–40 cm</text>
  <text x="870" y="740" fill="#78eaff" font-size="13" letter-spacing="2">COMPLETE MASS TARGET</text><text x="870" y="770" fill="#fff" font-size="21" font-weight="700">8–10 kg</text>
 </g>
-<text x="65" y="808" fill="#91a9ba" font-family="Arial,sans-serif" font-size="13">PROPOSED DESIGN ONLY · Complete mass target 8–10 kg, 10 kg maximum. Payload and outdoor/weather limits remain unvalidated.</text>
+<text x="65" y="808" fill="#91a9ba" font-family="Arial,sans-serif" font-size="13">PROPOSED ROBOT DESIGN ONLY · Impact, vibration, battery and drivetrain protection require physical testing. No durability rating is validated.</text>
 </svg>
