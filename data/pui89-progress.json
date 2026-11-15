@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-11-11",
+  "asOf": "2026-11-15",
   "title": {
     "en": "PUI89 Development Observatory",
     "th": "ศูนย์ติดตามการพัฒนา PUI89"
@@ -102,38 +102,38 @@
       "id": "sentinel",
       "number": 3,
       "name": {
-        "en": "PUI89 Sentinel — All-Terrain Inspection Robot Dog",
-        "th": "PUI89 Sentinel — หุ่นยนต์สุนัขสี่ขาสำหรับตรวจสอบทุกสภาพพื้นที่"
+        "en": "All-Terrain Inspection Robot Dog — PUI89 Sentinel",
+        "th": "All-Terrain Inspection Robot Dog — PUI89 Sentinel"
       },
       "repo": "Pui89/All-Terrain-Inspection-Robot",
       "stageLabel": {
-        "en": "Quadruped concept + software workflow",
-        "th": "แนวคิดหุ่นยนต์สี่ขาและกระบวนงานซอฟต์แวร์"
+        "en": "Concept and engineering requirements",
+        "th": "แนวคิดและข้อกำหนดทางวิศวกรรม"
       },
       "summary": {
-        "en": "A supervised quadruped inspection concept and software workflow are documented. No physical robot, validated locomotion, sensor integration, terrain performance or field deployment is established.",
-        "th": "มีเอกสารแนวคิดหุ่นยนต์สี่ขาและกระบวนงานซอฟต์แวร์ แต่ยังไม่มีหุ่นยนต์จริง การเคลื่อนที่ที่ผ่านการตรวจสอบ การติดตั้งเซนเซอร์ สมรรถนะบนพื้นผิวต่าง ๆ หรือการใช้งานภาคสนาม"
+        "en": "A four-legged quadruped robot dog concept for supervised inspection of industrial facilities, infrastructure, warehouses, logistics yards, ports and selected outdoor environments. The current record covers product definition and engineering requirements only.",
+        "th": "แนวคิดหุ่นยนต์สุนัขสี่ขาแบบ Quadruped สำหรับตรวจสอบโรงงาน โครงสร้างพื้นฐาน คลังสินค้า ลานโลจิสติกส์ ท่าเรือ และพื้นที่กลางแจ้งที่เหมาะสม ข้อมูลปัจจุบันครอบคลุมเฉพาะการกำหนดผลิตภัณฑ์และข้อกำหนดทางวิศวกรรม"
       },
       "next": {
-        "en": "Complete the mechanical/control architecture, then run safe bench tests, controlled locomotion trials and sensor validation before any field pilot.",
-        "th": "จัดทำสถาปัตยกรรมกลไกและระบบควบคุมให้ครบ จากนั้นทดสอบบนโต๊ะ ทดสอบการเดินในพื้นที่ควบคุม และตรวจสอบเซนเซอร์ก่อนทดลองภาคสนาม"
+        "en": "Define the first inspection mission and measurable operating envelope; complete hazard analysis; compare candidate components; establish simulation scenarios and a validation plan before any hardware procurement.",
+        "th": "กำหนดภารกิจตรวจสอบแรกและขอบเขตการทำงานที่วัดผลได้ วิเคราะห์อันตราย เปรียบเทียบชิ้นส่วนตัวเลือก และจัดทำสถานการณ์จำลองกับแผนตรวจสอบก่อนจัดซื้อฮาร์ดแวร์"
       },
       "evidence": {
-        "en": "Documented quadruped concept, SVG design, software workflow and engineering requirements; no physical prototype or field-test evidence.",
-        "th": "มีเอกสารแนวคิดหุ่นยนต์สี่ขา ภาพ SVG กระบวนงานซอฟต์แวร์ และข้อกำหนดวิศวกรรม ยังไม่มีต้นแบบจริงหรือหลักฐานทดสอบภาคสนาม"
+        "en": "Current evidence is limited to the product concept, engineering requirements and proposed validation documentation. No physical prototype or integrated hardware evidence is recorded.",
+        "th": "หลักฐานปัจจุบันจำกัดอยู่ที่แนวคิดผลิตภัณฑ์ ข้อกำหนดทางวิศวกรรม และเอกสารแผนการตรวจสอบที่เสนอไว้ ยังไม่มีหลักฐานต้นแบบจริงหรือฮาร์ดแวร์ที่ติดตั้งร่วมกัน"
       },
       "blockers": {
-        "en": "Mechanical design, actuators and joints, gait/balance control, safe-stop behaviour, sensor selection, power budget, environmental protection and controlled testing.",
-        "th": "แบบกลไก แอกชูเอเตอร์และข้อต่อ ระบบเดินและทรงตัว การหยุดอย่างปลอดภัย การเลือกเซนเซอร์ งบพลังงาน การป้องกันสภาพแวดล้อม และการทดสอบในพื้นที่ควบคุม"
+        "en": "No validated locomotion, terrain rating, payload, endurance, sensor integration, inspection accuracy, safety performance or field deployment. Component selection and origin evidence remain to be verified.",
+        "th": "ยังไม่มีการยืนยันสมรรถนะการเดิน ระดับพื้นผิว น้ำหนักบรรทุก ระยะเวลาทำงาน การเชื่อมต่อเซนเซอร์ ความแม่นยำในการตรวจสอบ สมรรถนะความปลอดภัย หรือการใช้งานภาคสนาม การเลือกชิ้นส่วนและหลักฐานแหล่งกำเนิดยังต้องตรวจสอบ"
       },
       "history": [
         {
           "period": "2026-11",
           "date": "2026-11-15",
-          "type": "scope_reset",
+          "type": "scope-reset",
           "note": {
-            "en": "Product scope reset to the PUI89 Sentinel quadruped inspection robot dog. Previous readiness figures are not comparable; a new baseline is pending an evidence review for the current scope.",
-            "th": "ปรับขอบเขตผลิตภัณฑ์เป็น PUI89 Sentinel หุ่นยนต์สุนัขสี่ขาสำหรับตรวจสอบ ตัวเลขความพร้อมเดิมไม่สามารถเปรียบเทียบได้ จึงรอการทบทวนหลักฐานเพื่อกำหนดค่าฐานใหม่ตามขอบเขตปัจจุบัน"
+            "en": "New product identity and evidence baseline established for the All-Terrain Inspection Robot Dog. No physical validation evidence is carried forward.",
+            "th": "กำหนดชื่อผลิตภัณฑ์และค่าฐานหลักฐานใหม่สำหรับหุ่นยนต์ตรวจสอบทุกสภาพพื้นที่ โดยไม่นำหลักฐานการตรวจสอบทางกายภาพจากขอบเขตเดิมมาใช้"
           }
         }
       ],
