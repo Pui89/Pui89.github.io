@@ -128,3 +128,37 @@
 /* Keep the project-view counter out of the header and the in-flow status strip. */
 .pui89-project-views{position:static!important;top:auto!important;right:auto!important;bottom:auto!important;margin:14px 18px 14px auto!important;width:max-content;max-width:calc(100% - 36px)}
 @media(max-width:640px){.pui89-project-views{margin:12px 14px 12px auto!important}}
+
+
+/* Compact single-line project status with a thin cyan progress indicator. */
+.pui89-global-status{
+ display:block!important;
+ width:min(1100px,calc(100% - 36px))!important;
+ margin:7px auto 0!important;
+ padding:6px 0 7px!important;
+ border:0!important;
+ border-bottom:1px solid rgba(66,217,255,.2)!important;
+ border-radius:0!important;
+ background:transparent!important;
+ box-shadow:none!important;
+ overflow:visible!important;
+}
+.pui89-global-status__row{
+ display:flex;align-items:center;gap:7px 13px;min-width:0;
+ font-size:.7rem;line-height:1.3;
+}
+.pui89-global-status__status{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;font-size:.7rem;font-weight:800;color:#EAF6FF}
+.pui89-global-status__dot{display:inline-block;width:6px;height:6px;flex:0 0 6px;border-radius:50%;background:#42D9FF;box-shadow:0 0 6px rgba(66,217,255,.55)}
+.pui89-global-status__meta{flex:0 0 auto;color:#8FA9C0;font-size:.66rem;white-space:nowrap}
+.pui89-global-status__stage{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#C5D5E4;font-size:.68rem}
+.pui89-global-status__percent{flex:0 0 auto;color:#42D9FF;font-size:.72rem;font-weight:850;font-variant-numeric:tabular-nums}
+.pui89-global-status__bar{width:100%;height:3px;margin-top:5px;overflow:hidden;border-radius:99px;background:rgba(93,119,145,.3)}
+.pui89-global-status__bar span{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#00AFA5,#00D9FF);box-shadow:0 0 6px rgba(0,217,255,.35)}
+@media(max-width:640px){
+ .pui89-global-status{width:calc(100% - 28px)!important;margin-top:6px!important;padding:5px 0 6px!important}
+ .pui89-global-status__row{gap:5px 8px}
+ .pui89-global-status__status{font-size:.65rem}
+ .pui89-global-status__meta{font-size:.6rem}
+ .pui89-global-status__stage{font-size:.62rem}
+ .pui89-global-status__percent{font-size:.66rem}
+}
