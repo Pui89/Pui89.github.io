@@ -1,71 +1,93 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1040" role="img" aria-labelledby="title desc">
-<title id="title">PUI89 Shared AI Core — Six Intelligence Groups and Evidence-Gated Architecture</title>
-<desc id="desc">A conceptual architecture showing six intelligence groups feeding an evidence-grounded processing pipeline, with independent safety and human review, shared contracts and evidence records supporting seven PUI89 projects.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1220" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 Shared AI Core — Five Shared Engineering Pillars</title>
+<desc id="desc">A proposed software architecture for seven PUI89 projects: Perception and Task Intelligence; Multimodal AI and Sensor Fusion; heterogeneous CPU, GPU, NPU and MCU coordination; Simulation and Digital Twin; and Reliability, Safety and Evidence. Shared contracts connect the foundation to seven independent project adapters.</desc>
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10243b"/><stop offset="1" stop-color="#050d18"/></linearGradient>
   <linearGradient id="cyan" x1="0" x2="1"><stop stop-color="#39cfff"/><stop offset="1" stop-color="#a4f0ff"/></linearGradient>
   <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#183451"/><stop offset="1" stop-color="#10243a"/></linearGradient>
-  <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#54dfff"/></marker>
   <style>
     .txt{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#edf6ff}
-    .muted{fill:#afc3d8;font-family:Inter,Segoe UI,Arial,sans-serif}
-    .cyan{fill:#55dcff;font-family:Inter,Segoe UI,Arial,sans-serif}
+    .muted{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#afc3d8}
+    .cyan{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#55dcff}
     .card{fill:url(#panel);stroke:#315779;stroke-width:1.6}
-    .cap{font-size:17px;font-weight:800;letter-spacing:1.3px}
-    .sub{font-size:13px}
-    .stage{font-size:17px;font-weight:800}
-    .small{font-size:12px}
+    .head{font-size:20px;font-weight:800}
+    .sub{font-size:15px}
+    .small{font-size:13px}
+    .num{font-size:15px;font-weight:850;letter-spacing:1.6px}
   </style>
 </defs>
-<rect width="1440" height="1040" rx="30" fill="url(#bg)"/>
-<g stroke="#25435e" opacity=".24"><path d="M0 120H1440M0 240H1440M0 360H1440M0 480H1440M0 600H1440M0 720H1440M0 840H1440M0 960H1440"/><path d="M120 0V1040M240 0V1040M360 0V1040M480 0V1040M600 0V1040M720 0V1040M840 0V1040M960 0V1040M1080 0V1040M1200 0V1040M1320 0V1040"/></g>
+<rect width="1440" height="1220" rx="28" fill="url(#bg)"/>
+<g stroke="#25435e" opacity=".22"><path d="M0 140H1440M0 280H1440M0 420H1440M0 560H1440M0 700H1440M0 840H1440M0 980H1440M0 1120H1440"/><path d="M120 0V1220M240 0V1220M360 0V1220M480 0V1220M600 0V1220M720 0V1220M840 0V1220M960 0V1220M1080 0V1220M1200 0V1220M1320 0V1220"/></g>
 <text x="64" y="66" class="cyan" font-size="17" font-weight="800" letter-spacing="4">PUI89 / SHARED ENGINEERING FOUNDATION</text>
-<text x="64" y="119" class="txt" font-size="42" font-weight="850">SHARED AI CORE</text>
-<text x="66" y="151" class="muted" font-size="18">Intelligence You Can Verify · One evidence-led foundation, seven independent products</text>
-<rect x="1138" y="54" width="238" height="42" rx="21" fill="#332b1d" stroke="#8b7445"/>
-<text x="1257" y="80" text-anchor="middle" fill="#f4d99e" font-size="13" font-family="Inter,Segoe UI,Arial,sans-serif" font-weight="800">PROPOSED INTEGRATION ARCHITECTURE</text>
+<text x="64" y="124" class="txt" font-size="48" font-weight="850">SHARED AI CORE</text>
+<text x="66" y="160" class="muted" font-size="20">One reusable software foundation · Seven independent products</text>
+<rect x="1110" y="54" width="266" height="44" rx="22" fill="#332b1d" stroke="#8b7445"/>
+<text x="1243" y="81" text-anchor="middle" fill="#f4d99e" font-size="13" font-family="Inter,Segoe UI,Arial,sans-serif" font-weight="800">PROPOSED ARCHITECTURE</text>
+<text x="64" y="220" class="cyan num">FIVE SHARED ENGINEERING PILLARS</text>
 
-<text x="64" y="208" class="cyan" font-size="14" font-weight="800" letter-spacing="2.4">01 / SIX CORE INTELLIGENCE GROUPS</text>
 <g>
- <rect class="card" x="64" y="230" width="202" height="112" rx="15"/><text x="165" y="270" text-anchor="middle" class="txt cap">VISION</text><text x="165" y="296" text-anchor="middle" class="muted sub">Detect · Track · Segment</text><text x="165" y="316" text-anchor="middle" class="muted sub">Depth · Scene understanding</text>
- <rect class="card" x="282" y="230" width="202" height="112" rx="15"/><text x="383" y="270" text-anchor="middle" class="txt cap">AUDIO</text><text x="383" y="296" text-anchor="middle" class="muted sub">Speech · Sound events</text><text x="383" y="316" text-anchor="middle" class="muted sub">Acoustic diagnostics</text>
- <rect class="card" x="500" y="230" width="202" height="112" rx="15"/><text x="601" y="270" text-anchor="middle" class="txt cap">MULTIMODAL</text><text x="601" y="296" text-anchor="middle" class="muted sub">Time/space alignment</text><text x="601" y="316" text-anchor="middle" class="muted sub">Evidence fusion · Conflicts</text>
- <rect class="card" x="718" y="230" width="202" height="112" rx="15"/><text x="819" y="270" text-anchor="middle" class="txt cap">ROBOTICS</text><text x="819" y="296" text-anchor="middle" class="muted sub">Localisation · Mapping</text><text x="819" y="316" text-anchor="middle" class="muted sub">Navigation · Task context</text>
- <rect class="card" x="936" y="230" width="202" height="112" rx="15"/><text x="1037" y="270" text-anchor="middle" class="txt cap">ACTION &amp; REACTION</text><text x="1037" y="296" text-anchor="middle" class="muted sub">Planning · Prediction</text><text x="1037" y="316" text-anchor="middle" class="muted sub">Alerts · Recovery proposals</text>
- <rect x="1154" y="230" width="222" height="112" rx="15" fill="#2b2630" stroke="#d2a95e" stroke-width="1.8"/><text x="1265" y="270" text-anchor="middle" fill="#ffe1a1" font-size="16" font-weight="850" font-family="Inter,Segoe UI,Arial,sans-serif">SAFETY &amp; CONTROL</text><text x="1265" y="296" text-anchor="middle" class="muted sub">Permissions · Risk gates</text><text x="1265" y="316" text-anchor="middle" class="muted sub">Human authority · Safe hold</text>
-</g>
-<path d="M165 354V382H1265V354M383 354V382M601 354V382M819 354V382M1037 354V382" fill="none" stroke="#55dcff" stroke-width="2" opacity=".75"/>
-<path d="M720 382V410" stroke="#55dcff" stroke-width="2.5" marker-end="url(#arrow)"/>
-<text x="64" y="446" class="cyan" font-size="14" font-weight="800" letter-spacing="2.4">02 / EVIDENCE-GROUNDED PROCESSING FLOW</text>
-<g>
- <rect class="card" x="64" y="470" width="180" height="124" rx="15"/><text x="154" y="510" text-anchor="middle" class="txt stage">OBSERVE</text><text x="154" y="537" text-anchor="middle" class="muted sub">Authorised inputs</text><text x="154" y="558" text-anchor="middle" class="muted sub">Source · Time · Quality</text>
- <path d="M246 532H274" stroke="#55dcff" stroke-width="2.5" marker-end="url(#arrow)"/>
- <rect class="card" x="282" y="470" width="180" height="124" rx="15"/><text x="372" y="510" text-anchor="middle" class="txt stage">PERCEIVE</text><text x="372" y="537" text-anchor="middle" class="muted sub">PTI capabilities</text><text x="372" y="558" text-anchor="middle" class="muted sub">Typed observations</text>
- <path d="M464 532H492" stroke="#55dcff" stroke-width="2.5" marker-end="url(#arrow)"/>
- <rect class="card" x="500" y="470" width="180" height="124" rx="15"/><text x="590" y="510" text-anchor="middle" class="txt stage">WORLDSTATE</text><text x="590" y="537" text-anchor="middle" class="muted sub">Known · Unknown</text><text x="590" y="558" text-anchor="middle" class="muted sub">Stale · Conflicting</text>
- <path d="M682 532H710" stroke="#55dcff" stroke-width="2.5" marker-end="url(#arrow)"/>
- <rect class="card" x="718" y="470" width="180" height="124" rx="15"/><text x="808" y="510" text-anchor="middle" class="txt stage">ASSESS &amp; PLAN</text><text x="808" y="537" text-anchor="middle" class="muted sub">Reasoning · Risk</text><text x="808" y="558" text-anchor="middle" class="muted sub">Bounded proposal</text>
- <path d="M900 532H928" stroke="#55dcff" stroke-width="2.5" marker-end="url(#arrow)"/>
- <rect x="936" y="470" width="202" height="124" rx="15" fill="#2b2630" stroke="#d2a95e" stroke-width="2"/><text x="1037" y="510" text-anchor="middle" fill="#ffe1a1" font-size="17" font-weight="850" font-family="Inter,Segoe UI,Arial,sans-serif">SAFETY GATE</text><text x="1037" y="537" text-anchor="middle" class="muted sub">Policy · Operating limits</text><text x="1037" y="558" text-anchor="middle" class="muted sub">Human review / Abstain</text>
- <path d="M1140 532H1168" stroke="#55dcff" stroke-width="2.5" marker-end="url(#arrow)"/>
- <rect class="card" x="1176" y="470" width="200" height="124" rx="15"/><text x="1276" y="510" text-anchor="middle" class="txt stage">RESPOND</text><text x="1276" y="537" text-anchor="middle" class="muted sub">Explain · Alert · Report</text><text x="1276" y="558" text-anchor="middle" class="muted sub">No direct actuation</text>
-</g>
-<path d="M1276 604V628H154V604" fill="none" stroke="#55dcff" stroke-width="1.8" stroke-dasharray="7 7" opacity=".65"/>
-<text x="715" y="650" text-anchor="middle" class="muted small">Outcome, correction and failure evidence feed controlled review — not automatic online learning</text>
+ <rect class="card" x="64" y="250" width="410" height="230" rx="18"/>
+ <text x="92" y="288" class="cyan num">01 / INTELLIGENCE</text>
+ <text x="92" y="326" class="txt head">Perception &amp; Task Intelligence</text>
+ <text x="92" y="365" class="muted sub">Observe · Perceive · Assess</text>
+ <text x="92" y="392" class="muted sub">Decide · Respond · Learn from Evidence</text>
+ <text x="92" y="435" class="txt small">Detection, classification, tracking, segmentation,</text>
+ <text x="92" y="457" class="txt small">scene understanding, task context and uncertainty.</text>
 
-<text x="64" y="700" class="cyan" font-size="14" font-weight="800" letter-spacing="2.4">03 / SHARED CONTRACTS + EVIDENCE</text>
+ <rect class="card" x="515" y="250" width="410" height="230" rx="18"/>
+ <text x="543" y="288" class="cyan num">02 / SENSING</text>
+ <text x="543" y="326" class="txt head">Multimodal AI &amp; Sensor Fusion</text>
+ <text x="543" y="365" class="muted sub">RGB · Depth · Thermal · NIR · LiDAR</text>
+ <text x="543" y="392" class="muted sub">Audio · IMU · GNSS · Other approved inputs</text>
+ <text x="543" y="435" class="txt small">Time alignment, calibration, data quality,</text>
+ <text x="543" y="457" class="txt small">cross-modal context and disagreement checks.</text>
+
+ <rect class="card" x="966" y="250" width="410" height="230" rx="18"/>
+ <text x="994" y="288" class="cyan num">03 / COMPUTE</text>
+ <text x="994" y="326" class="txt head">Heterogeneous Compute Coordination</text>
+ <text x="994" y="365" class="muted sub">CPU · GPU · NPU · MCU · Memory</text>
+ <text x="994" y="392" class="muted sub">Sensors · Power · Thermal constraints</text>
+ <text x="994" y="435" class="txt small">Workload placement, model sizing, quantization,</text>
+ <text x="994" y="457" class="txt small">resource-aware scheduling and graceful fallback.</text>
+
+ <rect class="card" x="288" y="510" width="410" height="220" rx="18"/>
+ <text x="316" y="548" class="cyan num">04 / ENGINEERING</text>
+ <text x="316" y="586" class="txt head">Simulation &amp; Digital Twin</text>
+ <text x="316" y="625" class="muted sub">Simulate → Validate → Prototype</text>
+ <text x="316" y="652" class="muted sub">→ Supervised real-world testing</text>
+ <text x="316" y="695" class="txt small">Process, route, robot and system scenarios;</text>
+ <text x="316" y="717" class="txt small">simulation results remain distinct from field evidence.</text>
+
+ <rect class="card" x="741" y="510" width="410" height="220" rx="18"/>
+ <text x="769" y="548" class="cyan num">05 / TRUST</text>
+ <text x="769" y="586" class="txt head">Reliability, Safety &amp; Evidence</text>
+ <text x="769" y="625" class="muted sub">Provenance · Tests · Fault reporting</text>
+ <text x="769" y="652" class="muted sub">Uncertainty · Human review · Safe hold</text>
+ <text x="769" y="695" class="txt small">Independent safety gates, abstention, audit trails,</text>
+ <text x="769" y="717" class="txt small">fault injection and regression evidence.</text>
+</g>
+
+<path d="M269 480V494H720V500M720 480V500M1171 480V494H720" fill="none" stroke="#54dfff" stroke-width="2" opacity=".65"/>
+<path d="M493 730V760H720M946 730V760H720V785" fill="none" stroke="#54dfff" stroke-width="2" opacity=".7"/>
+<rect x="64" y="785" width="1312" height="120" rx="18" fill="#0d1d2e" stroke="#3b7898" stroke-width="1.8"/>
+<text x="92" y="824" class="cyan num">SHARED DATA CONTRACTS &amp; INTERFACES</text>
+<text x="92" y="864" class="txt" font-size="18" font-weight="750">Observation</text>
+<text x="330" y="864" class="txt" font-size="18" font-weight="750">WorldState</text>
+<text x="550" y="864" class="txt" font-size="18" font-weight="750">ActionProposal</text>
+<text x="830" y="864" class="txt" font-size="18" font-weight="750">FailureReport</text>
+<text x="1070" y="864" class="txt" font-size="18" font-weight="750">Evidence Passport</text>
+<path d="M720 905V938" stroke="#54dfff" stroke-width="2.5"/>
+<path d="M710 928L720 940L730 928" fill="none" stroke="#54dfff" stroke-width="2.5"/>
+<text x="64" y="980" class="cyan num">SEVEN PRODUCT-SPECIFIC ADAPTERS</text>
 <g>
- <rect class="card" x="64" y="722" width="245" height="102" rx="14"/><text x="186" y="758" text-anchor="middle" class="txt stage">Observation</text><text x="186" y="784" text-anchor="middle" class="muted sub">Provenance · Timestamp · Quality</text>
- <rect class="card" x="327" y="722" width="245" height="102" rx="14"/><text x="449" y="758" text-anchor="middle" class="txt stage">WorldState</text><text x="449" y="784" text-anchor="middle" class="muted sub">Entities · Uncertainty · Freshness</text>
- <rect class="card" x="590" y="722" width="245" height="102" rx="14"/><text x="712" y="758" text-anchor="middle" class="txt stage">ActionProposal</text><text x="712" y="784" text-anchor="middle" class="muted sub">Bounded · Reviewable · Non-executing</text>
- <rect class="card" x="853" y="722" width="245" height="102" rx="14"/><text x="975" y="758" text-anchor="middle" class="txt stage">FailureReport</text><text x="975" y="784" text-anchor="middle" class="muted sub">Blocked · Fault · Recovery context</text>
- <rect class="card" x="1116" y="722" width="260" height="102" rx="14"/><text x="1246" y="758" text-anchor="middle" class="txt stage">Evidence Passport</text><text x="1246" y="784" text-anchor="middle" class="muted sub">Sources · Conflicts · Review · Tests</text>
+ <rect x="64" y="1000" width="176" height="88" rx="12" class="card"/><text x="152" y="1036" text-anchor="middle" class="txt" font-size="15" font-weight="800">COCONUT</text><text x="152" y="1060" text-anchor="middle" class="muted small">Harvest AI</text>
+ <rect x="252" y="1000" width="176" height="88" rx="12" class="card"/><text x="340" y="1036" text-anchor="middle" class="txt" font-size="15" font-weight="800">FLOOD</text><text x="340" y="1060" text-anchor="middle" class="muted small">Rescue AI</text>
+ <rect x="440" y="1000" width="176" height="88" rx="12" class="card"/><text x="528" y="1036" text-anchor="middle" class="txt" font-size="15" font-weight="800">SENTINEL</text><text x="528" y="1060" text-anchor="middle" class="muted small">Inspection robot</text>
+ <rect x="628" y="1000" width="176" height="88" rx="12" class="card"/><text x="716" y="1036" text-anchor="middle" class="txt" font-size="15" font-weight="800">AI HOME</text><text x="716" y="1060" text-anchor="middle" class="muted small">Indoor assistant</text>
+ <rect x="816" y="1000" width="176" height="88" rx="12" class="card"/><text x="904" y="1036" text-anchor="middle" class="txt" font-size="15" font-weight="800">AI NOMAD</text><text x="904" y="1060" text-anchor="middle" class="muted small">Mobile assistant</text>
+ <rect x="1004" y="1000" width="176" height="88" rx="12" class="card"/><text x="1092" y="1036" text-anchor="middle" class="txt" font-size="15" font-weight="800">AI GLOBAL SUV</text><text x="1092" y="1060" text-anchor="middle" class="muted small">Intelligent mobility</text>
+ <rect x="1192" y="1000" width="184" height="88" rx="12" class="card"/><text x="1284" y="1036" text-anchor="middle" class="txt" font-size="15" font-weight="800">EASYRIDE</text><text x="1284" y="1060" text-anchor="middle" class="muted small">AI step-through</text>
 </g>
-<text x="64" y="870" class="cyan" font-size="14" font-weight="800" letter-spacing="2.4">04 / ONE SHARED FOUNDATION · SEVEN INDEPENDENT PRODUCTS</text>
-<g fill="#0d2033" stroke="#41627e" stroke-width="1.2">
- <rect x="64" y="892" width="178" height="56" rx="12"/><rect x="254" y="892" width="178" height="56" rx="12"/><rect x="444" y="892" width="178" height="56" rx="12"/><rect x="634" y="892" width="178" height="56" rx="12"/><rect x="824" y="892" width="178" height="56" rx="12"/><rect x="1014" y="892" width="178" height="56" rx="12"/><rect x="1204" y="892" width="172" height="56" rx="12"/>
-</g>
-<g class="txt" font-size="13" font-weight="750" text-anchor="middle"><text x="153" y="926">COCONUT HARVEST AI</text><text x="343" y="926">EXTREME FLOOD</text><text x="533" y="926">PUI89 SENTINEL</text><text x="723" y="926">AI HOME</text><text x="913" y="926">AI NOMAD</text><text x="1103" y="926">AI GLOBAL SUV</text><text x="1290" y="926">EASYRIDE</text></g>
-<text x="720" y="990" text-anchor="middle" class="muted" font-size="14">Conceptual architecture · project adapters, implementation maturity and real-world validation remain product-specific</text>
+<text x="64" y="1145" class="muted" font-size="14">Software-first · Modular · Open-source-first · Human-supervised · Evidence before claims</text>
+<text x="64" y="1175" fill="#8fa7bd" font-size="12" font-family="Inter,Segoe UI,Arial,sans-serif">Conceptual architecture only. Integration, compute performance, simulation fidelity and physical safety require separate tests and evidence.</text>
 </svg>
