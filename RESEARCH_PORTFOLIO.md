@@ -46,23 +46,28 @@ Repository: [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI)
 
 Repository: [Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI)
 
-## 3. Multimodal Narcotics Screening AI
+## 3. All-Terrain Inspection Robot Dog
 
-**Application area:** human-reviewed multimodal inspection and screening support.
+**Project name:** PUI89 Sentinel.  
+**Application area:** four-legged quadruped robotics for supervised inspection of industrial facilities, infrastructure, warehouses, logistics yards, ports and selected outdoor environments.
 
 **Research questions**
-- How should evidence from different modalities be presented when signals disagree or are incomplete?
-- How can uncertainty, missing inputs, and out-of-distribution cases trigger abstention or escalation to qualified review?
-- How can evaluation avoid implying that a screening model establishes chemical identity or justifies enforcement action?
+- Which quadruped leg, joint, actuator and foot architectures provide a practical balance of stability, payload, serviceability and cost?
+- How should gait, foothold selection, localisation and body-state estimation respond to uneven terrain, obstacles, slip and sensor uncertainty?
+- How can RGB, depth, LiDAR, IMU and joint/foot-contact observations be aligned with timestamps, calibration state, provenance and uncertainty?
+- How should the robot propose inspection tasks while keeping motion bounded by independent safety controls and human approval?
+- Which simulation scenarios and controlled tests are necessary before publishing terrain, mobility, endurance or inspection-performance claims?
 
 **Evidence plan**
-- Define the intended use and limitations of each input modality.
-- Test failure handling, missing-input behavior, and human-review pathways.
-- Report task-specific metrics only against an appropriately sourced and licensed evaluation set.
+- Define the first inspection mission, operating envelope, no-go conditions and measurable acceptance criteria.
+- Complete a hazard analysis covering emergency stop, people, terrain, stability, power, battery, thermal and communications failure.
+- Compare candidate components using exact model numbers, manufacturer, manufacturing origin evidence, compatibility, supplier and dated quotations.
+- Establish simulation and fault-injection scenarios before hardware procurement.
+- Validate perception, mobility and safety separately; do not infer physical performance from software tests or simulation.
 
-**Current boundary:** a screening-workflow prototype, not a validated chemical-identification system or autonomous enforcement tool.
+**Current boundary:** concept and engineering requirements only. No physical prototype, validated locomotion, integrated sensor suite or field performance is claimed.
 
-Repository: [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI)
+Repository: [All-Terrain Inspection Robot Dog — PUI89 Sentinel](https://github.com/Pui89/All-Terrain-Inspection-Robot)
 
 ## Cross-project standards
 
