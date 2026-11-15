@@ -179,10 +179,10 @@
       "warnings": []
     },
     {
-      "name": "All-Terrain Inspection Robot Dog",
+      "name": "PUI89 Sentinel",
       "repository": "Pui89/All-Terrain-Inspection-Robot",
       "url": "https://github.com/Pui89/All-Terrain-Inspection-Robot",
-      "focus": "PUI89 Sentinel: four-legged quadruped robot dog concept for supervised industrial, infrastructure, logistics and selected outdoor inspection.",
+      "focus": "Multimodal exploration and inspection concept: gather and contextualise authorised observations across varied environments, preserve provenance and uncertainty, and support human-reviewed findings.",
       "status": "SCOPE_RESET",
       "default_branch": "main",
       "latest_commit": null,
@@ -191,7 +191,7 @@
       "non_default_branch_run_count": 0,
       "key_workflows": [],
       "warnings": [
-        "Current product baseline reset to concept and engineering requirements. Previous software-workflow runs are not evidence for the quadruped robot dog. The new product-scope documentation is under review in PR #187."
+        "Current product scope is multimodal exploration and inspection. The existing All-Terrain-Inspection-Robot repository name and historical quadruped-oriented documentation do not establish the current product definition or verified capability; align repository scope and evidence before treating its workflows as Sentinel proof."
       ]
     },
     {
@@ -283,10 +283,10 @@
       "warnings": []
     },
     {
-      "name": "AI NOMAD",
+      "name": "PUI89 AI NOMAD — Quadruped Robot",
       "repository": "Pui89/AI-Mobile-Assistant-Robot",
       "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot",
-      "focus": "Owner-supervised mobile assistance, environmental awareness and safe-stop behaviour.",
+      "focus": "Quadruped mobile-robot concept for supervised movement, environmental awareness and task support; locomotion, balance, obstacle negotiation and field performance remain unvalidated.",
       "status": "CHECKS_AVAILABLE",
       "default_branch": "main",
       "latest_commit": "7b54dc4c395c",
@@ -368,7 +368,9 @@
           "branch": null
         }
       ],
-      "warnings": []
+      "warnings": [
+        "The currently linked AI-Mobile-Assistant-Robot repository and its historical workflow records describe an earlier four-wheel mobile-assistant scope; they are not evidence for the current quadruped NOMAD definition. Repository and evidence alignment is required."
+      ]
     },
     {
       "name": "PUI89 AI Global SUV",
@@ -459,7 +461,7 @@
       "warnings": []
     },
     {
-      "name": "EasyRide AI Motorcycle",
+      "name": "PUI89 AI Step-Through Scooter · EasyRide AI",
       "repository": "Pui89/AI-Motorcycle-Robotics",
       "url": "https://github.com/Pui89/AI-Motorcycle-Robotics",
       "focus": "Rider-centred step-through mobility concept, safety advisories and simulation-first evaluation.",
