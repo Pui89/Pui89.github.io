@@ -96,7 +96,7 @@
    each page's existing <time> element; CSS never invents a date. */
 .hero { position: relative; }
 .hero > .pui89-progress--hero {
-  position:absolute; z-index:6; top:0; right:0; inset:0 0 auto auto;
+  position:absolute; z-index:6; top:58px; right:0; inset:58px 0 auto auto;
   box-sizing:border-box; display:flex; flex-direction:column;
   justify-content:center; align-items:center; gap:4px;
   width:124px; min-width:124px; max-width:124px;
@@ -139,6 +139,7 @@
 }
 @media(max-width:640px) {
   .hero > .pui89-progress--hero {
+    top:54px; inset:54px 0 auto auto;
     width:104px; min-width:104px; max-width:104px;
     height:104px; min-height:104px; max-height:104px;
     padding:6px; gap:3px; border-radius:10px;
@@ -160,6 +161,7 @@
 }
 @media(max-width:380px) {
   .hero > .pui89-progress--hero {
+    top:50px; inset:50px 0 auto auto;
     width:92px; min-width:92px; max-width:92px;
     height:92px; min-height:92px; max-height:92px; padding:5px;
   }
