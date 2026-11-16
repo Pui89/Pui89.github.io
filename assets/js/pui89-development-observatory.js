@@ -116,7 +116,7 @@ function render(root,data){
   section.append(platform);
  }
  const grid=el("div","pui89-observatory__grid");projects.forEach(p=>grid.append(projectCard(p,data.maturityFramework)));section.append(grid);
- if(!portfolio&&projects.length===1)renderTopStatus(projects[0],data.maturityFramework);
+ // Keep the single page-authored status tile; do not inject a second floating status card.
  const timeline=el("div","pui89-observatory__timeline");
  timeline.append(el("h3","",lang==="th"?"ประวัติบันทึกหลักฐาน":"Evidence record history"));
  const entries=[];projects.forEach(p=>(p.history||[]).forEach(h=>entries.push({p,h})));
