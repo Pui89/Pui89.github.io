@@ -320,3 +320,53 @@
     inset: 8px 8px auto auto !important;
   }
 }
+
+
+/* 2026-11-16 FIX: keep the project status tile at the viewport's top-right.
+   One consistent compact tile across all seven bilingual product pages. */
+.hero:has(> .pui89-progress--hero) {
+  display: block !important;
+  grid-template-columns: none !important;
+  grid-auto-flow: initial !important;
+}
+.hero > .pui89-progress--hero {
+  position: fixed !important;
+  inset: 12px 12px auto auto !important;
+  z-index: 9999 !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  width: 112px !important;
+  min-width: 112px !important;
+  max-width: 112px !important;
+  height: 112px !important;
+  min-height: 112px !important;
+  max-height: 112px !important;
+  margin: 0 !important;
+  padding: 7px !important;
+  border: 1px solid rgba(66,217,255,.58) !important;
+  border-radius: 11px !important;
+  background: rgba(7,17,31,.97) !important;
+  box-shadow: 0 8px 28px rgba(0,0,0,.38), 0 0 16px rgba(66,217,255,.10) !important;
+  backdrop-filter: blur(12px);
+}
+.hero:has(> .pui89-progress--hero) > :not(.pui89-progress--hero) {
+  max-width: 100% !important;
+}
+.hero > .pui89-progress--hero .pui89-progress__eyebrow {font-size:.49rem !important}
+.hero > .pui89-progress--hero strong {font-size:.68rem !important}
+.hero > .pui89-progress--hero .pui89-progress__score,
+.hero > .pui89-progress--hero .pui89-progress__label {font-size:.53rem !important}
+.hero > .pui89-progress--hero .pui89-progress__updated {font-size:.45rem !important}
+@media(max-width:640px) {
+  .hero > .pui89-progress--hero {
+    inset: 8px 8px auto auto !important;
+    width: 92px !important; min-width:92px !important; max-width:92px !important;
+    height: 92px !important; min-height:92px !important; max-height:92px !important;
+    padding: 5px !important;
+  }
+  .hero > .pui89-progress--hero .pui89-progress__eyebrow {font-size:.43rem !important}
+  .hero > .pui89-progress--hero strong {font-size:.59rem !important}
+  .hero > .pui89-progress--hero .pui89-progress__score,
+  .hero > .pui89-progress--hero .pui89-progress__label {font-size:.48rem !important}
+  .hero > .pui89-progress--hero .pui89-progress__updated {font-size:.41rem !important}
+}
