@@ -208,3 +208,17 @@ body #pui89-global-project-status.pui89-global-status{
  body #pui89-global-project-status.pui89-global-status{top:8px!important;right:8px!important;width:104px!important;height:104px!important;min-width:104px!important;max-width:104px!important;max-height:104px!important;padding:6px!important;gap:2px!important;}
  #pui89-global-project-status .pui89-global-status__percent{font-size:19px!important;}
 }
+
+
+/* Reserve a dedicated row above Hero content so the status square never covers
+   Thai/English headings, descriptions, or hero artwork on any project page. */
+body .pui89-status-host{
+ box-sizing:border-box!important;
+ padding-block-start:140px!important;
+}
+@media(max-width:760px){
+ body .pui89-status-host{padding-block-start:140px!important;}
+}
+@media(max-width:640px){
+ body .pui89-status-host{padding-block-start:124px!important;}
+}
