@@ -267,3 +267,38 @@
     max-width: calc(100% - 102px) !important;
   }
 }
+
+
+/* STRUCTURAL FIX — 2026-11-16.
+   The seven product heroes use different DOM structures. Keep the status tile
+   in the upper-right while placing all hero copy in a clear text column and
+   moving any in-hero artwork below the copy. This prevents the tile covering
+   the right-hand image in two-column heroes and avoids copy/image collisions
+   in single-column heroes. */
+.hero:has(> .pui89-progress--hero) {
+  position: relative !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  grid-auto-flow: row !important;
+  align-items: start !important;
+}
+.hero:has(> .pui89-progress--hero) > :not(.pui89-progress--hero):not(.visual):not(.art) {
+  min-width: 0 !important;
+  max-width: calc(100% - 144px) !important;
+}
+.hero:has(> .pui89-progress--hero) > .visual,
+.hero:has(> .pui89-progress--hero) > .art {
+  grid-column: 1 / -1 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+@media (max-width: 640px) {
+  .hero:has(> .pui89-progress--hero) > :not(.pui89-progress--hero):not(.visual):not(.art) {
+    max-width: calc(100% - 116px) !important;
+  }
+}
+@media (max-width: 380px) {
+  .hero:has(> .pui89-progress--hero) > :not(.pui89-progress--hero):not(.visual):not(.art) {
+    max-width: calc(100% - 102px) !important;
+  }
+}
