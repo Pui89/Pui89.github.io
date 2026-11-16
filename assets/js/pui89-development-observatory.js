@@ -66,11 +66,21 @@ function renderTopStatus(project,framework){
  panel.append(name);
  const status=el("div","pui89-global-status__status",lang==="th"?"กำลังพัฒนา":"IN DEVELOPMENT");
  panel.append(status);
- const percent=project.commercialReadiness&&Number.isInteger(project.commercialReadiness.percent)?project.commercialReadiness.percent:null;
+ const percent=project.commercialReadiness&&Number.isInteger(project.commercialReadiness.percent)&&project.commercialReadiness.percent>=0&&project.commercialReadiness.percent<=100?project.commercialReadiness.percent:null;
  if(percent!==null){
+  const band=percent<25?"low":percent<50?"building":percent<75?"progressing":"advanced";
+  panel.classList.add("pui89-global-status--progress-"+band);
   const readiness=el("div","pui89-global-status__readiness");
-  readiness.append(el("strong","pui89-global-status__percent",percent+"%"));
-  panel.append(readiness);
+  readiness.append(el("div","pui89-global-status__readiness-head"));
+  readiness.firstChild.append(el("span","pui89-global-status__readiness-label",lang==="th"?"ความพร้อมเชิงพาณิชย์โดยประมาณ":"COMMERCIAL READINESS ESTIMATE"));
+  readiness.firstChild.append(el("strong","pui89-global-status__percent",percent+"%"));
+  const track=el("div","pui89-global-status__progress-track");
+  track.setAttribute("role","progressbar");
+  track.setAttribute("aria-label",lang==="th"?"ความพร้อมเชิงพาณิชย์โดยประมาณ":"Commercial readiness estimate");
+  track.setAttribute("aria-valuemin","0");track.setAttribute("aria-valuemax","100");track.setAttribute("aria-valuenow",String(percent));
+  const fill=el("span","pui89-global-status__progress-fill");
+  fill.style.width=percent+"%";
+  track.append(fill);readiness.append(track);panel.append(readiness);
  }
  const level=Number.isInteger(project.maturityLevel)?project.maturityLevel:null;
  const levelInfo=level!==null?(framework?.levels||[]).find(item=>item.level===level):null;
@@ -81,8 +91,7 @@ function renderTopStatus(project,framework){
   panel.append(maturity);
  }
  panel.append(el("div","pui89-global-status__label",lang==="th"?"ขั้นการพัฒนาปัจจุบัน":"CURRENT STAGE"));
- const stage=el("div","pui89-global-status__stage pui89-global-status__stage--level-"+(level===null?1:level));
- stage.append(el("span","pui89-global-status__stage-tab",lang==="th"?"ขั้นปัจจุบัน":"CURRENT STAGE"));
+ const stage=el("div","pui89-global-status__stage");
  stage.append(el("strong","pui89-global-status__stage-value",t(project.stageLabel)));
  stage.title=t(project.stageLabel);
  panel.append(stage);
