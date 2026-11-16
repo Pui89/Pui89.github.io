@@ -178,3 +178,20 @@ body #pui89-global-project-status.pui89-global-status{
 #pui89-global-project-status .pui89-global-status__stage{color:#EAF6FF;font-size:.76rem;font-weight:750;line-height:1.35;overflow-wrap:anywhere}
 #pui89-global-project-status .pui89-global-status__date{margin-top:3px;padding-top:6px;border-top:1px solid rgba(159,180,201,.18);color:#9FB4C9;font-size:.62rem;font-weight:650}
 @media(max-width:640px){body #pui89-global-project-status.pui89-global-status{top:8px!important;right:8px!important;width:218px!important;max-width:calc(100vw - 16px)!important;padding:9px 11px!important;gap:4px!important}#pui89-global-project-status .pui89-global-status__name{font-size:.69rem}#pui89-global-project-status .pui89-global-status__percent{font-size:1.65rem}#pui89-global-project-status .pui89-global-status__level,#pui89-global-project-status .pui89-global-status__level-name{font-size:.66rem}#pui89-global-project-status .pui89-global-status__stage{font-size:.69rem}}
+
+
+/* Keep the one shared status card below the navigation, never over the menu or page heading. */
+body #pui89-global-project-status.pui89-global-status{
+ position:relative!important;inset:auto!important;z-index:2!important;
+ display:flex!important;flex-direction:column!important;align-items:stretch!important;justify-content:flex-start!important;
+ gap:5px!important;width:248px!important;max-width:100%!important;max-height:none!important;
+ overflow:visible!important;margin:12px max(18px,calc((100% - 1100px)/2)) 0 auto!important;
+ padding:12px 14px!important;border:1px solid rgba(66,217,255,.48)!important;border-radius:12px!important;
+ background:rgba(7,17,31,.97)!important;color:#F3F7FF!important;box-shadow:0 10px 32px rgba(0,0,0,.24)!important;
+ line-height:1.3!important;text-align:left!important;
+}
+@media(max-width:640px){
+ body #pui89-global-project-status.pui89-global-status{
+  width:min(248px,calc(100% - 24px))!important;margin:10px 12px 0 auto!important;padding:10px 12px!important;gap:4px!important;
+ }
+}
