@@ -1,45 +1,13 @@
-/* PUI89 project status — compact square hero tile. Legacy hero-positioning overrides removed. */
-
-/* Existing readiness cards retained. */
-.pui89-progress{box-sizing:border-box;z-index:5;display:flex;flex-direction:column;gap:4px;width:214px;max-width:100%;padding:9px 11px;border:1px solid rgba(66,217,255,.42);border-radius:12px;background:rgba(7,17,31,.94);color:#F3F7FF;box-shadow:0 8px 26px rgba(0,0,0,.24);font:inherit;line-height:1.25;backdrop-filter:blur(10px)}
-.pui89-progress__eyebrow{font-size:.59rem;font-weight:800;letter-spacing:.12em;color:#42D9FF}
-.pui89-progress strong{font-size:.78rem;letter-spacing:.02em;color:#F3F7FF}
-.pui89-progress__label{font-size:.68rem;color:#C3D4E6;overflow-wrap:anywhere}
-.pui89-progress__score{font-size:.67rem;font-weight:800;color:#00D9FF}
-.pui89-progress__updated{display:block;margin-top:3px;padding-top:4px;border-top:1px solid rgba(195,212,230,.16);font-size:.56rem;line-height:1.35;font-weight:600;color:#AFC3D9;overflow-wrap:anywhere}
-.pui89-progress__steps{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin-top:3px}
-.pui89-progress__steps i{display:block;height:4px;border-radius:99px;background:#30445F}
-.pui89-progress__steps i.is-reached{background:#42D9FF;box-shadow:0 0 8px rgba(66,217,255,.28)}
-.pui89-progress--card{position:relative;display:flex;width:100%;max-width:none;margin:0 0 16px;padding:11px 13px;border-radius:11px}
-.pui89-progress__bar{display:block;width:100%;height:8px;overflow:hidden;margin-top:5px;border-radius:99px;background:#30445F}
-.pui89-progress__bar-fill{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#00AFA5,#00D9FF);box-shadow:0 0 9px rgba(0,217,255,.3)}
-.pui89-readiness-legend{margin-top:10px;padding:9px 12px;border-left:3px solid #00D9FF;background:rgba(0,217,255,.06);font-size:.88rem;line-height:1.55;color:inherit}
-
-/* One small square tile, top-right inside every project hero. */
-.hero{position:relative}
-.hero>.pui89-status-tile{position:absolute;inset:12px 12px auto auto;z-index:20;box-sizing:border-box;width:78px;height:78px;min-width:78px;min-height:78px;max-width:78px;max-height:78px;margin:0;padding:6px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;overflow:hidden;border:1px solid rgba(66,217,255,.62);border-radius:11px;background:rgba(7,17,31,.97);color:#F3F7FF;text-align:center;box-shadow:0 7px 20px rgba(0,0,0,.24);line-height:1.1;pointer-events:none}
-.pui89-status-tile__eyebrow{font-size:.47rem;font-weight:850;letter-spacing:.09em;color:#42D9FF}
-.pui89-status-tile strong{display:flex;align-items:center;justify-content:center;gap:2px;white-space:nowrap;font-size:1rem;font-weight:850;letter-spacing:-.035em;color:#F3F7FF}
-.pui89-status-tile__date{font-size:.34rem;font-weight:800;letter-spacing:.015em;color:#D7E7F2;white-space:nowrap;line-height:1}
-.pui89-status-tile__caption{font-size:.42rem;font-weight:800;letter-spacing:.035em;color:#9FC5D9;white-space:nowrap}
-
-/* Reserve a narrow copy column beside the tile, including nested Coconut hero copy. */
-.hero:has(>.pui89-status-tile)>h1,.hero:has(>.pui89-status-tile)>h2,.hero:has(>.pui89-status-tile)>p,.hero:has(>.pui89-status-tile)>.eyebrow,.hero:has(>.pui89-status-tile)>.kicker,.hero:has(>.pui89-status-tile)>.lead,.hero:has(>.pui89-status-tile)>.btn,.hero:has(>.pui89-status-tile)>.status{max-width:calc(100% - 100px)}
-.hero:has(>.pui89-status-tile)>:not(.pui89-status-tile):has(h1),.hero:has(>.pui89-status-tile)>:not(.pui89-status-tile):has(h2){min-width:0;max-width:calc(100% - 100px)}
-@media(max-width:640px){
- .hero>.pui89-status-tile{inset:9px 9px auto auto;width:68px;height:68px;min-width:68px;min-height:68px;max-width:68px;max-height:68px;padding:5px;gap:3px;border-radius:9px}
- .pui89-status-tile__eyebrow{font-size:.41rem}.pui89-status-tile strong{font-size:.88rem}.pui89-status-tile__date{font-size:.29rem}.pui89-status-tile__caption{font-size:.36rem}
- .hero:has(>.pui89-status-tile)>h1,.hero:has(>.pui89-status-tile)>h2,.hero:has(>.pui89-status-tile)>p,.hero:has(>.pui89-status-tile)>.eyebrow,.hero:has(>.pui89-status-tile)>.kicker,.hero:has(>.pui89-status-tile)>.lead,.hero:has(>.pui89-status-tile)>.btn,.hero:has(>.pui89-status-tile)>.status,.hero:has(>.pui89-status-tile)>:not(.pui89-status-tile):has(h1),.hero:has(>.pui89-status-tile)>:not(.pui89-status-tile):has(h2){max-width:calc(100% - 86px)}
+/* PUI89 portfolio cleanup: the compact square hero tile is the sole visible
+   stage-progress indicator. Keep explanatory history text, but remove older
+   horizontal status/progress bars from every bilingual project page. */
+.pui89-global-status,
+.pui89-global-status__bar,
+.pui89-observatory__bar,
+.pui89-observatory__maturity-steps,
+.pui89-progress--card,
+.pui89-progress__bar,
+.pui89-progress__steps,
+#pui89-maturity-indicators [aria-hidden="true"]{
+  display:none!important;
 }
-@media(prefers-reduced-motion:reduce){.pui89-status-tile *{scroll-behavior:auto}}
-
-
-/* Five-stage colour line inside the compact top-right status square. */
-.pui89-status-tile{--pui89-stage-progress:20%;--pui89-stage-color:#42D9FF}
-.pui89-status-tile[data-stage="01"]{--pui89-stage-progress:20%;--pui89-stage-color:#42D9FF}
-.pui89-status-tile[data-stage="02"]{--pui89-stage-progress:40%;--pui89-stage-color:#35D6C0}
-.pui89-status-tile[data-stage="03"]{--pui89-stage-progress:60%;--pui89-stage-color:#A6E36A}
-.pui89-status-tile[data-stage="04"]{--pui89-stage-progress:80%;--pui89-stage-color:#F2C14E}
-.pui89-status-tile[data-stage="05"]{--pui89-stage-progress:100%;--pui89-stage-color:#62D69A}
-.pui89-status-tile::after{content:"";display:block;flex:0 0 4px;width:100%;max-width:54px;height:4px;margin-top:2px;border-radius:99px;background:linear-gradient(90deg,var(--pui89-stage-color) 0 var(--pui89-stage-progress),#30445F var(--pui89-stage-progress) 100%);box-shadow:0 0 8px color-mix(in srgb,var(--pui89-stage-color) 35%,transparent)}
-@media(max-width:640px){.pui89-status-tile::after{max-width:48px;height:3px;flex-basis:3px}}
