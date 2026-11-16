@@ -90,12 +90,8 @@ function renderTopStatus(project,framework){
   if(levelInfo)maturity.append(el("span","pui89-global-status__level-name",t({en:levelInfo.en,th:levelInfo.th})));
   panel.append(maturity);
  }
- panel.append(el("div","pui89-global-status__label",lang==="th"?"ขั้นการพัฒนาปัจจุบัน":"CURRENT STAGE"));
- const stage=el("div","pui89-global-status__stage");
- stage.append(el("strong","pui89-global-status__stage-value",t(project.stageLabel)));
- stage.title=t(project.stageLabel);
- panel.append(stage);
- panel.append(el("div","pui89-global-status__date",(lang==="th"?"บันทึกหลักฐานล่าสุด · ":"LATEST EVIDENCE RECORD · ")+formatDate(last)));
+ const evidenceDate=last?new Intl.DateTimeFormat(lang==="th"?"th-TH-u-ca-buddhist":"en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"UTC"}).format(new Date(last+"T12:00:00Z")):"";
+ panel.append(el("div","pui89-global-status__date",(lang==="th"?"หลักฐาน · ":"EVIDENCE · ")+evidenceDate));
  const nav=document.querySelector("nav.nav")||document.querySelector("nav");
  if(nav)nav.insertAdjacentElement("afterend",panel);
  else {const main=document.querySelector("main");if(main)main.insertAdjacentElement("beforebegin",panel);else document.body.prepend(panel);}
