@@ -130,9 +130,22 @@ function render(root,data){
  root.replaceChildren(section);
 }
 fetch(DATA_URL,{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error("Progress data unavailable");return r.json();}).then(data=>{
- document.querySelectorAll("[data-pui89-observatory]").forEach(root=>{render(root,data);const project=data.projects.find(p=>p.id===root.dataset.projectId);if(project)renderTopStatus(project,data.maturityFramework);});
-}).catch(()=>document.querySelectorAll("[data-pui89-observatory]").forEach(root=>{
- root.textContent=lang==="th"?"ไม่สามารถโหลดข้อมูลการพัฒนาได้ในขณะนี้":"Development records are temporarily unavailable.";
- root.classList.add("pui89-observatory__empty");
-}));
+ document.querySelectorAll("[data-pui89-observatory]").forEach(root=>{
+  if(root.dataset.projectId){
+   const project=data.projects.find(p=>p.id===root.dataset.projectId);
+   if(project)renderTopStatus(project,data.maturityFramework);
+   // Individual project pages show only the compact status square.
+   // Full evidence cards and timelines remain on the central portfolio page.
+   root.remove();
+  }else{
+   render(root,data);
+  }
+ });
+}).catch(()=>{
+ document.querySelectorAll("[data-pui89-observatory]").forEach(root=>{
+  if(root.dataset.projectId){root.remove();return;}
+  root.textContent=lang==="th"?"ไม่สามารถโหลดข้อมูลการพัฒนาได้ในขณะนี้":"Development records are temporarily unavailable.";
+  root.classList.add("pui89-observatory__empty");
+ });
+});
 })();
