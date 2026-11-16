@@ -84,10 +84,10 @@ function renderTopStatus(project,framework){
  const stage=el("div","pui89-global-status__stage",t(project.stageLabel));
  stage.title=t(project.stageLabel);
  panel.append(stage);
- panel.append(el("div","pui89-global-status__date",(lang==="th"?"อัปเดตล่าสุด ":"Updated ")+formatDate(last)));
- const header=document.querySelector("body > header")||document.querySelector("header");
- if(header)header.insertAdjacentElement("afterend",panel);
- else document.body.prepend(panel);
+ panel.append(el("div","pui89-global-status__date",(lang==="th"?"บันทึกหลักฐานล่าสุด · ":"LATEST EVIDENCE RECORD · ")+formatDate(last)));
+ const nav=document.querySelector("nav.nav")||document.querySelector("nav");
+ if(nav)nav.insertAdjacentElement("afterend",panel);
+ else {const main=document.querySelector("main");if(main)main.insertAdjacentElement("beforebegin",panel);else document.body.prepend(panel);}
 }
 function render(root,data){
  const portfolio=root.dataset.view==="portfolio",id=root.dataset.projectId;
