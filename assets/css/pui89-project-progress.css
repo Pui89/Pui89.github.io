@@ -173,3 +173,24 @@
     max-width:calc(100% - 102px);
   }
 }
+
+
+/* 2026-11-16 follow-up: reserve the tile's footprint when hero copy wraps
+   its eyebrow/title/lead inside a nested content wrapper (as on Coconut). */
+.hero:has(> .pui89-progress--hero) > :not(.pui89-progress--hero):has(h1),
+.hero:has(> .pui89-progress--hero) > :not(.pui89-progress--hero):has(h2) {
+  min-width: 0;
+  max-width: calc(100% - 144px);
+}
+@media (max-width: 640px) {
+  .hero:has(> .pui89-progress--hero) > :not(.pui89-progress--hero):has(h1),
+  .hero:has(> .pui89-progress--hero) > :not(.pui89-progress--hero):has(h2) {
+    max-width: calc(100% - 116px);
+  }
+}
+@media (max-width: 380px) {
+  .hero:has(> .pui89-progress--hero) > :not(.pui89-progress--hero):has(h1),
+  .hero:has(> .pui89-progress--hero) > :not(.pui89-progress--hero):has(h2) {
+    max-width: calc(100% - 102px);
+  }
+}
