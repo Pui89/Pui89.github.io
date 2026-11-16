@@ -308,11 +308,11 @@
    Keep a visible inset from the hero's top and right edges. The title column
    remains reserved by the rules above. */
 .hero > .pui89-progress--hero {
-  inset: 12px 12px auto auto !important;
+  inset: 76px 12px auto auto !important;
 }
 @media (max-width: 640px) {
   .hero > .pui89-progress--hero {
-    inset: 8px 8px auto auto !important;
+    inset: 68px 8px auto auto !important;
   }
 }
 @media (max-width: 380px) {
@@ -349,7 +349,11 @@
   box-shadow: 0 8px 28px rgba(0,0,0,.38), 0 0 16px rgba(66,217,255,.10) !important;
   backdrop-filter: blur(12px);
 }
-.hero:has(> .pui89-progress--hero) > :not(.pui89-progress--hero) {
+.hero:has(> .pui89-progress--hero) > :not(.pui89-progress--hero):not(.visual):not(.art) {
+  max-width: calc(100% - 144px) !important;
+}
+.hero:has(> .pui89-progress--hero) > .visual,
+.hero:has(> .pui89-progress--hero) > .art {
   max-width: 100% !important;
 }
 .hero > .pui89-progress--hero .pui89-progress__eyebrow {font-size:.49rem !important}
