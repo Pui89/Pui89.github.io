@@ -80,14 +80,29 @@ function renderTopStatus(project,framework){
   if(levelInfo)maturity.append(el("span","pui89-global-status__level-name",t({en:levelInfo.en,th:levelInfo.th})));
   panel.append(maturity);
  }
- panel.append(el("div","pui89-global-status__label",lang==="th"?"ขั้นการพัฒนาปัจจุบัน":"CURRENT STAGE"));
  const stage=el("div","pui89-global-status__stage",t(project.stageLabel));
  stage.title=t(project.stageLabel);
  panel.append(stage);
- panel.append(el("div","pui89-global-status__date",(lang==="th"?"อัปเดตล่าสุด ":"Updated ")+formatDate(last)));
- const header=document.querySelector("body > header")||document.querySelector("header");
- if(header)header.insertAdjacentElement("afterend",panel);
- else document.body.prepend(panel);
+ const stageMap={coconut:2,"flood-rescue":2,sentinel:1,"ai-home":2,"ai-nomad":1,"robot-car":2,motorcycle:1};
+ const currentStage=stageMap[project.id]||1;
+ const progress=el("div","pui89-global-status__five-stage");
+ progress.setAttribute("role","img");
+ progress.setAttribute("aria-label",(lang==="th"?"ขั้นที่ ":"Stage ")+currentStage+" / 5");
+ for(let i=1;i<=5;i++){
+  const segment=el("span","pui89-global-status__segment"+(i===currentStage?" is-current":""));
+  segment.title=(lang==="th"?"ขั้นที่ ":"Stage ")+i+" · "+(i*20)+"%";
+  progress.append(segment);
+ }
+ panel.append(progress);
+ panel.append(el("div","pui89-global-status__date",(lang==="th"?"อัปเดต ":"Updated ")+formatDate(last)));
+ const hero=document.querySelector("main .hero, .hero");
+ if(hero){
+  hero.classList.add("pui89-status-host");
+  hero.append(panel);
+ }else{
+  const main=document.querySelector("main")||document.body;
+  main.prepend(panel);
+ }
 }
 function render(root,data){
  const portfolio=root.dataset.view==="portfolio",id=root.dataset.projectId;
