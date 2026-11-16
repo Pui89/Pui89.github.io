@@ -56,3 +56,36 @@
 
 /* Dated maturity snapshots. */
 .pui89-progress__updated{display:block;margin-top:3px;padding-top:4px;border-top:1px solid rgba(195,212,230,.16);font-size:.56rem;line-height:1.35;font-weight:600;color:#AFC3D9;letter-spacing:0;overflow-wrap:anywhere}
+
+
+/* 2026-11-16: align the compact project-stage indicator beside the topic heading. */
+.hero > .pui89-progress--hero {
+  top: 58px;
+  right: 0;
+  width: 208px;
+  max-width: 34%;
+}
+.hero:has(.pui89-progress--hero) h1 {
+  max-width: calc(100% - 228px);
+}
+@media (max-width: 640px) {
+  .hero > .pui89-progress--hero {
+    top: 54px;
+    right: 0;
+    width: 174px;
+    max-width: 42%;
+    padding: 7px 8px;
+  }
+  .hero:has(.pui89-progress--hero) h1 {
+    max-width: calc(100% - 184px);
+    font-size: clamp(1.65rem, 7vw, 2.6rem);
+  }
+  .hero:has(.pui89-progress--hero) h2 {
+    max-width: calc(100% - 184px);
+  }
+}
+@media (max-width: 380px) {
+  .hero > .pui89-progress--hero { width: 148px; max-width: 40%; }
+  .hero:has(.pui89-progress--hero) h1 { max-width: calc(100% - 156px); font-size: 1.55rem; }
+  .hero:has(.pui89-progress--hero) h2 { max-width: calc(100% - 156px); }
+}
