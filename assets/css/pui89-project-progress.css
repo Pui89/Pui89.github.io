@@ -221,3 +221,28 @@
   .pui89-status-details__panel{top:9px!important;right:9px!important;width:min(320px,calc(100vw - 18px))!important;max-height:calc(100vh - 18px)!important}
 }
 @media(prefers-reduced-motion:reduce){.pui89-status-tile,.pui89-status-details__panel{scroll-behavior:auto!important}}
+
+
+/* Final alignment correction: keep the disclosure panel attached below its tile. */
+.pui89-status-tile::after{width:40%}
+.pui89-status-tile[data-stage="01"]::after{width:20%}
+.pui89-status-tile[data-stage="02"]::after{width:40%}
+.pui89-status-tile[data-stage="03"]::after{width:60%}
+.pui89-status-tile[data-stage="04"]::after{width:80%}
+.pui89-status-tile[data-stage="05"]::after{width:100%}
+.pui89-status-details__panel{
+  position:absolute!important;
+  top:calc(100% + 8px)!important;
+  right:0!important;
+  left:auto!important;
+  width:min(360px,calc(100vw - 28px))!important;
+  max-height:min(70vh,560px)!important;
+}
+@media(max-width:640px){
+  .pui89-status-details__panel{
+    top:calc(100% + 7px)!important;
+    right:0!important;
+    width:min(320px,calc(100vw - 18px))!important;
+    max-height:calc(100vh - 190px)!important;
+  }
+}
