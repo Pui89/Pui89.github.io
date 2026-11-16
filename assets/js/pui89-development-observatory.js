@@ -61,33 +61,30 @@ function renderTopStatus(project,framework){
  const last=history.length?history[history.length-1].date:(project.commercialReadiness?.reviewedOn||"");
  const panel=el("aside","pui89-global-status");
  panel.id="pui89-global-project-status";
- panel.setAttribute("aria-label",lang==="th"?"สถานะโครงการและแถบความคืบหน้า":"Project status and progress");
- const row=el("div","pui89-global-status__row");
- const status=el("span","pui89-global-status__status",lang==="th"?"กำลังพัฒนา":"In development");
- const dot=el("span","pui89-global-status__dot","");
- status.prepend(dot);
- row.append(status);
- const updated=el("span","pui89-global-status__meta",(lang==="th"?"อัปเดต ":"Updated ")+formatDate(last));
- row.append(updated);
- const stage=el("span","pui89-global-status__stage",t(project.stageLabel));
- stage.title=t(project.stageLabel);
- row.append(stage);
+ panel.setAttribute("aria-label",lang==="th"?"สถานะและระดับการพัฒนาโครงการ":"Project development status and maturity");
+ const name=el("div","pui89-global-status__name",t(project.name));
+ panel.append(name);
+ const status=el("div","pui89-global-status__status",lang==="th"?"กำลังพัฒนา":"IN DEVELOPMENT");
+ panel.append(status);
  const percent=project.commercialReadiness&&Number.isInteger(project.commercialReadiness.percent)?project.commercialReadiness.percent:null;
  if(percent!==null){
-  row.append(el("strong","pui89-global-status__percent",percent+"%"));
+  const readiness=el("div","pui89-global-status__readiness");
+  readiness.append(el("strong","pui89-global-status__percent",percent+"%"));
+  panel.append(readiness);
  }
- panel.append(row);
- if(percent!==null){
-  const bar=el("div","pui89-global-status__bar");
-  bar.setAttribute("role","progressbar");
-  bar.setAttribute("aria-label",lang==="th"?"ประมาณการความพร้อมเชิงพาณิชย์":"Estimated commercial readiness");
-  bar.setAttribute("aria-valuemin","0");bar.setAttribute("aria-valuemax","100");
-  bar.setAttribute("aria-valuenow",String(percent));
-  const fill=el("span","");
-  fill.style.width=percent+"%";
-  bar.append(fill);
-  panel.append(bar);
+ const level=Number.isInteger(project.maturityLevel)?project.maturityLevel:null;
+ const levelInfo=level!==null?(framework?.levels||[]).find(item=>item.level===level):null;
+ if(level!==null){
+  const maturity=el("div","pui89-global-status__maturity");
+  maturity.append(el("strong","pui89-global-status__level",(lang==="th"?"ระดับ ":"Level ")+level+" / 7"));
+  if(levelInfo)maturity.append(el("span","pui89-global-status__level-name",t({en:levelInfo.en,th:levelInfo.th})));
+  panel.append(maturity);
  }
+ panel.append(el("div","pui89-global-status__label",lang==="th"?"ขั้นการพัฒนาปัจจุบัน":"CURRENT STAGE"));
+ const stage=el("div","pui89-global-status__stage",t(project.stageLabel));
+ stage.title=t(project.stageLabel);
+ panel.append(stage);
+ panel.append(el("div","pui89-global-status__date",(lang==="th"?"อัปเดตล่าสุด ":"Updated ")+formatDate(last)));
  const header=document.querySelector("body > header")||document.querySelector("header");
  if(header)header.insertAdjacentElement("afterend",panel);
  else document.body.prepend(panel);
