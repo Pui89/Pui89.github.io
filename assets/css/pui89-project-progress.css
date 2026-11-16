@@ -195,3 +195,25 @@ body #pui89-global-project-status.pui89-global-status{
   width:min(248px,calc(100% - 24px))!important;margin:10px 12px 0 auto!important;padding:10px 12px!important;gap:4px!important;
  }
 }
+
+
+/* Current-stage color tab: one shared mapping driven by each project's documented maturity level. */
+#pui89-global-project-status .pui89-global-status__stage{
+ display:flex;flex-direction:column;align-items:flex-start;gap:5px;margin-top:2px;
+}
+#pui89-global-project-status .pui89-global-status__stage-tab{
+ display:inline-flex;align-items:center;width:max-content;max-width:100%;
+ padding:3px 8px;border-radius:4px 4px 4px 0;
+ font-size:.55rem;font-weight:900;letter-spacing:.11em;line-height:1.25;
+ color:#07111F;background:#A8B4C4;border-left:3px solid currentColor;
+}
+#pui89-global-project-status .pui89-global-status__stage-value{
+ display:block;color:#F3F7FF;font-size:.76rem;font-weight:800;line-height:1.35;overflow-wrap:anywhere;
+}
+#pui89-global-project-status .pui89-global-status__stage--level-1 .pui89-global-status__stage-tab{background:#A8B4C4;color:#101A28;border-left-color:#738399}
+#pui89-global-project-status .pui89-global-status__stage--level-2 .pui89-global-status__stage-tab{background:#8BB8FF;color:#0A2345;border-left-color:#3977C8}
+#pui89-global-project-status .pui89-global-status__stage--level-3 .pui89-global-status__stage-tab{background:#65DDF4;color:#062B38;border-left-color:#13A9CC}
+#pui89-global-project-status .pui89-global-status__stage--level-4 .pui89-global-status__stage-tab{background:#C2A5FF;color:#28134D;border-left-color:#8656D8}
+#pui89-global-project-status .pui89-global-status__stage--level-5 .pui89-global-status__stage-tab{background:#FFC27A;color:#452400;border-left-color:#D8892C}
+#pui89-global-project-status .pui89-global-status__stage--level-6 .pui89-global-status__stage-tab{background:#8CE0AE;color:#07351C;border-left-color:#2B9C5A}
+#pui89-global-project-status .pui89-global-status__stage--level-7 .pui89-global-status__stage-tab{background:#56D7B0;color:#00392D;border-left-color:#119878}

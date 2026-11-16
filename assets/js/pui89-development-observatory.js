@@ -81,7 +81,9 @@ function renderTopStatus(project,framework){
   panel.append(maturity);
  }
  panel.append(el("div","pui89-global-status__label",lang==="th"?"ขั้นการพัฒนาปัจจุบัน":"CURRENT STAGE"));
- const stage=el("div","pui89-global-status__stage",t(project.stageLabel));
+ const stage=el("div","pui89-global-status__stage pui89-global-status__stage--level-"+(level===null?1:level));
+ stage.append(el("span","pui89-global-status__stage-tab",lang==="th"?"ขั้นปัจจุบัน":"CURRENT STAGE"));
+ stage.append(el("strong","pui89-global-status__stage-value",t(project.stageLabel)));
  stage.title=t(project.stageLabel);
  panel.append(stage);
  panel.append(el("div","pui89-global-status__date",(lang==="th"?"บันทึกหลักฐานล่าสุด · ":"LATEST EVIDENCE RECORD · ")+formatDate(last)));
