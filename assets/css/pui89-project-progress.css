@@ -246,3 +246,16 @@
     max-height:calc(100vh - 190px)!important;
   }
 }
+
+
+/* Unified portfolio status card: project, state, historical readiness, level and current stage. */
+.pui89-status-tile{width:184px!important;min-width:184px!important;max-width:184px!important;min-height:0!important;padding:12px!important;gap:5px!important;border-radius:12px!important}
+.pui89-status-tile__project{display:block!important;color:#F3F7FF!important;font-size:10px!important;line-height:1.25!important;font-weight:900!important;letter-spacing:.055em!important;overflow-wrap:anywhere!important}
+.pui89-status-tile__status{display:block!important;color:#9FB4C9!important;font-size:8px!important;line-height:1.2!important;font-weight:850!important;letter-spacing:.12em!important}
+.pui89-status-tile__percentage{display:block!important;margin:1px 0!important;color:#42D9FF!important;font-size:29px!important;line-height:1!important;font-weight:900!important;letter-spacing:-.045em!important}
+.pui89-status-tile__level{display:block!important;color:#F3F7FF!important;font-size:10px!important;line-height:1.2!important;font-weight:850!important;letter-spacing:.02em!important}
+.pui89-status-tile__level-name{display:block!important;color:#C5D5E6!important;font-size:10px!important;line-height:1.25!important;font-weight:700!important}
+.pui89-status-tile__current-label{display:block!important;margin-top:3px!important;color:#42D9FF!important;font-size:8px!important;line-height:1.2!important;font-weight:900!important;letter-spacing:.1em!important}
+.pui89-status-tile__current-stage{display:block!important;color:#F3F7FF!important;font-size:10px!important;line-height:1.3!important;font-weight:750!important;overflow-wrap:anywhere!important}
+.pui89-status-tile::after{margin-top:4px!important}
+@media(max-width:640px){.pui89-status-tile{top:9px!important;right:9px!important;width:166px!important;min-width:166px!important;max-width:166px!important;padding:10px!important;gap:4px!important}.pui89-status-tile__percentage{font-size:26px!important}.pui89-status-tile__project{font-size:9px!important}.pui89-status-tile__current-stage,.pui89-status-tile__level-name{font-size:9px!important}}
