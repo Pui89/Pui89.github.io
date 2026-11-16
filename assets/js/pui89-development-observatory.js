@@ -83,14 +83,18 @@ function renderTopStatus(project,framework){
  const stage=el("div","pui89-global-status__stage",t(project.stageLabel));
  stage.title=t(project.stageLabel);
  panel.append(stage);
- const stageMap={coconut:2,"flood-rescue":2,sentinel:1,"ai-home":2,"ai-nomad":1,"robot-car":2,motorcycle:1};
- const currentStage=stageMap[project.id]||1;
+ const currentStage=level!==null?level:1;
+ const stageTab=el("div","pui89-global-status__stage-tab",(lang==="th"?"ขั้น ":"STAGE ")+currentStage+" / 7");
+ stageTab.setAttribute("aria-label",(lang==="th"?"ขั้นการพัฒนาระดับ ":"Development stage ")+currentStage+" / 7");
+ panel.append(stageTab);
  const progress=el("div","pui89-global-status__five-stage");
  progress.setAttribute("role","img");
- progress.setAttribute("aria-label",(lang==="th"?"ขั้นที่ ":"Stage ")+currentStage+" / 5");
- for(let i=1;i<=5;i++){
-  const segment=el("span","pui89-global-status__segment"+(i===currentStage?" is-current":""));
-  segment.title=(lang==="th"?"ขั้นที่ ":"Stage ")+i+" · "+(i*20)+"%";
+ progress.setAttribute("aria-label",(lang==="th"?"ระดับวุฒิภาวะ ":"Development maturity level ")+currentStage+" / 7");
+ for(let i=1;i<=7;i++){
+  const levelName=(framework?.levels||[]).find(item=>item.level===i);
+  const state=i<currentStage?" is-complete":(i===currentStage?" is-current":"");
+  const segment=el("span","pui89-global-status__segment"+state);
+  segment.title=(lang==="th"?"ระดับ ":"Level ")+i+" · "+(lang==="th"?(levelName?.th||""):(levelName?.en||""));
   progress.append(segment);
  }
  panel.append(progress);
