@@ -196,3 +196,74 @@
     max-width: calc(100% - 102px);
   }
 }
+
+
+/* FINAL OVERRIDE — 2026-11-16.
+   Load this file last on every project page. The stage tile must remain
+   anchored to the hero's upper-right corner, with clear space for the title. */
+.hero > .pui89-progress--hero {
+  position: absolute !important;
+  inset: 58px 0 auto auto !important;
+  z-index: 100 !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  width: 124px !important;
+  min-width: 124px !important;
+  max-width: 124px !important;
+  height: 124px !important;
+  min-height: 124px !important;
+  max-height: 124px !important;
+  margin: 0 !important;
+}
+.hero:has(> .pui89-progress--hero) > :not(.pui89-progress--hero):has(h1),
+.hero:has(> .pui89-progress--hero) > :not(.pui89-progress--hero):has(h2) {
+  min-width: 0 !important;
+  max-width: calc(100% - 144px) !important;
+}
+.hero:has(> .pui89-progress--hero) > h1,
+.hero:has(> .pui89-progress--hero) > h2,
+.hero:has(> .pui89-progress--hero) > .eyebrow,
+.hero:has(> .pui89-progress--hero) > .kicker,
+.hero:has(> .pui89-progress--hero) > .lead {
+  max-width: calc(100% - 144px) !important;
+}
+@media (max-width: 640px) {
+  .hero > .pui89-progress--hero {
+    inset: 54px 0 auto auto !important;
+    width: 104px !important;
+    min-width: 104px !important;
+    max-width: 104px !important;
+    height: 104px !important;
+    min-height: 104px !important;
+    max-height: 104px !important;
+  }
+  .hero:has(> .pui89-progress--hero) > :not(.pui89-progress--hero):has(h1),
+  .hero:has(> .pui89-progress--hero) > :not(.pui89-progress--hero):has(h2),
+  .hero:has(> .pui89-progress--hero) > h1,
+  .hero:has(> .pui89-progress--hero) > h2,
+  .hero:has(> .pui89-progress--hero) > .eyebrow,
+  .hero:has(> .pui89-progress--hero) > .kicker,
+  .hero:has(> .pui89-progress--hero) > .lead {
+    max-width: calc(100% - 116px) !important;
+  }
+}
+@media (max-width: 380px) {
+  .hero > .pui89-progress--hero {
+    inset: 50px 0 auto auto !important;
+    width: 92px !important;
+    min-width: 92px !important;
+    max-width: 92px !important;
+    height: 92px !important;
+    min-height: 92px !important;
+    max-height: 92px !important;
+  }
+  .hero:has(> .pui89-progress--hero) > :not(.pui89-progress--hero):has(h1),
+  .hero:has(> .pui89-progress--hero) > :not(.pui89-progress--hero):has(h2),
+  .hero:has(> .pui89-progress--hero) > h1,
+  .hero:has(> .pui89-progress--hero) > h2,
+  .hero:has(> .pui89-progress--hero) > .eyebrow,
+  .hero:has(> .pui89-progress--hero) > .kicker,
+  .hero:has(> .pui89-progress--hero) > .lead {
+    max-width: calc(100% - 102px) !important;
+  }
+}
