@@ -31,3 +31,14 @@
  .hero:has(>.pui89-status-tile)>h1,.hero:has(>.pui89-status-tile)>h2,.hero:has(>.pui89-status-tile)>p,.hero:has(>.pui89-status-tile)>.eyebrow,.hero:has(>.pui89-status-tile)>.kicker,.hero:has(>.pui89-status-tile)>.lead,.hero:has(>.pui89-status-tile)>.btn,.hero:has(>.pui89-status-tile)>.status,.hero:has(>.pui89-status-tile)>:not(.pui89-status-tile):has(h1),.hero:has(>.pui89-status-tile)>:not(.pui89-status-tile):has(h2){max-width:calc(100% - 86px)}
 }
 @media(prefers-reduced-motion:reduce){.pui89-status-tile *{scroll-behavior:auto}}
+
+
+/* Five-stage colour line inside the compact top-right status square. */
+.pui89-status-tile{--pui89-stage-progress:20%;--pui89-stage-color:#42D9FF}
+.pui89-status-tile[data-stage="01"]{--pui89-stage-progress:20%;--pui89-stage-color:#42D9FF}
+.pui89-status-tile[data-stage="02"]{--pui89-stage-progress:40%;--pui89-stage-color:#35D6C0}
+.pui89-status-tile[data-stage="03"]{--pui89-stage-progress:60%;--pui89-stage-color:#A6E36A}
+.pui89-status-tile[data-stage="04"]{--pui89-stage-progress:80%;--pui89-stage-color:#F2C14E}
+.pui89-status-tile[data-stage="05"]{--pui89-stage-progress:100%;--pui89-stage-color:#62D69A}
+.pui89-status-tile::after{content:"";display:block;flex:0 0 4px;width:100%;max-width:54px;height:4px;margin-top:2px;border-radius:99px;background:linear-gradient(90deg,var(--pui89-stage-color) 0 var(--pui89-stage-progress),#30445F var(--pui89-stage-progress) 100%);box-shadow:0 0 8px color-mix(in srgb,var(--pui89-stage-color) 35%,transparent)}
+@media(max-width:640px){.pui89-status-tile::after{max-width:48px;height:3px;flex-basis:3px}}
