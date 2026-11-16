@@ -222,3 +222,35 @@ body .pui89-status-host{
 @media(max-width:640px){
  body .pui89-status-host{padding-block-start:124px!important;}
 }
+
+/* Seven-stage colour tab: the highlighted colour and stage number always
+   come from the evidence-backed maturityLevel in the shared progress data. */
+#pui89-global-project-status .pui89-global-status__stage-tab{
+ display:inline-flex!important;align-self:flex-start!important;align-items:center!important;
+ margin-top:1px!important;padding:3px 6px!important;border:1px solid rgba(66,217,255,.42)!important;
+ border-left:3px solid #42D9FF!important;border-radius:4px!important;
+ background:rgba(66,217,255,.12)!important;color:#BDEFFF!important;
+ font-size:6px!important;font-weight:900!important;letter-spacing:.09em!important;line-height:1!important;
+}
+#pui89-global-project-status .pui89-global-status__five-stage{
+ display:grid!important;grid-template-columns:repeat(7,minmax(0,1fr))!important;
+ gap:2px!important;margin-top:1px!important;
+}
+#pui89-global-project-status .pui89-global-status__segment{
+ display:block!important;height:5px!important;border-radius:3px!important;
+ background:#536579!important;opacity:.24!important;
+}
+#pui89-global-project-status .pui89-global-status__segment:nth-child(1){--stage-colour:#91A4B7;}
+#pui89-global-project-status .pui89-global-status__segment:nth-child(2){--stage-colour:#42BFEA;}
+#pui89-global-project-status .pui89-global-status__segment:nth-child(3){--stage-colour:#42D9FF;}
+#pui89-global-project-status .pui89-global-status__segment:nth-child(4){--stage-colour:#35C6B0;}
+#pui89-global-project-status .pui89-global-status__segment:nth-child(5){--stage-colour:#78CF78;}
+#pui89-global-project-status .pui89-global-status__segment:nth-child(6){--stage-colour:#E8B65B;}
+#pui89-global-project-status .pui89-global-status__segment:nth-child(7){--stage-colour:#B69AFF;}
+#pui89-global-project-status .pui89-global-status__segment.is-complete{
+ background:var(--stage-colour)!important;opacity:.62!important;
+}
+#pui89-global-project-status .pui89-global-status__segment.is-current{
+ background:var(--stage-colour)!important;opacity:1!important;
+ box-shadow:0 0 7px var(--stage-colour)!important;
+}
