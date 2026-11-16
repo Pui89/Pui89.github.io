@@ -11,3 +11,23 @@
 #pui89-maturity-indicators [aria-hidden="true"]{
   display:none!important;
 }
+
+
+/* Accessible click-to-expand details for the compact project status tile. */
+.pui89-status-tile{position:relative;overflow:visible!important}
+.pui89-status-details{position:relative;z-index:20;margin-top:7px;text-align:left;font-size:12px;line-height:1.45}
+.pui89-status-details>summary{display:inline-flex;align-items:center;justify-content:center;min-height:24px;padding:3px 7px;border:1px solid rgba(66,217,255,.48);border-radius:6px;background:#102b43;color:#b8f2ff;font-size:10px;font-weight:800;letter-spacing:.04em;cursor:pointer;list-style:none}
+.pui89-status-details>summary::-webkit-details-marker{display:none}
+.pui89-status-details>summary::after{content:" +";margin-left:4px;color:#42d9ff}
+.pui89-status-details[open]>summary::after{content:" −"}
+.pui89-status-details__panel{position:absolute;top:calc(100% + 8px);right:0;width:min(340px,calc(100vw - 28px));max-height:min(70vh,560px);overflow:auto;padding:15px;border:1px solid rgba(66,217,255,.48);border-radius:13px;background:#07111f;color:#f3f7ff;box-shadow:0 16px 44px rgba(0,0,0,.58);text-align:left;z-index:10002}
+.pui89-status-details__state{display:flex;justify-content:space-between;gap:12px;align-items:center;padding-bottom:9px;border-bottom:1px solid #30445f}
+.pui89-status-details__state span,.pui89-status-details__field>span,.pui89-status-details__readiness>span{display:block;color:#9fb4c9;font-size:10px;font-weight:850;letter-spacing:.09em}
+.pui89-status-details__state strong{color:#42d9ff;font-size:11px}
+.pui89-status-details__field{margin-top:11px}
+.pui89-status-details__field p{margin:4px 0 0;color:#d6e3f1;font-size:12px}
+.pui89-status-details__stage-value{display:block;margin-top:3px;color:#f3f7ff;font-size:12px}
+.pui89-status-details__readiness{display:grid;grid-template-columns:1fr auto;gap:3px 10px;margin-top:12px;padding-top:10px;border-top:1px solid #30445f}
+.pui89-status-details__readiness strong{color:#42d9ff;font-size:15px}
+.pui89-status-details__readiness small{grid-column:1/-1;color:#9fb4c9;font-size:10px}
+@media(max-width:640px){.pui89-status-details__panel{width:min(310px,calc(100vw - 20px));right:-2px}}
