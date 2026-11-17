@@ -52,7 +52,7 @@ def load_allowlist() -> dict[str, dict[str, str]]:
     if not isinstance(raw, list):
         raise ValueError("Allowlist must be a JSON array.")
     entries: dict[str, dict[str, str]] = {}
-    required = {"url", "owner", "purpose", "reviewed_on", "expires_on"}
+    required = {"url", "owner", "purpose", "reviewed_on", "expires_on", "integrity"}
     for index, item in enumerate(raw):
         if not isinstance(item, dict) or not required.issubset(item):
             raise ValueError(f"Allowlist entry {index} must contain: {', '.join(sorted(required))}.")
@@ -67,6 +67,12 @@ def load_allowlist() -> dict[str, dict[str, str]]:
                 date.fromisoformat(str(item[field]))
             except ValueError as exc:
                 raise ValueError(f"Allowlist entry {index} has invalid {field} date.") from exc
+        if not re.fullmatch(r"sha(?:256|384|512)-[A-Za-z0-9+/=]+", str(item["integrity"])):
+            raise ValueError(f"Allowlist entry {index} must pin one valid SRI hash.")
+        reviewed = date.fromisoformat(str(item["reviewed_on"]))
+        expires = date.fromisoformat(str(item["expires_on"]))
+        if reviewed > date.today() or expires <= reviewed:
+            raise ValueError(f"Allowlist entry {index} has an invalid review/expiry window.")
         entries[url] = {str(k): str(v) for k, v in item.items()}
     return entries
 
@@ -134,6 +140,8 @@ def main() -> int:
             integrity = item.get("integrity", "")
             if not re.search(r"(?:^|\s)sha(?:256|384|512)-[A-Za-z0-9+/=]+(?:\s|$)", integrity):
                 errors.append(f"{rel}: allowlisted third-party script is missing a valid SRI integrity attribute: {src}")
+            if integrity and integrity != entry["integrity"]:
+                errors.append(f"{rel}: SRI value does not match the reviewed allowlist hash: {src}")
             if item.get("crossorigin", "").lower() != "anonymous":
                 errors.append(f"{rel}: allowlisted third-party script must set crossorigin=\"anonymous\": {src}")
 
