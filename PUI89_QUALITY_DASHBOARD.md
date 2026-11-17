@@ -55,7 +55,7 @@ Use actual model predictions and the same pixel coordinate system as the ground-
 
 These labels are not interchangeable. A passing unit test is not proof of model accuracy, safety certification, or a working physical robot.
 
-## Free-first and safety limits
+## Open-source-first and safety limits
 
 - No paid model API, cloud GPU, or automatic large-model download is required by the combined unit-test workflow.
 - GitHub-hosted runner usage depends on repository visibility and account allowances; monitor usage and avoid adding paid services.
@@ -212,7 +212,7 @@ The Coconut repository now contains a project adapter that converts caller-suppl
 **Verification status:** repository files were fetched after commit; the dedicated Actions run has not yet been confirmed. The central contract/orchestrator and Coconut vendored copies require synchronization when either changes.
 
 
-## Free-first resource preflight — added 31 October 2026
+## Open-source resource preflight — added 31 October 2026
 
 - [Read-only resource preflight tool](https://github.com/Pui89/Pui89.github.io/blob/main/tools/pui89_resource_preflight.py)
 - [Preflight unit tests](https://github.com/Pui89/Pui89.github.io/blob/main/tests/test_pui89_resource_preflight.py)
