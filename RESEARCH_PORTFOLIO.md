@@ -2,6 +2,10 @@
 
 This page summarises the research direction behind the public projects. It distinguishes implemented software from planned work and does not claim results that have not been measured.
 
+
+
+> **Current portfolio boundary (17 November 2026):** PUI89 has exactly six active products. Shared AI Core is infrastructure, not a seventh product. Extreme Flood Rescue AI and the former Multimodal Narcotics Screening AI are not active standalone products; preserve their historical records. Sentinel's current identity is All-Terrain Exploration & Inspection Robot. See [the authoritative six-product source of truth](PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.0.md).
+
 ## Research approach
 
 The common theme is **practice-oriented AI for consequential real-world workflows**: define a useful task, build a testable software component, evaluate it on appropriate data, document uncertainty and failure modes, and keep human oversight and safety requirements explicit.
@@ -49,7 +53,7 @@ Repository: [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI)
 
 **Current boundary:** concept and engineering requirements only. No physical prototype, validated locomotion, integrated sensor suite or field performance is claimed.
 
-Repository: [PUI89 Sentinel — All-Terrain Exploration & Inspection Robot — PUI89 Sentinel](https://github.com/Pui89/All-Terrain-Inspection-Robot)
+Repository: [PUI89 Sentinel — All-Terrain Exploration & Inspection Robot — PUI89 Sentinel](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot)
 
 ## Cross-project standards
 
