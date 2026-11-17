@@ -91,94 +91,6 @@
       "warnings": []
     },
     {
-      "name": "Extreme Flood Rescue AI",
-      "repository": "Pui89/Extreme-Flood-Rescue-AI",
-      "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI",
-      "focus": "Flood perception, scenario coverage, navigation and fail-safe evidence.",
-      "status": "CHECKS_AVAILABLE",
-      "default_branch": "main",
-      "latest_commit": "c8a4c99764ea",
-      "latest_commit_url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/commit/c8a4c99764eaaf173129356bfe565cc8706af275",
-      "latest_workflows": [
-        {
-          "name": "PUI89 Shared Interface Smoke",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-14T10:41:51Z",
-          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/43586468012",
-          "branch": "main"
-        },
-        {
-          "name": ".github/workflows/pr-status-monitor.yml",
-          "status": "completed",
-          "conclusion": "failure",
-          "updated_at": "2026-11-14T10:41:28Z",
-          "url": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/43586467016",
-          "branch": "main"
-        }
-      ],
-      "non_default_branch_run_count": 32,
-      "key_workflows": [
-        {
-          "name": "Free cloud verification",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Dataset recovery audit",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Free-resource link audit",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Rule-based simulation evaluation",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Coconut dataset evidence audit",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Simulation benchmark + report validator",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Autonomy / safety regression tests",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        }
-      ],
-      "warnings": []
-    },
-    {
       "name": "PUI89 Sentinel — All-Terrain Exploration & Inspection Robot",
       "repository": "Pui89/All-Terrain-Inspection-Robot",
       "url": "https://github.com/Pui89/All-Terrain-Inspection-Robot",
@@ -553,7 +465,7 @@
     "name": "Shared AI Core",
     "repository": "Private platform repository — not publicly monitored",
     "url": null,
-    "focus": "Shared contracts, orchestration, compute intelligence, evidence gates and reusable engineering infrastructure; not an eighth product.",
+    "focus": "Shared contracts, orchestration, compute intelligence, evidence gates and reusable engineering infrastructure; not a seventh product.",
     "status": "NOT_PUBLICLY_MONITORED",
     "default_branch": null,
     "latest_commit": null,
@@ -569,7 +481,7 @@
     "This report is a point-in-time read of public GitHub metadata and recent workflow runs; it does not execute project tests.",
     "A missing workflow run is unknown, not a passing result or proof of failure.",
     "Only the most recent 50 repository workflow runs are scanned; a safeguard absent from that window is unknown.",
-    "Exactly seven product repositories are monitored. Shared AI Core is platform infrastructure, not an eighth product, and is private so its activity is not included in this public report.",
+    "Exactly six active product repositories are monitored. Shared AI Core is platform infrastructure, not a seventh product, and is private so its activity is not included in this public report.",
     "Headline workflow and safeguard status is filtered to each repository's default branch; other-branch runs are counted separately and do not prove default-branch health.",
     "A successful workflow does not validate real-world robot performance, AI accuracy, certification, dataset quality or field performance.",
     "The report reflects the public GitHub API snapshot at generated_at_utc; it may become stale until the next successful refresh."
