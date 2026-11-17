@@ -44,28 +44,32 @@ function projectCard(p){
  if(p.history?.length){const h=p.history[p.history.length-1];links.append(el("span","pui89-observatory__empty",(lang==="th"?"บันทึกล่าสุด: ":"Latest evidence record: ")+formatDate(h.date)));}
  card.append(links);return card;
 }
+function statusSquare(project,compact=false){
+ const panel=el("aside",compact?"pui89-global-status":"pui89-card-status");
+ panel.append(el("div",compact?"pui89-global-status__name":"pui89-card-status__name",t(project.name)));
+ panel.append(el("div",compact?"pui89-global-status__status":"pui89-card-status__eyebrow",lang==="th"?"สถานะการพัฒนา":"DEVELOPMENT STATUS"));
+ addStageIndicator(panel,project,compact);
+ const reviewed=project.evidenceDate||"";
+ const dateLabel=reviewed?formatDate(reviewed):(lang==="th"?"ยังไม่มีวันที่ทบทวน":"Review date not recorded");
+ panel.append(el("div",compact?"pui89-global-status__date":"pui89-card-status__date",(lang==="th"?"ทบทวนล่าสุด · ":"LAST REVIEWED · ")+dateLabel));
+ return panel;
+}
+function renderPortfolioStatuses(data){
+ const cardIds={coconut:"coconut",sentinel:"sentinel","ai-home":"home","ai-nomad":"nomad","robot-car":"global-suv",motorcycle:"motorcycle"};
+ data.projects.forEach(project=>{
+  const card=document.getElementById(cardIds[project.id]||"");
+  const content=card?.querySelector(".pui89-project-content");
+  if(!content||content.querySelector(".pui89-card-status"))return;
+  content.prepend(statusSquare(project,false));
+ });
+}
 function renderTopStatus(project){
  const old=document.getElementById("pui89-global-project-status");
  if(old)old.remove();
  document.querySelectorAll(".pui89-progress--hero").forEach(node=>node.remove());
- const history=(project.history||[]).slice().sort((a,b)=>a.date.localeCompare(b.date));
- const last=history.length?history[history.length-1].date:"";
- const panel=el("aside","pui89-global-status");
+ const panel=statusSquare(project,true);
  panel.id="pui89-global-project-status";
- panel.setAttribute("aria-label",lang==="th"?"สถานะและระดับการพัฒนาโครงการ":"Project development status and maturity");
- const name=el("div","pui89-global-status__name",t(project.name));
- panel.append(name);
- const status=el("div","pui89-global-status__status",lang==="th"?"กำลังพัฒนา":"IN DEVELOPMENT");
- panel.append(status);
- addStageIndicator(panel,project,false);
- const stageValue=el("span","pui89-global-status__stage-value",(lang==="th"?"ระดับ ":"LEVEL ")+stageLevel(project));
- panel.lastElementChild.append(stageValue);
- const stageHistory=(project.history||[]).slice().sort((a,b)=>a.date.localeCompare(b.date));
- const stagePeriod=stageHistory.length?stageHistory[stageHistory.length-1].period:"";
- const periodLabel=stagePeriod?new Intl.DateTimeFormat(lang==="th"?"th-TH-u-ca-buddhist":"en-GB",{month:"long",year:"numeric",timeZone:"UTC"}).format(new Date(stagePeriod+"-01T12:00:00Z")):"";
- if(periodLabel)panel.append(el("div","pui89-global-status__date",(lang==="th"?"เดือนที่บันทึกขั้น: ":"STAGE RECORDED: ")+periodLabel));
- const evidenceDate=last?new Intl.DateTimeFormat(lang==="th"?"th-TH-u-ca-buddhist":"en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"UTC"}).format(new Date(last+"T12:00:00Z")):"";
- panel.append(el("div","pui89-global-status__date",(lang==="th"?"หลักฐานล่าสุด · ":"LATEST EVIDENCE · ")+evidenceDate));
+ panel.setAttribute("aria-label",lang==="th"?"สถานะและขั้นการพัฒนาโครงการ":"Project development status");
  const nav=document.querySelector("nav.nav")||document.querySelector("nav");
  if(nav)nav.insertAdjacentElement("afterend",panel);
  else {const main=document.querySelector("main");if(main)main.insertAdjacentElement("beforebegin",panel);else document.body.prepend(panel);}
@@ -115,6 +119,7 @@ function render(root,data){
  }else timeline.append(el("p","pui89-observatory__empty",lang==="th"?"ยังไม่มีบันทึก":"No records yet."));
  section.append(timeline);
  root.replaceChildren(section);
+ if(portfolio)renderPortfolioStatuses(data);
 }
 fetch(DATA_URL,{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error("Progress data unavailable");return r.json();}).then(data=>{
  document.querySelectorAll("[data-pui89-observatory]").forEach(root=>{
