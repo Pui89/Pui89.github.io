@@ -48,7 +48,7 @@
 </g>
 <text x="270" y="337" text-anchor="middle" fill="#f1f8fc" font-family="Arial" font-size="15" font-weight="700" letter-spacing=".8">01  COCONUT HARVEST AI</text>
 <text x="270" y="356" text-anchor="middle" fill="#59eaff" font-family="Arial" font-size="9.5" letter-spacing="1.7">AGRICULTURAL ROBOT CONCEPT</text>
-<!-- Inactive Flood Rescue concept removed -->
+
 <!-- 02 Sentinel all-terrain inspection robot -->
 <g transform="translate(685 150)">
  <path d="M48 120 112 98 176 120 112 143Z" fill="url(#ti)" stroke="#dce9f0"/><path d="M48 120v12l64 23v-12Z" fill="#263f55"/><path d="M112 143v12l64-23v-12Z" fill="#091a2a"/>
