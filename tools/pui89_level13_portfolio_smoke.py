@@ -58,6 +58,7 @@ PROJECTS = [
         "repo": "Pui89/AI-Step-Through-Scooter",
         "path": "projects/scooter",
         "patterns": ["test_motorcycle_risk_scenarios.py", "test_shared_core_v01.py"],
+        "pythonpath": "src",
     },
 ]
 
