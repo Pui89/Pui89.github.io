@@ -32,7 +32,7 @@
 - This report is a point-in-time read of public GitHub metadata and recent workflow runs; it does not execute project tests.
 - A missing workflow run is unknown, not a passing result or proof of failure.
 - Only the most recent 50 repository workflow runs are scanned; a safeguard absent from that window is unknown.
-- Exactly six active product repositories are monitored. Shared AI Core is platform infrastructure, not an eighth product, and is private so its activity is not included in this public report.
+- Exactly six active product repositories are monitored. Shared AI Core is platform infrastructure, not a seventh product, and is private so its activity is not included in this public report.
 - Headline workflow and safeguard status is filtered to each repository's default branch; other-branch runs are counted separately and do not prove default-branch health.
 - A successful workflow does not validate real-world robot performance, AI accuracy, certification, dataset quality or field performance.
 - The report reflects the public GitHub API snapshot at generated_at_utc; it may become stale until the next successful refresh.
