@@ -6,7 +6,7 @@ from pathlib import Path
 import sys
 ROOT=Path(__file__).resolve().parents[1]
 REGISTER=ROOT/"assets"/"data"/"project-review-register.json"
-EXPECTED={"coconut","flood-rescue","sentinel","ai-home","ai-nomad","ai-robot-car","ai-robot-motorcycle"}
+EXPECTED={"coconut","sentinel","ai-home","ai-nomad","ai-robot-car","ai-robot-motorcycle"}
 def fail(message):
     print("ERROR: "+message,file=sys.stderr)
     raise SystemExit(1)
@@ -18,7 +18,7 @@ if data.get("schema_version")!=1: fail("schema_version must be 1")
 projects=data.get("projects")
 if not isinstance(projects,list): fail("projects must be a list")
 ids=[p.get("id") for p in projects if isinstance(p,dict)]
-if set(ids)!=EXPECTED or len(ids)!=len(EXPECTED): fail("project IDs must match the seven PUI89 projects exactly, with no duplicates")
+if set(ids)!=EXPECTED or len(ids)!=len(EXPECTED): fail("project IDs must match the six active PUI89 projects exactly, with no duplicates")
 total=0
 for p in projects:
     records=p.get("review_records")
