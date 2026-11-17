@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-11-15",
+  "asOf": "2026-11-17",
   "title": {
     "en": "PUI89 Development Observatory",
     "th": "ศูนย์ติดตามการพัฒนา PUI89"
@@ -56,56 +56,11 @@
       "maturityLevel": 3
     },
     {
-      "id": "flood-rescue",
-      "number": 2,
-      "name": {
-        "en": "Extreme Flood Rescue AI",
-        "th": "Extreme Flood Rescue AI"
-      },
-      "repo": "Pui89/Extreme-Flood-Rescue-AI",
-      "stageLabel": {
-        "en": "Software + simulation prototype",
-        "th": "ต้นแบบซอฟต์แวร์และการจำลอง"
-      },
-      "summary": {
-        "en": "Software decision-support, safety gates and synthetic scenarios are documented; flood physics, navigation and rescue capability are not physically validated.",
-        "th": "มีระบบช่วยตัดสินใจ ซอฟต์แวร์ safety gates และสถานการณ์จำลอง แต่ยังไม่ยืนยันฟิสิกส์น้ำท่วม การนำทาง หรือสมรรถนะกู้ภัยจริง"
-      },
-      "next": {
-        "en": "Define reproducible, physics-grounded flood scenarios and measurable rescue-system acceptance tests.",
-        "th": "กำหนดสถานการณ์น้ำท่วมที่อิงฟิสิกส์และทำซ้ำได้ พร้อมเกณฑ์ทดสอบระบบกู้ภัยที่วัดผลได้"
-      },
-      "evidence": {
-        "en": "Documented software checks and synthetic simulation scenarios; no validated physical rescue platform.",
-        "th": "มีการตรวจสอบซอฟต์แวร์และสถานการณ์จำลองสังเคราะห์ แต่ยังไม่มีแพลตฟอร์มกู้ภัยทางกายภาพที่ผ่านการตรวจสอบ"
-      },
-      "blockers": {
-        "en": "Validated water/terrain model, buoyancy, current resistance, navigation, communications, rescue safety and field trials.",
-        "th": "แบบจำลองน้ำและภูมิประเทศที่ตรวจสอบแล้ว การลอยตัว การต้านกระแสน้ำ การนำทาง การสื่อสาร ความปลอดภัย และการทดสอบภาคสนาม"
-      },
-      "history": [
-        {
-          "period": "2026-11",
-          "date": "2026-11-07",
-          "type": "baseline",
-          "note": {
-            "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
-            "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
-          }
-        }
-      ],
-      "commercialReadiness": {
-        "percent": 46,
-        "reviewedOn": "2026-11-07"
-      },
-      "maturityLevel": 3
-    },
-    {
       "id": "sentinel",
       "number": 3,
       "name": {
-        "en": "All-Terrain Inspection Robot Dog — PUI89 Sentinel",
-        "th": "All-Terrain Inspection Robot Dog — PUI89 Sentinel"
+        "en": "PUI89 Sentinel — All-Terrain Exploration & Inspection Robot",
+        "th": "PUI89 Sentinel — หุ่นยนต์สี่ขาสำรวจและตรวจสอบทุกสภาพพื้นที่"
       },
       "repo": "Pui89/All-Terrain-Inspection-Robot",
       "stageLabel": {
@@ -284,8 +239,8 @@
       "id": "motorcycle",
       "number": 7,
       "name": {
-        "en": "PUI89 EasyRide AI Step-Through Scooter",
-        "th": "PUI89 EasyRide AI Step-Through Scooter"
+        "en": "PUI89 AI Step-Through Scooter",
+        "th": "PUI89 AI Step-Through Scooter"
       },
       "repo": "Pui89/AI-Motorcycle-Robotics",
       "stageLabel": {
