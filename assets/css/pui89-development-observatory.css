@@ -303,3 +303,112 @@ body #pui89-global-project-status.pui89-global-status{position:relative!importan
 #pui89-global-project-status .pui89-global-status__date{display:block!important;margin:0!important;padding:0!important;border:0!important;color:#B8CADB!important;font-size:.57rem!important;font-weight:650!important;line-height:1.35!important}
 @media(max-width:640px){#projects .pui89-card-status{width:108px;min-height:108px;padding:9px}body #pui89-global-project-status.pui89-global-status{width:128px!important;height:128px!important;min-height:128px!important;margin:8px 8px 14px auto!important}}
 @media(prefers-reduced-motion:reduce){#projects .pui89-card-status,body #pui89-global-project-status.pui89-global-status{transition:none!important}}
+
+
+/* 2026-11-18: bilingual evidence-checklist progress squares. */
+#projects .pui89-card-status{
+  display:flex;flex:0 0 auto;flex-direction:column;align-items:stretch;justify-content:center;
+  gap:6px;align-self:flex-end;width:132px;height:142px;min-height:142px;
+  margin:0 0 14px auto;padding:10px 11px;
+  border:1px solid rgba(66,217,255,.5);border-radius:13px;
+  background:linear-gradient(150deg,rgba(7,25,43,.99),rgba(8,17,31,.99));
+  color:#F3F7FF;box-shadow:0 8px 22px rgba(0,0,0,.22);text-align:left;
+}
+.pui89-card-status__eyebrow,.pui89-global-status__status{
+  display:flex;align-items:center;gap:6px;color:#91A8BC;font-size:.56rem;
+  font-weight:850;letter-spacing:.08em;line-height:1.25;
+}
+.pui89-card-status__eyebrow:before,.pui89-global-status__status:before{
+  content:"";display:inline-block;width:6px;height:6px;flex:0 0 6px;border-radius:50%;
+  background:#42D9FF;box-shadow:0 0 7px rgba(66,217,255,.55);
+}
+.pui89-card-status__progress,.pui89-global-status__progress{display:grid;gap:5px;margin:0}
+.pui89-card-status__progress-head,.pui89-global-status__progress-head{
+  display:flex;align-items:baseline;justify-content:space-between;gap:5px;
+}
+.pui89-card-status__progress-label,.pui89-global-status__progress-label{
+  color:#9FB4C9;font-size:.52rem;font-weight:850;letter-spacing:.07em;
+}
+.pui89-card-status__percent,.pui89-global-status__percent{
+  color:#42D9FF;font-size:1.55rem;font-weight:900;line-height:1;
+  font-variant-numeric:tabular-nums;
+}
+.pui89-card-status__progress-track,.pui89-global-status__progress-track{
+  display:block;width:100%;height:6px;overflow:hidden;border-radius:99px;
+  background:rgba(159,180,201,.18);
+}
+.pui89-card-status__progress-fill,.pui89-global-status__progress-fill{
+  display:block;height:100%;border-radius:inherit;
+  background:linear-gradient(90deg,#159CCB,#42D9FF);
+  transition:width .25s ease;
+}
+.pui89-card-status .pui89-observatory__stage-indicator{margin:0}
+.pui89-card-status .pui89-observatory__stage-badge{
+  display:inline-flex;max-width:108px;padding:5px 7px;border-left:3px solid currentColor;
+  border-radius:4px;font-size:.65rem;font-weight:900;line-height:1.2;white-space:normal;
+}
+.pui89-card-status__date{
+  margin-top:auto;padding-top:5px;border-top:1px solid rgba(159,180,201,.18);
+  color:#B8CADB;font-size:.53rem;font-weight:650;line-height:1.3;overflow-wrap:anywhere;
+}
+#pui89-global-project-status.pui89-global-status{
+  width:152px!important;height:158px!important;min-height:158px!important;
+  max-width:calc(100% - 16px)!important;gap:7px!important;padding:10px 11px!important;
+}
+#pui89-global-project-status .pui89-global-status__name{display:none!important}
+#pui89-global-project-status .pui89-global-status__progress{width:100%;gap:5px}
+#pui89-global-project-status .pui89-global-status__progress-label{font-size:.54rem}
+#pui89-global-project-status .pui89-global-status__percent{font-size:1.65rem}
+#pui89-global-project-status .pui89-global-status__stage{display:block!important;margin:0!important}
+#pui89-global-project-status .pui89-global-status__stage-tab{display:inline-flex!important;max-width:120px!important;white-space:normal!important}
+#pui89-global-project-status .pui89-global-status__date{
+  display:block!important;margin-top:auto!important;padding-top:5px!important;
+  border-top:1px solid rgba(159,180,201,.18)!important;font-size:.55rem!important;
+}
+#projects .pui89-card-status[data-progress-band="starting"],
+#pui89-global-project-status[data-progress-band="starting"]{border-color:rgba(168,180,196,.55)!important}
+#projects .pui89-card-status[data-progress-band="early"],
+#pui89-global-project-status[data-progress-band="early"]{border-color:rgba(255,194,122,.7)!important}
+#projects .pui89-card-status[data-progress-band="building"],
+#pui89-global-project-status[data-progress-band="building"]{border-color:rgba(66,217,255,.72)!important}
+#projects .pui89-card-status[data-progress-band="strong"],
+#pui89-global-project-status[data-progress-band="strong"]{border-color:rgba(140,224,174,.72)!important}
+#projects .pui89-card-status[data-progress-band="high"],
+#pui89-global-project-status[data-progress-band="high"]{border-color:rgba(86,215,176,.8)!important}
+#projects .pui89-card-status[data-progress-band="starting"] .pui89-card-status__percent,
+#pui89-global-project-status[data-progress-band="starting"] .pui89-global-status__percent{color:#A8B4C4!important}
+#projects .pui89-card-status[data-progress-band="early"] .pui89-card-status__percent,
+#pui89-global-project-status[data-progress-band="early"] .pui89-global-status__percent{color:#FFC27A!important}
+#projects .pui89-card-status[data-progress-band="building"] .pui89-card-status__percent,
+#pui89-global-project-status[data-progress-band="building"] .pui89-global-status__percent{color:#42D9FF!important}
+#projects .pui89-card-status[data-progress-band="strong"] .pui89-card-status__percent,
+#pui89-global-project-status[data-progress-band="strong"] .pui89-global-status__percent{color:#8CE0AE!important}
+#projects .pui89-card-status[data-progress-band="high"] .pui89-card-status__percent,
+#pui89-global-project-status[data-progress-band="high"] .pui89-global-status__percent{color:#56D7B0!important}
+#projects .pui89-card-status[data-progress-band="starting"] .pui89-card-status__progress-fill,
+#pui89-global-project-status[data-progress-band="starting"] .pui89-global-status__progress-fill{background:#A8B4C4!important}
+#projects .pui89-card-status[data-progress-band="early"] .pui89-card-status__progress-fill,
+#pui89-global-project-status[data-progress-band="early"] .pui89-global-status__progress-fill{background:#FFC27A!important}
+#projects .pui89-card-status[data-progress-band="building"] .pui89-card-status__progress-fill,
+#pui89-global-project-status[data-progress-band="building"] .pui89-global-status__progress-fill{background:#42D9FF!important}
+#projects .pui89-card-status[data-progress-band="strong"] .pui89-card-status__progress-fill,
+#pui89-global-project-status[data-progress-band="strong"] .pui89-global-status__progress-fill{background:#8CE0AE!important}
+#projects .pui89-card-status[data-progress-band="high"] .pui89-card-status__progress-fill,
+#pui89-global-project-status[data-progress-band="high"] .pui89-global-status__progress-fill{background:#56D7B0!important}
+.pui89-card-status .pui89-observatory__stage-badge--level-1{background:#A8B4C4;color:#101A28;border-left-color:#738399}
+.pui89-card-status .pui89-observatory__stage-badge--level-2{background:#8BB8FF;color:#0A2345;border-left-color:#3977C8}
+.pui89-card-status .pui89-observatory__stage-badge--level-3{background:#65DDF4;color:#062B38;border-left-color:#13A9CC}
+.pui89-card-status .pui89-observatory__stage-badge--level-4{background:#C2A5FF;color:#28134D;border-left-color:#8656D8}
+.pui89-card-status .pui89-observatory__stage-badge--level-5{background:#FFC27A;color:#452400;border-left-color:#D8892C}
+.pui89-card-status .pui89-observatory__stage-badge--level-6{background:#8CE0AE;color:#07351C;border-left-color:#2B9C5A}
+.pui89-card-status .pui89-observatory__stage-badge--level-7{background:#56D7B0;color:#00392D;border-left-color:#119878}
+.pui89-card-status .pui89-observatory__stage-badge--level-8{background:#72D6A2;color:#07351C;border-left-color:#26945A}
+.pui89-card-status .pui89-observatory__stage-badge--level-9{background:#F3D36B;color:#3A2A00;border-left-color:#B68A16}
+.pui89-card-status .pui89-observatory__stage-badge--level-10{background:#A8B4C4;color:#101A28;border-left-color:#738399}
+@media(max-width:640px){
+  #projects .pui89-card-status{width:124px;height:138px;min-height:138px;padding:9px}
+  #pui89-global-project-status.pui89-global-status{width:144px!important;height:152px!important;min-height:152px!important}
+}
+@media(prefers-reduced-motion:reduce){
+  .pui89-card-status__progress-fill,.pui89-global-status__progress-fill{transition:none}
+}
