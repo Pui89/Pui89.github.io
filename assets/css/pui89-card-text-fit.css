@@ -1,0 +1,29 @@
+/* PUI89 shared card text containment — six product pages, EN + TH. */
+:where(.wrap,.container,.grid,.two,.roadmap,.pti-grid,.suv-grid,.suv-gates){min-width:0}
+:where(.grid,.two,.roadmap,.pti-grid,.suv-grid,.suv-gates)>*{min-width:0;max-width:100%}
+:where(.card,.panel,.step,.status,.notice,.callout,.metric,.pti-card,.pui89-observatory__card,.suv-panel,.suv-gates>div,.qrrow,.suv-gallery-card){
+  box-sizing:border-box;
+  min-width:0;
+  max-width:100%;
+  overflow-wrap:anywhere;
+}
+:where(.card,.panel,.step,.status,.notice,.callout,.metric,.pti-card,.pui89-observatory__card,.suv-panel,.suv-gates>div,.qrrow,.suv-gallery-card)
+:where(h1,h2,h3,h4,h5,h6,p,li,span,strong,small,a,figcaption,dt,dd,td,th){
+  min-width:0;
+  max-width:100%;
+  overflow-wrap:anywhere;
+  word-break:normal;
+}
+:where(img,svg,video,canvas){max-width:100%}
+:where(.status,.notice,.callout,.qrrow,.suv-flow){flex-wrap:wrap}
+html[lang="th"]{line-break:loose}
+html[lang="th"] :where(.card,.panel,.step,.status,.notice,.callout,.metric,.pti-card,.pui89-observatory__card,.suv-panel,.suv-gates>div,.qrrow,.suv-gallery-card){
+  line-height:1.8;
+}
+html[lang="th"] :where(.card p,.card li,.panel p,.panel li,.step,.status p,.notice,.callout,.pti-card p,.suv-panel p,.suv-panel li,figcaption,td,th){
+  overflow-wrap:anywhere;
+  word-break:normal;
+}
+@media(max-width:560px){
+  :where(.card,.panel,.step,.status,.notice,.callout,.pti-card,.pui89-observatory__card,.suv-panel,.suv-gates>div,.qrrow,.suv-gallery-card){padding:clamp(14px,4vw,18px)}
+}
