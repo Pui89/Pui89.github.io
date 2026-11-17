@@ -92,10 +92,10 @@
     },
     {
       "name": "PUI89 Sentinel — All-Terrain Exploration & Inspection Robot",
-      "repository": "Pui89/All-Terrain-Inspection-Robot",
-      "url": "https://github.com/Pui89/All-Terrain-Inspection-Robot",
-      "focus": "Quadruped exploration and inspection robot concept for supervised observation in varied environments. Software workflows and concept documentation do not establish physical mobility, sensor integration or field performance.",
-      "status": "SCOPE_RESET",
+      "repository": "Pui89/PUI89-All-Terrain-Inspection-Robot",
+      "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot",
+      "focus": "Four-legged supervised exploration and inspection robot concept. First mission and operating envelope must be defined before hardware selection. No physical capability is implied.",
+      "status": "IDENTITY_CORRECTED_EVIDENCE_REVIEW_REQUIRED",
       "default_branch": "main",
       "latest_commit": null,
       "latest_commit_url": null,
@@ -103,7 +103,7 @@
       "non_default_branch_run_count": 0,
       "key_workflows": [],
       "warnings": [
-        "No physical Sentinel robot, validated locomotion, real sensor integration or field inspection performance is claimed. Software workflow success is not physical validation."
+        "Canonical repository identity corrected; prior repository status and workflow references are not carried forward. Review the canonical repository before reporting CI or maturity."
       ]
     },
     {
@@ -195,10 +195,10 @@
       "warnings": []
     },
     {
-      "name": "PUI89 AI NOMAD — Four-Wheel Mobile Assistant Robot",
+      "name": "PUI89 AI NOMAD",
       "repository": "Pui89/AI-Mobile-Assistant-Robot",
       "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot",
-      "focus": "Compact four-wheel mobile-assistant concept with an upright suitcase-inspired body and retractable manual pull handle; supervised mobility, carrying assistance and environmental awareness, distinct from indoor-focused AI HOME. Physical mobility and performance remain unvalidated.",
+      "focus": "Ground-use four-wheel mobile assistant robot. Not luggage or airline cabin/checked baggage; storage is secondary to supervised mobility and assistance. Physical mobility remains unvalidated.",
       "status": "CHECKS_AVAILABLE",
       "default_branch": "main",
       "latest_commit": "7b54dc4c395c",
@@ -373,99 +373,27 @@
       "warnings": []
     },
     {
-      "name": "PUI89 AI Step-Through Scooter · EasyRide AI",
-      "repository": "Pui89/AI-Motorcycle-Robotics",
-      "url": "https://github.com/Pui89/AI-Motorcycle-Robotics",
+      "name": "PUI89 AI Step-Through Scooter",
+      "repository": "Pui89/AI-Step-Through-Scooter",
+      "url": "https://github.com/Pui89/AI-Step-Through-Scooter",
       "focus": "Rider-centred step-through mobility concept, safety advisories and simulation-first evaluation.",
-      "status": "CHECKS_AVAILABLE",
+      "status": "IDENTITY_CORRECTED_EVIDENCE_REVIEW_REQUIRED",
       "default_branch": "main",
-      "latest_commit": "37671ba0f2de",
-      "latest_commit_url": "https://github.com/Pui89/AI-Motorcycle-Robotics/commit/37671ba0f2dec2c0c0d3c4afc21de138a867fce3",
-      "latest_workflows": [
-        {
-          "name": "PUI89 Security Audit",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-14T09:42:50Z",
-          "url": "https://github.com/Pui89/AI-Motorcycle-Robotics/actions/runs/43581831097",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Motorcycle Quality and Shared Core Contract Checks",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-14T09:42:43Z",
-          "url": "https://github.com/Pui89/AI-Motorcycle-Robotics/actions/runs/43581831106",
-          "branch": "main"
-        }
-      ],
+      "latest_commit": null,
+      "latest_commit_url": null,
+      "latest_workflows": [],
       "non_default_branch_run_count": 31,
-      "key_workflows": [
-        {
-          "name": "Free cloud verification",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Dataset recovery audit",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Free-resource link audit",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Rule-based simulation evaluation",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Coconut dataset evidence audit",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Simulation benchmark + report validator",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Autonomy / safety regression tests",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        }
-      ],
-      "warnings": []
+      "key_workflows": [],
+      "warnings": [
+        "Canonical repository identity corrected; prior repository status and workflow references are not carried forward. Review the canonical repository before reporting CI or maturity."
+      ]
     }
   ],
   "platform": {
     "name": "Shared AI Core",
     "repository": "Private platform repository — not publicly monitored",
     "url": null,
-    "focus": "Shared contracts, orchestration, compute intelligence, evidence gates and reusable engineering infrastructure; not an eighth product.",
+    "focus": "Shared contracts, orchestration, compute intelligence, evidence gates and reusable engineering infrastructure; shared platform, not a seventh product.",
     "status": "NOT_PUBLICLY_MONITORED",
     "default_branch": null,
     "latest_commit": null,
@@ -481,7 +409,7 @@
     "This report is a point-in-time read of public GitHub metadata and recent workflow runs; it does not execute project tests.",
     "A missing workflow run is unknown, not a passing result or proof of failure.",
     "Only the most recent 50 repository workflow runs are scanned; a safeguard absent from that window is unknown.",
-    "Exactly six active product repositories are monitored. Shared AI Core is platform infrastructure, not an eighth product, and is private so its activity is not included in this public report.",
+    "Exactly six active product repositories are monitored. Shared AI Core is platform infrastructure, not a seventh product, and is private so its activity is not included in this public report.",
     "Headline workflow and safeguard status is filtered to each repository's default branch; other-branch runs are counted separately and do not prove default-branch health.",
     "A successful workflow does not validate real-world robot performance, AI accuracy, certification, dataset quality or field performance.",
     "The report reflects the public GitHub API snapshot at generated_at_utc; it may become stale until the next successful refresh."
