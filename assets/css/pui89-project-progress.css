@@ -1,14 +1,8 @@
-/* PUI89 compact portfolio status card — shared by all seven projects, EN + TH.
-   Keep explanatory evidence, limitations and milestone details in the page body. */
-.pui89-global-status__bar,
-.pui89-observatory__bar,
-.pui89-observatory__maturity-steps,
-.pui89-progress--card,
-.pui89-progress__bar,
-.pui89-progress__steps,
-#pui89-maturity-indicators [aria-hidden="true"]{
-  display:none!important;
-}
+/* Restore visible project progress bars and maturity indicators across EN/TH portfolio pages. */
+.pui89-global-status__bar,.pui89-observatory__bar,.pui89-progress__bar{display:block!important}
+.pui89-observatory__maturity-steps,.pui89-progress__steps{display:grid!important}
+.pui89-progress--card{display:block!important}
+#pui89-maturity-indicators [aria-hidden="true"]{display:block!important}
 .pui89-status-tile{
   --status-accent:#42D9FF;
   position:absolute!important;
