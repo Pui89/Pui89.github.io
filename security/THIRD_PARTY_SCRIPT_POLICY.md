@@ -26,7 +26,7 @@ Run:
 python3 scripts/check_third_party_scripts.py
 ```
 
-The check scans local HTML files and fails on unapproved external script sources, non-HTTPS external script URLs, expired approvals, missing SRI, or missing anonymous CORS mode. It warns about inline executable scripts for manual CSP review.
+The check scans local HTML files and JavaScript files. It fails on unapproved external script sources, non-HTTPS external script URLs, expired approvals, missing or mismatched SRI, or missing anonymous CORS mode. It warns about inline executable scripts and dynamic code-loading/execution patterns (script element creation, document.write, eval, Function constructor, and dynamic import) for manual review. Unit tests run in the Pages workflow.
 
 ## Limitations and next gate
 
