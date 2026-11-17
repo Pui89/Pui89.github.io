@@ -72,14 +72,14 @@ function renderTopStatus(project){
  readiness.append(readinessHead);
  const track=el("div","pui89-global-status__progress-track");track.setAttribute("role","progressbar");track.setAttribute("aria-valuemin","0");track.setAttribute("aria-valuemax","100");track.setAttribute("aria-valuenow",String(project.progressPercent??0));
  const fill=el("span","pui89-global-status__progress-fill");fill.style.width=String(project.progressPercent??0)+"%";track.append(fill);readiness.append(track);panel.append(readiness);
- addStageIndicator(panel,project,false);
+ const stageText=el("div","pui89-global-status__stage-text",(lang==="th"?"ระดับ "+stageLevel(project)+" · ":"LEVEL "+stageLevel(project)+" · ")+t(project.stageLabel));
+ panel.append(stageText);
  const stageHistory=(project.history||[]).slice().sort((a,b)=>a.date.localeCompare(b.date));
  const stagePeriod=stageHistory.length?stageHistory[stageHistory.length-1].period:"";
  const periodLabel=stagePeriod?new Intl.DateTimeFormat(lang==="th"?"th-TH-u-ca-buddhist":"en-GB",{month:"long",year:"numeric",timeZone:"UTC"}).format(new Date(stagePeriod+"-01T12:00:00Z")):"";
- if(periodLabel){const stageNode=panel.querySelector(".pui89-global-status__stage");if(stageNode)stageNode.append(el("span","pui89-global-status__date",(lang==="th"?"เดือนที่บันทึกขั้น: ":"STAGE RECORDED: ")+periodLabel));}
+ if(periodLabel)panel.append(el("div","pui89-global-status__date",(lang==="th"?"เดือนที่บันทึกขั้น: ":"STAGE RECORDED: ")+periodLabel));
  const evidenceDate=last?new Intl.DateTimeFormat(lang==="th"?"th-TH-u-ca-buddhist":"en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"UTC"}).format(new Date(last+"T12:00:00Z")):"";
  panel.append(el("div","pui89-global-status__date",(lang==="th"?"หลักฐานล่าสุด · ":"LATEST EVIDENCE · ")+evidenceDate));
- if(project.progressAsOf)panel.append(el("div","pui89-global-status__date",(lang==="th"?"เปอร์เซ็นต์ ณ · ":"READINESS AS OF · ")+new Intl.DateTimeFormat(lang==="th"?"th-TH-u-ca-buddhist":"en-GB",{month:"long",year:"numeric",timeZone:"UTC"}).format(new Date(project.progressAsOf+"T12:00:00Z"))));
  const nav=document.querySelector("nav.nav")||document.querySelector("nav");
  if(nav)nav.insertAdjacentElement("afterend",panel);
  else {const main=document.querySelector("main");if(main)main.insertAdjacentElement("beforebegin",panel);else document.body.prepend(panel);}
