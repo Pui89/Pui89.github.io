@@ -481,3 +481,48 @@ body #pui89-global-project-status.pui89-global-status{position:relative!importan
     flex:0 0 128px!important;padding:9px!important;gap:5px!important;
   }
 }
+
+
+/* 2026-11-18: prevent bilingual project status text from escaping its square.
+   Flex children must stretch to the panel width; long Thai/English review dates
+   and stage labels wrap inside the card instead of sizing beyond its border. */
+body #pui89-global-project-status.pui89-global-status{
+  align-items:stretch!important;
+  box-sizing:border-box!important;
+}
+#pui89-global-project-status .pui89-global-status__status,
+#pui89-global-project-status .pui89-global-status__progress,
+#pui89-global-project-status .pui89-global-status__stage,
+#pui89-global-project-status .pui89-global-status__date{
+  box-sizing:border-box!important;
+  width:100%!important;
+  min-width:0!important;
+  max-width:100%!important;
+  align-self:stretch!important;
+}
+#pui89-global-project-status .pui89-global-status__status{
+  white-space:normal!important;
+  overflow-wrap:anywhere!important;
+}
+#pui89-global-project-status .pui89-global-status__stage{
+  display:flex!important;
+  align-items:flex-start!important;
+  flex-wrap:wrap!important;
+}
+#pui89-global-project-status .pui89-global-status__stage-tab{
+  display:inline-flex!important;
+  width:auto!important;
+  min-width:0!important;
+  max-width:100%!important;
+  white-space:normal!important;
+  overflow-wrap:anywhere!important;
+  word-break:normal!important;
+}
+#pui89-global-project-status .pui89-global-status__date{
+  display:block!important;
+  white-space:normal!important;
+  overflow-wrap:anywhere!important;
+  word-break:normal!important;
+  line-height:1.25!important;
+  font-size:.52rem!important;
+}
