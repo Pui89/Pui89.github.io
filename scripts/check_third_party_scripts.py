@@ -84,6 +84,30 @@ def html_files() -> list[Path]:
     )
 
 
+def inspect_dynamic_script_patterns(source: str, location: str, warnings: list[str]) -> int:
+    """Flag runtime code patterns that can load or execute code dynamically."""
+    patterns = [
+        ("dynamic script element creation", re.compile(r"""document\s*\.\s*createElement\s*\(\s*['"]script['"]\s*\)""", re.I)),
+        ("document.write usage", re.compile(r"""document\s*\.\s*write(?:ln)?\s*\(""", re.I)),
+        ("eval usage", re.compile(r"""\beval\s*\(""", re.I)),
+        ("Function constructor usage", re.compile(r"""\bnew\s+Function\s*\(""", re.I)),
+        ("dynamic import() usage", re.compile(r"""\bimport\s*\(""", re.I)),
+    ]
+    count = 0
+    for label, pattern in patterns:
+        if pattern.search(source):
+            warnings.append(f"{location}: manual security review required: {label}")
+            count += 1
+    return count
+
+
+def javascript_files() -> list[Path]:
+    return sorted(
+        path for path in ROOT.rglob("*.js")
+        if not any(part in SKIP_DIRS for part in path.relative_to(ROOT).parts)
+    )
+
+
 def main() -> int:
     try:
         allowlist = load_allowlist()
@@ -97,6 +121,7 @@ def main() -> int:
     external_count = 0
     inline_count = 0
     checked_pages = 0
+    dynamic_pattern_findings = 0
 
     for page in html_files():
         checked_pages += 1
@@ -104,6 +129,12 @@ def main() -> int:
         try:
             parser.feed(page.read_text(encoding="utf-8"))
             parser.close()
+            for script_index, script_item in enumerate(parser.scripts, start=1):
+                inline_source = script_item.get("_inline", "")
+                if inline_source.strip() and not script_item.get("src"):
+                    dynamic_pattern_findings += inspect_dynamic_script_patterns(
+                        inline_source, f"{page.relative_to(ROOT)}:inline-script-{script_index}", warnings
+                    )
         except (OSError, UnicodeError) as exc:
             errors.append(f"{page.relative_to(ROOT)}: cannot parse HTML: {exc}")
             continue
@@ -145,12 +176,26 @@ def main() -> int:
             if item.get("crossorigin", "").lower() != "anonymous":
                 errors.append(f"{rel}: allowlisted third-party script must set crossorigin=\"anonymous\": {src}")
 
+    checked_js_files = 0
+    for js_file in javascript_files():
+        checked_js_files += 1
+        try:
+            source = js_file.read_text(encoding="utf-8")
+        except (OSError, UnicodeError) as exc:
+            errors.append(f"{js_file.relative_to(ROOT)}: cannot read JavaScript: {exc}")
+            continue
+        dynamic_pattern_findings += inspect_dynamic_script_patterns(
+            source, js_file.relative_to(ROOT).as_posix(), warnings
+        )
+
     for url in sorted(set(allowlist) - seen_allowlisted):
         warnings.append(f"Allowlisted script is not currently referenced by HTML: {url}")
 
     report = {
         "status": "failed" if errors else "passed_with_warnings" if warnings else "passed",
         "html_pages_checked": checked_pages,
+        "javascript_files_checked": checked_js_files,
+        "dynamic_script_pattern_findings": dynamic_pattern_findings,
         "script_sources_external": external_count,
         "allowlisted_external_scripts_used": len(seen_allowlisted),
         "inline_executable_scripts_review_required": inline_count,
