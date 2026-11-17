@@ -4,7 +4,7 @@
 
 Independent AI and robotics development, open to aligned global funding, hardware, technology support, and strategic partnerships.
 
-PUI89 is an independent AI engineering initiative developing practical AI software, shared engineering foundations, and robotics-system concepts. The work spans agriculture, disaster response, multimodal inspection, home environments, mobile assistance, and intelligent mobility.
+PUI89 is an independent AI engineering initiative developing practical AI software, shared engineering foundations, and robotics-system concepts. The work spans agriculture, multimodal inspection, home environments, mobile assistance, and intelligent mobility.
 
 PUI89 follows one central principle: **make system behaviour, evidence, uncertainty, limitations, and safety boundaries inspectable.** Project concepts, implemented software, automated test results, simulations, and validated real-world capabilities are described separately.
 
@@ -24,7 +24,7 @@ PUI89 follows one central principle: **make system behaviour, evidence, uncertai
 
 ## What PUI89 is building
 
-PUI89 develops seven independent project lines supported by a shared AI engineering direction:
+PUI89 develops six active product projects supported by a shared AI engineering direction:
 
 - **Shared AI Core:** reusable contracts, evidence handling, uncertainty-aware state, safety gates, verification utilities, and project adapters.
 - **Domain-specific AI software:** perception, monitoring, decision-support, and task-planning workflows tailored to each project.
@@ -33,14 +33,13 @@ PUI89 develops seven independent project lines supported by a shared AI engineer
 
 The compute direction is **software integration and coordination**, not semiconductor chip manufacturing. No hardware performance, energy saving, or cost reduction is claimed without measured evidence.
 
-## Seven-project portfolio
+## Six-product portfolio
 
 Each project has its own repository, requirements, risks, and validation gates. Shared interfaces are reused through documented boundaries; project-specific safety and domain logic remain separate.
 
 | Project | Focus | Repository | Website |
 |---|---|---|---|
 | **Coconut Harvest AI** | Coconut maturity assessment and a proposed robotic harvesting workflow | [Repository](https://github.com/Pui89/Coconut-Harvest-AI) | [EN](https://pui89.github.io/coconut.html) · [TH](https://pui89.github.io/coconut-th.html) |
-| **Extreme Flood Rescue AI** | Flood awareness and human-supervised rescue-support concepts | [Repository](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | [EN](https://pui89.github.io/flood-rescue.html) · [TH](https://pui89.github.io/flood-rescue-th.html) |
 | **PUI89 Sentinel — All-Terrain Exploration & Inspection Robot** | PUI89 Sentinel: four-legged quadruped robot dog concept for supervised industrial, infrastructure and outdoor inspection | [Repository](https://github.com/Pui89/All-Terrain-Inspection-Robot) | [EN](https://pui89.github.io/sentinel.html) · [TH](https://pui89.github.io/sentinel-th.html) |
 | **PUI89 AI HOME** | Indoor home-condition awareness and evidence-led assistance | [Repository](https://github.com/Pui89/AI-Home-Safety-Robot) | [EN](https://pui89.github.io/home.html) · [TH](https://pui89.github.io/home-th.html) |
 | **PUI89 AI NOMAD — Carry-on Suitcase-Style Mobile AI Assistant** | Upright carry-on luggage form, telescopic pull handle and four spinner caster wheels at the base; 8–10 kg target, 10 kg maximum; not airline-certified or physically validated | [Repository](https://github.com/Pui89/AI-Mobile-Assistant-Robot) | [EN](https://pui89.github.io/nomad.html) · [TH](https://pui89.github.io/nomad-th.html) |
@@ -118,7 +117,7 @@ A passing software test does not prove model accuracy, sensor calibration, simul
 
 ## PUI89 AI 2030 Vision
 
-**From intelligent software to evidence-led Physical AI products.** The bilingual [AI 2030 Vision (English)](https://pui89.github.io/ai-2030.html) · [วิสัยทัศน์ AI 2030 (ภาษาไทย)](https://pui89.github.io/ai-2030-th.html) sets out how PUI89 connects governed AI-agent workflows, Perception & Task Intelligence (PTI), the Shared AI Core, heterogeneous edge computing, simulation, safety and evidence across the seven-product portfolio. It is a strategic roadmap, not a claim that future agents, robots, vehicle systems or product capabilities are already implemented or validated.
+**From intelligent software to evidence-led Physical AI products.** The bilingual [AI 2030 Vision (English)](https://pui89.github.io/ai-2030.html) · [วิสัยทัศน์ AI 2030 (ภาษาไทย)](https://pui89.github.io/ai-2030-th.html) sets out how PUI89 connects governed AI-agent workflows, Perception & Task Intelligence (PTI), the Shared AI Core, heterogeneous edge computing, simulation, safety and evidence across the six-product portfolio. It is a strategic roadmap, not a claim that future agents, robots, vehicle systems or product capabilities are already implemented or validated.
 
 ## Safety, privacy, and security
 
