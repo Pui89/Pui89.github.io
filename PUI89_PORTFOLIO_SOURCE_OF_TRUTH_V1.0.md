@@ -14,6 +14,10 @@
 | 5 | PUI89 AI Global SUV | [Pui89/PUI89-AI-Global-SUV](https://github.com/Pui89/PUI89-AI-Global-SUV) | [EN](https://pui89.github.io/ai-global-suv.html) · [TH](https://pui89.github.io/ai-global-suv-th.html) |
 | 6 | PUI89 AI Step-Through Scooter | [Pui89/AI-Step-Through-Scooter](https://github.com/Pui89/AI-Step-Through-Scooter) | [EN](https://pui89.github.io/ai-robot-motorcycle.html) · [TH](https://pui89.github.io/ai-robot-motorcycle-th.html) |
 
+## Independent vehicle-project boundary
+
+**PUI89 AI Global SUV and PUI89 AI Step-Through Scooter are two separate products and two independent development projects.** They have different vehicle classes, users, engineering requirements, product repositories, validation plans and maturity records. The SUV is a medium-size, five-door passenger vehicle concept; the Scooter is a rider-first, two-wheel step-through scooter concept. They are not variants, trims or subprojects of one another. Shared AI Core and selected platform-level intelligence interfaces do not merge their product identities or engineering work.
+
 ## Product boundaries and founder-approved requirements
 
 - **Coconut Harvest AI:** software-first, four maturity classes (young green, mature green, yellow, brown). Establish image rights and provenance, human-reviewed labels, leakage-safe train/validation/test splits, then CPU evaluation. Report per-class precision, recall and F1, sample counts, confusion matrix and failure cases only after a valid held-out evaluation.
