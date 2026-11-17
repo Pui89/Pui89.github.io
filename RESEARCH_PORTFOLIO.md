@@ -46,7 +46,7 @@ Repository: [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI)
 
 Repository: [Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI)
 
-## 3. All-Terrain Inspection Robot Dog
+## 3. PUI89 Sentinel — All-Terrain Exploration & Inspection Robot
 
 **Project name:** PUI89 Sentinel.  
 **Application area:** four-legged quadruped robotics for supervised inspection of industrial facilities, infrastructure, warehouses, logistics yards, ports and selected outdoor environments.
@@ -67,7 +67,7 @@ Repository: [Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI)
 
 **Current boundary:** concept and engineering requirements only. No physical prototype, validated locomotion, integrated sensor suite or field performance is claimed.
 
-Repository: [All-Terrain Inspection Robot Dog — PUI89 Sentinel](https://github.com/Pui89/All-Terrain-Inspection-Robot)
+Repository: [PUI89 Sentinel — All-Terrain Exploration & Inspection Robot — PUI89 Sentinel](https://github.com/Pui89/All-Terrain-Inspection-Robot)
 
 ## Cross-project standards
 
