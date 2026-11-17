@@ -161,3 +161,9 @@ PUI89 remains an independent early-stage initiative. An enquiry does not mean a 
 ---
 
 *Public project information is maintained on a best-effort basis. For current implementation and test status, consult the relevant repository, commit, workflow run, and project-specific evidence record. Website descriptions are summaries and do not replace technical documentation.*
+
+## Active portfolio — authoritative scope
+
+PUI89 has **exactly six active products**. [PUI89 Portfolio Source of Truth v1.0](PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.0.md) is the canonical record for all six product names, repository links, bilingual website links, founder-approved requirements and evidence maturity labels. Shared AI Core is common infrastructure, not a seventh product. Extreme Flood Rescue AI is an inactive historical standalone project; preserve its repository and records, but do not present it as an active product.
+
+The source of truth also records the HOME 8 kg target / 10 kg maximum, NOMAD's ground-use four-wheel mobile-assistant identity, Sentinel's mission-before-hardware gate, and the Coconut rights → human labels → held-out CPU evaluation sequence.
