@@ -641,6 +641,72 @@ a:hover{color:#B8F2FF!important}
 @media(max-width:620px){#projects .pui89-project-grid{grid-template-columns:1fr;gap:14px}#projects .pui89-project-image{aspect-ratio:16/9}#projects .pui89-project-content{padding:19px}#projects .pui89-quick-explore{flex-wrap:nowrap;overflow-x:auto;padding:0 0 8px;scroll-snap-type:x proximity}#projects .pui89-quick-explore a{flex:0 0 auto;scroll-snap-align:start}#projects.pui89-project-showcase:before{inset:0 -10px}}
 @media(prefers-reduced-motion:reduce){#projects .pui89-project-card,#projects .pui89-project-image img,#projects .pui89-quick-explore a,#projects .pui89-explore-button{transition:none!important}#projects .pui89-project-card:hover{transform:none}}
 
+
+/* PUI89 bilingual homepage system — aligned layout, independent translations. */
+header.wrap.nav{width:min(calc(100% - 48px),1180px);min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:22px;padding:14px 0;border-bottom:1px solid rgba(197,208,220,.16)}
+header.wrap.nav>.brand{flex:0 0 auto}
+header.wrap.nav>.brand img{display:block;width:190px;height:auto;max-height:54px;object-fit:contain}
+header.wrap.nav .navlinks{flex:1 1 auto;min-width:0;display:flex;align-items:center;justify-content:flex-end;gap:clamp(2px,.45vw,8px);flex-wrap:nowrap;white-space:nowrap}
+header.wrap.nav .navlinks>a,header.wrap.nav .nav-more>summary{font-size:clamp(.72rem,.82vw,.84rem);font-weight:700;padding:8px 8px;border-radius:8px;text-decoration:none;color:#C4D1DF}
+header.wrap.nav .navlinks>a:hover,header.wrap.nav .nav-more>summary:hover{background:rgba(66,217,255,.08);color:#F3F7FF}
+header.wrap.nav .nav-more{position:relative;flex:0 0 auto}
+header.wrap.nav .nav-more-menu{right:0;left:auto;top:calc(100% + 9px);min-width:245px;max-height:min(70vh,520px);overflow:auto;padding:9px;border:1px solid rgba(66,217,255,.25);border-radius:13px;background:#0D1B2C;box-shadow:0 20px 48px rgba(0,0,0,.42)}
+header.wrap.nav .nav-more-menu a{font-size:.84rem;padding:9px 10px}
+.pui89-language-switch{display:inline-flex;flex:0 0 auto;align-items:center;gap:4px;padding:4px;border:1px solid rgba(197,208,220,.2);border-radius:10px;background:rgba(10,25,41,.8)}
+.pui89-language-switch a,.pui89-language-switch .is-current{display:inline-flex;align-items:center;justify-content:center;min-height:30px;padding:5px 9px;border-radius:7px;font-size:.76rem;font-weight:800;text-decoration:none}
+.pui89-language-switch .is-current{background:rgba(66,217,255,.14);color:#B8F2FF}
+.pui89-language-switch a{color:#C5D0DC!important}
+.hero{width:100%;max-width:none;display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);align-items:center;gap:clamp(26px,4.5vw,60px);padding:clamp(46px,6vw,76px) 0 clamp(34px,4vw,52px)}
+.hero-copy{min-width:0}
+.pui89-brand-lockup{margin:0 0 18px}
+.pui89-brand-lockup img{display:block;width:min(100%,340px);height:auto;max-height:70px;object-fit:contain;object-position:left center}
+.hero .eyebrow{display:flex;align-items:center;gap:9px;font-size:.76rem;line-height:1.5;letter-spacing:.1em}
+.hero .eyebrow-dot{display:inline-block;flex:0 0 7px;width:7px;height:7px;border-radius:50%;background:#42D9FF;box-shadow:0 0 0 5px rgba(66,217,255,.1)}
+.hero h1{max-width:690px;margin:18px 0 20px;font-size:clamp(2.8rem,5.6vw,5.1rem);line-height:1.04;letter-spacing:-.05em}
+.hero-copy>p{max-width:650px;margin:0;color:#B8C7DA;font-size:clamp(1rem,1.25vw,1.15rem);line-height:1.8}
+.hero .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}
+.hero .btn{min-height:44px;padding:11px 14px;font-size:.87rem}
+.hero-points{display:flex;flex-wrap:wrap;gap:10px 16px;margin-top:22px;color:#C5D0DC;font-size:.77rem}
+.hero-points span{display:inline-flex;align-items:center;gap:7px}
+.hero-points i{display:inline-block;width:6px;height:6px;flex:0 0 6px;border-radius:50%;background:#42D9FF}
+.hero-visual{position:relative;isolation:isolate;width:100%;min-width:0;aspect-ratio:1.48/1;min-height:340px;max-height:520px;overflow:hidden;border:1px solid rgba(66,217,255,.28);border-radius:22px;background:radial-gradient(ellipse at 50% 45%,#173750,#091626 72%);box-shadow:0 28px 70px rgba(0,0,0,.3),0 0 34px rgba(66,217,255,.06)}
+.hero-visual>img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain;object-position:center;transform:none!important}
+.pui89-transparency-note{margin:0 0 26px;padding:13px 17px;border:1px solid rgba(66,217,255,.2);border-left:3px solid #42D9FF;border-radius:0 11px 11px 0;background:rgba(14,31,49,.72);color:#B8C7DA;font-size:.83rem;line-height:1.65}
+.pui89-transparency-note strong{color:#EAF8FF}
+.trust-strip{margin:10px 0 32px}
+#our-story .card{max-width:900px;padding:clamp(22px,3vw,32px);border-radius:17px}
+#our-story h2{max-width:780px;line-height:1.18}
+#projects .pui89-section-heading{gap:clamp(18px,3vw,36px)}
+#projects .pui89-project-content{min-width:0}
+#projects .pui89-project-content h3{overflow-wrap:anywhere}
+#projects .pui89-project-tags{align-items:flex-start}
+@media(max-width:1050px){
+ header.wrap.nav{align-items:flex-start;flex-direction:column;gap:10px;padding:14px 0}
+ header.wrap.nav .navlinks{width:100%;justify-content:flex-start;flex-wrap:wrap;white-space:normal}
+ header.wrap.nav .navlinks>a,header.wrap.nav .nav-more>summary{font-size:.8rem;padding:7px 8px}
+ .hero{grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:24px}
+ .hero h1{font-size:clamp(2.6rem,5vw,4.2rem)}
+}
+@media(max-width:760px){
+ .hero{grid-template-columns:1fr;gap:24px;padding:40px 0 30px}
+ .hero h1{font-size:clamp(2.6rem,10vw,4rem);line-height:1.08}
+ .hero-visual{aspect-ratio:1.35/1;min-height:0;max-height:none;border-radius:17px}
+ .hero .actions .btn{flex:1 1 190px}
+ .hero-points{gap:9px 13px}
+ .pui89-transparency-note{margin-bottom:20px}
+ .trust-strip{grid-template-columns:1fr;gap:9px;padding:14px}
+ .trust-strip>div{padding:5px 7px}
+}
+@media(max-width:480px){
+ header.wrap.nav{width:calc(100% - 30px)}
+ header.wrap.nav .navlinks{gap:2px}
+ header.wrap.nav .navlinks>a,header.wrap.nav .nav-more>summary{font-size:.76rem;padding:6px 7px}
+ .pui89-brand-lockup img{width:min(100%,290px)}
+ .hero .actions .btn{flex:1 1 100%}
+ .hero-visual{aspect-ratio:1.12/1}
+}
+@media(prefers-reduced-motion:reduce){.hero-visual>img{transition:none!important}}
+
 </style>
 <link rel="stylesheet" href="/assets/css/pui89-project-design-system.css?v=20261110-nav-unified">
   <link rel="stylesheet" href="assets/css/pui89-design-system.css?v=20261108-professional">
@@ -745,29 +811,16 @@ a:hover{color:var(--accent2)!important}
   <header class="wrap nav">
     <a class="brand" href="#top" aria-label="PUI89 AI Robotics home"><img src="images/pui89-cyber-edge-wordmark.svg" alt="PUI89 AI Robotics" width="200" height="60"></a>
     <nav class="navlinks" aria-label="Main navigation">
-      <a href="#projects">Projects</a>
-      <a href="ai-core.html">Shared AI Core</a>
-      <a href="ai-2030.html">AI 2030 Vision</a>
-      <a href="knowledge-centre.html">Knowledge</a>
-      <a href="evidence.html">Evidence</a>
-      <a href="command-centre.html">Intelligence Dashboard</a>
-      <a href="support.html">Collaboration</a>
+      <a href="#projects">Projects</a><a href="ai-core.html">Shared AI Core</a><a href="ai-2030.html">AI 2030 Vision</a>
+      <a href="knowledge-centre.html">Knowledge</a><a href="evidence.html">Evidence</a><a href="command-centre.html">Dashboard</a><a href="support.html">Collaboration</a>
       <details class="nav-more"><summary>More</summary><div class="nav-more-menu">
-        <a href="news.html">News</a>
-        <a href="materials.html">Materials</a>
-        <a href="ai-vehicles.html">AI Vehicles</a>
-        <a href="engineering-atlas.html">Engineering Atlas</a>
-        <a href="technology-radar.html">PUI89 Technology Radar</a>
-        <a href="work-intelligence.html">Work Intelligence</a>
-        <a href="security.html">Security &amp; Trust</a>
-        <a href="growth.html">Roadmap</a>
-        <a href="open-source-resources.html">Open-source resources</a>
-        <a href="company.html">About PUI89</a>
-        <a href="ai-robotics-thailand.html">AI &amp; Robotics in Thailand</a>
-        <a href="https://github.com/Pui89">GitHub ↗</a>
+        <a href="news.html">News</a><a href="materials.html">Materials</a><a href="ai-vehicles.html">AI Vehicles</a><a href="engineering-atlas.html">Engineering Atlas</a>
+        <a href="technology-radar.html">Technology Radar</a><a href="work-intelligence.html">Work Intelligence</a><a href="security.html">Security &amp; Trust</a>
+        <a href="growth.html">Roadmap</a><a href="open-source-resources.html">Open-source resources</a><a href="company.html">About PUI89</a>
+        <a href="ai-robotics-thailand.html">AI &amp; Robotics in Thailand</a><a href="https://github.com/Pui89">GitHub ↗</a>
       </div></details>
       <div class="pui89-language-switch" role="group" aria-label="Choose language"><span class="is-current" lang="en" aria-current="page">English</span><a href="th.html" lang="th">ไทย</a></div>
-      </nav>
+    </nav>
   </header>
   <main id="main-content" class="wrap">
     
@@ -788,6 +841,7 @@ a:hover{color:var(--accent2)!important}
         <img src="assets/images/pui89-intelligent-systems-hero.svg" alt="Isometric PUI89 portfolio illustration showing six AI project concepts around one central PUI89 identity: Coconut Harvest AI, PUI89 Sentinel, AI HOME, AI NOMAD, PUI89 AI Global SUV and PUI89 AI Step-Through Scooter. Concepts are not claims of validated physical systems." fetchpriority="high" decoding="async">
       </div>
     </section>
+<div class="notice pui89-transparency-note"><strong>Development transparency:</strong> Concept visuals and simulations are illustrative. They do not prove that a physical system has been built, field-tested or validated. Each project page distinguishes documented work from future targets.</div>
 <section class="section" id="our-story" aria-labelledby="our-story-title" style="padding-top:18px">
   <article class="card" style="max-width:900px">
     <span class="eyebrow">The story behind PUI89</span>
