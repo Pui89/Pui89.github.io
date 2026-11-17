@@ -128,7 +128,7 @@
 - **Level E — field research:** only with qualified rescue partners, safety review, controlled trials and appropriate approvals.
 - **Longer term:** SLAM/GPS-denied navigation, multimodal human/animal detection, water/current sensing, communication resilience and coordinated rescue workflow. The 15 m design target must not be represented as proven capability.
 
-## 3. All-Terrain Inspection Robot Dog
+## 3. PUI89 Sentinel — All-Terrain Exploration & Inspection Robot
 
 **Overall stage:** concept and engineering requirements only. No physical robot or validated field capability is claimed.
 **Current evidence:** product concept, engineering requirements and a proposed validation plan. Previous software-workflow test results belong to an earlier scope and are not carried forward as evidence for the quadruped robot dog.
@@ -389,7 +389,7 @@ Added a read-only, standard-library resource preflight and adoption standard:
 
 - **Coconut Harvest AI — main branch:** [PUI89 Automated Verification run 41205734749](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41205734749) completed successfully at commit `1929c44d790418cc9c3b7220a0ed624a75a3fa7a`. The same main-branch commit also has successful [Free Local Checks](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41205734813) and [Pitfall Detector Checks](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41205734752).
 - **Extreme Flood Rescue AI — feature branch:** [Python tests run 41163791357](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41163791357), [Shared Interface Smoke run 41163791338](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41163791338), [Automated Verification run 41163791367](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41163791367), and [Pitfall Detector Checks run 41163791443](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41163791443) completed successfully on branch `fix/world-state-update-input-types-20261031`, commit `78a7007b3026cb0789cf5e1ddaaa9ce7d0696f7a`. These are feature-branch results, not proof that the same commit is on main.
-- **Sentinel:** prior feature-branch software checks are historical records and are not evidence for the current All-Terrain Inspection Robot Dog. Current engineering requirements are under review in [PR #187](https://github.com/Pui89/All-Terrain-Inspection-Robot/pull/187).
+- **Sentinel:** prior feature-branch software checks are historical records and are not evidence for the current PUI89 Sentinel — All-Terrain Exploration & Inspection Robot. Current engineering requirements are under review in [PR #187](https://github.com/Pui89/All-Terrain-Inspection-Robot/pull/187).
 
 ### What is actually integrated today
 
