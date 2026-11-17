@@ -266,3 +266,21 @@ body #pui89-global-project-status.pui89-global-status{
   .pui89-project-views{top:214px!important}
 }
 @media(prefers-reduced-motion:reduce){#pui89-global-project-status .pui89-global-status__progress-fill{transition:none}}
+
+
+/* 2026-11-17: Design A — top-right in-flow card.
+   Keep the card in document flow so it reserves its own space and cannot cover page content. */
+body #pui89-global-project-status.pui89-global-status{
+  position:relative!important;top:auto!important;right:auto!important;left:auto!important;bottom:auto!important;
+  z-index:2!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;
+  width:248px!important;max-width:calc(100% - 36px)!important;max-height:none!important;overflow:visible!important;
+  margin:12px max(18px,calc((100% - 1100px)/2)) 16px auto!important;
+  padding:11px 13px!important;gap:5px!important;
+}
+.pui89-project-views{position:static!important;top:auto!important;right:auto!important;bottom:auto!important}
+@media(max-width:640px){
+  body #pui89-global-project-status.pui89-global-status{
+    width:218px!important;max-width:calc(100% - 28px)!important;
+    margin:8px 14px 12px auto!important;padding:9px 11px!important;gap:4px!important;
+  }
+}
