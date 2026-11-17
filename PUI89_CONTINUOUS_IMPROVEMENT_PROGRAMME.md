@@ -166,7 +166,7 @@ Define and test the daily/weekly JSON report schema, status vocabulary, evidence
 ### Stage C — improvement intelligence
 Generate a deterministic improvement report from repository evidence: failed checks, NOT_RUN items, unresolved issues, stale documentation and prioritized recommendations. The first version should be rule-based and auditable, not dependent on a paid or downloaded LLM.
 
-### Stage D — HOMEGUARD demonstration
+### Stage D — AI HOME demonstration
 Build a clearly labelled synthetic three-floor building dataset and demonstration for sensor quality, time-series baselines, FFT/PSD features, missing data, change detection and daily intelligence reporting. Validate against known synthetic signals. This is not a real building assessment.
 
 ### Stage E — validated pilots
@@ -177,7 +177,7 @@ Only after suitable sensors, calibration, privacy/legal review, qualified partne
 1. Audit existing workflows and shared-core implementations in the three repositories; preserve working automation.
 2. Create a dated cross-project baseline and identify genuine gaps rather than reimplementing existing checks.
 3. Define the shared daily/weekly intelligence report schema and tests.
-4. Build the HOMEGUARD synthetic three-floor demonstration.
+4. Build an AI HOME synthetic indoor-environment demonstration; this remains a software/simulation exercise, not a physical deployment.
 5. Generate the first weekly engineering improvement report.
 6. Prepare concise, evidence-backed technical demonstrations for grant and strategic-partner discussions.
 
