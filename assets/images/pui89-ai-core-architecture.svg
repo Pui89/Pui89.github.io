@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
-<title id="title">PUI89 Shared AI Core architecture for all seven independent projects</title>
-<desc id="desc">Seven separate project adapters—Coconut Harvest AI, Extreme Flood Rescue AI, PUI89 Sentinel, AI HOME, AI NOMAD, AI Global SUV and AI Step-Through Scooter—connect to reusable shared AI Core interfaces for perception, world state, uncertainty, safety evaluation, simulation-first task proposals and auditable evidence. Each project retains its own requirements, validation gates and safety policy. No direct hardware actuation is shown.</desc>
+<title id="title">PUI89 Shared AI Core architecture for all six independent projects</title>
+<desc id="desc">Six separate project adapters—Coconut Harvest AI, PUI89 Sentinel, AI HOME, AI NOMAD, AI Global SUV and AI Step-Through Scooter—connect to reusable shared AI Core interfaces for perception, world state, uncertainty, safety evaluation, simulation-first task proposals and auditable evidence. Each project retains its own requirements, validation gates and safety policy. No direct hardware actuation is shown.</desc>
 <defs>
   <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#172a42"/><stop offset="1" stop-color="#0b1220"/></linearGradient>
   <linearGradient id="core" x2="1" y2="1"><stop stop-color="#225c62"/><stop offset="1" stop-color="#183c4d"/></linearGradient>
@@ -8,7 +8,7 @@
   <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L9 3 L0 6" fill="none" stroke="#9bd4c5" stroke-width="1.5"/></marker>
 </defs>
 <rect width="1200" height="820" rx="28" fill="url(#bg)"/>
-<text x="600" y="42" text-anchor="middle" fill="#9bd4c5" font-family="system-ui,sans-serif" font-size="17" font-weight="750" letter-spacing="2">ONE REUSABLE FOUNDATION · SEVEN INDEPENDENT PROJECTS</text>
+<text x="600" y="42" text-anchor="middle" fill="#9bd4c5" font-family="system-ui,sans-serif" font-size="17" font-weight="750" letter-spacing="2">ONE REUSABLE FOUNDATION · SIX INDEPENDENT PROJECTS</text>
 <g fill="url(#card)" stroke="#49647d" stroke-width="2">
   <rect x="40" y="65" width="390" height="70" rx="14"/>
   <rect x="40" y="154" width="390" height="70" rx="14"/>
@@ -16,7 +16,6 @@
   <rect x="40" y="332" width="390" height="70" rx="14"/>
   <rect x="40" y="421" width="390" height="70" rx="14"/>
   <rect x="40" y="510" width="390" height="70" rx="14"/>
-  <rect x="40" y="599" width="390" height="70" rx="14"/>
   <rect x="490" y="160" width="330" height="430" rx="24" fill="url(#core)" stroke="#9bd4c5" stroke-width="3"/>
   <rect x="875" y="205" width="285" height="340" rx="22"/>
 </g>
@@ -27,7 +26,6 @@
   <path d="M430 367 H490"/>
   <path d="M430 456 H490"/>
   <path d="M430 545 H490"/>
-  <path d="M430 634 H490"/>
   <path d="M820 375 H875"/>
 </g>
 <g font-family="system-ui,sans-serif" fill="#eef4ff">
@@ -38,16 +36,14 @@
     <text x="62" y="358">PROJECT ADAPTER 04</text>
     <text x="62" y="447">PROJECT ADAPTER 05</text>
     <text x="62" y="536">PROJECT ADAPTER 06</text>
-    <text x="62" y="625">PROJECT ADAPTER 07</text>
   </g>
   <g font-size="18" font-weight="800">
     <text x="62" y="119">Coconut Harvest AI</text>
-    <text x="62" y="208">Extreme Flood Rescue AI</text>
-    <text x="62" y="297">PUI89 Sentinel</text>
-    <text x="62" y="386">AI HOME</text>
-    <text x="62" y="475">AI NOMAD</text>
-    <text x="62" y="564">AI Global SUV</text>
-    <text x="62" y="653">AI Step-Through Scooter</text>
+    <text x="62" y="208">PUI89 Sentinel</text>
+    <text x="62" y="297">AI HOME</text>
+    <text x="62" y="386">AI NOMAD</text>
+    <text x="62" y="475">AI Global SUV</text>
+    <text x="62" y="564">AI Step-Through Scooter</text>
   </g>
   <g text-anchor="middle">
     <text x="655" y="205" font-size="14" letter-spacing="2" fill="#9bd4c5" font-weight="800">SHARED ENGINEERING FOUNDATION</text>
