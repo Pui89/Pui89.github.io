@@ -28,25 +28,7 @@ The repositories are the authoritative source for implementation details, depend
 
 Repository: [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI)
 
-## 2. Flood Rescue AI
-
-**Application area:** simulation-first reconnaissance and hazard-mapping support.
-
-**Research questions**
-- How should a robotic reconnaissance workflow represent uncertain observations and communicate them to a human operator?
-- How can simulation tests exercise navigation failures, sensor limitations, and degraded communication before field trials?
-- Which safeguards should prevent an uncertain perception result from being treated as a confirmed hazard or rescue decision?
-
-**Evidence plan**
-- Start with reproducible simulation scenarios and explicit assumptions.
-- Measure task completion, coverage, latency, and failure behavior only where the implementation supports those measurements.
-- Keep simulated results clearly labelled and separate from field validation.
-
-**Current boundary:** research/prototype direction; real-world rescue performance is not established by simulation or concept material.
-
-Repository: [Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI)
-
-## 3. PUI89 Sentinel — All-Terrain Exploration & Inspection Robot
+## 2. PUI89 Sentinel — All-Terrain Exploration & Inspection Robot
 
 **Project name:** PUI89 Sentinel.  
 **Application area:** four-legged quadruped robotics for supervised inspection of industrial facilities, infrastructure, warehouses, logistics yards, ports and selected outdoor environments.

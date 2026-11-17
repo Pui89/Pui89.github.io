@@ -2,7 +2,7 @@
 
 **Purpose:** show the verified engineering strength of each existing PUI89 project without confusing concepts, plans, software tests, simulation results, field validation or commercial readiness.
 
-**Current portfolio review status:** 0 completed evidence-backed strength reviews recorded for the seven listed project entries. This is a recordkeeping status; it does not mean that no engineering work or tests exist.
+**Current portfolio review status:** 0 completed evidence-backed strength reviews recorded for the six active product entries. This is a recordkeeping status; it does not mean that no engineering work or tests exist.
 
 ## Shared scoring model (100 points)
 
@@ -40,7 +40,7 @@ A completed review must include:
 
 ## Portfolio entries
 
-The seven assessed entries are Coconut Harvest AI; Extreme Flood Rescue AI; All-Terrain Inspection Robot Dog — PUI89 Sentinel; PUI89 AI HOME; PUI89 AI NOMAD; PUI89 AI Robot Car; and PUI89 AI Robot Motorcycle. HOME and NOMAD remain one project family but may have separate evidence reviews when their scopes differ.
+The six assessed product entries are Coconut Harvest AI; PUI89 Sentinel — All-Terrain Exploration & Inspection Robot; PUI89 AI HOME; PUI89 AI NOMAD; PUI89 AI Global SUV; and PUI89 AI Step-Through Scooter. HOME and NOMAD remain one project family but may have separate evidence reviews when their scopes differ.
 
 ## Relationship to other indicators
 
