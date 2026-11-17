@@ -113,14 +113,7 @@
   <text x="1345" y="367" text-anchor="end">Design details require engineering review</text>
   <text x="1345" y="517" text-anchor="end">Advisory alerts only · rider stays in control</text>
  </g>
- <!-- Flood awareness research card -->
- <g transform="translate(1100 855)">
-  <rect x="0" y="-76" width="410" height="106" rx="16" fill="#0B1B2B" stroke="#42D9FF" stroke-opacity=".6"/>
-  <path d="M28 -24Q45 -42 62 -24T96 -24T130 -24" fill="none" stroke="#42D9FF" stroke-width="5" stroke-linecap="round"/>
-  <text x="154" y="-42" fill="#42D9FF" font-size="14" font-weight="800" letter-spacing="1.5">FLOOD-DEPTH AWARENESS</text>
-  <text x="154" y="-18" fill="#EAF6FF" font-size="14">20 cm = research test target only</text>
-  <text x="154" y="5" fill="#AFC5D8" font-size="12">Not an approved water-crossing limit</text>
- </g>
+ 
  <text x="84" y="870" fill="#42D9FF" font-size="17" font-weight="800" letter-spacing="3">DEEP NAVY  /  ELECTRIC CYAN</text>
  <text x="84" y="903" fill="#AFC5D8" font-size="14">Concept illustration · not production CAD · no road, load, water-ingress or safety validation established</text>
  <rect x="80" y="936" width="1440" height="1" fill="#29445F"/>
