@@ -40,6 +40,22 @@ Sentinel and NOMAD are distinct:
 - Do not infer model accuracy, safety, reliability, certification, manufacturing readiness or commercial availability from documentation or a passing software test.
 - Show stage colours consistently: Electric Cyan for active progress/highlight, neutral grey for not assessed/not started, amber for pending evidence or blockers, green only for an evidence-verified passed gate, and red for a verified critical issue. Colour never substitutes for the text status and evidence.
 
+## Cross-portfolio engineering topics
+
+Public READMEs and web pages should describe these as shared engineering directions, not as proof that every feature is implemented:
+
+- **Industrial AI Platform:** software-first integration and efficiency across real product constraints; PUI89 is not claiming semiconductor manufacturing.
+- **Perception & Task Intelligence:** observe, perceive, assess, decide and respond with provenance, uncertainty, abstention and human review.
+- **General multimodal intelligence:** authorised vision, audio, text, spatial/map and sensor/time-series observations, with timestamp alignment, quality and disagreement handling.
+- **Heterogeneous compute:** CPU/GPU/NPU/MCU task placement, memory and power awareness, model sizing, quantisation, scheduling, edge inference and fallback.
+- **Simulation & digital twins:** staged process, routing and robotics simulation before controlled prototypes; simulated outcomes must remain labelled as simulation.
+- **Safety and human authority:** AI outputs are bounded observations/proposals; independent safety controls and authorised human decisions remain authoritative.
+- **Security, privacy and recovery:** least privilege, safe input handling, evidence integrity, failure reporting, recovery/version history and privacy-by-design. Do not publish sensitive security configurations.
+- **Hardware and materials sourcing:** exact manufacturer/model, country-of-origin evidence, compatibility, supplier, dated price, lead time and lifecycle/landed-cost review before purchase.
+- **Open-source-first governance:** review provenance, licensing, security, privacy, compute requirements and maintainability before adopting external tools, models or datasets.
+
+Product-specific configurations must remain distinct. Do not copy a capability from one product to another merely because both use Shared AI Core.
+
 ## Website alignment checklist
 
 The public website should use the same six-product scope in English and Thai across:
