@@ -61,6 +61,20 @@ jobs:
       - name: Enforce third-party JavaScript supply-chain policy
         run: python3 scripts/check_third_party_scripts.py
 
+      - name: Test CSP compatibility inventory
+        run: python3 -m unittest discover -s tests -p 'test_csp_compatibility_inventory.py' -v
+
+      - name: Generate non-enforcing CSP compatibility inventory
+        run: python3 scripts/audit_csp_compatibility.py --output /tmp/pui89-csp-compatibility-inventory.json
+
+      - name: Upload CSP compatibility inventory
+        uses: actions/upload-artifact@v4
+        with:
+          name: pui89-csp-compatibility-inventory
+          path: /tmp/pui89-csp-compatibility-inventory.json
+          if-no-files-found: error
+          retention-days: 30
+
       - name: Run all-page local, sitemap, image, QR-asset and accessibility-source checks
         run: python3 scripts/check_site.py
 
