@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 six-product AI engineering portfolio</title>
+<desc id="desc">Six product concepts connected to one shared AI engineering foundation: coconut harvesting, multimodal screening, home assistance, mobile assistance, an AI car and a step-through scooter.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#10243b"/><stop offset=".55" stop-color="#081625"/><stop offset="1" stop-color="#07111f"/></linearGradient>
+ <linearGradient id="card" x2="0" y2="1"><stop stop-color="#19334e"/><stop offset="1" stop-color="#0d1d30"/></linearGradient>
+ <linearGradient id="cyan" x2="1" y2="1"><stop stop-color="#b8f2ff"/><stop offset=".5" stop-color="#42d9ff"/><stop offset="1" stop-color="#1689b8"/></linearGradient>
+ <linearGradient id="silver" x2="1" y2="1"><stop stop-color="#f4f8fc"/><stop offset=".5" stop-color="#9fb4c7"/><stop offset="1" stop-color="#647f98"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#1a7899" stop-opacity=".45"/><stop offset="1" stop-color="#07111f" stop-opacity="0"/></radialGradient>
+ <filter id="shadow"><feGaussianBlur stdDeviation="18"/></filter>
+ <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#5c7e99" stroke-opacity=".11"/></pattern>
+</defs>
+<rect width="1600" height="1000" fill="url(#bg)"/><rect width="1600" height="1000" fill="url(#grid)"/>
+<ellipse cx="800" cy="500" rx="720" ry="490" fill="url(#glow)"/>
+<g stroke="#42d9ff" stroke-opacity=".35" stroke-width="3" fill="none" stroke-dasharray="8 12">
+ <path d="M800 500L265 220M800 500L800 220M800 500L1335 220M800 500L265 780M800 500L800 780M800 500L1335 780"/>
+</g>
+<g fill="#42d9ff"><circle cx="800" cy="500" r="9"/><circle cx="265" cy="220" r="6"/><circle cx="800" cy="220" r="6"/><circle cx="1335" cy="220" r="6"/><circle cx="265" cy="780" r="6"/><circle cx="800" cy="780" r="6"/><circle cx="1335" cy="780" r="6"/></g>
+<!-- cards -->
+<g stroke="#3b5b76" stroke-width="2">
+ <rect x="55" y="70" width="420" height="300" rx="24" fill="url(#card)"/>
+ <rect x="590" y="70" width="420" height="300" rx="24" fill="url(#card)"/>
+ <rect x="1125" y="70" width="420" height="300" rx="24" fill="url(#card)"/>
+ <rect x="55" y="630" width="420" height="300" rx="24" fill="url(#card)"/>
+ <rect x="590" y="630" width="420" height="300" rx="24" fill="url(#card)"/>
+ <rect x="1125" y="630" width="420" height="300" rx="24" fill="url(#card)"/>
+</g>
+<!-- coconut palm + robotic gripper -->
+<g transform="translate(160 125)" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M105 145Q120 75 150 25" stroke="#a9c9d6" stroke-width="18" fill="none"/>
+ <path d="M148 35Q80 -5 25 25M148 35Q95 38 55 78M148 35Q190 -10 255 4M148 35Q220 42 270 80M148 35Q160 -8 175 -25" stroke="#42d9ff" stroke-width="10" fill="none"/>
+ <g fill="#9bb4c8" stroke="#42d9ff" stroke-width="3"><ellipse cx="139" cy="68" rx="13" ry="17"/><ellipse cx="162" cy="73" rx="13" ry="17"/><ellipse cx="151" cy="94" rx="12" ry="16"/></g>
+ <path d="M275 170L245 130L215 145L235 185" stroke="url(#silver)" stroke-width="17" fill="none"/>
+ <path d="M235 185L220 205M235 185L257 203" stroke="#42d9ff" stroke-width="8" fill="none"/>
+ <circle cx="275" cy="170" r="12" fill="#42d9ff"/>
+</g>
+<!-- screening portal and conveyor -->
+<g transform="translate(700 120)" stroke-linejoin="round">
+ <path d="M45 175V40Q45 20 68 20H265Q288 20 288 42V175" fill="none" stroke="url(#silver)" stroke-width="17"/>
+ <path d="M72 54H260V158H72Z" fill="#071827" stroke="#42d9ff" stroke-width="5"/>
+ <path d="M5 190H330" stroke="#8da6ba" stroke-width="12" stroke-linecap="round"/>
+ <path d="M20 207H315" stroke="#42d9ff" stroke-width="4" stroke-dasharray="12 9"/>
+ <rect x="115" y="92" width="100" height="55" rx="8" fill="#173d56" stroke="#8aeaff" stroke-width="3"/>
+ <path d="M132 120H197M164 102V137" stroke="#42d9ff" stroke-width="4"/>
+ <rect x="295" y="80" width="55" height="100" rx="8" fill="#0b1b2b" stroke="#42d9ff" stroke-width="4"/>
+ <path d="M305 105H340M305 122H340M305 139H340" stroke="#42d9ff" stroke-width="3"/>
+</g>
+<!-- home robot -->
+<g transform="translate(1240 135)" stroke-linejoin="round">
+ <path d="M55 70Q55 35 95 35H220Q260 35 260 75V160H55Z" fill="url(#silver)" stroke="#7f9aaf" stroke-width="5"/>
+ <rect x="83" y="58" width="150" height="65" rx="14" fill="#0a1b2c" stroke="#42d9ff" stroke-width="4"/>
+ <circle cx="130" cy="90" r="12" fill="#42d9ff"/><circle cx="188" cy="90" r="12" fill="#42d9ff"/>
+ <path d="M75 165H240" stroke="#42d9ff" stroke-width="10" stroke-linecap="round"/>
+ <circle cx="92" cy="188" r="18" fill="#081522" stroke="#9fb4c8" stroke-width="6"/><circle cx="220" cy="188" r="18" fill="#081522" stroke="#9fb4c8" stroke-width="6"/>
+</g>
+<!-- NOMAD compact upright mobile assistant -->
+<g transform="translate(145 690)" stroke-linejoin="round">
+ <rect x="78" y="10" width="150" height="175" rx="28" fill="url(#silver)" stroke="#7f9aaf" stroke-width="5"/>
+ <rect x="100" y="35" width="106" height="58" rx="14" fill="#0a1b2c" stroke="#42d9ff" stroke-width="4"/>
+ <circle cx="133" cy="64" r="9" fill="#42d9ff"/><circle cx="174" cy="64" r="9" fill="#42d9ff"/>
+ <path d="M95 120H211" stroke="#42d9ff" stroke-width="6"/>
+ <circle cx="91" cy="195" r="19" fill="#081522" stroke="#9fb4c8" stroke-width="6"/><circle cx="215" cy="195" r="19" fill="#081522" stroke="#9fb4c8" stroke-width="6"/>
+</g>
+<!-- AI SUV -->
+<g transform="translate(675 690)" stroke-linejoin="round">
+ <path d="M20 130L42 72Q50 50 80 45H230Q255 48 270 78L300 130V165H15Z" fill="url(#silver)" stroke="#8ba5b9" stroke-width="5"/>
+ <path d="M82 55H220L252 104H55Z" fill="#0c263c" stroke="#42d9ff" stroke-width="4"/>
+ <path d="M20 130H300" stroke="#42d9ff" stroke-width="8"/>
+ <circle cx="78" cy="166" r="26" fill="#071522" stroke="#a7bfd0" stroke-width="8"/><circle cx="240" cy="166" r="26" fill="#071522" stroke="#a7bfd0" stroke-width="8"/>
+</g>
+<!-- step-through scooter -->
+<g transform="translate(1210 690)" stroke-linejoin="round" stroke-linecap="round">
+ <circle cx="72" cy="165" r="38" fill="#071522" stroke="#a7bfd0" stroke-width="8"/>
+ <circle cx="260" cy="165" r="38" fill="#071522" stroke="#a7bfd0" stroke-width="8"/>
+ <path d="M72 165L125 100L200 105L260 165" fill="none" stroke="url(#silver)" stroke-width="17"/>
+ <path d="M125 100L148 55L205 55L230 93" fill="none" stroke="#42d9ff" stroke-width="12"/>
+ <path d="M148 55L125 35M205 55L226 35" stroke="#9fb4c8" stroke-width="9"/>
+ <path d="M125 100L175 145L225 145" fill="none" stroke="#42d9ff" stroke-width="10"/>
+</g>
+<!-- shared core -->
+<g>
+ <circle cx="800" cy="500" r="112" fill="#071522" stroke="#42d9ff" stroke-width="4"/>
+ <circle cx="800" cy="500" r="94" fill="#102c43" stroke="#8aeaff" stroke-opacity=".45" stroke-width="2"/>
+ <path d="M755 480H845M755 500H845M755 520H845" stroke="#42d9ff" stroke-width="7" stroke-linecap="round"/>
+ <text x="800" y="455" fill="#f3f7ff" font-family="Arial,sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="3">PUI89</text>
+ <text x="800" y="565" fill="#b8c7da" font-family="Arial,sans-serif" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="2">SHARED AI CORE</text>
+</g>
+<!-- labels -->
+<g fill="#f3f7ff" font-family="Arial,sans-serif" font-weight="700" font-size="20" letter-spacing="1">
+ <text x="265" y="340" text-anchor="middle">COCONUT HARVEST AI</text>
+ <text x="800" y="340" text-anchor="middle">MULTIMODAL SCREENING</text>
+ <text x="1335" y="340" text-anchor="middle">AI HOME</text>
+ <text x="265" y="900" text-anchor="middle">AI NOMAD</text>
+ <text x="800" y="900" text-anchor="middle">AI ROBOT CAR</text>
+ <text x="1335" y="900" text-anchor="middle">STEP-THROUGH SCOOTER</text>
+</g>
+<text x="800" y="970" text-anchor="middle" fill="#8fa9bf" font-family="Arial,sans-serif" font-size="14" letter-spacing="3">SIX PRODUCT CONCEPTS · ONE EVIDENCE-LED ENGINEERING FOUNDATION</text>
+</svg>
