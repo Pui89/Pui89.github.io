@@ -1,4 +1,4 @@
-# PUI89 AI Robot Motorcycle — SHIELD Starter
+# PUI89 AI Step-Through Scooter — SHIELD Starter
 
 **Repository status:** not created in the connected GitHub account at the time this starter was prepared.
 
