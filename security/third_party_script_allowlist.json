@@ -3,7 +3,7 @@
     "url": "https://gc.zgo.at/count.v5.js",
     "owner": "PUI89 website maintainers",
     "purpose": "Privacy-focused GoatCounter page-view analytics; pinned stable v5 script with Subresource Integrity",
-    "reviewed_on": "2026-11-18",
+    "reviewed_on": "2026-11-17",
     "expires_on": "2027-02-16",
     "integrity": "sha384-atnOLvQb9t+jTSipvd75X2yginT4PjVbqDdlJAmxMm+wYElFmeR6EmLP5bYeoRVQ"
   }
