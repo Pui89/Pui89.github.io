@@ -44,14 +44,36 @@ function projectCard(p){
  if(p.history?.length){const h=p.history[p.history.length-1];links.append(el("span","pui89-observatory__empty",(lang==="th"?"บันทึกล่าสุด: ":"Latest evidence record: ")+formatDate(h.date)));}
  card.append(links);return card;
 }
-function statusSquare(project,compact=false){
+function statusSquare(project,compact=false,framework={}){
  const panel=el("aside",compact?"pui89-global-status":"pui89-card-status");
- panel.append(el("div",compact?"pui89-global-status__name":"pui89-card-status__name",t(project.name)));
- panel.append(el("div",compact?"pui89-global-status__status":"pui89-card-status__eyebrow",lang==="th"?"สถานะการพัฒนา":"DEVELOPMENT STATUS"));
- addStageIndicator(panel,project,compact);
+ const total=Number(framework.total)||10;
+ const completed=Array.isArray(project.completedGates)?project.completedGates.length:0;
+ const percentage=Math.max(0,Math.min(100,Math.round(completed/total*100)));
+ const band=percentage>=80?"high":percentage>=60?"strong":percentage>=40?"building":percentage>=20?"early":"starting";
+ panel.dataset.progressBand=band;
+ panel.setAttribute("aria-label",(lang==="th"?"ความคืบหน้าตามรายการตรวจสอบ ":"Checklist progress ")+percentage+"%; "+(lang==="th"?"ขั้นการพัฒนา ":"Development stage ")+t(project.stageLabel));
+ if(compact)panel.append(el("div","pui89-global-status__name",t(project.name)));
+ panel.append(el("div",compact?"pui89-global-status__status":"pui89-card-status__eyebrow",lang==="th"?"กำลังพัฒนา":"IN DEVELOPMENT"));
+ const progress=el("div",compact?"pui89-global-status__progress":"pui89-card-status__progress");
+ const head=el("div",compact?"pui89-global-status__progress-head":"pui89-card-status__progress-head");
+ head.append(el("span",compact?"pui89-global-status__progress-label":"pui89-card-status__progress-label",lang==="th"?"ความคืบหน้า":"PROGRESS"));
+ head.append(el("strong",compact?"pui89-global-status__percent":"pui89-card-status__percent",percentage+"%"));
+ progress.append(head);
+ const track=el("div",compact?"pui89-global-status__progress-track":"pui89-card-status__progress-track");
+ track.setAttribute("role","progressbar");
+ track.setAttribute("aria-valuemin","0");
+ track.setAttribute("aria-valuemax","100");
+ track.setAttribute("aria-valuenow",String(percentage));
+ track.setAttribute("aria-label",(lang==="th"?"รายการตรวจสอบที่มีหลักฐาน ":"Evidence-backed checklist completion ")+percentage+"%");
+ const fill=el("span",compact?"pui89-global-status__progress-fill":"pui89-card-status__progress-fill");
+ fill.style.width=percentage+"%";
+ track.append(fill);
+ progress.append(track);
+ panel.append(progress);
+ addStageIndicator(panel,project,!compact);
  const reviewed=project.evidenceDate||"";
  const dateLabel=reviewed?formatDate(reviewed):(lang==="th"?"ยังไม่มีวันที่ทบทวน":"Review date not recorded");
- panel.append(el("div",compact?"pui89-global-status__date":"pui89-card-status__date",(lang==="th"?"ทบทวนล่าสุด · ":"LAST REVIEWED · ")+dateLabel));
+ panel.append(el("div",compact?"pui89-global-status__date":"pui89-card-status__date",(lang==="th"?"ทบทวนล่าสุด · ":"REVIEWED · ")+dateLabel));
  return panel;
 }
 function renderPortfolioStatuses(data){
@@ -60,14 +82,14 @@ function renderPortfolioStatuses(data){
   const card=document.getElementById(cardIds[project.id]||"");
   const content=card?.querySelector(".pui89-project-content");
   if(!content||content.querySelector(".pui89-card-status"))return;
-  content.prepend(statusSquare(project,false));
+  content.prepend(statusSquare(project,false,data.progressFramework||{}));
  });
 }
-function renderTopStatus(project){
+function renderTopStatus(project,framework){
  const old=document.getElementById("pui89-global-project-status");
  if(old)old.remove();
  document.querySelectorAll(".pui89-progress--hero").forEach(node=>node.remove());
- const panel=statusSquare(project,true);
+ const panel=statusSquare(project,true,framework||{});
  panel.id="pui89-global-project-status";
  panel.setAttribute("aria-label",lang==="th"?"สถานะและขั้นการพัฒนาโครงการ":"Project development status");
  const nav=document.querySelector("nav.nav")||document.querySelector("nav");
@@ -90,6 +112,10 @@ function render(root,data){
  if(data.maturityFramework?.note){
   const method=el("p","pui89-observatory__method",t(data.maturityFramework.note));
   section.append(method);
+ }
+ if(data.progressFramework?.note){
+  const progressNote=el("p","pui89-observatory__method",t(data.progressFramework.note));
+  section.append(progressNote);
  }
  if(data.maturityFramework?.labels?.length){
   const labels=el("div","pui89-observatory__meta");
@@ -125,7 +151,7 @@ fetch(DATA_URL,{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error("Progress d
  document.querySelectorAll("[data-pui89-observatory]").forEach(root=>{
   if(root.dataset.projectId){
    const project=data.projects.find(p=>p.id===root.dataset.projectId);
-   if(project)renderTopStatus(project);
+   if(project)renderTopStatus(project,data.progressFramework||{});
    // Individual project pages show only the compact status square.
    // Full evidence cards and timelines remain on the central portfolio page.
    root.remove();
