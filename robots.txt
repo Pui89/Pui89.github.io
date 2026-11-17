@@ -1,3 +1,12 @@
+# PUI89 AI training preference (shared policy token; Internet-Draft)
+User-agent: __usage_ai-training
+Disallow: /
+
+# OpenAI foundation-model training crawler (current control)
+User-agent: GPTBot
+Disallow: /
+
+# Keep general crawling and search discovery available.
 User-agent: *
 Allow: /
 
