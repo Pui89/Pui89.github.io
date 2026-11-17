@@ -8,7 +8,7 @@ This roadmap is a plan, not a claim that PUI89 is already an incorporated compan
 
 1. **Evidence before claims.** Distinguish implemented code, automated test results, benchmark results, simulations, and real-world validation.
 2. **Customer value before feature count.** Prioritise problems that a defined customer group genuinely needs solved.
-3. **Free-first execution.** Prefer local development and free/open-source tools. Do not add paid APIs, cloud compute, datasets, subscriptions, or hardware costs without explicit approval.
+3. **Open-source-first execution.** Prefer local development and open-source tools. Do not add paid APIs, cloud compute, datasets, subscriptions, or hardware costs without explicit approval.
 4. **Safety and human oversight.** Keep safety-critical actions behind appropriate independent safeguards and human approval. Never treat a software test as proof of physical safety.
 5. **Maintainable, reusable technology.** Reuse tested components where appropriate, document dependencies, track licences, and keep projects reproducible.
 6. **Protect trust.** Publish limitations, failures, data provenance, and the exact conditions under which results were measured.
@@ -24,7 +24,7 @@ Before recommending or enabling anything that could charge money, document:
 - Data handling, licence terms, portability, and any vendor lock-in.
 - The measurable milestone or customer evidence that justifies the expense.
 
-Until explicit approval is given, do not activate paid plans, enter payment details, enable billing, purchase a custom domain or hardware, use paid inference/cloud compute, or add paid datasets or subscriptions. Prefer local execution and free/open-source tools; check usage quotas and billing settings because “free” services can still have limits or optional metered features.
+Until explicit approval is given, do not activate paid plans, enter payment details, enable billing, purchase a custom domain or hardware, use paid inference/cloud compute, or add paid datasets or subscriptions. Prefer local execution and open-source tools; check usage quotas and billing settings because “free” services can still have limits or optional metered features.
 
 **No cost-saving claim is a guarantee of zero risk.** Review service terms and account billing before enabling any new capability. If cost or billing behavior is unclear, do not enable it.
 
@@ -101,13 +101,18 @@ After a pilot demonstrates useful value:
 ### Exit evidence
 A credible cost model, a clear offer, a repeatable deployment process, and evidence of customer willingness to pay—not valuation claims based only on a concept or repository.
 
-## Portfolio roles
+## Portfolio roles — six active products
 
-- **Coconut Harvest AI:** initial flagship candidate; focus on reproducible perception evaluation and staged robotics feasibility.
-- **Flood Rescue AI:** simulation-first reconnaissance and hazard mapping; prioritise failure handling, safe stopping, and realistic scenario tests.
-- **Multimodal Narcotics Screening AI:** human-reviewed decision support; prioritise uncertainty handling, sensor-health checks, and abstention when evidence is insufficient.
+The active portfolio is exactly six products: Coconut Harvest AI; PUI89 Sentinel — All-Terrain Exploration & Inspection Robot; PUI89 AI HOME; PUI89 AI NOMAD; PUI89 AI Global SUV; and PUI89 AI Step-Through Scooter. See [PUI89 Portfolio Source of Truth v1.0](PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.0.md) for canonical repository and bilingual website links.
 
-These roles are provisional priorities, not a conclusion that any project is already commercially validated. Reassess them when technical and customer evidence changes.
+- **Coconut Harvest AI:** first software/evidence priority. Establish rights-cleared real images, human-reviewed labels, leakage-safe held-out evaluation and CPU metrics before hardware expansion.
+- **Sentinel:** define the first supervised inspection mission, operating environment and hazards before selecting hardware.
+- **AI HOME:** 8 kg complete-mass target; 10 kg maximum including battery and installed hardware.
+- **AI NOMAD:** ground-use four-wheel mobile assistant robot, not luggage or airline baggage.
+- **AI Global SUV:** advisory road, weather and flood-risk awareness; no autonomous vehicle control.
+- **AI Step-Through Scooter:** advisory rider and road-water/flood-risk warnings; unknown water means do not enter; no autonomous steering, throttle or braking.
+
+**Historical boundary:** Extreme Flood Rescue AI is inactive as a standalone product. Preserve its repository and historical records; do not count or present it as an active product. Flood-risk awareness remains relevant to SUV and Scooter.
 
 ## Monthly review
 
