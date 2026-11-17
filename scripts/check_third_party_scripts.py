@@ -56,6 +56,9 @@ def load_allowlist() -> dict[str, dict[str, str]]:
     for index, item in enumerate(raw):
         if not isinstance(item, dict) or not required.issubset(item):
             raise ValueError(f"Allowlist entry {index} must contain: {', '.join(sorted(required))}.")
+        for field in ("owner", "purpose"):
+            if not str(item[field]).strip():
+                raise ValueError(f"Allowlist entry {index} must provide a non-empty {field}.")
         url = str(item["url"]).strip()
         parsed = urlsplit(url)
         if parsed.scheme != "https" or not parsed.netloc or parsed.username or parsed.password:
@@ -131,7 +134,8 @@ def main() -> int:
             parser.close()
             for script_index, script_item in enumerate(parser.scripts, start=1):
                 inline_source = script_item.get("_inline", "")
-                if inline_source.strip() and not script_item.get("src"):
+                inline_type = script_item.get("type", "").lower().split(";", 1)[0].strip()
+                if inline_source.strip() and not script_item.get("src") and inline_type not in NON_EXECUTABLE_TYPES:
                     dynamic_pattern_findings += inspect_dynamic_script_patterns(
                         inline_source, f"{page.relative_to(ROOT)}:inline-script-{script_index}", warnings
                     )
