@@ -1,7 +1,7 @@
 # PUI89 Continuous Improvement & Intelligence Programme
 
 **Status:** approved strategic direction; implementation is staged and evidence-gated.  
-**Scope:** Coconut Harvest AI, Extreme Flood Rescue AI, Multimodal Narcotics Screening AI, the proposed HOMEGUARD AI project, and the shared PUI89 AI Core.
+**Scope:** exactly six active products — Coconut Harvest AI, PUI89 Sentinel, PUI89 AI HOME, PUI89 AI NOMAD, PUI89 AI Global SUV and PUI89 AI Step-Through Scooter — plus the shared PUI89 AI Core infrastructure. Extreme Flood Rescue AI is an inactive historical standalone project.
 
 > **North star:** Intelligent Systems. Verifiable Decisions. Safer Outcomes.
 
@@ -52,19 +52,27 @@ Use reusable contracts and project adapters rather than forcing every project in
 
 Each project adapter must preserve domain-specific units, hazards, privacy rules and validation criteria. Cross-project dashboards must not combine incomparable performance metrics into a single score.
 
-## 3. Project-specific intelligence
+## 3. Project-specific intelligence — six active products
 
 ### Coconut Harvest AI
-Prioritize fruit/tree identity, four maturity classes, source and annotation provenance, height/reach uncertainty, harvest-readiness evidence, safe operating envelope, worker/animal proximity and post-harvest verification. Unknown or conflicting readiness, reach, stability or approval must result in abstention / safe hold. No cut or actuator command is authorized by this programme.
+Prioritize rights-cleared image sources, provenance, four maturity classes, human-reviewed labels, leakage-safe splits, held-out CPU evaluation, per-class Precision/Recall/F1 and documented failure cases. No model accuracy or physical harvesting capability is assumed.
 
-### Extreme Flood Rescue AI
-Prioritize victim-location uncertainty, water depth/current/flow evidence, stale or conflicting sensors, communications loss, platform-specific mobility limits, energy/return planning and scenario resilience. Ground, boat and aerial concepts require separate evidence. Simulation does not establish flood physics, buoyancy, depth capability or rescue performance.
+### PUI89 Sentinel — All-Terrain Exploration & Inspection Robot
+Define the first supervised inspection mission, site, operating envelope, hazards, human roles and acceptance criteria before selecting hardware. No physical mobility or field validation is assumed.
 
-### Multimodal Narcotics Screening AI
-Prioritize modality provenance, calibration, time alignment, missing/conflicting signals, false-positive/false-negative evaluation, privacy and authorized human review. An AI score or RGB image is not proof of chemical identity or wrongdoing. No autonomous search, accusation, detention or enforcement decision.
+### PUI89 AI HOME
+Respect the complete robot mass target of 8 kg and maximum of 10 kg, including battery and all installed hardware. These are design requirements until prototype mass is measured.
 
-### HOMEGUARD AI (proposed project)
-Prioritize building/floor/room world model; daily condition comparison; water, electrical, fire/smoke, earthquake/vibration and structural-health monitoring; sensor trust; root-cause investigation; long-term deterioration; post-event review; maintenance verification. Certified alarms and qualified professionals remain authoritative. AI cannot certify structural safety or autonomously operate building electrical systems. Simulated three-floor building demonstration is the first proposed milestone; no physical building monitoring is claimed until sensors and a pilot are validated.
+### PUI89 AI NOMAD
+Treat NOMAD as a ground-use four-wheel mobile assistant robot, not luggage or airline baggage. Storage is secondary to supervised mobility and assistance.
+
+### PUI89 AI Global SUV
+Provide advisory road, weather and flood-risk awareness for a human driver. Unknown water depth/current/road condition must be surfaced as “unknown — do not enter”; no autonomous vehicle control.
+
+### PUI89 AI Step-Through Scooter
+Provide rider-first advisory road-water and flood-risk alerts. Unknown water depth/current/road condition must be surfaced as “unknown — do not enter”; no autonomous steering, throttle or braking.
+
+**Historical boundary:** Extreme Flood Rescue AI records remain preserved for audit, but it is not an active standalone product. Flood-risk awareness remains relevant to the SUV and Scooter.
 
 ## 4. Daily intelligence report contract
 
@@ -158,7 +166,7 @@ Define and test the daily/weekly JSON report schema, status vocabulary, evidence
 ### Stage C — improvement intelligence
 Generate a deterministic improvement report from repository evidence: failed checks, NOT_RUN items, unresolved issues, stale documentation and prioritized recommendations. The first version should be rule-based and auditable, not dependent on a paid or downloaded LLM.
 
-### Stage D — HOMEGUARD demonstration
+### Stage D — AI HOME demonstration
 Build a clearly labelled synthetic three-floor building dataset and demonstration for sensor quality, time-series baselines, FFT/PSD features, missing data, change detection and daily intelligence reporting. Validate against known synthetic signals. This is not a real building assessment.
 
 ### Stage E — validated pilots
@@ -169,7 +177,7 @@ Only after suitable sensors, calibration, privacy/legal review, qualified partne
 1. Audit existing workflows and shared-core implementations in the three repositories; preserve working automation.
 2. Create a dated cross-project baseline and identify genuine gaps rather than reimplementing existing checks.
 3. Define the shared daily/weekly intelligence report schema and tests.
-4. Build the HOMEGUARD synthetic three-floor demonstration.
+4. Build an AI HOME synthetic indoor-environment demonstration; this remains a software/simulation exercise, not a physical deployment.
 5. Generate the first weekly engineering improvement report.
 6. Prepare concise, evidence-backed technical demonstrations for grant and strategic-partner discussions.
 

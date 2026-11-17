@@ -12,37 +12,26 @@ function addField(card,label,value){
  card.append(el("span","pui89-observatory__label",label));
  card.append(el("p","",t(value)));
 }
-function projectCard(p,framework){
+function projectCard(p){
  const card=el("article","pui89-observatory__card");
  card.append(el("h3","",p.number+". "+t(p.name)));
  card.append(el("span","pui89-observatory__label",lang==="th"?"ขั้นการพัฒนา":"DOCUMENTED DEVELOPMENT STAGE"));
  card.append(el("strong","pui89-observatory__stage",t(p.stageLabel)));
- if(Number.isInteger(p.maturityLevel)&&p.maturityLevel>=1&&p.maturityLevel<=7&&framework?.levels){
-  const maturity=el("div","pui89-observatory__maturity");
-  maturity.append(el("span","pui89-observatory__label",lang==="th"?"ระดับวุฒิภาวะการพัฒนา":"DEVELOPMENT MATURITY"));
-  const current=framework.levels.find(x=>x.level===p.maturityLevel);
-  maturity.append(el("strong","pui89-observatory__maturity-stage",(lang==="th"?"ระดับ ":"Level ")+p.maturityLevel+" / 7 · "+(lang==="th"?current?.th:current?.en)));
-  const steps=el("div","pui89-observatory__maturity-steps");
-  framework.levels.forEach(x=>{const step=el("span",x.level<=p.maturityLevel?"is-reached":"");step.setAttribute("aria-label",(lang==="th"?"ระดับ ":"Level ")+x.level+": "+(lang==="th"?x.th:x.en));steps.append(step);});
-  maturity.append(steps);
-  maturity.append(el("p","pui89-observatory__empty",lang==="th"?framework.note?.th:framework.note?.en));
-  card.append(maturity);
- }
  card.append(el("p","",t(p.summary)));
- if(p.commercialReadiness&&Number.isInteger(p.commercialReadiness.percent)&&p.commercialReadiness.percent>=0&&p.commercialReadiness.percent<=100){
-  const scoreline=el("div","pui89-observatory__scoreline");
-  scoreline.append(el("span","pui89-observatory__label",lang==="th"?"ความพร้อมเชิงพาณิชย์โดยประมาณ":"COMMERCIAL READINESS ESTIMATE"));
-  scoreline.append(el("strong","pui89-observatory__score",p.commercialReadiness.percent+"%"));
-  card.append(scoreline);
-  const bar=el("div","pui89-observatory__bar");
-  bar.setAttribute("role","progressbar");
-  bar.setAttribute("aria-label",lang==="th"?"ความพร้อมเชิงพาณิชย์โดยประมาณ":"Commercial readiness estimate");
-  bar.setAttribute("aria-valuemin","0");bar.setAttribute("aria-valuemax","100");
-  bar.setAttribute("aria-valuenow",String(p.commercialReadiness.percent));
-  const fill=el("span","");fill.style.width=p.commercialReadiness.percent+"%";bar.append(fill);card.append(bar);
-  card.append(el("p","pui89-observatory__empty",(lang==="th"?"ค่าฐาน ณ ":"Baseline: ")+formatDate(p.commercialReadiness.reviewedOn)));
- }
  addField(card,lang==="th"?"หลักฐานที่มี":"DOCUMENTED EVIDENCE",p.evidence);
+ if(p.evidenceDate)addField(card,lang==="th"?"วันที่ทบทวนหลักฐาน":"EVIDENCE REVIEW DATE",p.evidenceDate);
+ if(Array.isArray(p.evidenceLinks)&&p.evidenceLinks.length){
+  card.append(el("span","pui89-observatory__label",lang==="th"?"ลิงก์หลักฐาน":"EVIDENCE LINKS"));
+  const evidenceLinks=el("div","pui89-observatory__links");
+  p.evidenceLinks.forEach(item=>{
+   const evidenceLink=el("a","",t(item.label));
+   evidenceLink.href=item.url;
+   evidenceLink.target="_blank";
+   evidenceLink.rel="noopener noreferrer";
+   evidenceLinks.append(evidenceLink);
+  });
+  card.append(evidenceLinks);
+ }
  addField(card,lang==="th"?"ข้อจำกัดและสิ่งที่ยังไม่ยืนยัน":"LIMITATIONS & UNVALIDATED CAPABILITIES",p.blockers);
  addField(card,lang==="th"?"เป้าหมายถัดไป":"NEXT MILESTONE",p.next);
  const links=el("div","pui89-observatory__links");
@@ -53,12 +42,12 @@ function projectCard(p,framework){
  if(p.history?.length){const h=p.history[p.history.length-1];links.append(el("span","pui89-observatory__empty",(lang==="th"?"บันทึกล่าสุด: ":"Latest evidence record: ")+formatDate(h.date)));}
  card.append(links);return card;
 }
-function renderTopStatus(project,framework){
+function renderTopStatus(project){
  const old=document.getElementById("pui89-global-project-status");
  if(old)old.remove();
  document.querySelectorAll(".pui89-progress--hero").forEach(node=>node.remove());
  const history=(project.history||[]).slice().sort((a,b)=>a.date.localeCompare(b.date));
- const last=history.length?history[history.length-1].date:(project.commercialReadiness?.reviewedOn||"");
+ const last=history.length?history[history.length-1].date:"";
  const panel=el("aside","pui89-global-status");
  panel.id="pui89-global-project-status";
  panel.setAttribute("aria-label",lang==="th"?"สถานะและระดับการพัฒนาโครงการ":"Project development status and maturity");
@@ -66,30 +55,8 @@ function renderTopStatus(project,framework){
  panel.append(name);
  const status=el("div","pui89-global-status__status",lang==="th"?"กำลังพัฒนา":"IN DEVELOPMENT");
  panel.append(status);
- const percent=project.commercialReadiness&&Number.isInteger(project.commercialReadiness.percent)&&project.commercialReadiness.percent>=0&&project.commercialReadiness.percent<=100?project.commercialReadiness.percent:null;
- if(percent!==null){
-  const band=percent<25?"low":percent<50?"building":percent<75?"progressing":"advanced";
-  panel.classList.add("pui89-global-status--progress-"+band);
-  const readiness=el("div","pui89-global-status__readiness");
-  readiness.append(el("div","pui89-global-status__readiness-head"));
-  readiness.firstChild.append(el("span","pui89-global-status__readiness-label",lang==="th"?"ความพร้อมเชิงพาณิชย์โดยประมาณ":"COMMERCIAL READINESS ESTIMATE"));
-  readiness.firstChild.append(el("strong","pui89-global-status__percent",percent+"%"));
-  const track=el("div","pui89-global-status__progress-track");
-  track.setAttribute("role","progressbar");
-  track.setAttribute("aria-label",lang==="th"?"ความพร้อมเชิงพาณิชย์โดยประมาณ":"Commercial readiness estimate");
-  track.setAttribute("aria-valuemin","0");track.setAttribute("aria-valuemax","100");track.setAttribute("aria-valuenow",String(percent));
-  const fill=el("span","pui89-global-status__progress-fill");
-  fill.style.width=percent+"%";
-  track.append(fill);readiness.append(track);panel.append(readiness);
- }
- const level=Number.isInteger(project.maturityLevel)?project.maturityLevel:null;
- const levelInfo=level!==null?(framework?.levels||[]).find(item=>item.level===level):null;
- if(level!==null){
-  const maturity=el("div","pui89-global-status__maturity");
-  maturity.append(el("strong","pui89-global-status__level",(lang==="th"?"ระดับ ":"Level ")+level+" / 7"));
-  if(levelInfo)maturity.append(el("span","pui89-global-status__level-name",t({en:levelInfo.en,th:levelInfo.th})));
-  panel.append(maturity);
- }
+ const stage=el("div","pui89-global-status__stage",t(project.stageLabel));
+ panel.append(stage);
  const evidenceDate=last?new Intl.DateTimeFormat(lang==="th"?"th-TH-u-ca-buddhist":"en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"UTC"}).format(new Date(last+"T12:00:00Z")):"";
  panel.append(el("div","pui89-global-status__date",(lang==="th"?"หลักฐาน · ":"EVIDENCE · ")+evidenceDate));
  const nav=document.querySelector("nav.nav")||document.querySelector("nav");
@@ -109,9 +76,15 @@ function render(root,data){
  meta.append(el("span","pui89-observatory__chip",(lang==="th"?"ทบทวนข้อมูลล่าสุด: ":"Last reviewed: ")+formatDate(data.asOf)));
  meta.append(el("span","pui89-observatory__chip",lang==="th"?"ข้อมูลชุดเดียวกันสำหรับเว็บไซต์ภาษาไทยและอังกฤษ":"One shared source for English and Thai pages"));
  section.append(meta);
- if(data.readinessBaseline){
-  const method=el("p","pui89-observatory__method",t(data.readinessBaseline.definition)+" "+t(data.readinessBaseline.note));
+ if(data.maturityFramework?.note){
+  const method=el("p","pui89-observatory__method",t(data.maturityFramework.note));
   section.append(method);
+ }
+ if(data.maturityFramework?.labels?.length){
+  const labels=el("div","pui89-observatory__meta");
+  labels.append(el("span","pui89-observatory__label",lang==="th"?"ป้ายสถานะตามหลักฐาน":"EVIDENCE MATURITY LABELS"));
+  data.maturityFramework.labels.forEach(item=>labels.append(el("span","pui89-observatory__chip",t(item))));
+  section.append(labels);
  }
  if(data.platform){
   const platform=el("article","pui89-observatory__platform");
@@ -119,10 +92,10 @@ function render(root,data){
   platform.append(el("h3","",t(data.platform.name)));
   platform.append(el("p","",t(data.platform.summary)));
   platform.append(el("p","",t(data.platform.next)));
-  const link=el("a","","GitHub ↗");link.href="https://github.com/"+data.platform.repo;link.target="_blank";link.rel="noopener noreferrer";platform.append(link);
+  const link=el("a","",data.platform.url?(lang==="th"?"ภาพรวมสาธารณะ ↗":"Public overview ↗"):"GitHub ↗");link.href=data.platform.url||("https://github.com/"+data.platform.repo);link.target="_blank";link.rel="noopener noreferrer";platform.append(link);
   section.append(platform);
  }
- const grid=el("div","pui89-observatory__grid");projects.forEach(p=>grid.append(projectCard(p,data.maturityFramework)));section.append(grid);
+ const grid=el("div","pui89-observatory__grid");projects.forEach(p=>grid.append(projectCard(p)));section.append(grid);
  // Keep the single page-authored status tile; do not inject a second floating status card.
  const timeline=el("div","pui89-observatory__timeline");
  timeline.append(el("h3","",lang==="th"?"ประวัติบันทึกหลักฐาน":"Evidence record history"));
@@ -140,7 +113,7 @@ fetch(DATA_URL,{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error("Progress d
  document.querySelectorAll("[data-pui89-observatory]").forEach(root=>{
   if(root.dataset.projectId){
    const project=data.projects.find(p=>p.id===root.dataset.projectId);
-   if(project)renderTopStatus(project,data.maturityFramework);
+   if(project)renderTopStatus(project);
    // Individual project pages show only the compact status square.
    // Full evidence cards and timelines remain on the central portfolio page.
    root.remove();

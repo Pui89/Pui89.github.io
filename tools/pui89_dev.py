@@ -18,8 +18,11 @@ from pathlib import Path
 
 PROJECTS = {
     "coconut-harvest-ai": "Coconut-Harvest-AI",
-    "extreme-flood-rescue-ai": "Extreme-Flood-Rescue-AI",
-    "multimodal-narcotics-screening-ai": "Multimodal-Narcotics-Screening-AI",
+    "pui89-sentinel": "PUI89-All-Terrain-Inspection-Robot",
+    "pui89-ai-home": "AI-Home-Safety-Robot",
+    "pui89-ai-nomad": "AI-Mobile-Assistant-Robot",
+    "pui89-ai-global-suv": "PUI89-AI-Global-SUV",
+    "pui89-ai-step-through-scooter": "AI-Step-Through-Scooter",
 }
 
 
@@ -131,7 +134,7 @@ def write_reports(report: dict, output_dir: Path) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--projects-root", type=Path, default=Path.cwd(),
-                        help="Folder containing the three project repositories.")
+                        help="Folder containing the six active product repositories.")
     parser.add_argument("--output-dir", type=Path, default=Path("pui89-reports"))
     parser.add_argument("--timeout", type=int, default=900,
                         help="Per-command timeout in seconds (default: 900).")

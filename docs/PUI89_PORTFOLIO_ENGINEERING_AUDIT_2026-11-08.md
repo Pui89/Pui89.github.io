@@ -5,6 +5,10 @@
 **Method:** Read-only GitHub source, workflow-directory and ruleset inspection  
 **Change policy:** This audit branch does not modify any default branch or merge any pull request.
 
+
+
+> **Historical-snapshot clarification (17 November 2026):** The seven-repository count and repository inventory below describe the portfolio observed on 8 November 2026. They are retained as historical audit evidence and are **not** the current active-product count. The current portfolio contains exactly six active products; Extreme Flood Rescue AI is inactive as a standalone product, and the former Multimodal Narcotics Screening AI identity is not active. See [PUI89 Portfolio Source of Truth v1.0](../PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.0.md).
+
 ## Executive result
 
 The portfolio already contains substantial project documentation and automation. The most important portfolio-level gaps are **canonical shared-contract implementation, evidence traceability, and meaningful review gates**.

@@ -13,8 +13,11 @@ from urllib.parse import urlparse
 
 PROJECT_IDS = {
     "coconut-harvest-ai",
-    "extreme-flood-rescue-ai",
-    "multimodal-narcotics-screening-ai",
+    "pui89-sentinel",
+    "pui89-ai-home",
+    "pui89-ai-nomad",
+    "pui89-ai-global-suv",
+    "pui89-ai-step-through-scooter",
     "pui89-shared-core",
 }
 RUN_KINDS = {

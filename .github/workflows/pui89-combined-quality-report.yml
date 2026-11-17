@@ -13,6 +13,7 @@ on:
       - "PUI89_FAILURE_REPORT_STANDARD.md"
       - "schemas/pui89-failure-report.schema.json"
       - "tools/pui89_report.py"
+      - "tools/pui89_level13_portfolio_smoke.py"
       - "tests/test_pui89_report.py"
 
 permissions:
@@ -24,9 +25,9 @@ concurrency:
 
 jobs:
   combined-tests:
-    name: Test all three PUI89 AI projects
+    name: Run selected suites across six active products
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - name: Check out portfolio repository
         uses: actions/checkout@v4
@@ -37,215 +38,70 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: Pui89/Coconut-Harvest-AI
-          path: projects/coconut-harvest
+          ref: main
+          path: portfolio/projects/coconut
 
-      - name: Check out Extreme Flood Rescue AI
+      - name: Check out PUI89 Sentinel — All-Terrain Exploration & Inspection Robot
         uses: actions/checkout@v4
         with:
-          repository: Pui89/Extreme-Flood-Rescue-AI
-          path: projects/extreme-flood-rescue
+          repository: Pui89/PUI89-All-Terrain-Inspection-Robot
+          ref: main
+          path: portfolio/projects/sentinel
 
-      - name: Check out Multimodal Narcotics Screening AI
+      - name: Check out PUI89 AI HOME
         uses: actions/checkout@v4
         with:
-          repository: Pui89/Multimodal-Narcotics-Screening-AI
-          path: projects/narcotics-screening
+          repository: Pui89/AI-Home-Safety-Robot
+          ref: main
+          path: portfolio/projects/home
+
+      - name: Check out PUI89 AI NOMAD
+        uses: actions/checkout@v4
+        with:
+          repository: Pui89/AI-Mobile-Assistant-Robot
+          ref: main
+          path: portfolio/projects/nomad
+
+      - name: Check out PUI89 AI Global SUV
+        uses: actions/checkout@v4
+        with:
+          repository: Pui89/PUI89-AI-Global-SUV
+          ref: main
+          path: portfolio/projects/suv
+
+      - name: Check out PUI89 AI Step-Through Scooter
+        uses: actions/checkout@v4
+        with:
+          repository: Pui89/AI-Step-Through-Scooter
+          ref: main
+          path: portfolio/projects/scooter
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Test shared PUI89 report generator and contract
+      - name: Validate shared PUI89 report generator and contract
         working-directory: portfolio
         run: python -m unittest discover -s tests -p "test_pui89_report.py" -v
 
-      - name: Run project tests and write combined report
-        id: tests
-        run: |
-          python - <<'PY'
-          import json
-          import os
-          import re
-          import subprocess
-          import sys
-          from datetime import datetime, timezone
-          from pathlib import Path
-
-          projects = [
-              ("Coconut Harvest AI", Path("projects/coconut-harvest")),
-              ("Extreme Flood Rescue AI", Path("projects/extreme-flood-rescue")),
-              ("Multimodal Narcotics Screening AI", Path("projects/narcotics-screening")),
-          ]
-          results = []
-          overall = True
-          for name, root in projects:
-              test_dir = root / "tests"
-              log_path = Path("portfolio") / f"pui89-{root.name}-tests.txt"
-              if not root.exists() or not test_dir.is_dir():
-                  result = {
-                      "project": name,
-                      "status": "review_required",
-                      "return_code": None,
-                      "tests_directory_found": test_dir.is_dir(),
-                      "log": str(log_path),
-                      "note": "Repository or tests directory was not found."
-                  }
-                  log_path.write_text(result["note"] + "\n", encoding="utf-8")
-                  overall = False
-              else:
-                  test_runs = []
-                  log_sections = []
-                  for pattern in ("test_pui89_core.py", "test_pui89_ai_core_conformance.py"):
-                      proc = subprocess.run(
-                          [sys.executable, "-m", "unittest", "discover", "-s", "tests", "-p", pattern, "-v"],
-                          cwd=root,
-                          text=True,
-                          stdout=subprocess.PIPE,
-                          stderr=subprocess.STDOUT,
-                      )
-                      match = re.search(r"Ran (\d+) tests?", proc.stdout)
-                      test_count = int(match.group(1)) if match else 0
-                      detail = re.search(r"Ran (\d+) tests?(?:\s+in\s+([0-9.]+)s)?", proc.stdout)
-                      failures_match = re.search(r"\bFAILED \(failures=(\d+)(?:, errors=(\d+))?(?:, skipped=(\d+))?\)", proc.stdout)
-                      errors_match = re.search(r"\bFAILED \(errors=(\d+)(?:, failures=(\d+))?(?:, skipped=(\d+))?\)", proc.stdout)
-                      skipped_match = re.search(r"\bOK \(skipped=(\d+)\)", proc.stdout)
-                      failures = int(failures_match.group(1)) if failures_match else (int(errors_match.group(2)) if errors_match and errors_match.group(2) else 0)
-                      errors = int(failures_match.group(2) or 0) if failures_match else (int(errors_match.group(1)) if errors_match else 0)
-                      skipped = int(failures_match.group(3) or 0) if failures_match else (int(errors_match.group(3) or 0) if errors_match else (int(skipped_match.group(1)) if skipped_match else 0))
-                      test_runs.append({
-                          "pattern": pattern,
-                          "status": "passed" if proc.returncode == 0 and test_count > 0 else "failed",
-                          "return_code": proc.returncode,
-                          "tests_run": test_count,
-                          "failed": failures + errors,
-                          "skipped": skipped,
-                      })
-                      log_sections.append(
-                          f"=== {pattern}: exit={proc.returncode}, tests_run={test_count} ===\n{proc.stdout}"
-                      )
-                  log_path.write_text("\n".join(log_sections), encoding="utf-8")
-                  passed = all(item["status"] == "passed" for item in test_runs)
-                  result = {
-                      "project": name,
-                      "status": "passed" if passed else "failed",
-                      "return_code": 0 if passed else 1,
-                      "tests_directory_found": True,
-                      "test_runs": test_runs,
-                      "log": str(log_path),
-                      "note": "Runs both shared core tests and the PUI89 AI Core safety/conformance suite. Each suite must discover at least one test and exit successfully. Broader project-specific suites may require optional dependencies and are not run here. Not evidence of AI accuracy or physical robot safety."
-                  }
-                  if not passed:
-                      overall = False
-              results.append(result)
-              print(f"{name}: {result['status']}")
-              print(result["note"])
-
-              # Emit the shared PUI89 report contract from this project's actual
-              # selected-suite outcomes. This is deliberately not a full-suite claim.
-              total = sum(item.get("tests_run", 0) for item in result.get("test_runs", []))
-              failed_count = sum(item.get("failed", 0) for item in result.get("test_runs", []))
-              skipped_count = sum(item.get("skipped", 0) for item in result.get("test_runs", []))
-              passed_count = max(0, total - failed_count - skipped_count)
-              if result["status"] == "passed":
-                  report_status = "PASS"
-              elif total == 0:
-                  report_status = "BLOCKED"
-              else:
-                  report_status = "FAIL"
-              project_ids = {
-                  "coconut-harvest": "coconut-harvest-ai",
-                  "extreme-flood-rescue": "extreme-flood-rescue-ai",
-                  "narcotics-screening": "multimodal-narcotics-screening-ai",
-              }
-              report_args = [
-                  sys.executable, "tools/pui89_report.py",
-                  "--project-id", project_ids[root.name],
-                  "--project-name", name,
-                  "--repository", {
-                      "coconut-harvest": "https://github.com/Pui89/Coconut-Harvest-AI",
-                      "extreme-flood-rescue": "https://github.com/Pui89/Extreme-Flood-Rescue-AI",
-                      "narcotics-screening": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI",
-                  }[root.name],
-                  "--kind", "unit_test",
-                  "--status", report_status,
-                  "--commit", os.environ.get("GITHUB_SHA", "0000000"),
-                  "--output", f"reports/{root.name}-verification.json",
-                  "--workflow-url", f"{os.environ.get('GITHUB_SERVER_URL', 'https://github.com')}/{os.environ.get('GITHUB_REPOSITORY', 'Pui89/Pui89.github.io')}/actions/runs/{os.environ.get('GITHUB_RUN_ID', '')}",
-                  "--os-name", "ubuntu-latest",
-                  "--python-version", sys.version.split()[0],
-                  "--tests-total", str(total),
-                  "--passed", str(passed_count),
-                  "--failed", str(failed_count),
-                  "--skipped", str(skipped_count),
-                  "--software-checks-only",
-                  "--limitation", "Selected dependency-free shared core and safety/conformance suites only; not the full project test suite.",
-                  "--limitation", "Does not measure AI accuracy, simulation realism, or physical robot performance.",
-              ]
-              if report_status == "BLOCKED":
-                  report_args += ["--blocked", "1", "--blocker", "No tests were discovered in the selected suites."]
-              if report_status == "FAIL":
-                  report_args += ["--failure-id", "SHARED-SUITE-FAILURE", "--failure-message", "One or more selected shared suites failed; inspect the attached project log.", "--category", "assertion"]
-              generated = subprocess.run(report_args, cwd="portfolio", text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-              print(generated.stdout)
-              if generated.returncode != 0:
-                  overall = False
-                  raise SystemExit("Could not generate a valid standardized report for " + name)
-
-          report = {
-              "schema_version": "1.0",
-              "generated_at": datetime.now(timezone.utc).isoformat(),
-              "trigger": os.environ.get("GITHUB_EVENT_NAME", "unknown"),
-              "commit": os.environ.get("GITHUB_SHA", "unknown"),
-              "overall_status": "passed" if overall else "review_required",
-              "projects": results,
-              "limitations": [
-                  "This report covers two dependency-free shared suites per project: core unit tests and PUI89 AI Core safety/conformance tests. Each suite must discover at least one test; broader project-specific suites are not run by this job.",
-                  "It does not measure model accuracy, detection precision/recall, latency, simulation realism, or real-world robot performance.",
-                  "No GPU, model downloads, paid API, or physical hardware is used."
-              ]
-          }
-          out = Path("portfolio")
-          (out / "pui89-combined-quality-report.json").write_text(
-              json.dumps(report, indent=2) + "\n", encoding="utf-8")
-          lines = [
-              "# PUI89 Combined Quality Report",
-              "",
-              f"- Generated: {report['generated_at']}",
-              f"- Overall status: **{report['overall_status']}**",
-              f"- Commit: {report['commit']}",
-              "",
-              "| Project | Shared core + safety conformance |",
-              "|---|---|",
-          ]
-          lines.extend(f"| {item['project']} | {item['status']} |" for item in results)
-          lines += [
-              "",
-              "## Scope and limitations",
-              "",
-              *[f"- {item}" for item in report["limitations"]],
-              "",
-              "Detailed per-project logs are included in the workflow artifact."
-          ]
-          (out / "pui89-combined-quality-report.md").write_text(
-              "\n".join(lines) + "\n", encoding="utf-8")
-          if not overall:
-              raise SystemExit(1)
-          PY
+      - name: Run selected dependency-free suites across six active products
+        working-directory: portfolio
+        run: python tools/pui89_level13_portfolio_smoke.py
 
       - name: Test Coconut detection evaluation metric implementation
         if: always()
-        working-directory: projects/coconut-harvest
+        working-directory: portfolio/projects/coconut
         run: |
           set -o pipefail
-          python -m unittest discover -s tests -p "test_evaluate_coconut_detections.py" -v 2>&1 | tee ../../portfolio/pui89-coconut-baseline-evaluator-tests.txt
+          python -m unittest discover -s tests -p "test_evaluate_coconut_detections.py" -v 2>&1 | tee ../../pui89-coconut-baseline-evaluator-tests.txt
 
       - name: Test Coconut dataset preflight validator
         if: always()
-        working-directory: projects/coconut-harvest
+        working-directory: portfolio/projects/coconut
         run: |
           set -o pipefail
-          python -m unittest discover -s tests -p "test_validate_coconut_dataset_manifest.py" -v 2>&1 | tee ../../portfolio/pui89-coconut-dataset-preflight-tests.txt
+          python -m unittest discover -s tests -p "test_validate_coconut_dataset_manifest.py" -v 2>&1 | tee ../../pui89-coconut-dataset-preflight-tests.txt
 
       - name: Upload combined quality report and logs
         if: always()
@@ -253,11 +109,10 @@ jobs:
         with:
           name: pui89-combined-quality-report
           path: |
-            portfolio/pui89-combined-quality-report.json
-            portfolio/pui89-combined-quality-report.md
-            portfolio/pui89-*-tests.txt
+            portfolio/reports/level13/pui89-level13-portfolio-report.json
+            portfolio/reports/level13/pui89-level13-portfolio-report.md
+            portfolio/reports/level13/logs/*.txt
             portfolio/pui89-coconut-baseline-evaluator-tests.txt
             portfolio/pui89-coconut-dataset-preflight-tests.txt
-            portfolio/reports/*.json
           if-no-files-found: warn
           retention-days: 14

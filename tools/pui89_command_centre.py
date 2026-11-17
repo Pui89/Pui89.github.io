@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a free, read-only status dashboard for PUI89's six active PUI89 product repositories.
+"""Build an open-source-first, read-only status dashboard for PUI89's six active PUI89 product repositories.
 
 Uses only Python's standard library and GitHub's public REST API. No token, hosted AI,
 model downloads, third-party package, or repository write is performed by this script.
@@ -19,17 +19,25 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PROJECTS = [
     ("Coconut Harvest AI", "Pui89/Coconut-Harvest-AI", "Agricultural perception, dataset provenance, reviewed labels and leakage-safe evaluation."),
-    ("PUI89 Sentinel — All-Terrain Inspection Robot Dog", "Pui89/All-Terrain-Inspection-Robot", "Supervised quadruped inspection, terrain-aware mobility, sensor evidence and human review."),
-    ("AI HOME", "Pui89/AI-Home-Safety-Robot", "Indoor home-safety observations, deterioration signals and supervised assistance."),
-    ("AI NOMAD", "Pui89/AI-Mobile-Assistant-Robot", "Owner-supervised mobile assistance, environmental awareness and safe-stop behaviour."),
+    ("PUI89 Sentinel — All-Terrain Exploration & Inspection Robot", "Pui89/PUI89-All-Terrain-Inspection-Robot", "Supervised quadruped inspection; first mission and operating envelope must be defined before hardware selection."),
+    ("PUI89 AI HOME", "Pui89/AI-Home-Safety-Robot", "Indoor four-wheel home assistant; complete robot mass target 8 kg and maximum 10 kg."),
+    ("PUI89 AI NOMAD", "Pui89/AI-Mobile-Assistant-Robot", "Ground-use four-wheel mobile assistant robot; not luggage or airline baggage; storage is secondary."),
     ("PUI89 AI Global SUV", "Pui89/PUI89-AI-Global-SUV", "Medium-size SUV concept; human-driver-first mobility intelligence and advisory-only software research."),
-    ("EasyRide AI Motorcycle", "Pui89/AI-Motorcycle-Robotics", "Rider-centred step-through mobility concept, safety advisories and simulation-first evaluation."),
+    ("PUI89 AI Step-Through Scooter", "Pui89/AI-Step-Through-Scooter", "Rider-first two-wheel step-through scooter; advisory road-water and flood-risk awareness, human-controlled operation."),
 ]
 PLATFORM = {
     "name": "Shared AI Core",
     "repository": "Private platform repository — not publicly monitored",
-    "url": None,
-    "focus": "Shared contracts, orchestration, compute intelligence, evidence gates and reusable engineering infrastructure; not an eighth product.",
+    "url": "https://pui89.github.io/ai-core.html",
+    "summary": {
+        "en": "Shared infrastructure for reusable contracts, orchestration, compute intelligence, evidence provenance and engineering tools. It is not a product.",
+        "th": "โครงสร้างพื้นฐานร่วมสำหรับสัญญาข้อมูล การประสานงาน ความฉลาดด้านการประมวลผล ที่มาของหลักฐาน และเครื่องมือวิศวกรรม ไม่ใช่ผลิตภัณฑ์",
+    },
+    "next": {
+        "en": "Maintain shared contracts and evidence gates; report only verified public information.",
+        "th": "ดูแลสัญญาข้อมูลและเงื่อนไขหลักฐานร่วม โดยรายงานเฉพาะข้อมูลสาธารณะที่ตรวจสอบได้",
+    },
+    "focus": "Shared contracts, orchestration, compute intelligence, evidence gates and reusable engineering infrastructure; not a seventh product.",
     "status": "NOT_PUBLICLY_MONITORED",
     "default_branch": None,
     "latest_commit": None,
@@ -48,7 +56,7 @@ def get_json(path: str) -> dict:
         headers={
             "Accept": "application/vnd.github+json",
             "X-GitHub-Api-Version": "2022-11-28",
-            "User-Agent": "PUI89-Free-Command-Centre",
+            "User-Agent": "PUI89-OpenSource-Command-Centre",
         },
     )
     with urllib.request.urlopen(request, timeout=15) as response:
@@ -172,7 +180,7 @@ def main() -> int:
             "This report reads public repository metadata and recent workflow runs; it does not execute project tests.",
             "A missing workflow run is unknown, not a passing result or proof of failure.",
             "Only the most recent 50 repository workflow runs are scanned; a safeguard absent from that window is unknown.",
-            "Exactly six active product repositories are monitored; Shared AI Core is monitored separately as shared platform infrastructure and is not counted as an eighth product. The website repository is not a product.",
+            "Exactly six active product repositories are monitored; Shared AI Core is monitored separately as shared platform infrastructure and is not counted as a seventh product. The website repository is not a product.",
             "Headline workflow and safeguard status is filtered to the repository default branch; other-branch runs are counted separately and do not prove default-branch health.",
             "A successful workflow does not validate real-world robot performance or dataset correctness.",
             "The Coconut dataset evidence audit runs only where its workflow is configured; not_seen_in_recent_runs for other projects means not observed, not a failure.",
@@ -222,7 +230,7 @@ def main() -> int:
         platform_commit = "[{}]({})".format(platform_commit, platform["latest_commit_url"])
     lines += [
         "",
-        "## Shared AI Core — platform infrastructure (not an eighth product)",
+        "## Shared AI Core — platform infrastructure (not a seventh product)",
         "",
         "- Repository: {}".format(platform["repository"]),
         "- Status: {}".format(platform["status"]),
@@ -253,9 +261,9 @@ def main() -> int:
         lines.append(f"- {limitation}")
     lines += [
         "",
-        "## Free-first policy",
+        "## Open-source-first policy",
         "",
-        "- No paid AI API, cloud GPU, third-party Python package, or model download is used by this report generator.",
+        "- This report generator uses the Python standard library and public GitHub metadata; it does not require paid AI APIs, cloud GPUs, or model downloads.",
         "- The script only reads public GitHub metadata; it does not change project repositories.",
         "- The scheduled GitHub Actions workflow publishes this report in this website repository.",
         "- Do not interpret unknown, partial, or missing data as a passing test.",

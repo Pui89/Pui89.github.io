@@ -19,24 +19,24 @@
       },
       "repo": "Pui89/Coconut-Harvest-AI",
       "stageLabel": {
-        "en": "Software prototype",
-        "th": "ต้นแบบซอฟต์แวร์"
+        "en": "Implemented",
+        "th": "นำไปใช้ในซอฟต์แวร์แล้ว"
       },
       "summary": {
-        "en": "Software and evaluation-preparation work is documented. Real-world detector accuracy and the physical harvesting system are not yet validated.",
-        "th": "มีหลักฐานงานซอฟต์แวร์และการเตรียมประเมินผล แต่ยังไม่ยืนยันความแม่นยำจากข้อมูลจริงหรือระบบเก็บเกี่ยวทางกายภาพ"
+        "en": "Software and evaluation-preparation work is documented. No approved real-image dataset, held-out detector accuracy or physical harvesting validation is established.",
+        "th": "มีหลักฐานงานซอฟต์แวร์และการเตรียมประเมินผล แต่ยังไม่มีชุดภาพจริงที่อนุมัติ ผลความแม่นยำจากชุดทดสอบแยก หรือการยืนยันระบบเก็บเกี่ยวทางกายภาพ"
       },
       "next": {
-        "en": "Establish a rights-checked real-image dataset and reproducible held-out detector evaluation.",
-        "th": "จัดทำชุดภาพจริงที่ตรวจสอบสิทธิ์แล้ว และประเมินโมเดลด้วยชุดทดสอบที่แยกไว้และทำซ้ำได้"
+        "en": "Create the dataset manifest and licence record; obtain rights-cleared images, human-reviewed labels and leakage-safe splits; then run reproducible CPU evaluation and report per-class Precision, Recall, F1 and failure cases.",
+        "th": "จัดทำ Dataset Manifest และ Licence Record ใช้ภาพที่มีสิทธิ์ชัดเจน ทำป้ายกำกับโดยมนุษย์และแยกชุดข้อมูลโดยป้องกันข้อมูลรั่วไหล จากนั้นประเมินบน CPU อย่างทำซ้ำได้ พร้อมรายงาน Precision, Recall, F1 รายคลาสและกรณีผิดพลาด"
       },
       "evidence": {
-        "en": "Documented software tests, benchmark preparation and dataset audit notes; no approved training dataset or validated field detector.",
-        "th": "มีบันทึกการทดสอบซอฟต์แวร์ การเตรียม benchmark และตรวจสอบชุดข้อมูล แต่ยังไม่มีชุดฝึกที่อนุมัติหรือโมเดลที่ผ่านการทดสอบภาคสนาม"
+        "en": "Documented software tests, benchmark preparation and dataset audit tooling; no approved training dataset or validated field detector.",
+        "th": "มีบันทึกการทดสอบซอฟต์แวร์ การเตรียม benchmark และเครื่องมือตรวจสอบชุดข้อมูล แต่ยังไม่มีชุดฝึกที่อนุมัติหรือโมเดลที่ผ่านการทดสอบภาคสนาม"
       },
       "blockers": {
-        "en": "Dataset rights and quality, held-out accuracy, harvesting mechanism, worker/animal safety and field validation.",
-        "th": "สิทธิ์และคุณภาพข้อมูล ความแม่นยำชุดทดสอบ กลไกเก็บเกี่ยว ความปลอดภัยต่อคนและสัตว์ และการทดสอบภาคสนาม"
+        "en": "Image reuse rights, source provenance, human label QA, leakage-safe held-out split, CPU metrics and error analysis.",
+        "th": "สิทธิ์การใช้ภาพ ที่มาของข้อมูล การตรวจสอบป้ายกำกับโดยมนุษย์ การแยกชุดทดสอบที่ป้องกันข้อมูลรั่วไหล ตัวชี้วัดบน CPU และการวิเคราะห์ข้อผิดพลาด"
       },
       "history": [
         {
@@ -49,31 +49,43 @@
           }
         }
       ],
-      "commercialReadiness": {
-        "percent": 50,
-        "reviewedOn": "2026-11-07"
-      },
-      "maturityLevel": 3
+      "evidenceDate": "2026-11-17",
+      "evidenceLinks": [
+        {
+          "label": {
+            "en": "Repository tests",
+            "th": "Repository tests"
+          },
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/tree/main/tests"
+        },
+        {
+          "label": {
+            "en": "Evaluation tools",
+            "th": "Evaluation tools"
+          },
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/tree/main/tools"
+        }
+      ]
     },
     {
       "id": "sentinel",
       "number": 2,
       "name": {
         "en": "PUI89 Sentinel — All-Terrain Exploration & Inspection Robot",
-        "th": "PUI89 Sentinel — หุ่นยนต์สี่ขาสำรวจและตรวจสอบทุกสภาพพื้นที่"
+        "th": "PUI89 Sentinel — หุ่นยนต์สำรวจและตรวจสอบทุกสภาพพื้นที่"
       },
-      "repo": "Pui89/All-Terrain-Inspection-Robot",
+      "repo": "Pui89/PUI89-All-Terrain-Inspection-Robot",
       "stageLabel": {
-        "en": "Concept and engineering requirements",
-        "th": "แนวคิดและข้อกำหนดทางวิศวกรรม"
+        "en": "Specified",
+        "th": "กำหนดข้อกำหนดแล้ว"
       },
       "summary": {
-        "en": "A four-legged quadruped robot dog concept for supervised inspection of industrial facilities, infrastructure, warehouses, logistics yards, ports and selected outdoor environments. The current record covers product definition and engineering requirements only.",
-        "th": "แนวคิดหุ่นยนต์สุนัขสี่ขาแบบ Quadruped สำหรับตรวจสอบโรงงาน โครงสร้างพื้นฐาน คลังสินค้า ลานโลจิสติกส์ ท่าเรือ และพื้นที่กลางแจ้งที่เหมาะสม ข้อมูลปัจจุบันครอบคลุมเฉพาะการกำหนดผลิตภัณฑ์และข้อกำหนดทางวิศวกรรม"
+        "en": "Four-legged exploration and inspection robot concept with documented engineering requirements. The first supervised inspection mission and operating envelope are not yet selected; no physical prototype or field validation is established.",
+        "th": "แนวคิดหุ่นยนต์สำรวจและตรวจสอบแบบสี่ขาพร้อมข้อกำหนดทางวิศวกรรมที่บันทึกไว้ ยังไม่ได้กำหนดภารกิจตรวจสอบภายใต้การกำกับและขอบเขตการทำงานแรก และยังไม่มีต้นแบบจริงหรือการตรวจสอบภาคสนาม"
       },
       "next": {
-        "en": "Define the first inspection mission and measurable operating envelope; complete hazard analysis; compare candidate components; establish simulation scenarios and a validation plan before any hardware procurement.",
-        "th": "กำหนดภารกิจตรวจสอบแรกและขอบเขตการทำงานที่วัดผลได้ วิเคราะห์อันตราย เปรียบเทียบชิ้นส่วนตัวเลือก และจัดทำสถานการณ์จำลองกับแผนตรวจสอบก่อนจัดซื้อฮาร์ดแวร์"
+        "en": "Define the first supervised inspection mission, site, asset, operating envelope, hazards, human roles and measurable acceptance criteria before selecting hardware.",
+        "th": "กำหนดภารกิจตรวจสอบแรก พื้นที่ ทรัพย์สิน ขอบเขตการทำงาน อันตราย บทบาทมนุษย์ และเกณฑ์ยอมรับที่วัดผลได้ ก่อนเลือกฮาร์ดแวร์"
       },
       "evidence": {
         "en": "Current evidence is limited to the product concept, engineering requirements and proposed validation documentation. No physical prototype or integrated hardware evidence is recorded.",
@@ -89,16 +101,28 @@
           "date": "2026-11-15",
           "type": "scope-reset",
           "note": {
-            "en": "New product identity and evidence baseline established for the All-Terrain Inspection Robot Dog. No physical validation evidence is carried forward.",
-            "th": "กำหนดชื่อผลิตภัณฑ์และค่าฐานหลักฐานใหม่สำหรับหุ่นยนต์ตรวจสอบทุกสภาพพื้นที่ โดยไม่นำหลักฐานการตรวจสอบทางกายภาพจากขอบเขตเดิมมาใช้"
+            "en": "Current Sentinel identity and evidence baseline established for the All-Terrain Exploration & Inspection Robot. No physical validation evidence is carried forward.",
+            "th": "กำหนดอัตลักษณ์และค่าฐานหลักฐานของ Sentinel ใหม่เป็นหุ่นยนต์สำรวจและตรวจสอบทุกสภาพพื้นที่ โดยไม่นำหลักฐานการตรวจสอบทางกายภาพจากขอบเขตเดิมมาใช้"
           }
         }
       ],
-      "commercialReadiness": {
-        "percent": 0,
-        "reviewedOn": "2026-11-15"
-      },
-      "maturityLevel": 1
+      "evidenceDate": "2026-11-17",
+      "evidenceLinks": [
+        {
+          "label": {
+            "en": "Repository tests",
+            "th": "Repository tests"
+          },
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/tree/main/tests"
+        },
+        {
+          "label": {
+            "en": "Engineering documentation",
+            "th": "Engineering documentation"
+          },
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/tree/main/docs"
+        }
+      ]
     },
     {
       "id": "ai-home",
@@ -109,16 +133,16 @@
       },
       "repo": "Pui89/AI-Home-Safety-Robot",
       "stageLabel": {
-        "en": "Architecture defined · early software foundation",
-        "th": "กำหนดสถาปัตยกรรม · พื้นฐานซอฟต์แวร์ระยะแรก"
+        "en": "Implemented",
+        "th": "นำไปใช้ในซอฟต์แวร์แล้ว"
       },
       "summary": {
-        "en": "Product requirements, software contracts and early adapter/test foundations are documented. No physical robot or validated home-safety performance is established.",
-        "th": "มีข้อกำหนดผลิตภัณฑ์ สัญญาซอฟต์แวร์ และพื้นฐาน adapter/test ระยะแรก แต่ยังไม่มีหุ่นยนต์จริงหรือผลทดสอบความปลอดภัยในบ้านที่ยืนยันแล้ว"
+        "en": "Product requirements, software contracts and early adapter/test foundations are documented. Complete robot mass requirement: 8 kg target and 10 kg maximum including battery and all installed hardware. No physical robot or validated home-safety performance is established.",
+        "th": "มีข้อกำหนดผลิตภัณฑ์ สัญญาซอฟต์แวร์ และพื้นฐาน adapter/test ระยะแรก น้ำหนักรวมเป้าหมาย 8 กก. และสูงสุด 10 กก. รวมแบตเตอรี่และอุปกรณ์ติดตั้งทั้งหมด แต่ยังไม่มีหุ่นยนต์จริงหรือผลทดสอบความปลอดภัยในบ้านที่ยืนยันแล้ว"
       },
       "next": {
-        "en": "Complete a software-only home-safety demonstrator using documented mock sensor inputs and explicit failure states.",
-        "th": "ทำตัวอย่างซอฟต์แวร์ความปลอดภัยในบ้านโดยใช้ข้อมูลเซนเซอร์จำลอง พร้อมระบุสถานะความล้มเหลวอย่างชัดเจน"
+        "en": "Complete the software-only home-safety demonstrator and verify the 8 kg mass target / 10 kg maximum through a traceable design mass budget before any prototype claim.",
+        "th": "ทำตัวอย่างซอฟต์แวร์ความปลอดภัยในบ้านให้ครบ และตรวจสอบงบน้ำหนักการออกแบบที่มีหลักฐานย้อนกลับได้ตามเป้าหมาย 8 กก. และสูงสุด 10 กก. ก่อนกล่าวอ้างต้นแบบ"
       },
       "evidence": {
         "en": "Early requirements, architecture and software foundations; no hardware is currently available for a physical prototype.",
@@ -139,11 +163,23 @@
           }
         }
       ],
-      "commercialReadiness": {
-        "percent": 28,
-        "reviewedOn": "2026-11-07"
-      },
-      "maturityLevel": 2
+      "evidenceDate": "2026-11-17",
+      "evidenceLinks": [
+        {
+          "label": {
+            "en": "Repository tests",
+            "th": "Repository tests"
+          },
+          "url": "https://github.com/Pui89/AI-Home-Safety-Robot/tree/main/tests"
+        },
+        {
+          "label": {
+            "en": "Product documentation",
+            "th": "Product documentation"
+          },
+          "url": "https://github.com/Pui89/AI-Home-Safety-Robot/tree/main/docs"
+        }
+      ]
     },
     {
       "id": "ai-nomad",
@@ -154,16 +190,16 @@
       },
       "repo": "Pui89/AI-Mobile-Assistant-Robot",
       "stageLabel": {
-        "en": "Foundation & concept",
-        "th": "วางรากฐานและแนวคิด"
+        "en": "Implemented",
+        "th": "นำไปใช้ในซอฟต์แวร์แล้ว"
       },
       "summary": {
-        "en": "Concept requirements, architecture and early deterministic software foundations are documented. No built robot, validated mobility or environmental protection is established.",
-        "th": "มีข้อกำหนดแนวคิด สถาปัตยกรรม และพื้นฐานซอฟต์แวร์แบบ deterministic แต่ยังไม่มีหุ่นยนต์จริง การเคลื่อนที่หรือการป้องกันสภาพแวดล้อมที่ผ่านการทดสอบ"
+        "en": "Ground-use four-wheel mobile assistant robot concept with early software foundations. It is not luggage or airline baggage; storage is secondary to supervised mobility and assistance. No built robot or validated mobility is established.",
+        "th": "แนวคิดหุ่นยนต์ผู้ช่วยเคลื่อนที่ภาคพื้นดินแบบ 4 ล้อพร้อมพื้นฐานซอฟต์แวร์ระยะแรก ไม่ใช่กระเป๋าเดินทางหรือสัมภาระขึ้นเครื่องบิน พื้นที่จัดเก็บเป็นฟังก์ชันรอง และยังไม่มีหุ่นยนต์จริงหรือการเคลื่อนที่ที่ผ่านการตรวจสอบ"
       },
       "next": {
-        "en": "Complete a software-only mission and hazard-state demonstrator; keep locomotion and outdoor protection as unvalidated requirements.",
-        "th": "ทำตัวอย่างซอฟต์แวร์จำลองภารกิจและสถานะอันตราย โดยระบุว่าการเคลื่อนที่และการป้องกันกลางแจ้งยังไม่ผ่านการตรวจสอบ"
+        "en": "Define the first supervised ground-mobility and assistance tasks, terrain limits, safe-stop behaviour and human interaction before selecting hardware.",
+        "th": "กำหนดภารกิจเคลื่อนที่ภาคพื้นดินและการช่วยเหลือภายใต้การกำกับ ข้อจำกัดพื้นผิว การหยุดอย่างปลอดภัย และการโต้ตอบกับมนุษย์ก่อนเลือกฮาร์ดแวร์"
       },
       "evidence": {
         "en": "Documented concept and software foundation; no physical robot or field tests.",
@@ -184,11 +220,23 @@
           }
         }
       ],
-      "commercialReadiness": {
-        "percent": 30,
-        "reviewedOn": "2026-11-07"
-      },
-      "maturityLevel": 2
+      "evidenceDate": "2026-11-17",
+      "evidenceLinks": [
+        {
+          "label": {
+            "en": "Repository tests",
+            "th": "Repository tests"
+          },
+          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/tree/main/tests"
+        },
+        {
+          "label": {
+            "en": "Product documentation",
+            "th": "Product documentation"
+          },
+          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/tree/main/docs"
+        }
+      ]
     },
     {
       "id": "robot-car",
@@ -199,16 +247,16 @@
       },
       "repo": "Pui89/PUI89-AI-Global-SUV",
       "stageLabel": {
-        "en": "Early software foundation",
-        "th": "พื้นฐานซอฟต์แวร์ระยะแรก"
+        "en": "Implemented",
+        "th": "นำไปใช้ในซอฟต์แวร์แล้ว"
       },
       "summary": {
-        "en": "Research requirements and an initial software-only safety/contract scaffold are documented. No vehicle integration, road testing or certification is established.",
-        "th": "มีข้อกำหนดวิจัยและโครงสร้างซอฟต์แวร์ด้าน safety/contract ระยะแรก แต่ยังไม่มีการติดตั้งในรถ การทดสอบบนถนน หรือการรับรอง"
+        "en": "Vehicle concept with early software-only safety and contract scaffolding. AI remains advisory to the human driver; road-water and flood-risk alerts are a proposed requirement. No vehicle integration, road testing or certification is established.",
+        "th": "แนวคิดยานยนต์พร้อมโครงสร้างซอฟต์แวร์ด้าน safety/contract ระยะแรก AI ทำหน้าที่ให้คำแนะนำแก่ผู้ขับขี่เท่านั้น และมีข้อกำหนดการแจ้งเตือนน้ำบนถนน/ความเสี่ยงน้ำท่วม แต่ยังไม่มีการติดตั้งในรถ การทดสอบบนถนน หรือการรับรอง"
       },
       "next": {
-        "en": "Build a software-only hazard-awareness demonstrator with traceable mock observations and human-driver decision boundaries.",
-        "th": "สร้างตัวอย่างซอฟต์แวร์รับรู้ความเสี่ยงโดยใช้ข้อมูลจำลองที่ตรวจสอบย้อนกลับได้ และกำหนดขอบเขตการตัดสินใจของผู้ขับขี่"
+        "en": "Build a software-only road-water and flood-risk warning demonstrator. Unknown water depth, current or road condition must report 'unknown — do not enter'.",
+        "th": "สร้างตัวอย่างซอฟต์แวร์แจ้งเตือนน้ำบนถนนและความเสี่ยงน้ำท่วม หากไม่ทราบความลึก กระแสน้ำ หรือสภาพถนน ต้องแจ้งว่า “ไม่ทราบ — ห้ามเข้า”"
       },
       "evidence": {
         "en": "Early software scaffold and documented requirements; the human driver remains responsible for driving.",
@@ -229,11 +277,23 @@
           }
         }
       ],
-      "commercialReadiness": {
-        "percent": 29,
-        "reviewedOn": "2026-11-07"
-      },
-      "maturityLevel": 2
+      "evidenceDate": "2026-11-17",
+      "evidenceLinks": [
+        {
+          "label": {
+            "en": "Repository tests",
+            "th": "Repository tests"
+          },
+          "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/tree/main/tests"
+        },
+        {
+          "label": {
+            "en": "Product documentation",
+            "th": "Product documentation"
+          },
+          "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/tree/main/docs"
+        }
+      ]
     },
     {
       "id": "motorcycle",
@@ -242,18 +302,18 @@
         "en": "PUI89 AI Step-Through Scooter",
         "th": "PUI89 AI Step-Through Scooter"
       },
-      "repo": "Pui89/AI-Motorcycle-Robotics",
+      "repo": "Pui89/AI-Step-Through-Scooter",
       "stageLabel": {
-        "en": "Concept & engineering foundation",
-        "th": "แนวคิดและพื้นฐานวิศวกรรม"
+        "en": "Specified",
+        "th": "กำหนดข้อกำหนดแล้ว"
       },
       "summary": {
-        "en": "Rider-centred requirements and early engineering/software research are documented. No functioning motorcycle, rider trials or road certification is established.",
-        "th": "มีข้อกำหนดที่คำนึงถึงผู้ขับขี่และงานวิจัยวิศวกรรม/ซอฟต์แวร์ระยะแรก แต่ยังไม่มีรถที่ทำงานได้ การทดสอบผู้ขับขี่ หรือการรับรองบนถนน"
+        "en": "Rider-first two-wheel step-through scooter concept with early engineering/software research. Advisory road-water and flood-risk alerts are in scope; no functioning scooter, rider trials or road certification is established.",
+        "th": "แนวคิดสกู๊ตเตอร์แบบ Step-Through สองล้อที่ให้ผู้ขับขี่เป็นศูนย์กลาง พร้อมงานวิจัยวิศวกรรม/ซอฟต์แวร์ระยะแรก มีขอบเขตการแจ้งเตือนน้ำบนถนนและความเสี่ยงน้ำท่วมแบบคำแนะนำ แต่ยังไม่มีรถที่ทำงานได้ การทดสอบผู้ขับขี่ หรือการรับรองบนถนน"
       },
       "next": {
-        "en": "Complete a safety-led vehicle requirements and hazard-analysis baseline before any physical design or build.",
-        "th": "จัดทำข้อกำหนดยานยนต์และการวิเคราะห์อันตรายที่ให้ความสำคัญกับความปลอดภัยให้ครบก่อนออกแบบหรือสร้างจริง"
+        "en": "Define rider-facing road-water/flood-risk warning scenarios. Unknown water depth, current or road condition means 'unknown — do not enter'; rider retains full control.",
+        "th": "กำหนดสถานการณ์แจ้งเตือนน้ำบนถนน/ความเสี่ยงน้ำท่วมสำหรับผู้ขับขี่ หากไม่ทราบความลึก กระแสน้ำ หรือสภาพถนน ให้แจ้งว่า “ไม่ทราบ — ห้ามเข้า” และผู้ขับขี่ยังคงควบคุมรถทั้งหมดด้วยตนเอง"
       },
       "evidence": {
         "en": "Concept and early engineering foundation only; no roadworthy prototype or validated rider-safety evidence.",
@@ -274,58 +334,75 @@
           }
         }
       ],
-      "commercialReadiness": {
-        "percent": 28,
-        "reviewedOn": "2026-11-07"
-      },
-      "maturityLevel": 1
+      "evidenceDate": "2026-11-17",
+      "evidenceLinks": [
+        {
+          "label": {
+            "en": "Repository tests",
+            "th": "Repository tests"
+          },
+          "url": "https://github.com/Pui89/AI-Step-Through-Scooter/tree/main/tests"
+        },
+        {
+          "label": {
+            "en": "Product documentation",
+            "th": "Product documentation"
+          },
+          "url": "https://github.com/Pui89/AI-Step-Through-Scooter/tree/main/docs"
+        }
+      ]
     }
   ],
   "maturityFramework": {
     "title": {
-      "en": "Seven-level development maturity",
-      "th": "ระดับวุฒิภาวะการพัฒนา 7 ระดับ"
+      "en": "Evidence-based development labels",
+      "th": "ป้ายสถานะการพัฒนาตามหลักฐาน"
     },
-    "levels": [
+    "labels": [
       {
-        "level": 1,
-        "en": "Concept",
-        "th": "แนวคิด"
+        "en": "Proposed",
+        "th": "เสนอแนวคิด"
       },
       {
-        "level": 2,
-        "en": "Architecture Defined",
-        "th": "กำหนดสถาปัตยกรรม"
+        "en": "Specified",
+        "th": "กำหนดข้อกำหนด"
       },
       {
-        "level": 3,
-        "en": "Software Prototype",
-        "th": "ต้นแบบซอฟต์แวร์"
+        "en": "Implemented",
+        "th": "นำไปใช้แล้ว"
       },
       {
-        "level": 4,
-        "en": "Tested Prototype",
-        "th": "ต้นแบบที่ผ่านการทดสอบ"
+        "en": "Simulated",
+        "th": "จำลองแล้ว"
       },
       {
-        "level": 5,
-        "en": "Integrated System",
-        "th": "ระบบที่บูรณาการแล้ว"
+        "en": "Software-tested",
+        "th": "ทดสอบซอฟต์แวร์แล้ว"
       },
       {
-        "level": 6,
-        "en": "Field Validated",
-        "th": "ผ่านการตรวจสอบภาคสนาม"
+        "en": "Bench-tested",
+        "th": "ทดสอบบนแท่นแล้ว"
       },
       {
-        "level": 7,
-        "en": "Operationally Demonstrated",
-        "th": "สาธิตการปฏิบัติงานจริงแล้ว"
+        "en": "Field-tested",
+        "th": "ทดสอบภาคสนามแล้ว"
+      },
+      {
+        "en": "Validated",
+        "th": "ตรวจสอบยืนยันแล้ว"
+      },
+      {
+        "en": "Certified",
+        "th": "ได้รับการรับรอง"
+      },
+      {
+        "en": "Unknown",
+        "th": "ไม่ทราบ"
       }
     ],
     "note": {
-      "en": "Maturity describes the strongest evidenced development stage, not a percentage. Software/simulation tests do not validate physical hardware, AI accuracy, safety, weather resistance, fire resistance or field performance.",
-      "th": "ระดับวุฒิภาวะสะท้อนขั้นการพัฒนาสูงสุดที่มีหลักฐาน ไม่ใช่เปอร์เซ็นต์ การทดสอบซอฟต์แวร์/การจำลองไม่ใช่การยืนยันฮาร์ดแวร์จริง ความแม่นยำ AI ความปลอดภัย การกันน้ำ/ทนไฟ หรือสมรรถนะภาคสนาม"
+      "en": "Use the strongest label supported by a linked, dated evidence record. These are not percentages or a linear score. A software test is not physical validation; simulation is not field testing; certification requires an applicable certificate and scope.",
+      "th": "ใช้สถานะสูงสุดที่มีหลักฐานเชื่อมโยงและลงวันที่รองรับเท่านั้น ป้ายเหล่านี้ไม่ใช่เปอร์เซ็นต์หรือคะแนนเชิงเส้น การทดสอบซอฟต์แวร์ไม่ใช่การยืนยันทางกายภาพ การจำลองไม่ใช่การทดสอบภาคสนาม และการรับรองต้องมีใบรับรองและขอบเขตที่เกี่ยวข้อง"
     }
   },
   "platform": {
@@ -337,17 +414,11 @@
     "next": {
       "en": "Extend project adapters and conformance tests; add measured hardware profiles only when instruments and evidence are available",
       "th": "ขยาย project adapters และ conformance tests; เพิ่มโปรไฟล์ฮาร์ดแวร์ที่วัดจริงเมื่อมีเครื่องมือและหลักฐาน"
-    }
-  },
-  "readinessBaseline": {
-    "asOf": "2026-11-07",
-    "definition": {
-      "en": "Commercial-readiness estimate, not code completion or a sales forecast. 100% requires an appropriately scoped release candidate, reproducible performance and reliability evidence, applicable safety and real-world validation, verified rights and regulatory checks, plus documentation, deployment, pricing, warranty, maintenance and support.",
-      "th": "ค่าประมาณความพร้อมเชิงพาณิชย์ ไม่ใช่เปอร์เซ็นต์ความสมบูรณ์ของโค้ดหรือการคาดการณ์ยอดขาย โดย 100% ต้องมี release candidate ที่กำหนดขอบเขตเหมาะสม หลักฐานสมรรถนะและความน่าเชื่อถือที่ทำซ้ำได้ การตรวจสอบความปลอดภัยและการใช้งานจริงตามความเหมาะสม การตรวจสอบสิทธิ์และกฎระเบียบ ตลอดจนเอกสาร การส่งมอบ ราคา การรับประกัน การบำรุงรักษา และการสนับสนุน"
     },
-    "note": {
-      "en": "This is the first shared portfolio baseline dated 7 November 2026. Each project's percentage is shown with its baseline date; later changes require a dated evidence review. It does not imply a built, certified or field-validated product.",
-      "th": "นี่คือค่าฐานร่วมของทั้งพอร์ตโฟลิโอ ณ วันที่ 7 พฤศจิกายน 2026 โดยแสดงเปอร์เซ็นต์พร้อมวันที่กำกับ การเปลี่ยนแปลงในภายหลังต้องมีการทบทวนหลักฐานและวันที่ใหม่ ตัวเลขนี้ไม่ได้หมายความว่ามีผลิตภัณฑ์ที่สร้างจริง ผ่านการรับรอง หรือผ่านการทดสอบภาคสนามแล้ว"
-    }
+    "summary": {
+      "en": "Shared infrastructure for reusable contracts, orchestration, compute intelligence, evidence gates and engineering tools. It is not a product.",
+      "th": "โครงสร้างพื้นฐานร่วมสำหรับสัญญาข้อมูล การประสานงาน ความฉลาดด้านการประมวลผล เงื่อนไขหลักฐาน และเครื่องมือวิศวกรรม ไม่ใช่ผลิตภัณฑ์"
+    },
+    "url": "https://pui89.github.io/ai-core.html"
   }
 }

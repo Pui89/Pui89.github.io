@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "snapshot_date": "2026-11-08",
   "timezone": "Asia/Bangkok",
-  "purpose": "Dated read-only portfolio audit. This register is not a live dashboard, maturity score, or proof of operational capability.",
+  "purpose": "Historical dated read-only repository audit as of 2026-11-08. Its seven-repository inventory records the then-observed configuration and is not the current active-product count. As of 2026-11-17, PUI89 has exactly six active products; see ../PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.0.md.",
   "policy": {
     "paid_services_added": false,
     "new_runtime_dependencies_added": false,
@@ -290,5 +290,11 @@
     ],
     "safety_invariant": "ActionProposal requires human approval, advisory_only authority and actuation_allowed=false",
     "validation_scope": "Dependency-free structural checks only; full JSON Schema meta-validation and project adapter integration remain future work."
+  },
+  "current_portfolio_scope": {
+    "as_of": "2026-11-17",
+    "active_product_count": 6,
+    "source": "PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.0.md",
+    "note": "This current-scope annotation does not rewrite the historical repository, ruleset, workflow or commit evidence recorded in the 2026-11-08 snapshot."
   }
 }

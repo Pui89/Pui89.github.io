@@ -5,6 +5,10 @@
 
 > **Status note:** "In progress" means a defined next task with an evidence gate; it does not mean a background process is continuously running. Only committed files and completed, inspected workflow runs count as evidence.
 
+
+
+> **Current portfolio boundary — 17 November 2026:** The active PUI89 portfolio is exactly six products: Coconut Harvest AI, PUI89 Sentinel — All-Terrain Exploration & Inspection Robot, PUI89 AI HOME, PUI89 AI NOMAD, PUI89 AI Global SUV and PUI89 AI Step-Through Scooter. Shared AI Core is infrastructure, not a seventh product. Extreme Flood Rescue AI and Multimodal Narcotics Screening AI references below are historical engineering records, not active products. The current priorities and canonical repository links are maintained in [PUI89 Portfolio Source of Truth v1.0](PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.0.md) and [Product Status](PRODUCT_STATUS.md).
+
 ## Executive status — 31 October 2026
 
 - **Shared AI Core:** the central portfolio now contains the dependency-light agent-message/evidence contract, adaptive policy orchestrator, long-horizon sequence evaluator, and standardised failure-report contract. These are software policy and evaluation components, not deployed autonomous agents.
@@ -87,7 +91,7 @@
 - **Level E — physical prototype:** only after mechanical design review, risk assessment, guarded testing and qualified supervision.
 - **Longer term:** RGB/depth/LiDAR fusion, tree/palm geometry, maturity estimation, arm/cutter/basket control and harvest verification. All remain future work until implemented and measured.
 
-## 2. Extreme Flood Rescue AI
+## Historical record — Extreme Flood Rescue AI (inactive; not a product)
 
 **Overall stage:** software prototype, input-safety gates and simulation planning.  
 **Latest verified full suite:** 419 tests passed on `main` in [run 40882267388](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40882267388). A later feature-branch simulation [run 40919457152](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40919457152) passed 7/7 rule-based scenarios and 9/9 steps; hardware actuation was disabled. The simulation result is not physical rescue or navigation validation.
@@ -389,7 +393,7 @@ Added a read-only, standard-library resource preflight and adoption standard:
 
 - **Coconut Harvest AI — main branch:** [PUI89 Automated Verification run 41205734749](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41205734749) completed successfully at commit `1929c44d790418cc9c3b7220a0ed624a75a3fa7a`. The same main-branch commit also has successful [Free Local Checks](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41205734813) and [Pitfall Detector Checks](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41205734752).
 - **Extreme Flood Rescue AI — feature branch:** [Python tests run 41163791357](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41163791357), [Shared Interface Smoke run 41163791338](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41163791338), [Automated Verification run 41163791367](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41163791367), and [Pitfall Detector Checks run 41163791443](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41163791443) completed successfully on branch `fix/world-state-update-input-types-20261031`, commit `78a7007b3026cb0789cf5e1ddaaa9ce7d0696f7a`. These are feature-branch results, not proof that the same commit is on main.
-- **Sentinel:** prior feature-branch software checks are historical records and are not evidence for the current PUI89 Sentinel — All-Terrain Exploration & Inspection Robot. Current engineering requirements are under review in [PR #187](https://github.com/Pui89/All-Terrain-Inspection-Robot/pull/187).
+- **Sentinel:** prior feature-branch software checks are historical records and are not evidence for the current PUI89 Sentinel — All-Terrain Exploration & Inspection Robot. Current engineering requirements are under review in [PR #187](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/pull/187).
 
 ### What is actually integrated today
 
@@ -493,7 +497,7 @@ A review-gated Hugging Face discovery layer was merged into `main` through [PR #
 
 - **Coconut Harvest AI:** PR [#161](https://github.com/Pui89/Coconut-Harvest-AI/pull/161), merge commit \`6fc5924de6cd3285ad64aac241c5eb5c8381c26b\`. Added \`tools/pui89_coconut_model_adapter.py\`, shared project adapter validation, six domain regression tests and project documentation. Candidate maturity labels remain unverified observations for human review; no image inference or harvest action is performed.
 - **Extreme Flood Rescue AI:** PR [#125](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/125), merge commit \`c25b03391852da5656728907e8889fbec2ec82ea\`. Added \`tools/pui89_flood_model_adapter.py\`, six regression tests and project documentation. The 0–15 m value is only a bounded simulation scenario input, not demonstrated robot capability.
-- **Sentinel:** the former software-workflow adapter is not part of the current product baseline. The current quadruped inspection requirements and validation plan are documented in [PR #187](https://github.com/Pui89/All-Terrain-Inspection-Robot/pull/187).
+- **Sentinel:** the former software-workflow adapter is not part of the current product baseline. The current quadruped inspection requirements and validation plan are documented in [PR #187](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/pull/187).
 
 ### Adapter verification
 
