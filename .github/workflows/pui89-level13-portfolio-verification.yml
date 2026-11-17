@@ -33,47 +33,40 @@ jobs:
           ref: main
           path: portfolio/projects/coconut
 
-      - name: Check out Extreme Flood Rescue AI
+      - name: Check out PUI89 Sentinel — All-Terrain Exploration & Inspection Robot
         uses: actions/checkout@v4
         with:
-          repository: Pui89/Extreme-Flood-Rescue-AI
+          repository: Pui89/PUI89-All-Terrain-Inspection-Robot
           ref: main
-          path: portfolio/projects/flood
-
-      - name: Check out Multimodal Narcotics Screening AI
-        uses: actions/checkout@v4
-        with:
-          repository: Pui89/Multimodal-Narcotics-Screening-AI
-          ref: main
-          path: portfolio/projects/screening
+          path: portfolio/projects/sentinel
 
       - name: Check out PUI89 AI HOME
         uses: actions/checkout@v4
         with:
-          repository: Pui89/AI-HOME
+          repository: Pui89/AI-Home-Safety-Robot
           ref: main
           path: portfolio/projects/home
 
       - name: Check out PUI89 AI NOMAD
         uses: actions/checkout@v4
         with:
-          repository: Pui89/AI-NOMAD
+          repository: Pui89/AI-Mobile-Assistant-Robot
           ref: main
           path: portfolio/projects/nomad
 
-      - name: Check out PUI89 AI Robot Car
+      - name: Check out PUI89 AI Global SUV
         uses: actions/checkout@v4
         with:
-          repository: Pui89/ai-robot-car
+          repository: Pui89/PUI89-AI-Global-SUV
           ref: main
-          path: portfolio/projects/car
+          path: portfolio/projects/suv
 
-      - name: Check out PUI89 AI Robot Motorcycle
+      - name: Check out PUI89 AI Step-Through Scooter
         uses: actions/checkout@v4
         with:
-          repository: Pui89/ai-robot-motorcycle
+          repository: Pui89/AI-Step-Through-Scooter
           ref: main
-          path: portfolio/projects/motorcycle
+          path: portfolio/projects/scooter
 
       - name: Set up Python
         uses: actions/setup-python@v5
