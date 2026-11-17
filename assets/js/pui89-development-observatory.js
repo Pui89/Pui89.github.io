@@ -77,7 +77,7 @@ function renderTopStatus(project){
  const stageHistory=(project.history||[]).slice().sort((a,b)=>a.date.localeCompare(b.date));
  const stagePeriod=stageHistory.length?stageHistory[stageHistory.length-1].period:"";
  const periodLabel=stagePeriod?new Intl.DateTimeFormat(lang==="th"?"th-TH-u-ca-buddhist":"en-GB",{month:"long",year:"numeric",timeZone:"UTC"}).format(new Date(stagePeriod+"-01T12:00:00Z")):"";
- if(periodLabel){const stageNode=panel.querySelector(".pui89-global-status__stage");if(stageNode)stageNode.append(el("span","pui89-global-status__date",(lang==="th"?"เดือนที่บันทึกขั้น: ":"STAGE RECORDED: ")+periodLabel));}
+ if(periodLabel)panel.append(el("div","pui89-global-status__date",(lang==="th"?"เดือนที่บันทึกขั้น: ":"STAGE RECORDED: ")+periodLabel));
  const evidenceDate=last?new Intl.DateTimeFormat(lang==="th"?"th-TH-u-ca-buddhist":"en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"UTC"}).format(new Date(last+"T12:00:00Z")):"";
  panel.append(el("div","pui89-global-status__date",(lang==="th"?"หลักฐานล่าสุด · ":"LATEST EVIDENCE · ")+evidenceDate));
  const nav=document.querySelector("nav.nav")||document.querySelector("nav");
