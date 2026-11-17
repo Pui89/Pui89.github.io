@@ -351,3 +351,28 @@ body #pui89-global-project-status.pui89-global-status{
 #pui89-global-project-status .pui89-global-status__progress-fill{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#159CCB,#42D9FF);transition:width .25s ease}
 #pui89-global-project-status .pui89-global-status__stage .pui89-global-status__date{margin-top:2px;padding-top:0;border-top:0;color:#91A8BC;font-size:.58rem;font-weight:650}
 @media(prefers-reduced-motion:reduce){#pui89-global-project-status .pui89-global-status__progress-fill{transition:none}}
+
+
+/* High-visibility stage tabs: the tab itself names the stage, not just its level number. */
+.pui89-observatory__stage-indicator{
+ display:flex!important;align-items:center;gap:7px!important;flex-wrap:wrap;
+ margin:8px 0 10px!important;
+}
+.pui89-observatory__stage-badge{
+ display:inline-flex!important;align-items:center;justify-content:center;
+ width:max-content;max-width:100%;padding:6px 10px!important;
+ border:0!important;border-left:4px solid currentColor!important;
+ border-radius:4px 7px 7px 4px!important;
+ box-shadow:0 2px 10px rgba(0,0,0,.18);
+ font-size:.7rem!important;font-weight:900!important;letter-spacing:.025em!important;
+ line-height:1.25!important;overflow-wrap:anywhere;
+}
+#pui89-global-project-status .pui89-global-status__stage{
+ display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:5px!important;
+}
+#pui89-global-project-status .pui89-global-status__stage-tab{
+ padding:5px 10px!important;border-radius:4px 7px 7px 4px!important;
+ font-size:.68rem!important;font-weight:900!important;letter-spacing:.025em!important;
+ line-height:1.25!important;white-space:normal!important;overflow-wrap:anywhere;
+ box-shadow:0 2px 10px rgba(0,0,0,.18);
+}
