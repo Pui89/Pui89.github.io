@@ -41,18 +41,18 @@ Each project has its own repository, requirements, risks, and validation gates. 
 |---|---|---|---|
 | **Coconut Harvest AI** | Coconut maturity assessment and a proposed robotic harvesting workflow | [Repository](https://github.com/Pui89/Coconut-Harvest-AI) | [EN](https://pui89.github.io/coconut.html) · [TH](https://pui89.github.io/coconut-th.html) |
 | **Extreme Flood Rescue AI** | Flood awareness and human-supervised rescue-support concepts | [Repository](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | [EN](https://pui89.github.io/flood-rescue.html) · [TH](https://pui89.github.io/flood-rescue-th.html) |
-| **All-Terrain Inspection Robot Dog** | PUI89 Sentinel: four-legged quadruped robot dog concept for supervised industrial, infrastructure and outdoor inspection | [Repository](https://github.com/Pui89/All-Terrain-Inspection-Robot) | [EN](https://pui89.github.io/sentinel.html) · [TH](https://pui89.github.io/sentinel-th.html) |
+| **PUI89 Sentinel — All-Terrain Exploration & Inspection Robot** | PUI89 Sentinel: four-legged quadruped robot dog concept for supervised industrial, infrastructure and outdoor inspection | [Repository](https://github.com/Pui89/All-Terrain-Inspection-Robot) | [EN](https://pui89.github.io/sentinel.html) · [TH](https://pui89.github.io/sentinel-th.html) |
 | **PUI89 AI HOME** | Indoor home-condition awareness and evidence-led assistance | [Repository](https://github.com/Pui89/AI-Home-Safety-Robot) | [EN](https://pui89.github.io/home.html) · [TH](https://pui89.github.io/home-th.html) |
 | **PUI89 AI NOMAD — Carry-on Suitcase-Style Mobile AI Assistant** | Upright carry-on luggage form, telescopic pull handle and four spinner caster wheels at the base; 8–10 kg target, 10 kg maximum; not airline-certified or physically validated | [Repository](https://github.com/Pui89/AI-Mobile-Assistant-Robot) | [EN](https://pui89.github.io/nomad.html) · [TH](https://pui89.github.io/nomad-th.html) |
-| **PUI89 AI Robot Car** | Medium-size global SUV concept; HEV-first evaluation with powertrain-neutral AI software | [Repository](https://github.com/Pui89/PUI89-AI-Global-SUV) | [EN](https://pui89.github.io/ai-global-suv.html) · [TH](https://pui89.github.io/ai-global-suv-th.html) |
-| **PUI89 EasyRide AI Motorcycle** | Rider-centred mobility intelligence and road-awareness research | [Repository](https://github.com/Pui89/AI-Motorcycle-Robotics) | [EN](https://pui89.github.io/ai-robot-motorcycle.html) · [TH](https://pui89.github.io/ai-robot-motorcycle-th.html) |
+| **PUI89 AI Global SUV** | Medium-size global SUV concept; HEV-first evaluation with powertrain-neutral AI software | [Repository](https://github.com/Pui89/PUI89-AI-Global-SUV) | [EN](https://pui89.github.io/ai-global-suv.html) · [TH](https://pui89.github.io/ai-global-suv-th.html) |
+| **PUI89 AI Step-Through Scooter** | Rider-centred mobility intelligence and road-awareness research | [Repository](https://github.com/Pui89/AI-Step-Through-Scooter) | [EN](https://pui89.github.io/ai-robot-motorcycle.html) · [TH](https://pui89.github.io/ai-robot-motorcycle-th.html) |
 
 **Project maturity:** these are independent development tracks. Some contain implemented software and automated tests; others remain at requirements, architecture, or concept stages. A concept image is not evidence of a built robot. Each repository and project page must state its current evidence and limitations.
 
 
-### PUI89 AI Robot Car — flagship mobility concept
+### PUI89 AI Global SUV — flagship mobility concept
 
-The PUI89 AI Robot Car is a proposed medium-size, five-door SUV design study. Its current styling direction uses Deep Navy, restrained Electric Cyan lighting and Titanium Silver details. Full Hybrid (HEV) is the first powertrain architecture proposed for evaluation; no production drivetrain has been selected.
+The PUI89 AI Global SUV is a proposed medium-size, five-door SUV design study. Its current styling direction uses Deep Navy, restrained Electric Cyan lighting and Titanium Silver details. Full Hybrid (HEV) is the first powertrain architecture proposed for evaluation; no production drivetrain has been selected.
 
 **AI concept:** authorised observations → input-quality and provenance checks → Shared AI Core `WorldState` → hazard analysis → safety gate → human-facing advisory. The system is intended to remain advisory-only. The driver retains control; the current software-stage scope has no steering, throttle, braking, propulsion, ECU/CAN or battery-management command path.
 
