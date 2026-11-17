@@ -91,7 +91,7 @@
 - **Level E — physical prototype:** only after mechanical design review, risk assessment, guarded testing and qualified supervision.
 - **Longer term:** RGB/depth/LiDAR fusion, tree/palm geometry, maturity estimation, arm/cutter/basket control and harvest verification. All remain future work until implemented and measured.
 
-## 2. Extreme Flood Rescue AI
+## Historical record — Extreme Flood Rescue AI (inactive; not a product)
 
 **Overall stage:** software prototype, input-safety gates and simulation planning.  
 **Latest verified full suite:** 419 tests passed on `main` in [run 40882267388](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40882267388). A later feature-branch simulation [run 40919457152](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40919457152) passed 7/7 rule-based scenarios and 9/9 steps; hardware actuation was disabled. The simulation result is not physical rescue or navigation validation.
