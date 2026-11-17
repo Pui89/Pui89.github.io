@@ -22,6 +22,10 @@ PUI89 follows one central principle: **make system behaviour, evidence, uncertai
 
 ---
 
+## Portfolio documentation alignment
+
+The authoritative six-product scope, Sentinel's general multimodal quadruped identity, evidence-label rules and bilingual website review checklist are recorded in [PUI89 Portfolio Alignment Register](docs/PUI89_PORTFOLIO_ALIGNMENT_REGISTER_2026-11-18.md). This is a governance record, not a claim that every product capability is implemented or validated.
+
 ## What PUI89 is building
 
 PUI89 develops six active product projects supported by a shared AI engineering direction:
