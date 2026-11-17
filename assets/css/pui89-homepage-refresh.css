@@ -1,0 +1,62 @@
+/* PUI89 English homepage refresh — focused hierarchy and product clarity. */
+:root{--pui-home-max:1240px}
+body[data-pui89-project="portfolio"] .wrap{width:min(calc(100% - 48px),var(--pui-home-max))}
+body[data-pui89-project="portfolio"] .nav{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:15px 0}
+body[data-pui89-project="portfolio"] .brand img{width:166px;max-height:48px}
+body[data-pui89-project="portfolio"] .navlinks{display:flex;align-items:center;justify-content:flex-end;gap:4px;flex:1}
+body[data-pui89-project="portfolio"] .navlinks>a,
+body[data-pui89-project="portfolio"] .nav-more>summary{font-size:.82rem;font-weight:700;padding:8px 10px;border-radius:8px;white-space:nowrap}
+body[data-pui89-project="portfolio"] .pui89-language-switch{margin-left:8px}
+body[data-pui89-project="portfolio"] .hero{grid-template-columns:minmax(0,1.02fr) minmax(400px,.98fr);gap:clamp(28px,4vw,58px);padding:54px 0 38px}
+body[data-pui89-project="portfolio"] .pui89-brand-lockup{display:none}
+body[data-pui89-project="portfolio"] .hero h1{max-width:700px;font-size:clamp(3.2rem,5.5vw,5.2rem);line-height:1.01;letter-spacing:-.06em;margin:16px 0 20px}
+body[data-pui89-project="portfolio"] .hero p{max-width:58ch;font-size:clamp(1.02rem,1.4vw,1.15rem);line-height:1.72}
+body[data-pui89-project="portfolio"] .hero-visual{aspect-ratio:8/5;min-height:0;height:auto;border-radius:20px}
+body[data-pui89-project="portfolio"] .hero-visual>img{object-fit:cover!important;object-position:center!important}
+body[data-pui89-project="portfolio"] .actions{gap:10px;margin-top:23px}
+body[data-pui89-project="portfolio"] .btn{font-size:.88rem;padding:10px 14px;min-height:43px}
+body[data-pui89-project="portfolio"] .hero-points{margin-top:21px;font-size:.75rem;gap:9px 15px}
+body[data-pui89-project="portfolio"] .trust-strip{margin:0 0 22px;padding:15px 18px}
+body[data-pui89-project="portfolio"] .notice{margin:0 0 8px;padding:12px 16px;font-size:.88rem}
+body[data-pui89-project="portfolio"] #projects.pui89-project-showcase{padding:38px 0 52px}
+body[data-pui89-project="portfolio"] #projects .pui89-section-heading{grid-template-columns:minmax(0,1fr) minmax(260px,.62fr);gap:24px;align-items:end}
+body[data-pui89-project="portfolio"] #projects .pui89-section-heading h2{font-size:clamp(2rem,4vw,3rem);line-height:1.04}
+body[data-pui89-project="portfolio"] #projects .pui89-project-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+body[data-pui89-project="portfolio"] #projects .pui89-project-card{border-radius:16px}
+body[data-pui89-project="portfolio"] #projects .pui89-project-image{aspect-ratio:16/9}
+body[data-pui89-project="portfolio"] #projects .pui89-project-content{padding:18px 19px 20px}
+body[data-pui89-project="portfolio"] #projects .pui89-project-content h3{font-size:1.18rem;line-height:1.24}
+body[data-pui89-project="portfolio"] #projects .pui89-project-content p{font-size:.87rem;line-height:1.6}
+body[data-pui89-project="portfolio"] #projects .pui89-project-tags span{font-size:.66rem}
+body[data-pui89-project="portfolio"] #projects .pui89-quick-explore{margin:20px 0}
+body[data-pui89-project="portfolio"] .section{padding-top:30px;padding-bottom:48px}
+body[data-pui89-project="portfolio"] #our-story{display:none}
+body[data-pui89-project="portfolio"] #main-website-qr{display:none}
+body[data-pui89-project="portfolio"] #core .grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+body[data-pui89-project="portfolio"] #contact .contact-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:1100px){
+ body[data-pui89-project="portfolio"] .nav{align-items:flex-start;flex-direction:column;gap:10px}
+ body[data-pui89-project="portfolio"] .navlinks{justify-content:flex-start;flex-wrap:wrap}
+ body[data-pui89-project="portfolio"] .hero{grid-template-columns:minmax(0,1fr) minmax(300px,.9fr);gap:24px}
+ body[data-pui89-project="portfolio"] .hero h1{font-size:clamp(2.8rem,5.6vw,4.5rem)}
+}
+@media(max-width:760px){
+ body[data-pui89-project="portfolio"] .wrap{width:min(calc(100% - 32px),var(--pui-home-max))}
+ body[data-pui89-project="portfolio"] .hero{grid-template-columns:1fr;padding:38px 0 28px;gap:22px}
+ body[data-pui89-project="portfolio"] .hero h1{font-size:clamp(2.7rem,11.5vw,4.2rem)}
+ body[data-pui89-project="portfolio"] .hero-visual{aspect-ratio:16/10}
+ body[data-pui89-project="portfolio"] #projects .pui89-section-heading{grid-template-columns:1fr;gap:8px}
+ body[data-pui89-project="portfolio"] #projects .pui89-project-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ body[data-pui89-project="portfolio"] #projects .pui89-project-content{padding:15px}
+ body[data-pui89-project="portfolio"] #projects .pui89-project-content h3{font-size:1.08rem}
+ body[data-pui89-project="portfolio"] #projects .pui89-project-content p{font-size:.82rem}
+ body[data-pui89-project="portfolio"] #core .grid{grid-template-columns:1fr}
+ body[data-pui89-project="portfolio"] #contact .contact-grid{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+ body[data-pui89-project="portfolio"] #projects .pui89-project-grid{grid-template-columns:1fr}
+ body[data-pui89-project="portfolio"] .navlinks{gap:2px}
+ body[data-pui89-project="portfolio"] .navlinks>a,body[data-pui89-project="portfolio"] .nav-more>summary{font-size:.78rem;padding:6px 8px}
+ body[data-pui89-project="portfolio"] .hero-points{gap:8px 12px}
+}
+@media(prefers-reduced-motion:reduce){body[data-pui89-project="portfolio"] *{transition:none!important;animation:none!important}}
