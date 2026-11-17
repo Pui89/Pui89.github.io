@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a free, read-only status dashboard for PUI89's six active PUI89 product repositories.
+"""Build an open-source-first, read-only status dashboard for PUI89's six active PUI89 product repositories.
 
 Uses only Python's standard library and GitHub's public REST API. No token, hosted AI,
 model downloads, third-party package, or repository write is performed by this script.
@@ -19,17 +19,17 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PROJECTS = [
     ("Coconut Harvest AI", "Pui89/Coconut-Harvest-AI", "Agricultural perception, dataset provenance, reviewed labels and leakage-safe evaluation."),
-    ("PUI89 Sentinel — All-Terrain Inspection Robot Dog", "Pui89/All-Terrain-Inspection-Robot", "Supervised quadruped inspection, terrain-aware mobility, sensor evidence and human review."),
+    ("PUI89 Sentinel — All-Terrain Exploration & Inspection Robot", "Pui89/PUI89-All-Terrain-Inspection-Robot", "Supervised quadruped inspection; first mission and operating envelope must be defined before hardware selection."),
     ("AI HOME", "Pui89/AI-Home-Safety-Robot", "Indoor home-safety observations, deterioration signals and supervised assistance."),
     ("AI NOMAD", "Pui89/AI-Mobile-Assistant-Robot", "Owner-supervised mobile assistance, environmental awareness and safe-stop behaviour."),
     ("PUI89 AI Global SUV", "Pui89/PUI89-AI-Global-SUV", "Medium-size SUV concept; human-driver-first mobility intelligence and advisory-only software research."),
-    ("EasyRide AI Motorcycle", "Pui89/AI-Motorcycle-Robotics", "Rider-centred step-through mobility concept, safety advisories and simulation-first evaluation."),
+    ("PUI89 AI Step-Through Scooter", "Pui89/AI-Step-Through-Scooter", "Rider-first two-wheel step-through scooter; advisory road-water and flood-risk awareness, human-controlled operation."),
 ]
 PLATFORM = {
     "name": "Shared AI Core",
     "repository": "Private platform repository — not publicly monitored",
     "url": None,
-    "focus": "Shared contracts, orchestration, compute intelligence, evidence gates and reusable engineering infrastructure; not an eighth product.",
+    "focus": "Shared contracts, orchestration, compute intelligence, evidence gates and reusable engineering infrastructure; not a seventh product.",
     "status": "NOT_PUBLICLY_MONITORED",
     "default_branch": None,
     "latest_commit": None,
@@ -222,7 +222,7 @@ def main() -> int:
         platform_commit = "[{}]({})".format(platform_commit, platform["latest_commit_url"])
     lines += [
         "",
-        "## Shared AI Core — platform infrastructure (not an eighth product)",
+        "## Shared AI Core — platform infrastructure (not a seventh product)",
         "",
         "- Repository: {}".format(platform["repository"]),
         "- Status: {}".format(platform["status"]),
@@ -253,9 +253,9 @@ def main() -> int:
         lines.append(f"- {limitation}")
     lines += [
         "",
-        "## Free-first policy",
+        "## Open-source-first policy",
         "",
-        "- No paid AI API, cloud GPU, third-party Python package, or model download is used by this report generator.",
+        "- This report generator uses the Python standard library and public GitHub metadata; it does not require paid AI APIs, cloud GPUs, or model downloads.",
         "- The script only reads public GitHub metadata; it does not change project repositories.",
         "- The scheduled GitHub Actions workflow publishes this report in this website repository.",
         "- Do not interpret unknown, partial, or missing data as a passing test.",
