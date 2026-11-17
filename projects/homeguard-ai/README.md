@@ -1,4 +1,7 @@
 # HOMEGUARD AI
+
+> **Portfolio status (17 November 2026):** This directory is a preserved historical research/software sandbox, not one of the six active PUI89 products. It is not an independent product or an additional project in the current portfolio. The current product scope is defined in [PUI89 Portfolio Source of Truth v1.0](../../PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.0.md). Do not use this folder's proposed capabilities as evidence of implementation or deployment.
+
 ### Multi-Modal Predictive Building Intelligence System
 
 **Detect Early. Locate Precisely. Protect Better.**
