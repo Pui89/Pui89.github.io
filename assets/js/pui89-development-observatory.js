@@ -19,14 +19,6 @@ function projectCard(p){
  card.append(el("h3","",p.number+". "+t(p.name)));
  card.append(el("span","pui89-observatory__label",lang==="th"?"ขั้นการพัฒนา":"DOCUMENTED DEVELOPMENT STAGE"));
  addStageIndicator(card,p,true);
- const readiness=el("div","pui89-observatory__readiness");
- const readinessHead=el("div","pui89-observatory__readiness-head");
- readinessHead.append(el("span","pui89-observatory__label",lang==="th"?"ความพร้อมโดยรวม":"OVERALL READINESS"));
- readinessHead.append(el("strong","pui89-observatory__percent",String(p.progressPercent??"—")+"%"));
- readiness.append(readinessHead);
- const track=el("div","pui89-observatory__progress-track");track.setAttribute("role","progressbar");track.setAttribute("aria-valuemin","0");track.setAttribute("aria-valuemax","100");track.setAttribute("aria-valuenow",String(p.progressPercent??0));
- const fill=el("span","pui89-observatory__progress-fill");fill.style.width=String(p.progressPercent??0)+"%";track.append(fill);readiness.append(track);card.append(readiness);
- if(p.progressAsOf)addField(card,lang==="th"?"ข้อมูลเปอร์เซ็นต์ ณ":"READINESS BASELINE",p.progressAsOf.slice(0,7));
  card.append(el("p","",t(p.summary)));
  addField(card,lang==="th"?"หลักฐานที่มี":"DOCUMENTED EVIDENCE",p.evidence);
  if(p.evidenceDate)addField(card,lang==="th"?"วันที่ทบทวนหลักฐาน":"EVIDENCE REVIEW DATE",p.evidenceDate);
@@ -65,13 +57,6 @@ function renderTopStatus(project){
  panel.append(name);
  const status=el("div","pui89-global-status__status",lang==="th"?"กำลังพัฒนา":"IN DEVELOPMENT");
  panel.append(status);
- const readiness=el("div","pui89-global-status__readiness");
- const readinessHead=el("div","pui89-global-status__readiness-head");
- readinessHead.append(el("span","pui89-global-status__readiness-label",lang==="th"?"ความพร้อมโดยรวม":"OVERALL READINESS"));
- readinessHead.append(el("strong","pui89-global-status__percent",String(project.progressPercent??"—")+"%"));
- readiness.append(readinessHead);
- const track=el("div","pui89-global-status__progress-track");track.setAttribute("role","progressbar");track.setAttribute("aria-valuemin","0");track.setAttribute("aria-valuemax","100");track.setAttribute("aria-valuenow",String(project.progressPercent??0));
- const fill=el("span","pui89-global-status__progress-fill");fill.style.width=String(project.progressPercent??0)+"%";track.append(fill);readiness.append(track);panel.append(readiness);
  addStageIndicator(panel,project,false);
  const stageValue=el("span","pui89-global-status__stage-value",(lang==="th"?"ระดับ ":"LEVEL ")+stageLevel(project));
  panel.lastElementChild.append(stageValue);
@@ -93,7 +78,7 @@ function render(root,data){
  section.id=portfolio?"development-observatory":"project-development-record";
  section.append(el("div","pui89-observatory__eyebrow",portfolio?"PUI89 · EVIDENCE-LED PORTFOLIO":"PUI89 · PROJECT DEVELOPMENT RECORD"));
  section.append(el("h2","",portfolio?t(data.title):t(projects[0].name)+" — "+(lang==="th"?"บันทึกการพัฒนา":"Development record")));
- section.append(el("p","pui89-observatory__intro",portfolio?(lang==="th"?"แสดงเปอร์เซ็นต์ความพร้อม ขั้นการพัฒนา หลักฐาน ข้อจำกัด และเป้าหมายถัดไปของผลิตภัณฑ์ทั้ง 6 รายการ โดยแยกความพร้อมออกจากระดับหลักฐาน":"Shows readiness percentages, documented development stages, evidence, limitations and next milestones across all six active products. Readiness and evidence maturity are reported separately."):(lang==="th"?"สรุปสถานะตามหลักฐานที่บันทึกไว้ พร้อมข้อจำกัดและงานถัดไป":"A concise record of documented work, limitations and the next milestone.")));
+ section.append(el("p","pui89-observatory__intro",portfolio?(lang==="th"?"แสดงขั้นการพัฒนาที่มีหลักฐาน ข้อจำกัด และเป้าหมายถัดไปของผลิตภัณฑ์ทั้ง 6 รายการ":"Shows evidence-backed development stages, documented work, limitations and next milestones across all six active products."):(lang==="th"?"สรุปสถานะตามหลักฐานที่บันทึกไว้ พร้อมข้อจำกัดและงานถัดไป":"A concise record of documented work, limitations and the next milestone.")));
  const meta=el("div","pui89-observatory__meta");
  meta.append(el("span","pui89-observatory__chip",(lang==="th"?"ทบทวนข้อมูลล่าสุด: ":"Last reviewed: ")+formatDate(data.asOf)));
  meta.append(el("span","pui89-observatory__chip",lang==="th"?"ข้อมูลชุดเดียวกันสำหรับเว็บไซต์ภาษาไทยและอังกฤษ":"One shared source for English and Thai pages"));
