@@ -74,6 +74,35 @@ a:hover{color:#B8F2FF}
 #pui89-image-viewer img{display:block;max-width:100%;max-height:calc(94vh - 90px);width:auto;height:auto;object-fit:contain;margin:auto;border-radius:8px}
 #pui89-image-viewer .pui89-viewer-caption{margin:9px 4px 2px;color:#B8C7DA;font-size:.9rem;text-align:center}
 @media(prefers-reduced-motion:no-preference){#pui89-image-viewer{animation:pui89-viewer-in .14s ease-out}@keyframes pui89-viewer-in{from{opacity:0;transform:scale(.985)}to{opacity:1;transform:scale(1)}}}
+
+/* Thai text containment: prevent long Thai copy from escaping cards and panels. */
+html[lang="th"] body{line-break:loose;overflow-wrap:anywhere}
+html[lang="th"] .card,
+html[lang="th"] .panel,
+html[lang="th"] .step,
+html[lang="th"] .status,
+html[lang="th"] .visual,
+html[lang="th"] .cta,
+html[lang="th"] .grid > *,
+html[lang="th"] .two > *,
+html[lang="th"] .roadmap > *{min-width:0;max-width:100%}
+html[lang="th"] .card p,
+html[lang="th"] .card li,
+html[lang="th"] .panel p,
+html[lang="th"] .panel li,
+html[lang="th"] .step span,
+html[lang="th"] .status p,
+html[lang="th"] figcaption,
+html[lang="th"] td,
+html[lang="th"] th{overflow-wrap:anywhere;word-break:normal;line-height:1.8}
+html[lang="th"] .status{flex-wrap:wrap}
+html[lang="th"] img,
+html[lang="th"] svg{max-width:100%}
+@media(max-width:560px){
+ html[lang="th"] .card,html[lang="th"] .panel{padding:17px}
+ html[lang="th"] .status{padding:14px}
+}
+
 </style><meta name="googlebot" content="index,follow,max-image-preview:large">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="PUI89 AI Robotics">
