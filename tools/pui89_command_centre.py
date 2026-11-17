@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a free, read-only status dashboard for PUI89's all seven PUI89 project repositories.
+"""Build a free, read-only status dashboard for PUI89's six active PUI89 product repositories.
 
 Uses only Python's standard library and GitHub's public REST API. No token, hosted AI,
 model downloads, third-party package, or repository write is performed by this script.
@@ -19,18 +19,17 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PROJECTS = [
     ("Coconut Harvest AI", "Pui89/Coconut-Harvest-AI", "Agricultural perception, dataset provenance, reviewed labels and leakage-safe evaluation."),
-    ("Extreme Flood Rescue AI", "Pui89/Extreme-Flood-Rescue-AI", "Flood perception, scenario coverage, navigation and fail-safe evidence."),
     ("PUI89 Sentinel — All-Terrain Inspection Robot Dog", "Pui89/All-Terrain-Inspection-Robot", "Supervised quadruped inspection, terrain-aware mobility, sensor evidence and human review."),
     ("AI HOME", "Pui89/AI-Home-Safety-Robot", "Indoor home-safety observations, deterioration signals and supervised assistance."),
     ("AI NOMAD", "Pui89/AI-Mobile-Assistant-Robot", "Owner-supervised mobile assistance, environmental awareness and safe-stop behaviour."),
     ("PUI89 AI Global SUV", "Pui89/PUI89-AI-Global-SUV", "Medium-size SUV concept; human-driver-first mobility intelligence and advisory-only software research."),
-    ("EasyRide AI Motorcycle", "Pui89/AI-Motorcycle-Robotics", "Rider-centred step-through mobility concept, safety advisories and simulation-first evaluation."),
+    ("PUI89 AI Step-Through Scooter", "Pui89/AI-Step-Through-Scooter", "Rider-centred step-through mobility concept, safety advisories and simulation-first evaluation."),
 ]
 PLATFORM = {
     "name": "Shared AI Core",
     "repository": "Private platform repository — not publicly monitored",
     "url": None,
-    "focus": "Shared contracts, orchestration, compute intelligence, evidence gates and reusable engineering infrastructure; not an eighth product.",
+    "focus": "Shared contracts, orchestration, compute intelligence, evidence gates and reusable engineering infrastructure; not a seventh product.",
     "status": "NOT_PUBLICLY_MONITORED",
     "default_branch": None,
     "latest_commit": None,
@@ -123,7 +122,6 @@ def collect(project: tuple[str, str, str]) -> dict:
                 "Rule-based simulation evaluation": (
                     "coconut simulation evaluation",
                     "coconut harvest ai simulation evaluation",
-                    "flood rescue ai simulation evaluation",
                     "quadruped robot dog industrial inspection terrain mobility simulation evaluation",
                 ),
                 "Coconut dataset evidence audit": ("coconut dataset evidence audit", "dataset provenance, hashes and split integrity"),
@@ -174,7 +172,7 @@ def main() -> int:
             "This report reads public repository metadata and recent workflow runs; it does not execute project tests.",
             "A missing workflow run is unknown, not a passing result or proof of failure.",
             "Only the most recent 50 repository workflow runs are scanned; a safeguard absent from that window is unknown.",
-            "Exactly seven product repositories are monitored; Shared AI Core is monitored separately as shared platform infrastructure and is not counted as an eighth product. The website repository is not a product.",
+            "Exactly six active product repositories are monitored; Shared AI Core is monitored separately as shared platform infrastructure and is not counted as a seventh product. The website repository is not a product.",
             "Headline workflow and safeguard status is filtered to the repository default branch; other-branch runs are counted separately and do not prove default-branch health.",
             "A successful workflow does not validate real-world robot performance or dataset correctness.",
             "The Coconut dataset evidence audit runs only where its workflow is configured; not_seen_in_recent_runs for other projects means not observed, not a failure.",
