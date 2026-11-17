@@ -335,3 +335,19 @@ body #pui89-global-project-status.pui89-global-status{
 .pui89-observatory__stage-indicator{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:7px 0 9px}
 .pui89-observatory__stage-badge{display:inline-flex;align-items:center;padding:4px 8px;border-left:3px solid currentColor;border-radius:4px 4px 4px 0;font-size:.62rem;font-weight:900;letter-spacing:.08em;line-height:1.2}
 .pui89-observatory__stage-name{font-size:.82rem;font-weight:850;color:#F3F7FF}
+
+
+/* Portfolio readiness percentages — independent from the evidence maturity stage. */
+.pui89-observatory__readiness{display:grid;gap:7px;margin:12px 0 15px;padding:12px;border:1px solid rgba(66,217,255,.22);border-radius:10px;background:rgba(66,217,255,.045)}
+.pui89-observatory__readiness-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.pui89-observatory__percent{color:#F3F7FF;font-size:1.45rem;font-weight:900;font-variant-numeric:tabular-nums;line-height:1}
+.pui89-observatory__progress-track{display:block;width:100%;height:8px;overflow:hidden;border-radius:99px;background:rgba(159,180,201,.18)}
+.pui89-observatory__progress-fill{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#159CCB,#42D9FF)}
+#pui89-global-project-status .pui89-global-status__readiness{display:grid;gap:5px}
+#pui89-global-project-status .pui89-global-status__readiness-head{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+#pui89-global-project-status .pui89-global-status__readiness-label{color:#9FB4C9;font-size:.56rem;font-weight:850;letter-spacing:.08em}
+#pui89-global-project-status .pui89-global-status__percent{color:#42D9FF;font-size:1.7rem;font-weight:900;line-height:1;font-variant-numeric:tabular-nums}
+#pui89-global-project-status .pui89-global-status__progress-track{display:block;width:100%;height:7px;overflow:hidden;border-radius:99px;background:rgba(159,180,201,.18)}
+#pui89-global-project-status .pui89-global-status__progress-fill{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#159CCB,#42D9FF);transition:width .25s ease}
+#pui89-global-project-status .pui89-global-status__stage .pui89-global-status__date{margin-top:2px;padding-top:0;border-top:0;color:#91A8BC;font-size:.58rem;font-weight:650}
+@media(prefers-reduced-motion:reduce){#pui89-global-project-status .pui89-global-status__progress-fill{transition:none}}
