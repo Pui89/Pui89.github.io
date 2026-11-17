@@ -65,6 +65,12 @@
           },
           "url": "https://github.com/Pui89/Coconut-Harvest-AI/tree/main/tools"
         }
+      ],
+      "completedGates": [
+        "requirements",
+        "architecture",
+        "software-foundation",
+        "automated-tests"
       ]
     },
     {
@@ -122,6 +128,9 @@
           },
           "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/tree/main/docs"
         }
+      ],
+      "completedGates": [
+        "requirements"
       ]
     },
     {
@@ -179,6 +188,11 @@
           },
           "url": "https://github.com/Pui89/AI-Home-Safety-Robot/tree/main/docs"
         }
+      ],
+      "completedGates": [
+        "requirements",
+        "architecture",
+        "software-foundation"
       ]
     },
     {
@@ -236,6 +250,10 @@
           },
           "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/tree/main/docs"
         }
+      ],
+      "completedGates": [
+        "requirements",
+        "software-foundation"
       ]
     },
     {
@@ -293,6 +311,11 @@
           },
           "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/tree/main/docs"
         }
+      ],
+      "completedGates": [
+        "requirements",
+        "architecture",
+        "software-foundation"
       ]
     },
     {
@@ -350,6 +373,9 @@
           },
           "url": "https://github.com/Pui89/AI-Step-Through-Scooter/tree/main/docs"
         }
+      ],
+      "completedGates": [
+        "requirements"
       ]
     }
   ],
@@ -420,5 +446,88 @@
       "th": "โครงสร้างพื้นฐานร่วมสำหรับสัญญาข้อมูล การประสานงาน ความฉลาดด้านการประมวลผล เงื่อนไขหลักฐาน และเครื่องมือวิศวกรรม ไม่ใช่ผลิตภัณฑ์"
     },
     "url": "https://pui89.github.io/ai-core.html"
+  },
+  "progressFramework": {
+    "title": {
+      "en": "Verified engineering checklist",
+      "th": "รายการตรวจสอบความคืบหน้าทางวิศวกรรม"
+    },
+    "total": 10,
+    "note": {
+      "en": "Progress is the share of 10 engineering gates supported by the current evidence register (10 points per gate). It is separate from the development-stage label and is not commercial readiness, product completeness, certification or proof of physical performance.",
+      "th": "เปอร์เซ็นต์คือสัดส่วนของประตูตรวจสอบทางวิศวกรรม 10 รายการที่มีหลักฐานรองรับในทะเบียนปัจจุบัน (รายการละ 10 คะแนน) แยกจากป้ายขั้นการพัฒนา และไม่ใช่คะแนนความพร้อมเชิงพาณิชย์ ความสมบูรณ์ของผลิตภัณฑ์ การรับรอง หรือหลักฐานสมรรถนะทางกายภาพ"
+    },
+    "gates": [
+      {
+        "id": "requirements",
+        "label": {
+          "en": "Product scope and requirements",
+          "th": "ขอบเขตผลิตภัณฑ์และข้อกำหนด"
+        }
+      },
+      {
+        "id": "architecture",
+        "label": {
+          "en": "System architecture and interfaces",
+          "th": "สถาปัตยกรรมระบบและส่วนเชื่อมต่อ"
+        }
+      },
+      {
+        "id": "software-foundation",
+        "label": {
+          "en": "Software implementation foundation",
+          "th": "พื้นฐานการพัฒนาซอฟต์แวร์"
+        }
+      },
+      {
+        "id": "automated-tests",
+        "label": {
+          "en": "Documented automated test evidence",
+          "th": "หลักฐานการทดสอบอัตโนมัติที่บันทึกไว้"
+        }
+      },
+      {
+        "id": "reproducible-evaluation",
+        "label": {
+          "en": "Reproducible evaluation results",
+          "th": "ผลประเมินที่ทำซ้ำได้"
+        }
+      },
+      {
+        "id": "simulation",
+        "label": {
+          "en": "Simulation results and analysis",
+          "th": "ผลการจำลองและการวิเคราะห์"
+        }
+      },
+      {
+        "id": "integrated-prototype",
+        "label": {
+          "en": "Integrated physical prototype",
+          "th": "ต้นแบบทางกายภาพที่บูรณาการแล้ว"
+        }
+      },
+      {
+        "id": "bench-testing",
+        "label": {
+          "en": "Controlled bench testing",
+          "th": "การทดสอบบนแท่นแบบควบคุม"
+        }
+      },
+      {
+        "id": "field-validation",
+        "label": {
+          "en": "Field testing and validation",
+          "th": "การทดสอบและยืนยันภาคสนาม"
+        }
+      },
+      {
+        "id": "independent-validation",
+        "label": {
+          "en": "Independent validation / applicable certification",
+          "th": "การตรวจสอบอิสระ / การรับรองที่เกี่ยวข้อง"
+        }
+      }
+    ]
   }
 }
