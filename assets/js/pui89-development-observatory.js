@@ -19,6 +19,19 @@ function projectCard(p){
  card.append(el("strong","pui89-observatory__stage",t(p.stageLabel)));
  card.append(el("p","",t(p.summary)));
  addField(card,lang==="th"?"หลักฐานที่มี":"DOCUMENTED EVIDENCE",p.evidence);
+ if(p.evidenceDate)addField(card,lang==="th"?"วันที่ทบทวนหลักฐาน":"EVIDENCE REVIEW DATE",p.evidenceDate);
+ if(Array.isArray(p.evidenceLinks)&&p.evidenceLinks.length){
+  card.append(el("span","pui89-observatory__label",lang==="th"?"ลิงก์หลักฐาน":"EVIDENCE LINKS"));
+  const evidenceLinks=el("div","pui89-observatory__links");
+  p.evidenceLinks.forEach(item=>{
+   const evidenceLink=el("a","",t(item.label));
+   evidenceLink.href=item.url;
+   evidenceLink.target="_blank";
+   evidenceLink.rel="noopener noreferrer";
+   evidenceLinks.append(evidenceLink);
+  });
+  card.append(evidenceLinks);
+ }
  addField(card,lang==="th"?"ข้อจำกัดและสิ่งที่ยังไม่ยืนยัน":"LIMITATIONS & UNVALIDATED CAPABILITIES",p.blockers);
  addField(card,lang==="th"?"เป้าหมายถัดไป":"NEXT MILESTONE",p.next);
  const links=el("div","pui89-observatory__links");
