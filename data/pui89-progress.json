@@ -75,7 +75,7 @@
     },
     {
       "id": "sentinel",
-      "number": 3,
+      "number": 2,
       "name": {
         "en": "PUI89 Sentinel — All-Terrain Exploration & Inspection Robot",
         "th": "PUI89 Sentinel — หุ่นยนต์สำรวจและตรวจสอบทุกสภาพพื้นที่"
@@ -138,7 +138,7 @@
     },
     {
       "id": "ai-home",
-      "number": 4,
+      "number": 3,
       "name": {
         "en": "PUI89 AI HOME",
         "th": "PUI89 AI HOME"
@@ -201,7 +201,7 @@
     },
     {
       "id": "ai-nomad",
-      "number": 5,
+      "number": 4,
       "name": {
         "en": "PUI89 AI NOMAD",
         "th": "PUI89 AI NOMAD"
@@ -264,7 +264,7 @@
     },
     {
       "id": "robot-car",
-      "number": 6,
+      "number": 5,
       "name": {
         "en": "PUI89 AI Global SUV",
         "th": "PUI89 AI Global SUV"
@@ -327,7 +327,7 @@
     },
     {
       "id": "motorcycle",
-      "number": 7,
+      "number": 6,
       "name": {
         "en": "PUI89 AI Step-Through Scooter",
         "th": "PUI89 AI Step-Through Scooter"
