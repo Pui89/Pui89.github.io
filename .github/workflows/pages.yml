@@ -55,6 +55,9 @@ jobs:
           ai-robot-motorcycle.html|ai-robot-motorcycle-th.html
           PROJECTS
 
+      - name: Test third-party JavaScript security guard
+        run: python3 -m unittest discover -s tests -p 'test_third_party_script_guard.py' -v
+
       - name: Enforce third-party JavaScript supply-chain policy
         run: python3 scripts/check_third_party_scripts.py
 
