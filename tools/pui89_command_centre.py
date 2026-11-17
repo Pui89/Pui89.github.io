@@ -20,8 +20,8 @@ ROOT = Path(__file__).resolve().parents[1]
 PROJECTS = [
     ("Coconut Harvest AI", "Pui89/Coconut-Harvest-AI", "Agricultural perception, dataset provenance, reviewed labels and leakage-safe evaluation."),
     ("PUI89 Sentinel — All-Terrain Exploration & Inspection Robot", "Pui89/PUI89-All-Terrain-Inspection-Robot", "Supervised quadruped inspection; first mission and operating envelope must be defined before hardware selection."),
-    ("AI HOME", "Pui89/AI-Home-Safety-Robot", "Indoor home-safety observations, deterioration signals and supervised assistance."),
-    ("AI NOMAD", "Pui89/AI-Mobile-Assistant-Robot", "Owner-supervised mobile assistance, environmental awareness and safe-stop behaviour."),
+    ("PUI89 AI HOME", "Pui89/AI-Home-Safety-Robot", "Indoor four-wheel home assistant; complete robot mass target 8 kg and maximum 10 kg."),
+    ("PUI89 AI NOMAD", "Pui89/AI-Mobile-Assistant-Robot", "Ground-use four-wheel mobile assistant robot; not luggage or airline baggage; storage is secondary."),
     ("PUI89 AI Global SUV", "Pui89/PUI89-AI-Global-SUV", "Medium-size SUV concept; human-driver-first mobility intelligence and advisory-only software research."),
     ("PUI89 AI Step-Through Scooter", "Pui89/AI-Step-Through-Scooter", "Rider-first two-wheel step-through scooter; advisory road-water and flood-risk awareness, human-controlled operation."),
 ]
