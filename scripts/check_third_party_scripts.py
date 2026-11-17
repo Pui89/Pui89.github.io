@@ -132,7 +132,7 @@ def main() -> int:
             if date.fromisoformat(entry["expires_on"]) < date.today():
                 errors.append(f"{rel}: expired third-party script approval: {src}")
             integrity = item.get("integrity", "")
-            if not re.search(r"(?:^|\\s)sha(?:256|384|512)-[A-Za-z0-9+/=]+(?:\\s|$)", integrity):
+            if not re.search(r"(?:^|\s)sha(?:256|384|512)-[A-Za-z0-9+/=]+(?:\s|$)", integrity):
                 errors.append(f"{rel}: allowlisted third-party script is missing a valid SRI integrity attribute: {src}")
             if item.get("crossorigin", "").lower() != "anonymous":
                 errors.append(f"{rel}: allowlisted third-party script must set crossorigin=\"anonymous\": {src}")
