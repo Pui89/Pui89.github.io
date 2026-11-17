@@ -48,6 +48,23 @@
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
+      ],
+      "evidenceDate": "2026-11-17",
+      "evidenceLinks": [
+        {
+          "label": {
+            "en": "Repository tests",
+            "th": "Repository tests"
+          },
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/tree/main/tests"
+        },
+        {
+          "label": {
+            "en": "Evaluation tools",
+            "th": "Evaluation tools"
+          },
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/tree/main/tools"
+        }
       ]
     },
     {
@@ -87,6 +104,23 @@
             "en": "Current Sentinel identity and evidence baseline established for the All-Terrain Exploration & Inspection Robot. No physical validation evidence is carried forward.",
             "th": "กำหนดอัตลักษณ์และค่าฐานหลักฐานของ Sentinel ใหม่เป็นหุ่นยนต์สำรวจและตรวจสอบทุกสภาพพื้นที่ โดยไม่นำหลักฐานการตรวจสอบทางกายภาพจากขอบเขตเดิมมาใช้"
           }
+        }
+      ],
+      "evidenceDate": "2026-11-17",
+      "evidenceLinks": [
+        {
+          "label": {
+            "en": "Repository tests",
+            "th": "Repository tests"
+          },
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/tree/main/tests"
+        },
+        {
+          "label": {
+            "en": "Engineering documentation",
+            "th": "Engineering documentation"
+          },
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/tree/main/docs"
         }
       ]
     },
@@ -128,6 +162,23 @@
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
+      ],
+      "evidenceDate": "2026-11-17",
+      "evidenceLinks": [
+        {
+          "label": {
+            "en": "Repository tests",
+            "th": "Repository tests"
+          },
+          "url": "https://github.com/Pui89/AI-Home-Safety-Robot/tree/main/tests"
+        },
+        {
+          "label": {
+            "en": "Product documentation",
+            "th": "Product documentation"
+          },
+          "url": "https://github.com/Pui89/AI-Home-Safety-Robot/tree/main/docs"
+        }
       ]
     },
     {
@@ -167,6 +218,23 @@
             "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
+        }
+      ],
+      "evidenceDate": "2026-11-17",
+      "evidenceLinks": [
+        {
+          "label": {
+            "en": "Repository tests",
+            "th": "Repository tests"
+          },
+          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/tree/main/tests"
+        },
+        {
+          "label": {
+            "en": "Product documentation",
+            "th": "Product documentation"
+          },
+          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/tree/main/docs"
         }
       ]
     },
@@ -208,6 +276,23 @@
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
         }
+      ],
+      "evidenceDate": "2026-11-17",
+      "evidenceLinks": [
+        {
+          "label": {
+            "en": "Repository tests",
+            "th": "Repository tests"
+          },
+          "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/tree/main/tests"
+        },
+        {
+          "label": {
+            "en": "Product documentation",
+            "th": "Product documentation"
+          },
+          "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/tree/main/docs"
+        }
       ]
     },
     {
@@ -247,6 +332,23 @@
             "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
+        }
+      ],
+      "evidenceDate": "2026-11-17",
+      "evidenceLinks": [
+        {
+          "label": {
+            "en": "Repository tests",
+            "th": "Repository tests"
+          },
+          "url": "https://github.com/Pui89/AI-Step-Through-Scooter/tree/main/tests"
+        },
+        {
+          "label": {
+            "en": "Product documentation",
+            "th": "Product documentation"
+          },
+          "url": "https://github.com/Pui89/AI-Step-Through-Scooter/tree/main/docs"
         }
       ]
     }
