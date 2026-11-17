@@ -451,3 +451,33 @@ body #pui89-global-project-status.pui89-global-status{position:relative!importan
   #projects .pui89-card-status .pui89-card-status__date,
   #pui89-global-project-status .pui89-global-status__date{font-size:.53rem!important}
 }
+
+
+/* 2026-11-18: unify status-square geometry as well as typography.
+   One shared size keeps all six portfolio cards and product pages visually aligned. */
+#projects .pui89-card-status,
+#pui89-global-project-status.pui89-global-status{
+  box-sizing:border-box!important;
+  width:144px!important;height:144px!important;min-height:144px!important;
+  flex:0 0 144px!important;
+  padding:10px!important;gap:6px!important;
+  border-radius:14px!important;
+  justify-content:space-between!important;
+}
+#projects .pui89-card-status .pui89-observatory__stage-badge,
+#pui89-global-project-status .pui89-global-status__stage-tab{
+  max-width:108px!important;min-height:0!important;
+  padding:5px 7px!important;
+}
+#projects .pui89-card-status .pui89-card-status__date,
+#pui89-global-project-status .pui89-global-status__date{
+  margin-top:0!important;padding-top:5px!important;
+  min-width:0!important;overflow-wrap:anywhere!important;
+}
+@media(max-width:640px){
+  #projects .pui89-card-status,
+  #pui89-global-project-status.pui89-global-status{
+    width:128px!important;height:128px!important;min-height:128px!important;
+    flex:0 0 128px!important;padding:9px!important;gap:5px!important;
+  }
+}
