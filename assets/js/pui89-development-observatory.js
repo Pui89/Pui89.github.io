@@ -46,7 +46,7 @@ function projectCard(p,framework){
  addField(card,lang==="th"?"ข้อจำกัดและสิ่งที่ยังไม่ยืนยัน":"LIMITATIONS & UNVALIDATED CAPABILITIES",p.blockers);
  addField(card,lang==="th"?"เป้าหมายถัดไป":"NEXT MILESTONE",p.next);
  const links=el("div","pui89-observatory__links");
- const urls={coconut:["coconut.html","coconut-th.html"],"flood-rescue":["flood-rescue.html","flood-rescue-th.html"],sentinel:["sentinel.html","sentinel-th.html"],"ai-home":["home.html","home-th.html"],"ai-nomad":["nomad.html","nomad-th.html"],"robot-car":["ai-global-suv.html","ai-global-suv-th.html"],motorcycle:["ai-robot-motorcycle.html","ai-robot-motorcycle-th.html"]};
+ const urls={coconut:["coconut.html","coconut-th.html"],sentinel:["sentinel.html","sentinel-th.html"],"ai-home":["home.html","home-th.html"],"ai-nomad":["nomad.html","nomad-th.html"],"robot-car":["ai-global-suv.html","ai-global-suv-th.html"],motorcycle:["ai-robot-motorcycle.html","ai-robot-motorcycle-th.html"]};
  const pair=urls[p.id]||["#","#"],page=lang==="th"?pair[1]:pair[0];
  const a=el("a","",lang==="th"?"เปิดหน้าโครงการ ↗":"Project page ↗");a.href="/"+page;links.append(a);
  const gh=el("a","","GitHub ↗");gh.href="https://github.com/"+p.repo;gh.target="_blank";gh.rel="noopener noreferrer";links.append(gh);
@@ -104,7 +104,7 @@ function render(root,data){
  section.id=portfolio?"development-observatory":"project-development-record";
  section.append(el("div","pui89-observatory__eyebrow",portfolio?"PUI89 · EVIDENCE-LED PORTFOLIO":"PUI89 · PROJECT DEVELOPMENT RECORD"));
  section.append(el("h2","",portfolio?t(data.title):t(projects[0].name)+" — "+(lang==="th"?"บันทึกการพัฒนา":"Development record")));
- section.append(el("p","pui89-observatory__intro",portfolio?(lang==="th"?"แสดงขั้นการพัฒนาที่มีหลักฐานรองรับ ข้อจำกัด และเป้าหมายถัดไปของทั้ง 7 โครงการ โดยไม่ใช้คะแนนความพร้อมเชิงพาณิชย์":"Documented development stages, evidence, limitations and next milestones across all seven projects. No commercial-readiness percentages are used."):(lang==="th"?"สรุปสถานะตามหลักฐานที่บันทึกไว้ พร้อมข้อจำกัดและงานถัดไป":"A concise record of documented work, limitations and the next milestone.")));
+ section.append(el("p","pui89-observatory__intro",portfolio?(lang==="th"?"แสดงขั้นการพัฒนาที่มีหลักฐานรองรับ ข้อจำกัด และเป้าหมายถัดไปของทั้ง 6 โครงการ โดยไม่ใช้คะแนนความพร้อมเชิงพาณิชย์":"Documented development stages, evidence, limitations and next milestones across all six projects. No commercial-readiness percentages are used."):(lang==="th"?"สรุปสถานะตามหลักฐานที่บันทึกไว้ พร้อมข้อจำกัดและงานถัดไป":"A concise record of documented work, limitations and the next milestone.")));
  const meta=el("div","pui89-observatory__meta");
  meta.append(el("span","pui89-observatory__chip",(lang==="th"?"ทบทวนข้อมูลล่าสุด: ":"Last reviewed: ")+formatDate(data.asOf)));
  meta.append(el("span","pui89-observatory__chip",lang==="th"?"ข้อมูลชุดเดียวกันสำหรับเว็บไซต์ภาษาไทยและอังกฤษ":"One shared source for English and Thai pages"));
