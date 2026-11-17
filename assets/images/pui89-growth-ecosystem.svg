@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
-<title id="title">PUI89 Shared AI Core supporting seven independent project lines</title>
-<desc id="desc">The shared PUI89 AI Core connects seven independent projects: Coconut Harvest AI, Extreme Flood Rescue AI, PUI89 Sentinel Multimodal Screening AI, AI HOME, AI NOMAD, AI Global SUV and AI Step-Through Scooter.</desc>
+<title id="title">PUI89 Shared AI Core supporting six independent project lines</title>
+<desc id="desc">The shared PUI89 AI Core connects six independent projects: Coconut Harvest AI, PUI89 Sentinel, AI HOME, AI NOMAD, AI Global SUV and AI Step-Through Scooter.</desc>
 <defs>
   <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#172a42"/><stop offset="1" stop-color="#0b1220"/></linearGradient>
   <linearGradient id="core" x2="1" y2="1"><stop stop-color="#225c62"/><stop offset="1" stop-color="#183c4d"/></linearGradient>
@@ -14,7 +14,6 @@
 <g fill="url(#card)" stroke="#49647d" stroke-width="2">
  <rect x="45" y="82" width="320" height="135" rx="18"/>
  <rect x="45" y="282" width="320" height="135" rx="18"/>
- <rect x="45" y="500" width="320" height="135" rx="18"/>
  <rect x="835" y="48" width="320" height="135" rx="18"/>
  <rect x="835" y="208" width="320" height="135" rx="18"/>
  <rect x="835" y="368" width="320" height="135" rx="18"/>
@@ -27,17 +26,16 @@
  <text x="600" y="365" font-size="16" fill="#c4d5e5">Perception · World State</text>
  <text x="600" y="393" font-size="16" fill="#c4d5e5">Uncertainty · Safety Gates</text>
  <text x="600" y="421" font-size="16" fill="#c4d5e5">Evidence · Evaluation</text>
- <text x="600" y="465" font-size="14" fill="#9bd4c5" font-weight="700">ONE CORE · SEVEN PROJECTS</text>
+ <text x="600" y="465" font-size="14" fill="#9bd4c5" font-weight="700">ONE CORE · SIX PROJECTS</text>
  <g font-size="14" fill="#9bd4c5" font-weight="750">
   <text x="205" y="116">01 · AGRICULTURE</text><text x="995" y="82">02 · EMERGENCY RESPONSE</text>
-  <text x="205" y="316">03 · RESPONSIBLE INSPECTION</text><text x="995" y="242">04 · HOME ROBOTICS</text>
-  <text x="205" y="534">05 · MOBILE ROBOTICS</text><text x="995" y="402">06 · SMART MOBILITY</text>
-  <text x="995" y="562">07 · SMART MOBILITY</text>
+  <text x="205" y="316">02 · RESPONSIBLE INSPECTION</text><text x="995" y="242">04 · MOBILE ROBOTICS</text>
+  <text x="995" y="402">05 · SMART MOBILITY</text>
+  <text x="995" y="562">06 · SMART MOBILITY</text>
  </g>
  <g font-size="21" font-weight="800">
   <text x="205" y="151">Coconut Harvest AI</text>
-  <text x="205" y="351">Extreme Flood Rescue AI</text>
-  <text x="205" y="569">PUI89 Sentinel</text>
+  <text x="205" y="351">PUI89 Sentinel</text>
   <text x="995" y="117">AI HOME</text>
   <text x="995" y="277">AI NOMAD</text>
   <text x="995" y="437">AI Global SUV</text>
@@ -45,8 +43,7 @@
  </g>
  <g font-size="13" fill="#c4d5e5">
   <text x="205" y="179">Harvest perception and assistance research</text>
-  <text x="205" y="379">Flood response and rescue-system research</text>
-  <text x="205" y="597">Multimodal screening · human review</text>
+  <text x="205" y="379">All-terrain exploration and inspection</text>
   <text x="995" y="145">Indoor home-assistance robotics</text>
   <text x="995" y="305">Outdoor mobile-assistant robotics</text>
   <text x="995" y="465">Vehicle-context safety intelligence</text>
