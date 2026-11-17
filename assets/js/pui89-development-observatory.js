@@ -67,6 +67,12 @@ function render(root,data){
   const method=el("p","pui89-observatory__method",t(data.maturityFramework.note));
   section.append(method);
  }
+ if(data.maturityFramework?.labels?.length){
+  const labels=el("div","pui89-observatory__meta");
+  labels.append(el("span","pui89-observatory__label",lang==="th"?"ป้ายสถานะตามหลักฐาน":"EVIDENCE MATURITY LABELS"));
+  data.maturityFramework.labels.forEach(item=>labels.append(el("span","pui89-observatory__chip",t(item))));
+  section.append(labels);
+ }
  if(data.platform){
   const platform=el("article","pui89-observatory__platform");
   platform.append(el("span","pui89-observatory__eyebrow",lang==="th"?"โครงสร้างพื้นฐานร่วม":"SHARED FOUNDATION"));
