@@ -611,7 +611,37 @@ a:hover{color:#B8F2FF!important}
 .card a:not(.project-art-link){position:relative;z-index:2}
 .card .project-art-link img{cursor:pointer}
 @media(hover:hover){.card:has(.project-art-link):hover{border-color:rgba(66,217,255,.72);box-shadow:0 18px 42px rgba(0,0,0,.24),0 0 24px rgba(66,217,255,.12)}}
-  </style>
+  
+/* PUI89 flagship portfolio refinement — scoped to the six-product showcase. */
+#projects.pui89-project-showcase{position:relative;isolation:isolate;padding:clamp(34px,5vw,64px) 0 70px}
+#projects.pui89-project-showcase:before{content:"";position:absolute;inset:0 -3vw;z-index:-1;border:1px solid rgba(169,199,214,.12);border-radius:28px;background:linear-gradient(145deg,rgba(17,34,53,.62),rgba(7,17,31,.18))}
+#projects .pui89-section-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.72fr);gap:28px;align-items:end}
+#projects .pui89-section-heading h2{max-width:760px;font-size:clamp(2.1rem,4.6vw,3.35rem);letter-spacing:-.055em;line-height:1.02;margin-top:12px}
+#projects .pui89-section-heading>p{max-width:480px;color:var(--muted);font-size:1rem;line-height:1.7;margin:0 0 5px}
+#projects .pui89-quick-explore{display:flex;gap:9px;flex-wrap:wrap;margin:25px 0 22px;padding:0}
+#projects .pui89-quick-explore a{display:inline-flex;align-items:center;min-height:38px;padding:8px 12px;border:1px solid rgba(169,199,214,.18);border-radius:999px;background:rgba(10,22,36,.72);color:#d9e7f3;text-decoration:none;font-size:.78rem;font-weight:750;transition:border-color .18s ease,background .18s ease,transform .18s ease}
+#projects .pui89-quick-explore a:hover{border-color:var(--accent);background:rgba(66,217,255,.08);transform:translateY(-1px)}
+#projects .pui89-project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
+#projects .pui89-project-card{min-width:0;display:flex;flex-direction:column;overflow:hidden;border:1px solid rgba(169,199,214,.19);border-radius:18px;background:linear-gradient(160deg,rgba(23,43,66,.98),rgba(10,22,37,.98));box-shadow:0 12px 32px rgba(0,0,0,.13);transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}
+#projects .pui89-project-card:hover{transform:translateY(-5px);border-color:rgba(66,217,255,.52);box-shadow:0 22px 48px rgba(0,0,0,.25)}
+#projects .pui89-project-image{position:relative;display:block;overflow:hidden;aspect-ratio:16/10;background:linear-gradient(135deg,#12283d,#091522);border-bottom:1px solid rgba(169,199,214,.16)}
+#projects .pui89-project-image img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .45s ease}
+#projects .pui89-project-card:hover .pui89-project-image img{transform:scale(1.035)}
+#projects .pui89-image-index{position:absolute;left:14px;bottom:13px;padding:6px 9px;border:1px solid rgba(255,255,255,.22);border-radius:7px;background:rgba(4,13,23,.78);backdrop-filter:blur(8px);color:#f1f7fc;font-size:.7rem;font-weight:850;letter-spacing:.1em}
+#projects .pui89-project-content{display:flex;flex:1;flex-direction:column;align-items:flex-start;padding:21px 22px 22px}
+#projects .pui89-project-domain{color:var(--accent);font-size:.68rem;font-weight:850;letter-spacing:.14em;line-height:1.4}
+#projects .pui89-project-content h3{font-size:clamp(1.18rem,1.6vw,1.42rem);line-height:1.22;letter-spacing:-.025em;margin:10px 0}
+#projects .pui89-project-content p{color:#b8c8d8;font-size:.9rem;line-height:1.65;margin:0 0 17px}
+#projects .pui89-project-tags{display:flex;gap:7px;flex-wrap:wrap;margin:auto 0 19px}
+#projects .pui89-project-tags span{padding:5px 9px;border:1px solid rgba(169,199,214,.17);border-radius:999px;background:rgba(4,14,25,.28);color:#cfdae5;font-size:.69rem;line-height:1.35}
+#projects .pui89-explore-button{display:inline-flex;align-items:center;gap:9px;min-height:40px;padding:9px 13px;border:1px solid rgba(66,217,255,.4);border-radius:9px;background:rgba(66,217,255,.08);color:#8ceaff;text-decoration:none;font-size:.82rem;font-weight:850;transition:background .18s ease,border-color .18s ease}
+#projects .pui89-explore-button:hover{background:rgba(66,217,255,.16);border-color:var(--accent)}
+#projects .pui89-project-footnote{max-width:900px;margin:22px 0 0;padding:14px 17px;border-left:2px solid var(--accent);background:rgba(8,19,32,.62);color:var(--muted);font-size:.82rem;line-height:1.6}
+@media(max-width:980px){#projects .pui89-project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#projects .pui89-section-heading{grid-template-columns:1fr;gap:10px}}
+@media(max-width:620px){#projects .pui89-project-grid{grid-template-columns:1fr;gap:14px}#projects .pui89-project-image{aspect-ratio:16/9}#projects .pui89-project-content{padding:19px}#projects .pui89-quick-explore{flex-wrap:nowrap;overflow-x:auto;padding:0 0 8px;scroll-snap-type:x proximity}#projects .pui89-quick-explore a{flex:0 0 auto;scroll-snap-align:start}#projects.pui89-project-showcase:before{inset:0 -10px}}
+@media(prefers-reduced-motion:reduce){#projects .pui89-project-card,#projects .pui89-project-image img,#projects .pui89-quick-explore a,#projects .pui89-explore-button{transition:none!important}#projects .pui89-project-card:hover{transform:none}}
+
+</style>
 <link rel="stylesheet" href="/assets/css/pui89-project-design-system.css?v=20261110-nav-unified">
   <link rel="stylesheet" href="assets/css/pui89-design-system.css?v=20261108-professional">
   <link rel="stylesheet" href="/assets/css/pui89-project-progress.css?v=20261117-maturity-tabs-v1">
