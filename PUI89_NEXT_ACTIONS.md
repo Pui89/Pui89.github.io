@@ -1,47 +1,56 @@
-# PUI89 Engineering Roadmap
+# PUI89 Engineering Roadmap — Current Actions
 
-Updated: 2026-10-30
+**Updated:** 17 November 2026  
+**Active portfolio:** exactly six products. Shared AI Core is infrastructure, not a seventh product. Extreme Flood Rescue AI is an inactive historical standalone project; preserve its repository and records.
+
+The canonical product names, repositories, bilingual website links and founder-approved boundaries are in [PUI89 Portfolio Source of Truth v1.0](PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.0.md).
 
 ## Shared engineering foundation
+- [ ] Review Draft PRs for quality engineering controls 1–9 and portfolio consistency recommendations 10–11; do not merge until human review and approval.
+- [ ] Keep shared contracts, evidence provenance, uncertainty, abstention, safe hold and failure reporting consistent across the six products.
+- [ ] Use the evidence maturity labels: Proposed, Specified, Implemented, Simulated, Software-tested, Bench-tested, Field-tested, Validated, Certified, Unknown.
+- [ ] Do not publish unsupported commercial-readiness percentages.
 
-- [x] Lightweight CI and project-specific test workflows exist across all three repositories.
-- [x] Shared-interface smoke checks and machine-readable simulation artifacts exist.
-- [x] Fault-injection and human-approval scenario coverage has been expanded.
-- [x] Pre-commit configuration exists in all three project repositories.
-- [ ] Run the new local cross-project runner on a workspace containing all three cloned repositories.
-- [ ] Review generated JSON/CSV reports and resolve any failures or missing checks.
-- [ ] Consider extracting truly common interfaces into a versioned shared package only after duplication and compatibility have been measured.
+## Product work — priority order
 
-## Project work
+### 1. Coconut Harvest AI
+- [ ] Verify image source, provenance and reuse rights; record exact licence evidence.
+- [ ] Finalise four-class human annotation guide and have labels independently reviewed.
+- [ ] Create leakage-safe train/validation/test splits.
+- [ ] Run reproducible CPU evaluation only after dataset rights and labels pass review.
+- [ ] Report per-class Precision, Recall, F1, confusion matrix, sample counts and false-positive/false-negative cases.
+- [ ] Keep harvesting mechanics and physical actuation out of scope until software evidence and separate safety gates justify them.
 
-### Coconut Harvest AI
-- [ ] Obtain the original candidate image file and verify its SHA-256 from the actual bytes.
-- [ ] Review all draft bounding boxes and record human QA decisions.
-- [ ] Verify source licence, attribution, provenance and dataset split integrity.
-- [ ] Only then run a held-out detector benchmark and report measured metrics.
+### 2. PUI89 Sentinel — All-Terrain Exploration & Inspection Robot
+- [ ] Define the first supervised inspection mission, site, asset, environment and operating envelope.
+- [ ] Complete hazard analysis, human roles, no-go conditions, emergency/retreat plan and measurable acceptance criteria.
+- [ ] Select hardware only after the mission definition is approved.
 
-### Extreme Flood Rescue AI
-- [ ] Extend simulation scenarios for sensor dropouts, stale telemetry and communication loss/recovery.
-- [ ] Verify safe-hold and controlled-resume rules in software tests.
-- [ ] Add simulator telemetry only when a real configured simulator emits it.
+### 3. PUI89 AI HOME
+- [ ] Maintain complete robot mass target of 8 kg and maximum 10 kg, including battery and all installed hardware.
+- [ ] Reconcile the design BOM and later measure the complete assembled prototype.
 
-### All-Terrain Inspection Robot Dog — PUI89 Sentinel
-- [ ] Define the first narrow industrial inspection mission and measurable operating envelope.
-- [ ] Complete quadruped system requirements and a product-specific hazard analysis.
-- [ ] Compare leg, actuator, joint, foot, power and compute candidates with verified origin and compatibility evidence.
-- [ ] Define RGB, depth, LiDAR, IMU and joint/foot-state interfaces and calibration requirements.
-- [ ] Establish repeatable gait, terrain, obstacle, slip, fall and communications-fault simulation scenarios.
-- [ ] Keep all physical mobility and inspection claims unvalidated until controlled tests produce evidence.
+### 4. PUI89 AI NOMAD
+- [ ] Keep identity as a ground-use four-wheel mobile assistant robot, not luggage or airline baggage.
+- [ ] Keep storage secondary to supervised mobility and assistance; define mobility/safety tasks before hardware commitment.
+
+### 5. PUI89 AI Global SUV
+- [ ] Keep AI outputs advisory to the human driver.
+- [ ] Define road-water and flood-risk alert scenarios; unknown water condition means “unknown — do not enter”.
+- [ ] No autonomous steering, throttle or braking.
+
+### 6. PUI89 AI Step-Through Scooter
+- [ ] Keep rider-first, human-controlled operation.
+- [ ] Define advisory road-water/flood-risk alerts; unknown water condition means “unknown — do not enter”.
+- [ ] No autonomous steering, throttle or braking; no unverified waterproofing or water-wading claims.
 
 ## Later, gated upgrades
-
-- [ ] Evaluate optional local VLM/VLA models only after checking licence, disk, RAM, VRAM and download size.
-- [ ] Add ROS 2/Gazebo only when a concrete simulation requirement justifies the extra setup.
-- [ ] Add physical sensor or actuator monitoring only with suitable equipment and a safe test plan.
+- [ ] Evaluate open-source tools only after checking licence, provenance, disk/RAM/VRAM needs and compatibility.
+- [ ] Add simulation or hardware only when a defined product mission and evidence gate justify it.
+- [ ] Keep procurement, downloads, installations and paid services behind explicit approval.
 
 ## Guardrails
-
-- No invented metrics, test results, data provenance, or physical capability claims.
-- No paid APIs, subscriptions, or cloud GPU dependencies in the default workflow.
+- No invented metrics, test results, data provenance or physical capability claims.
+- No paid APIs, subscriptions or cloud GPU dependencies in the default workflow.
 - A skipped check is not a passing check.
-- All material changes go through reviewable pull requests and existing CI.
+- All material changes go through reviewable pull requests; no default-branch writes or auto-merge.
