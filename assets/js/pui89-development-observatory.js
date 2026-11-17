@@ -7,6 +7,8 @@ const lang=(document.documentElement.lang||"en").toLowerCase().startsWith("th")?
 const t=o=>typeof o==="string"?o:(o?.[lang]||o?.en||"");
 const formatDate=value=>{if(!/^\d{4}-\d{2}-\d{2}$/.test(String(value||"")))return value||"";const d=new Date(value+"T12:00:00Z");return new Intl.DateTimeFormat(lang==="th"?"th-TH-u-ca-buddhist":"en-GB",{day:"numeric",month:"long",year:"numeric",timeZone:"UTC"}).format(d);};
 const el=(tag,cls,txt)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(txt!==undefined)n.textContent=txt;return n;};
+const stageLevel=project=>{const value=String(project.stageLabel?.en||t(project.stageLabel)).trim().toLowerCase();const levels={"proposed":1,"specified":2,"implemented":3,"simulated":4,"software-tested":5,"bench-tested":6,"field-tested":7,"validated":8,"certified":9,"unknown":10};return levels[value]||10;};
+const addStageIndicator=(parent,project,compact=false)=>{const level=stageLevel(project);const wrap=el("div",compact?"pui89-observatory__stage-indicator":"pui89-global-status__stage pui89-global-status__stage--level-"+level);if(compact){const badge=el("span","pui89-observatory__stage-badge pui89-observatory__stage-badge--level-"+level,"LEVEL "+level);wrap.append(badge);wrap.append(el("strong","pui89-observatory__stage-name",t(project.stageLabel)));}else{const badge=el("span","pui89-global-status__stage-tab","LEVEL "+level);wrap.append(badge);wrap.append(el("span","pui89-global-status__stage-value",t(project.stageLabel)));}parent.append(wrap);};
 function addField(card,label,value){
  if(!value)return;
  card.append(el("span","pui89-observatory__label",label));
@@ -16,7 +18,7 @@ function projectCard(p){
  const card=el("article","pui89-observatory__card");
  card.append(el("h3","",p.number+". "+t(p.name)));
  card.append(el("span","pui89-observatory__label",lang==="th"?"ขั้นการพัฒนา":"DOCUMENTED DEVELOPMENT STAGE"));
- card.append(el("strong","pui89-observatory__stage",t(p.stageLabel)));
+ addStageIndicator(card,p,true);
  card.append(el("p","",t(p.summary)));
  addField(card,lang==="th"?"หลักฐานที่มี":"DOCUMENTED EVIDENCE",p.evidence);
  if(p.evidenceDate)addField(card,lang==="th"?"วันที่ทบทวนหลักฐาน":"EVIDENCE REVIEW DATE",p.evidenceDate);
@@ -55,8 +57,7 @@ function renderTopStatus(project){
  panel.append(name);
  const status=el("div","pui89-global-status__status",lang==="th"?"กำลังพัฒนา":"IN DEVELOPMENT");
  panel.append(status);
- const stage=el("div","pui89-global-status__stage",t(project.stageLabel));
- panel.append(stage);
+ addStageIndicator(panel,project,false);
  const evidenceDate=last?new Intl.DateTimeFormat(lang==="th"?"th-TH-u-ca-buddhist":"en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"UTC"}).format(new Date(last+"T12:00:00Z")):"";
  panel.append(el("div","pui89-global-status__date",(lang==="th"?"หลักฐาน · ":"EVIDENCE · ")+evidenceDate));
  const nav=document.querySelector("nav.nav")||document.querySelector("nav");
