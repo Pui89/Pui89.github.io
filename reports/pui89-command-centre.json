@@ -392,7 +392,7 @@
   "platform": {
     "name": "Shared AI Core",
     "repository": "Private platform repository — not publicly monitored",
-    "url": null,
+    "url": "https://pui89.github.io/ai-core.html",
     "focus": "Shared contracts, orchestration, compute intelligence, evidence gates and reusable engineering infrastructure; shared platform, not a seventh product.",
     "status": "NOT_PUBLICLY_MONITORED",
     "default_branch": null,
@@ -403,7 +403,15 @@
     "key_workflows": [],
     "warnings": [
       "The platform repository is private; public reporting does not expose its repository activity."
-    ]
+    ],
+    "summary": {
+      "en": "Shared infrastructure for reusable contracts, orchestration, compute intelligence, evidence provenance and engineering tools. It is not a product.",
+      "th": "โครงสร้างพื้นฐานร่วมสำหรับสัญญาข้อมูล การประสานงาน ความฉลาดด้านการประมวลผล ที่มาของหลักฐาน และเครื่องมือวิศวกรรม ไม่ใช่ผลิตภัณฑ์"
+    },
+    "next": {
+      "en": "Maintain shared contracts and evidence gates; report only verified public information.",
+      "th": "ดูแลสัญญาข้อมูลและเงื่อนไขหลักฐานร่วม โดยรายงานเฉพาะข้อมูลสาธารณะที่ตรวจสอบได้"
+    }
   },
   "limitations": [
     "This report is a point-in-time read of public GitHub metadata and recent workflow runs; it does not execute project tests.",
