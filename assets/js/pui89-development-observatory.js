@@ -56,7 +56,7 @@ function statusSquare(project,compact=false,framework={}){
  panel.append(el("div",compact?"pui89-global-status__status":"pui89-card-status__eyebrow",lang==="th"?"กำลังพัฒนา":"IN DEVELOPMENT"));
  const progress=el("div",compact?"pui89-global-status__progress":"pui89-card-status__progress");
  const head=el("div",compact?"pui89-global-status__progress-head":"pui89-card-status__progress-head");
- head.append(el("span",compact?"pui89-global-status__progress-label":"pui89-card-status__progress-label",lang==="th"?"ความคืบหน้า":"PROGRESS"));
+ head.append(el("span",compact?"pui89-global-status__progress-label":"pui89-card-status__progress-label",lang==="th"?"รายการตรวจสอบ":"CHECKLIST"));
  head.append(el("strong",compact?"pui89-global-status__percent":"pui89-card-status__percent",percentage+"%"));
  progress.append(head);
  const track=el("div",compact?"pui89-global-status__progress-track":"pui89-card-status__progress-track");
