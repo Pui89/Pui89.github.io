@@ -55,9 +55,9 @@ The PUI89 AI Global SUV is a proposed medium-size, five-door SUV design study. I
 
 **AI concept:** authorised observations → input-quality and provenance checks → Shared AI Core `WorldState` → hazard analysis → safety gate → human-facing advisory. The system is intended to remain advisory-only. The driver retains control; the current software-stage scope has no steering, throttle, braking, propulsion, ECU/CAN or battery-management command path.
 
-**Research areas:** road-scene awareness, weather and route context, flood-risk avoidance, explainable driver advisories, and future read-only vehicle-health awareness where authorised interfaces exist. Missing, stale, conflicting or insufficient evidence must be visible; uncertain conditions must not be presented as safe.
+**Research areas:** road-scene awareness, weather and route context, road-condition awareness, explainable driver advisories, and future read-only vehicle-health awareness where authorised interfaces exist. Missing, stale, conflicting or insufficient evidence must be visible; uncertain conditions must not be presented as safe.
 
-**Evidence boundary:** this is an early software foundation and design concept. It does not establish a physical SUV prototype, validated perception model, road test, selected supplier, production specification, vehicle certification, autonomous-driving capability, safe flood-wading depth, fuel economy, range or performance result.
+**Evidence boundary:** this is an early software foundation and design concept. It does not establish a physical SUV prototype, validated perception model, road test, selected supplier, production specification, vehicle certification, autonomous-driving capability, vehicle operating limits, fuel economy, range or performance result.
 
 **Project pages:** [English](https://pui89.github.io/ai-global-suv.html) · [ภาษาไทย](https://pui89.github.io/ai-global-suv-th.html) · [AI Vehicles overview](https://pui89.github.io/ai-vehicles.html).
 
