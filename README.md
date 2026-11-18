@@ -92,7 +92,7 @@ The Shared AI Core is being integrated incrementally. The presence of a shared c
 
 **Tactile Intelligence architecture (proposed):** [PUI89 Tactile Intelligence Architecture v0.1](docs/PUI89_TACTILE_INTELLIGENCE_ARCHITECTURE_V0.1.md) — a hardware-neutral design for touch, contact, pressure, force, slip, vibration and haptic interaction across applicable products. This is a specification, not evidence of a built or validated tactile system.
 
-**Coconut Harvest Physical AI architecture (proposed):** [Coconut Harvest AI Physical AI Architecture v0.1](docs/COCONUT_HARVEST_PHYSICAL_AI_ARCHITECTURE_V0.1.md) — founder-selected separate ground-mobility/tree-climbing configurations and arm-first harvesting research, with open-source-first tools, model governance, simulation gates and safety boundaries. This is a design specification, not a physical prototype claim.
+**Coconut Harvest Physical AI architecture (proposed):** [Coconut Harvest AI Physical AI Architecture v0.1](docs/COCONUT_HARVEST_PHYSICAL_AI_ARCHITECTURE_V0.1.md) — founder-selected separate ground-mobility/tree-climbing configurations and arm-first harvesting research, with open-source-first tools, model governance, simulation gates and safety boundaries. This is a design specification, not a physical prototype claim.\n\n**Coconut arm and gripper simulation specification (proposed):** [Simulation Specification v0.1](docs/COCONUT_ARM_GRIPPER_SIMULATION_SPEC_V0.1.md) — defines the fixed-base arm/gripper test boundary, grasp state machine, synthetic tactile signals, fault scenarios, evidence logs and validation gates. No simulator or hardware is claimed to have been run or built.
 
 ## Engineering method
 
