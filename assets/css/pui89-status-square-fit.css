@@ -1,0 +1,165 @@
+/* PUI89 status-square fit: consistent compact progress tiles across all six products.
+   Percentages remain sourced from the shared evidence-backed 10-gate register. */
+#projects .pui89-card-status,
+body #pui89-global-project-status.pui89-global-status{
+  box-sizing:border-box!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:stretch!important;
+  justify-content:space-between!important;
+  gap:5px!important;
+  width:144px!important;
+  height:144px!important;
+  min-width:144px!important;
+  max-width:144px!important;
+  min-height:144px!important;
+  max-height:144px!important;
+  flex:0 0 144px!important;
+  padding:9px 10px!important;
+  margin:0 0 14px auto!important;
+  overflow:hidden!important;
+  text-align:left!important;
+}
+#projects .pui89-card-status > *,
+body #pui89-global-project-status.pui89-global-status > *{
+  box-sizing:border-box!important;
+  width:100%!important;
+  min-width:0!important;
+  max-width:100%!important;
+}
+#projects .pui89-card-status .pui89-card-status__eyebrow,
+body #pui89-global-project-status .pui89-global-status__status{
+  display:flex!important;
+  align-items:center!important;
+  flex-wrap:wrap!important;
+  gap:4px!important;
+  font-size:.49rem!important;
+  line-height:1.15!important;
+  letter-spacing:.035em!important;
+  white-space:normal!important;
+  overflow-wrap:anywhere!important;
+}
+#projects .pui89-card-status .pui89-card-status__eyebrow:before,
+body #pui89-global-project-status .pui89-global-status__status:before{
+  width:5px!important;
+  height:5px!important;
+  flex:0 0 5px!important;
+}
+#projects .pui89-card-status .pui89-card-status__progress,
+body #pui89-global-project-status .pui89-global-status__progress{
+  display:grid!important;
+  gap:3px!important;
+  width:100%!important;
+  min-width:0!important;
+  margin:0!important;
+}
+#projects .pui89-card-status .pui89-card-status__progress-head,
+body #pui89-global-project-status .pui89-global-status__progress-head{
+  display:flex!important;
+  align-items:baseline!important;
+  justify-content:space-between!important;
+  flex-wrap:nowrap!important;
+  gap:4px!important;
+  min-width:0!important;
+}
+#projects .pui89-card-status .pui89-card-status__progress-label,
+body #pui89-global-project-status .pui89-global-status__progress-label{
+  min-width:0!important;
+  max-width:72%!important;
+  font-size:.45rem!important;
+  line-height:1.15!important;
+  letter-spacing:.025em!important;
+  overflow-wrap:anywhere!important;
+}
+#projects .pui89-card-status .pui89-card-status__percent,
+body #pui89-global-project-status .pui89-global-status__percent{
+  flex:0 0 auto!important;
+  font-size:1.28rem!important;
+  line-height:1!important;
+  white-space:nowrap!important;
+}
+#projects .pui89-card-status .pui89-card-status__progress-track,
+body #pui89-global-project-status .pui89-global-status__progress-track{
+  display:block!important;
+  width:100%!important;
+  height:5px!important;
+  min-height:5px!important;
+  overflow:hidden!important;
+  border-radius:99px!important;
+}
+#projects .pui89-card-status .pui89-global-status__stage,
+body #pui89-global-project-status .pui89-global-status__stage{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  justify-content:flex-start!important;
+  gap:3px!important;
+  width:100%!important;
+  min-width:0!important;
+  margin:0!important;
+}
+#projects .pui89-card-status .pui89-global-status__stage-tab,
+body #pui89-global-project-status .pui89-global-status__stage-tab{
+  display:inline-flex!important;
+  align-items:center!important;
+  width:auto!important;
+  max-width:100%!important;
+  min-width:0!important;
+  padding:4px 6px!important;
+  font-size:.56rem!important;
+  line-height:1.15!important;
+  letter-spacing:0!important;
+  white-space:normal!important;
+  overflow-wrap:anywhere!important;
+  word-break:normal!important;
+}
+#projects .pui89-card-status .pui89-card-status__date,
+body #pui89-global-project-status .pui89-global-status__date{
+  display:block!important;
+  width:100%!important;
+  min-width:0!important;
+  max-width:100%!important;
+  margin:0!important;
+  padding:4px 0 0!important;
+  border-top:1px solid rgba(159,180,201,.18)!important;
+  font-size:.46rem!important;
+  line-height:1.18!important;
+  letter-spacing:0!important;
+  white-space:normal!important;
+  overflow-wrap:anywhere!important;
+  word-break:normal!important;
+}
+@media(max-width:640px){
+  #projects .pui89-card-status,
+  body #pui89-global-project-status.pui89-global-status{
+    width:128px!important;
+    height:128px!important;
+    min-width:128px!important;
+    max-width:128px!important;
+    min-height:128px!important;
+    max-height:128px!important;
+    flex:0 0 128px!important;
+    padding:8px!important;
+    gap:4px!important;
+  }
+  #projects .pui89-card-status .pui89-card-status__percent,
+  body #pui89-global-project-status .pui89-global-status__percent{
+    font-size:1.18rem!important;
+  }
+  #projects .pui89-card-status .pui89-global-status__stage-tab,
+  body #pui89-global-project-status .pui89-global-status__stage-tab{
+    font-size:.53rem!important;
+    padding:3px 5px!important;
+  }
+  #projects .pui89-card-status .pui89-card-status__date,
+  body #pui89-global-project-status .pui89-global-status__date{
+    font-size:.42rem!important;
+    line-height:1.15!important;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  #projects .pui89-card-status .pui89-card-status__progress-fill,
+  body #pui89-global-project-status .pui89-global-status__progress-fill{
+    transition:none!important;
+  }
+}
