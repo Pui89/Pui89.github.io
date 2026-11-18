@@ -448,6 +448,33 @@ a:hover{color:#B8F2FF!important}
 .card .project-art-link img{cursor:pointer}
 @media(hover:hover){.card:has(.project-art-link):hover{border-color:rgba(66,217,255,.72);box-shadow:0 18px 42px rgba(0,0,0,.24),0 0 24px rgba(66,217,255,.12)}}
 
+
+/* PUI89 identity system: three core identities and five brand pillars. */
+.pui89-identity-section{padding-top:38px;padding-bottom:54px}
+.pui89-identity-heading{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:22px}
+.pui89-identity-heading h2{margin:8px 0 0;font-size:clamp(2rem,4vw,3rem);letter-spacing:-.045em;line-height:1.08}
+.pui89-identity-heading .intro{max-width:480px;margin:0}
+.pui89-core-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.pui89-core-card{position:relative;overflow:hidden;min-height:180px;padding:22px;border:1px solid rgba(66,217,255,.24);border-radius:16px;background:linear-gradient(145deg,rgba(20,43,64,.96),rgba(9,21,36,.96));transition:transform .18s ease,border-color .18s ease}
+.pui89-core-card:before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:linear-gradient(180deg,#42D9FF,#C5D0DC)}
+.pui89-core-card:hover,.pui89-pillar-card:hover{transform:translateY(-3px);border-color:rgba(66,217,255,.62)}
+.pui89-identity-index{display:block;color:#42D9FF;font-size:.72rem;font-weight:850;letter-spacing:.15em}
+.pui89-core-card h3{margin:13px 0 8px;font-size:1.16rem;line-height:1.25}
+.pui89-core-card p{margin:0;color:var(--muted);font-size:.91rem}
+.pui89-pillars-label{margin:30px 0 13px;color:#C5D0DC;font-size:.72rem;font-weight:850;letter-spacing:.15em}
+.pui89-pillars-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:11px}
+.pui89-pillar-card{min-width:0;padding:17px 15px;border:1px solid rgba(155,181,207,.18);border-radius:13px;background:linear-gradient(155deg,rgba(20,34,52,.94),rgba(12,23,38,.96));transition:transform .18s ease,border-color .18s ease}
+.pui89-pillar-card .pui89-identity-index{font-size:.68rem}
+.pui89-pillar-card h3{margin:9px 0 6px;font-size:.93rem;letter-spacing:.04em}
+.pui89-pillar-card p{margin:0;color:var(--muted);font-size:.8rem;line-height:1.5}
+.pui89-guiding-principle{margin-top:18px;padding:17px 20px;border:1px solid rgba(66,217,255,.24);border-radius:13px;background:linear-gradient(100deg,rgba(20,50,66,.68),rgba(16,28,44,.72));color:#eaf6ff;font-weight:750;letter-spacing:.01em}
+.pui89-identity-footer{margin-top:12px;font-size:.86rem;color:var(--muted)}
+.pui89-identity-footer a{font-weight:750}
+@media(max-width:1000px){.pui89-pillars-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){.pui89-identity-heading{display:block}.pui89-identity-heading .intro{margin-top:12px}.pui89-core-grid{grid-template-columns:1fr}.pui89-core-card{min-height:0}.pui89-pillars-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:460px){.pui89-pillars-grid{grid-template-columns:1fr}.pui89-guiding-principle{font-size:.92rem}}
+@media(prefers-reduced-motion:reduce){.pui89-core-card,.pui89-pillar-card{transition:none!important}}
+
 </style>
   <link rel="stylesheet" href="assets/css/pui89-design-system.css?v=20261108-professional">
   <link rel="stylesheet" href="/assets/css/pui89-project-progress.css?v=20261117-maturity-tabs-v1">
@@ -599,14 +626,29 @@ a:hover{color:var(--accent2)!important}
           <img src="assets/images/pui89-intelligent-systems-hero.svg" alt="ภาพไอโซเมตริก PUI89 แสดงแนวคิดโครงการ AI แบบไม่ใช่มนุษย์ทั้ง 6 โครงการล้อมรอบอัตลักษณ์ PUI89 ตรงกลาง โดยภาพแนวคิดไม่ใช่การยืนยันว่าหุ่นยนต์ผ่านการทดสอบจริงแล้ว" fetchpriority="high" decoding="async">
         </div>
       </section>
-<section class="section" id="our-story" aria-labelledby="our-story-title" style="padding-top:18px">
-  <article class="card" style="max-width:900px">
-    <span class="eyebrow">เรื่องราวเบื้องหลัง PUI89</span>
-    <h2 id="our-story-title">เรียนรู้ข้ามศาสตร์ ลงมือสร้างอย่างมีเป้าหมาย</h2>
-    <p class="muted">PUI89 ไม่ได้เริ่มต้นจากผู้พัฒนาที่จบสาขา AI โดยตรง แต่เติบโตจากประสบการณ์ชีวิต ความสนใจใฝ่รู้ และความมุ่งมั่นที่จะเรียนรู้อย่างต่อเนื่อง ผ่านการศึกษา ฝึกปฏิบัติ และนำความรู้ด้าน AI มาประยุกต์พัฒนาแนวคิดผลิตภัณฑ์ที่คำนึงถึงความต้องการของผู้คน</p>
-    <a href="company-th.html#founder">อ่านเรื่องราวของผู้พัฒนา ↗</a>
-  </article>
+
+<section class="section pui89-identity-section" id="pui89-identity" aria-labelledby="pui89-identity-title">
+  <div class="pui89-identity-heading">
+    <div><span class="eyebrow">อัตลักษณ์ของ PUI89</span><h2 id="pui89-identity-title">Independent AI Engineering</h2></div>
+    <p class="intro">PUI89 ผสานการเรียนรู้ด้วยตนเอง วิศวกรรมข้ามศาสตร์ และปัญญาประดิษฐ์ที่ทำงานได้จริง เพื่อเปลี่ยนแนวคิดให้เป็นระบบที่มีประโยชน์ ปลอดภัย และตรวจสอบได้</p>
+  </div>
+  <div class="pui89-core-grid" aria-label="สามเอกลักษณ์หลักของ PUI89">
+    <article class="pui89-core-card"><span class="pui89-identity-index">CORE IDENTITY / 01</span><h3>Independent Learning</h3><p>เรียนรู้ด้วยตนเอง พัฒนาความรู้และความสามารถอย่างต่อเนื่อง</p></article>
+    <article class="pui89-core-card"><span class="pui89-identity-index">CORE IDENTITY / 02</span><h3>Cross-disciplinary Engineering</h3><p>เชื่อม AI กับ Robotics, Computing, Sensors และวิศวกรรมหลายสาขา</p></article>
+    <article class="pui89-core-card"><span class="pui89-identity-index">CORE IDENTITY / 03</span><h3>Real-world Intelligence</h3><p>เปลี่ยนแนวคิดให้เป็นระบบและผลิตภัณฑ์ที่มุ่งใช้งานได้จริง ปลอดภัย และตรวจสอบได้</p></article>
+  </div>
+  <p class="pui89-pillars-label">FIVE BRAND PILLARS · 5 เสาหลักของแบรนด์</p>
+  <div class="pui89-pillars-grid">
+    <article class="pui89-pillar-card"><span class="pui89-identity-index">01</span><h3>IDENTITY</h3><p>ตัวตน วิสัยทัศน์ และปรัชญาทางวิศวกรรม</p></article>
+    <article class="pui89-pillar-card"><span class="pui89-identity-index">02</span><h3>INTELLIGENCE</h3><p>AI, Multimodal และ Shared AI Core</p></article>
+    <article class="pui89-pillar-card"><span class="pui89-identity-index">03</span><h3>ENGINEERING</h3><p>Robotics, Computing และระบบที่คำนึงถึงฮาร์ดแวร์</p></article>
+    <article class="pui89-pillar-card"><span class="pui89-identity-index">04</span><h3>INNOVATION</h3><p>ผลิตภัณฑ์และเทคโนโลยีที่มุ่งแก้ปัญหาจริง</p></article>
+    <article class="pui89-pillar-card"><span class="pui89-identity-index">05</span><h3>TRUST</h3><p>ความปลอดภัย หลักฐาน ความโปร่งใส และความน่าเชื่อถือ</p></article>
+  </div>
+  <div class="pui89-guiding-principle">We don't just build AI. We engineer intelligence to work in the real world.</div>
+  <p class="pui89-identity-footer">อ่าน <a href="company-th.html#founder">เส้นทางของผู้ก่อตั้งและหลักการของ PUI89 ↗</a></p>
 </section>
+
 
       
       <section class="section pui89-project-showcase" id="projects">
