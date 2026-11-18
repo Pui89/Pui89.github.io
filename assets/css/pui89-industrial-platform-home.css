@@ -1,0 +1,42 @@
+/* PUI89 Industrial AI homepage refinement — EN/TH parity */
+:root{
+  --pui89-navy:#07111f;
+  --pui89-panel:#101f33;
+  --pui89-cyan:#42d9ff;
+  --pui89-silver:#c5d0dc;
+}
+body{background:radial-gradient(ellipse at 82% -8%,rgba(24,92,122,.28),transparent 38%),radial-gradient(ellipse at 5% 48%,rgba(24,55,87,.18),transparent 35%),var(--pui89-navy)!important}
+.hero{max-width:none!important;grid-template-columns:minmax(0,1.06fr) minmax(320px,.94fr)!important;gap:clamp(28px,5vw,72px)!important;align-items:center!important;padding-top:clamp(48px,7vw,86px)!important;padding-bottom:58px!important}
+.hero h1{font-size:clamp(2.8rem,5.8vw,5.35rem)!important;line-height:1.02!important;letter-spacing:-.055em!important;max-width:780px!important}
+.hero h1 span{background:linear-gradient(105deg,#f2f7fc 0%,#42d9ff 78%);-webkit-background-clip:text;background-clip:text;color:transparent!important}
+.hero p{max-width:690px!important;font-size:clamp(1rem,1.55vw,1.18rem)!important;line-height:1.75!important}
+.eyebrow{color:var(--pui89-cyan)!important}
+.eyebrow-dot,.hero-points i{background:var(--pui89-cyan)!important;box-shadow:0 0 0 5px rgba(66,217,255,.1)!important}
+.btn.primary{background:var(--pui89-cyan)!important;border-color:var(--pui89-cyan)!important;color:#061521!important;box-shadow:0 10px 30px rgba(66,217,255,.16)!important}
+.btn.secondary{border-color:rgba(197,208,220,.28)!important;background:rgba(12,25,42,.8)!important}
+.hero-visual{min-height:clamp(340px,38vw,500px)!important;border-color:rgba(66,217,255,.25)!important;box-shadow:0 30px 85px rgba(0,0,0,.35)!important}
+.hero-visual>img{object-fit:cover!important}
+.hero-visual-caption{position:absolute;left:0;right:0;bottom:0;padding:15px 19px;background:linear-gradient(90deg,rgba(5,13,24,.9),rgba(5,13,24,.58));border-top:1px solid rgba(197,208,220,.2);font-size:.69rem;font-weight:800;letter-spacing:.13em;color:#e8f2fb}
+.hero-visual-caption span{color:var(--pui89-cyan);padding:0 5px}
+.hero-motto{margin-top:19px!important;color:#dce7f2!important;font-size:.82rem!important;font-weight:750;letter-spacing:.045em}
+.trust-strip{border-color:rgba(66,217,255,.18)!important;background:linear-gradient(110deg,rgba(16,31,51,.9),rgba(8,19,33,.78))!important}
+.trust-strip .strip-index{color:var(--pui89-cyan)!important}
+.section h2{letter-spacing:-.035em}
+.pui89-ecosystem{position:relative;overflow:hidden;border:1px solid rgba(66,217,255,.18);border-radius:22px;padding:clamp(24px,4vw,42px)!important;background:linear-gradient(135deg,rgba(16,31,51,.92),rgba(8,18,31,.96));}
+.pui89-ecosystem:before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:linear-gradient(180deg,var(--pui89-cyan),transparent 80%)}
+.pui89-ecosystem .eyebrow{margin-bottom:10px}
+.pui89-ecosystem h2{max-width:850px}
+.ecosystem-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:26px}
+.ecosystem-card{min-width:0;padding:21px;border:1px solid rgba(166,192,216,.17);border-radius:15px;background:linear-gradient(150deg,rgba(24,43,65,.92),rgba(11,24,40,.96));transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.ecosystem-card:hover{transform:translateY(-3px);border-color:rgba(66,217,255,.48);box-shadow:0 16px 34px rgba(0,0,0,.2)}
+.ecosystem-card>span{color:var(--pui89-cyan);font-size:.69rem;font-weight:850;letter-spacing:.13em}
+.ecosystem-card h3{margin:11px 0 8px;font-size:1.12rem;line-height:1.25;color:#f2f6fc}
+.ecosystem-card p{margin:0;color:#afc0d2;font-size:.9rem;line-height:1.65}
+.ecosystem-status{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:20px;padding:14px 16px;border:1px solid rgba(66,217,255,.2);border-radius:12px;background:rgba(5,16,29,.62);font-size:.82rem}
+.ecosystem-status-dot{width:8px;height:8px;flex:0 0 8px;border-radius:50%;background:#42d9ff;box-shadow:0 0 0 4px rgba(66,217,255,.12)}
+.ecosystem-status strong{color:var(--pui89-cyan);font-size:.7rem;letter-spacing:.1em}
+.ecosystem-status>span:last-child{color:#b7c6d6}
+.ecosystem-footnote{margin:15px 0 0;color:#aebed0;font-size:.83rem;line-height:1.65}
+@media(max-width:900px){.hero{grid-template-columns:1fr!important}.hero-visual{min-height:360px!important}.ecosystem-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.hero{padding-top:42px!important;padding-bottom:38px!important}.hero h1{font-size:clamp(2.55rem,11.5vw,3.7rem)!important}.hero-visual{min-height:270px!important}.ecosystem-grid{grid-template-columns:1fr}.pui89-ecosystem{padding:22px!important}.ecosystem-card{padding:18px}}
+@media(prefers-reduced-motion:reduce){.ecosystem-card{transition:none}}
