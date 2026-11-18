@@ -13,8 +13,8 @@ These records are retained for historical traceability only. They are not part o
 
 - [Current English product page](../../sentinel.html)
 - [Current Thai product page](../../sentinel-th.html)
-- [Current engineering repository](https://github.com/Pui89/All-Terrain-Inspection-Robot)
-- [Current engineering requirements review PR](https://github.com/Pui89/All-Terrain-Inspection-Robot/pull/187)
+- [Current engineering repository](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot)
+- [Current engineering requirements review PR](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/pull/187)
 
 The current Sentinel baseline is concept and engineering requirements only. Earlier software-workflow results are not carried forward as evidence for the quadruped robot dog.
 
