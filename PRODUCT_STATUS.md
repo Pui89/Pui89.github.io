@@ -14,9 +14,6 @@ The authoritative names, canonical repositories, bilingual website links, produc
 | 5 | PUI89 AI Global SUV | [Repository](https://github.com/Pui89/PUI89-AI-Global-SUV) | Vehicle concept; AI support remains advisory. | Validate road/context perception offline and document driver-warning limits. |
 | 6 | PUI89 AI Step-Through Scooter | [Repository](https://github.com/Pui89/AI-Step-Through-Scooter) | Two-wheel step-through scooter concept; AI support remains advisory. | Define road-water/flood-risk warning scenarios; unknown water means do not enter. |
 
-## Inactive historical project
-
-Extreme Flood Rescue AI is **not an active standalone product**. Its repository and historical records are preserved, not deleted. It must not appear as an active product or contribute to the active product count. Flood-risk awareness remains part of the SUV and Step-Through Scooter advisory scope.
 
 ## Evidence maturity labels
 
