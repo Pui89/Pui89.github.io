@@ -66,10 +66,12 @@ class StructuralEnvironmentalMonitoringTests(unittest.TestCase):
         alerts = assess_monitoring(None, None, None, self.now, self.limits)
         self.assertTrue(all(a.severity == Severity.UNKNOWN for a in alerts))
 
-    def test_no_limits_does_not_invent_thresholds(self):
+    def test_no_limits_produce_unknown_not_false_reassurance(self):
         no_limits = MonitoringLimits()
-        item = self.measurement(999, "m/s^2 RMS")
-        self.assertEqual(evaluate_measurement("vibration", item, self.now, no_limits).severity, Severity.NORMAL)
+        item = self.measurement(0.01, "m/s^2 RMS")
+        self.assertEqual(evaluate_measurement("vibration", item, self.now, no_limits).severity, Severity.UNKNOWN)
+        crack = CrackChange(0.1, 0.0, self.now, "gauge-1", True, True, True)
+        self.assertEqual(evaluate_crack_change(crack, self.now, no_limits).severity, Severity.UNKNOWN)
 
 
 if __name__ == "__main__":
