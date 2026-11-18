@@ -104,6 +104,9 @@ def evaluate_measurement(
     else:
         return Alert(domain, Severity.UNKNOWN, "Unsupported measurement domain.", measurement.source_id)
 
+    if not any(threshold is not None for threshold, _ in bands):
+        return Alert(domain, Severity.UNKNOWN, "No site-specific threshold has been configured.", measurement.source_id)
+
     for threshold, severity in bands:
         if threshold is not None and value >= threshold:
             return Alert(domain, severity, f"{domain} measurement reached a configured site-specific limit.", measurement.source_id)
@@ -124,6 +127,8 @@ def evaluate_crack_change(
     if observation.width_mm < 0:
         return Alert("crack", Severity.UNKNOWN, "Crack width cannot be negative.", observation.source_id)
 
+    if limits.crack_width_warning_mm is None and limits.crack_growth_warning_mm is None:
+        return Alert("crack", Severity.UNKNOWN, "No qualified, site-specific crack review limit has been configured.", observation.source_id)
     if limits.crack_width_warning_mm is not None and observation.width_mm >= limits.crack_width_warning_mm:
         return Alert("crack", Severity.WARNING, "Crack width reached a configured review limit.", observation.source_id)
     if limits.crack_growth_warning_mm is not None and observation.delta_mm >= limits.crack_growth_warning_mm:
