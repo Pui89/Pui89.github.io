@@ -96,6 +96,8 @@ The Shared AI Core is being integrated incrementally. The presence of a shared c
 
 **Flood Resilience Engineering v0.1 (proposed):** [Architecture](docs/PUI89_FLOOD_RESILIENCE_ARCHITECTURE_V0.1.md) and [Test & Validation Plan](docs/PUI89_FLOOD_RESILIENCE_TEST_AND_VALIDATION_V0.1.md) — define shared flood-awareness, conservative risk assessment, system-health response and a controlled 20 cm test programme. A dependency-light Python reference module and synthetic unit tests are included under `shared_ai_core/environmental_resilience/` and `tests/environmental_resilience/`. The 20 cm figure is a proposed controlled test target, not a validated product capability or flood-crossing recommendation. Physical protection, IP ratings and product operation remain untested.
 
+**Structural & Environmental Intelligence v0.1 (proposed):** [Architecture](docs/PUI89_STRUCTURAL_ENVIRONMENTAL_INTELLIGENCE_V0.1.md) and a dependency-light reference rules module under `shared_ai_core/structural_environmental/`, with tests under `tests/structural_environmental/`. Scope includes object/building vibration indicators, shaking-event awareness, human-reviewed crack-change tracking, humidity monitoring, and conservative sensor-health handling. Thresholds are site- and asset-specific; this is not earthquake prediction, a building-safety diagnosis, or a validated monitoring installation.
+
 ## Engineering method
 
 PUI89 uses a staged workflow:
