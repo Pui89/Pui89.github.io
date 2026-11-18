@@ -94,6 +94,8 @@ The Shared AI Core is being integrated incrementally. The presence of a shared c
 
 **Coconut Harvest Physical AI architecture (proposed):** [Coconut Harvest AI Physical AI Architecture v0.1](docs/COCONUT_HARVEST_PHYSICAL_AI_ARCHITECTURE_V0.1.md) — founder-selected separate ground-mobility/tree-climbing configurations and arm-first harvesting research, with open-source-first tools, model governance, simulation gates and safety boundaries. This is a design specification, not a physical prototype claim.\n\n**Coconut arm and gripper simulation specification (proposed):** [Simulation Specification v0.1](docs/COCONUT_ARM_GRIPPER_SIMULATION_SPEC_V0.1.md) — defines the fixed-base arm/gripper test boundary, grasp state machine, synthetic tactile signals, fault scenarios, evidence logs and validation gates. No simulator or hardware is claimed to have been run or built.
 
+**Flood Resilience Engineering v0.1 (proposed):** [Architecture](docs/PUI89_FLOOD_RESILIENCE_ARCHITECTURE_V0.1.md) and [Test & Validation Plan](docs/PUI89_FLOOD_RESILIENCE_TEST_AND_VALIDATION_V0.1.md) — define shared flood-awareness, conservative risk assessment, system-health response and a controlled 20 cm test programme. A dependency-light Python reference module and synthetic unit tests are included under `shared_ai_core/environmental_resilience/` and `tests/environmental_resilience/`. The 20 cm figure is a proposed controlled test target, not a validated product capability or flood-crossing recommendation. Physical protection, IP ratings and product operation remain untested.
+
 ## Engineering method
 
 PUI89 uses a staged workflow:
