@@ -87,6 +87,7 @@ body #pui89-global-project-status .pui89-global-status__progress-track{
   overflow:hidden!important;
   border-radius:99px!important;
 }
+#projects .pui89-card-status .pui89-observatory__stage-indicator,
 #projects .pui89-card-status .pui89-global-status__stage,
 body #pui89-global-project-status .pui89-global-status__stage{
   display:flex!important;
@@ -98,6 +99,7 @@ body #pui89-global-project-status .pui89-global-status__stage{
   min-width:0!important;
   margin:0!important;
 }
+#projects .pui89-card-status .pui89-observatory__stage-badge,
 #projects .pui89-card-status .pui89-global-status__stage-tab,
 body #pui89-global-project-status .pui89-global-status__stage-tab{
   display:inline-flex!important;
