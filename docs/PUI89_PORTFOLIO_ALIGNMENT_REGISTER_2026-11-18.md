@@ -19,7 +19,7 @@ PUI89 has exactly six active product projects:
 
 **Shared AI Core** is common engineering infrastructure for these six products. It is not a seventh product.
 
-**Extreme Flood Rescue AI** is an inactive historical standalone project. Preserve its repository and engineering history, but do not list it as an active product, include it in current product counts, show it in portfolio navigation or assign it a current product maturity status. Flood and road-water awareness may remain product-specific advisory requirements for the SUV and Scooter, subject to their own evidence gates.
+Flood and road-water awareness may remain advisory requirements within the AI Global SUV and AI Step-Through Scooter, subject to product-specific evidence and safety gates. This capability does not constitute a separate product or validated flood-driving capability.
 
 ## Sentinel identity and multimodal scope
 
