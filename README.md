@@ -22,6 +22,12 @@ PUI89 follows one central principle: **make system behaviour, evidence, uncertai
 
 ---
 
+
+
+## Six-Product Capability Architecture — 18 November 2026
+
+The bilingual product pages now describe each product's sensory perception, understanding, prediction, decision support, physical interaction, reliability and evidence boundaries. The shared homepage overview explains the common intelligence lifecycle. The [PUI89 Shared AI Core](https://github.com/Pui89/PUI89-Shared-AI-Core) owns the reusable architecture; product-specific capabilities and validation remain in each project repository.
+
 ## Portfolio documentation alignment
 
 The authoritative six-product scope, Sentinel's general multimodal quadruped identity, evidence-label rules and bilingual website review checklist are recorded in [PUI89 Portfolio Alignment Register](docs/PUI89_PORTFOLIO_ALIGNMENT_REGISTER_2026-11-18.md). This is a governance record, not a claim that every product capability is implemented or validated.
