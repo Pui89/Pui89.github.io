@@ -828,6 +828,24 @@ a:hover{color:var(--accent2)!important}
       z-index:2!important;
       border-radius:8px!important;
     }
+
+/* Project-card text fit: consistent card rhythm in Thai and English. */
+#projects .pui89-project-grid{align-items:stretch}
+#projects .pui89-project-card{min-width:0;min-height:100%;display:flex;flex-direction:column;overflow:hidden}
+#projects .pui89-project-content{display:flex;flex:1;min-width:0;flex-direction:column;align-items:stretch;padding:18px 19px 19px}
+#projects .pui89-project-domain{display:block;min-height:2.8em;line-height:1.4;overflow-wrap:anywhere}
+#projects .pui89-project-content h3{min-height:2.5em;margin:8px 0;line-height:1.25;overflow-wrap:anywhere}
+#projects .pui89-project-content p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden;min-height:5.6em;margin:0 0 14px;line-height:1.55;overflow-wrap:anywhere}
+#projects .pui89-project-tags{display:flex;flex-wrap:wrap;align-items:flex-start;gap:6px;margin:auto 0 16px;min-width:0}
+#projects .pui89-project-tags span{max-width:100%;white-space:normal;overflow-wrap:anywhere;line-height:1.35}
+#projects .pui89-explore-button{display:inline-flex;align-self:flex-start;align-items:center;gap:5px;max-width:100%;margin-top:auto;white-space:normal;overflow-wrap:anywhere}
+@media(max-width:780px){
+ #projects .pui89-project-content{padding:16px}
+ #projects .pui89-project-domain{min-height:0}
+ #projects .pui89-project-content h3{min-height:0}
+ #projects .pui89-project-content p{min-height:0;-webkit-line-clamp:5}
+}
+
 </style>  <link rel="stylesheet" href="/assets/css/pui89-ai-discovery.css">
   <link rel="stylesheet" href="/assets/css/pui89-reading-focus.css?v=20261115-focus">
 </head>
@@ -896,27 +914,27 @@ a:hover{color:var(--accent2)!important}
       <div class="pui89-project-grid">
         <article class="pui89-project-card" id="coconut">
           <a class="pui89-project-image" href="coconut.html" aria-label="Explore Coconut Harvest AI"><img src="/images/coconut-harvest-realistic-all-stage-concept.svg" alt="Isometric Coconut Harvest AI concept showing a robotic harvesting system for coconut palms" loading="lazy" decoding="async"><span class="pui89-image-index">01 / 06</span></a>
-          <div class="pui89-project-content"><span class="pui89-project-domain">AGRICULTURE ROBOTICS</span><h3>Coconut Harvest AI</h3><p>AI-assisted coconut maturity assessment and a proposed robotic harvesting workflow for tall palms.</p><div class="pui89-project-tags"><span>Perception</span><span>Harvesting</span><span>Safety</span></div><a class="pui89-explore-button" href="coconut.html">Explore project <span aria-hidden="true">↗</span></a></div>
+          <div class="pui89-project-content"><span class="pui89-project-domain">AGRICULTURE ROBOTICS</span><h3>Coconut Harvest AI</h3><p>AI-based coconut maturity assessment and a proposed robotic harvesting workflow for tall palms.</p><div class="pui89-project-tags"><span>Perception</span><span>Harvesting</span><span>Safety</span></div><a class="pui89-explore-button" href="coconut.html">Explore project <span aria-hidden="true">↗</span></a></div>
         </article>
         <article class="pui89-project-card" id="sentinel">
           <a class="pui89-project-image" href="sentinel.html" aria-label="Explore PUI89 Sentinel"><img src="/images/sentinel-all-terrain-inspection-robot-dog.svg" alt="PUI89 Sentinel four-legged all-terrain exploration and inspection robot concept" loading="lazy" decoding="async"><span class="pui89-image-index">02 / 06</span></a>
-          <div class="pui89-project-content"><span class="pui89-project-domain">ALL-TERRAIN ROBOTICS</span><h3>PUI89 Sentinel — All-Terrain Exploration &amp; Inspection Robot</h3><p><strong>PUI89 Sentinel</strong> is a four-legged quadruped robot concept for supervised exploration and inspection across varied environments, including challenging outdoor areas and authorised industrial or infrastructure sites. “Explore anywhere” is a design ambition, not a validated capability.</p><div class="pui89-project-tags"><span>Quadruped</span><span>Inspection</span><span>Human oversight</span></div><a class="pui89-explore-button" href="sentinel.html">Explore project <span aria-hidden="true">↗</span></a></div>
+          <div class="pui89-project-content"><span class="pui89-project-domain">ALL-TERRAIN ROBOTICS</span><h3>PUI89 Sentinel</h3><p>A four-legged robot concept for supervised outdoor exploration and inspection at authorised industrial or infrastructure sites.</p><div class="pui89-project-tags"><span>Quadruped</span><span>Inspection</span><span>Human oversight</span></div><a class="pui89-explore-button" href="sentinel.html">Explore project <span aria-hidden="true">↗</span></a></div>
         </article>
         <article class="pui89-project-card" id="home">
           <a class="pui89-project-image" href="home.html" aria-label="Explore PUI89 AI HOME"><img src="/images/ai-home-compact-four-wheel.svg" alt="Isometric PUI89 AI HOME indoor home safety robot concept" loading="lazy" decoding="async"><span class="pui89-image-index">03 / 06</span></a>
-          <div class="pui89-project-content"><span class="pui89-project-domain">INDOOR HOME SAFETY</span><h3>PUI89 AI HOME</h3><p>An indoor home-condition awareness concept focused on evidence quality, change detection and safer decisions.</p><div class="pui89-project-tags"><span>Home safety</span><span>Monitoring</span><span>Privacy</span></div><a class="pui89-explore-button" href="home.html">Explore project <span aria-hidden="true">↗</span></a></div>
+          <div class="pui89-project-content"><span class="pui89-project-domain">INDOOR HOME SAFETY</span><h3>PUI89 AI HOME</h3><p>An indoor AI assistant concept for home-condition awareness, change detection and privacy-conscious alerts.</p><div class="pui89-project-tags"><span>Home safety</span><span>Monitoring</span><span>Privacy</span></div><a class="pui89-explore-button" href="home.html">Explore project <span aria-hidden="true">↗</span></a></div>
         </article>
         <article class="pui89-project-card" id="nomad">
           <a class="pui89-project-image" href="nomad.html" aria-label="Explore PUI89 AI NOMAD"><img src="/images/ai-nomad-compact-four-wheel.svg" alt="PUI89 AI NOMAD ground-use four-wheel mobile assistant robot with compact upright enclosure" loading="lazy" decoding="async"><span class="pui89-image-index">04 / 06</span></a>
-          <div class="pui89-project-content"><span class="pui89-project-domain">FOUR-WHEEL ROBOTICS</span><h3>PUI89 AI NOMAD</h3><p>A ground-use four-wheel mobile assistant robot with a compact upright enclosure. Any storage is secondary to supervised mobility and assistance. It is not luggage or airline baggage. Distinct from AI HOME; physical mobility remains unvalidated.</p><div class="pui89-project-tags"><span>Compact upright robot enclosure</span><span>Four-wheel mobility</span><span>Human oversight</span></div><a class="pui89-explore-button" href="nomad.html">Explore project <span aria-hidden="true">↗</span></a></div>
+          <div class="pui89-project-content"><span class="pui89-project-domain">FOUR-WHEEL ROBOTICS</span><h3>PUI89 AI NOMAD</h3><p>A compact, upright four-wheel mobile assistant for ground use, distinct from AI HOME. Real-world mobility is not yet validated.</p><div class="pui89-project-tags"><span>Compact upright robot enclosure</span><span>Four-wheel mobility</span><span>Human oversight</span></div><a class="pui89-explore-button" href="nomad.html">Explore project <span aria-hidden="true">↗</span></a></div>
         </article>
         <article class="pui89-project-card" id="global-suv"><span id="car" hidden></span>
           <a class="pui89-project-image" href="ai-global-suv.html" aria-label="Explore PUI89 AI Global SUV"><img src="/assets/images/pui89-ai-global-suv-concept.svg" alt="PUI89 AI Global SUV medium-size five-door concept in Deep Navy with Electric Cyan details" loading="lazy" decoding="async"><span class="pui89-image-index">05 / 06</span></a>
-          <div class="pui89-project-content"><span class="pui89-project-domain">INTELLIGENT MOBILITY</span><h3>PUI89 AI Global SUV</h3><p>A medium-size, five-door SUV concept exploring shared Smart Mobility Intelligence, road perception, safety awareness and human-driver assistance.</p><div class="pui89-project-tags"><span>Medium-size SUV</span><span>HEV-first</span><span>Road-risk awareness</span></div><a class="pui89-explore-button" href="ai-global-suv.html">Explore project <span aria-hidden="true">↗</span></a></div>
+          <div class="pui89-project-content"><span class="pui89-project-domain">INTELLIGENT MOBILITY</span><h3>PUI89 AI Global SUV</h3><p>A medium-size SUV concept with AI-assisted road awareness, risk alerts and driver support—not vehicle control.</p><div class="pui89-project-tags"><span>Medium-size SUV</span><span>HEV-first</span><span>Road-risk awareness</span></div><a class="pui89-explore-button" href="ai-global-suv.html">Explore project <span aria-hidden="true">↗</span></a></div>
         </article>
         <article class="pui89-project-card" id="motorcycle">
           <a class="pui89-project-image" href="ai-robot-motorcycle.html" aria-label="Explore PUI89 AI Step-Through Scooter"><img src="/images/pui89-easyride-ai-motorcycle.svg" alt="PUI89 AI Step-Through Scooter concept, with a continuous floorboard and two-wheel design" loading="lazy" decoding="async"><span class="pui89-image-index">06 / 06</span></a>
-          <div class="pui89-project-content"><span class="pui89-project-domain">TWO-WHEEL MOBILITY</span><h3>PUI89 AI Step-Through Scooter</h3><p>A rider-first two-wheel step-through scooter concept exploring accessible design and AI-assisted road and vehicle awareness.</p><div class="pui89-project-tags"><span>Rider safety</span><span>Road context</span><span>Ergonomics</span></div><a class="pui89-explore-button" href="ai-robot-motorcycle.html">Explore project <span aria-hidden="true">↗</span></a></div>
+          <div class="pui89-project-content"><span class="pui89-project-domain">TWO-WHEEL MOBILITY</span><h3>PUI89 AI Step-Through Scooter</h3><p>A practical two-wheel step-through scooter concept with accessible mounting and AI-assisted road awareness.</p><div class="pui89-project-tags"><span>Rider safety</span><span>Road context</span><span>Ergonomics</span></div><a class="pui89-explore-button" href="ai-robot-motorcycle.html">Explore project <span aria-hidden="true">↗</span></a></div>
         </article>
       </div>
       <p class="pui89-project-footnote">The six active products are independent development tracks. Concept illustrations are not photographs of built or validated robots; implementation and verification status are documented on each project page.</p>
