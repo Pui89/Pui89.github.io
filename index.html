@@ -641,6 +641,33 @@ a:hover{color:#B8F2FF!important}
 @media(max-width:620px){#projects .pui89-project-grid{grid-template-columns:1fr;gap:14px}#projects .pui89-project-image{aspect-ratio:16/9}#projects .pui89-project-content{padding:19px}#projects .pui89-quick-explore{flex-wrap:nowrap;overflow-x:auto;padding:0 0 8px;scroll-snap-type:x proximity}#projects .pui89-quick-explore a{flex:0 0 auto;scroll-snap-align:start}#projects.pui89-project-showcase:before{inset:0 -10px}}
 @media(prefers-reduced-motion:reduce){#projects .pui89-project-card,#projects .pui89-project-image img,#projects .pui89-quick-explore a,#projects .pui89-explore-button{transition:none!important}#projects .pui89-project-card:hover{transform:none}}
 
+
+/* PUI89 identity system: three core identities and five brand pillars. */
+.pui89-identity-section{padding-top:38px;padding-bottom:54px}
+.pui89-identity-heading{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:22px}
+.pui89-identity-heading h2{margin:8px 0 0;font-size:clamp(2rem,4vw,3rem);letter-spacing:-.045em;line-height:1.08}
+.pui89-identity-heading .intro{max-width:480px;margin:0}
+.pui89-core-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.pui89-core-card{position:relative;overflow:hidden;min-height:180px;padding:22px;border:1px solid rgba(66,217,255,.24);border-radius:16px;background:linear-gradient(145deg,rgba(20,43,64,.96),rgba(9,21,36,.96));transition:transform .18s ease,border-color .18s ease}
+.pui89-core-card:before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:linear-gradient(180deg,#42D9FF,#C5D0DC)}
+.pui89-core-card:hover,.pui89-pillar-card:hover{transform:translateY(-3px);border-color:rgba(66,217,255,.62)}
+.pui89-identity-index{display:block;color:#42D9FF;font-size:.72rem;font-weight:850;letter-spacing:.15em}
+.pui89-core-card h3{margin:13px 0 8px;font-size:1.16rem;line-height:1.25}
+.pui89-core-card p{margin:0;color:var(--muted);font-size:.91rem}
+.pui89-pillars-label{margin:30px 0 13px;color:#C5D0DC;font-size:.72rem;font-weight:850;letter-spacing:.15em}
+.pui89-pillars-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:11px}
+.pui89-pillar-card{min-width:0;padding:17px 15px;border:1px solid rgba(155,181,207,.18);border-radius:13px;background:linear-gradient(155deg,rgba(20,34,52,.94),rgba(12,23,38,.96));transition:transform .18s ease,border-color .18s ease}
+.pui89-pillar-card .pui89-identity-index{font-size:.68rem}
+.pui89-pillar-card h3{margin:9px 0 6px;font-size:.93rem;letter-spacing:.04em}
+.pui89-pillar-card p{margin:0;color:var(--muted);font-size:.8rem;line-height:1.5}
+.pui89-guiding-principle{margin-top:18px;padding:17px 20px;border:1px solid rgba(66,217,255,.24);border-radius:13px;background:linear-gradient(100deg,rgba(20,50,66,.68),rgba(16,28,44,.72));color:#eaf6ff;font-weight:750;letter-spacing:.01em}
+.pui89-identity-footer{margin-top:12px;font-size:.86rem;color:var(--muted)}
+.pui89-identity-footer a{font-weight:750}
+@media(max-width:1000px){.pui89-pillars-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){.pui89-identity-heading{display:block}.pui89-identity-heading .intro{margin-top:12px}.pui89-core-grid{grid-template-columns:1fr}.pui89-core-card{min-height:0}.pui89-pillars-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:460px){.pui89-pillars-grid{grid-template-columns:1fr}.pui89-guiding-principle{font-size:.92rem}}
+@media(prefers-reduced-motion:reduce){.pui89-core-card,.pui89-pillar-card{transition:none!important}}
+
 </style>
 <link rel="stylesheet" href="/assets/css/pui89-project-design-system.css?v=20261110-nav-unified">
   <link rel="stylesheet" href="assets/css/pui89-design-system.css?v=20261108-professional">
@@ -799,6 +826,29 @@ a:hover{color:var(--accent2)!important}
     </div>
     <aside class="notice" aria-label="Project status"><strong>Development stage:</strong> independent software and prototype work. The projects are not presented as certified products or validated physical robots; implementation and test status are documented in each repository.</aside>
     <p class="muted" style="margin:.75rem 0 0">Progress is reported using the <a href="docs/PUI89_DEVELOPMENT_STAGE_STANDARD.md">PUI89 evidence-based development maturity labels</a>, based on documented evidence rather than commercial-readiness percentages.</p>
+
+
+<section class="section pui89-identity-section" id="pui89-identity" aria-labelledby="pui89-identity-title">
+  <div class="pui89-identity-heading">
+    <div><span class="eyebrow">THE PUI89 IDENTITY</span><h2 id="pui89-identity-title">Independent AI Engineering</h2></div>
+    <p class="intro">PUI89 brings together independent learning, cross-disciplinary engineering and real-world intelligence to turn ideas into useful, safe and verifiable systems.</p>
+  </div>
+  <div class="pui89-core-grid" aria-label="Three core identities">
+    <article class="pui89-core-card"><span class="pui89-identity-index">CORE IDENTITY / 01</span><h3>Independent Learning</h3><p>Learn independently. Build knowledge and capability continuously.</p></article>
+    <article class="pui89-core-card"><span class="pui89-identity-index">CORE IDENTITY / 02</span><h3>Cross-disciplinary Engineering</h3><p>Connect AI with robotics, computing, sensing and other engineering disciplines.</p></article>
+    <article class="pui89-core-card"><span class="pui89-identity-index">CORE IDENTITY / 03</span><h3>Real-world Intelligence</h3><p>Turn ideas into systems and products designed for practical use, safety and verification.</p></article>
+  </div>
+  <p class="pui89-pillars-label">FIVE BRAND PILLARS</p>
+  <div class="pui89-pillars-grid">
+    <article class="pui89-pillar-card"><span class="pui89-identity-index">01</span><h3>IDENTITY</h3><p>Purpose, vision and engineering philosophy.</p></article>
+    <article class="pui89-pillar-card"><span class="pui89-identity-index">02</span><h3>INTELLIGENCE</h3><p>AI, multimodal systems and Shared AI Core.</p></article>
+    <article class="pui89-pillar-card"><span class="pui89-identity-index">03</span><h3>ENGINEERING</h3><p>Robotics, computing and hardware-aware systems.</p></article>
+    <article class="pui89-pillar-card"><span class="pui89-identity-index">04</span><h3>INNOVATION</h3><p>Products and technologies that address real problems.</p></article>
+    <article class="pui89-pillar-card"><span class="pui89-identity-index">05</span><h3>TRUST</h3><p>Safety, evidence, transparency and reliability.</p></article>
+  </div>
+  <div class="pui89-guiding-principle">We don't just build AI. We engineer intelligence to work in the real world.</div>
+  <p class="pui89-identity-footer">Discover the <a href="company.html#founder-journey">founder’s journey and PUI89 principles ↗</a></p>
+</section>
 
     <section id="projects" class="section pui89-project-showcase">
       <div class="pui89-section-heading">
