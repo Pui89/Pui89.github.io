@@ -27,9 +27,9 @@
 - **AI Global SUV:** human-driver vehicle concept with advisory AI; no autonomous steering, throttle or braking claim.
 - **AI Step-Through Scooter:** rider-first two-wheel step-through scooter concept. Include advisory road-water and flood-risk warnings; unknown water condition means do not enter. No autonomous steering, throttle or braking.
 
-## Historical project boundary
+## Cross-product flood and road-water awareness
 
-**Extreme Flood Rescue AI is inactive as a standalone product.** Preserve its repository and historical engineering records. Do not list it as an active product, active development project, portfolio card, current product count or product progress item. Flood-risk awareness remains relevant to the SUV and Step-Through Scooter.
+Flood and road-water awareness may be developed as advisory capabilities within the AI Global SUV and AI Step-Through Scooter. These are product-specific safety requirements, not a separate product or a claim of validated flood-driving capability. Unknown or insufficient water and road evidence must be reported as unknown; the rider or driver retains control.
 
 ## Evidence-based maturity vocabulary
 
