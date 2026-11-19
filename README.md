@@ -185,3 +185,15 @@ PUI89 remains an independent early-stage initiative. An enquiry does not mean a 
 PUI89 has **exactly six active products**. [PUI89 Portfolio Source of Truth v1.0](PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.0.md) is the canonical record for all six product names, repository links, bilingual website links, founder-approved requirements and evidence maturity labels. Shared AI Core is common infrastructure, not a seventh product. Flood and road-water awareness may remain advisory requirements within relevant mobility products; they are not a separate product.
 
 The source of truth also records the HOME 8 kg target / 10 kg maximum, NOMAD's ground-use four-wheel mobile-assistant identity, Sentinel's mission-before-hardware gate, and the Coconut rights → human labels → held-out CPU evaluation sequence.
+
+
+## Everyday Intelligence & Multi-Perception
+
+The bilingual website presents PUI89's user-centred design direction: **Making Everyday Life Easier Through Intelligence**. Shared requirements include simple physical operation, essential local use without a mandatory smartphone/app where technically feasible, Multi-Perception Intelligence (MPI), accessible on-device text alerts, optional mobile notifications, animal-aware observation with non-disturbance safeguards, privacy, reliability and human authority.
+
+- [English homepage](https://pui89.github.io/)
+- [หน้าแรกภาษาไทย](https://pui89.github.io/th.html)
+- [Shared AI Core — English](https://pui89.github.io/ai-core.html)
+- [Shared AI Core — Thai](https://pui89.github.io/ai-core-th.html)
+
+These are design requirements and proposed capabilities, not a claim that all hardware, sensors or software functions are implemented or validated.
