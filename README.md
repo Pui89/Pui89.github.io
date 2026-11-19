@@ -8,6 +8,14 @@ PUI89 is an independent AI engineering initiative developing practical AI softwa
 
 PUI89 follows one central principle: **make system behaviour, evidence, uncertainty, limitations, and safety boundaries inspectable.** Project concepts, implemented software, automated test results, simulations, and validated real-world capabilities are described separately.
 
+## Product philosophy
+
+> **Build what you wish existed as a user.**
+>
+> สร้างสิ่งที่คุณอยากให้มีในฐานะผู้ใช้งาน
+
+Start with what people genuinely wish they had and would value using. Understand real needs, design the user experience, and engineer practical value—not merely what is technically possible. Apply this philosophy across all six products. The developer's perspective is a starting point, not a substitute for real user needs, feedback, usability testing, or evidence.
+
 <p align="center">
   <a href="https://pui89.github.io/">
     <img src="assets/images/pui89-intelligent-systems-hero.svg" alt="PUI89 — Intelligent Systems and AI Engineering" width="760">
