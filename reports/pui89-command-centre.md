@@ -1,53 +1,128 @@
-# PUI89 — Cross-Project Command Centre
+# PUI89 AI Robotics — Cross-Project Command Centre
 
-> Generated (UTC): 2026-11-14T11:24:12.856Z
-> Snapshot source: public GitHub repository metadata and default-branch workflow runs. This is not a live feed.
+> Generated (UTC): 2026-11-19T15:54:13.237920+00:00
 
-## Six-product portfolio
+Read-only overview of public repository commits and recent GitHub Actions runs. This report is not a substitute for running tests or reviewing evidence.
 
-| Product | Repository | Default-branch commit | Latest two workflow runs |
-|---|---|---|---|
-| [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | Pui89/Coconut-Harvest-AI | [208ec8cd22ac](https://github.com/Pui89/Coconut-Harvest-AI/commit/208ec8cd22ac1a4c898f4e03ea691b9fb3cdceaf) | PUI89 Shared Interface Smoke: success; PUI89 Three-Layer Security Baseline: success |
-| [PUI89 Sentinel — All-Terrain Exploration & Inspection Robot](https://github.com/Pui89/All-Terrain-Inspection-Robot) | Pui89/All-Terrain-Inspection-Robot | Quadruped exploration and inspection concept with software workflow records | No physical robot, validated locomotion, real sensor integration or field inspection performance is claimed |
-| [AI HOME](https://github.com/Pui89/AI-Home-Safety-Robot) | Pui89/AI-Home-Safety-Robot | [8479aace194e](https://github.com/Pui89/AI-Home-Safety-Robot/commit/8479aace194e0d979e2be2ef8b256a7c1d4c556c) | PUI89 Security Audit: success; PUI89 project intelligence reviews: failure |
-| [PUI89 AI NOMAD — Four-Wheel Mobile Assistant Robot](https://github.com/Pui89/AI-Mobile-Assistant-Robot) | Pui89/AI-Mobile-Assistant-Robot | [7b54dc4c395c](https://github.com/Pui89/AI-Mobile-Assistant-Robot/commit/7b54dc4c395c945773c5ee7ab3c5bee73836b940) | PUI89 Security Audit: success; HOMEGUARD CI: success |
-| [PUI89 AI Global SUV](https://github.com/Pui89/PUI89-AI-Global-SUV) | Pui89/PUI89-AI-Global-SUV | [27a9b31be480](https://github.com/Pui89/PUI89-AI-Global-SUV/commit/27a9b31be480f01cdf9bd52c8a46d8beab7ee58f) | PUI89 Security Audit: success; PUI89 AI Robot Car Quality and Shared Core Contract Checks: success |
-| [PUI89 AI Step-Through Scooter · EasyRide AI](https://github.com/Pui89/AI-Motorcycle-Robotics) | Pui89/AI-Motorcycle-Robotics | [37671ba0f2de](https://github.com/Pui89/AI-Motorcycle-Robotics/commit/37671ba0f2dec2c0c0d3c4afc21de138a867fce3) | PUI89 Security Audit: success; PUI89 Motorcycle Quality and Shared Core Contract Checks: success |
+| Project | Status | Latest commit | Latest workflow summary | Next focus |
+|---|---|---|---|---|
+| [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | CHECKS_AVAILABLE | [4936f879184f](https://github.com/Pui89/Coconut-Harvest-AI/commit/4936f879184f9cbcc9e4f76209f0575336ec0f5d) | PUI89 Security Audit: success [main]; PUI89 Three-Layer Security Baseline: success [main]; PUI89 System Guardrails: success [main] | Agricultural perception, dataset provenance, reviewed labels and leakage-safe evaluation. |
+| [PUI89 Sentinel — All-Terrain Exploration & Inspection Robot](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot) | CHECKS_AVAILABLE | [33089583b475](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/commit/33089583b475d32993882402420210903f5df051) | PUI89 Security Audit: success [main]; Free local-first app regression checks: success [main]; PUI89 Pitfall Detector Checks: success [main] | Supervised quadruped inspection; first mission and operating envelope must be defined before hardware selection. |
+| [PUI89 AI HOME](https://github.com/Pui89/AI-Home-Safety-Robot) | CHECKS_AVAILABLE | [de3397a046f1](https://github.com/Pui89/AI-Home-Safety-Robot/commit/de3397a046f1f988af908fff306cf9f83192267c) | PUI89 Security Audit: success [main]; PUI89 project intelligence reviews: failure [main]; github_actions in / for actions/checkout - Update #1692848464: success [main] | Indoor four-wheel home assistant; complete robot mass target 8 kg and maximum 10 kg. |
+| [PUI89 AI NOMAD](https://github.com/Pui89/AI-Mobile-Assistant-Robot) | CHECKS_AVAILABLE | [522169ca0e60](https://github.com/Pui89/AI-Mobile-Assistant-Robot/commit/522169ca0e600a8a7e66a01562565f73d90f6465) | PUI89 Three-Layer Security Baseline: success [main]; HOMEGUARD CI: success [main]; PUI89 Security Audit: success [main] | Ground-use four-wheel mobile assistant robot; not luggage or airline baggage; storage is secondary. |
+| [PUI89 AI Global SUV](https://github.com/Pui89/PUI89-AI-Global-SUV) | CHECKS_AVAILABLE | [deebff24e220](https://github.com/Pui89/PUI89-AI-Global-SUV/commit/deebff24e220d6e5b0606ca845eb6703105bf487) | PUI89 Security Audit: success [main]; PUI89 AI Global SUV Quality and Shared Core Contract Checks: success [main]; PUI89 project intelligence reviews: failure [main] | Medium-size SUV concept; human-driver-first mobility intelligence and advisory-only software research. |
+| [PUI89 AI Step-Through Scooter](https://github.com/Pui89/AI-Step-Through-Scooter) | CHECKS_AVAILABLE | [31e0ea6f78cc](https://github.com/Pui89/AI-Step-Through-Scooter/commit/31e0ea6f78cc88a0a2f71face886653bba1a81fe) | PUI89 Motorcycle Quality and Shared Core Contract Checks: success [main]; PUI89 Security Audit: success [main]; PUI89 project intelligence reviews: failure [main] | Rider-first two-wheel step-through scooter; advisory road-water and flood-risk awareness, human-controlled operation. |
 
-## Shared AI Core — platform infrastructure
+## Shared AI Core — platform infrastructure (not a seventh product)
 
-- Status: NOT PUBLICLY MONITORED.
-- Shared AI Core is a private platform repository. Its repository activity is intentionally not exposed in this public report.
-- It is not counted as an eighth product.
+- Repository: Private platform repository — not publicly monitored
+- Status: NOT_PUBLICLY_MONITORED
+- Latest default-branch commit: unavailable
+- Latest workflow summary: No recent run data
+- Focus: Shared contracts, orchestration, compute intelligence, evidence gates and reusable engineering infrastructure; not a seventh product.
 
-## Important interpretation
+## Key engineering safeguards
 
-- The status CHECKS_AVAILABLE means public repository metadata and workflow evidence were retrievable; it does not mean every workflow passed.
-- AI HOME's latest two runs include a failed project-intelligence-review workflow. Review its run before treating it as resolved.
-- Missing safeguard runs are UNKNOWN, not failed or passed.
-- Workflow success is software evidence only; it does not validate physical robots, field performance, AI accuracy, certification or commercial readiness.
+Selected safeguards are scanned across the latest 50 repository workflow runs, rather than only the newest 10, and are filtered to the repository default branch. A status of not_seen_in_recent_runs means unknown, not failed or passed. Feature/Dependabot runs are counted separately and never substituted for default-branch evidence. The simulation check includes the report validator step only when that workflow run completes successfully. The Coconut dataset evidence audit is currently project-specific; other projects may show not_seen_in_recent_runs because that workflow is not configured there.
 
-## Evidence limits
+### Coconut Harvest AI
 
-- This report is a point-in-time read of public GitHub metadata and recent workflow runs; it does not execute project tests.
+Non-default-branch runs in the scanned window: 23
+
+| Safeguard | Status | Branch | Last updated (UTC) | Run |
+|---|---|---|---|---|
+| Free cloud verification | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Dataset recovery audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Free-resource link audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Rule-based simulation evaluation | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Coconut dataset evidence audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Simulation benchmark + report validator | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Autonomy / safety regression tests | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+
+### PUI89 Sentinel — All-Terrain Exploration & Inspection Robot
+
+Non-default-branch runs in the scanned window: 32
+
+| Safeguard | Status | Branch | Last updated (UTC) | Run |
+|---|---|---|---|---|
+| Free cloud verification | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Dataset recovery audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Free-resource link audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Rule-based simulation evaluation | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Coconut dataset evidence audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Simulation benchmark + report validator | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Autonomy / safety regression tests | success | main | 2026-11-19T15:13:12Z | [open](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244319) |
+
+### PUI89 AI HOME
+
+Non-default-branch runs in the scanned window: 30
+
+| Safeguard | Status | Branch | Last updated (UTC) | Run |
+|---|---|---|---|---|
+| Free cloud verification | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Dataset recovery audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Free-resource link audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Rule-based simulation evaluation | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Coconut dataset evidence audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Simulation benchmark + report validator | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Autonomy / safety regression tests | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+
+### PUI89 AI NOMAD
+
+Non-default-branch runs in the scanned window: 34
+
+| Safeguard | Status | Branch | Last updated (UTC) | Run |
+|---|---|---|---|---|
+| Free cloud verification | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Dataset recovery audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Free-resource link audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Rule-based simulation evaluation | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Coconut dataset evidence audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Simulation benchmark + report validator | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Autonomy / safety regression tests | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+
+### PUI89 AI Global SUV
+
+Non-default-branch runs in the scanned window: 32
+
+| Safeguard | Status | Branch | Last updated (UTC) | Run |
+|---|---|---|---|---|
+| Free cloud verification | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Dataset recovery audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Free-resource link audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Rule-based simulation evaluation | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Coconut dataset evidence audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Simulation benchmark + report validator | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Autonomy / safety regression tests | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+
+### PUI89 AI Step-Through Scooter
+
+Non-default-branch runs in the scanned window: 34
+
+| Safeguard | Status | Branch | Last updated (UTC) | Run |
+|---|---|---|---|---|
+| Free cloud verification | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Dataset recovery audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Free-resource link audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Rule-based simulation evaluation | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Coconut dataset evidence audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Simulation benchmark + report validator | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Autonomy / safety regression tests | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+
+## Warnings and limitations
+
+- This report reads public repository metadata and recent workflow runs; it does not execute project tests.
 - A missing workflow run is unknown, not a passing result or proof of failure.
 - Only the most recent 50 repository workflow runs are scanned; a safeguard absent from that window is unknown.
-- Exactly six active product repositories are monitored. Shared AI Core is platform infrastructure, not a seventh product, and is private so its activity is not included in this public report.
-- Headline workflow and safeguard status is filtered to each repository's default branch; other-branch runs are counted separately and do not prove default-branch health.
-- A successful workflow does not validate real-world robot performance, AI accuracy, certification, dataset quality or field performance.
-- The report reflects the public GitHub API snapshot at generated_at_utc; it may become stale until the next successful refresh.
+- Exactly six active product repositories are monitored; Shared AI Core is monitored separately as shared platform infrastructure and is not counted as a seventh product. The website repository is not a product.
+- Headline workflow and safeguard status is filtered to the repository default branch; other-branch runs are counted separately and do not prove default-branch health.
+- A successful workflow does not validate real-world robot performance or dataset correctness.
+- The Coconut dataset evidence audit runs only where its workflow is configured; not_seen_in_recent_runs for other projects means not observed, not a failure.
+- GitHub API rate limits or temporary network errors can make status partial.
 
-## Cost and safety
+## Open-source-first policy
 
-- Public GitHub metadata only; no paid API, model download, cloud GPU or new package is used by this report.
-- This report does not execute tests or change any product repository.
-- No robot commands or autonomous physical actions are performed.
-
-
-## Canonical product-name and scope alignment (16 November 2026)
-
-- PUI89 Sentinel is the separate quadruped exploration and inspection concept; physical mobility and sensor performance remain unvalidated.
-- PUI89 AI NOMAD is the compact four-wheel mobile assistant with a suitcase-inspired upright body and retractable manual pull handle. It is not a quadruped. Its physical mobility and performance remain unvalidated.
-- PUI89 AI Global SUV is the human-driver-first SUV intelligence concept; no autonomous-driving capability is claimed.
-- PUI89 AI Step-Through Scooter · EasyRide AI is the step-through two-wheel mobility concept; no autonomous throttle, steering or braking is claimed.
-- Workflow status describes only the configured repository checks. It does not prove product performance or physical validation.
+- This report generator uses the Python standard library and public GitHub metadata; it does not require paid AI APIs, cloud GPUs, or model downloads.
+- The script only reads public GitHub metadata; it does not change project repositories.
+- The scheduled GitHub Actions workflow publishes this report in this website repository.
+- Do not interpret unknown, partial, or missing data as a passing test.
