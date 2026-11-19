@@ -193,3 +193,8 @@ PUI89 remains an independent early-stage initiative. An enquiry does not mean a 
 PUI89 has **exactly six active products**. [PUI89 Portfolio Source of Truth v1.0](PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.0.md) is the canonical record for all six product names, repository links, bilingual website links, founder-approved requirements and evidence maturity labels. Shared AI Core is common infrastructure, not a seventh product. Flood and road-water awareness may remain advisory requirements within relevant mobility products; they are not a separate product.
 
 The source of truth also records the HOME 8 kg target / 10 kg maximum, NOMAD's ground-use four-wheel mobile-assistant identity, Sentinel's mission-before-hardware gate, and the Coconut rights → human labels → held-out CPU evaluation sequence.
+
+
+## PUI89 Easy Direct Control Standard v1.0
+
+All six products share a design requirement for simple, accessible, on-device operation. Essential controls, working-mode selection, status and alerts must be available directly on the product without a smartphone, application, account or internet connection. Remote and application interfaces are optional supplements. See the [PUI89 Easy Direct Control Standard v1.0](docs/PUI89_EASY_DIRECT_CONTROL_STANDARD_V1.0.md) for shared requirements, product-specific adaptations and acceptance gates. This is a proposed standard; implementation and testing remain to be evidenced separately.
