@@ -239,20 +239,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/command-centre.html"/>
   </url>
   <url>
-    <loc>https://pui89.github.io/ai-robotics-thailand.html</loc>
-    <lastmod>2026-11-10</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/ai-robotics-thailand.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/ai-robotics-thailand-th.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/ai-robotics-thailand.html"/>
-  </url>
-  <url>
-    <loc>https://pui89.github.io/ai-robotics-thailand-th.html</loc>
-    <lastmod>2026-11-10</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/ai-robotics-thailand.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/ai-robotics-thailand-th.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/ai-robotics-thailand.html"/>
-  </url>
-  <url>
     <loc>https://pui89.github.io/engineering-atlas.html</loc>
     <lastmod>2026-11-11</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/engineering-atlas.html"/>
@@ -378,6 +364,8 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/ai-2030-th.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/ai-2030.html"/>
   </url>
+  
+  
   
   
   
