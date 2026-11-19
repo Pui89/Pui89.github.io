@@ -36,6 +36,10 @@ Start with what people genuinely wish they had and would value using. Understand
 
 The bilingual product pages now describe each product's sensory perception, understanding, prediction, decision support, physical interaction, reliability and evidence boundaries. The shared homepage overview explains the common intelligence lifecycle. The [PUI89 Shared AI Core](https://github.com/Pui89/PUI89-Shared-AI-Core) owns the reusable architecture; product-specific capabilities and validation remain in each project repository.
 
+## Product operating coverage standard
+
+The bilingual [PUI89 Product Operating Coverage Standard v1.0](docs/PUI89_PRODUCT_OPERATING_COVERAGE_STANDARD_V1.0.md) defines the correct per-unit allocation and measurement method for all six active products. It sets AI HOME at one robot and one charging dock per floor; defines Coconut Harvest AI by assigned plantation work, Sentinel by inspection mission/site zone, AI NOMAD by traveller/luggage task, and each vehicle AI system by one vehicle and its approved routes. Unsupported numerical coverage figures are explicitly withdrawn; public capacity claims require product-specific test evidence. The standard is a proposed requirement, not proof of physical performance.
+
 ## Portfolio documentation alignment
 
 The authoritative six-product scope, Sentinel's general multimodal quadruped identity, evidence-label rules and bilingual website review checklist are recorded in [PUI89 Portfolio Alignment Register](docs/PUI89_PORTFOLIO_ALIGNMENT_REGISTER_2026-11-18.md). This is a governance record, not a claim that every product capability is implemented or validated.
