@@ -763,6 +763,17 @@ a:hover{color:var(--accent2)!important}
   <link rel="stylesheet" href="/assets/css/pui89-status-square-compact.css?v=20261118-compact-v1">
 <link rel="stylesheet" href="/assets/css/pui89-status-square-fit.css?v=20261118-status-square-fit-v1">
 <link rel="stylesheet" href="/assets/css/pui89-industrial-platform-home.css?v=20261118-v1">
+
+<style id="pui89-identity-system">
+.pui89-identity{position:relative;margin:34px 0 48px;padding:clamp(24px,4vw,42px);border:1px solid rgba(66,217,255,.24);border-radius:22px;background:linear-gradient(145deg,rgba(18,39,60,.94),rgba(8,20,34,.96));box-shadow:0 18px 48px rgba(0,0,0,.16)}
+.pui89-identity-heading{display:flex;align-items:end;justify-content:space-between;gap:26px;margin-bottom:24px}.pui89-identity-heading h2{margin:8px 0 0;font-size:clamp(1.9rem,3.8vw,2.8rem);line-height:1.08;letter-spacing:-.04em}.pui89-identity-heading>p{max-width:510px;margin:0;color:var(--muted,#b8c7da)}
+.pui89-core-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.pui89-core-card{min-width:0;padding:21px;border:1px solid rgba(66,217,255,.22);border-radius:15px;background:linear-gradient(145deg,rgba(24,49,73,.9),rgba(12,27,44,.9))}.pui89-identity-index{display:block;color:#42d9ff;font-size:.7rem;font-weight:850;letter-spacing:.14em}.pui89-core-card h3{margin:12px 0 8px;font-size:1.08rem;line-height:1.3}.pui89-core-card p,.pui89-pillar-card p{margin:0;color:var(--muted,#b8c7da);font-size:.88rem;line-height:1.6}
+.pui89-pillars-label{margin:27px 0 12px;color:#c5d0dc;font-size:.72rem;font-weight:850;letter-spacing:.13em}.pui89-pillars-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.pui89-pillar-card{min-width:0;padding:15px;border:1px solid rgba(155,181,207,.2);border-radius:12px;background:rgba(12,26,42,.78)}.pui89-pillar-card h3{margin:8px 0 5px;font-size:.88rem;letter-spacing:.035em}.pui89-pillar-card p{font-size:.78rem}.pui89-guiding-principle{margin-top:17px;padding:16px 18px;border-left:3px solid #42d9ff;border-radius:0 11px 11px 0;background:rgba(66,217,255,.07);font-weight:750;color:#eaf6ff}
+@media(max-width:900px){.pui89-pillars-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.pui89-identity-heading{display:block}.pui89-identity-heading>p{margin-top:12px}}
+@media(max-width:680px){.pui89-core-grid{grid-template-columns:1fr}.pui89-pillars-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pui89-identity{padding:22px}}
+@media(max-width:420px){.pui89-pillars-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.pui89-identity *{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+</style>
 </head>
 <body data-pui89-project="portfolio">
   <a class="skip-link" href="#main-content">ข้ามไปยังเนื้อหาหลัก</a>
@@ -812,6 +823,24 @@ a:hover{color:var(--accent2)!important}
       <div><span class="strip-index">02</span><span><strong>Test · ทดสอบ</strong><small>ตรวจสอบซ้ำได้</small></span></div>
       <div><span class="strip-index">03</span><span><strong>Prove · พิสูจน์</strong><small>สื่อสารด้วยหลักฐาน</small></span></div>
     </div>
+
+<section class="pui89-identity" id="pui89-identity" aria-labelledby="pui89-identity-title">
+  <div class="pui89-identity-heading"><div><span class="eyebrow">อัตลักษณ์ของ PUI89</span><h2 id="pui89-identity-title">Independent AI Engineering</h2></div><p>PUI89 ผสานการเรียนรู้ด้วยตนเอง วิศวกรรมข้ามศาสตร์ และปัญญาประดิษฐ์ที่มุ่งใช้งานได้จริง เพื่อเปลี่ยนแนวคิดให้เป็นระบบที่มีประโยชน์ ปลอดภัย และตรวจสอบได้</p></div>
+  <div class="pui89-core-grid" aria-label="อัตลักษณ์หลักสามประการของ PUI89">
+    <article class="pui89-core-card"><span class="pui89-identity-index">CORE IDENTITY / 01</span><h3>Independent Learning · การเรียนรู้ด้วยตนเอง</h3><p>พัฒนาความรู้และความสามารถอย่างต่อเนื่อง ผ่านการเรียนรู้และทดลองลงมือทำด้วยตนเอง</p></article>
+    <article class="pui89-core-card"><span class="pui89-identity-index">CORE IDENTITY / 02</span><h3>Cross-disciplinary Engineering · วิศวกรรมข้ามศาสตร์</h3><p>เชื่อมโยง AI กับหุ่นยนต์ คอมพิวเตอร์ เซนเซอร์ และวิศวกรรมหลากหลายสาขา</p></article>
+    <article class="pui89-core-card"><span class="pui89-identity-index">CORE IDENTITY / 03</span><h3>Real-world Intelligence · ปัญญาประดิษฐ์ในโลกจริง</h3><p>พัฒนาแนวคิดสู่ระบบที่มุ่งใช้งานได้จริง คำนึงถึงความปลอดภัย และประเมินด้วยหลักฐาน</p></article>
+  </div>
+  <p class="pui89-pillars-label">FIVE BRAND PILLARS · 5 เสาหลักของแบรนด์</p>
+  <div class="pui89-pillars-grid">
+    <article class="pui89-pillar-card"><span class="pui89-identity-index">01</span><h3>IDENTITY · อัตลักษณ์</h3><p>ตัวตน วิสัยทัศน์ และปรัชญาทางวิศวกรรม</p></article>
+    <article class="pui89-pillar-card"><span class="pui89-identity-index">02</span><h3>INTELLIGENCE · ปัญญาประดิษฐ์</h3><p>AI ระบบหลายรูปแบบ และ Shared AI Core</p></article>
+    <article class="pui89-pillar-card"><span class="pui89-identity-index">03</span><h3>ENGINEERING · วิศวกรรม</h3><p>หุ่นยนต์ คอมพิวเตอร์ และระบบที่คำนึงถึงฮาร์ดแวร์</p></article>
+    <article class="pui89-pillar-card"><span class="pui89-identity-index">04</span><h3>INNOVATION · นวัตกรรม</h3><p>เทคโนโลยีและผลิตภัณฑ์ที่มุ่งแก้ปัญหาจริง</p></article>
+    <article class="pui89-pillar-card"><span class="pui89-identity-index">05</span><h3>TRUST · ความไว้วางใจ</h3><p>ความปลอดภัย หลักฐาน ความโปร่งใส และความน่าเชื่อถือ</p></article>
+  </div>
+  <div class="pui89-guiding-principle">We don't just build AI. We engineer intelligence to work in the real world.</div>
+</section>
       <section class="section pui89-project-showcase" id="projects">
         <div class="pui89-section-heading"><div><span class="eyebrow">พอร์ตโฟลิโอโครงการ PUI89</span><h2>6 ผลิตภัณฑ์ หนึ่งวิสัยทัศน์ทางวิศวกรรม</h2></div><p>หกโครงการผลิตภัณฑ์ แต่ละโครงการมีเป้าหมาย การออกแบบ และเส้นทางพัฒนาของตนเอง โดยใช้แนวทางวิศวกรรม AI ที่ตรวจสอบด้วยหลักฐานร่วมกัน</p></div>
         <nav class="pui89-quick-explore" aria-label="สำรวจโครงการ PUI89 ทั้งหก"><a href="#coconut">01 · เกษตร</a><a href="#sentinel">02 · Sentinel</a><a href="#home">03 · HOME</a><a href="#nomad">04 · NOMAD</a><a href="#global-suv">05 · AI Global SUV</a><a href="#motorcycle">06 · สกู๊ตเตอร์แบบ Step-Through</a></nav>
