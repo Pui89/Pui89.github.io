@@ -137,6 +137,94 @@ A product cannot mark a sensor position or perception capability as verified unt
 7. Console text correctness, Thai/English usability and alert-delivery checks.
 8. Safe fallback and recovery tests.
 
-## 9. Current implementation status
+
+## 10. Hardware-flexible and easy-to-source design
+
+PUI89 products must be designed to remain buildable when a preferred component is unavailable, expensive, difficult to import, out of stock or discontinued. Define capability requirements first and select hardware second.
+
+### 10.1 Capability-first architecture
+For every function, specify:
+- The user need and operational task.
+- Required observation or output (for example: capture a fruit image, detect a nearby obstacle, show a warning).
+- Minimum acceptable performance and the test that proves it.
+- Environmental, power, compute, interface, mounting and cost constraints.
+- What the product must do when the function is absent or fails.
+
+Software must communicate through stable capability interfaces rather than depending directly on one sensor brand or model. Examples include `ImageSource`, `RangeObservation`, `MotionState`, `PositionEstimate`, `AudioOutput`, `VisualIndicator` and `TextDisplay`. These are interface concepts, not a claim that every product contains every device.
+
+### 10.2 Three hardware tiers
+Each capability should have a deliberately designed configuration tier:
+
+1. **Minimum / Starter:** the simplest affordable and obtainable hardware that can perform the essential, non-safety-critical task. The product must clearly disclose reduced coverage or performance.
+2. **Standard / Preferred:** the recommended balance of availability, performance, power, maintainability and cost.
+3. **Enhanced / Optional:** additional sensors or compute for wider coverage or advanced functions. The product must still operate safely if this tier is not installed.
+
+A tier is product- and task-specific. Do not assume a cheap component is suitable merely because it has a similar name.
+
+### 10.3 Approved substitution rules
+When a component cannot be sourced:
+1. Keep the capability requirement and acceptance test unchanged.
+2. Search the approved parts list for an equivalent component.
+3. Compare electrical interface, protocol, driver support, dimensions, mounting, voltage/current, thermal load, data quality, latency, environmental rating and supply continuity.
+4. Update the mechanical adapter or cable harness where possible, instead of redesigning the whole product.
+5. Run interface, calibration, coverage, environmental and fault tests.
+6. Record the substituted part, reason, trade-offs, evidence and approved configuration.
+7. Update the BOM, wiring diagram, CAD, software configuration and user-facing capability list together.
+
+Never silently replace a sensor or claim equivalent performance without tests.
+
+### 10.4 Modular mechanical and electrical design
+- Use replaceable sensor brackets and documented mounting patterns where practical.
+- Keep sensor modules physically serviceable without dismantling unrelated assemblies.
+- Use labelled connectors, keyed connections where appropriate, strain relief and documented pinouts.
+- Separate sensor power and data interfaces where practical; protect against incorrect voltage and polarity.
+- Prefer common, documented interfaces and maintainable open drivers, while checking actual compatibility.
+- Provide a safe blanking cover or sealed unused mounting point where an optional sensor is not fitted.
+- Design cable routes, enclosure space, thermal paths and compute capacity for realistic future upgrades without promising that every upgrade will fit.
+
+### 10.5 Capability degradation and graceful fallback
+The console must show the actual installed configuration and change its language when a capability is missing:
+- **Available:** hardware is detected and has passed its current health check.
+- **Limited:** the function works with reduced coverage or quality; explain the limitation.
+- **Unavailable:** hardware is absent, disconnected or faulted.
+- **Not configured:** optional capability has not been installed or enabled.
+- **Needs service:** inspection, cleaning or repair is required.
+
+Examples:
+- If depth sensing is unavailable, show that depth-based distance information is unavailable; do not invent distance from an RGB image.
+- If a rear camera is not fitted, state that rear visual awareness is not provided.
+- If GNSS is unavailable, state that satellite positioning is unavailable; do not display a fabricated location.
+- If voice output is not fitted, keep the text and visual alert available; do not claim a spoken warning was delivered.
+- If network connectivity is absent, retain local controls, status and event history wherever the product design supports them.
+
+A missing optional sensor may reduce a feature. A missing safety-critical sensor must trigger the product-specific safe state defined by hazard analysis; it must never be bypassed simply to keep the product moving.
+
+### 10.6 Cost and sourcing register
+Maintain a per-product BOM with:
+- Function/capability and required tier.
+- Preferred part and at least one technically assessed alternative where feasible.
+- Supplier/source, country of origin when known, availability date and lead-time notes.
+- Unit cost and currency only when supported by a current quote or listing.
+- Open-source driver/licence and operating-system compatibility.
+- Power, compute, mechanical and environmental requirements.
+- Substitution status: unassessed, candidate, tested, approved or rejected.
+- Evidence link and last review date.
+
+Do not invent prices or claim a part is available without a current source check. Avoid making a product dependent on a single proprietary cloud, paid API, app or vendor-specific service for essential local operation.
+
+### 10.7 Easy-build design gate
+Before freezing a product design, ask:
+- Can the essential version be assembled with obtainable components?
+- Can a beginner or technician replace a module using clear instructions and ordinary tools?
+- Can the system identify a missing, wrong or failed module?
+- Can the software boot and show a useful status when optional modules are absent?
+- Are wiring, pinouts, brackets, drivers and calibration steps documented?
+- Are safe degraded modes defined and tested?
+- Can future sourcing changes be handled by a module-level substitution rather than a complete redesign?
+
+If not, simplify the architecture before adding more sensors or features.
+
+
+## 11. Current implementation status
 
 This document is a design baseline. Product-specific sensor hardware, mounting positions, CAD, coverage measurements, calibration, console integration and verification remain **not verified** unless supported by separate evidence. Do not convert candidate positions into installed-hardware claims.
