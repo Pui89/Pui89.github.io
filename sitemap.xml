@@ -1,3 +1,396 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://pui89.github.io/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/th.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/company.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/company.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/company-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/company.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/company-th.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/company.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/company-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/company.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/growth.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/growth.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/growth-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/growth.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/growth-th.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/growth.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/growth-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/growth.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/coconut.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/coconut.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/coconut-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/coconut.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/coconut-th.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/coconut.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/coconut-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/coconut.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/sentinel.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/sentinel.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/sentinel-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/sentinel.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/sentinel-th.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/sentinel.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/sentinel-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/sentinel.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/support.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/support.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/support-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/support.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/support-th.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/support.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/support-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/support.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/evidence.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/evidence.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/evidence-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/evidence.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/evidence-th.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/evidence.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/evidence-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/evidence.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/nomad.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/nomad.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/nomad-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/nomad.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/nomad-th.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/nomad.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/nomad-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/nomad.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/home.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/home.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/home-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/home.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/home-th.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/home.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/home-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/home.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/ai-vehicles.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/ai-vehicles.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/ai-vehicles-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/ai-vehicles.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/ai-vehicles-th.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/ai-vehicles.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/ai-vehicles-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/ai-vehicles.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/ai-global-suv.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/ai-global-suv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/ai-global-suv-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/ai-global-suv.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/ai-global-suv-th.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/ai-global-suv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/ai-global-suv-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/ai-global-suv.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/ai-robot-motorcycle.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/ai-robot-motorcycle.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/ai-robot-motorcycle-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/ai-robot-motorcycle.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/ai-robot-motorcycle-th.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/ai-robot-motorcycle.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/ai-robot-motorcycle-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/ai-robot-motorcycle.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/ai-core.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/ai-core.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/ai-core-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/ai-core.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/ai-core-th.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/ai-core.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/ai-core-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/ai-core.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/open-source-resources.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/open-source-resources.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/open-source-resources-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/open-source-resources.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/open-source-resources-th.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/open-source-resources.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/open-source-resources-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/open-source-resources.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/development.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/development.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/development-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/development.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/development-th.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/development.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/development-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/development.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/security.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/security.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/security-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/security.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/security-th.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/security.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/security-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/security.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/command-centre.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/command-centre.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/command-centre-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/command-centre.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/command-centre-th.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/command-centre.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/command-centre-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/command-centre.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/ai-robotics-thailand.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/ai-robotics-thailand.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/ai-robotics-thailand-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/ai-robotics-thailand.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/ai-robotics-thailand-th.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/ai-robotics-thailand.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/ai-robotics-thailand-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/ai-robotics-thailand.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/engineering-atlas.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/engineering-atlas.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/engineering-atlas-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/engineering-atlas.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/engineering-atlas-th.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/engineering-atlas.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/engineering-atlas-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/engineering-atlas.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/technology-radar.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/technology-radar.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/technology-radar-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/technology-radar.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/technology-radar-th.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/technology-radar.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/technology-radar-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/technology-radar.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/knowledge-centre.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/knowledge-centre.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/knowledge-centre-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/knowledge-centre.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/knowledge-centre-th.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/knowledge-centre.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/knowledge-centre-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/knowledge-centre.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/work-intelligence.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/work-intelligence.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/work-intelligence-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/work-intelligence.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/work-intelligence-th.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/work-intelligence.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/work-intelligence-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/work-intelligence.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/intelligence.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/intelligence.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/intelligence-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/intelligence.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/intelligence-th.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/intelligence.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/intelligence-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/intelligence.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/project-support-requirements.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/project-support-requirements.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/project-support-requirements-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/project-support-requirements.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/project-support-requirements-th.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/project-support-requirements.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/project-support-requirements-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/project-support-requirements.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/materials.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/materials.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/materials-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/materials.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/materials-th.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/materials.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/materials-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/materials.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/news.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/news.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/news-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/news.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/news-th.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/news.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/news-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/news.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/technical-visual-standard.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/technical-visual-standard.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/technical-visual-standard-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/technical-visual-standard.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/technical-visual-standard-th.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/technical-visual-standard.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/technical-visual-standard-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/technical-visual-standard.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/ai-2030.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/ai-2030.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/ai-2030-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/ai-2030.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/ai-2030-th.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/ai-2030.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/ai-2030-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/ai-2030.html"/>
+  </url>
+  
 </urlset>
