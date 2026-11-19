@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PUI89 | Multimodal Interaction & Perception Console</title>
+<style>
+:root{color-scheme:dark;--bg:#071321;--panel:#0d2032;--line:#1c3c54;--cyan:#37d7ef;--muted:#9bb1c1;--white:#eef7fb;--amber:#ffca68;--red:#ff7777}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(145deg,#06101c,#0a1b2c);color:var(--white);font:15px/1.55 system-ui,Segoe UI,sans-serif}
+header{padding:26px max(20px,calc((100% - 1180px)/2));border-bottom:1px solid var(--line);background:#071321eF}
+h1{font-size:clamp(24px,4vw,38px);line-height:1.15;margin:0 0 8px}h2{font-size:18px;margin:0 0 12px}p{margin:6px 0;color:var(--muted)}
+main{max-width:1180px;margin:auto;padding:22px 18px 50px}.bar,.grid{display:grid;gap:14px}.bar{grid-template-columns:1fr auto;align-items:center;margin-bottom:16px}
+select,button{background:#102b40;color:var(--white);border:1px solid #2c526a;border-radius:9px;padding:11px 13px;font:inherit}button{cursor:pointer}button:focus,select:focus{outline:2px solid var(--cyan);outline-offset:2px}
+.grid{grid-template-columns:repeat(12,minmax(0,1fr))}.panel{background:linear-gradient(160deg,#10283b,#0a1b2b);border:1px solid var(--line);border-radius:14px;padding:17px;min-width:0}.span8{grid-column:span 8}.span4{grid-column:span 4}.span6{grid-column:span 6}.span12{grid-column:span 12}
+.pill{display:inline-block;border:1px solid #416176;border-radius:99px;padding:3px 9px;font-size:12px;color:var(--cyan);margin:2px}.warning{color:var(--amber)}.danger{color:var(--red)}.muted{color:var(--muted)}
+.sensor-map{min-height:230px;display:grid;place-items:center;background:radial-gradient(ellipse,#12334a,#091927 68%);border:1px dashed #31546a;border-radius:12px;padding:16px}
+.robot{width:190px;height:120px;border:2px solid #6d8da0;border-radius:24px;position:relative;display:grid;place-items:center;color:#b9d1df;background:#18354a}
+.sensor{position:absolute;width:13px;height:13px;border-radius:50%;background:var(--cyan);box-shadow:0 0 13px var(--cyan);border:2px solid white}
+.front{top:-7px;left:88px}.rear{bottom:-7px;left:88px}.left{left:-7px;top:52px}.right{right:-7px;top:52px}
+.sensor-note{font-size:12px;text-align:center;max-width:450px;margin-top:12px}
+.stat{font-size:23px;font-weight:650}.event{padding:12px 0;border-top:1px solid var(--line)}.event strong{display:block}.event small{color:var(--muted)}
+ul{padding-left:20px;margin:8px 0}li{margin:5px 0}.actions{display:flex;gap:8px;flex-wrap:wrap}
+@media(max-width:760px){.span8,.span4,.span6{grid-column:span 12}.bar{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div><span class="pill">PUI89 DESIGN PROTOTYPE</span><span class="pill">LOCAL-FIRST CONCEPT</span><h1>Multimodal Interaction & Perception Console</h1><p>See what the product senses, what it cannot determine, and what action is recommended.</p></div></header>
+<main>
+<div class="bar"><div><label for="product">Product profile</label><br><select id="product">
+<option value="coconut">Coconut Harvest AI</option><option value="sentinel">PUI89 Sentinel</option><option value="home">PUI89 AI HOME</option><option value="nomad">PUI89 AI NOMAD</option><option value="suv">PUI89 AI Global SUV</option><option value="scooter">PUI89 AI Step-Through Scooter</option></select></div><div class="actions"><button id="lang" type="button">ภาษาไทย / English</button><button id="ack" type="button">Acknowledge example alert</button></div></div>
+<div class="grid">
+<section class="panel span8"><h2 id="overviewTitle">System overview</h2><div class="grid"><div class="span6"><div class="muted">Operating state</div><div class="stat" id="state">Design demo</div></div><div class="span6"><div class="muted">Selected mode</div><div class="stat" id="mode">Observation review</div></div></div><p id="disclaimer">Illustrative data only — no live robot or sensor is connected.</p></section>
+<section class="panel span4"><h2 id="sensorTitle">Sensor readiness</h2><div class="stat warning">Not verified</div><p id="sensorState">Candidate placements only. No installed hardware is asserted.</p><span class="pill">Planned / optional</span><span class="pill">Unverified</span></section>
+<section class="panel span6"><h2 id="mapTitle">Conceptual sensor placement</h2><div class="sensor-map"><div class="robot" id="robot"><span id="robotName">Product body — top view</span><i class="sensor front"></i><i class="sensor rear"></i><i class="sensor left"></i><i class="sensor right"></i></div><div class="sensor-note" id="mapNote">Dots indicate candidate positions only; they are not measured fields of view.</div></div></section>
+<section class="panel span6"><h2 id="perceptionTitle">What I can perceive</h2><ul id="perception"><li>Example observations appear here.</li></ul><p class="warning" id="unknown">Unknown or occluded areas must remain explicitly unknown.</p></section>
+<section class="panel span6"><h2 id="alertsTitle">Alerts & recommended action</h2><div class="event"><strong class="warning" id="alertHead">Example — sensor view partly obstructed</strong><small id="alertTime">Demo event · no live timestamp</small><p id="alertBody">Please check the sensor window and clear any obstruction before relying on this observation.</p><span class="pill" id="alertStatus">Example only · unacknowledged</span></div></section>
+<section class="panel span6"><h2 id="controlsTitle">Direct controls (concept)</h2><div class="actions"><button type="button" disabled>START — hardware not connected</button><button type="button" disabled>STOP — hardware not connected</button><button type="button" disabled>MODE — hardware not connected</button></div><p>Controls are disabled in this browser prototype. Physical controls and product-specific safety design require hardware engineering and validation.</p></section>
+<section class="panel span12"><h2 id="limitsTitle">Perception limits & verification</h2><p id="limits">This prototype does not connect to sensors, actuators, robot hardware, maps, or live alerts. Candidate placement is not a verified capability. Product CAD, datasheets, field-of-view analysis, calibration, environmental tests and fault-injection tests are required.</p></section>
+</div>
+</main>
+<script>
+const profiles={
+coconut:{name:"Coconut Harvest AI",mode:"Image capture / maturity review",positions:"Fruit-facing RGB camera; optional depth and controlled lighting.",perception:["Fruit bunch visible in the captured frame","Image quality and occlusion can be reviewed","Maturity estimate only when a validated model is connected"],unknown:"Unknown: hidden fruit, out-of-frame bunches, blur, poor lighting and unsupported classes.",limits:"No harvesting actuation or long-range capability is implied. Camera mount and working distance require field trials."},
+sentinel:{name:"PUI89 Sentinel",mode:"Supervised inspection",positions:"Upper-front RGB; candidate forward depth/LiDAR; optional side/rear proximity; central chassis IMU.",perception:["Forward scene and visible obstacles","Terrain cues only when supported by selected sensors","Sensor health and localization quality if available"],unknown:"Unknown: occluded terrain, sensor blind zones, uninstrumented hazards and conditions outside validated limits.",limits:"No X-ray, chemical identification or autonomous safe-navigation claim is made by this demo."},
+home:{name:"PUI89 AI HOME",mode:"Home assistance",positions:"Upper-front RGB; candidate lower-front depth/proximity; optional side/rear proximity and chassis IMU.",perception:["Visible indoor scene","Near-field obstacles within validated sensor coverage","Sensor obstruction and system status"],unknown:"Unknown: areas behind furniture, people, chassis occlusion, glare or low light.",limits:"No person identification or fall-detection capability is implied."},
+nomad:{name:"PUI89 AI NOMAD",mode:"Mobile assistance",positions:"Protected forward RGB; candidate depth/LiDAR; optional side/rear proximity, odometry, IMU and GNSS.",perception:["Forward scene and visible obstacles","Surface cues only if validated","Localization quality and sensor availability"],unknown:"Unknown: rain/dust effects, vegetation occlusion, reflective surfaces, GNSS loss and uncovered regions.",limits:"Outdoor operation and navigation require environmental and route-specific validation."},
+suv:{name:"PUI89 AI Global SUV",mode:"Driving information / safety monitoring",positions:"Candidate front camera/radar; rear camera/proximity; side sensing; optional surround-view and vehicle signals.",perception:["Driver-assistance observations from available vehicle sensors","Rear/side awareness only where fitted and validated","Sensor blockage and system availability"],unknown:"Unknown: blind zones outside actual coverage, blocked sensors and unsupported weather/road conditions.",limits:"Advisory only. Driver retains control. No autonomous-driving or collision-avoidance claim."},
+scooter:{name:"PUI89 AI Step-Through Scooter",mode:"Rider safety monitoring",positions:"Road-facing front camera; optional rear awareness; chassis IMU and validated vehicle signals; optional GNSS.",perception:["Forward road scene within actual camera view","Rear awareness only if rear sensing is fitted","Sensor obstruction and system status"],unknown:"Unknown: rider/bodywork occlusion, rain, vibration, glare, dirty lens and uncovered rear/side zones.",limits:"Rider retains steering, throttle and braking. No autonomous vehicle control."}
+};
+let thai=false,acknowledged=false;
+const $=id=>document.getElementById(id);
+function render(){
+const p=profiles[$("product").value];
+$("robotName").textContent=p.name+" · conceptual top view";
+$("mode").textContent=p.mode;
+$("perception").innerHTML=p.perception.map(x=>"<li>"+x+"</li>").join("");
+$("unknown").textContent=p.unknown;
+$("mapNote").textContent=p.positions+" Dots are conceptual markers, not validated FOV.";
+$("alertHead").textContent=thai?"ตัวอย่าง — มุมมองเซนเซอร์ถูกบังบางส่วน":"Example — sensor view partly obstructed";
+$("alertBody").textContent=thai?"โปรดตรวจสอบและทำความสะอาดหน้าต่างเซนเซอร์ก่อนใช้งานข้อมูลนี้":"Please check and clear the sensor window before relying on this observation.";
+$("alertStatus").textContent=acknowledged?(thai?"รับทราบตัวอย่างแล้ว":"Example acknowledged"):(thai?"ตัวอย่างเท่านั้น · ยังไม่รับทราบ":"Example only · unacknowledged");
+$("limits").textContent=p.limits+" This is a design concept, not verified hardware.";
+}
+$("product").addEventListener("change",()=>{acknowledged=false;render()});
+$("ack").addEventListener("click",()=>{acknowledged=true;render()});
+$("lang").addEventListener("click",()=>{thai=!thai;$("overviewTitle").textContent=thai?"ภาพรวมระบบ":"System overview";$("sensorTitle").textContent=thai?"สถานะเซนเซอร์":"Sensor readiness";$("mapTitle").textContent=thai?"ตำแหน่งเซนเซอร์แนวคิด":"Conceptual sensor placement";$("perceptionTitle").textContent=thai?"สิ่งที่ระบบรับรู้ได้":"What I can perceive";$("alertsTitle").textContent=thai?"การแจ้งเตือนและคำแนะนำ":"Alerts & recommended action";$("controlsTitle").textContent=thai?"ปุ่มควบคุมโดยตรง (แนวคิด)":"Direct controls (concept)";$("limitsTitle").textContent=thai?"ข้อจำกัดและการตรวจสอบ":"Perception limits & verification";$("sensorState").textContent=thai?"ตำแหน่งที่เสนอเท่านั้น ยังไม่มีการยืนยันฮาร์ดแวร์":"Candidate placements only. No installed hardware is asserted.";render()});
+render();
+</script>
+</body></html>
