@@ -51,7 +51,7 @@ jobs:
           sentinel.html|sentinel-th.html
           home.html|home-th.html
           nomad.html|nomad-th.html
-          ai-global-suv.html|ai-global-suv-th.html
+          ai-robot-car.html|ai-robot-car-th.html
           ai-robot-motorcycle.html|ai-robot-motorcycle-th.html
           PROJECTS
 

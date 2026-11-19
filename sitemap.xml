@@ -127,18 +127,18 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/home.html"/>
   </url>
   <url>
-    <loc>https://pui89.github.io/ai-global-suv.html</loc>
+    <loc>https://pui89.github.io/ai-robot-car.html</loc>
     <lastmod>2026-11-14</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/ai-global-suv.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/ai-global-suv-th.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/ai-global-suv.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/ai-robot-car.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/ai-robot-car-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/ai-robot-car.html"/>
   </url>
   <url>
-    <loc>https://pui89.github.io/ai-global-suv-th.html</loc>
+    <loc>https://pui89.github.io/ai-robot-car-th.html</loc>
     <lastmod>2026-11-14</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/ai-global-suv.html"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/ai-global-suv-th.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/ai-global-suv.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/ai-robot-car.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/ai-robot-car-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/ai-robot-car.html"/>
   </url>
   <url>
     <loc>https://pui89.github.io/ai-robot-motorcycle.html</loc>
@@ -327,4 +327,8 @@
   
   
   
+  <url>
+    <loc>https://pui89.github.io/multimodal-console.html</loc>
+    <lastmod>2026-11-20</lastmod>
+  </url>
 </urlset>
