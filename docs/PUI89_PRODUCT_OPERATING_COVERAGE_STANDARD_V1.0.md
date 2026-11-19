@@ -4,6 +4,15 @@
 
 **Applies to:** The six active PUI89 products. Shared AI Core is common infrastructure, not a seventh product.
 
+## PUI89 Product Philosophy
+
+> **Build what you wish existed as a user.**  
+> **สร้างสิ่งที่คุณอยากให้มีในฐานะผู้ใช้งาน**
+
+Start with the user, then use engineering to create products that provide practical value in real life. Apply this philosophy to all six active PUI89 products. Product requirements must come from real user needs, operating contexts, safety considerations and evidence—not from adding AI features simply because they are technically possible.
+
+**ภาษาไทย:** เริ่มต้นจากผู้ใช้งาน สู่การใช้วิศวกรรมสร้างผลิตภัณฑ์ที่มีประโยชน์ในชีวิตจริง นำหลักการนี้ไปใช้กับผลิตภัณฑ์ทั้ง 6 รายการ โดยกำหนดความต้องการจากปัญหาและบริบทการใช้งานจริง คำนึงถึงความปลอดภัยและหลักฐาน ไม่เพิ่มฟีเจอร์ AI เพียงเพราะเทคโนโลยีทำได้
+
 ## 1. Governing rules
 
 1. Define one unit by the product's actual user task and operating environment.
