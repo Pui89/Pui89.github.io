@@ -185,3 +185,24 @@ PUI89 remains an independent early-stage initiative. An enquiry does not mean a 
 PUI89 has **exactly six active products**. [PUI89 Portfolio Source of Truth v1.0](PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.0.md) is the canonical record for all six product names, repository links, bilingual website links, founder-approved requirements and evidence maturity labels. Shared AI Core is common infrastructure, not a seventh product. Flood and road-water awareness may remain advisory requirements within relevant mobility products; they are not a separate product.
 
 The source of truth also records the HOME 8 kg target / 10 kg maximum, NOMAD's ground-use four-wheel mobile-assistant identity, Sentinel's mission-before-hardware gate, and the Coconut rights → human labels → held-out CPU evaluation sequence.
+
+
+## Everyday Intelligence & Multi-Perception
+
+The bilingual website presents PUI89's user-centred design direction: **Making Everyday Life Easier Through Intelligence**. Shared requirements include simple physical operation, essential local use without a mandatory smartphone/app where technically feasible, Multi-Perception Intelligence (MPI), accessible on-device text alerts, optional mobile notifications, animal-aware observation with non-disturbance safeguards, privacy, reliability and human authority.
+
+- [English homepage](https://pui89.github.io/)
+- [หน้าแรกภาษาไทย](https://pui89.github.io/th.html)
+- [Shared AI Core — English](https://pui89.github.io/ai-core.html)
+- [Shared AI Core — Thai](https://pui89.github.io/ai-core-th.html)
+
+These are design requirements and proposed capabilities, not a claim that all hardware, sensors or software functions are implemented or validated.
+
+
+## No App Required — End-to-End User Experience
+
+PUI89 products must be usable from setup through everyday operation, monitoring, configuration, safe stopping and recovery without requiring customers to download or install an application. Essential customer functions must be available directly through the product or its appropriate local operator station. No mandatory app, account, phone pairing or internet dependency for essential local operation where technically feasible. Remotes and mobile applications are optional convenience interfaces only, never the sole control, critical-alert or recovery path. This is a design requirement, not evidence of completed implementation or validation.
+
+### ไม่ต้องใช้แอป — ประสบการณ์ใช้งานตั้งแต่ต้นจนจบ
+
+ผลิตภัณฑ์ PUI89 ต้องใช้งานได้ตั้งแต่การตั้งค่าไปจนถึงการใช้งานประจำวัน การตรวจสอบ การปรับตั้งค่า การหยุดอย่างปลอดภัย และการกู้คืน โดยลูกค้าไม่ต้องดาวน์โหลดหรือติดตั้งแอป ฟังก์ชันที่จำเป็นต้องเข้าถึงได้โดยตรงผ่านตัวผลิตภัณฑ์หรือสถานีควบคุมในพื้นที่ ไม่บังคับใช้แอป บัญชีผู้ใช้ การจับคู่โทรศัพท์ หรืออินเทอร์เน็ตสำหรับการใช้งานพื้นฐานในพื้นที่เมื่อเป็นไปได้ทางเทคนิค รีโมตและแอปมือถือเป็นเพียงทางเลือกเสริม ไม่ใช่ช่องทางเดียวสำหรับควบคุม รับการแจ้งเตือนสำคัญ หรือกู้คืนระบบ ทั้งหมดนี้เป็นข้อกำหนดการออกแบบ ไม่ใช่หลักฐานว่าดำเนินการติดตั้งหรือทดสอบแล้ว.
