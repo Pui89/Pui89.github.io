@@ -45,3 +45,10 @@ Narcotics detection, X-ray screening payloads and chemical-identification functi
 - [PR #609 — Fix AI HOME bilingual QR section parity](https://github.com/Pui89/Pui89.github.io/pull/609) was merged on 20 November 2026. Its QR parity changes are part of the repository's subsequent `main` deployment; they remain a separate change from the Sentinel identity update.
 - [PR #610 — Confirm Sentinel quadruped identity in portfolio source of truth](https://github.com/Pui89/Pui89.github.io/pull/610) was merged on 20 November 2026. Its source-of-truth and audit updates are included in `main`.
 - The Pages deployment for the later `main` commit `63d32e4dea0d1e1274f3609a14746e0fe0af6ae7` completed successfully on 20 November 2026. This confirms deployment workflow success, not independent visual verification of every public page.
+
+
+## NOMAD identity correction — 21 November 2026
+
+The founder confirmed that PUI89 AI NOMAD is a compact, dog-inspired four-wheel outdoor/mobile assistant with a retractable handle for manual handling. It has four wheels, not articulated legs. Its product mission is practical assistance and supervised mobility in suitable environments; security patrol and luggage transport are outside scope. The product remains a concept with no validated physical mobility or outdoor performance.
+
+The English and Thai NOMAD product pages were updated in this review branch to align product copy, mission, operating modes, identity distinctions, and search metadata. The current NOMAD hero illustration is still an older upright/suitcase-like concept and does not match the approved dog-inspired identity; it is explicitly disclosed as an outdated illustration and requires a separate approved visual replacement. No physical capability or test claim is added.
