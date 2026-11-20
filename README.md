@@ -83,6 +83,12 @@ The PUI89 AI Global SUV is a proposed medium-size, five-door SUV design study. I
 
 **Project pages:** [English](https://pui89.github.io/ai-global-suv.html) · [ภาษาไทย](https://pui89.github.io/ai-global-suv-th.html) · [AI Vehicles overview](https://pui89.github.io/ai-vehicles.html).
 
+## Perception and task specialisation — 20 November 2026
+
+The bilingual [Shared AI Core overview](https://pui89.github.io/ai-core.html) · [ภาพรวมภาษาไทย](https://pui89.github.io/ai-core-th.html) now defines the portfolio principle: all six products share a strong evidence-led perception foundation, while each specialises in its own tasks. **PUI89 Sentinel** is the perception-specialist design priority; **PUI89 AI NOMAD** has the broadest intended task portfolio. This describes design priorities, not measured superiority or verified physical capability.
+
+Perception, planning, action execution, and failure detection/recovery are evaluated separately. Product-specific safety boundaries remain in force: AI Robot Car and EasyRide are advisory-only; NOMAD mobility is supervised future research; Coconut harvest decisions require human review; Sentinel inspection remains supervised; AI HOME supplements rather than replaces certified safety devices.
+
 ## Shared AI Core
 
 The Shared AI Core is the common engineering foundation intended to reduce duplicated infrastructure while preserving project-specific requirements.
