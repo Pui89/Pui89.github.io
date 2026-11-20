@@ -79,4 +79,4 @@ The canonical portfolio source is now [PUI89 Portfolio Source of Truth v1.1](../
 
 ## Review outcome and remaining work
 
-This register records the current authoritative names, scope and evidence labels identified during the 18 November 2026 documentation review. It does not claim that every legacy sentence, historical artifact, cached search result or external reference has already been migrated. Continue with small, reviewable pull requests; preserve history; do not write directly to default branches or merge without approval.
+This register records the current authoritative names, scope and evidence labels, including the founder-confirmed Sentinel identity recorded on 21 November 2026. It does not claim that every legacy sentence, historical artifact, cached search result or external reference has already been migrated. Continue with small, reviewable pull requests; preserve history; do not write directly to default branches or merge without approval.
