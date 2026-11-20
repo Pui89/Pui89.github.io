@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-11-17",
+  "asOf": "2026-11-21",
   "title": {
     "en": "PUI89 Development Observatory",
     "th": "ศูนย์ติดตามการพัฒนา PUI89"
@@ -31,8 +31,8 @@
         "th": "จัดทำ Dataset Manifest และ Licence Record ใช้ภาพที่มีสิทธิ์ชัดเจน ทำป้ายกำกับโดยมนุษย์และแยกชุดข้อมูลโดยป้องกันข้อมูลรั่วไหล จากนั้นประเมินบน CPU อย่างทำซ้ำได้ พร้อมรายงาน Precision, Recall, F1 รายคลาสและกรณีผิดพลาด"
       },
       "evidence": {
-        "en": "Documented software tests, benchmark preparation and dataset audit tooling; no approved training dataset or validated field detector.",
-        "th": "มีบันทึกการทดสอบซอฟต์แวร์ การเตรียม benchmark และเครื่องมือตรวจสอบชุดข้อมูล แต่ยังไม่มีชุดฝึกที่อนุมัติหรือโมเดลที่ผ่านการทดสอบภาคสนาม"
+        "en": "Documented software tests, benchmark preparation and dataset audit tooling; no approved training dataset or validated field detector. Repository-level quality automation and a daily dataset-evidence audit workflow were added on 20 November 2026; these are process controls, not detector-accuracy or harvesting validation.",
+        "th": "มีบันทึกการทดสอบซอฟต์แวร์ การเตรียม benchmark และเครื่องมือตรวจสอบชุดข้อมูล แต่ยังไม่มีชุดฝึกที่อนุมัติหรือโมเดลที่ผ่านการทดสอบภาคสนาม เมื่อ 20 พ.ย. 2026 มีการเพิ่มระบบตรวจสอบคุณภาพระดับ Repository และ workflow ตรวจสอบหลักฐานชุดข้อมูลรายวัน ซึ่งเป็นเครื่องมือควบคุมกระบวนการ ไม่ใช่ผลยืนยันความแม่นยำของโมเดลหรือการเก็บเกี่ยวจริง"
       },
       "blockers": {
         "en": "Image reuse rights, source provenance, human label QA, leakage-safe held-out split, CPU metrics and error analysis.",
@@ -47,9 +47,18 @@
             "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
+        },
+        {
+          "period": "2026-11",
+          "date": "2026-11-20",
+          "type": "quality-automation",
+          "note": {
+            "en": "Repository quality automation and a daily dataset-evidence audit workflow were added. This improves process oversight only; product maturity, detector accuracy and physical harvesting validation are unchanged.",
+            "th": "เพิ่มระบบตรวจสอบคุณภาพ Repository และ workflow ตรวจสอบหลักฐานชุดข้อมูลรายวัน ช่วยกำกับดูแลกระบวนการเท่านั้น ไม่เปลี่ยนระดับการพัฒนาผลิตภัณฑ์ ความแม่นยำของโมเดล หรือผลยืนยันการเก็บเกี่ยวจริง"
+          }
         }
       ],
-      "evidenceDate": "2026-11-17",
+      "evidenceDate": "2026-11-20",
       "evidenceLinks": [
         {
           "label": {
@@ -64,6 +73,20 @@
             "th": "Evaluation tools"
           },
           "url": "https://github.com/Pui89/Coconut-Harvest-AI/tree/main/tools"
+        },
+        {
+          "label": {
+            "en": "Repository quality automation",
+            "th": "ระบบตรวจสอบคุณภาพ Repository"
+          },
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/blob/main/.github/workflows/pui89-automation-quality.yml"
+        },
+        {
+          "label": {
+            "en": "Daily dataset evidence audit",
+            "th": "ระบบตรวจสอบหลักฐานชุดข้อมูลรายวัน"
+          },
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/blob/main/.github/workflows/coconut-dataset-evidence-audit.yml"
         }
       ],
       "completedGates": [
@@ -94,8 +117,8 @@
         "th": "กำหนดภารกิจตรวจสอบแรก พื้นที่ ทรัพย์สิน ขอบเขตการทำงาน อันตราย บทบาทมนุษย์ และเกณฑ์ยอมรับที่วัดผลได้ ก่อนเลือกฮาร์ดแวร์"
       },
       "evidence": {
-        "en": "Current evidence is limited to the product concept, engineering requirements and proposed validation documentation. No physical prototype or integrated hardware evidence is recorded.",
-        "th": "หลักฐานปัจจุบันจำกัดอยู่ที่แนวคิดผลิตภัณฑ์ ข้อกำหนดทางวิศวกรรม และเอกสารแผนการตรวจสอบที่เสนอไว้ ยังไม่มีหลักฐานต้นแบบจริงหรือฮาร์ดแวร์ที่ติดตั้งร่วมกัน"
+        "en": "Current evidence is limited to the product concept, engineering requirements and proposed validation documentation. No physical prototype or integrated hardware evidence is recorded. A repository-level automated quality gate was adopted on 20 November 2026; this is repository QA tooling, not evidence of product hardware, field performance or safety validation.",
+        "th": "หลักฐานปัจจุบันจำกัดอยู่ที่แนวคิดผลิตภัณฑ์ ข้อกำหนดทางวิศวกรรม และเอกสารแผนการตรวจสอบที่เสนอไว้ ยังไม่มีหลักฐานต้นแบบจริงหรือฮาร์ดแวร์ที่ติดตั้งร่วมกัน เมื่อ 20 พ.ย. 2026 มีการนำระบบตรวจสอบคุณภาพอัตโนมัติระดับ Repository มาใช้ ซึ่งเป็นเครื่องมือ QA ของซอร์สโค้ด ไม่ใช่หลักฐานว่ามีฮาร์ดแวร์จริง สมรรถนะภาคสนาม หรือการยืนยันความปลอดภัย"
       },
       "blockers": {
         "en": "No validated locomotion, terrain rating, payload, endurance, sensor integration, inspection accuracy, safety performance or field deployment. Component selection and origin evidence remain to be verified.",
@@ -110,9 +133,18 @@
             "en": "Current Sentinel identity and evidence baseline established for the All-Terrain Exploration & Inspection Robot. No physical validation evidence is carried forward.",
             "th": "กำหนดอัตลักษณ์และค่าฐานหลักฐานของ Sentinel ใหม่เป็นหุ่นยนต์สำรวจและตรวจสอบทุกสภาพพื้นที่ โดยไม่นำหลักฐานการตรวจสอบทางกายภาพจากขอบเขตเดิมมาใช้"
           }
+        },
+        {
+          "period": "2026-11",
+          "date": "2026-11-20",
+          "type": "quality-automation",
+          "note": {
+            "en": "A shared repository-level automated quality gate was adopted. This improves source-quality oversight only; product maturity and physical or field validation are unchanged.",
+            "th": "นำระบบตรวจสอบคุณภาพอัตโนมัติระดับ Repository มาใช้ ช่วยกำกับดูแลคุณภาพซอร์สโค้ดเท่านั้น ไม่เปลี่ยนระดับการพัฒนาผลิตภัณฑ์หรือผลการยืนยันทางกายภาพและภาคสนาม"
+          }
         }
       ],
-      "evidenceDate": "2026-11-17",
+      "evidenceDate": "2026-11-20",
       "evidenceLinks": [
         {
           "label": {
@@ -127,6 +159,13 @@
             "th": "Engineering documentation"
           },
           "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/tree/main/docs"
+        },
+        {
+          "label": {
+            "en": "Repository quality automation",
+            "th": "ระบบตรวจสอบคุณภาพ Repository"
+          },
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/blob/main/.github/workflows/pui89-automation-quality.yml"
         }
       ],
       "completedGates": [
@@ -154,8 +193,8 @@
         "th": "ทำตัวอย่างซอฟต์แวร์ความปลอดภัยในบ้านให้ครบ และตรวจสอบงบน้ำหนักการออกแบบที่มีหลักฐานย้อนกลับได้ตามเป้าหมาย 8 กก. และสูงสุด 10 กก. ก่อนกล่าวอ้างต้นแบบ"
       },
       "evidence": {
-        "en": "Early requirements, architecture and software foundations; no hardware is currently available for a physical prototype.",
-        "th": "มีข้อกำหนด สถาปัตยกรรม และพื้นฐานซอฟต์แวร์ระยะแรก ปัจจุบันยังไม่มีฮาร์ดแวร์สำหรับต้นแบบทางกายภาพ"
+        "en": "Early requirements, architecture and software foundations; no hardware is currently available for a physical prototype. A repository-level automated quality gate was adopted on 20 November 2026; this is repository QA tooling, not evidence of product hardware, field performance or safety validation.",
+        "th": "มีข้อกำหนด สถาปัตยกรรม และพื้นฐานซอฟต์แวร์ระยะแรก ปัจจุบันยังไม่มีฮาร์ดแวร์สำหรับต้นแบบทางกายภาพ เมื่อ 20 พ.ย. 2026 มีการนำระบบตรวจสอบคุณภาพอัตโนมัติระดับ Repository มาใช้ ซึ่งเป็นเครื่องมือ QA ของซอร์สโค้ด ไม่ใช่หลักฐานว่ามีฮาร์ดแวร์จริง สมรรถนะภาคสนาม หรือการยืนยันความปลอดภัย"
       },
       "blockers": {
         "en": "Working software demonstrator, real sensor integration, alarm safety, reliability testing and later physical validation.",
@@ -170,9 +209,18 @@
             "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
+        },
+        {
+          "period": "2026-11",
+          "date": "2026-11-20",
+          "type": "quality-automation",
+          "note": {
+            "en": "A shared repository-level automated quality gate was adopted. This improves source-quality oversight only; product maturity and physical or field validation are unchanged.",
+            "th": "นำระบบตรวจสอบคุณภาพอัตโนมัติระดับ Repository มาใช้ ช่วยกำกับดูแลคุณภาพซอร์สโค้ดเท่านั้น ไม่เปลี่ยนระดับการพัฒนาผลิตภัณฑ์หรือผลการยืนยันทางกายภาพและภาคสนาม"
+          }
         }
       ],
-      "evidenceDate": "2026-11-17",
+      "evidenceDate": "2026-11-20",
       "evidenceLinks": [
         {
           "label": {
@@ -187,6 +235,13 @@
             "th": "Product documentation"
           },
           "url": "https://github.com/Pui89/AI-Home-Safety-Robot/tree/main/docs"
+        },
+        {
+          "label": {
+            "en": "Repository quality automation",
+            "th": "ระบบตรวจสอบคุณภาพ Repository"
+          },
+          "url": "https://github.com/Pui89/AI-Home-Safety-Robot/blob/main/.github/workflows/pui89-automation-quality.yml"
         }
       ],
       "completedGates": [
@@ -216,8 +271,8 @@
         "th": "กำหนดภารกิจเคลื่อนที่ภาคพื้นดินและการช่วยเหลือภายใต้การกำกับ ข้อจำกัดพื้นผิว การหยุดอย่างปลอดภัย และการโต้ตอบกับมนุษย์ก่อนเลือกฮาร์ดแวร์"
       },
       "evidence": {
-        "en": "Documented concept and software foundation; no physical robot or field tests.",
-        "th": "มีเอกสารแนวคิดและพื้นฐานซอฟต์แวร์ แต่ยังไม่มีหุ่นยนต์จริงหรือการทดสอบภาคสนาม"
+        "en": "Documented concept and software foundation; no physical robot or field tests. A repository-level automated quality gate was adopted on 20 November 2026; this is repository QA tooling, not evidence of product hardware, field performance or safety validation.",
+        "th": "มีเอกสารแนวคิดและพื้นฐานซอฟต์แวร์ แต่ยังไม่มีหุ่นยนต์จริงหรือการทดสอบภาคสนาม เมื่อ 20 พ.ย. 2026 มีการนำระบบตรวจสอบคุณภาพอัตโนมัติระดับ Repository มาใช้ ซึ่งเป็นเครื่องมือ QA ของซอร์สโค้ด ไม่ใช่หลักฐานว่ามีฮาร์ดแวร์จริง สมรรถนะภาคสนาม หรือการยืนยันความปลอดภัย"
       },
       "blockers": {
         "en": "Integrated prototype, mobility/endurance evidence, weather protection, sensor reliability, safety and field trials.",
@@ -232,9 +287,18 @@
             "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
+        },
+        {
+          "period": "2026-11",
+          "date": "2026-11-20",
+          "type": "quality-automation",
+          "note": {
+            "en": "A shared repository-level automated quality gate was adopted. This improves source-quality oversight only; product maturity and physical or field validation are unchanged.",
+            "th": "นำระบบตรวจสอบคุณภาพอัตโนมัติระดับ Repository มาใช้ ช่วยกำกับดูแลคุณภาพซอร์สโค้ดเท่านั้น ไม่เปลี่ยนระดับการพัฒนาผลิตภัณฑ์หรือผลการยืนยันทางกายภาพและภาคสนาม"
+          }
         }
       ],
-      "evidenceDate": "2026-11-17",
+      "evidenceDate": "2026-11-20",
       "evidenceLinks": [
         {
           "label": {
@@ -249,6 +313,13 @@
             "th": "Product documentation"
           },
           "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/tree/main/docs"
+        },
+        {
+          "label": {
+            "en": "Repository quality automation",
+            "th": "ระบบตรวจสอบคุณภาพ Repository"
+          },
+          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/blob/main/.github/workflows/pui89-automation-quality.yml"
         }
       ],
       "completedGates": [
@@ -277,8 +348,8 @@
         "th": "สร้างตัวอย่างซอฟต์แวร์แจ้งเตือนน้ำบนถนนและความเสี่ยงน้ำท่วม หากไม่ทราบความลึก กระแสน้ำ หรือสภาพถนน ต้องแจ้งว่า “ไม่ทราบ — ห้ามเข้า”"
       },
       "evidence": {
-        "en": "Early software scaffold and documented requirements; the human driver remains responsible for driving.",
-        "th": "มีโครงสร้างซอฟต์แวร์ระยะแรกและข้อกำหนด โดยผู้ขับขี่ยังคงรับผิดชอบการขับรถ"
+        "en": "Early software scaffold and documented requirements; the human driver remains responsible for driving. A repository-level automated quality gate was adopted on 20 November 2026; this is repository QA tooling, not evidence of product hardware, field performance or safety validation.",
+        "th": "มีโครงสร้างซอฟต์แวร์ระยะแรกและข้อกำหนด โดยผู้ขับขี่ยังคงรับผิดชอบการขับรถ เมื่อ 20 พ.ย. 2026 มีการนำระบบตรวจสอบคุณภาพอัตโนมัติระดับ Repository มาใช้ ซึ่งเป็นเครื่องมือ QA ของซอร์สโค้ด ไม่ใช่หลักฐานว่ามีฮาร์ดแวร์จริง สมรรถนะภาคสนาม หรือการยืนยันความปลอดภัย"
       },
       "blockers": {
         "en": "Validated vehicle signals, robust hazard evaluation, functional safety, integration, controlled testing and applicable approvals.",
@@ -293,9 +364,18 @@
             "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
+        },
+        {
+          "period": "2026-11",
+          "date": "2026-11-20",
+          "type": "quality-automation",
+          "note": {
+            "en": "A shared repository-level automated quality gate was adopted. This improves source-quality oversight only; product maturity and physical or field validation are unchanged.",
+            "th": "นำระบบตรวจสอบคุณภาพอัตโนมัติระดับ Repository มาใช้ ช่วยกำกับดูแลคุณภาพซอร์สโค้ดเท่านั้น ไม่เปลี่ยนระดับการพัฒนาผลิตภัณฑ์หรือผลการยืนยันทางกายภาพและภาคสนาม"
+          }
         }
       ],
-      "evidenceDate": "2026-11-17",
+      "evidenceDate": "2026-11-20",
       "evidenceLinks": [
         {
           "label": {
@@ -310,6 +390,13 @@
             "th": "Product documentation"
           },
           "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/tree/main/docs"
+        },
+        {
+          "label": {
+            "en": "Repository quality automation",
+            "th": "ระบบตรวจสอบคุณภาพ Repository"
+          },
+          "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/blob/main/.github/workflows/pui89-automation-quality.yml"
         }
       ],
       "completedGates": [
@@ -339,8 +426,8 @@
         "th": "กำหนดสถานการณ์แจ้งเตือนน้ำบนถนน/ความเสี่ยงน้ำท่วมสำหรับผู้ขับขี่ หากไม่ทราบความลึก กระแสน้ำ หรือสภาพถนน ให้แจ้งว่า “ไม่ทราบ — ห้ามเข้า” และผู้ขับขี่ยังคงควบคุมรถทั้งหมดด้วยตนเอง"
       },
       "evidence": {
-        "en": "Concept and early engineering foundation only; no roadworthy prototype or validated rider-safety evidence.",
-        "th": "มีเพียงแนวคิดและพื้นฐานวิศวกรรมระยะแรก ยังไม่มีต้นแบบที่พร้อมใช้บนถนนหรือหลักฐานความปลอดภัยผู้ขับขี่ที่ผ่านการตรวจสอบ"
+        "en": "Concept and early engineering foundation only; no roadworthy prototype or validated rider-safety evidence. A repository-level automated quality gate was adopted on 20 November 2026; this is repository QA tooling, not evidence of product hardware, field performance or safety validation.",
+        "th": "มีเพียงแนวคิดและพื้นฐานวิศวกรรมระยะแรก ยังไม่มีต้นแบบที่พร้อมใช้บนถนนหรือหลักฐานความปลอดภัยผู้ขับขี่ที่ผ่านการตรวจสอบ เมื่อ 20 พ.ย. 2026 มีการนำระบบตรวจสอบคุณภาพอัตโนมัติระดับ Repository มาใช้ ซึ่งเป็นเครื่องมือ QA ของซอร์สโค้ด ไม่ใช่หลักฐานว่ามีฮาร์ดแวร์จริง สมรรถนะภาคสนาม หรือการยืนยันความปลอดภัย"
       },
       "blockers": {
         "en": "Vehicle architecture, stability/braking evidence, ergonomic validation, functional safety, rider trials and regulatory approval.",
@@ -355,9 +442,18 @@
             "en": "First published evidence-based baseline; no earlier monthly comparison is available.",
             "th": "บันทึกค่าฐานตามหลักฐานครั้งแรก ยังไม่มีข้อมูลรายเดือนก่อนหน้านี้สำหรับเปรียบเทียบ"
           }
+        },
+        {
+          "period": "2026-11",
+          "date": "2026-11-20",
+          "type": "quality-automation",
+          "note": {
+            "en": "A shared repository-level automated quality gate was adopted. This improves source-quality oversight only; product maturity and physical or field validation are unchanged.",
+            "th": "นำระบบตรวจสอบคุณภาพอัตโนมัติระดับ Repository มาใช้ ช่วยกำกับดูแลคุณภาพซอร์สโค้ดเท่านั้น ไม่เปลี่ยนระดับการพัฒนาผลิตภัณฑ์หรือผลการยืนยันทางกายภาพและภาคสนาม"
+          }
         }
       ],
-      "evidenceDate": "2026-11-17",
+      "evidenceDate": "2026-11-20",
       "evidenceLinks": [
         {
           "label": {
@@ -372,6 +468,13 @@
             "th": "Product documentation"
           },
           "url": "https://github.com/Pui89/AI-Step-Through-Scooter/tree/main/docs"
+        },
+        {
+          "label": {
+            "en": "Repository quality automation",
+            "th": "ระบบตรวจสอบคุณภาพ Repository"
+          },
+          "url": "https://github.com/Pui89/AI-Step-Through-Scooter/blob/main/.github/workflows/pui89-automation-quality.yml"
         }
       ],
       "completedGates": [
