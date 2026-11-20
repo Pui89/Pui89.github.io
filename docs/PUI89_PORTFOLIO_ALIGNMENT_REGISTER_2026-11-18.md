@@ -1,6 +1,7 @@
 # PUI89 Portfolio Alignment Register
 
-**Review date:** 18 November 2026  
+**Review date:** 21 November 2026  
+**Portfolio identity confirmation:** Founder-confirmed Sentinel quadruped identity, 21 November 2026.  
 **Purpose:** Keep public portfolio pages, product repositories and shared engineering documentation aligned.  
 **Status:** Documentation governance record; not a product implementation or validation report.
 
@@ -67,6 +68,14 @@ The public website should use the same six-product scope in English and Thai acr
 - Growth, company, support and materials pages, including their Thai counterparts.
 
 Do not let stale cached search snippets, historical project pages or archived project material override the live repository README and current portfolio register.
+
+## 21 November 2026 founder confirmation and audit update
+
+The founder explicitly confirmed that the official PUI89 Sentinel product is the **four-legged quadruped All-Terrain Exploration & Inspection Robot**. This resolves the prior identity ambiguity. The official six-product portfolio remains unchanged. Narcotics screening, X-ray screening payloads and chemical-identification functions remain excluded from Sentinel. Historical screening-related repository assets and archived documentation are retained as legacy records and must not be described as current product features.
+
+The bilingual public Sentinel pages (`sentinel.html` and `sentinel-th.html`) were rechecked. Their product names, descriptions and multimodal scope identify the quadruped inspection robot; both pages explicitly distinguish general inspection intelligence from narcotics screening and state that narcotics detection, X-ray screening and chemical identification are outside the current scope. No Sentinel page correction is required for this identity decision. This is a content-alignment audit only; it does not validate a physical robot, sensors or field performance.
+
+The canonical portfolio source is now [PUI89 Portfolio Source of Truth v1.1](../PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.1.md). The v1.0 file is retained as historical version evidence.
 
 ## Review outcome and remaining work
 
