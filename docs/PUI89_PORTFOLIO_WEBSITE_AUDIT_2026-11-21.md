@@ -40,6 +40,8 @@ Narcotics detection, X-ray screening payloads and chemical-identification functi
 - Preserve the existing bilingual QR assets and page destinations.
 - Continue using feature branches and pull requests; do not write directly to the default branch or auto-merge.
 
-## Related pending website work
+## Related website work and verification status
 
-[PR #609 — Fix AI HOME bilingual QR section parity](https://github.com/Pui89/Pui89.github.io/pull/609) remains a separate change and is not included in this Sentinel identity update.
+- [PR #609 — Fix AI HOME bilingual QR section parity](https://github.com/Pui89/Pui89.github.io/pull/609) was merged on 20 November 2026. Its QR parity changes are part of the repository's subsequent `main` deployment; they remain a separate change from the Sentinel identity update.
+- [PR #610 — Confirm Sentinel quadruped identity in portfolio source of truth](https://github.com/Pui89/Pui89.github.io/pull/610) was merged on 20 November 2026. Its source-of-truth and audit updates are included in `main`.
+- The Pages deployment for the later `main` commit `63d32e4dea0d1e1274f3609a14746e0fe0af6ae7` completed successfully on 20 November 2026. This confirms deployment workflow success, not independent visual verification of every public page.
