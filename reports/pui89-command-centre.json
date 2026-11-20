@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-14T11:24:12.856Z",
+  "generated_at_utc": "2026-11-19T15:54:13.237920+00:00",
   "mode": "read-only public GitHub status summary",
   "projects": [
     {
@@ -9,23 +9,327 @@
       "focus": "Agricultural perception, dataset provenance, reviewed labels and leakage-safe evaluation.",
       "status": "CHECKS_AVAILABLE",
       "default_branch": "main",
-      "latest_commit": "208ec8cd22ac",
-      "latest_commit_url": "https://github.com/Pui89/Coconut-Harvest-AI/commit/208ec8cd22ac1a4c898f4e03ea691b9fb3cdceaf",
+      "latest_commit": "4936f879184f",
+      "latest_commit_url": "https://github.com/Pui89/Coconut-Harvest-AI/commit/4936f879184f9cbcc9e4f76209f0575336ec0f5d",
       "latest_workflows": [
         {
-          "name": "PUI89 Shared Interface Smoke",
+          "name": "PUI89 Security Audit",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-14T10:41:37Z",
-          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/43586448451",
+          "updated_at": "2026-11-19T15:15:03Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44552627322",
           "branch": "main"
         },
         {
           "name": "PUI89 Three-Layer Security Baseline",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-14T10:41:20Z",
-          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/43586448471",
+          "updated_at": "2026-11-19T15:15:04Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44552627137",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 System Guardrails",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:15:07Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44552627100",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Shared Intelligence Contract",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:15:05Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44552627136",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Automated Verification",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:15:07Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44552626896",
+          "branch": "main"
+        },
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:15:48Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44552626594",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Pitfall Detector Checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:15:11Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44552627015",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Shared Interface Smoke",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:15:18Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44552627134",
+          "branch": "main"
+        }
+      ],
+      "non_default_branch_run_count": 23,
+      "key_workflows": [
+        {
+          "name": "Free cloud verification",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null,
+          "branch": null
+        },
+        {
+          "name": "Dataset recovery audit",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null,
+          "branch": null
+        },
+        {
+          "name": "Free-resource link audit",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null,
+          "branch": null
+        },
+        {
+          "name": "Rule-based simulation evaluation",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null,
+          "branch": null
+        },
+        {
+          "name": "Coconut dataset evidence audit",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null,
+          "branch": null
+        },
+        {
+          "name": "Simulation benchmark + report validator",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null,
+          "branch": null
+        },
+        {
+          "name": "Autonomy / safety regression tests",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null,
+          "branch": null
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "name": "PUI89 Sentinel \u2014 All-Terrain Exploration & Inspection Robot",
+      "repository": "Pui89/PUI89-All-Terrain-Inspection-Robot",
+      "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot",
+      "focus": "Supervised quadruped inspection; first mission and operating envelope must be defined before hardware selection.",
+      "status": "CHECKS_AVAILABLE",
+      "default_branch": "main",
+      "latest_commit": "33089583b475",
+      "latest_commit_url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/commit/33089583b475d32993882402420210903f5df051",
+      "latest_workflows": [
+        {
+          "name": "PUI89 Security Audit",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:13:03Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244444",
+          "branch": "main"
+        },
+        {
+          "name": "Free local-first app regression checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:13:12Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244319",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Pitfall Detector Checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:13:13Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244403",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Software and Observability Checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:13:02Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244364",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Automated Verification",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:13:04Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244660",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Shared Intelligence Contract",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:13:01Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244290",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Three-Layer Security Baseline",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:13:00Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244356",
+          "branch": "main"
+        },
+        {
+          "name": "Python tests",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:13:22Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244340",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Shared Interface Smoke",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:13:15Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244723",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Free Local Checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T03:38:20Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44452815025",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 project intelligence reviews",
+          "status": "completed",
+          "conclusion": "failure",
+          "updated_at": "2026-11-18T23:07:59Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44418003361",
+          "branch": "main"
+        }
+      ],
+      "non_default_branch_run_count": 32,
+      "key_workflows": [
+        {
+          "name": "Free cloud verification",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null,
+          "branch": null
+        },
+        {
+          "name": "Dataset recovery audit",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null,
+          "branch": null
+        },
+        {
+          "name": "Free-resource link audit",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null,
+          "branch": null
+        },
+        {
+          "name": "Rule-based simulation evaluation",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null,
+          "branch": null
+        },
+        {
+          "name": "Coconut dataset evidence audit",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null,
+          "branch": null
+        },
+        {
+          "name": "Simulation benchmark + report validator",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null,
+          "branch": null
+        },
+        {
+          "name": "Autonomy / safety regression tests",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:13:12Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244319",
+          "branch": "main"
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "name": "PUI89 AI HOME",
+      "repository": "Pui89/AI-Home-Safety-Robot",
+      "url": "https://github.com/Pui89/AI-Home-Safety-Robot",
+      "focus": "Indoor four-wheel home assistant; complete robot mass target 8 kg and maximum 10 kg.",
+      "status": "CHECKS_AVAILABLE",
+      "default_branch": "main",
+      "latest_commit": "de3397a046f1",
+      "latest_commit_url": "https://github.com/Pui89/AI-Home-Safety-Robot/commit/de3397a046f1f988af908fff306cf9f83192267c",
+      "latest_workflows": [
+        {
+          "name": "PUI89 Security Audit",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:42:52Z",
+          "url": "https://github.com/Pui89/AI-Home-Safety-Robot/actions/runs/44557870080",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 project intelligence reviews",
+          "status": "completed",
+          "conclusion": "failure",
+          "updated_at": "2026-11-18T23:08:15Z",
+          "url": "https://github.com/Pui89/AI-Home-Safety-Robot/actions/runs/44418034454",
+          "branch": "main"
+        },
+        {
+          "name": "github_actions in / for actions/checkout - Update #1692848464",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-10T11:36:14Z",
+          "url": "https://github.com/Pui89/AI-Home-Safety-Robot/actions/runs/42808750412",
           "branch": "main"
         }
       ],
@@ -91,49 +395,81 @@
       "warnings": []
     },
     {
-      "name": "PUI89 Sentinel — All-Terrain Exploration & Inspection Robot",
-      "repository": "Pui89/PUI89-All-Terrain-Inspection-Robot",
-      "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot",
-      "focus": "Four-legged supervised exploration and inspection robot concept. First mission and operating envelope must be defined before hardware selection. No physical capability is implied.",
-      "status": "IDENTITY_CORRECTED_EVIDENCE_REVIEW_REQUIRED",
-      "default_branch": "main",
-      "latest_commit": null,
-      "latest_commit_url": null,
-      "latest_workflows": [],
-      "non_default_branch_run_count": 0,
-      "key_workflows": [],
-      "warnings": [
-        "Canonical repository identity corrected; prior repository status and workflow references are not carried forward. Review the canonical repository before reporting CI or maturity."
-      ]
-    },
-    {
-      "name": "PUI89 AI HOME",
-      "repository": "Pui89/AI-Home-Safety-Robot",
-      "url": "https://github.com/Pui89/AI-Home-Safety-Robot",
-      "focus": "Indoor home-safety observations, deterioration signals and supervised assistance.",
+      "name": "PUI89 AI NOMAD",
+      "repository": "Pui89/AI-Mobile-Assistant-Robot",
+      "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot",
+      "focus": "Ground-use four-wheel mobile assistant robot; not luggage or airline baggage; storage is secondary.",
       "status": "CHECKS_AVAILABLE",
       "default_branch": "main",
-      "latest_commit": "8479aace194e",
-      "latest_commit_url": "https://github.com/Pui89/AI-Home-Safety-Robot/commit/8479aace194e0d979e2be2ef8b256a7c1d4c556c",
+      "latest_commit": "522169ca0e60",
+      "latest_commit_url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/commit/522169ca0e600a8a7e66a01562565f73d90f6465",
       "latest_workflows": [
+        {
+          "name": "PUI89 Three-Layer Security Baseline",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:13:21Z",
+          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/44552305561",
+          "branch": "main"
+        },
+        {
+          "name": "HOMEGUARD CI",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:13:30Z",
+          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/44552305985",
+          "branch": "main"
+        },
         {
           "name": "PUI89 Security Audit",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-14T10:42:03Z",
-          "url": "https://github.com/Pui89/AI-Home-Safety-Robot/actions/runs/43586504913",
+          "updated_at": "2026-11-19T15:13:22Z",
+          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/44552305803",
+          "branch": "main"
+        },
+        {
+          "name": "HOMEGUARD Security",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:14:13Z",
+          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/44552305434",
           "branch": "main"
         },
         {
           "name": "PUI89 project intelligence reviews",
           "status": "completed",
           "conclusion": "failure",
-          "updated_at": "2026-11-13T22:11:05Z",
-          "url": "https://github.com/Pui89/AI-Home-Safety-Robot/actions/runs/43517125185",
+          "updated_at": "2026-11-18T23:04:08Z",
+          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/44417403256",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Water Resilience Checks",
+          "status": "completed",
+          "conclusion": "failure",
+          "updated_at": "2026-11-16T11:47:06Z",
+          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/43860758997",
+          "branch": "main"
+        },
+        {
+          "name": "github_actions in /. - Update #1706431065",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-16T00:33:06Z",
+          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/43780965154",
+          "branch": "main"
+        },
+        {
+          "name": "pip in /. - Update #1706431007",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-16T00:32:59Z",
+          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/43780965162",
           "branch": "main"
         }
       ],
-      "non_default_branch_run_count": 29,
+      "non_default_branch_run_count": 34,
       "key_workflows": [
         {
           "name": "Free cloud verification",
@@ -195,123 +531,57 @@
       "warnings": []
     },
     {
-      "name": "PUI89 AI NOMAD",
-      "repository": "Pui89/AI-Mobile-Assistant-Robot",
-      "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot",
-      "focus": "Ground-use four-wheel mobile assistant robot. Not luggage or airline cabin/checked baggage; storage is secondary to supervised mobility and assistance. Physical mobility remains unvalidated.",
-      "status": "CHECKS_AVAILABLE",
-      "default_branch": "main",
-      "latest_commit": "7b54dc4c395c",
-      "latest_commit_url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/commit/7b54dc4c395c945773c5ee7ab3c5bee73836b940",
-      "latest_workflows": [
-        {
-          "name": "PUI89 Security Audit",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-14T09:42:36Z",
-          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/43581818274",
-          "branch": "main"
-        },
-        {
-          "name": "AI HOME CI",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-14T09:42:41Z",
-          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/43581818291",
-          "branch": "main"
-        }
-      ],
-      "non_default_branch_run_count": 36,
-      "key_workflows": [
-        {
-          "name": "Free cloud verification",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Dataset recovery audit",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Free-resource link audit",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Rule-based simulation evaluation",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Coconut dataset evidence audit",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Simulation benchmark + report validator",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Autonomy / safety regression tests",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        }
-      ],
-      "warnings": [
-        "PUI89 AI NOMAD is a four-wheel mobile assistant, not a quadruped. Its 8–10 kg complete-mass target (10 kg maximum) and proposed body envelope are design targets, not measured prototype specifications. Successful software workflows do not validate physical mobility, sensors or AI performance."
-      ]
-    },
-    {
       "name": "PUI89 AI Global SUV",
       "repository": "Pui89/PUI89-AI-Global-SUV",
       "url": "https://github.com/Pui89/PUI89-AI-Global-SUV",
       "focus": "Medium-size SUV concept; human-driver-first mobility intelligence and advisory-only software research.",
       "status": "CHECKS_AVAILABLE",
       "default_branch": "main",
-      "latest_commit": "27a9b31be480",
-      "latest_commit_url": "https://github.com/Pui89/PUI89-AI-Global-SUV/commit/27a9b31be480f01cdf9bd52c8a46d8beab7ee58f",
+      "latest_commit": "deebff24e220",
+      "latest_commit_url": "https://github.com/Pui89/PUI89-AI-Global-SUV/commit/deebff24e220d6e5b0606ca845eb6703105bf487",
       "latest_workflows": [
         {
           "name": "PUI89 Security Audit",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-14T09:42:53Z",
-          "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/actions/runs/43581842184",
+          "updated_at": "2026-11-19T15:14:03Z",
+          "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/actions/runs/44552436407",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 AI Global SUV Quality and Shared Core Contract Checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:14:07Z",
+          "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/actions/runs/44552436567",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 project intelligence reviews",
+          "status": "completed",
+          "conclusion": "failure",
+          "updated_at": "2026-11-18T23:06:00Z",
+          "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/actions/runs/44417695755",
+          "branch": "main"
+        },
+        {
+          "name": "github_actions in / for actions/checkout - Update #1705556584",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-15T12:38:07Z",
+          "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/actions/runs/43714809370",
           "branch": "main"
         },
         {
           "name": "PUI89 AI Robot Car Quality and Shared Core Contract Checks",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-14T09:42:56Z",
-          "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/actions/runs/43581842151",
+          "updated_at": "2026-11-15T10:48:49Z",
+          "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/actions/runs/43705868070",
           "branch": "main"
         }
       ],
-      "non_default_branch_run_count": 35,
+      "non_default_branch_run_count": 32,
       "key_workflows": [
         {
           "name": "Free cloud verification",
@@ -376,24 +646,128 @@
       "name": "PUI89 AI Step-Through Scooter",
       "repository": "Pui89/AI-Step-Through-Scooter",
       "url": "https://github.com/Pui89/AI-Step-Through-Scooter",
-      "focus": "Rider-centred step-through mobility concept, safety advisories and simulation-first evaluation.",
-      "status": "IDENTITY_CORRECTED_EVIDENCE_REVIEW_REQUIRED",
+      "focus": "Rider-first two-wheel step-through scooter; advisory road-water and flood-risk awareness, human-controlled operation.",
+      "status": "CHECKS_AVAILABLE",
       "default_branch": "main",
-      "latest_commit": null,
-      "latest_commit_url": null,
-      "latest_workflows": [],
-      "non_default_branch_run_count": 31,
-      "key_workflows": [],
-      "warnings": [
-        "Canonical repository identity corrected; prior repository status and workflow references are not carried forward. Review the canonical repository before reporting CI or maturity."
-      ]
+      "latest_commit": "31e0ea6f78cc",
+      "latest_commit_url": "https://github.com/Pui89/AI-Step-Through-Scooter/commit/31e0ea6f78cc88a0a2f71face886653bba1a81fe",
+      "latest_workflows": [
+        {
+          "name": "PUI89 Motorcycle Quality and Shared Core Contract Checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:13:36Z",
+          "url": "https://github.com/Pui89/AI-Step-Through-Scooter/actions/runs/44552349165",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Security Audit",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-19T15:13:35Z",
+          "url": "https://github.com/Pui89/AI-Step-Through-Scooter/actions/runs/44552349068",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 project intelligence reviews",
+          "status": "completed",
+          "conclusion": "failure",
+          "updated_at": "2026-11-18T23:05:31Z",
+          "url": "https://github.com/Pui89/AI-Step-Through-Scooter/actions/runs/44417617284",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 security baseline",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-16T12:10:11Z",
+          "url": "https://github.com/Pui89/AI-Step-Through-Scooter/actions/runs/43863996063",
+          "branch": "main"
+        },
+        {
+          "name": "github_actions in /. - Update #1700050870",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-13T02:15:16Z",
+          "url": "https://github.com/Pui89/AI-Step-Through-Scooter/actions/runs/43350720301",
+          "branch": "main"
+        }
+      ],
+      "non_default_branch_run_count": 34,
+      "key_workflows": [
+        {
+          "name": "Free cloud verification",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null,
+          "branch": null
+        },
+        {
+          "name": "Dataset recovery audit",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null,
+          "branch": null
+        },
+        {
+          "name": "Free-resource link audit",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null,
+          "branch": null
+        },
+        {
+          "name": "Rule-based simulation evaluation",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null,
+          "branch": null
+        },
+        {
+          "name": "Coconut dataset evidence audit",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null,
+          "branch": null
+        },
+        {
+          "name": "Simulation benchmark + report validator",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null,
+          "branch": null
+        },
+        {
+          "name": "Autonomy / safety regression tests",
+          "status": "not_seen_in_recent_runs",
+          "conclusion": null,
+          "updated_at": null,
+          "url": null,
+          "branch": null
+        }
+      ],
+      "warnings": []
     }
   ],
   "platform": {
     "name": "Shared AI Core",
-    "repository": "Private platform repository — not publicly monitored",
+    "repository": "Private platform repository \u2014 not publicly monitored",
     "url": "https://pui89.github.io/ai-core.html",
-    "focus": "Shared contracts, orchestration, compute intelligence, evidence gates and reusable engineering infrastructure; shared platform, not a seventh product.",
+    "summary": {
+      "en": "Shared infrastructure for reusable contracts, orchestration, compute intelligence, evidence provenance and engineering tools. It is not a product.",
+      "th": "\u0e42\u0e04\u0e23\u0e07\u0e2a\u0e23\u0e49\u0e32\u0e07\u0e1e\u0e37\u0e49\u0e19\u0e10\u0e32\u0e19\u0e23\u0e48\u0e27\u0e21\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e2a\u0e31\u0e0d\u0e0d\u0e32\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25 \u0e01\u0e32\u0e23\u0e1b\u0e23\u0e30\u0e2a\u0e32\u0e19\u0e07\u0e32\u0e19 \u0e04\u0e27\u0e32\u0e21\u0e09\u0e25\u0e32\u0e14\u0e14\u0e49\u0e32\u0e19\u0e01\u0e32\u0e23\u0e1b\u0e23\u0e30\u0e21\u0e27\u0e25\u0e1c\u0e25 \u0e17\u0e35\u0e48\u0e21\u0e32\u0e02\u0e2d\u0e07\u0e2b\u0e25\u0e31\u0e01\u0e10\u0e32\u0e19 \u0e41\u0e25\u0e30\u0e40\u0e04\u0e23\u0e37\u0e48\u0e2d\u0e07\u0e21\u0e37\u0e2d\u0e27\u0e34\u0e28\u0e27\u0e01\u0e23\u0e23\u0e21 \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e1c\u0e25\u0e34\u0e15\u0e20\u0e31\u0e13\u0e11\u0e4c"
+    },
+    "next": {
+      "en": "Maintain shared contracts and evidence gates; report only verified public information.",
+      "th": "\u0e14\u0e39\u0e41\u0e25\u0e2a\u0e31\u0e0d\u0e0d\u0e32\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e41\u0e25\u0e30\u0e40\u0e07\u0e37\u0e48\u0e2d\u0e19\u0e44\u0e02\u0e2b\u0e25\u0e31\u0e01\u0e10\u0e32\u0e19\u0e23\u0e48\u0e27\u0e21 \u0e42\u0e14\u0e22\u0e23\u0e32\u0e22\u0e07\u0e32\u0e19\u0e40\u0e09\u0e1e\u0e32\u0e30\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e2a\u0e32\u0e18\u0e32\u0e23\u0e13\u0e30\u0e17\u0e35\u0e48\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a\u0e44\u0e14\u0e49"
+    },
+    "focus": "Shared contracts, orchestration, compute intelligence, evidence gates and reusable engineering infrastructure; not a seventh product.",
     "status": "NOT_PUBLICLY_MONITORED",
     "default_branch": null,
     "latest_commit": null,
@@ -403,23 +777,16 @@
     "key_workflows": [],
     "warnings": [
       "The platform repository is private; public reporting does not expose its repository activity."
-    ],
-    "summary": {
-      "en": "Shared infrastructure for reusable contracts, orchestration, compute intelligence, evidence provenance and engineering tools. It is not a product.",
-      "th": "โครงสร้างพื้นฐานร่วมสำหรับสัญญาข้อมูล การประสานงาน ความฉลาดด้านการประมวลผล ที่มาของหลักฐาน และเครื่องมือวิศวกรรม ไม่ใช่ผลิตภัณฑ์"
-    },
-    "next": {
-      "en": "Maintain shared contracts and evidence gates; report only verified public information.",
-      "th": "ดูแลสัญญาข้อมูลและเงื่อนไขหลักฐานร่วม โดยรายงานเฉพาะข้อมูลสาธารณะที่ตรวจสอบได้"
-    }
+    ]
   },
   "limitations": [
-    "This report is a point-in-time read of public GitHub metadata and recent workflow runs; it does not execute project tests.",
+    "This report reads public repository metadata and recent workflow runs; it does not execute project tests.",
     "A missing workflow run is unknown, not a passing result or proof of failure.",
     "Only the most recent 50 repository workflow runs are scanned; a safeguard absent from that window is unknown.",
-    "Exactly six active product repositories are monitored. Shared AI Core is platform infrastructure, not a seventh product, and is private so its activity is not included in this public report.",
-    "Headline workflow and safeguard status is filtered to each repository's default branch; other-branch runs are counted separately and do not prove default-branch health.",
-    "A successful workflow does not validate real-world robot performance, AI accuracy, certification, dataset quality or field performance.",
-    "The report reflects the public GitHub API snapshot at generated_at_utc; it may become stale until the next successful refresh."
+    "Exactly six active product repositories are monitored; Shared AI Core is monitored separately as shared platform infrastructure and is not counted as a seventh product. The website repository is not a product.",
+    "Headline workflow and safeguard status is filtered to the repository default branch; other-branch runs are counted separately and do not prove default-branch health.",
+    "A successful workflow does not validate real-world robot performance or dataset correctness.",
+    "The Coconut dataset evidence audit runs only where its workflow is configured; not_seen_in_recent_runs for other projects means not observed, not a failure.",
+    "GitHub API rate limits or temporary network errors can make status partial."
   ]
 }
