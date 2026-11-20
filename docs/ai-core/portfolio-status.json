@@ -1,0 +1,81 @@
+{
+  "portfolio": "PUI89",
+  "report_version": "0.1.0",
+  "generated_at": "2026-11-01T20:14:00Z",
+  "reporting_mode": "manual_historical_baseline",
+  "overall_statement": "This is a manually assembled historical baseline from the public PUI89 portfolio README. It is not a live dashboard and does not imply project-wide readiness.",
+  "projects": [
+    {
+      "id": "coconut-harvest-ai",
+      "name": "Coconut Harvest AI",
+      "repository": "https://github.com/Pui89/Coconut-Harvest-AI",
+      "historical_scenario_evidence": {
+        "source": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40881372992",
+        "reported_run_date": "2026-10-30",
+        "reported_scenarios_passed": 7,
+        "reported_scenarios_total": 7,
+        "reported_steps_passed": 9,
+        "reported_steps_total": 9,
+        "reported_failures": 0,
+        "evidence_level": "E1_software",
+        "result": "not_independently_reverified"
+      },
+      "dataset_audit": {
+        "source": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40944312469",
+        "reported_checks_passed": 15,
+        "evidence_level": "E1_software",
+        "result": "not_independently_reverified"
+      },
+      "hardware_readiness": "not_assessed",
+      "model_accuracy": "not_assessed",
+      "field_performance": "not_assessed"
+    },
+    {
+      "id": "extreme-flood-rescue-ai",
+      "name": "Extreme Flood Rescue AI",
+      "repository": "https://github.com/Pui89/Extreme-Flood-Rescue-AI",
+      "historical_scenario_evidence": {
+        "source": "https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40919457152",
+        "reported_run_date": "2026-10-30",
+        "reported_scenarios_passed": 7,
+        "reported_scenarios_total": 7,
+        "reported_steps_passed": 9,
+        "reported_steps_total": 9,
+        "reported_failures": 0,
+        "evidence_level": "E1_software",
+        "result": "not_independently_reverified"
+      },
+      "hardware_readiness": "not_assessed",
+      "validated_water_physics": "not_assessed",
+      "field_performance": "not_assessed"
+    },
+    {
+      "id": "multimodal-narcotics-screening-ai",
+      "name": "Multimodal Narcotics Screening AI",
+      "repository": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI",
+      "historical_scenario_evidence": {
+        "source": "https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/40919469891",
+        "reported_run_date": "2026-10-30",
+        "reported_scenarios_passed": 7,
+        "reported_scenarios_total": 7,
+        "reported_steps_passed": 9,
+        "reported_steps_total": 9,
+        "reported_failures": 0,
+        "evidence_level": "E1_software",
+        "result": "not_independently_reverified"
+      },
+      "model_accuracy": "not_assessed",
+      "operational_suitability": "not_assessed",
+      "field_performance": "not_assessed"
+    }
+  ],
+  "portfolio_gaps": [
+    "Re-run and independently inspect the referenced historical workflows before presenting them as current evidence.",
+    "Publish compatible project-level status reports that validate against the shared JSON Schema.",
+    "Record code commit, configuration, test protocol and failures for every new evidence item.",
+    "Separate dataset licensing, annotation quality and split-leakage status.",
+    "Do not claim model accuracy without a leakage-safe benchmark and disclosed metrics.",
+    "Do not claim physical robot readiness or field safety without appropriate real-world testing and independent review."
+  ],
+  "next_gate": "Adopt the shared report schema in all three project repositories and add automated validation."
+}
