@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 Coconut Harvest AI — orchard image assessment concept</title>
+<desc id="desc">A Thai coconut orchard with an operator reviewing four coconut appearance categories on a tablet. Concept illustration for a software-first, human-reviewed AI assessment workflow; no harvesting robot is depicted.</desc>
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#0b2035"/><stop offset=".62" stop-color="#1b5260"/><stop offset="1" stop-color="#8a9d73"/></linearGradient>
+ <linearGradient id="ground" x2="0" y2="1"><stop stop-color="#6f8c54"/><stop offset="1" stop-color="#243f35"/></linearGradient>
+ <linearGradient id="panel" x2="1" y2="1"><stop stop-color="#142d45"/><stop offset="1" stop-color="#091827"/></linearGradient>
+ <linearGradient id="cyan" x2="1" y2="1"><stop stop-color="#8cecff"/><stop offset="1" stop-color="#24a9d0"/></linearGradient>
+ <linearGradient id="leaf" x2="1" y2="1"><stop stop-color="#3f8b68"/><stop offset="1" stop-color="#163f3d"/></linearGradient>
+ <linearGradient id="skin" x2="0" y2="1"><stop stop-color="#d9a77e"/><stop offset="1" stop-color="#a96d4f"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="18"/></filter>
+ <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#8cecff" stroke-opacity=".08"/></pattern>
+</defs>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<circle cx="1250" cy="160" r="120" fill="#d8f4d7" opacity=".16"/>
+<path d="M0 540 Q260 460 520 535T1040 515T1600 500V900H0Z" fill="#557c5b" opacity=".6"/>
+<path d="M0 650 Q350 570 700 650T1350 620T1600 650V900H0Z" fill="url(#ground)"/>
+<g opacity=".32" fill="#a8c58b">
+ <path d="M0 710Q220 650 420 715T820 700T1200 710T1600 680V900H0Z"/>
+ <path d="M0 780Q280 720 520 780T1000 770T1600 750V900H0Z"/>
+</g>
+<!-- distant coconut palms -->
+<g opacity=".7" fill="none" stroke-linecap="round">
+ <path d="M270 620Q300 400 320 220" stroke="#594b36" stroke-width="34"/>
+ <path d="M320 235Q210 120 95 155Q205 145 300 220Q210 65 155 65Q255 95 322 215Q330 85 390 48Q355 135 330 225Q455 120 520 155Q425 155 340 240Q480 220 520 290Q420 255 325 260" stroke="#2b7058" stroke-width="24"/>
+ <path d="M900 600Q930 390 955 190" stroke="#594b36" stroke-width="28"/>
+ <path d="M955 200Q860 100 760 120Q865 135 945 200Q890 70 835 48Q930 90 962 195Q990 75 1050 45Q1010 130 975 205Q1080 115 1150 150Q1065 160 980 220Q1090 215 1130 280Q1045 250 965 255" stroke="#347d5c" stroke-width="22"/>
+</g>
+<!-- foreground palm -->
+<path d="M1330 690Q1285 420 1370 150" fill="none" stroke="#725b3d" stroke-width="58" stroke-linecap="round"/>
+<path d="M1368 175Q1220 40 1090 80Q1220 80 1350 180Q1250 5 1170 0Q1300 25 1380 170Q1400 20 1495 0Q1430 70 1395 180Q1510 80 1590 125Q1495 130 1400 205Q1530 205 1580 280Q1480 235 1385 240" fill="none" stroke="url(#leaf)" stroke-width="34" stroke-linecap="round"/>
+<g fill="#a6d47b" stroke="#284d3c" stroke-width="5">
+ <ellipse cx="1320" cy="278" rx="31" ry="43" transform="rotate(-24 1320 278)"/>
+ <ellipse cx="1360" cy="296" rx="34" ry="46" transform="rotate(14 1360 296)"/>
+ <ellipse cx="1398" cy="278" rx="30" ry="42" transform="rotate(28 1398 278)"/>
+ <ellipse cx="1348" cy="335" rx="34" ry="45" transform="rotate(-8 1348 335)"/>
+ <ellipse cx="1400" cy="340" rx="31" ry="43" transform="rotate(18 1400 340)"/>
+</g>
+<!-- operator -->
+<ellipse cx="850" cy="808" rx="205" ry="35" fill="#081b25" opacity=".4" filter="url(#shadow)"/>
+<path d="M790 470Q840 420 900 460L965 655L925 790H770L730 635Z" fill="#163d55" stroke="#0b2435" stroke-width="8"/>
+<path d="M795 485L900 485L925 650L760 650Z" fill="#245c73"/>
+<path d="M790 650L760 795H825L860 665L900 795H968L925 650Z" fill="#142c3d"/>
+<path d="M795 415Q770 350 815 300Q870 250 925 300Q960 360 920 425Q870 470 820 430Z" fill="url(#skin)" stroke="#704d3b" stroke-width="7"/>
+<path d="M790 340Q790 260 860 255Q940 260 950 330L925 350Q900 310 840 315L810 360Z" fill="#152a39"/>
+<path d="M807 350Q855 320 923 347" fill="none" stroke="#243c4b" stroke-width="15"/>
+<path d="M770 500Q700 540 650 625L685 665Q755 625 820 570" fill="none" stroke="url(#skin)" stroke-width="48" stroke-linecap="round"/>
+<path d="M920 505Q1000 520 1055 590L1025 630Q960 590 900 570" fill="none" stroke="url(#skin)" stroke-width="46" stroke-linecap="round"/>
+<!-- tablet -->
+<g transform="rotate(-7 875 635)">
+ <rect x="675" y="540" width="385" height="230" rx="22" fill="#07121f" stroke="#8296a8" stroke-width="8"/>
+ <rect x="692" y="557" width="351" height="196" rx="12" fill="url(#panel)"/>
+ <rect x="692" y="557" width="351" height="196" rx="12" fill="url(#grid)"/>
+ <text x="715" y="585" fill="#8cecff" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="2">PUI89 / COCONUT AI</text>
+ <text x="715" y="611" fill="#f1f7ff" font-family="Arial,sans-serif" font-size="13">VISUAL MATURITY REVIEW</text>
+ <g font-family="Arial,sans-serif" font-size="11" fill="#d8e8f5">
+  <rect x="710" y="625" width="75" height="82" rx="8" fill="#193c4d" stroke="#42d9ff"/>
+  <ellipse cx="748" cy="657" rx="17" ry="24" fill="#5aa95d"/><text x="719" y="693">YOUNG</text>
+  <rect x="793" y="625" width="75" height="82" rx="8" fill="#193c4d" stroke="#42d9ff"/>
+  <ellipse cx="830" cy="657" rx="17" ry="24" fill="#3b8650"/><text x="800" y="693">MATURE</text>
+  <rect x="876" y="625" width="75" height="82" rx="8" fill="#193c4d" stroke="#42d9ff"/>
+  <ellipse cx="913" cy="657" rx="17" ry="24" fill="#d9b34f"/><text x="898" y="693">YELLOW</text>
+  <rect x="959" y="625" width="75" height="82" rx="8" fill="#193c4d" stroke="#42d9ff"/>
+  <ellipse cx="996" cy="657" rx="17" ry="24" fill="#8a5b37"/><text x="983" y="693">BROWN</text>
+ </g>
+ <rect x="710" y="716" width="324" height="25" rx="6" fill="#102f42" stroke="#42d9ff" stroke-opacity=".8"/>
+ <circle cx="725" cy="728" r="5" fill="#f3c96a"/><text x="738" y="733" fill="#c9dce9" font-family="Arial,sans-serif" font-size="11">Human review · uncertainty retained</text>
+</g>
+<!-- left headline space -->
+<rect x="70" y="85" width="540" height="340" rx="28" fill="#071827" fill-opacity=".68" stroke="#42d9ff" stroke-opacity=".3" stroke-width="2"/>
+<text x="112" y="145" fill="#42d9ff" font-family="Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="5">PUI89 / AGRICULTURAL AI</text>
+<text x="112" y="222" fill="#f4f8ff" font-family="Arial,sans-serif" font-size="58" font-weight="800">COCONUT</text>
+<text x="112" y="285" fill="#f4f8ff" font-family="Arial,sans-serif" font-size="58" font-weight="800">HARVEST AI</text>
+<path d="M112 315H480" stroke="#42d9ff" stroke-width="5" stroke-linecap="round"/>
+<text x="112" y="360" fill="#d3e2ef" font-family="Arial,sans-serif" font-size="22">Visual assessment · Human decision support</text>
+<text x="112" y="395" fill="#9db6c9" font-family="Arial,sans-serif" font-size="17">Concept illustration — software-first project</text>
+<rect x="70" y="825" width="1460" height="2" fill="#8cecff" opacity=".35"/>
+<text x="80" y="865" fill="#d9e8f3" font-family="Arial,sans-serif" font-size="16" letter-spacing="2">CONCEPT ONLY · NO AUTONOMOUS HARVESTING OR FIELD PERFORMANCE CLAIM</text>
+</svg>
