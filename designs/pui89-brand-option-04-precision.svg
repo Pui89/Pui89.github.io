@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 — Precision in Intelligent Systems</title>
+<desc id="desc">A new PUI89 brand identity with a custom geometric wordmark. The P, U and I form a connected structural mark; 89 is integrated as a bright paired symbol. Dark graphite, deep navy and restrained electric teal.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111d"/><stop offset=".55" stop-color="#0c2432"/><stop offset="1" stop-color="#101b2a"/></linearGradient>
+ <linearGradient id="main" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5ffff"/><stop offset=".45" stop-color="#b7e7e5"/><stop offset="1" stop-color="#62bfc1"/></linearGradient>
+ <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8cf2df"/><stop offset="1" stop-color="#39a6c2"/></linearGradient>
+ <radialGradient id="aura"><stop stop-color="#38c4ba" stop-opacity=".18"/><stop offset="1" stop-color="#38c4ba" stop-opacity="0"/></radialGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="22"/></filter>
+</defs>
+<rect width="1400" height="760" rx="38" fill="url(#bg)"/>
+<circle cx="700" cy="320" r="390" fill="url(#aura)" filter="url(#soft)"/>
+<g opacity=".18" stroke="#8adbd6" fill="none"><path d="M100 620H1300"/><path d="M180 110V650M1220 110V650" stroke-dasharray="3 12"/><circle cx="700" cy="320" r="280" stroke-dasharray="2 15"/></g>
+<!-- custom connected PUI letterform -->
+<g fill="none" stroke="url(#main)" stroke-width="25" stroke-linecap="square" stroke-linejoin="round">
+ <path d="M330 210V475M330 210H450Q535 210 535 295Q535 380 450 380H330"/>
+ <path d="M590 210V390Q590 475 680 475Q770 475 770 390V210"/>
+ <path d="M835 210V475"/>
+</g>
+<!-- integrated 89 symbol -->
+<g fill="none" stroke="url(#accent)" stroke-width="24">
+ <path d="M940 275C940 225 980 195 1030 195C1080 195 1115 225 1115 275C1115 325 1080 350 1030 350C980 350 940 325 940 275Z"/>
+ <path d="M940 420C940 370 980 345 1030 345C1080 345 1115 375 1115 425C1115 475 1080 505 1030 505C980 505 940 475 940 420Z"/>
+ <path d="M1030 350C1080 350 1115 380 1115 425C1115 475 1080 505 1030 505C980 505 940 475 940 420" opacity=".85"/>
+</g>
+<g fill="#a5e9e3"><circle cx="330" cy="520" r="5"/><circle cx="835" cy="520" r="5"/><circle cx="1160" cy="350" r="5"/></g>
+<text x="700" y="605" text-anchor="middle" fill="#f0ffff" font-family="Arial,sans-serif" font-size="22" font-weight="600" letter-spacing="9">INTELLIGENT SYSTEMS</text>
+<text x="700" y="650" text-anchor="middle" fill="#9dbfc8" font-family="Arial,sans-serif" font-size="15" letter-spacing="6">AI  ·  ENGINEERING  ·  INNOVATION</text>
+</svg>

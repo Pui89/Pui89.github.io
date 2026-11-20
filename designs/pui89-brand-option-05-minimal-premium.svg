@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 — Minimal premium identity</title>
+<desc id="desc">A restrained premium PUI89 wordmark with a distinctive open-ring symbol, generous spacing, and a graphite and warm-white palette with a single teal accent.</desc>
+<defs>
+ <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101820"/><stop offset="1" stop-color="#1b2930"/></linearGradient>
+ <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#cbd8d8"/></linearGradient>
+ <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8de0d1"/><stop offset="1" stop-color="#3c9f9c"/></linearGradient>
+</defs>
+<rect width="1600" height="900" rx="32" fill="url(#paper)"/>
+<g opacity=".12" stroke="#9bb7b6" fill="none"><path d="M120 720H1480"/><path d="M120 180H1480"/></g>
+<!-- restrained standalone emblem -->
+<g transform="translate(800 300)">
+ <path d="M0 -106 A106 106 0 1 1 -75 -75" fill="none" stroke="url(#metal)" stroke-width="17" stroke-linecap="round"/>
+ <path d="M0 -106V-48M0 -48L52 8" fill="none" stroke="url(#teal)" stroke-width="17" stroke-linecap="round"/>
+ <circle cx="0" cy="-106" r="9" fill="#8de0d1"/>
+</g>
+<text x="800" y="570" text-anchor="middle" fill="url(#metal)" font-family="Arial, Helvetica, sans-serif" font-size="164" font-weight="500" letter-spacing="25">PUI89</text>
+<path d="M625 620H975" stroke="url(#teal)" stroke-width="3"/>
+<text x="800" y="690" text-anchor="middle" fill="#aabbbb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" letter-spacing="12">INTELLIGENT SYSTEMS</text>
+<text x="800" y="748" text-anchor="middle" fill="#718889" font-family="Arial, Helvetica, sans-serif" font-size="17" letter-spacing="7">ENGINEERED WITH PURPOSE</text>
+</svg>
