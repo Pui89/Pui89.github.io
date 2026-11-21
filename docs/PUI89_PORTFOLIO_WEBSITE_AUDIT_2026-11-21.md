@@ -36,7 +36,7 @@ Narcotics detection, X-ray screening payloads and chemical-identification functi
 
 - Keep the active portfolio count at six.
 - Keep the two SUV gallery design versions as previously selected; this audit does not alter them.
-- Retain the Extreme Flood Rescue AI project and historical screening artifacts as archived material; do not delete project history.
+- Keep the public portfolio limited to the six active products. Do not expose a retired project as a current page, portfolio card, maturity record, review count, or product image. Preserve only generic, product-specific flood/road-water safety requirements where they apply to active mobility products.
 - Preserve the existing bilingual QR assets and page destinations.
 - Continue using feature branches and pull requests; do not write directly to the default branch or auto-merge.
 
