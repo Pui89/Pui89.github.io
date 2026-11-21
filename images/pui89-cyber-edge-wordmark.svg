@@ -1,23 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" role="img" aria-labelledby="title desc">
-<title id="title">PUI89</title>
-<desc id="desc">A strong, standard solid capital N in titanium silver, with only the upper third of its right vertical pillar in a deep-blue to electric-cyan gradient. PUI is titanium silver and 89 uses both deep blue and electric cyan.</desc>
-<defs>
-  <linearGradient id="titanium" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#F7FAFD"/>
-    <stop offset=".48" stop-color="#C2CED9"/>
-    <stop offset="1" stop-color="#8295A8"/>
-  </linearGradient>
-  <linearGradient id="dualBlue" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#1456A0"/>
-    <stop offset=".52" stop-color="#087FC4"/>
-    <stop offset="1" stop-color="#00D5FF"/>
-  </linearGradient>
-</defs>
-<!-- Solid standard N: flat square ends, two straight pillars, one strong diagonal. -->
-<path d="M70 35 H142 L278 215 V35 H350 V265 H278 L142 85 V265 H70 Z" fill="url(#titanium)"/>
-<!-- Only the upper one-third of the N's right vertical pillar is dual blue. -->
-<rect x="278" y="35" width="72" height="77" fill="url(#dualBlue)"/>
-<!-- PUI remains titanium silver; 89 carries both Deep Blue and Electric Cyan. -->
-<text x="405" y="204" fill="url(#titanium)" font-family="Arial, Helvetica, sans-serif" font-size="142" font-weight="850" letter-spacing="-3">PUI</text>
-<text x="690" y="204" fill="url(#dualBlue)" font-family="Arial, Helvetica, sans-serif" font-size="142" font-weight="850" letter-spacing="-3">89</text>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 940 300"
+     role="img"
+     aria-labelledby="title desc">
+  <title id="title">PUI89 Precision Industrial</title>
+  <desc id="desc">Horizontal PUI89 wordmark. A standard solid capital N in titanium silver, with only the upper third of its right vertical pillar in a deep-blue to electric-cyan gradient. PUI is titanium silver; 89 uses the same blue-to-cyan gradient.</desc>
+  <defs>
+    <linearGradient id="pui89-blue-cyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#174EA6"/>
+      <stop offset="100%" stop-color="#00D5F2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Solid, standard capital N: two vertical pillars and one straight diagonal. -->
+  <path d="M70 35 H142 L278 215 V35 H350 V265 H278 L142 85 V265 H70 Z"
+        fill="#C4CDD6"/>
+
+  <!-- Blue-cyan accent is restricted to the upper third of the right pillar. -->
+  <rect x="278" y="35" width="72" height="77"
+        fill="url(#pui89-blue-cyan)"/>
+
+  <!-- Single horizontal wordmark: titanium-silver PUI and blue-cyan 89. -->
+  <g font-family="Arial, Helvetica, sans-serif"
+     font-size="178"
+     font-weight="700"
+     letter-spacing="-4"
+     text-rendering="geometricPrecision">
+    <text x="405" y="212" fill="#C4CDD6">PUI</text>
+    <text x="665" y="212" fill="url(#pui89-blue-cyan)">89</text>
+  </g>
 </svg>
