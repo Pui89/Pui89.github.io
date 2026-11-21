@@ -64,7 +64,7 @@ Each project has its own repository, requirements, risks, and validation gates. 
 | **Coconut Harvest AI** | Coconut maturity assessment and a proposed robotic harvesting workflow | [Repository](https://github.com/Pui89/Coconut-Harvest-AI) | [EN](https://pui89.github.io/coconut.html) · [TH](https://pui89.github.io/coconut-th.html) |
 | **PUI89 Sentinel — All-Terrain Exploration & Inspection Robot** | PUI89 Sentinel: four-legged quadruped robot dog concept for supervised industrial, infrastructure and outdoor inspection | [Repository](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot) | [EN](https://pui89.github.io/sentinel.html) · [TH](https://pui89.github.io/sentinel-th.html) |
 | **PUI89 AI HOME** | Indoor home-condition awareness and evidence-led assistance | [Repository](https://github.com/Pui89/AI-Home-Safety-Robot) | [EN](https://pui89.github.io/home.html) · [TH](https://pui89.github.io/home-th.html) |
-| **PUI89 AI NOMAD — Carry-on Suitcase-Style Mobile AI Assistant** | Upright carry-on luggage form, telescopic pull handle and four spinner caster wheels at the base; 8–10 kg target, 10 kg maximum; not airline-certified or physically validated | [Repository](https://github.com/Pui89/AI-Mobile-Assistant-Robot) | [EN](https://pui89.github.io/nomad.html) · [TH](https://pui89.github.io/nomad-th.html) |
+| **PUI89 AI NOMAD — Carry-on Suitcase-Style Mobile AI Assistant** | Intelligent suitcase form with an integrated telescopic pull handle and luggage-style wheels; preliminary 8–10 kg target, 10 kg maximum; dimensions, travel compatibility and physical performance remain unverified | [Repository](https://github.com/Pui89/AI-Mobile-Assistant-Robot) | [EN](https://pui89.github.io/nomad.html) · [TH](https://pui89.github.io/nomad-th.html) |
 | **PUI89 AI Global SUV** | Medium-size global SUV concept; HEV-first evaluation with powertrain-neutral AI software | [Repository](https://github.com/Pui89/PUI89-AI-Global-SUV) | [EN](https://pui89.github.io/ai-global-suv.html) · [TH](https://pui89.github.io/ai-global-suv-th.html) |
 | **PUI89 AI Step-Through Scooter** | Rider-centred mobility intelligence and road-awareness research | [Repository](https://github.com/Pui89/AI-Step-Through-Scooter) | [EN](https://pui89.github.io/ai-robot-motorcycle.html) · [TH](https://pui89.github.io/ai-robot-motorcycle-th.html) |
 
@@ -196,7 +196,7 @@ PUI89 remains an independent early-stage initiative. An enquiry does not mean a 
 
 PUI89 has **exactly six active products**. [PUI89 Portfolio Source of Truth v1.0](PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.0.md) is the canonical record for all six product names, repository links, bilingual website links, founder-approved requirements and evidence maturity labels. Shared AI Core is common infrastructure, not a seventh product. Flood and road-water awareness may remain advisory requirements within relevant mobility products; they are not a separate product.
 
-The source of truth also records the HOME 8 kg target / 10 kg maximum, NOMAD's ground-use four-wheel mobile-assistant identity, Sentinel's mission-before-hardware gate, and the Coconut rights → human labels → held-out CPU evaluation sequence.
+The source of truth also records the HOME 8 kg target / 10 kg maximum, NOMAD's intelligent suitcase-form identity, Sentinel's mission-before-hardware gate, and the Coconut rights → human labels → held-out CPU evaluation sequence.
 
 
 ---
