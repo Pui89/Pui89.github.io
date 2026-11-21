@@ -31,7 +31,6 @@ These entries are discovery targets, not endorsements or approvals. The licence 
 ## Project boundaries
 
 - **Coconut Harvest AI:** VLM outputs may describe visible maturity cues for comparison with labelled observations. They do not replace a validated detector or establish harvest readiness by themselves.
-- **Extreme Flood Rescue AI:** VLM outputs may describe visible hazards for simulation and operator review. SmolVLA action sequences remain simulated proposals and cannot command a robot.
 - **Multimodal Narcotics Screening AI:** visual-language outputs may organise visible context for a human reviewer only. RGB/VLM output cannot establish chemical identity, guilt or grounds for enforcement. Missing, stale, conflicting or uncertain evidence must abstain or request human review.
 
 ## Non-negotiable cost and safety controls
