@@ -10,14 +10,12 @@ The deterministic PUI89 Evidence Benchmark Engine has now been merged into the t
 | Project | Merged PR | Successful hosted run | What this verifies |
 |---|---|---|---|
 | [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | [#160](https://github.com/Pui89/Coconut-Harvest-AI/pull/160) | [Run 41222933984](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41222933984) | Evidence-report structure, metric consistency, source-report and ordered world-state snapshot hashes, and rejection of hardware-actuation claims |
-| [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | [#124](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/124) | [Run 41222937936](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41222937936) | Same deterministic evidence-integrity checks; simulation evidence only |
 | [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | [#101](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/101) | [Run 41222943024](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41222943024) | Same deterministic evidence-integrity checks; simulation evidence only |
 
 All three benchmark-engine PRs are merged, and all three cited runs have GitHub Actions conclusion **success**. HOMEGUARD's separate initial CI run also completed successfully; it is not yet running the same benchmark engine. The engine checks integrity and consistency of supplied evidence; it does not authenticate the truth of the underlying observations, measure model accuracy, establish comparable cross-project scores, or validate physical performance. The runs reject any simulation step that claims hardware actuation.
 
 The default-branch workflow runs observed on 31 October 2026 also completed successfully:
 - Coconut: [automated verification](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41241337764), [lightweight core tests](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41241337730), and [security](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/41241337679).
-- Flood Rescue: [automated verification](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41241212702), [regression checks](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41241212718), and [security](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/41241212728).
 - Screening: [automated verification](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41241242511), [Python tests](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41241242543), and [security](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/actions/runs/41241242522).
 
 These are separate workflow runs and test suites. Their results must not be summed into a single project score or presented as proof of field readiness.
@@ -29,7 +27,6 @@ The listed workflow runs had completed with GitHub Actions conclusion **success*
 | Project | Merged workflow PRs | Observed passing workflow runs | Evidence boundary |
 |---|---|---|---|
 | [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | [#151 — lightweight CI](https://github.com/Pui89/Coconut-Harvest-AI/pull/151); [#153 — simulation evaluation](https://github.com/Pui89/Coconut-Harvest-AI/pull/153); [#154 — adversarial safety cases](https://github.com/Pui89/Coconut-Harvest-AI/pull/154); [#156 — modality/approval gates](https://github.com/Pui89/Coconut-Harvest-AI/pull/156) | Lightweight verification, shared-interface smoke, pitfall detector, security, free local checks, and simulation evaluation | Software and rule-based simulation only; no coconut detector accuracy measured. |
-| [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | [#115 — lightweight CI](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/115); [#116 — simulation evaluation](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/116); [#117 — adversarial safety cases](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/117); [#118 — modality/approval gates](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/118) | Automated verification, shared-interface smoke, Python tests on 3.10/3.11/3.12, security, pitfall detector, and simulation evaluation | Does not validate flood physics, 15 m depth capability, navigation, buoyancy or real rescue performance. |
 | [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | [#93 — lightweight CI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/93); [#94 — simulation evaluation](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/94); [#95 — adversarial safety cases](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/95); [#96 — modality/approval gates](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/96) | Python tests, automated verification, shared-interface smoke, Python tests on 3.10/3.11/3.12, synthetic app regression, security, pitfall detector, and simulation evaluation | Does not validate chemical identification, X-ray capability, field screening accuracy or physical robot safety. Human review remains necessary. |
 
 **Review state:** the three lightweight CI-fix PRs and three simulation-evaluation workflow PRs are merged. The workflow logs and report artifacts were inspected for the simulation PR heads before merge; later changes to the default branches can still alter results.
@@ -40,7 +37,6 @@ The listed workflow runs had completed with GitHub Actions conclusion **success*
 The job logs were inspected, not just the green status icons:
 
 - **Coconut shared-interface smoke:** 15 tests run, 0 reported failures; interface/proposal-gate checks only.
-- **Extreme Flood Rescue AI:** 419 pytest items passed in the inspected Python 3.11.17 job (3.17 seconds); the Python 3.10, 3.11 and 3.12 jobs all concluded success.
 - **Multimodal Narcotics Screening AI:** 385 pytest items passed in the inspected Python 3.11.17 job (1.06 seconds); the Python 3.10, 3.11 and 3.12 jobs all concluded success.
 - **Multimodal app regression:** the inspected synthetic pipeline smoke check passed for six synthetic cases; it explicitly says it is not a real-world benchmark. Regression jobs for Python 3.10, 3.11 and 3.12 all concluded success.
 
@@ -53,7 +49,6 @@ On 2026-10-29, each simulation-evaluation workflow completed successfully on Pyt
 | Project | Scenarios passed | Steps passed | Failures | Hardware actuation |
 |---|---:|---:|---:|---|
 | Coconut Harvest AI | 13/13 | 15/15 | 0 | false |
-| Extreme Flood Rescue AI | 13/13 | 15/15 | 0 | false |
 | Multimodal Narcotics Screening AI | 13/13 | 15/15 | 0 | false |
 
 The fault-injection cases verify expected fail-closed handling for missing emergency-stop telemetry (`SAFE_HOLD`), a malformed sensor-health Boolean (`SAFE_HOLD`), and Boolean-valued confidence (`UNKNOWN`). Additional gates verify conflicting observations and missing required modalities return `UNKNOWN`, while missing operator approval returns `REQUEST_APPROVAL`. These are specific software-policy checks, not exhaustive safety assurance.
@@ -62,11 +57,9 @@ These are results from the projects' existing **rule-based software simulation s
 
 ## World-state timestamp validation
 
-On 2026-10-30, three dependency-light world-state validation changes were merged: [Coconut #146](https://github.com/Pui89/Coconut-Harvest-AI/pull/146), [Flood Rescue #111](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/111), and [Multimodal Screening #88](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/88). The changes reject combined world states when an observation timestamp is missing or malformed, including string, Boolean, and non-finite values, instead of risking ordering errors or silently selecting another observation. The associated Python tests and security/regression checks passed on the pull-request commits before merge. These are software input-validation safeguards only; they do not establish sensor calibration, real-time performance, perception accuracy, or physical safety.
 
 ## Observation source-provenance validation
 
-On 2026-10-30, the same input-validation fix was merged across all three project repositories: [Coconut Harvest AI #157](https://github.com/Pui89/Coconut-Harvest-AI/pull/157), [Extreme Flood Rescue AI #119](https://github.com/Pui89/Extreme-Flood-Rescue-AI/pull/119), and [Multimodal Narcotics Screening AI #97](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/pull/97). Missing, empty, whitespace-only and non-string observation source identifiers are now treated as missing provenance and require human review. The focused PR workflows completed successfully before merge, including the shared world-state, free-local-check and security checks reported for each repository.
 
 This is a software-contract improvement only. It does not prove that a sensor's source claim is authentic, that a dataset has reuse rights, or that a physical system is safe. Hardware actuation remains outside this interface.
 
@@ -140,7 +133,6 @@ The shared programme now defines the 21-capability intelligence catalogue, commo
 The four projects now follow the [PUI89 World-Class AI Blueprint](PUI89_WORLD_CLASS_AI_BLUEPRINT.md), which defines the shared AI Core, domain-specific adapters, zero-cost technology adoption rules, safe automation boundaries, evidence gates and staged development roadmap. The shared core is a set of contracts and reusable engineering practices; it does not imply one universal model or one common performance score.
 
 - Coconut: reviewed dataset and first valid held-out vision benchmark.
-- Flood Rescue: robust world-state, fault injection and platform-specific simulation.
 - Screening: lawful sensor/data provenance, false-positive/false-negative evaluation and human review.
 - HOMEGUARD: spatial sensor-quality model and multi-sensor building evidence.
 
@@ -156,7 +148,6 @@ The next portfolio-wide milestone is now specified in [PUI89 AI Core — Level 1
 | Portfolio area | Repository | Baseline status from this review |
 |---|---|---|
 | Agriculture | [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | Existing shared-core and benchmark checks documented; Level 12 conformance not yet independently verified |
-| Rescue | [Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | Existing shared-core and benchmark checks documented; Level 12 conformance not yet independently verified |
 | Screening | [Multimodal Narcotics Screening AI](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) | Existing shared-core and benchmark checks documented; Level 12 conformance not yet independently verified |
 | Indoor assistant | [PUI89 AI HOME](https://github.com/Pui89/AI-HOME) | Project-local adapter and optional vision-model integration documented; conformance not yet verified |
 | Mobile assistant | [PUI89 AI NOMAD](https://github.com/Pui89/AI-NOMAD) | Project-local adapter and optional vision-model integration documented; conformance not yet verified |
