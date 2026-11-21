@@ -1,7 +1,7 @@
 # PUI89 Continuous Improvement & Intelligence Programme
 
 **Status:** approved strategic direction; implementation is staged and evidence-gated.  
-**Scope:** exactly six active products — Coconut Harvest AI, PUI89 Sentinel, PUI89 AI HOME, PUI89 AI NOMAD, PUI89 AI Global SUV and PUI89 AI Step-Through Scooter — plus the shared PUI89 AI Core infrastructure. Extreme Flood Rescue AI is an inactive historical standalone project.
+**Scope:** exactly six active products — Coconut Harvest AI, PUI89 Sentinel, PUI89 AI HOME, PUI89 AI NOMAD, PUI89 AI Global SUV and PUI89 AI Step-Through Scooter — plus the shared PUI89 AI Core infrastructure
 
 > **North star:** Intelligent Systems. Verifiable Decisions. Safer Outcomes.
 
@@ -72,7 +72,7 @@ Provide advisory road, weather and flood-risk awareness for a human driver. Unkn
 ### PUI89 AI Step-Through Scooter
 Provide rider-first advisory road-water and flood-risk alerts. Unknown water depth/current/road condition must be surfaced as “unknown — do not enter”; no autonomous steering, throttle or braking.
 
-**Historical boundary:** Extreme Flood Rescue AI records remain preserved for audit, but it is not an active standalone product. Flood-risk awareness remains relevant to the SUV and Scooter.
+Flood-risk awareness remains relevant to the SUV and Scooter.
 
 ## 4. Daily intelligence report contract
 
