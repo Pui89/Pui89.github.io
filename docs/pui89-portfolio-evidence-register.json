@@ -18,7 +18,7 @@
     "GREY": "Not verified; do not infer success or failure."
   },
   "portfolio": {
-    "project_count": 7,
+    "project_count": 6,
     "repositories": [
       {
         "id": "coconut",
@@ -166,11 +166,12 @@
       }
     ],
     "totals": {
-      "active_rulesets": 24,
-      "total_rulesets": 25,
+      "active_rulesets": 17,
+      "total_rulesets": 18,
       "disabled_rulesets": 1,
-      "workflow_files": 97
-    }
+      "workflow_files": 68
+    },
+    "scope_note": "One discontinued project's project-specific record was removed. The six retained repository records remain a partial historical snapshot dated 2026-11-08; they are not a current active-portfolio inventory or a complete repository audit."
   },
   "cross_project_findings": [
     {
