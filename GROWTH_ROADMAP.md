@@ -112,7 +112,7 @@ The active portfolio is exactly six products: Coconut Harvest AI; PUI89 Sentinel
 - **AI Global SUV:** advisory road, weather and flood-risk awareness; no autonomous vehicle control.
 - **AI Step-Through Scooter:** advisory rider and road-water/flood-risk warnings; unknown water means do not enter; no autonomous steering, throttle or braking.
 
-**Historical boundary:** Extreme Flood Rescue AI is inactive as a standalone product. Preserve its repository and historical records; do not count or present it as an active product. Flood-risk awareness remains relevant to SUV and Scooter.
+Flood-risk awareness remains relevant to SUV and Scooter.
 
 ## Monthly review
 

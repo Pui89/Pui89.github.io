@@ -1,7 +1,7 @@
 # PUI89 Free-First Resource and Technology Adoption Standard
 
 **Status:** operational policy and read-only preflight tool  
-**Scope:** Coconut Harvest AI, Extreme Flood Rescue AI, Multimodal Narcotics Screening AI and the shared PUI89 AI Core.
+**Scope:** The six active PUI89 products and the shared PUI89 AI Core.
 
 ## Purpose
 
@@ -47,7 +47,6 @@ The resource labels are conservative planning hints, not compatibility guarantee
 ## Project-specific use
 
 - **Coconut Harvest AI:** first prioritise dataset provenance, annotation quality, leakage-safe splits and a held-out detector baseline. Do not download a large VLM to compensate for an unreviewed dataset.
-- **Extreme Flood Rescue AI:** first establish one repeatable simulation baseline and test stale/conflicting sensors, communication loss and conservative stopping. Treat the 15 m figure as a scenario target only.
 - **Multimodal Narcotics Screening AI:** first validate sensor provenance, calibration and modality-specific evidence handling. Keep human review; image appearance alone cannot establish chemical identity.
 
 ## Verification

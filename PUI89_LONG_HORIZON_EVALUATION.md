@@ -3,7 +3,7 @@
 **Status:** dependency-free evaluator and synthetic scenario pack implemented; project-specific adapters and real-data evaluation remain future work.
 
 ## Purpose
-Test whether decision policies behave consistently across sequences rather than isolated inputs. The same evaluator is intended to support Coconut Harvest AI, Extreme Flood Rescue AI and Multimodal Narcotics Screening AI through project-specific scenario adapters.
+Test whether decision policies behave consistently across sequences rather than isolated inputs. The evaluator is intended to support the six active PUI89 products through product-specific scenario adapters.
 
 ## Current benchmark dimensions
 - Uncertainty carry-forward across a sequence (policy-level only).

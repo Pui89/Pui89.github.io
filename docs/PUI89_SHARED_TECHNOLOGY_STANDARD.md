@@ -77,7 +77,6 @@ Cross-cutting capabilities: Evidence Integrity; provenance; uncertainty propagat
 | Project | Priority applications |
 |---|---|
 | Coconut Harvest AI | Multimodal perception; maturity classification; uncertainty-aware detection; arm/gripper simulation; worker/animal safety; orchard robustness; predictive maintenance. |
-| Flood Rescue AI | Multisensor world-state; water/current/terrain simulation; resilient navigation; communications-loss handling; stability modelling; human-authorized proposals only. |
 | Multimodal Screening AI | RGB/approved sensor fusion; provenance/calibration; uncertainty and human review; false-positive/negative benchmarks; privacy/audit trail; no autonomous enforcement. |
 | Homeguard AI Nomad | Heat/water/humidity/smoke/electrical/structural sensor fusion; anomaly/change detection; explainable alerts; offline-first; privacy and false-alarm controls. |
 | PUI89 AI Robot Car | Perception, world-state, agent planning, simulation, predictive maintenance, cybersecurity and human override; no unvalidated road deployment. |

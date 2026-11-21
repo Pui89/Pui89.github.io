@@ -57,7 +57,6 @@ Before asking for approval, document:
 
 For Coconut Harvest AI, prioritise dataset rights and quality review, annotation checks, leakage-safe splits, reproducible local evaluation, and simulation before cloud training or hardware purchases.
 
-For Flood Rescue AI, prefer local simulation and offline testing before physical robot hardware.
 
 For Multimodal Screening AI, prefer local-first, human-reviewed workflows and avoid paid hosted inference unless separately approved.
 

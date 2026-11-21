@@ -13,7 +13,6 @@
 | Test scope | Actual result | Meaning |
 |---|---:|---|
 | Coconut Harvest AI shared PUI89 core | **13 passed, 0 failed** | World-state, confidence validation, simulation-only action proposal and failure-report contracts |
-| Extreme Flood Rescue AI shared PUI89 core | **13 passed, 0 failed** | Same shared contract suite |
 | Multimodal Narcotics Screening AI shared PUI89 core | **13 passed, 0 failed** | Same shared contract suite |
 | Coconut detection evaluator unit tests | **5 passed, 0 failed** | Checks evaluator logic such as IoU, thresholds and score filtering—not detector accuracy |
 
@@ -27,7 +26,6 @@ The first attempt to run every test discovered under all three `tests/` director
 | Repository | Broad-suite outcome | Primary issues observed |
 |---|---|---|
 | Coconut Harvest AI | 246 tests discovered; **17 errors** | Missing optional `pytest`, `numpy`, `torch` and project import-path/package setup in the lightweight runner; one additional test error also appeared |
-| Extreme Flood Rescue AI | 208 tests discovered; **10 errors** | Missing optional `pytest`, `numpy`, `torch` and project import-path setup |
 | Multimodal Narcotics Screening AI | 165 tests discovered; **15 errors** | Missing optional `pytest` and project package import paths |
 
 These broad-suite results are **failures**, not passes. They do not by themselves prove the underlying project code is defective: the runner intentionally installed no project dependencies, and several tests could not import their dependencies or modules. However, they show that the entire project-specific suites are **not currently verified in this minimal environment**. The combined workflow was therefore scoped to the explicitly shared, standard-library core contract suite, with Coconut's dependency-free evaluator tests added separately. The complete suite still needs a deliberate dependency and import-path plan before it can be fairly assessed.
@@ -70,7 +68,6 @@ Ground-truth columns: `image_id,xmin,ymin,xmax,ymax,class`. Prediction columns: 
 | Test scope | Actual result | Interpretation |
 |---|---:|---|
 | Shared PUI89 core — Coconut | 13 passed, 0 failed | Shared software contract tests |
-| Shared PUI89 core — Extreme Flood Rescue | 13 passed, 0 failed | Shared software contract tests |
 | Shared PUI89 core — Narcotics Screening | 13 passed, 0 failed | Shared software contract tests |
 | Coconut detection evaluator | 5 passed, 0 failed | Metric implementation tests only |
 | Coconut dataset preflight validator | 4 passed, 0 failed | Manifest/annotation QA checks on synthetic test fixtures |

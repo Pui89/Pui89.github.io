@@ -117,7 +117,6 @@ This is a prioritisation plan, not a promise that customer access or a pilot wil
 ## 6. How the three projects fit together
 
 - **Coconut Harvest AI — flagship candidate:** focus first on a measurable agriculture workflow and reproducible perception evidence.
-- **Flood Rescue AI — research and partnership track:** continue simulation-first hazard mapping and failure testing. Real emergency deployments require specialist partners, realistic validation, and safety review.
 - **Multimodal Screening AI — limited research track:** keep human review, uncertainty, data governance, and abstention central. Do not market it as chemical identification or autonomous enforcement.
 
 Do not split scarce time across three commercial launches. Reuse software and documentation where useful, but make one project the primary route to customer evidence.

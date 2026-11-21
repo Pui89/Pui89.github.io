@@ -2,7 +2,7 @@
 
 **Status:** engineering contract for software tests and simulation only. It is not a safety certification, field validation, or proof of model accuracy.
 
-This contract defines the minimum shared behavior expected across Coconut Harvest AI, Extreme Flood Rescue AI, and Multimodal Narcotics Screening AI. Each project may add stricter domain-specific rules, but must not weaken these minimums.
+This contract defines the minimum shared behavior expected across the six active PUI89 products. Each project may add stricter domain-specific rules, but must not weaken these minimums.
 
 ## 1. Required observation fields
 
@@ -64,7 +64,6 @@ Every injected fault must have an explicit expected response. Tests must fail if
 ## 5. Domain-specific safeguards
 
 - **Coconut Harvest AI:** uncertain maturity, target geometry, worker/animal proximity, cutting/capture state, and operator approval must be represented explicitly. A scenario for a tree up to 30 m is a design challenge, not proof of reach or harvesting performance.
-- **Extreme Flood Rescue AI:** unknown depth/current, degraded localisation, communication loss, and uncertain human/animal detection must block unsafe simulated approach. A 15 m scenario input does not prove buoyancy, pressure tolerance, or rescue capability.
 - **Multimodal Narcotics Screening AI:** missing or disagreeing modalities must remain visible and produce abstention or authorised human review. An alert is not proof of chemical identity or guilt; it must not autonomously trigger search, seizure, detention, or enforcement. Ordinary RGB imagery or an ordinary baggage X-ray image alone does not establish chemical identity.
 
 ## 6. Evidence and release gates

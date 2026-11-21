@@ -73,7 +73,6 @@ The portfolio shares one Deep Navy foundation and a restrained Electric Cyan int
 | Project | Primary accent | Secondary accent | Design intent |
 |---|---|---|---|
 | Coconut Harvest AI | Research Green `#43B581` | Electric Cyan `#00D9FF` | Agriculture, maturity and field context |
-| Extreme Flood Rescue AI | Technology Blue `#176BCE` | Electric Cyan `#00D9FF` | Water, navigation and emergency context |
 | Multimodal Narcotics Screening AI / PUI89 Sentinel | Electric Cyan `#00D9FF` | Titanium Silver `#C5D0DC` | Precision, evidence and controlled review |
 | PUI89 AI HOME | Teal `#00AFA5` | Deep Navy `#071426` | Calm indoor intelligence |
 | PUI89 AI NOMAD | Electric Cyan `#00D9FF` | Deep Navy `#071426` | Mobile capability and visibility |

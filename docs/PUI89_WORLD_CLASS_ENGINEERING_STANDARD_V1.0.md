@@ -186,7 +186,6 @@ Review this standard at least quarterly and after a serious incident, major arch
 ## 12. Product-specific validation boundaries
 
 - **Coconut Harvest AI:** four maturity classes—young green, mature green, yellow and brown. The 0–30 m range is a design challenge only until independently measured and validated. Harvesting actuation requires separate hazard and controlled-test approval.
-- **Extreme Flood Rescue AI:** 15 m is a simulation/design scenario only unless field-tested under an appropriate validated method. Do not claim buoyancy, waterproofing, current resistance, safe crossing or rescue capability without evidence.
 - **PUI89 Sentinel:** quadruped inspection robot dog. Do not describe it as a narcotics-screening product. Validate locomotion, stability, perception, safe stop and environmental limits separately.
 - **AI HOME:** indoor four-wheel assistant; target payload 8 kg, maximum target 10 kg. These are design targets until measured and verified.
 - **AI NOMAD:** distinct outdoor/mobile four-wheel assistant with dog-inspired compact form and handle; target 8–10 kg, maximum target 10 kg. Do not conflate it with HOME.

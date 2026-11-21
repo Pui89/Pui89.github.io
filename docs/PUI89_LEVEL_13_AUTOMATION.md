@@ -25,7 +25,7 @@ It records, per product:
 | PUI89 AI Global SUV | [Repository](https://github.com/Pui89/PUI89-AI-Global-SUV) | `test_contracts.py`, `test_safety.py` |
 | PUI89 AI Step-Through Scooter | [Repository](https://github.com/Pui89/AI-Step-Through-Scooter) | `test_motorcycle_risk_scenarios.py`, `test_shared_core_v01.py` |
 
-Extreme Flood Rescue AI is an inactive historical standalone project. The former Multimodal Narcotics Screening AI, AI Robot Car and AI Robot Motorcycle repository identities are not current active products. Their historical repositories and records are not deleted by this change and are not checked out as active products in this workflow.
+The former Multimodal Narcotics Screening AI, AI Robot Car and AI Robot Motorcycle repository identities are not current active products. Their historical repositories and records are not deleted by this change and are not checked out as active products in this workflow.
 
 ## Trigger and cost controls
 
@@ -51,4 +51,4 @@ This is a selected software smoke test, not a full test-suite run. Passing resul
 
 ## Historical run
 
-The first execution on 6 November 2026, [run 42249714511](https://github.com/Pui89/Pui89.github.io/actions/runs/42249714511), used the then-existing seven-repository inventory, including Flood Rescue and Screening, and is retained as a historical audit record only. It is not a current six-product portfolio result. The updated six-product workflow must produce a new run before its outcome can be reported as current.
+The first execution on 6 November 2026, [run 42249714511](https://github.com/Pui89/Pui89.github.io/actions/runs/42249714511), used the then-existing repository inventory and is retained as a historical audit record only. It is not a current six-product portfolio result. The updated six-product workflow must produce a new run before its outcome can be reported as current.

@@ -7,7 +7,6 @@
 | Priority | Project | Near-term deliverable | Evidence required before stronger product claims |
 |---|---|---|---|
 | 1 | Coconut Harvest AI | Licensed/clean dataset gate, repeatable detector baseline, harvest-planning review workflow | Held-out precision/recall, latency, field conditions, sensor calibration and supervised trials |
-| 2 | Flood Rescue AI | Deterministic 0–15 m extreme-flood scenarios, hazard/communications fault tests, human-supervised mapping | Person/animal detection metrics, route/safe-stop evidence, hydrodynamic model limits and controlled field validation |
 | 3 | Multimodal Screening AI | Licence register, modality-specific baseline, uncertainty and human-review workflow | Valid ground truth, false-positive analysis, sensor calibration, legal/privacy review and independent validation |
 | Shared | PUI89 website | Consistent status cards, demos, evidence links, limitations and contact path | Every public claim linked to a reproducible test, documented dataset or clearly labelled concept |
 

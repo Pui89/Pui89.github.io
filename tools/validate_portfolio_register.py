@@ -36,8 +36,8 @@ def main() -> None:
 
     portfolio = data.get("portfolio", {})
     projects = portfolio.get("repositories", [])
-    if portfolio.get("project_count") != 7 or len(projects) != 7:
-        fail("portfolio must contain exactly seven project repositories")
+    if portfolio.get("project_count") != 6 or len(projects) != 6:
+        fail("portfolio register must contain exactly six retained repository records")
 
     seen = set()
     active = total = workflows = 0
@@ -104,7 +104,7 @@ def main() -> None:
         fail("ActionProposal must not enable physical actuation")
 
     print("PASS: PUI89 evidence register and four draft contract schemas are structurally consistent.")
-    print(f"Projects: 7 | Active rulesets: {active}/{total} | Workflow files: {workflows}")
+    print(f"Retained repository records: 6 | Active rulesets: {active}/{total} | Workflow files: {workflows}")
     print("Note: this is a structural check, not full JSON Schema meta-validation or external evidence verification.")
 
 

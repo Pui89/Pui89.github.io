@@ -13,7 +13,6 @@ The portfolio already contains substantial project documentation and automation.
 - **24 active rulesets out of 25 total** were returned by the rulesets API; one is disabled.
 - **97 workflow files** were listed across the seven repositories.
 - A PUI89 security-audit workflow file is present in every repository.
-- Flood Rescue and Screening also expose CodeQL and dependency-review workflow files.
 - Observation, WorldState, ActionProposal and FailureReport are documented across the portfolio. This PR now proposes four machine-readable JSON Schema drafts (0.1.0-draft) and checks their structure. They are **not yet a released package or integrated across project adapters**.
 - One representative active ruleset per repository was inspected. Each sampled ruleset requires pull requests and prevents non-fast-forward updates, but the sampled settings require **zero approving reviews** and do not require code-owner review or review-thread resolution.
 - The classic branch-protection endpoint returned HTTP 403 for all seven repositories. Its settings and required status checks remain **unverified**.
@@ -32,7 +31,6 @@ Detailed machine-readable evidence: [Portfolio evidence register](pui89-portfoli
 | Project | Default-branch snapshot | Active / total rulesets | Workflow files |
 |---|---|---:|---:|
 | Coconut Harvest AI | `dea9d2a` | 6 / 7 | 21 |
-| Extreme Flood Rescue AI | `abeb16f` | 7 / 7 | 29 |
 | Multimodal Narcotics Screening AI | `f8a3c48` | 7 / 7 | 31 |
 | AI HOME | `a0b657a` | 1 / 1 | 3 |
 | AI NOMAD | `f617fc7` | 1 / 1 | 7 |

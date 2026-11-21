@@ -3,7 +3,7 @@
 **Status:** implemented as a dependency-free prototype and JSON schema; project-specific integration is a separate step.
 
 ## Purpose
-Give Coconut Harvest AI, Extreme Flood Rescue AI and Multimodal Narcotics Screening AI a common way to represent timestamped observations without erasing source provenance, uncertainty, missing data or disagreement.
+Give all six active PUI89 products a common way to represent timestamped observations without erasing source provenance, uncertainty, missing data or disagreement.
 
 ## Observation contract
 Each record identifies an observation, entity, attribute, value, timezone-aware timestamp, source, modality, evidence kind and quality. Optional confidence is a bounded caller-supplied value, not a calibrated probability. Optional limitations explain known gaps.

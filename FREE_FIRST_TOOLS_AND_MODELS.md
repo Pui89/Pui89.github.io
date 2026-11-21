@@ -32,11 +32,6 @@ PUI89 prioritises reliable engineering progress over collecting tools. This list
 
 Prioritise image provenance and licence checks, annotation QA, leakage-safe splits, and a small reproducible baseline. The 0–30 m palm-height range is a design challenge, not a verified robot reach.
 
-### Extreme Flood Rescue AI
-[Repository](https://github.com/Pui89/Extreme-Flood-Rescue-AI) · [Free-first catalogue](https://github.com/Pui89/Extreme-Flood-Rescue-AI/blob/main/docs/FREE_FIRST_RESOURCE_CATALOGUE.md) · [Marketing and partnership playbook](https://github.com/Pui89/Extreme-Flood-Rescue-AI/blob/main/docs/MARKETING_SEO_SALES_PLAYBOOK.md)
-
-Prioritise deterministic simulation and fault-injection tests. Simulation does not validate flood physics, navigation in real currents, or rescue readiness. Water-depth scenarios are targets, not physical operating ratings.
-
 ### Multimodal Narcotics Screening AI
 [Repository](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI) · [Free-first catalogue](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/blob/main/docs/FREE_FIRST_RESOURCE_CATALOGUE.md) · [Responsible marketing and evaluation playbook](https://github.com/Pui89/Multimodal-Narcotics-Screening-AI/blob/main/docs/MARKETING_SEO_SALES_PLAYBOOK.md)
 

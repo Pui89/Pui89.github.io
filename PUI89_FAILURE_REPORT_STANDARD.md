@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Use one machine-readable report format across Coconut Harvest AI, Extreme Flood Rescue AI, Multimodal Narcotics Screening AI, and the shared PUI89 core. Reports should make failures, skipped checks, blocked prerequisites, and evidence limits visible.
+Use one machine-readable report format across the six active PUI89 products and the shared PUI89 core. Reports should make failures, skipped checks, blocked prerequisites, and evidence limits visible.
 
 Schema: `schemas/pui89-failure-report.schema.json`.
 

@@ -10,7 +10,6 @@ Place the four repositories side by side:
 PUI89-workspace/
 ├── PUI89.github.io/
 ├── Coconut-Harvest-AI/
-├── Extreme-Flood-Rescue-AI/
 └── Multimodal-Narcotics-Screening-AI/
 ```
 

@@ -20,7 +20,6 @@ A controlled envelope for future model integrations to submit observations to th
 | Project | Future model-output boundary |
 |---|---|
 | Coconut Harvest AI | Describe candidate visible maturity cues for comparison with labelled evidence. Do not claim harvest readiness or command cutting/capture. |
-| Extreme Flood Rescue AI | Describe candidate hazards for operator review and simulation. Any VLA output remains a simulated proposal. |
 | Multimodal Narcotics Screening AI | Organise visible context for human review only. Do not infer chemical identity, guilt or enforcement action from VLM output. |
 
 ## Request envelope

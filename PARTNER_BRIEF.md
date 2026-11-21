@@ -13,7 +13,6 @@ PUI89 AI Robotics is an independent AI and robotics initiative developing practi
 ## Three applied projects
 
 - **Coconut Harvest AI:** computer-vision and orchard-workflow research. The priority is a trustworthy, rights-cleared image dataset and a reproducible, held-out benchmark. A reliable coconut detector and physical harvesting robot are not yet validated.
-- **Extreme Flood Rescue AI:** simulation-first planning and fault-response research across aerial, surface-water, and ground/amphibious platform concepts. A 0–15 m scenario value is simulated, not a physical vehicle depth rating.
 - **Multimodal Narcotics Screening AI:** human-reviewed inspection workflow research. Incomplete or conflicting inputs should trigger uncertainty or review; ordinary imagery is not proof of chemical identity and does not authorize enforcement.
 
 ## Immediate milestone opportunities
