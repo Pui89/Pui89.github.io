@@ -4,7 +4,7 @@ This page summarises the research direction behind the public projects. It disti
 
 
 
-> **Current portfolio boundary (17 November 2026):** PUI89 has exactly six active products. Shared AI Core is infrastructure, not a seventh product. Extreme Flood Rescue AI and the former Multimodal Narcotics Screening AI are not active standalone products; preserve their historical records. Sentinel's current identity is All-Terrain Exploration & Inspection Robot. See [the authoritative six-product source of truth](PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.0.md).
+> **Current portfolio boundary (17 November 2026):** PUI89 has exactly six active products. Shared AI Core is infrastructure, not a seventh product. Sentinel's current identity is All-Terrain Exploration & Inspection Robot. See [the authoritative six-product source of truth](PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.0.md).
 
 ## Research approach
 
