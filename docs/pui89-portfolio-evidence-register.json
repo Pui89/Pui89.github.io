@@ -45,32 +45,6 @@
         }
       },
       {
-        "id": "flood",
-        "name": "Extreme Flood Rescue AI",
-        "repository": "Pui89/Extreme-Flood-Rescue-AI",
-        "main_commit": "abeb16fb8488ff7212a3e420a8162e346a607c7b",
-        "active_rulesets": 7,
-        "total_rulesets": 7,
-        "workflow_count": 29,
-        "security_workflows": [
-          "pui89-security-audit.yml",
-          "security.yml",
-          "codeql.yml",
-          "dependency-review.yml"
-        ],
-        "sampled_ruleset": {
-          "id": 26293418,
-          "name": "PUI89 Protect Main coco ai",
-          "required_approving_review_count": 0,
-          "require_code_owner_review": false,
-          "required_review_thread_resolution": false,
-          "rules": [
-            "non_fast_forward",
-            "pull_request"
-          ]
-        }
-      },
-      {
         "id": "sentinel",
         "name": "Multimodal Narcotics Screening AI",
         "repository": "Pui89/Multimodal-Narcotics-Screening-AI",
@@ -212,17 +186,17 @@
     {
       "id": "ruleset-overlap",
       "status": "AMBER",
-      "finding": "25 rulesets total: 24 active and one disabled. Coconut, Flood and Screening each have seven. Review every ruleset's conditions and effects before consolidation."
+      "finding": "25 rulesets total: 24 active and one disabled. The historical audit recorded repository-specific ruleset counts. Review every ruleset's conditions and effects before consolidation."
     },
     {
       "id": "branch-protection-api",
       "status": "GREY",
-      "finding": "The classic branch-protection endpoint returned HTTP 403 for all seven repositories. Classic protection and required status checks could not be verified."
+      "finding": "The classic branch-protection endpoint returned HTTP 403 for all inspected repositories. Classic protection and required status checks could not be verified."
     },
     {
       "id": "workflow-inventory",
       "status": "GREEN",
-      "finding": "97 workflow files were listed across seven repositories. A PUI89 security-audit workflow is present in each repository. Flood and Screening also expose CodeQL and dependency-review workflow files."
+      "finding": "97 workflow files were listed across the repositories inspected. A PUI89 security-audit workflow is present in each repository. The inspected repositories included additional security-analysis workflow files."
     },
     {
       "id": "test-execution",
