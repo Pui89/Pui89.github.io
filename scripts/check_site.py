@@ -201,7 +201,9 @@ def main() -> int:
         if not parser.title_seen or not parser.title_text:
             metadata_gaps["missing_title"] += 1
             warnings.append(f"{rel}: missing or empty title")
-        if not parser.viewport_seen:
+        # Retired noindex/refresh redirect stubs do not render meaningful page content.
+        # Do not report missing viewport metadata for these intentional redirect-only files.
+        if not parser.viewport_seen and not (parser.noindex or parser.meta_refresh):
             metadata_gaps["missing_viewport"] += 1
             warnings.append(f"{rel}: missing viewport meta")
         if parser.h1_count == 0 and not (parser.noindex or parser.meta_refresh):
