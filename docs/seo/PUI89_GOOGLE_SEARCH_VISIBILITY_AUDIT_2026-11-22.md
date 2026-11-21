@@ -62,6 +62,20 @@ This is a source and public-page audit, not an authenticated Search Console insp
 - No production `main` branch write, merge or deployment was performed.
 - All changes are isolated on the draft branch for review.
 
+## Draft CI results
+
+The GitHub Actions runs associated with this draft reported:
+
+- Website Quality Checks: passed.
+- Security Audit: passed.
+- Website Verification: passed.
+- Automated Repository Quality Gate: passed.
+- Static portfolio deploy workflow: the build job failed during the all-page local-reference check, and the deploy job was skipped. No Pages deployment occurred.
+
+The reported blocking error is a missing local asset target, `/images/ai-nomad-compact-four-wheel.svg`, referenced by both `index.html` and `th.html`. Those homepage files are not changed by this draft. Because NOMAD's approved direction is suitcase-form, do not substitute an unrelated rover/robot image; select or create the correct suitcase-form asset in a separate reviewed change before attempting deployment again.
+
+The same source check reported missing viewport metadata on ten additional repository HTML pages: `ai-robotics-thailand.html`, `ai-robotics-thailand-th.html`, `ai-vehicles.html`, `ai-vehicles-th.html`, `engineering-atlas.html`, `engineering-atlas-th.html`, `news.html`, `news-th.html`, `technology-radar.html` and `technology-radar-th.html`. These are follow-up mobile-readiness fixes, not evidence that Google currently blocks the main site. External-link checks were skipped after the local-reference failure.
+
 ## Google guidance
 
 - URL Inspection distinguishes the indexed snapshot from a live test: https://support.google.com/webmasters/answer/9012289
