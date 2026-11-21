@@ -13,7 +13,7 @@ For each public product claim, identify the repository version, test conditions,
 Compare against relevant alternatives doing the same job, on the same held-out data or scenario where feasible. Record versions and licences, use predeclared scoring rules, and state what was not tested. Never say “best”, “most accurate”, or “industry-leading” without evidence that supports that exact claim.
 
 ### 3. Safety and people come first
-Flag uncertain results; allow human correction and override; document failure modes. Software tests do not certify physical safety. Flood-rescue operation, physical harvesting, and consequential screening decisions require separate domain-specific engineering, appropriate permissions, and qualified review before any operational deployment.
+Flag uncertain results; allow human correction and override; document failure modes. Software tests do not certify physical safety. Physical harvesting and consequential safety decisions require separate domain-specific engineering, appropriate permissions, and qualified review before any operational deployment.
 
 ### 4. Privacy and rights are respected
 Use data only with permission and a clear purpose. Do not publish customer images, personal information, confidential records, credentials, or sensitive operational details. Check licences for code, datasets, and model weights separately. State data handling and retention clearly for each pilot.
@@ -38,9 +38,6 @@ A product can be at different maturity levels for different capabilities. Report
 
 ### Coconut Harvest AI
 Target job: help orchard users review coconut observations and organize inspection/harvest planning. Prove value by comparing against the current human workflow and a defined computer-vision baseline. Measure misses, false detections, correction time, report time, and performance across varied orchard conditions. Do not claim autonomous harvesting, maturity accuracy, yield prediction, or savings until each is implemented and validated.
-
-### Flood Rescue AI
-Target job: research and simulation for reconnaissance, hazard mapping, and navigation support. Measure repeatable simulated mission success, collisions, mapping error, recovery, and human interventions. Simulation is not evidence of real flood capability; no real rescue use should be implied.
 
 ### Multimodal Narcotics Screening AI
 Target job must be narrowly defined and lawful. Appearance alone cannot establish chemical identity. Any screening evaluation requires authorized data and suitable expert-reviewed ground truth. Measure false positives and false negatives and retain human review. Do not claim validated substance identification or enable autonomous enforcement from model outputs.
