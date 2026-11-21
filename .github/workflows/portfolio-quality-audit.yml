@@ -45,7 +45,7 @@ jobs:
         run: python scripts/check_site.py
 
       - name: Upload machine-readable website QA report
-        if: always() && hashFiles('${{ runner.temp }}/pui89-site-qa-report.json') != ''
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: pui89-site-qa-report
