@@ -2,7 +2,6 @@
 
 **Purpose:** track software verification across exactly six active PUI89 products. Shared AI Core is infrastructure, not a seventh product. This dashboard distinguishes implemented checks from results that still need to be observed or measured.
 
-> **Current portfolio boundary (17 November 2026):** Extreme Flood Rescue AI is inactive as a standalone product; its historical records below are retained for audit only. The former Multimodal Narcotics Screening AI and HOMEGUARD project names are not active standalone products. See [PUI89 Portfolio Source of Truth v1.0](PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.0.md).
 
 ## Execution status
 
@@ -23,7 +22,6 @@ The historical run records later in this file are dated snapshots and must not b
 
 - [Run combined quality report](https://github.com/Pui89/Pui89.github.io/actions/workflows/pui89-combined-quality-report.yml)
 - [Coconut Harvest AI Actions](https://github.com/Pui89/Coconut-Harvest-AI/actions)
-- [Historical / inactive Flood Rescue AI Actions](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions)
 - Sentinel's current scope is a four-legged inspection robot dog; no physical prototype, validated mobility, integrated sensors or field performance is claimed. Previous software-workflow results are not carried forward.
 - [Portfolio verification Actions](https://github.com/Pui89/Pui89.github.io/actions)
 
@@ -68,7 +66,6 @@ These labels are not interchangeable. A passing unit test is not proof of model 
 1. Observe the triggered combined workflow and publish its actual per-project results, including failures.
 2. Fix any genuine shared-test failures before adding new model dependencies.
 3. For Coconut Harvest AI, complete dataset provenance, annotation QA and leakage-safe split; then run the detector evaluator against actual held-out predictions.
-4. For historical Flood Rescue AI records, test sensor dropout, stale readings, contradictory measurements and conservative safe-stop behavior in deterministic scenarios.
 - Sentinel's current scope is a four-legged inspection robot dog; no physical prototype, validated mobility, integrated sensors or field performance is claimed. Previous software-workflow results are not carried forward.
 6. Add VLMs, mock VLA interfaces and robotics simulation only after the software tests are stable; preflight licence, resource use and cost before optional installs.
 
@@ -78,13 +75,11 @@ These labels are not interchangeable. A passing unit test is not proof of model 
 - [Shared engineering charter](https://github.com/Pui89/Pui89.github.io/blob/main/PUI89_ENGINEERING_CHARTER.md): evidence labels, experiment metadata, safety principles and merge checklist.
 - [Coconut dataset preflight validator](https://github.com/Pui89/Coconut-Harvest-AI/blob/main/tools/validate_coconut_dataset.py): dependency-free checks for manifest fields, duplicate image IDs, annotation box validity, optional image file/hash checks, and source/tree/session split leakage.
 - [Coconut safety and validation gates](https://github.com/Pui89/Coconut-Harvest-AI/blob/main/docs/PUI89_SAFETY_AND_VALIDATION_GATES.md).
-- [Flood rescue safety and validation gates](https://github.com/Pui89/Extreme-Flood-Rescue-AI/blob/main/docs/PUI89_SAFETY_AND_VALIDATION_GATES.md).
 - Sentinel's current scope is a four-legged inspection robot dog; no physical prototype, validated mobility, integrated sensors or field performance is claimed. Previous software-workflow results are not carried forward.
 
 The Coconut validator and its new unit tests have been added to the combined workflow. Their result remains **not verified until the next Actions run completes**. The validator's PASS_PREFLIGHT status is not a detector benchmark; it deliberately emits no accuracy metrics.
 
 - [Experiment record JSON Schema](https://github.com/Pui89/Pui89.github.io/blob/main/schemas/pui89-experiment-record.schema.json): a common structure for reproducible run metadata and explicit status labels.
-- [Flood rescue repeatable scenario matrix](https://github.com/Pui89/Extreme-Flood-Rescue-AI/blob/main/docs/REPEATABLE_SCENARIO_MATRIX.md): scenario and fault-injection plan; not yet executed simulation evidence.
 - Sentinel's current scope is a four-legged inspection robot dog; no physical prototype, validated mobility, integrated sensors or field performance is claimed. Previous software-workflow results are not carried forward.
 
 
@@ -93,7 +88,6 @@ The Coconut validator and its new unit tests have been added to the combined wor
 | Project | Verified software checks in combined run | AI/model performance | Simulation / physical status | Next gate |
 |---|---|---|---|---|
 | [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | 13 shared-core + 5 evaluator + 4 dataset-preflight tests passed in selected run; lightweight main checks pass | Real detector accuracy **NOT MEASURED** | Preflight tests used synthetic fixtures; physical harvesting **not validated** | Run full dependency-backed suite; validate real dataset and held-out predictions |
-| [Historical / inactive — Extreme Flood Rescue AI](https://github.com/Pui89/Extreme-Flood-Rescue-AI) | 419 tests passed on `main` | Detection/navigation performance **not established by these tests** | Feature-branch rule-based simulation: 7/7 scenarios, 9/9 steps; physical rescue **not validated** | Confirm/merge feature branch; then validate simulator/perception separately |
 | [All-Terrain Inspection Robot Dog](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot) | PUI89 Sentinel quadruped inspection concept; concept and engineering requirements only | No physical prototype, validated mobility, integrated sensor suite or field performance is established | Define mission, operating envelope, hazard analysis, candidate components and validation plan |
 | [All-Terrain Inspection Robot Dog](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot) | PUI89 Sentinel quadruped inspection concept; concept and engineering requirements only | No physical prototype, validated mobility, integrated sensor suite or field performance is established | Define mission, operating envelope, hazard analysis, candidate components and validation plan |
 
@@ -127,12 +121,10 @@ The newest checked default-branch lightweight verification runs completed succes
 | Project | Run | Result in the emitted report | Explicit limit |
 |---|---|---|---|
 | Coconut Harvest AI | [40881602888](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40881602888) | Python 3.11.17 compile checks: 0 errors; observability smoke: PASS; reported failure count: 0 | Full dependency-backed unit tests were not run in this lightweight preflight |
-| Extreme Flood Rescue AI | [40878523954](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40878523954) | Python 3.11.17 compile checks: 0 errors; observability smoke: PASS; reported failure count: 0 | Full dependency-backed unit tests were not run in this lightweight preflight |
 - Sentinel's current scope is a four-legged inspection robot dog; no physical prototype, validated mobility, integrated sensors or field performance is claimed. Previous software-workflow results are not carried forward.
 
 Artifacts:
 - [Coconut lightweight report](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/40881602888/artifacts/12901395117)
-- [Flood lightweight report](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/runs/40878523954/artifacts/12898129816)
 - Sentinel's current scope is a four-legged inspection robot dog; no physical prototype, validated mobility, integrated sensors or field performance is claimed. Previous software-workflow results are not carried forward.
 
 The recent lightweight checks pass, but they do **not** close the previously recorded broad-suite import/optional-dependency repair task because they deliberately do not discover or execute the full dependency-backed test suites. Continue to report that work as unfinished until a dedicated broad-suite run proves otherwise.
@@ -160,7 +152,6 @@ The recent lightweight checks pass, but they do **not** close the previously rec
 The [combined quality workflow run 41062484106](https://github.com/Pui89/Pui89.github.io/actions/runs/41062484106) completed successfully. It generated and validated one standardized JSON report for each project from the actual selected shared-core and safety/conformance test outcomes:
 
 - `reports/coconut-harvest-verification.json`
-- `reports/extreme-flood-rescue-verification.json`
 - Sentinel's current scope is a four-legged inspection robot dog; no physical prototype, validated mobility, integrated sensors or field performance is claimed. Previous software-workflow results are not carried forward.
 
 The reports were uploaded with the combined Markdown/JSON report and test logs in the [workflow artifact](https://github.com/Pui89/Pui89.github.io/actions/runs/41062484106/artifacts/12979947742). Artifact retention is 14 days (through 13 November 2026).
@@ -175,7 +166,6 @@ The reports were uploaded with the combined Markdown/JSON report and test logs i
 A matching dependency-free `pui89_core/health_gate.py` module, regression tests, and a dedicated lightweight GitHub Actions workflow have been added to all three application repositories:
 
 - [Coconut Harvest AI health-gate workflow](https://github.com/Pui89/Coconut-Harvest-AI/actions/workflows/pui89-health-gate.yml)
-- [Historical / inactive Flood Rescue AI health-gate workflow](https://github.com/Pui89/Extreme-Flood-Rescue-AI/actions/workflows/pui89-health-gate.yml)
 - Sentinel's current scope is a four-legged inspection robot dog; no physical prototype, validated mobility, integrated sensors or field performance is claimed. Previous software-workflow results are not carried forward.
 
 The gate checks required telemetry types, emergency-stop state, sensor freshness, perception/localization/communications health, safety-monitor health, operator approval, and finite confidence. Outcomes are limited to `SIMULATION_READY`, `SAFE_HOLD`, `STOPPED`, or `REQUEST_HUMAN_REVIEW`. Every outcome explicitly sets `physical_actuation_permitted=false`.
