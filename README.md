@@ -218,3 +218,12 @@ PUI89's engineering principle for this product is to start with the simplest use
 **สร้างง่าย ซ่อมง่าย และต่อยอดได้** — เริ่มจากระบบที่เล็กที่สุดซึ่งพิสูจน์ประโยชน์ได้จริง ใช้โมดูลที่เข้าใจและเปลี่ยนได้ง่าย มีจุดเชื่อมต่อและขั้นตอนซ่อมบำรุงชัดเจน และเพิ่มความสามารถโดยไม่ต้องออกแบบระบบทั้งหมดใหม่ ต้องแจ้งเมื่ออุปกรณ์ขาดหายหรือขัดข้อง และเข้าสู่สถานะปลอดภัยเฉพาะผลิตภัณฑ์เมื่อกระทบฟังก์ชันสำคัญ สามารถใช้ซอฟต์แวร์หรือส่วนเชื่อมต่อร่วมกันได้เมื่อผ่านการตรวจสอบ แต่ไม่บังคับให้ทุกผลิตภัณฑ์ใช้ฮาร์ดแวร์ กลไก พลังงาน หรือระบบความปลอดภัยแบบเดียวกัน
 
 **มาตรฐานกลาง:** [PUI89 Build, Repair & Grow Design Principle v1.0](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PUI89_BUILD_REPAIR_GROW_DESIGN_PRINCIPLE_V1.0.md). เป็นข้อกำหนดการออกแบบ ไม่ใช่การยืนยันว่าฮาร์ดแวร์แบบโมดูล ขั้นตอนซ่อม หรือความสามารถของผลิตภัณฑ์ได้พัฒนาและตรวจสอบแล้ว
+
+
+## Offline Independence & Connectivity Resilience
+
+**The Product Must Work Without the App. Safety Must Work Without Connectivity.** PUI89's proposed mandatory requirements for all six products cover physical/local controls, offline operation, product-specific safe states, local records and recovery, printed manuals, optional remote access, failure-injection tests and evidence-based release gates.
+
+- [PUI89 Offline Independence & Connectivity Resilience Standard v1.0](docs/PUI89_OFFLINE_INDEPENDENCE_CONNECTIVITY_RESILIENCE_STANDARD_V1.0.md)
+- Every product must document what works at fully offline, local-connection, internet-connected and remote-service levels. The app and QR code are optional; neither replaces printed safety instructions or local controls.
+- This is an engineering standard and development requirement, not evidence that products are implemented, tested, certified or validated.
