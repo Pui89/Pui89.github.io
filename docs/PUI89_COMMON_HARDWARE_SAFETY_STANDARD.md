@@ -147,7 +147,6 @@ All action proposals must pass project-specific safety gates. A contract is an i
 | Project | Hardware focus | Additional safety and verification focus |
 |---|---|---|
 | Coconut Harvest AI | Structure, guarded cutting mechanism, arm, gripper/basket, cameras, depth/localisation sensors, battery and BMS | Falling fruit, cutter guarding, worker/animal exclusion, reach/load limits, branch interaction, safe stop and harvest verification |
-| Extreme Flood Rescue AI | Buoyant hull, propulsion, optional ground mobility, sealed electronics, communication and navigation sensors | Stability, buoyancy, ingress, current, entanglement, rescue-load limits, loss of communication, recovery and human rescue-team coordination |
 | Multimodal Narcotics Screening AI / Sentinel | RGB and only authorised, suitable, separately validated inspection sensors; mobile platform is a concept | Sensor provenance/calibration, false positives/negatives, human review, lawful use, privacy, no autonomous accusation or enforcement |
 | AI HOME | Indoor mobile base, environmental sensors, electrical monitoring interfaces, battery and charging | Mains isolation, trip/fall hazards, indoor navigation, alarms, privacy, false alarm handling and safe unattended behaviour |
 | AI NOMAD | Portable enclosure, wheels/handle, removable power system, location and environmental sensors | Transport/drop exposure, weather limits, battery handling, offline operation, location privacy and safe mobility |
