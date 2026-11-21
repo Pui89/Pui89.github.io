@@ -2,7 +2,7 @@
 
 **Status:** Architecture baseline proposed for review  
 **Version:** 2.0.0  
-**Scope:** Coconut Harvest AI, Extreme Flood Rescue AI, All-Terrain Inspection Robot Dog, and PUI89 AI HOME / NOMAD.
+**Scope:** The six active PUI89 products, using one shared and versioned AI Core.
 
 ## Purpose
 
@@ -43,7 +43,6 @@ All contracts are versioned JSON Schema. Consumers must reject unknown schema ve
 | Project | Adapter examples | Additional safety boundary |
 |---|---|---|
 | Coconut Harvest AI | fruit observations, tree context, arm workspace | worker/animal exclusion zone; cutter and reach interlocks |
-| Extreme Flood Rescue AI | water level, current, obstacles, victim reports | human mission authorization; environmental envelope; rescue crew override |
 | Sentinel Inspection Robot Dog | RGB, depth, LiDAR, IMU and joint/foot-state observations | human supervision; bounded motion proposals; independent stop/hold controls |
 | AI HOME / NOMAD | environmental readings, device status, user reports | certified alarms remain independent; no replacement for electrical/fire protection |
 
@@ -62,7 +61,6 @@ Prefer Python standard library and JSON Schema-compatible validation already ava
 1. Validate and review these contracts.
 2. Add contract validation and unit tests in the shared-core reference implementation.
 3. Integrate adapters into Coconut Harvest AI first.
-4. Run the same contract conformance tests in Flood Rescue, Sentinel, and HOME / NOMAD.
 5. Add simulation adapters only after the software contracts and safety gates pass.
 6. Publish benchmark results only from reproducible runs.
 
