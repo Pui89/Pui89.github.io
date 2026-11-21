@@ -75,7 +75,7 @@ The founder explicitly confirmed that the official PUI89 Sentinel product is the
 
 The bilingual public Sentinel pages (`sentinel.html` and `sentinel-th.html`) were rechecked. Their product names, descriptions and multimodal scope identify the quadruped inspection robot; both pages explicitly distinguish general inspection intelligence from narcotics screening and state that narcotics detection, X-ray screening and chemical identification are outside the current scope. No Sentinel page correction is required for this identity decision. This is a content-alignment audit only; it does not validate a physical robot, sensors or field performance.
 
-The canonical portfolio source is now [PUI89 Portfolio Source of Truth v1.1](../PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.1.md). The v1.0 file is retained as historical version evidence.
+The canonical portfolio source is [PUI89 Portfolio Source of Truth v1.2](PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.2.md). This directly retrievable v1.2 document is the authoritative baseline for the six active products, product identity boundaries, Shared AI Core and evidence-language rules. The earlier v1.1 link could not be retrieved during the 21 November 2026 review; do not rely on that unresolved reference.
 
 ## Review outcome and remaining work
 
