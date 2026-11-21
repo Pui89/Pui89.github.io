@@ -1,17 +1,17 @@
 # PUI89 AI Robotics — Cross-Project Command Centre
 
-> Generated (UTC): 2026-11-19T15:54:13.237920+00:00
+> Generated (UTC): 2026-11-21T14:48:09.480019+00:00
 
 Read-only overview of public repository commits and recent GitHub Actions runs. This report is not a substitute for running tests or reviewing evidence.
 
 | Project | Status | Latest commit | Latest workflow summary | Next focus |
 |---|---|---|---|---|
-| [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | CHECKS_AVAILABLE | [4936f879184f](https://github.com/Pui89/Coconut-Harvest-AI/commit/4936f879184f9cbcc9e4f76209f0575336ec0f5d) | PUI89 Security Audit: success [main]; PUI89 Three-Layer Security Baseline: success [main]; PUI89 System Guardrails: success [main] | Agricultural perception, dataset provenance, reviewed labels and leakage-safe evaluation. |
-| [PUI89 Sentinel — All-Terrain Exploration & Inspection Robot](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot) | CHECKS_AVAILABLE | [33089583b475](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/commit/33089583b475d32993882402420210903f5df051) | PUI89 Security Audit: success [main]; Free local-first app regression checks: success [main]; PUI89 Pitfall Detector Checks: success [main] | Supervised quadruped inspection; first mission and operating envelope must be defined before hardware selection. |
-| [PUI89 AI HOME](https://github.com/Pui89/AI-Home-Safety-Robot) | CHECKS_AVAILABLE | [de3397a046f1](https://github.com/Pui89/AI-Home-Safety-Robot/commit/de3397a046f1f988af908fff306cf9f83192267c) | PUI89 Security Audit: success [main]; PUI89 project intelligence reviews: failure [main]; github_actions in / for actions/checkout - Update #1692848464: success [main] | Indoor four-wheel home assistant; complete robot mass target 8 kg and maximum 10 kg. |
-| [PUI89 AI NOMAD](https://github.com/Pui89/AI-Mobile-Assistant-Robot) | CHECKS_AVAILABLE | [522169ca0e60](https://github.com/Pui89/AI-Mobile-Assistant-Robot/commit/522169ca0e600a8a7e66a01562565f73d90f6465) | PUI89 Three-Layer Security Baseline: success [main]; HOMEGUARD CI: success [main]; PUI89 Security Audit: success [main] | Ground-use four-wheel mobile assistant robot; not luggage or airline baggage; storage is secondary. |
-| [PUI89 AI Global SUV](https://github.com/Pui89/PUI89-AI-Global-SUV) | CHECKS_AVAILABLE | [deebff24e220](https://github.com/Pui89/PUI89-AI-Global-SUV/commit/deebff24e220d6e5b0606ca845eb6703105bf487) | PUI89 Security Audit: success [main]; PUI89 AI Global SUV Quality and Shared Core Contract Checks: success [main]; PUI89 project intelligence reviews: failure [main] | Medium-size SUV concept; human-driver-first mobility intelligence and advisory-only software research. |
-| [PUI89 AI Step-Through Scooter](https://github.com/Pui89/AI-Step-Through-Scooter) | CHECKS_AVAILABLE | [31e0ea6f78cc](https://github.com/Pui89/AI-Step-Through-Scooter/commit/31e0ea6f78cc88a0a2f71face886653bba1a81fe) | PUI89 Motorcycle Quality and Shared Core Contract Checks: success [main]; PUI89 Security Audit: success [main]; PUI89 project intelligence reviews: failure [main] | Rider-first two-wheel step-through scooter; advisory road-water and flood-risk awareness, human-controlled operation. |
+| [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | CHECKS_AVAILABLE | [fc3df6f2e8c1](https://github.com/Pui89/Coconut-Harvest-AI/commit/fc3df6f2e8c170f5cf86cdc3dc41f3f4e8fd9087) | PUI89 Automated Verification: success [main]; PUI89 Automated Repository Quality Gate: success [main]; PUI89 Shared Intelligence Contract: success [main] | Agricultural perception, dataset provenance, reviewed labels and leakage-safe evaluation. |
+| [PUI89 Sentinel — All-Terrain Exploration & Inspection Robot](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot) | CHECKS_AVAILABLE | [e1f3b5d86204](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/commit/e1f3b5d86204137144053f99d44c48f5b5160d06) | PUI89 Pitfall Detector Checks: success [main]; PUI89 Automated Repository Quality Gate: success [main]; PUI89 Security Audit: success [main] | Supervised quadruped inspection; first mission and operating envelope must be defined before hardware selection. |
+| [PUI89 AI HOME](https://github.com/Pui89/AI-Home-Safety-Robot) | CHECKS_AVAILABLE | [b6e5af92f964](https://github.com/Pui89/AI-Home-Safety-Robot/commit/b6e5af92f964ff4bb7822b34521107d964795f5a) | PUI89 Security Audit: success [main]; PUI89 Automated Repository Quality Gate: success [main]; PUI89 project intelligence reviews: failure [main] | Indoor four-wheel home assistant; complete robot mass target 8 kg and maximum 10 kg. |
+| [PUI89 AI NOMAD](https://github.com/Pui89/AI-Mobile-Assistant-Robot) | CHECKS_AVAILABLE | [167a8ef54de0](https://github.com/Pui89/AI-Mobile-Assistant-Robot/commit/167a8ef54de079377fa7e630a971ec15827c8278) | PUI89 Security Audit: success [main]; PUI89 Three-Layer Security Baseline: success [main]; HOMEGUARD CI: success [main] | Ground-use four-wheel mobile assistant robot; not luggage or airline baggage; storage is secondary. |
+| [PUI89 AI Global SUV](https://github.com/Pui89/PUI89-AI-Global-SUV) | CHECKS_AVAILABLE | [e015e0a7e6d5](https://github.com/Pui89/PUI89-AI-Global-SUV/commit/e015e0a7e6d5c4c3f6bf625db297805c6e988cb8) | PUI89 AI Global SUV Quality and Shared Core Contract Checks: success [main]; PUI89 Security Audit: success [main]; PUI89 Automated Repository Quality Gate: success [main] | Medium-size SUV concept; human-driver-first mobility intelligence and advisory-only software research. |
+| [PUI89 AI Step-Through Scooter](https://github.com/Pui89/AI-Step-Through-Scooter) | CHECKS_AVAILABLE | [888a60caa3f1](https://github.com/Pui89/AI-Step-Through-Scooter/commit/888a60caa3f182eed07acb5f8d5fe79110aef280) | PUI89 Security Audit: success [main]; PUI89 Motorcycle Quality and Shared Core Contract Checks: success [main]; PUI89 Automated Repository Quality Gate: success [main] | Rider-first two-wheel step-through scooter; advisory road-water and flood-risk awareness, human-controlled operation. |
 
 ## Shared AI Core — platform infrastructure (not a seventh product)
 
@@ -27,7 +27,7 @@ Selected safeguards are scanned across the latest 50 repository workflow runs, r
 
 ### Coconut Harvest AI
 
-Non-default-branch runs in the scanned window: 23
+Non-default-branch runs in the scanned window: 39
 
 | Safeguard | Status | Branch | Last updated (UTC) | Run |
 |---|---|---|---|---|
@@ -35,27 +35,27 @@ Non-default-branch runs in the scanned window: 23
 | Dataset recovery audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
 | Free-resource link audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
 | Rule-based simulation evaluation | not_seen_in_recent_runs | not seen on default branch | unknown | — |
-| Coconut dataset evidence audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Coconut dataset evidence audit | success | main | 2026-11-21T03:38:11Z | [open](https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44862133193) |
 | Simulation benchmark + report validator | not_seen_in_recent_runs | not seen on default branch | unknown | — |
 | Autonomy / safety regression tests | not_seen_in_recent_runs | not seen on default branch | unknown | — |
 
 ### PUI89 Sentinel — All-Terrain Exploration & Inspection Robot
 
-Non-default-branch runs in the scanned window: 32
+Non-default-branch runs in the scanned window: 38
 
 | Safeguard | Status | Branch | Last updated (UTC) | Run |
 |---|---|---|---|---|
-| Free cloud verification | not_seen_in_recent_runs | not seen on default branch | unknown | — |
+| Free cloud verification | success | main | 2026-11-21T10:45:08Z | [open](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44895800376) |
 | Dataset recovery audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
 | Free-resource link audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
 | Rule-based simulation evaluation | not_seen_in_recent_runs | not seen on default branch | unknown | — |
 | Coconut dataset evidence audit | not_seen_in_recent_runs | not seen on default branch | unknown | — |
 | Simulation benchmark + report validator | not_seen_in_recent_runs | not seen on default branch | unknown | — |
-| Autonomy / safety regression tests | success | main | 2026-11-19T15:13:12Z | [open](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244319) |
+| Autonomy / safety regression tests | success | main | 2026-11-21T14:36:44Z | [open](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44914798452) |
 
 ### PUI89 AI HOME
 
-Non-default-branch runs in the scanned window: 30
+Non-default-branch runs in the scanned window: 33
 
 | Safeguard | Status | Branch | Last updated (UTC) | Run |
 |---|---|---|---|---|
@@ -69,7 +69,7 @@ Non-default-branch runs in the scanned window: 30
 
 ### PUI89 AI NOMAD
 
-Non-default-branch runs in the scanned window: 34
+Non-default-branch runs in the scanned window: 35
 
 | Safeguard | Status | Branch | Last updated (UTC) | Run |
 |---|---|---|---|---|
@@ -83,7 +83,7 @@ Non-default-branch runs in the scanned window: 34
 
 ### PUI89 AI Global SUV
 
-Non-default-branch runs in the scanned window: 32
+Non-default-branch runs in the scanned window: 30
 
 | Safeguard | Status | Branch | Last updated (UTC) | Run |
 |---|---|---|---|---|
@@ -97,7 +97,7 @@ Non-default-branch runs in the scanned window: 32
 
 ### PUI89 AI Step-Through Scooter
 
-Non-default-branch runs in the scanned window: 34
+Non-default-branch runs in the scanned window: 29
 
 | Safeguard | Status | Branch | Last updated (UTC) | Run |
 |---|---|---|---|---|

@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-19T15:54:13.237920+00:00",
+  "generated_at_utc": "2026-11-21T14:48:09.480019+00:00",
   "mode": "read-only public GitHub status summary",
   "projects": [
     {
@@ -9,75 +9,115 @@
       "focus": "Agricultural perception, dataset provenance, reviewed labels and leakage-safe evaluation.",
       "status": "CHECKS_AVAILABLE",
       "default_branch": "main",
-      "latest_commit": "4936f879184f",
-      "latest_commit_url": "https://github.com/Pui89/Coconut-Harvest-AI/commit/4936f879184f9cbcc9e4f76209f0575336ec0f5d",
+      "latest_commit": "fc3df6f2e8c1",
+      "latest_commit_url": "https://github.com/Pui89/Coconut-Harvest-AI/commit/fc3df6f2e8c170f5cf86cdc3dc41f3f4e8fd9087",
       "latest_workflows": [
         {
-          "name": "PUI89 Security Audit",
+          "name": "PUI89 Automated Verification",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-19T15:15:03Z",
-          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44552627322",
+          "updated_at": "2026-11-21T14:36:13Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44914774535",
           "branch": "main"
         },
         {
-          "name": "PUI89 Three-Layer Security Baseline",
+          "name": "PUI89 Automated Repository Quality Gate",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-19T15:15:04Z",
-          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44552627137",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 System Guardrails",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-19T15:15:07Z",
-          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44552627100",
+          "updated_at": "2026-11-21T14:36:11Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44914774611",
           "branch": "main"
         },
         {
           "name": "PUI89 Shared Intelligence Contract",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-19T15:15:05Z",
-          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44552627136",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Automated Verification",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-19T15:15:07Z",
-          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44552626896",
-          "branch": "main"
-        },
-        {
-          "name": "pages build and deployment",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-19T15:15:48Z",
-          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44552626594",
+          "updated_at": "2026-11-21T14:36:12Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44914774462",
           "branch": "main"
         },
         {
           "name": "PUI89 Pitfall Detector Checks",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-19T15:15:11Z",
-          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44552627015",
+          "updated_at": "2026-11-21T14:36:12Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44914774653",
           "branch": "main"
         },
         {
           "name": "PUI89 Shared Interface Smoke",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-19T15:15:18Z",
-          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44552627134",
+          "updated_at": "2026-11-21T14:36:27Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44914774603",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 System Guardrails",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T14:36:13Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44914774533",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Free Local Checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T14:36:15Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44914774655",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Three-Layer Security Baseline",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T14:36:11Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44914774581",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Security Audit",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T14:36:11Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44914774474",
+          "branch": "main"
+        },
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T14:36:52Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44914774707",
+          "branch": "main"
+        },
+        {
+          "name": "Coconut Dataset Evidence Audit",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T03:38:11Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44862133193",
+          "branch": "main"
+        },
+        {
+          "name": "Coconut Evidence Gate Monitor",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T03:30:31Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44861459475",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 project intelligence reviews",
+          "status": "completed",
+          "conclusion": "failure",
+          "updated_at": "2026-11-20T22:47:59Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44831849093",
           "branch": "main"
         }
       ],
-      "non_default_branch_run_count": 23,
+      "non_default_branch_run_count": 39,
       "key_workflows": [
         {
           "name": "Free cloud verification",
@@ -113,11 +153,11 @@
         },
         {
           "name": "Coconut dataset evidence audit",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T03:38:11Z",
+          "url": "https://github.com/Pui89/Coconut-Harvest-AI/actions/runs/44862133193",
+          "branch": "main"
         },
         {
           "name": "Simulation benchmark + report validator",
@@ -145,107 +185,155 @@
       "focus": "Supervised quadruped inspection; first mission and operating envelope must be defined before hardware selection.",
       "status": "CHECKS_AVAILABLE",
       "default_branch": "main",
-      "latest_commit": "33089583b475",
-      "latest_commit_url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/commit/33089583b475d32993882402420210903f5df051",
+      "latest_commit": "e1f3b5d86204",
+      "latest_commit_url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/commit/e1f3b5d86204137144053f99d44c48f5b5160d06",
       "latest_workflows": [
-        {
-          "name": "PUI89 Security Audit",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:03Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244444",
-          "branch": "main"
-        },
-        {
-          "name": "Free local-first app regression checks",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:12Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244319",
-          "branch": "main"
-        },
         {
           "name": "PUI89 Pitfall Detector Checks",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:13Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244403",
+          "updated_at": "2026-11-21T14:36:37Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44914798541",
           "branch": "main"
         },
         {
-          "name": "PUI89 Software and Observability Checks",
+          "name": "PUI89 Automated Repository Quality Gate",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:02Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244364",
+          "updated_at": "2026-11-21T14:36:29Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44914798529",
           "branch": "main"
         },
         {
-          "name": "PUI89 Automated Verification",
+          "name": "PUI89 Security Audit",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:04Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244660",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Shared Intelligence Contract",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:01Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244290",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Three-Layer Security Baseline",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:00Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244356",
-          "branch": "main"
-        },
-        {
-          "name": "Python tests",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:22Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244340",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Shared Interface Smoke",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:15Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244723",
+          "updated_at": "2026-11-21T14:36:29Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44914798384",
           "branch": "main"
         },
         {
           "name": "PUI89 Free Local Checks",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-19T03:38:20Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44452815025",
+          "updated_at": "2026-11-21T14:36:33Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44914798397",
           "branch": "main"
         },
         {
-          "name": "PUI89 project intelligence reviews",
+          "name": "PUI89 Shared Intelligence Contract",
           "status": "completed",
-          "conclusion": "failure",
-          "updated_at": "2026-11-18T23:07:59Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44418003361",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T14:36:34Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44914798417",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Software and Observability Checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T14:36:33Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44914798400",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Three-Layer Security Baseline",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T14:36:28Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44914798503",
+          "branch": "main"
+        },
+        {
+          "name": "Free local-first app regression checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T14:36:44Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44914798452",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Automated Verification",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T14:36:39Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44914798462",
+          "branch": "main"
+        },
+        {
+          "name": "Python tests",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T14:36:42Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44914798581",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Shared Interface Smoke",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T14:18:23Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44913205429",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Fast Preflight",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T10:45:23Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44895800344",
+          "branch": "main"
+        },
+        {
+          "name": "Multimodal Screening AI regression checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T10:45:16Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44895800338",
+          "branch": "main"
+        },
+        {
+          "name": "Synthetic agent evaluation",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T10:45:21Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44895800476",
+          "branch": "main"
+        },
+        {
+          "name": "Free cloud-side verification",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T10:45:08Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44895800376",
+          "branch": "main"
+        },
+        {
+          "name": "Free helper review (Ruff)",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T10:45:05Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44895800389",
+          "branch": "main"
+        },
+        {
+          "name": "Security Checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T10:46:11Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44895800420",
           "branch": "main"
         }
       ],
-      "non_default_branch_run_count": 32,
+      "non_default_branch_run_count": 38,
       "key_workflows": [
         {
           "name": "Free cloud verification",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T10:45:08Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44895800376",
+          "branch": "main"
         },
         {
           "name": "Dataset recovery audit",
@@ -291,8 +379,8 @@
           "name": "Autonomy / safety regression tests",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:12Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244319",
+          "updated_at": "2026-11-21T14:36:44Z",
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44914798452",
           "branch": "main"
         }
       ],
@@ -305,35 +393,35 @@
       "focus": "Indoor four-wheel home assistant; complete robot mass target 8 kg and maximum 10 kg.",
       "status": "CHECKS_AVAILABLE",
       "default_branch": "main",
-      "latest_commit": "de3397a046f1",
-      "latest_commit_url": "https://github.com/Pui89/AI-Home-Safety-Robot/commit/de3397a046f1f988af908fff306cf9f83192267c",
+      "latest_commit": "b6e5af92f964",
+      "latest_commit_url": "https://github.com/Pui89/AI-Home-Safety-Robot/commit/b6e5af92f964ff4bb7822b34521107d964795f5a",
       "latest_workflows": [
         {
           "name": "PUI89 Security Audit",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-19T15:42:52Z",
-          "url": "https://github.com/Pui89/AI-Home-Safety-Robot/actions/runs/44557870080",
+          "updated_at": "2026-11-21T14:36:41Z",
+          "url": "https://github.com/Pui89/AI-Home-Safety-Robot/actions/runs/44914816736",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Automated Repository Quality Gate",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T14:36:42Z",
+          "url": "https://github.com/Pui89/AI-Home-Safety-Robot/actions/runs/44914816776",
           "branch": "main"
         },
         {
           "name": "PUI89 project intelligence reviews",
           "status": "completed",
           "conclusion": "failure",
-          "updated_at": "2026-11-18T23:08:15Z",
-          "url": "https://github.com/Pui89/AI-Home-Safety-Robot/actions/runs/44418034454",
-          "branch": "main"
-        },
-        {
-          "name": "github_actions in / for actions/checkout - Update #1692848464",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-10T11:36:14Z",
-          "url": "https://github.com/Pui89/AI-Home-Safety-Robot/actions/runs/42808750412",
+          "updated_at": "2026-11-20T22:48:49Z",
+          "url": "https://github.com/Pui89/AI-Home-Safety-Robot/actions/runs/44831966903",
           "branch": "main"
         }
       ],
-      "non_default_branch_run_count": 30,
+      "non_default_branch_run_count": 33,
       "key_workflows": [
         {
           "name": "Free cloud verification",
@@ -401,75 +489,59 @@
       "focus": "Ground-use four-wheel mobile assistant robot; not luggage or airline baggage; storage is secondary.",
       "status": "CHECKS_AVAILABLE",
       "default_branch": "main",
-      "latest_commit": "522169ca0e60",
-      "latest_commit_url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/commit/522169ca0e600a8a7e66a01562565f73d90f6465",
+      "latest_commit": "167a8ef54de0",
+      "latest_commit_url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/commit/167a8ef54de079377fa7e630a971ec15827c8278",
       "latest_workflows": [
+        {
+          "name": "PUI89 Security Audit",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T14:37:14Z",
+          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/44914863101",
+          "branch": "main"
+        },
         {
           "name": "PUI89 Three-Layer Security Baseline",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:21Z",
-          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/44552305561",
+          "updated_at": "2026-11-21T14:37:14Z",
+          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/44914862919",
           "branch": "main"
         },
         {
           "name": "HOMEGUARD CI",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:30Z",
-          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/44552305985",
+          "updated_at": "2026-11-21T14:37:23Z",
+          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/44914862918",
           "branch": "main"
         },
         {
-          "name": "PUI89 Security Audit",
+          "name": "PUI89 Automated Repository Quality Gate",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:22Z",
-          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/44552305803",
+          "updated_at": "2026-11-21T14:37:15Z",
+          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/44914862927",
           "branch": "main"
         },
         {
           "name": "HOMEGUARD Security",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-19T15:14:13Z",
-          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/44552305434",
+          "updated_at": "2026-11-21T14:37:57Z",
+          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/44914862952",
           "branch": "main"
         },
         {
           "name": "PUI89 project intelligence reviews",
           "status": "completed",
           "conclusion": "failure",
-          "updated_at": "2026-11-18T23:04:08Z",
-          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/44417403256",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Water Resilience Checks",
-          "status": "completed",
-          "conclusion": "failure",
-          "updated_at": "2026-11-16T11:47:06Z",
-          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/43860758997",
-          "branch": "main"
-        },
-        {
-          "name": "github_actions in /. - Update #1706431065",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-16T00:33:06Z",
-          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/43780965154",
-          "branch": "main"
-        },
-        {
-          "name": "pip in /. - Update #1706431007",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-16T00:32:59Z",
-          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/43780965162",
+          "updated_at": "2026-11-20T22:47:56Z",
+          "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot/actions/runs/44831827849",
           "branch": "main"
         }
       ],
-      "non_default_branch_run_count": 34,
+      "non_default_branch_run_count": 35,
       "key_workflows": [
         {
           "name": "Free cloud verification",
@@ -537,51 +609,51 @@
       "focus": "Medium-size SUV concept; human-driver-first mobility intelligence and advisory-only software research.",
       "status": "CHECKS_AVAILABLE",
       "default_branch": "main",
-      "latest_commit": "deebff24e220",
-      "latest_commit_url": "https://github.com/Pui89/PUI89-AI-Global-SUV/commit/deebff24e220d6e5b0606ca845eb6703105bf487",
+      "latest_commit": "e015e0a7e6d5",
+      "latest_commit_url": "https://github.com/Pui89/PUI89-AI-Global-SUV/commit/e015e0a7e6d5c4c3f6bf625db297805c6e988cb8",
       "latest_workflows": [
-        {
-          "name": "PUI89 Security Audit",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-19T15:14:03Z",
-          "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/actions/runs/44552436407",
-          "branch": "main"
-        },
         {
           "name": "PUI89 AI Global SUV Quality and Shared Core Contract Checks",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-19T15:14:07Z",
-          "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/actions/runs/44552436567",
+          "updated_at": "2026-11-21T14:37:04Z",
+          "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/actions/runs/44914846524",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Security Audit",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T14:37:08Z",
+          "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/actions/runs/44914845889",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Automated Repository Quality Gate",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T14:37:03Z",
+          "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/actions/runs/44914845891",
           "branch": "main"
         },
         {
           "name": "PUI89 project intelligence reviews",
           "status": "completed",
           "conclusion": "failure",
-          "updated_at": "2026-11-18T23:06:00Z",
-          "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/actions/runs/44417695755",
+          "updated_at": "2026-11-20T22:48:24Z",
+          "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/actions/runs/44831901950",
           "branch": "main"
         },
         {
-          "name": "github_actions in / for actions/checkout - Update #1705556584",
+          "name": "github_actions in /. - Update #1718820786",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-15T12:38:07Z",
-          "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/actions/runs/43714809370",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 AI Robot Car Quality and Shared Core Contract Checks",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-15T10:48:49Z",
-          "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/actions/runs/43705868070",
+          "updated_at": "2026-11-20T12:07:41Z",
+          "url": "https://github.com/Pui89/PUI89-AI-Global-SUV/actions/runs/44733085218",
           "branch": "main"
         }
       ],
-      "non_default_branch_run_count": 32,
+      "non_default_branch_run_count": 30,
       "key_workflows": [
         {
           "name": "Free cloud verification",
@@ -649,51 +721,51 @@
       "focus": "Rider-first two-wheel step-through scooter; advisory road-water and flood-risk awareness, human-controlled operation.",
       "status": "CHECKS_AVAILABLE",
       "default_branch": "main",
-      "latest_commit": "31e0ea6f78cc",
-      "latest_commit_url": "https://github.com/Pui89/AI-Step-Through-Scooter/commit/31e0ea6f78cc88a0a2f71face886653bba1a81fe",
+      "latest_commit": "888a60caa3f1",
+      "latest_commit_url": "https://github.com/Pui89/AI-Step-Through-Scooter/commit/888a60caa3f182eed07acb5f8d5fe79110aef280",
       "latest_workflows": [
-        {
-          "name": "PUI89 Motorcycle Quality and Shared Core Contract Checks",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:36Z",
-          "url": "https://github.com/Pui89/AI-Step-Through-Scooter/actions/runs/44552349165",
-          "branch": "main"
-        },
         {
           "name": "PUI89 Security Audit",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:35Z",
-          "url": "https://github.com/Pui89/AI-Step-Through-Scooter/actions/runs/44552349068",
+          "updated_at": "2026-11-21T14:36:51Z",
+          "url": "https://github.com/Pui89/AI-Step-Through-Scooter/actions/runs/44914830839",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Motorcycle Quality and Shared Core Contract Checks",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T14:36:52Z",
+          "url": "https://github.com/Pui89/AI-Step-Through-Scooter/actions/runs/44914830700",
+          "branch": "main"
+        },
+        {
+          "name": "PUI89 Automated Repository Quality Gate",
+          "status": "completed",
+          "conclusion": "success",
+          "updated_at": "2026-11-21T14:36:51Z",
+          "url": "https://github.com/Pui89/AI-Step-Through-Scooter/actions/runs/44914830600",
           "branch": "main"
         },
         {
           "name": "PUI89 project intelligence reviews",
           "status": "completed",
           "conclusion": "failure",
-          "updated_at": "2026-11-18T23:05:31Z",
-          "url": "https://github.com/Pui89/AI-Step-Through-Scooter/actions/runs/44417617284",
+          "updated_at": "2026-11-20T22:47:50Z",
+          "url": "https://github.com/Pui89/AI-Step-Through-Scooter/actions/runs/44831829909",
           "branch": "main"
         },
         {
           "name": "PUI89 security baseline",
           "status": "completed",
           "conclusion": "success",
-          "updated_at": "2026-11-16T12:10:11Z",
-          "url": "https://github.com/Pui89/AI-Step-Through-Scooter/actions/runs/43863996063",
-          "branch": "main"
-        },
-        {
-          "name": "github_actions in /. - Update #1700050870",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-13T02:15:16Z",
-          "url": "https://github.com/Pui89/AI-Step-Through-Scooter/actions/runs/43350720301",
+          "updated_at": "2026-11-20T18:50:28Z",
+          "url": "https://github.com/Pui89/AI-Step-Through-Scooter/actions/runs/44796417577",
           "branch": "main"
         }
       ],
-      "non_default_branch_run_count": 34,
+      "non_default_branch_run_count": 29,
       "key_workflows": [
         {
           "name": "Free cloud verification",
