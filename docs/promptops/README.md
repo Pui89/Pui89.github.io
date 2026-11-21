@@ -16,7 +16,6 @@ The PUI89 AI Core conformance document states that the portfolio website is a do
 ## Portfolio scope
 
 - Coconut Harvest AI
-- Extreme Flood Rescue AI
 - Multimodal Narcotics Screening AI / PUI89 Sentinel
 - PUI89 AI HOME
 - PUI89 AI NOMAD
