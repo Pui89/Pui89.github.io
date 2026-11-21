@@ -150,3 +150,24 @@ Use only when true for the exact released product:
 - “Remote features require a compatible connection and are not required for local operation.”
 
 Never say “fully offline”, “fail-safe”, “all functions work offline” or “internet-independent AI” without product-specific test evidence.
+
+
+## 9. Detailed engineering implementation contract
+
+### 9.1 Per-product offline capability register
+For each released hardware/software revision, publish a table with: function; local/offline, local-link, internet or remote-service classification; required sensors/model/compute/storage/power; local user interface; failure response; evidence ID; known limitation. Do not infer offline support from a design intention.
+
+### 9.2 Physical controls and safe state
+Maintain a revision-controlled inventory of physical controls, their location, purpose, feedback, misuse protection and fault response. STOP/E-stop and protective interlocks are independent of phone, app, radio, Wi-Fi, internet and cloud. Reset never restarts hazardous motion. Define product-specific safe states through hazard analysis; generic power-off is not automatically safe, particularly for mobile robots and road vehicles.
+
+### 9.3 Local records and command handling
+Use bounded local logs with timestamp source, sequence, severity, build/configuration and integrity metadata. Define retention, export, storage-full and corruption behaviour. Reject unauthenticated, expired, duplicate, replayed and out-of-order remote commands. Reconnection requires fresh state synchronisation and explicit local authorisation; never replay old commands. Restart in a defined safe state.
+
+### 9.4 Complete printed manual release checklist
+Every shipped unit has a complete printed User Manual and Quick Start & Safety Guide in destination-market language. Contents/page references/index must work without QR. Both cover no-phone/no-app/no-Wi-Fi/no-internet operation, controls, indicators, stop/E-stop, power/connectivity loss, troubleshooting, manual recovery, maintenance, privacy, service and revision. QR/short URL are supplementary only. Translation requires native-language technical review and product safety approval.
+
+### 9.5 Standard test identifiers
+Use OFF-01 no phone/app; OFF-02 Wi-Fi/internet off; OFF-03 cloud/DNS unavailable; OFF-04 app terminated; OFF-05 remote loss during task; OFF-06 delayed/duplicate/replayed/out-of-order command; OFF-07 reconnection without automatic resume; OFF-08 local E-stop with radios off; OFF-09 low power/power interruption; OFF-10 full/corrupt local storage; OFF-11 missing sensor/model/runtime; OFF-12 printed-manual-only usability; OFF-13 local service without cloud; OFF-14 restart after fault; OFF-15 wrong manual language/revision. Each record includes build, preconditions, steps, expected/actual, evidence, tester/date, defects and disposition. N/A requires approved rationale. Checklists and simulations are not proof of physical performance.
+
+### 9.6 Release state
+Offline-ready is not achieved until applicable tests pass on the exact build, safety/engineering reviewers approve, printed packaging proof is checked and service recovery is demonstrated. Keep Specified, Implemented, Tested, Validated and Released as distinct evidence states.
