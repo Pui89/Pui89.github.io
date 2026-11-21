@@ -101,7 +101,7 @@ def main() -> int:
         for pattern in STALE_NOMAD:
             for match in pattern.finditer(content):
                 stale_count += 1
-                line = content.count("\\n", 0, match.start()) + 1
+                line = content.count("\n", 0, match.start()) + 1
                 message = f"{rel}:{line}: obsolete NOMAD design wording: {match.group(0)!r}"
                 if changed is not None and rel in changed:
                     errors.append(message)
@@ -133,7 +133,7 @@ def main() -> int:
         "- This audit does not verify product performance, translate content quality, render responsive layouts, decode QR destinations, or prove Google indexing.",
         "- Human review remains required for images, technical claims, Thai/English meaning parity and product-design approval.",
     ]
-    text = "\\n".join(report) + "\\n"
+    text = "\n".join(report) + "\n"
     print(text)
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary:
