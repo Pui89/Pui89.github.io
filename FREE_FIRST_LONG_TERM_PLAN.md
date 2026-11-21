@@ -45,9 +45,6 @@ Keep PUI89 useful and maintainable for as long as possible without depending on 
 ### 1. Coconut Harvest AI
 First resolve image source and reuse rights, hashes, annotation geometry, reviewer status, and leakage-safe train/validation/test splits. Then establish a small reproducible baseline with documented precision/recall and runtime. Do not claim detection quality until results are measured on an appropriate held-out dataset. A 0–30 m palm-height range remains a design challenge, not verified reach.
 
-### 2. Extreme Flood Rescue AI
-Keep early development simulation-first. Use deterministic scenarios, fault injection, reproducible configuration files, and explicit simulation limits. Simulation does not prove safe navigation in real flood currents or operational rescue capability.
-
 ### 3. Multimodal Narcotics Screening AI
 Use authorized data and appropriate reference methods. Record uncertainty and false-positive/false-negative risks, require authorized human review, and protect sensitive data. Ordinary RGB appearance or a model confidence score cannot establish chemical identity.
 
