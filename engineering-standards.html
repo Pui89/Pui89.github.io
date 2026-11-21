@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07111f">
+<meta name="description" content="PUI89 evidence-based engineering maturity levels and product readiness gates.">
+<link rel="canonical" href="https://pui89.github.io/engineering-standards.html">
+<link rel="alternate" hreflang="en" href="https://pui89.github.io/engineering-standards.html">
+<link rel="alternate" hreflang="th" href="https://pui89.github.io/engineering-standards-th.html">
+<title>PUI89 | Evidence-Based Engineering Standards</title>
+<style>
+:root{color-scheme:dark;--bg:#07111f;--panel:#101f31;--line:#24415b;--cyan:#35d7ee;--muted:#a9bacb;--white:#f4f8fc}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(160deg,#07111f,#0a1a2b 60%,#07111f);color:var(--white);font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}
+main{width:min(980px,calc(100% - 36px));margin:48px auto 80px}a{color:var(--cyan)}.top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.eyebrow{color:var(--cyan);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem}h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.08;margin:.5rem 0 1rem}h2{font-size:1.45rem;margin:2.2rem 0 .7rem}p,li{color:#d3deea}.lead{font-size:1.2rem;color:#e5edf5;max-width:760px}.rule{border-left:3px solid var(--cyan);padding:12px 18px;background:#10283a;font-size:1.2rem;font-weight:700}.levels{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}.level,.panel{background:rgba(16,31,49,.92);border:1px solid var(--line);border-radius:14px;padding:17px}.level b{color:var(--cyan);font-size:1.08rem}.level p{margin:.45rem 0 0;font-size:.94rem}.note{color:var(--muted);font-size:.92rem}table{width:100%;border-collapse:collapse;background:rgba(16,31,49,.75);border-radius:12px;overflow:hidden}th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--cyan)}footer{margin-top:42px;border-top:1px solid var(--line);padding-top:20px;color:var(--muted)}
+</style>
+</head>
+<body><main>
+<div class="top"><a href="index.html">← PUI89 Home</a><a href="engineering-standards-th.html">ภาษาไทย</a></div>
+<p class="eyebrow">PUI89 Engineering Governance</p>
+<h1>Evidence-Based Engineering &amp; Product Readiness</h1>
+<p class="lead">A system is only as ready as its evidence. PUI89 uses controlled maturity levels and explicit evidence gates to keep public claims aligned with what has actually been specified, implemented, tested, and validated.</p>
+<div class="rule">No Evidence, No Readiness Claim.</div>
+<h2>Six sequential maturity levels</h2>
+<div class="levels">
+<div class="level"><b>01 · Proposed</b><p>An idea or candidate approach. The problem, intended use and concept status are identified.</p></div>
+<div class="level"><b>02 · Specified</b><p>Scope, requirements, interfaces, acceptance criteria, assumptions, risks and exclusions are documented.</p></div>
+<div class="level"><b>03 · Implemented</b><p>A working implementation exists with a version-pinned source or build and reproducible execution instructions.</p></div>
+<div class="level"><b>04 · Tested</b><p>Defined tests have been run with recorded environment, inputs, results, failures and reproducible logs.</p></div>
+<div class="level"><b>05 · Validated</b><p>Evidence demonstrates fitness for the intended use under defined conditions against pre-approved acceptance criteria.</p></div>
+<div class="level"><b>06 · Product-Ready</b><p>Applicable product-level engineering, safety, reliability, usability, legal/conformity and release obligations have been completed and approved.</p></div>
+</div>
+<p class="note">Levels are sequential. A product or capability cannot skip a level. Code, a passing CI run, a demo, or a simulation alone does not establish validation or product readiness.</p>
+<h2>Evidence status is reported separately</h2>
+<div class="panel"><p><b>COMPLETE</b> · Required evidence for the current gate is present and reviewed.</p><p><b>PARTIAL</b> · Evidence exists, but required items are missing.</p><p><b>BLOCKED</b> · A known issue, risk, rights restriction or failed criterion prevents progression.</p><p><b>NOT ASSESSED</b> · No adequate assessment has been performed.</p><p><b>EXPIRED / SUPERSEDED</b> · Evidence no longer applies to the current version or operating conditions.</p></div>
+<h2>What every product must disclose</h2>
+<table><thead><tr><th>Field</th><th>Public record</th></tr></thead><tbody>
+<tr><td>Current maturity</td><td>One controlled level for a clearly scoped product or capability.</td></tr>
+<tr><td>Evidence status</td><td>Complete, partial, blocked, not assessed, or expired.</td></tr>
+<tr><td>Evidence references</td><td>Versioned specifications, test reports, CI records and other safe-to-disclose evidence.</td></tr>
+<tr><td>Verified scope</td><td>What was actually tested or validated, and under which conditions.</td></tr>
+<tr><td>Not established</td><td>Important capabilities or claims that remain unverified.</td></tr>
+<tr><td>Next gate</td><td>Specific evidence required to advance.</td></tr>
+</tbody></table>
+<h2>Product-Ready is market- and release-specific</h2>
+<p>Product-Ready is not a universal certificate. Each release must identify its product version, intended markets, applicable standards and regulations, assessment route, exclusions and approval record. Internal tests, independent laboratory tests, accredited certification and legal market authorisation are distinct forms of evidence.</p>
+<h2>Read the complete standard</h2>
+<ul><li><a href="https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/standards/PUI89_EVIDENCE_BASED_ENGINEERING_PRODUCT_READINESS_STANDARD_V1.0.md">PUI89 Evidence-Based Engineering &amp; Product Readiness Standard v1.0 (English)</a></li><li><a href="https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/standards/PUI89_EVIDENCE_BASED_ENGINEERING_PRODUCT_READINESS_STANDARD_V1.0.th.md">มาตรฐานฉบับภาษาไทย</a></li></ul>
+<p class="note">Adoption status: proposed for portfolio-wide adoption. Each product and capability must be assessed independently. Publishing this policy does not establish that any PUI89 product is Validated or Product-Ready.</p>
+<footer>PUI89 · Intelligence You Can Verify. <span>Evidence before claims.</span></footer>
+</main></body></html>
