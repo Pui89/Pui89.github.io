@@ -60,5 +60,4 @@ The combined PUI89 workflow runs selected dependency-free tests and publishes re
 1. Keep the combined workflow reliable and repair the broader test-environment/import failures.
 2. Run and review the newly added Coconut dataset-preflight checks against real, rights-reviewed data when such a manifest is ready.
 3. Measure the Coconut detector only after real held-out labels and predictions are available.
-4. Implement and run the Flood Rescue and Screening scenario matrices; do not mark them complete merely because the plans exist.
 5. Revisit VLM/VLA models and ROS 2 only after the above gates, with explicit licence, cost and resource checks.
