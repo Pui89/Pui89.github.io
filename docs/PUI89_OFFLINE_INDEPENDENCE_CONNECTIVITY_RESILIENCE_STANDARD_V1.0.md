@@ -54,8 +54,8 @@ L0 is the baseline design target. Failure of a higher level must not silently di
 - Provide an authorised local service/recovery route that does not require a cloud account. Protect service functions against unauthorised use.
 
 ### 3.5 Manuals, packaging and accessibility
-- Every shipped unit must include a printed, product-specific Quick Start and Safety Guide in the destination-market language. Include essential controls, intended/prohibited use, setup, local operation, stop/emergency-stop, offline behaviour, common faults and support contact details.
-- The complete user manual must be available as a printed or otherwise physically supplied offline-readable document, or a clearly identified offline package supplied with the product. It must not require QR, login, app or internet to read.
+- Every shipped unit must include both the complete printed, product-specific User Manual and a printed Quick Start & Safety Guide in the destination-market language. The complete manual must cover intended/prohibited use, installation, controls, operation, safety, stop/emergency-stop, offline behaviour, faults, maintenance, recovery, privacy and support. The quick-start guide summarises the critical steps.
+- Both printed documents must be inside the product box and readable immediately without a smartphone, QR scan, account, app, Wi-Fi or internet. QR code and a readable short URL are supplementary routes to the digital manual and support; they must never replace printed instructions. A downloadable, versioned offline PDF/HTML edition is an additional copy, never a replacement for the printed manual.
 - QR code and a short human-readable URL are supplementary routes to the current digital manual, updates, app information and support. Never put a QR code in place of essential safety text.
 - Provide a downloadable PDF and accessible HTML version, with version, product revision, language, release date and change history.
 - Print critical safety information on durable labels on the product where the risk assessment requires it.
