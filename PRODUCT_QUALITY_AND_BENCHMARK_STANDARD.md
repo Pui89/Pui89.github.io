@@ -53,13 +53,6 @@ Never tune on the final test set. Never describe a two-image experiment or synth
 - System: end-to-end latency and resource use on named existing hardware.
 - Robotics: simulation metrics first; no physical harvesting claim without separate mechanical, control, and safety validation.
 
-### Flood Rescue AI — research track
-- Perception/mapping: detection/localization error and map completeness against ground truth.
-- Navigation: success rate, time, path length, recovery rate, collisions and hazard exposure in documented simulations.
-- Robustness: sensor dropout, localization uncertainty, water/current/environment assumptions, communications loss.
-- Safety: emergency-stop behavior, fail-safe transitions, and human override in simulation/test rigs.
-- Simulation results must never be presented as real flood-rescue performance.
-
 ### Multimodal Narcotics Screening AI — restricted research track
 - Do not claim chemical identification from appearance alone.
 - Define the permitted screening task narrowly and use authorized, expert-reviewed, representative held-out data.
