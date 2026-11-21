@@ -14,7 +14,9 @@
       "kind": "vision-language-action-model",
       "provider": "Hugging Face",
       "source_url": "https://huggingface.co/lerobot/smolvla_base",
-      "intended_projects": ["Coconut-Harvest-AI", "Extreme-Flood-Rescue-AI"],
+      "intended_projects": [
+        "Coconut-Harvest-AI"
+      ],
       "intended_use": "Research candidate for offline, simulated action proposals behind the PUI89 safety gate.",
       "license_review": {
         "status": "RECHECK_REQUIRED",
@@ -36,7 +38,10 @@
       "kind": "vision-language-model",
       "provider": "Hugging Face",
       "source_url": "https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct",
-      "intended_projects": ["Coconut-Harvest-AI", "Extreme-Flood-Rescue-AI", "Multimodal-Narcotics-Screening-AI"],
+      "intended_projects": [
+        "Coconut-Harvest-AI",
+        "Multimodal-Narcotics-Screening-AI"
+      ],
       "intended_use": "Candidate for image description and evidence summarisation with explicit uncertainty and human review.",
       "license_review": {
         "status": "RECHECK_REQUIRED",
@@ -58,7 +63,9 @@
       "kind": "robotics-framework",
       "provider": "Hugging Face",
       "source_url": "https://github.com/huggingface/lerobot",
-      "intended_projects": ["Coconut-Harvest-AI", "Extreme-Flood-Rescue-AI"],
+      "intended_projects": [
+        "Coconut-Harvest-AI"
+      ],
       "intended_use": "Reference framework for robotics data formats, simulation workflows and future policy evaluation.",
       "license_review": {
         "status": "RECHECK_REQUIRED",
