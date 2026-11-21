@@ -38,13 +38,6 @@ The combined PUI89 workflow runs selected dependency-free tests and publishes re
 4. Test uncertainty, geometry assumptions, people/animal exclusion, invalid targets and safe hold.
 5. Run simulation only after a real simulator and scenarios are configured; hardware work requires independent risk assessment and physical safety controls.
 
-### Extreme Flood Rescue AI
-1. Separate scripted/synthetic software demonstrations from trained perception and simulator results.
-2. Configure a simulator and log scenario IDs, seeds, environment, sensor failures, collisions, route outcomes and safe-stop results.
-3. Test loss of localization, communication, sensor conflicts, low energy, poor visibility and out-of-envelope conditions.
-4. Evaluate ground, boat and aerial platforms separately. A 15 m design target is not evidence of operation at that depth.
-5. Do not claim field rescue readiness without qualified partners and staged safety approval.
-
 ### Multimodal Narcotics Screening AI
 1. State what each sensor physically measures; RGB appearance alone cannot confirm chemical identity.
 2. Validate sensor calibration, cross-sensitivity, provenance and lawful sample governance.
