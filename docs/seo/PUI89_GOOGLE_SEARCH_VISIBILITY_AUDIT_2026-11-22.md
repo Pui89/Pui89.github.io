@@ -64,7 +64,7 @@ This is a source and public-page audit, not an authenticated Search Console insp
 
 ## Draft CI results
 
-The GitHub Actions runs associated with this draft reported:
+The GitHub Actions runs associated with the initial implementation commit in this draft reported. A workflow run was not surfaced for the later report-only documentation update, so these results should not be read as a fresh check of the final PR head:
 
 - Website Quality Checks: passed.
 - Security Audit: passed.
