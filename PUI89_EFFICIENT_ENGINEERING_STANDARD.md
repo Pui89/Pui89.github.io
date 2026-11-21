@@ -87,7 +87,6 @@ No benchmark may authorise physical actuation. Hardware control remains separate
 | Project | Priority efficiency evidence |
 |---|---|
 | Coconut Harvest AI | Image pipeline RAM/latency, edge inference footprint, energy per inspection/harvest-assessment task |
-| Flood Rescue AI | Offline operation, battery endurance, sensor/network resilience, thermal and power budgets |
 | PUI89 Sentinel | Modality-specific processing cost, provenance-preserving storage, review latency and false-positive/false-negative trade-offs |
 | AI HOME | Standby power, event-triggered processing, local operation, privacy-preserving storage |
 | AI NOMAD | Battery runtime, portable compute/thermal budget, offline navigation and sensor duty cycles |
