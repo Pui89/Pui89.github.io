@@ -76,6 +76,12 @@ The reported blocking error is a missing local asset target, `/images/ai-nomad-c
 
 The same source check reported missing viewport metadata on ten additional repository HTML pages: `ai-robotics-thailand.html`, `ai-robotics-thailand-th.html`, `ai-vehicles.html`, `ai-vehicles-th.html`, `engineering-atlas.html`, `engineering-atlas-th.html`, `news.html`, `news-th.html`, `technology-radar.html` and `technology-radar-th.html`. These are follow-up mobile-readiness fixes, not evidence that Google currently blocks the main site. External-link checks were skipped after the local-reference failure.
 
+## Follow-up implementation on the same draft branch
+
+After the initial run, the missing NOMAD image was traced to an existing approved suitcase-form SVG in the PUI89 AI NOMAD product repository. The asset was copied into the website repository at `images/ai-nomad-smart-suitcase.svg`, and both homepage cards now reference it. Their alt text and short descriptions were aligned to the suitcase-form concept, telescopic handle and luggage-style wheels; no unverified four-wheel claim is made.
+
+The ten viewport warnings were inspected individually. All ten files are retired redirect stubs marked noindex and/or meta-refresh, with no meaningful page content. Instead of adding unnecessary viewport metadata to retired stubs, `scripts/check_site.py` now excludes these redirect-only files from the missing-viewport warning. Active content pages are still checked.
+
 ## Google guidance
 
 - URL Inspection distinguishes the indexed snapshot from a live test: https://support.google.com/webmasters/answer/9012289
