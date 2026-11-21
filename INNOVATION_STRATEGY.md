@@ -81,9 +81,6 @@ These should become shared components only when the repositories need them. Avoi
 ### Coconut Harvest AI — primary product discovery
 Focus: robust perception, uncertainty-aware review, orchard records, and eventual robotics feasibility. First validate one narrow user task.
 
-### Flood Rescue AI — dependable autonomy research
-Focus: simulation-first navigation and hazard mapping, sensor faults, uncertainty, safe stopping, and communication loss. Use realistic scenarios and specialist partners before any operational claims.
-
 ### Multimodal Screening AI — accountable evidence review
 Focus: handling missing or conflicting inputs, source provenance, uncertainty, and human decisions. Do not claim chemical identification, guilt determination, or autonomous enforcement. Assess domain-specific harm, privacy, and validation needs before any real deployment.
 
