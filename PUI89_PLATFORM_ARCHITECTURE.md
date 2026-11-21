@@ -82,12 +82,6 @@ Reuse data provenance, image review, detection/segmentation, experiment tracking
 
 **Acceptance evidence:** expert-reviewed labels, separate crop/task test sets, class-wise metrics and documented domain limitations.
 
-### 4. Flood Rescue AI
-
-Reuse mapping, scene representation, route planning and safety-supervisor concepts. Evaluate only in controlled simulation until suitable field permissions and safety procedures exist.
-
-**Acceptance evidence:** scenario-level mission completion, hazard-map quality, collisions, localization failures and human interventions. Never imply the current prototype can evacuate people.
-
 ### 5. Multimodal Inspection AI
 
 Reuse input adapters, uncertainty display, audit logging and evaluation. Each modality and target requires a lawful task definition and appropriately verified ground truth. A visual appearance must not be presented as chemical identification.
