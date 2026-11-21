@@ -87,7 +87,6 @@ Minimum evaluation dimensions:
 ## Project-specific adapters
 
 - Coconut Harvest AI: maturity observations, tree/workspace state, worker/animal exclusion, reach and cutter interlocks.
-- Extreme Flood Rescue AI: water level/current/obstacles, communications loss, victim reports, rescue-zone constraints and human mission authorization.
 - PUI89 Sentinel Screening: modality quality, sensor availability, provenance, abstention, false-positive/false-negative evaluation and authorised human review; no autonomous enforcement.
 - PUI89 AI HOME / NOMAD: environmental observations, sensor-health state, hazard severity, change/deterioration evidence and independent certified safety-device boundaries.
 
