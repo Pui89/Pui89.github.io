@@ -331,4 +331,18 @@
     <loc>https://pui89.github.io/multimodal-console.html</loc>
     <lastmod>2026-11-20</lastmod>
   </url>
+  <url>
+    <loc>https://pui89.github.io/founder.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/founder.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/founder-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/founder.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/founder-th.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/founder.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/founder-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/founder.html"/>
+  </url>
 </urlset>
