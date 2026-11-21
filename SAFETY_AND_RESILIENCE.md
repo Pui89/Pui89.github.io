@@ -2,7 +2,7 @@
 
 ## Purpose and status
 
-This document defines cross-project requirements for the Coconut Harvest AI, Flood Rescue AI, and Multimodal Narcotics Screening AI projects. It is a development standard, not a certification or a claim that every control is already implemented. Each repository must identify what is implemented, tested, in progress, and planned.
+This document defines cross-project requirements for all six active PUI89 products. It is a development standard, not a certification or a claim that every control is already implemented. Each repository must identify what is implemented, tested, in progress, and planned.
 
 ## Shared safety requirements
 
@@ -46,12 +46,6 @@ Before any hardware trial:
 - Keep people clear of the arm, cutter, falling fruit, and moving platform.
 - Do not rely on AI alone for stability, reach, collision avoidance, or confirmation that a harvest is safe.
 - Treat tree height, payload, reach, cutting reliability, and capture success as unverified until measured under the intended conditions.
-
-### Flood Rescue AI
-- Loss of localization, depth sensing, communications, power margin, or obstacle detection must trigger the defined safe behavior for the platform and environment.
-- Do not send a robot, boat, or drone into a hazardous area based only on an uncertain model prediction.
-- Keep a human responsible for rescue decisions; avoid actions that could endanger survivors or responders.
-- Test water, terrain, GPS-denied, sensor-loss, and link-loss scenarios in simulation before any controlled physical trial.
 
 ### Multimodal Narcotics Screening AI
 - Treat model outputs as uncertain screening hypotheses, not proof of chemical identity or guilt.
