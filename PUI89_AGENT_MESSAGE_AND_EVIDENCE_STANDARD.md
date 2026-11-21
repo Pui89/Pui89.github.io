@@ -2,7 +2,7 @@
 
 **Status:** contract design and validator implementation are separate gates; project adapters are not yet integrated.
 
-This standard defines a common auditable record for proposals from specialist software agents across Coconut Harvest AI, Extreme Flood Rescue AI and Multimodal Narcotics Screening AI.
+This standard defines a common auditable record for proposals from specialist software agents across all six active PUI89 products.
 
 ## Agent message fields
 
@@ -27,7 +27,7 @@ Claims with the same `claim_key` and different values are flagged for review. Th
 ## Application boundaries
 
 - Coconut: maturity and geometry claims must link to source images or sensor records; occlusion and unverified reachability remain limitations.
-- Flood Rescue: water-level, flow, localization and victim-detection claims retain sensor/time provenance; stale or conflicting measurements must not be silently merged.
+- PUI89 Sentinel: terrain, obstacle and inspection observations retain sensor/time provenance; stale or conflicting measurements must not be silently merged.
 - Narcotics Screening: RGB appearance is not chemical identification. Substance-related claims require validated sensor evidence, calibration and human review.
 
 ## Verification limits
