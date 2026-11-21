@@ -82,6 +82,16 @@ After the initial run, the missing NOMAD image was traced to an existing approve
 
 The ten viewport warnings were inspected individually. All ten files are retired redirect stubs marked noindex and/or meta-refresh, with no meaningful page content. Instead of adding unnecessary viewport metadata to retired stubs, `scripts/check_site.py` now excludes these redirect-only files from the missing-viewport warning. Active content pages are still checked.
 
+## Final validation after follow-up fixes
+
+On the latest validation commit (`7639e075c8a69f10ffad0879f994f0c084887077`):
+
+- All-page local references, sitemap entries, image assets, QR asset structure and accessibility-source checks passed with zero errors and zero warnings.
+- External link validation completed: 110 passed, 0 failed, 6 inconclusive (three ISO pages returned HTTP 403, one ROS documentation page returned HTTP 500, and two STMicroelectronics pages timed out). These are reported as inconclusive rather than broken links.
+- The only previously failing external link was the private Shared AI Core repository URL used on the NOMAD EN/TH pages. It was replaced with the corresponding public PUI89 Shared AI Core overview pages on this website. The private repository remains private; no access was changed.
+- Website Quality Checks, Security Audit, Website Verification and Automated Repository Quality Gate passed.
+- The Pages build job completed successfully and uploaded the site artifact. The deployment job was skipped because this is a pull request; no production deployment occurred.
+
 ## Google guidance
 
 - URL Inspection distinguishes the indexed snapshot from a live test: https://support.google.com/webmasters/answer/9012289
