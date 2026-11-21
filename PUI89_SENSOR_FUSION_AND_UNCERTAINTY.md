@@ -2,7 +2,7 @@
 
 ## Purpose
 A dependency-free baseline for assessing supplied observations across Coconut
-Harvest AI, Extreme Flood Rescue AI, and Multimodal Narcotics Screening AI.
+the six active PUI89 products.
 
 ## Current implementation
 - Validates required fields, timezone-aware timestamps, unique IDs, and supplied
