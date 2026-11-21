@@ -15,13 +15,12 @@ The most important findings are two conflicting physical-mass specifications bet
 
 These conflicts must be resolved before BOM freeze, supplier selection, mechanical sizing or public promotion. This audit uses the latest portfolio decisions as the intended baseline: HOME 8 kg target / 10 kg maximum; NOMAD 8–10 kg target / 10 kg maximum. Both remain design targets, not measured results.
 
-A further terminology issue exists in Coconut Harvest AI and Extreme Flood Rescue AI: their README maturity snapshots say “Level 4 — Tested Prototype”, while their more specific development-stage sections describe software/evaluation preparation or software/synthetic-scenario evaluation and explicitly state that physical harvesting/rescue capabilities are not validated. These labels may refer to a legacy software maturity scale, but they are not directly mapped to the new World-Class gates. The scale must be clarified so readers do not interpret them as physical prototype validation.
 
 ## 2. Scope and method
 
 Reviewed:
 - Seven default-branch product READMEs.
-- Seven English product pages: coconut.html, flood-rescue.html, sentinel.html, home.html, nomad.html, ai-global-suv.html and ai-robot-motorcycle.html.
+- Six English product pages: coconut.html, sentinel.html, home.html, nomad.html, ai-global-suv.html and ai-robot-motorcycle.html.
 - Presence of the World-Class Engineering Standard v1.0 reference in those files.
 - Product identity, development-stage wording, selected design targets, safety boundaries, evidence statements and cost/BOM language visible in repository documentation.
 
@@ -98,7 +97,6 @@ The READMEs contain preliminary prototype cost estimates and hardware/materials 
 | Product | Documentation strengths observed | Highest-priority gap |
 |---|---|---|
 | Coconut Harvest AI | Four maturity classes, PTI, dataset/evaluation plan, safety limits, software stage and physical limits are described | Clarify legacy Level 4 maturity label; close dataset rights/annotation and real-image benchmark evidence |
-| Extreme Flood Rescue AI | Synthetic scenarios, safety gates and explicit 15 m simulation boundary are described | Clarify legacy Level 4 maturity label; distinguish software scenario testing from physical prototype testing |
 | PUI89 Sentinel | Clear quadruped inspection identity, target operating contexts, mobility requirements, safety/human oversight and validation links | Add standardised requirement-to-test evidence table and staged hardware/simulation gate status |
 | AI HOME | Indoor assistant identity, 8 kg / 10 kg mass targets, safety/privacy and software foundation are described in README | Website mass specification conflicts with README; align EN/TH pages before BOM work |
 | AI NOMAD | Distinct four-wheel dog-inspired mobile assistant, handle and 8–10 kg / 10 kg mass target are described in README | Website mass specification conflicts with README; reconcile indoor/outdoor positioning and align EN/TH pages |
