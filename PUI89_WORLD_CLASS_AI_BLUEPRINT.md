@@ -18,7 +18,6 @@ Use a **shared core with four domain adapters**. Reuse contracts and verificatio
 | Product | Specialist AI direction | Highest-value evidence gate |
 |---|---|---|
 | **Coconut Harvest AI** | Fruit detection, four-stage maturity assessment, orchard scene understanding, target localisation, uncertainty-aware harvest planning | Resolve data rights/provenance and annotation QA; then run a frozen, tree/source-separated held-out vision benchmark |
-| **Extreme Flood Rescue AI** | Human/animal candidate perception, terrain/water state estimation, hazard mapping, communications-aware navigation research and mission prioritisation | Reproducible scenario and fault testing; later validate water physics, platform stability and navigation separately |
 | **Multimodal Narcotics Screening AI** | Modality-quality assessment, calibrated evidence fusion, anomaly screening and human-reviewed inspection workflow | Lawful sensor/data provenance and expert-reviewed modality-specific evaluation; report false positives and false negatives |
 | **HOMEGUARD AI** | Structural health monitoring, electrical/environmental condition signals, water/fire/air monitoring, acoustic/light/thermal evidence and building-level change detection | Extend sensor-quality and spatial evidence contracts; later validate calibrated sensors and building-specific baselines |
 
@@ -127,7 +126,6 @@ No unrestricted self-modifying agent, automatic PR merge, autonomous enforcement
 - SAFE_HOLD when maturity, target location, reachability, stability, tool state or approval is unknown.
 - 0–30 m remains a design target, not validated capability.
 
-### 02 — Extreme Flood Rescue AI
 
 - Maintain explicit water depth, current, obstacle, localisation, communications and platform state.
 - Test sensor loss, stale data, communication failure, map uncertainty and emergency-stop requests.
@@ -218,7 +216,7 @@ These are engineering references, not claims of certification:
 
 ## 8. Next controlled milestone — Level 12
 
-The next implementation gate is [PUI89 AI Core — Level 12 Cross-Project Conformance](PUI89_AI_CORE_LEVEL_12_CONFORMANCE.md). It applies to Coconut, Flood Rescue, Screening, AI HOME, AI NOMAD, AI Car and AI Motorcycle.
+The next implementation gate is [PUI89 AI Core — Level 12 Cross-Project Conformance](PUI89_AI_CORE_LEVEL_12_CONFORMANCE.md). It applies to Coconut Harvest AI, PUI89 Sentinel, AI HOME, AI NOMAD, AI Global SUV and AI Step-Through Scooter.
 
 Before selecting another model, align the four canonical records (Observation, WorldState, ActionProposal and FailureReport), evidence references, uncertainty/abstention, timestamp and provenance validation, failure retention, and simulation/advisory-only action boundaries. Use dependency-light synthetic tests and report each repository's own commit and result.
 
