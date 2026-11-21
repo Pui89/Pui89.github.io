@@ -1,7 +1,7 @@
 # PUI89 Engineering Roadmap — Current Actions
 
 **Updated:** 17 November 2026  
-**Active portfolio:** exactly six products. Shared AI Core is infrastructure, not a seventh product. Extreme Flood Rescue AI is an inactive historical standalone project; preserve its repository and records.
+**Active portfolio:** exactly six products. Shared AI Core is infrastructure, not a seventh product.
 
 The canonical product names, repositories, bilingual website links and founder-approved boundaries are in [PUI89 Portfolio Source of Truth v1.0](PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.0.md).
 
