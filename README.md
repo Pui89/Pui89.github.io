@@ -227,3 +227,14 @@ PUI89's engineering principle for this product is to start with the simplest use
 - [PUI89 Offline Independence & Connectivity Resilience Standard v1.0](docs/PUI89_OFFLINE_INDEPENDENCE_CONNECTIVITY_RESILIENCE_STANDARD_V1.0.md)
 - Every product must document what works at fully offline, local-connection, internet-connected and remote-service levels. The app and QR code are optional; neither replaces printed safety instructions or local controls.
 - This is an engineering standard and development requirement, not evidence that products are implemented, tested, certified or validated.
+
+
+## Evidence-Based Engineering & Product Readiness
+
+PUI89's public engineering policy is **No Evidence, No Readiness Claim**. The controlled maturity sequence is Proposed → Specified → Implemented → Tested → Validated → Product-Ready. Each public claim must show its scope, evidence status, verified conditions, limitations, and next gate. A successful build, test suite, simulation, or demo alone does not establish validation or product readiness.
+
+- [English standard](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/standards/PUI89_EVIDENCE_BASED_ENGINEERING_PRODUCT_READINESS_STANDARD_V1.0.md)
+- [มาตรฐานภาษาไทย](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/standards/PUI89_EVIDENCE_BASED_ENGINEERING_PRODUCT_READINESS_STANDARD_V1.0.th.md)
+- [Website: Engineering Standards](https://pui89.github.io/engineering-standards.html) · [ภาษาไทย](https://pui89.github.io/engineering-standards-th.html)
+
+The standard is proposed for portfolio-wide adoption. Product maturity must be assessed separately using product-specific evidence; no Product-Ready claim is implied by publishing the standard.
