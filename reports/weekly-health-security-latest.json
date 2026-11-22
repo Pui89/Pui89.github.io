@@ -1,0 +1,448 @@
+{
+  "generated_at": "2026-11-23T00:37:04.686171+07:00",
+  "repositories": [
+    {
+      "name": "Pui89/AI-Home-Safety-Robot",
+      "url": "https://github.com/Pui89/AI-Home-Safety-Robot",
+      "branch": "main",
+      "updated_at": "2026-11-14T12:22:24Z",
+      "open_prs": 22,
+      "findings": [
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-home-contract-smoke.yml may use mutable action tags; review immutable SHA pinning."
+        ]
+      ],
+      "notes": [
+        "22 open pull request(s).",
+        "Latest visible Actions run: success (PUI89 Security Audit).",
+        "Security policy file: present.",
+        "Licence file: present.",
+        "0 dependency manifest/lock file(s); 4 workflow file(s).",
+        "Branch protection/ruleset status not verified (permission-limited or unavailable)."
+      ],
+      "status": "review_required"
+    },
+    {
+      "name": "Pui89/AI-Mobile-Assistant-Robot",
+      "url": "https://github.com/Pui89/AI-Mobile-Assistant-Robot",
+      "branch": "main",
+      "updated_at": "2026-11-11T19:39:11Z",
+      "open_prs": 32,
+      "findings": [
+        [
+          "LOW",
+          "Workflow .github/workflows/ci.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-three-layer-security.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-resilience.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/water-resilience.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-shared-intelligence-contract.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/daily-project-progress.yml may use mutable action tags; review immutable SHA pinning."
+        ]
+      ],
+      "notes": [
+        "32 open pull request(s).",
+        "Latest visible Actions run: success (HOMEGUARD CI).",
+        "Security policy file: present.",
+        "Licence file: present.",
+        "1 dependency manifest/lock file(s); 9 workflow file(s).",
+        "Branch protection/ruleset status not verified (permission-limited or unavailable)."
+      ],
+      "status": "review_required"
+    },
+    {
+      "name": "Pui89/AI-Step-Through-Scooter",
+      "url": "https://github.com/Pui89/AI-Step-Through-Scooter",
+      "branch": "main",
+      "updated_at": "2026-11-17T13:39:15Z",
+      "open_prs": 21,
+      "findings": [
+        [
+          "LOW",
+          "Workflow .github/workflows/quality.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/daily-project-progress.yml may use mutable action tags; review immutable SHA pinning."
+        ]
+      ],
+      "notes": [
+        "21 open pull request(s).",
+        "Latest visible Actions run: success (PUI89 Security Audit).",
+        "Security policy file: present.",
+        "Licence file: present.",
+        "0 dependency manifest/lock file(s); 5 workflow file(s).",
+        "Branch protection/ruleset status not verified (permission-limited or unavailable)."
+      ],
+      "status": "review_required"
+    },
+    {
+      "name": "Pui89/Coconut-Harvest-AI",
+      "url": "https://github.com/Pui89/Coconut-Harvest-AI",
+      "branch": "main",
+      "updated_at": "2026-11-18T11:27:49Z",
+      "open_prs": 41,
+      "findings": [
+        [
+          "LOW",
+          "Workflow .github/workflows/tests.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-automated-verification.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/water-resilience.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/coconut-lightweight-core-tests.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/coconut-dataset-evidence-audit.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/coconut-inspection-records.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/coconut-dataset-preflight.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-resilience.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-simulation-benchmark.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-shared-intelligence-contract.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-free-checks.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-automation.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-system-guardrails.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-shared-interface-smoke.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-pitfall-checks.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/collect-coconut-real-image-batch.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/coconut-simulation-evaluation.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/daily-project-progress.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-coconut-adapter.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-health-gate.yml may use mutable action tags; review immutable SHA pinning."
+        ]
+      ],
+      "notes": [
+        "41 open pull request(s).",
+        "Latest visible Actions run: success (PUI89 Shared Intelligence Contract).",
+        "Security policy file: present.",
+        "Licence file: present.",
+        "3 dependency manifest/lock file(s); 27 workflow file(s).",
+        "Branch protection/ruleset status not verified (permission-limited or unavailable)."
+      ],
+      "status": "review_required"
+    },
+    {
+      "name": "Pui89/Pui89",
+      "url": "https://github.com/Pui89/Pui89",
+      "branch": "main",
+      "updated_at": "2026-11-12T07:53:26Z",
+      "open_prs": 0,
+      "findings": [
+        [
+          "LOW",
+          "No recent workflow run visible; confirm Actions configuration."
+        ]
+      ],
+      "notes": [
+        "0 open pull request(s).",
+        "Security policy file: not found in default-branch tree.",
+        "Licence file: not found in default-branch tree.",
+        "0 dependency manifest/lock file(s); 0 workflow file(s).",
+        "Branch protection/ruleset status not verified (permission-limited or unavailable)."
+      ],
+      "status": "review_required"
+    },
+    {
+      "name": "Pui89/PUI89-AI-Global-SUV",
+      "url": "https://github.com/Pui89/PUI89-AI-Global-SUV",
+      "branch": "main",
+      "updated_at": "2026-11-19T20:43:27Z",
+      "open_prs": 29,
+      "findings": [],
+      "notes": [
+        "29 open pull request(s).",
+        "Latest visible Actions run: success (PUI89 Automated Repository Quality Gate).",
+        "Security policy file: present.",
+        "Licence file: present.",
+        "0 dependency manifest/lock file(s); 4 workflow file(s).",
+        "Branch protection/ruleset status not verified (permission-limited or unavailable)."
+      ],
+      "status": "no_high_signal_finding"
+    },
+    {
+      "name": "Pui89/PUI89-All-Terrain-Inspection-Robot",
+      "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot",
+      "branch": "main",
+      "updated_at": "2026-11-17T06:06:45Z",
+      "open_prs": 37,
+      "findings": [
+        [
+          "LOW",
+          "Workflow .github/workflows/screening-regression.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/tests.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-fast-preflight.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-automated-verification.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/free-resource-link-cleanup.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/water-resilience.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/codeql.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/narcotics-simulation-evaluation.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/benchmark-validator.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/fault-monitor-tests.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-resilience.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-simulation-benchmark.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/release.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/dataset-recovery.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-shared-intelligence-contract.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/agent-evaluation.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-free-checks.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/dependency-review.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-automation.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/ci.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-shared-interface-smoke.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-pitfall-checks.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/agent-tests.yml may use mutable action tags; review immutable SHA pinning."
+        ]
+      ],
+      "notes": [
+        "37 open pull request(s).",
+        "Latest visible Actions run: success (PUI89 Three-Layer Security Baseline).",
+        "Security policy file: present.",
+        "Licence file: present.",
+        "2 dependency manifest/lock file(s); 33 workflow file(s).",
+        "Branch protection/ruleset status not verified (permission-limited or unavailable)."
+      ],
+      "status": "review_required"
+    },
+    {
+      "name": "Pui89/Pui89.github.io",
+      "url": "https://github.com/Pui89/Pui89.github.io",
+      "branch": "main",
+      "updated_at": "2026-11-12T08:24:08Z",
+      "open_prs": 61,
+      "findings": [
+        [
+          "MEDIUM",
+          "Latest visible Actions run is not completed."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-combined-quality-report.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/validate-project-review-register.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/portfolio-register-validation.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-world-state.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pages.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/free-resource-link-cleanup.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/homeguard-ai-ci.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-agent-contract.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/manufacturing-template-quality.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-long-horizon-evaluation.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-command-centre.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-resource-preflight.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-adaptive-orchestrator.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-sensor-fusion.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-huggingface-registry.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-level13-portfolio-verification.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-website-verification.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-mission-replay.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-model-adapter.yml may use mutable action tags; review immutable SHA pinning."
+        ],
+        [
+          "LOW",
+          "Workflow .github/workflows/pui89-site-check.yml may use mutable action tags; review immutable SHA pinning."
+        ]
+      ],
+      "notes": [
+        "61 open pull request(s).",
+        "Latest visible Actions run: in_progress (PUI89 Weekly Health and Security Report).",
+        "Security policy file: present.",
+        "Licence file: not found in default-branch tree.",
+        "1 dependency manifest/lock file(s); 23 workflow file(s).",
+        "Branch protection/ruleset status not verified (permission-limited or unavailable)."
+      ],
+      "status": "review_required"
+    }
+  ],
+  "finding_counts": {
+    "HIGH": 0,
+    "MEDIUM": 1,
+    "LOW": 73
+  }
+}
