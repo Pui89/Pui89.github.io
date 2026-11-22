@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" role="img" aria-labelledby="title desc">
 <title id="title">PUI89</title>
-<desc id="desc">Original PUI89 logo typography and geometry recolored in titanium silver and deep blue, with a subtle titanium glow on the N.</desc>
+<desc id="desc">Original PUI89 logo typography and geometry preserved; recolored in Platinum Titanium and Sapphire Blue on Deep Navy.</desc>
 <defs>
   <linearGradient id="titanium" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#F1F3F6"/>
-    <stop offset=".48" stop-color="#C4CDD6"/>
-    <stop offset="1" stop-color="#AAB5C0"/>
+    <stop offset="0" stop-color="#F5F4F1"/>
+    <stop offset=".48" stop-color="#E5E4E2"/>
+    <stop offset="1" stop-color="#B8B8B3"/>
   </linearGradient>
   <filter id="titaniumGlow" x="-30%" y="-30%" width="160%" height="160%">
     <feGaussianBlur stdDeviation="3" result="blur"/>
@@ -14,7 +14,7 @@
 </defs>
 <g>
   <path d="M70 35H142L278 215V35H350V265H278L142 85V265H70Z" fill="url(#titanium)" filter="url(#titaniumGlow)"/>
-  <path d="M278 35H350V112H278Z" fill="#174EA6"/>
+  <path d="M278 35H350V112H278Z" fill="#0F52BA"/>
 </g>
-<text x="445" y="204" font-family="Arial, Helvetica, sans-serif" font-size="142" font-weight="850" letter-spacing="-3"><tspan fill="#C4CDD6">PUI</tspan><tspan fill="#174EA6">89</tspan></text>
+<text x="445" y="204" font-family="Arial, Helvetica, sans-serif" font-size="142" font-weight="850" letter-spacing="-3"><tspan fill="#E5E4E2">PUI</tspan><tspan fill="#0F52BA">89</tspan></text>
 </svg>
