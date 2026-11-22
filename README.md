@@ -238,3 +238,21 @@ PUI89's public engineering policy is **No Evidence, No Readiness Claim**. The co
 - [Website: Engineering Standards](https://pui89.github.io/engineering-standards.html) · [ภาษาไทย](https://pui89.github.io/engineering-standards-th.html)
 
 The standard is proposed for portfolio-wide adoption. Product maturity must be assessed separately using product-specific evidence; no Product-Ready claim is implied by publishing the standard.
+
+
+## Latest portfolio progress — 22 November 2026
+
+The official portfolio remains **six active products**; Shared AI Core is shared infrastructure. Extreme Flood Rescue AI is retired. “AI Robot Car” is a legacy alias for PUI89 AI Global SUV, and former EasyRide/Motorcycle names are aliases for PUI89 AI Step-Through Scooter. NOMAD's current product identity is the suitcase-form mobile assistant.
+
+| Active product | Current maturity | Latest documented progress | Next evidence gate |
+|---|---|---|---|
+| Coconut Harvest AI | Implemented — software/evaluation-preparation | Multilingual manual and offline-first requirements merged; real-image evaluation intake and annotation-quality tooling advanced. | Rights-cleared real images, human-reviewed labels, leakage-safe split and reproducible CPU metrics. |
+| PUI89 Sentinel | Specified | Representative warehouse inspection mission, geometry and joint-load-case documentation merged. | Site survey, operating envelope, hazards and measurable mission acceptance criteria. |
+| PUI89 AI HOME | Implemented — early software foundation | Offline-first controls, printed manual and remote-companion requirements merged. | Software-only home-awareness demonstrator with traceable mock observations and repeatable tests. |
+| PUI89 AI NOMAD | Implemented — early software foundation | Suitcase-form identity corrected; obsolete non-suitcase/rover references removed. | User-validated dimensions, handle/wheel ergonomics, mass and power budgets, acceptance criteria. |
+| PUI89 AI Global SUV | Implemented — software-only safety/contract foundation | Offline-first and multilingual manual/remote-companion requirements merged; driver authority retained. | Hazard/use-case baseline and reproducible advisory-only scenario evaluation. |
+| PUI89 AI Step-Through Scooter | Specified | Offline-first requirements merged; malformed/non-finite synthetic risk inputs are rejected and boundary tests were added. | Reproducible test-run evidence, rider hazard analysis and measurable acceptance criteria. |
+
+These maturity labels describe the strongest documented state, not commercial readiness. No physical prototype, field validation, certification or commercial release is implied. Do not publish readiness percentages; use the [Evidence-Based Development Maturity Standard](docs/PUI89_DEVELOPMENT_STAGE_STANDARD.md) and [Portfolio Source of Truth v1.2](docs/PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.2.md).
+
+**Last reviewed:** 22 November 2026. The detailed bilingual evidence summary is published at [Evidence & Progress — EN](https://pui89.github.io/evidence.html) and [TH](https://pui89.github.io/evidence-th.html).
