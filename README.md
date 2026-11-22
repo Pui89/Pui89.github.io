@@ -238,3 +238,8 @@ PUI89's public engineering policy is **No Evidence, No Readiness Claim**. The co
 - [Website: Engineering Standards](https://pui89.github.io/engineering-standards.html) · [ภาษาไทย](https://pui89.github.io/engineering-standards-th.html)
 
 The standard is proposed for portfolio-wide adoption. Product maturity must be assessed separately using product-specific evidence; no Product-Ready claim is implied by publishing the standard.
+
+
+## Global Engineering & Manufacturing
+
+The bilingual [Global Engineering & Manufacturing portal](https://pui89.github.io/global-engineering.html) provides the six-product manufacturing overview. The [Global Engineering & Manufacturing Standard v1.0](docs/PUI89_GLOBAL_ENGINEERING_MANUFACTURING_STANDARD_V1.0.md) defines documentation levels, SI units, materials/component provenance, extreme-climate qualification, manufacturing transfer, quality gates and evidence labels. Product-specific preliminary briefs are linked from the portal. All candidate specifications remain distinct from released production specifications and verified capabilities.
