@@ -44,6 +44,10 @@ The bilingual [PUI89 Product Operating Coverage Standard v1.0](docs/PUI89_PRODUC
 
 The authoritative six-product scope, Sentinel's general multimodal quadruped identity, evidence-label rules and bilingual website review checklist are recorded in [PUI89 Portfolio Alignment Register](docs/PUI89_PORTFOLIO_ALIGNMENT_REGISTER_2026-11-18.md). This is a governance record, not a claim that every product capability is implemented or validated.
 
+## Global manufacturing handoff system
+
+PUI89 now maintains a common [Global Manufacturing Handoff System v1.0](docs/PUI89_GLOBAL_MANUFACTURING_HANDOFF_SYSTEM_V1.0.md) across all six active product repositories. It defines exact component/BOM data, material and process controls, interfaces, work instructions, inspection and test evidence, approved substitutions, TQ/NCR/ECR workflows, factory qualification and release authority. It is designed so qualified teams can work from controlled records without relying on undocumented founder explanations. Unknown values remain **TBD / NOT RELEASED** and must never be guessed.
+
 ## What PUI89 is building
 
 PUI89 develops six active product projects supported by a shared AI engineering direction:
@@ -238,3 +242,8 @@ PUI89's public engineering policy is **No Evidence, No Readiness Claim**. The co
 - [Website: Engineering Standards](https://pui89.github.io/engineering-standards.html) · [ภาษาไทย](https://pui89.github.io/engineering-standards-th.html)
 
 The standard is proposed for portfolio-wide adoption. Product maturity must be assessed separately using product-specific evidence; no Product-Ready claim is implied by publishing the standard.
+
+
+## Global Engineering & Manufacturing
+
+The bilingual [Global Engineering & Manufacturing portal](https://pui89.github.io/global-engineering.html) provides the six-product manufacturing overview. The [Global Engineering & Manufacturing Standard v1.0](docs/PUI89_GLOBAL_ENGINEERING_MANUFACTURING_STANDARD_V1.0.md) defines documentation levels, SI units, materials/component provenance, extreme-climate qualification, manufacturing transfer, quality gates and evidence labels. Product-specific preliminary briefs are linked from the portal. All candidate specifications remain distinct from released production specifications and verified capabilities.
