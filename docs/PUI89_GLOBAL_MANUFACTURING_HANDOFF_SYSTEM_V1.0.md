@@ -201,6 +201,9 @@ A product cannot enter production release until the applicable package is comple
 
 Use these fields in controlled CSV/XLSX or repository templates; do not leave blank cells ambiguous:
 - **Requirements register:** Requirement ID, shall statement, rationale, variant, condition, unit, acceptance limit, verification method, owner, evidence ID, status.
+- **Hardware component register:** functional class, required ratings, environmental limits, derating, interfaces, failure behaviour, diagnostics, selected exact part and verification evidence.
+- **Engineering decision register:** unresolved decision, constraints, options, required evidence, owner, approver and release gate.
+- **Product configuration baseline:** exact approved product/variant, BOM, drawings, interfaces, software, work instructions, factory site and release record.
 - **BOM:** Item, part number, description, quantity, manufacturer, exact MPN, revision, material/grade, rating, supplier/site, origin, approved alternate, inspection, evidence, lifecycle.
 - **Drawing register:** Drawing ID, part, revision, units, scale, CAD source, STEP, PDF, DXF, datum scheme, tolerances, material, finish, approval.
 - **Interface register:** Interface ID, endpoints/revisions, mechanical/electrical/data/thermal definition, pinout/protocol, limits, fault behaviour, verification.
