@@ -1,6 +1,6 @@
 # PUI89 Portfolio Source of Truth v1.2
 
-**Effective review date:** 21 November 2026  
+**Effective review date:** 22 November 2026  
 **Owner:** PUI89  
 **Status:** Portfolio governance and documentation reference  
 **Scope:** Official active product identity, repository mapping, shared infrastructure boundaries and evidence-language rules.
