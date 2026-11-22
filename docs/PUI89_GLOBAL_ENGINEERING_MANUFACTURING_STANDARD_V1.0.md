@@ -101,3 +101,8 @@ Requirements freeze → preliminary design review → detailed design review →
 ## Mandatory manufacturing handoff control system
 
 The common production-control rules are defined in the [PUI89 Global Manufacturing Handoff System v1.0](PUI89_GLOBAL_MANUFACTURING_HANDOFF_SYSTEM_V1.0.md). It is mandatory for every product and qualified manufacturing site. It standardises hardware classes, exact BOM data, material/process callouts, interfaces, work instructions, quality-control plans, test evidence, TQ/NCR/ECR handling, approved substitutions, worker competence, factory transfer and release authority. A missing value is **TBD / NOT RELEASED**, never an invitation to estimate.
+
+
+## Common production templates
+
+Use the controlled [PUI89 Manufacturing Control Templates v1.0](https://github.com/Pui89/Pui89.github.io/tree/main/docs/manufacturing-templates) for requirements, BOM, drawing, interface, control-plan, test-report, change/non-conformance, worker-training and factory-transfer records. Templates contain field definitions only; they are not completed specifications or approval to manufacture.
