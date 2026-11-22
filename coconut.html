@@ -128,6 +128,26 @@ a:hover{color:#B8F2FF}
   <article class="coco-story-card"><h3>Operator and safety layer</h3><p>The operator remains responsible for consequential harvest decisions. AI output alone must never trigger cutting or hazardous movement.</p><ul><li>Local status and warnings</li><li>Human confirmation</li><li>Safe hold and emergency stop design</li></ul></article>
  </div>
 </section>
+<section class="coco-story" id="coconut-single-cut-mixed-bunch" aria-labelledby="coco-single-cut-title">
+ <p class="eyebrow">Proposed harvesting concept · Mixed maturity</p>
+ <h2 id="coco-single-cut-title">One Cut. One Bunch. Four Maturity Stages.</h2>
+ <p class="intro">A single coconut bunch may contain individual coconuts at different visible maturity stages. The proposed workflow detaches the bunch with one cut at its attachment point, then assesses each coconut in that same bunch individually. It does not mean four separate cuts or that every fruit in a bunch has the same maturity.</p>
+ <div class="coco-story-grid">
+  <article class="coco-story-card"><h3>01 · Capture the whole bunch</h3><p>Use real images of complete bunches, including naturally mixed maturity, different viewpoints, lighting and partial occlusion.</p></article>
+  <article class="coco-story-card"><h3>02 · Identify each coconut</h3><p>Detect or segment individual fruits, retain one shared bunch ID, and assign each visible fruit its own maturity class and uncertainty.</p></article>
+  <article class="coco-story-card"><h3>03 · Report four class counts</h3><p>Summarise Young Green, Mature Green, Yellow and Brown fruit within that one bunch. Send obscured or ambiguous fruit for human review.</p></article>
+ </div>
+ <div class="coco-stage-list" aria-label="Four proposed visual maturity classes">
+  <div class="coco-stage"><b>01 · Young Green</b><span>Per-fruit visual class</span></div>
+  <div class="coco-stage"><b>02 · Mature Green</b><span>Per-fruit visual class</span></div>
+  <div class="coco-stage"><b>03 · Yellow</b><span>Per-fruit visual class</span></div>
+  <div class="coco-stage"><b>04 · Brown</b><span>Per-fruit visual class</span></div>
+ </div>
+ <p class="coco-evidence-note"><strong>Real-image model test plan:</strong> compare candidate models on the same rights-cleared, human-annotated images. Report per-class precision, recall and F1, confusion matrix, fruit-count errors, missed/duplicate detections, uncertainty, runtime, RAM, sample sizes and failure cases. No model is ranked until testing is complete.</p>
+ <p class="coco-evidence-note"><strong>Variable dimensions:</strong> test different bunch and fruit sizes, shapes, orientations, stem geometry, camera angles, lighting and occlusion. “All dimensions” is a design objective requiring a defined test envelope—not a verified universal capability.</p>
+ <p class="coco-evidence-note"><strong>Cutting safety:</strong> one cut at the bunch attachment is a proposed mechanical requirement only. The bunch must be supported and its fall controlled before a supervised trial. Guarded tooling, emergency stop and safe-state controls are required. AI classification alone must never trigger cutting.</p>
+ <p class="coco-evidence-note"><strong>Evidence status:</strong> proposed concept and test plan. Real-image benchmarks, selected best model, universal size coverage and physical one-cut performance are not yet established.</p>
+</section>
 <section class="coco-story" id="coconut-maturity-guide" aria-labelledby="coco-maturity-title">
  <p class="eyebrow">AGRONOMIC VISUAL GUIDE</p><h2 id="coco-maturity-title">Four working coconut maturity categories</h2>
  <p class="intro">These are proposed project labels for dataset review and agronomic assessment. They are not yet validated model classes; cultivar, intended use, lighting and orchard conditions can affect visible appearance.</p>
