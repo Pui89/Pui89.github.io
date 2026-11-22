@@ -1,0 +1,25 @@
+name: Manufacturing Template Quality
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "docs/manufacturing-templates/**"
+      - "scripts/validate_manufacturing_templates.py"
+      - ".github/workflows/manufacturing-template-quality.yml"
+  workflow_dispatch:
+  schedule:
+    - cron: "17 4 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-templates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Validate controlled manufacturing templates
+        run: python3 scripts/validate_manufacturing_templates.py
