@@ -27,6 +27,9 @@ These templates make production work transferable between countries and factorie
 | File | Use |
 |---|---|
 | requirements-register.csv | One uniquely identified, testable requirement per row |
+| hardware-component-register.csv | Functional hardware definition, ratings, environment, interfaces and selected-part traceability |
+| engineering-decision-register.csv | Open design decisions, evidence needed, ownership and approval gates |
+| product-configuration-baseline.csv | Exact released product/variant/site/software/BOM/drawing configuration baseline |
 | bom.csv | Exact item identity, manufacturer part number, rating, approved source and traceability |
 | drawing-register.csv | CAD/STEP/PDF/DXF files, datums, tolerances, materials and approvals |
 | interface-register.csv | Mechanical, electrical, data, thermal and software interfaces |
