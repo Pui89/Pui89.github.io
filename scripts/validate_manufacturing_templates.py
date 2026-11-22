@@ -24,6 +24,9 @@ EXPECTED = {
     "training-matrix.csv": {"personnel_id_or_role", "site_id", "job_role", "operation_id", "work_instruction_id", "training_language", "assessment_method", "authorisation_scope", "authorised_by"},
     "factory-transfer.csv": {"transfer_id", "product_code", "configuration_id", "manufacturing_site_id", "first_article_inspection_report_id", "process_validation_report_id", "qualification_status", "approval_record_id"},
     "release-authorization.csv": {"release_id", "product_code", "configuration_id", "manufacturing_site_id", "document_revision_set", "verification_evidence_package_id", "release_status", "product_release_authority", "approval_record_id"},
+    "hardware-component-register.csv": {"component_requirement_id", "product_code", "component_class", "required_performance_parameters", "environmental_exposure_limits", "mechanical_mounting_interface_id", "selected_exact_model", "verification_evidence_id"},
+    "engineering-decision-register.csv": {"decision_id", "product_code", "decision_question", "required_analysis_or_evidence", "owner_role", "decision_status", "approval_record_id"},
+    "product-configuration-baseline.csv": {"configuration_id", "product_code", "bom_revision", "drawing_revision_set", "software_configuration_id", "manufacturing_site_id", "release_authorization_id", "lifecycle_status"},
 }
 
 def main() -> int:
