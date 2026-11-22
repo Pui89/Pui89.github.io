@@ -1,6 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="PUI89">
-<defs><linearGradient id="ti" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F7F9FC"/><stop offset="1" stop-color="#899BAF"/></linearGradient></defs>
+<defs>
+  <linearGradient id="titanium" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#F5F4F1"/>
+    <stop offset="1" stop-color="#C5C4C0"/>
+  </linearGradient>
+  <clipPath id="nShape">
+    <path d="M8 9H20L43 39V9H56V55H44L21 25V55H8Z"/>
+  </clipPath>
+</defs>
 <rect width="64" height="64" rx="12" fill="#071426"/>
-<path d="M8 9H20L43 39V9H56V55H44L21 25V55H8Z" fill="url(#ti)"/>
-<path d="M43 9H56V24H43Z" fill="#087EFF"/>
+<path d="M8 9H20L43 39V9H56V55H44L21 25V55H8Z" fill="url(#titanium)"/>
+<rect x="43" y="9" width="13" height="15.33" fill="#0F52BA" clip-path="url(#nShape)"/>
 </svg>

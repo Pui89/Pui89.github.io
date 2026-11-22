@@ -1,20 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" role="img" aria-labelledby="title desc">
-<title id="title">PUI89</title>
-<desc id="desc">Original PUI89 logo typography and geometry recolored in titanium silver and deep blue, with a subtle titanium glow on the N.</desc>
+<title id="title">PUI89 Premium Wordmark</title>
+<desc id="desc">PUI89 wordmark in Platinum Titanium and Sapphire Blue on Deep Navy. The upper third of the N's right vertical pillar is solid Sapphire Blue, edge-to-edge.</desc>
 <defs>
   <linearGradient id="titanium" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#F1F3F6"/>
-    <stop offset=".48" stop-color="#C4CDD6"/>
-    <stop offset="1" stop-color="#AAB5C0"/>
+    <stop offset="0" stop-color="#F5F4F1"/>
+    <stop offset=".5" stop-color="#E5E4E2"/>
+    <stop offset="1" stop-color="#C5C4C0"/>
   </linearGradient>
-  <filter id="titaniumGlow" x="-30%" y="-30%" width="160%" height="160%">
-    <feGaussianBlur stdDeviation="3" result="blur"/>
-    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-  </filter>
+  <clipPath id="nShape">
+    <path d="M70 35H142L278 215V35H350V265H278L142 85V265H70Z"/>
+  </clipPath>
 </defs>
 <g>
-  <path d="M70 35H142L278 215V35H350V265H278L142 85V265H70Z" fill="url(#titanium)" filter="url(#titaniumGlow)"/>
-  <path d="M278 35H350V112H278Z" fill="#174EA6"/>
+  <path d="M70 35H142L278 215V35H350V265H278L142 85V265H70Z" fill="url(#titanium)"/>
+  <rect x="278" y="35" width="72" height="76.67" fill="#0F52BA" clip-path="url(#nShape)"/>
 </g>
-<text x="445" y="204" font-family="Arial, Helvetica, sans-serif" font-size="142" font-weight="850" letter-spacing="-3"><tspan fill="#C4CDD6">PUI</tspan><tspan fill="#174EA6">89</tspan></text>
+<text x="390" y="204" font-family="Arial, Helvetica, sans-serif" font-size="142" font-weight="850" letter-spacing="-3"><tspan fill="#E5E4E2">PUI</tspan><tspan fill="#0F52BA">89</tspan></text>
 </svg>
