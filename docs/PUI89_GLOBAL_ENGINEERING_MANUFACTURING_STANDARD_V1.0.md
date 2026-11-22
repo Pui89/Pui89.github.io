@@ -84,12 +84,12 @@ A target is not a measurement. A simulation is not physical validation. A compon
 
 ## Product-specific briefs
 
-- [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI/blob/feature/pui89-global-manufacturing-docs-20261122/docs/PUI89_GLOBAL_MANUFACTURING_DESIGN_BRIEF_V1.0.md)
-- [PUI89 Sentinel](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/blob/feature/pui89-global-manufacturing-docs-20261122/docs/PUI89_GLOBAL_MANUFACTURING_DESIGN_BRIEF_V1.0.md)
-- [AI HOME](https://github.com/Pui89/AI-Home-Safety-Robot/blob/feature/pui89-global-manufacturing-docs-20261122/docs/PUI89_GLOBAL_MANUFACTURING_DESIGN_BRIEF_V1.0.md)
-- [AI NOMAD](https://github.com/Pui89/AI-Mobile-Assistant-Robot/blob/feature/pui89-global-manufacturing-docs-20261122/docs/PUI89_GLOBAL_MANUFACTURING_DESIGN_BRIEF_V1.0.md)
-- [AI Global SUV](https://github.com/Pui89/PUI89-AI-Global-SUV/blob/feature/pui89-global-manufacturing-docs-20261122/docs/PUI89_GLOBAL_MANUFACTURING_DESIGN_BRIEF_V1.0.md)
-- [AI Step-Through Scooter](https://github.com/Pui89/AI-Step-Through-Scooter/blob/feature/pui89-global-manufacturing-docs-20261122/docs/PUI89_GLOBAL_MANUFACTURING_DESIGN_BRIEF_V1.0.md)
+- [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI/blob/main/docs/PUI89_GLOBAL_MANUFACTURING_DESIGN_BRIEF_V1.0.md)
+- [PUI89 Sentinel](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/blob/main/docs/PUI89_GLOBAL_MANUFACTURING_DESIGN_BRIEF_V1.0.md)
+- [AI HOME](https://github.com/Pui89/AI-Home-Safety-Robot/blob/main/docs/PUI89_GLOBAL_MANUFACTURING_DESIGN_BRIEF_V1.0.md)
+- [AI NOMAD](https://github.com/Pui89/AI-Mobile-Assistant-Robot/blob/main/docs/PUI89_GLOBAL_MANUFACTURING_DESIGN_BRIEF_V1.0.md)
+- [AI Global SUV](https://github.com/Pui89/PUI89-AI-Global-SUV/blob/main/docs/PUI89_GLOBAL_MANUFACTURING_DESIGN_BRIEF_V1.0.md)
+- [AI Step-Through Scooter](https://github.com/Pui89/AI-Step-Through-Scooter/blob/main/docs/PUI89_GLOBAL_MANUFACTURING_DESIGN_BRIEF_V1.0.md)
 
 ## Release gates
 
