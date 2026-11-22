@@ -359,4 +359,18 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/engineering-standards-th.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/engineering-standards.html"/>
   </url>
+  <url>
+    <loc>https://pui89.github.io/global-engineering.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/global-engineering.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/global-engineering-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/global-engineering.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/global-engineering-th.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/global-engineering.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/global-engineering-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/global-engineering.html"/>
+  </url>
 </urlset>
