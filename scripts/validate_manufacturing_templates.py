@@ -15,7 +15,7 @@ EXPECTED = {
     "drawing-register.csv": {"drawing_id", "drawing_revision", "units", "datum_scheme", "critical_dimensions_and_tolerances", "cad_native_file", "step_file", "pdf_file", "dxf_file", "approval_record_id"},
     "interface-register.csv": {"interface_id", "interface_type", "endpoint_a_part_number", "endpoint_b_part_number", "pinout_document_id", "protocol", "fault_response_safe_state", "verification_evidence_id"},
     "supplier-source-register.csv": {"supplier_id", "legal_entity_name", "manufacturing_site_id", "country_of_manufacture", "approved_part_numbers", "approval_status", "approval_scope"},
-    "process-work-instruction-register.csv": {"operation_id", "required_part_numbers_and_revisions", "tools_fixtures_and_gauges", "pui89_part_number", "work_instruction_id", "work_instruction_revision", "acceptance_criteria", "abnormal_stop_trigger"},
+    "process-work-instruction-register.csv": {"operation_id", "required_part_numbers_and_revisions", "tools_fixtures_and_gauges", "work_instruction_id", "work_instruction_revision", "acceptance_criteria", "abnormal_stop_trigger"},
     "control-plan.csv": {"control_id", "requirement_id", "critical_characteristic", "measurement_method", "equipment_gauge_id", "acceptance_lower_limit", "acceptance_upper_limit", "reaction_plan"},
     "test-report-register.csv": {"test_id", "configuration_id", "unit_serial_or_lot", "requirement_ids", "procedure_id", "measurement_equipment_ids", "raw_data_location", "measured_results", "pass_fail_blocked"},
     "calibration-equipment-register.csv": {"equipment_id", "exact_model", "serial_number", "measurement_range", "accuracy_uncertainty", "calibration_certificate_id", "calibration_due_date", "status"},
