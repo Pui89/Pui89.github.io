@@ -4,7 +4,7 @@
 
 PUI89 is an independent, software-first Industrial AI initiative led by one founder. Multiple product concepts share one PUI89 identity and common AI engineering foundations; they are developed progressively according to evidence, resources and priorities—not all at once. The intended core team remains deliberately small, with one founder and up to one or two specialist collaborators only when justified.
 
-PUI89 welcomes selective technical collaboration with technology companies, hardware developers, relevant startups and experienced professionals. It is not actively seeking institutional research partnerships or a large contributor network.
+PUI89 is open to partnerships and collaboration with technology companies, hardware manufacturers, relevant startups and experienced professionals. It welcomes suitable hardware support, including equipment, components, technical resources and access to platforms for evaluation. Partnerships may be project-specific or ongoing, with clear scope and agreed responsibilities.
 
 PUI89 follows one central principle: **make system behaviour, evidence, uncertainty, limitations, and safety boundaries inspectable.** Project concepts, implemented software, automated test results, simulations, and validated real-world capabilities are described separately.
 
@@ -181,7 +181,7 @@ PUI89 welcomes focused technical enquiries from technology companies, hardware m
 
 Potential collaboration may include compatible hardware evaluation, software–hardware integration, specialist technical advice, focused engineering contributions and controlled testing. Hardware providers may propose bringing their own compatible equipment for evaluation, subject to technical suitability, available capacity, resources, safety and mutually agreed written conditions.
 
-PUI89 is not actively seeking institutional research partnerships, broad sponsorship campaigns or a large volunteer network. Each proposal is considered individually. Before work begins, the parties should agree in writing on scope, responsibilities, costs, equipment ownership, intellectual property, licences, confidentiality, data rights, safety and publication permissions. An enquiry or discussion does not establish a partnership, endorsement, sponsorship or employment relationship. Organisation names and logos are used only with appropriate permission.
+PUI89 welcomes partnerships that create practical value. They may be project-specific or ongoing, depending on mutual interests, technical fit, available capacity and clearly agreed goals. Each proposal is considered individually. Before work begins, the parties should agree in writing on scope, responsibilities, costs, equipment ownership, intellectual property, licences, confidentiality, data rights, safety and publication permissions. An enquiry or discussion does not establish a partnership, endorsement, sponsorship or employment relationship. Organisation names and logos are used only with appropriate permission.
 
 - **Portfolio and project information:** [pui89.github.io](https://pui89.github.io/)
 - **Technical collaboration:** [English](https://pui89.github.io/support.html) · [ภาษาไทย](https://pui89.github.io/support-th.html)
