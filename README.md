@@ -1,10 +1,10 @@
-# PUI89 — Independent Development & Strategic Partnerships
+# PUI89 — Independent Industrial AI Initiative
 
-**Founded in Thailand. Built for the World.**
+**Founder-led. Independently developed in Thailand. Built progressively for the real world.**
 
-Independent AI and robotics development, open to aligned global funding, hardware, technology support, and strategic partnerships.
+PUI89 is an independent, software-first Industrial AI initiative led by one founder. Multiple product concepts share one PUI89 identity and common AI engineering foundations; they are developed progressively according to evidence, resources and priorities—not all at once. The intended core team remains deliberately small, with one founder and up to one or two specialist collaborators only when justified.
 
-PUI89 is an independent AI engineering initiative developing practical AI software, shared engineering foundations, and robotics-system concepts. The work spans agriculture, multimodal inspection, home environments, mobile assistance, and intelligent mobility.
+PUI89 welcomes selective technical collaboration with technology companies, hardware developers, relevant startups and experienced professionals. It is not actively seeking institutional research partnerships or a large contributor network.
 
 PUI89 follows one central principle: **make system behaviour, evidence, uncertainty, limitations, and safety boundaries inspectable.** Project concepts, implemented software, automated test results, simulations, and validated real-world capabilities are described separately.
 
@@ -173,28 +173,21 @@ PUI89 prioritises open-source tools, transparent licences, reproducible workflow
 - Public availability does not automatically grant permission for reuse or commercial deployment.
 - Cost and resource assumptions must be stated; do not claim savings without measured evidence.
 
-## Funding, hardware, technology support, and partnerships
+## Selective technical collaboration
 
-PUI89 is independently developed from Thailand and designed with international markets in mind. We welcome enquiries from companies, organisations, and supporters worldwide about:
+PUI89 is currently developed by one founder. The intended core team is deliberately small: one founder and, only when a specific product or engineering need justifies it, one or two specialist collaborators.
 
-- **Funding support:** funding for defined development, research, engineering, and testing milestones.
-- **Hardware support:** AI/GPU computing, cameras, LiDAR, sensors, robotics platforms, test instruments, and engineering equipment, whether donated, loaned, or made available under agreed terms.
-- **Technology support:** software, technical tools, documentation, and engineering resources, subject to licence, security, cost, and usage review.
-- **Strategic partnerships:** discussions with technology companies and industry organisations about suitable collaboration, integration, development, or evaluation.
-- **Development and testing:** support for controlled experiments, independent review, evaluation, and access to appropriate test environments under an agreed scope.
+PUI89 welcomes focused technical enquiries from technology companies, hardware manufacturers, relevant startups, and experienced AI developers, software engineers, embedded/electronics engineers, robotics specialists and product engineers.
 
-PUI89 remains an independent early-stage initiative. An enquiry does not mean a partnership, grant, customer relationship, or sponsorship is already confirmed. Before accepting money, equipment, data, or services, the scope, costs, ownership, licences, responsibilities, safety requirements, and reporting terms must be reviewed and agreed in writing.
+Potential collaboration may include compatible hardware evaluation, software–hardware integration, specialist technical advice, focused engineering contributions and controlled testing. Hardware providers may propose bringing their own compatible equipment for evaluation, subject to technical suitability, available capacity, resources, safety and mutually agreed written conditions.
+
+PUI89 is not actively seeking institutional research partnerships, broad sponsorship campaigns or a large volunteer network. Each proposal is considered individually. Before work begins, the parties should agree in writing on scope, responsibilities, costs, equipment ownership, intellectual property, licences, confidentiality, data rights, safety and publication permissions. An enquiry or discussion does not establish a partnership, endorsement, sponsorship or employment relationship. Organisation names and logos are used only with appropriate permission.
 
 - **Portfolio and project information:** [pui89.github.io](https://pui89.github.io/)
-- **Initiative profile:** [English](https://pui89.github.io/company.html) · [ภาษาไทย](https://pui89.github.io/company-th.html)
-- **Open-source resources:** [English](https://pui89.github.io/open-source-resources.html) · [ภาษาไทย](https://pui89.github.io/open-source-resources-th.html)
+- **Technical collaboration:** [English](https://pui89.github.io/support.html) · [ภาษาไทย](https://pui89.github.io/support-th.html)
 - **Evidence and progress:** [English](https://pui89.github.io/evidence.html) · [ภาษาไทย](https://pui89.github.io/evidence-th.html)
 - **GitHub:** [github.com/Pui89](https://github.com/Pui89)
 - **Contact:** puinuanmanee@gmail.com
-
----
-
-*Public project information is maintained on a best-effort basis. For current implementation and test status, consult the relevant repository, commit, workflow run, and project-specific evidence record. Website descriptions are summaries and do not replace technical documentation.*
 
 ## Active portfolio — authoritative scope
 
