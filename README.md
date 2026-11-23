@@ -2,7 +2,7 @@
 
 **Founder-led. Independently developed in Thailand. Built progressively for the real world.**
 
-PUI89 is an independent, software-first Industrial AI initiative led by one founder. Multiple product concepts share one PUI89 identity and common AI engineering foundations; they are developed progressively according to evidence, resources and priorities—not all at once. The intended core team remains deliberately small, with one founder and up to one or two specialist collaborators only when justified.
+PUI89 is an independent, software-first Industrial AI initiative led by its founder. Independence does not mean working alone: PUI89 welcomes companies, hardware manufacturers, relevant startups and experienced professionals who can contribute expertise, technology, hardware, resources and practical support to help turn product concepts into real-world solutions. The founder retains strategic direction and leadership. Multiple product concepts share one PUI89 identity and are developed progressively according to evidence, resources and priorities—not all at once. The intended core team remains deliberately small, with one founder and up to one or two specialist collaborators when justified.
 
 PUI89 is open to partnerships and collaboration with technology companies, hardware manufacturers, relevant startups and experienced professionals. It welcomes suitable hardware support, including equipment, components, technical resources and access to platforms for evaluation. Partnerships may be project-specific or ongoing, with clear scope and agreed responsibilities.
 
@@ -173,11 +173,11 @@ PUI89 prioritises open-source tools, transparent licences, reproducible workflow
 - Public availability does not automatically grant permission for reuse or commercial deployment.
 - Cost and resource assumptions must be stated; do not claim savings without measured evidence.
 
-## Selective technical collaboration
+## Open partnerships and collaboration
 
 PUI89 is currently developed by one founder. The intended core team is deliberately small: one founder and, only when a specific product or engineering need justifies it, one or two specialist collaborators.
 
-PUI89 welcomes focused technical enquiries from technology companies, hardware manufacturers, relevant startups, and experienced AI developers, software engineers, embedded/electronics engineers, robotics specialists and product engineers.
+PUI89 welcomes partnership and collaboration proposals from technology companies, hardware manufacturers, relevant startups, and experienced AI developers, software engineers, embedded/electronics engineers, robotics specialists and product engineers.
 
 Potential collaboration may include compatible hardware evaluation, software–hardware integration, specialist technical advice, focused engineering contributions and controlled testing. Hardware providers may propose bringing their own compatible equipment for evaluation, subject to technical suitability, available capacity, resources, safety and mutually agreed written conditions.
 
