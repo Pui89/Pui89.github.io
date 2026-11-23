@@ -373,4 +373,18 @@
     <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/global-engineering-th.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/global-engineering.html"/>
   </url>
+  <url>
+    <loc>https://pui89.github.io/collaboration-policy.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/collaboration-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/collaboration-policy-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/collaboration-policy.html"/>
+  </url>
+  <url>
+    <loc>https://pui89.github.io/collaboration-policy-th.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pui89.github.io/collaboration-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://pui89.github.io/collaboration-policy-th.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pui89.github.io/collaboration-policy.html"/>
+  </url>
 </urlset>
