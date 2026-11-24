@@ -139,166 +139,6 @@
       "warnings": []
     },
     {
-      "name": "PUI89 Sentinel \u2014 All-Terrain Exploration & Inspection Robot",
-      "repository": "Pui89/PUI89-All-Terrain-Inspection-Robot",
-      "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot",
-      "focus": "Supervised quadruped inspection; first mission and operating envelope must be defined before hardware selection.",
-      "status": "CHECKS_AVAILABLE",
-      "default_branch": "main",
-      "latest_commit": "33089583b475",
-      "latest_commit_url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/commit/33089583b475d32993882402420210903f5df051",
-      "latest_workflows": [
-        {
-          "name": "PUI89 Security Audit",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:03Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244444",
-          "branch": "main"
-        },
-        {
-          "name": "Free local-first app regression checks",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:12Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244319",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Pitfall Detector Checks",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:13Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244403",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Software and Observability Checks",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:02Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244364",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Automated Verification",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:04Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244660",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Shared Intelligence Contract",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:01Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244290",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Three-Layer Security Baseline",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:00Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244356",
-          "branch": "main"
-        },
-        {
-          "name": "Python tests",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:22Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244340",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Shared Interface Smoke",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:15Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244723",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 Free Local Checks",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-19T03:38:20Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44452815025",
-          "branch": "main"
-        },
-        {
-          "name": "PUI89 project intelligence reviews",
-          "status": "completed",
-          "conclusion": "failure",
-          "updated_at": "2026-11-18T23:07:59Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44418003361",
-          "branch": "main"
-        }
-      ],
-      "non_default_branch_run_count": 32,
-      "key_workflows": [
-        {
-          "name": "Free cloud verification",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Dataset recovery audit",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Free-resource link audit",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Rule-based simulation evaluation",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Coconut dataset evidence audit",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Simulation benchmark + report validator",
-          "status": "not_seen_in_recent_runs",
-          "conclusion": null,
-          "updated_at": null,
-          "url": null,
-          "branch": null
-        },
-        {
-          "name": "Autonomy / safety regression tests",
-          "status": "completed",
-          "conclusion": "success",
-          "updated_at": "2026-11-19T15:13:12Z",
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/actions/runs/44552244319",
-          "branch": "main"
-        }
-      ],
-      "warnings": []
-    },
-    {
       "name": "PUI89 AI HOME",
       "repository": "Pui89/AI-Home-Safety-Robot",
       "url": "https://github.com/Pui89/AI-Home-Safety-Robot",
@@ -757,15 +597,15 @@
   ],
   "platform": {
     "name": "Shared AI Core",
-    "repository": "Private platform repository \u2014 not publicly monitored",
+    "repository": "Private platform repository — not publicly monitored",
     "url": "https://pui89.github.io/ai-core.html",
     "summary": {
       "en": "Shared infrastructure for reusable contracts, orchestration, compute intelligence, evidence provenance and engineering tools. It is not a product.",
-      "th": "\u0e42\u0e04\u0e23\u0e07\u0e2a\u0e23\u0e49\u0e32\u0e07\u0e1e\u0e37\u0e49\u0e19\u0e10\u0e32\u0e19\u0e23\u0e48\u0e27\u0e21\u0e2a\u0e33\u0e2b\u0e23\u0e31\u0e1a\u0e2a\u0e31\u0e0d\u0e0d\u0e32\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25 \u0e01\u0e32\u0e23\u0e1b\u0e23\u0e30\u0e2a\u0e32\u0e19\u0e07\u0e32\u0e19 \u0e04\u0e27\u0e32\u0e21\u0e09\u0e25\u0e32\u0e14\u0e14\u0e49\u0e32\u0e19\u0e01\u0e32\u0e23\u0e1b\u0e23\u0e30\u0e21\u0e27\u0e25\u0e1c\u0e25 \u0e17\u0e35\u0e48\u0e21\u0e32\u0e02\u0e2d\u0e07\u0e2b\u0e25\u0e31\u0e01\u0e10\u0e32\u0e19 \u0e41\u0e25\u0e30\u0e40\u0e04\u0e23\u0e37\u0e48\u0e2d\u0e07\u0e21\u0e37\u0e2d\u0e27\u0e34\u0e28\u0e27\u0e01\u0e23\u0e23\u0e21 \u0e44\u0e21\u0e48\u0e43\u0e0a\u0e48\u0e1c\u0e25\u0e34\u0e15\u0e20\u0e31\u0e13\u0e11\u0e4c"
+      "th": "โครงสร้างพื้นฐานร่วมสำหรับสัญญาข้อมูล การประสานงาน ความฉลาดด้านการประมวลผล ที่มาของหลักฐาน และเครื่องมือวิศวกรรม ไม่ใช่ผลิตภัณฑ์"
     },
     "next": {
       "en": "Maintain shared contracts and evidence gates; report only verified public information.",
-      "th": "\u0e14\u0e39\u0e41\u0e25\u0e2a\u0e31\u0e0d\u0e0d\u0e32\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e41\u0e25\u0e30\u0e40\u0e07\u0e37\u0e48\u0e2d\u0e19\u0e44\u0e02\u0e2b\u0e25\u0e31\u0e01\u0e10\u0e32\u0e19\u0e23\u0e48\u0e27\u0e21 \u0e42\u0e14\u0e22\u0e23\u0e32\u0e22\u0e07\u0e32\u0e19\u0e40\u0e09\u0e1e\u0e32\u0e30\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e2a\u0e32\u0e18\u0e32\u0e23\u0e13\u0e30\u0e17\u0e35\u0e48\u0e15\u0e23\u0e27\u0e08\u0e2a\u0e2d\u0e1a\u0e44\u0e14\u0e49"
+      "th": "ดูแลสัญญาข้อมูลและเงื่อนไขหลักฐานร่วม โดยรายงานเฉพาะข้อมูลสาธารณะที่ตรวจสอบได้"
     },
     "focus": "Shared contracts, orchestration, compute intelligence, evidence gates and reusable engineering infrastructure; not a seventh product.",
     "status": "NOT_PUBLICLY_MONITORED",
@@ -788,5 +628,7 @@
     "A successful workflow does not validate real-world robot performance or dataset correctness.",
     "The Coconut dataset evidence audit runs only where its workflow is configured; not_seen_in_recent_runs for other projects means not observed, not a failure.",
     "GitHub API rate limits or temporary network errors can make status partial."
-  ]
+  ],
+  "summary": "",
+  "notes": []
 }
