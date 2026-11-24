@@ -231,8 +231,8 @@ PUI89's engineering principle for this product is to start with the simplest use
 
 PUI89's public engineering policy is **No Evidence, No Readiness Claim**. The controlled maturity sequence is Proposed → Specified → Implemented → Tested → Validated → Product-Ready. Each public claim must show its scope, evidence status, verified conditions, limitations, and next gate. A successful build, test suite, simulation, or demo alone does not establish validation or product readiness.
 
-- [English standard](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/standards/PUI89_EVIDENCE_BASED_ENGINEERING_PRODUCT_READINESS_STANDARD_V1.0.md)
-- [มาตรฐานภาษาไทย](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/standards/PUI89_EVIDENCE_BASED_ENGINEERING_PRODUCT_READINESS_STANDARD_V1.0.th.md)
+- [English standard](https://pui89.github.io/engineering-standards.html)
+- [มาตรฐานภาษาไทย](https://pui89.github.io/engineering-standards-th.html)
 - [Website: Engineering Standards](https://pui89.github.io/engineering-standards.html) · [ภาษาไทย](https://pui89.github.io/engineering-standards-th.html)
 
 The standard is proposed for portfolio-wide adoption. Product maturity must be assessed separately using product-specific evidence; no Product-Ready claim is implied by publishing the standard.
