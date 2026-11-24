@@ -1,4 +1,6 @@
-# PUI89 Portfolio Source of Truth v1.2
+# PUI89 Portfolio Source of Truth v1.2 — SUPERSEDED
+
+> Historical record only. Superseded on 24 November 2026 by [PUI89 Portfolio Source of Truth v1.3](PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.3.md). Do not use this version to determine the active portfolio.
 
 **Effective review date:** 22 November 2026  
 **Owner:** PUI89  

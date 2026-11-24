@@ -97,84 +97,8 @@
       ]
     },
     {
-      "id": "sentinel",
-      "number": 2,
-      "name": {
-        "en": "PUI89 Sentinel — All-Terrain Exploration & Inspection Robot",
-        "th": "PUI89 Sentinel — หุ่นยนต์สำรวจและตรวจสอบทุกสภาพพื้นที่"
-      },
-      "repo": "Pui89/PUI89-All-Terrain-Inspection-Robot",
-      "stageLabel": {
-        "en": "Specified",
-        "th": "กำหนดข้อกำหนดแล้ว"
-      },
-      "summary": {
-        "en": "Four-legged exploration and inspection robot concept with documented engineering requirements. The first supervised inspection mission and operating envelope are not yet selected; no physical prototype or field validation is established.",
-        "th": "แนวคิดหุ่นยนต์สำรวจและตรวจสอบแบบสี่ขาพร้อมข้อกำหนดทางวิศวกรรมที่บันทึกไว้ ยังไม่ได้กำหนดภารกิจตรวจสอบภายใต้การกำกับและขอบเขตการทำงานแรก และยังไม่มีต้นแบบจริงหรือการตรวจสอบภาคสนาม"
-      },
-      "next": {
-        "en": "Define the first supervised inspection mission, site, asset, operating envelope, hazards, human roles and measurable acceptance criteria before selecting hardware.",
-        "th": "กำหนดภารกิจตรวจสอบแรก พื้นที่ ทรัพย์สิน ขอบเขตการทำงาน อันตราย บทบาทมนุษย์ และเกณฑ์ยอมรับที่วัดผลได้ ก่อนเลือกฮาร์ดแวร์"
-      },
-      "evidence": {
-        "en": "Current evidence is limited to the product concept, engineering requirements and proposed validation documentation. No physical prototype or integrated hardware evidence is recorded. A repository-level automated quality gate was adopted on 20 November 2026; this is repository QA tooling, not evidence of product hardware, field performance or safety validation.",
-        "th": "หลักฐานปัจจุบันจำกัดอยู่ที่แนวคิดผลิตภัณฑ์ ข้อกำหนดทางวิศวกรรม และเอกสารแผนการตรวจสอบที่เสนอไว้ ยังไม่มีหลักฐานต้นแบบจริงหรือฮาร์ดแวร์ที่ติดตั้งร่วมกัน เมื่อ 20 พ.ย. 2026 มีการนำระบบตรวจสอบคุณภาพอัตโนมัติระดับ Repository มาใช้ ซึ่งเป็นเครื่องมือ QA ของซอร์สโค้ด ไม่ใช่หลักฐานว่ามีฮาร์ดแวร์จริง สมรรถนะภาคสนาม หรือการยืนยันความปลอดภัย"
-      },
-      "blockers": {
-        "en": "No validated locomotion, terrain rating, payload, endurance, sensor integration, inspection accuracy, safety performance or field deployment. Component selection and origin evidence remain to be verified.",
-        "th": "ยังไม่มีการยืนยันสมรรถนะการเดิน ระดับพื้นผิว น้ำหนักบรรทุก ระยะเวลาทำงาน การเชื่อมต่อเซนเซอร์ ความแม่นยำในการตรวจสอบ สมรรถนะความปลอดภัย หรือการใช้งานภาคสนาม การเลือกชิ้นส่วนและหลักฐานแหล่งกำเนิดยังต้องตรวจสอบ"
-      },
-      "history": [
-        {
-          "period": "2026-11",
-          "date": "2026-11-15",
-          "type": "scope-reset",
-          "note": {
-            "en": "Current Sentinel identity and evidence baseline established for the All-Terrain Exploration & Inspection Robot. No physical validation evidence is carried forward.",
-            "th": "กำหนดอัตลักษณ์และค่าฐานหลักฐานของ Sentinel ใหม่เป็นหุ่นยนต์สำรวจและตรวจสอบทุกสภาพพื้นที่ โดยไม่นำหลักฐานการตรวจสอบทางกายภาพจากขอบเขตเดิมมาใช้"
-          }
-        },
-        {
-          "period": "2026-11",
-          "date": "2026-11-20",
-          "type": "quality-automation",
-          "note": {
-            "en": "A shared repository-level automated quality gate was adopted. This improves source-quality oversight only; product maturity and physical or field validation are unchanged.",
-            "th": "นำระบบตรวจสอบคุณภาพอัตโนมัติระดับ Repository มาใช้ ช่วยกำกับดูแลคุณภาพซอร์สโค้ดเท่านั้น ไม่เปลี่ยนระดับการพัฒนาผลิตภัณฑ์หรือผลการยืนยันทางกายภาพและภาคสนาม"
-          }
-        }
-      ],
-      "evidenceDate": "2026-11-20",
-      "evidenceLinks": [
-        {
-          "label": {
-            "en": "Repository tests",
-            "th": "Repository tests"
-          },
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/tree/main/tests"
-        },
-        {
-          "label": {
-            "en": "Engineering documentation",
-            "th": "Engineering documentation"
-          },
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/tree/main/docs"
-        },
-        {
-          "label": {
-            "en": "Repository quality automation",
-            "th": "ระบบตรวจสอบคุณภาพ Repository"
-          },
-          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/blob/main/.github/workflows/pui89-automation-quality.yml"
-        }
-      ],
-      "completedGates": [
-        "requirements"
-      ]
-    },
-    {
       "id": "ai-home",
-      "number": 3,
+      "number": 2,
       "name": {
         "en": "PUI89 AI HOME",
         "th": "PUI89 AI HOME"
@@ -252,7 +176,7 @@
     },
     {
       "id": "ai-nomad",
-      "number": 4,
+      "number": 3,
       "name": {
         "en": "PUI89 AI NOMAD",
         "th": "PUI89 AI NOMAD"
@@ -329,7 +253,7 @@
     },
     {
       "id": "robot-car",
-      "number": 5,
+      "number": 4,
       "name": {
         "en": "PUI89 AI Global SUV",
         "th": "PUI89 AI Global SUV"
@@ -407,7 +331,7 @@
     },
     {
       "id": "motorcycle",
-      "number": 6,
+      "number": 5,
       "name": {
         "en": "PUI89 AI Step-Through Scooter",
         "th": "PUI89 AI Step-Through Scooter"

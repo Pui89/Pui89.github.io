@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build an open-source-first, read-only status dashboard for PUI89's six active PUI89 product repositories.
+"""Build an open-source-first, read-only status dashboard for PUI89's five active product repositories.
 
 Uses only Python's standard library and GitHub's public REST API. No token, hosted AI,
 model downloads, third-party package, or repository write is performed by this script.
@@ -19,7 +19,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PROJECTS = [
     ("Coconut Harvest AI", "Pui89/Coconut-Harvest-AI", "Agricultural perception, dataset provenance, reviewed labels and leakage-safe evaluation."),
-    ("PUI89 Sentinel — All-Terrain Exploration & Inspection Robot", "Pui89/PUI89-All-Terrain-Inspection-Robot", "Supervised quadruped inspection; first mission and operating envelope must be defined before hardware selection."),
     ("PUI89 AI HOME", "Pui89/AI-Home-Safety-Robot", "Indoor four-wheel home assistant; complete robot mass target 8 kg and maximum 10 kg."),
     ("PUI89 AI NOMAD", "Pui89/AI-Mobile-Assistant-Robot", "Ground-use four-wheel mobile assistant robot; not luggage or airline baggage; storage is secondary."),
     ("PUI89 AI Global SUV", "Pui89/PUI89-AI-Global-SUV", "Medium-size SUV concept; human-driver-first mobility intelligence and advisory-only software research."),
@@ -180,7 +179,7 @@ def main() -> int:
             "This report reads public repository metadata and recent workflow runs; it does not execute project tests.",
             "A missing workflow run is unknown, not a passing result or proof of failure.",
             "Only the most recent 50 repository workflow runs are scanned; a safeguard absent from that window is unknown.",
-            "Exactly six active product repositories are monitored; Shared AI Core is monitored separately as shared platform infrastructure and is not counted as a seventh product. The website repository is not a product.",
+            "Exactly five active product repositories are monitored; Shared AI Core is monitored separately as shared platform infrastructure and is not counted as a seventh product. The website repository is not a product.",
             "Headline workflow and safeguard status is filtered to the repository default branch; other-branch runs are counted separately and do not prove default-branch health.",
             "A successful workflow does not validate real-world robot performance or dataset correctness.",
             "The Coconut dataset evidence audit runs only where its workflow is configured; not_seen_in_recent_runs for other projects means not observed, not a failure.",

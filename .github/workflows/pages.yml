@@ -27,7 +27,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Validate required portfolio pages and six active product lines
+      - name: Validate required portfolio pages and five active product lines
         run: |
           test -s index.html
           test -s th.html
@@ -42,13 +42,12 @@ jobs:
           grep -Fq 'https://pui89.github.io/command-centre.html' sitemap.xml
           grep -Fq 'https://pui89.github.io/command-centre-th.html' sitemap.xml
           python3 -m py_compile tools/pui89_command_centre.py
-          python3 -c "import ast; p=ast.parse(open('tools/pui89_command_centre.py', encoding='utf-8').read()); n=next(x for x in p.body if isinstance(x, ast.Assign) and any(isinstance(t, ast.Name) and t.id == 'PROJECTS' for t in x.targets)); assert len(ast.literal_eval(n.value)) == 6, 'Expected exactly six active products'; print('Six-product registry: PASS')"
+          python3 -c "import ast; p=ast.parse(open('tools/pui89_command_centre.py', encoding='utf-8').read()); n=next(x for x in p.body if isinstance(x, ast.Assign) and any(isinstance(t, ast.Name) and t.id == 'PROJECTS' for t in x.targets)); assert len(ast.literal_eval(n.value)) == 5, 'Expected exactly five active products'; print('Five-product registry: PASS')"
           while IFS='|' read -r english_page thai_page; do
             grep -Fq "href=\"$english_page\"" index.html || { echo "Missing project landing-page link on English homepage: $english_page"; exit 1; }
             grep -Fq "href=\"$thai_page\"" th.html || { echo "Missing project landing-page link on Thai homepage: $thai_page"; exit 1; }
           done <<'PROJECTS'
           coconut.html|coconut-th.html
-          sentinel.html|sentinel-th.html
           home.html|home-th.html
           nomad.html|nomad-th.html
           ai-global-suv.html|ai-global-suv-th.html
