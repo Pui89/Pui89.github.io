@@ -7,7 +7,6 @@ Read-only overview of public repository commits and recent GitHub Actions runs. 
 | Project | Status | Latest commit | Latest workflow summary | Next focus |
 |---|---|---|---|---|
 | [Coconut Harvest AI](https://github.com/Pui89/Coconut-Harvest-AI) | CHECKS_AVAILABLE | [4936f879184f](https://github.com/Pui89/Coconut-Harvest-AI/commit/4936f879184f9cbcc9e4f76209f0575336ec0f5d) | PUI89 Security Audit: success [main]; PUI89 Three-Layer Security Baseline: success [main]; PUI89 System Guardrails: success [main] | Agricultural perception, dataset provenance, reviewed labels and leakage-safe evaluation. |
-| [PUI89 Sentinel — All-Terrain Exploration & Inspection Robot](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot) | CHECKS_AVAILABLE | [33089583b475](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/commit/33089583b475d32993882402420210903f5df051) | PUI89 Security Audit: success [main]; Free local-first app regression checks: success [main]; PUI89 Pitfall Detector Checks: success [main] | Supervised quadruped inspection; first mission and operating envelope must be defined before hardware selection. |
 | [PUI89 AI HOME](https://github.com/Pui89/AI-Home-Safety-Robot) | CHECKS_AVAILABLE | [de3397a046f1](https://github.com/Pui89/AI-Home-Safety-Robot/commit/de3397a046f1f988af908fff306cf9f83192267c) | PUI89 Security Audit: success [main]; PUI89 project intelligence reviews: failure [main]; github_actions in / for actions/checkout - Update #1692848464: success [main] | Indoor four-wheel home assistant; complete robot mass target 8 kg and maximum 10 kg. |
 | [PUI89 AI NOMAD](https://github.com/Pui89/AI-Mobile-Assistant-Robot) | CHECKS_AVAILABLE | [522169ca0e60](https://github.com/Pui89/AI-Mobile-Assistant-Robot/commit/522169ca0e600a8a7e66a01562565f73d90f6465) | PUI89 Three-Layer Security Baseline: success [main]; HOMEGUARD CI: success [main]; PUI89 Security Audit: success [main] | Ground-use four-wheel mobile assistant robot; not luggage or airline baggage; storage is secondary. |
 | [PUI89 AI Global SUV](https://github.com/Pui89/PUI89-AI-Global-SUV) | CHECKS_AVAILABLE | [deebff24e220](https://github.com/Pui89/PUI89-AI-Global-SUV/commit/deebff24e220d6e5b0606ca845eb6703105bf487) | PUI89 Security Audit: success [main]; PUI89 AI Global SUV Quality and Shared Core Contract Checks: success [main]; PUI89 project intelligence reviews: failure [main] | Medium-size SUV concept; human-driver-first mobility intelligence and advisory-only software research. |
@@ -39,7 +38,6 @@ Non-default-branch runs in the scanned window: 23
 | Simulation benchmark + report validator | not_seen_in_recent_runs | not seen on default branch | unknown | — |
 | Autonomy / safety regression tests | not_seen_in_recent_runs | not seen on default branch | unknown | — |
 
-### PUI89 Sentinel — All-Terrain Exploration & Inspection Robot
 
 Non-default-branch runs in the scanned window: 32
 
@@ -114,7 +112,7 @@ Non-default-branch runs in the scanned window: 34
 - This report reads public repository metadata and recent workflow runs; it does not execute project tests.
 - A missing workflow run is unknown, not a passing result or proof of failure.
 - Only the most recent 50 repository workflow runs are scanned; a safeguard absent from that window is unknown.
-- Exactly six active product repositories are monitored; Shared AI Core is monitored separately as shared platform infrastructure and is not counted as a seventh product. The website repository is not a product.
+- Exactly five active product repositories are monitored; Shared AI Core is monitored separately as shared platform infrastructure and is not counted as an additional product. The website repository is not a product.
 - Headline workflow and safeguard status is filtered to the repository default branch; other-branch runs are counted separately and do not prove default-branch health.
 - A successful workflow does not validate real-world robot performance or dataset correctness.
 - The Coconut dataset evidence audit runs only where its workflow is configured; not_seen_in_recent_runs for other projects means not observed, not a failure.
