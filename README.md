@@ -1,5 +1,7 @@
 # PUI89 — Independent Industrial AI Initiative
 
+[English](README.md) · [ภาษาไทย](README.th.md)
+
 **Founder-led. Independently developed in Thailand. Built progressively for the real world.**
 
 PUI89 is an independent, software-first Industrial AI initiative led by its founder. Independence does not mean working alone: PUI89 welcomes companies, hardware manufacturers, relevant startups and experienced professionals who can contribute expertise, technology, hardware, resources and practical support to help turn product concepts into real-world solutions. The founder retains strategic direction and leadership. Multiple product concepts share one PUI89 identity and are developed progressively according to evidence, resources and priorities—not all at once. The intended core team remains deliberately small, with one founder and up to one or two specialist collaborators when justified.
@@ -163,7 +165,7 @@ A passing software test does not prove model accuracy, sensor calibration, simul
 - Require explicit human approval for destructive, security-sensitive, or physical operations.
 - Do not treat a policy document or a configured workflow as proof that a control is effective; retain test and audit evidence.
 
-## Open-source-first and zero-cost development
+## Open-source-first technology governance
 
 PUI89 prioritises open-source tools, transparent licences, reproducible workflows, and local/offline methods where practical.
 
@@ -240,3 +242,23 @@ The standard is proposed for portfolio-wide adoption. Product maturity must be a
 ## Global Engineering & Manufacturing
 
 The bilingual [Global Engineering & Manufacturing portal](https://pui89.github.io/global-engineering.html) provides the six-product manufacturing overview. The [Global Engineering & Manufacturing Standard v1.0](docs/PUI89_GLOBAL_ENGINEERING_MANUFACTURING_STANDARD_V1.0.md) defines documentation levels, SI units, materials/component provenance, extreme-climate qualification, manufacturing transfer, quality gates and evidence labels. Product-specific preliminary briefs are linked from the portal. All candidate specifications remain distinct from released production specifications and verified capabilities.
+
+
+## Portfolio status review — 24 November 2026
+
+PUI89's active portfolio contains **six products**. Shared AI Core is platform infrastructure, not a seventh product. Extreme Flood Rescue AI is retired and is not part of the active portfolio. Flood and road-water observations may remain conservative advisory requirements inside relevant mobility products; they do not create a separate rescue product. Historical narcotics-screening work is outside Sentinel's current scope.
+
+| Active product | Current maturity | Next evidence gate |
+|---|---|---|
+| Coconut Harvest AI | Implemented — software and evaluation-preparation foundation | Rights-cleared real images, human-reviewed labels, leakage-safe split and reproducible CPU evaluation with per-class metrics. |
+| PUI89 Sentinel | Specified — supervised quadruped inspection requirements | Select one authorised inspection mission; define site, hazards, operating envelope and measurable acceptance criteria. |
+| PUI89 AI HOME | Implemented — early requirements, architecture and software foundations | Software-only home-awareness demonstrator with traceable observations and repeatable tests; no live sensor or robot claim. |
+| PUI89 AI NOMAD | Implemented — early software foundation | Validate the suitcase user journey, dimensions, handling, wheel/handle ergonomics, mass and power budgets. |
+| PUI89 AI Global SUV | Implemented — software-only safety and contract foundation | Establish the hazard/use-case baseline and reproducible advisory-only scenario evaluation; driver control remains authoritative. |
+| PUI89 AI Step-Through Scooter | Specified — rider-first product requirements | Complete rider hazard analysis, measurable acceptance criteria and reproducible advisory-software test evidence. |
+
+These maturity labels describe documented development state, not commercial readiness. They do not establish physical prototypes, integrated hardware, field validation, certification or production capability. A concept image, simulation or passing software test is not physical-performance evidence. Do not publish readiness percentages without a current, traceable evidence register.
+
+**Latest dated product evidence:** Coconut Harvest AI's 24 November update records dataset split-isolation checks, public image-source research and a blank field-discovery register. It does not establish an approved training dataset, completed human annotation, a trained/evaluated PUI89 model, accuracy metrics or a working harvesting robot.
+
+**Review date:** 24 November 2026. Recheck each product repository and the bilingual [Evidence & Progress pages](https://pui89.github.io/evidence.html) before making a newer maturity claim.
