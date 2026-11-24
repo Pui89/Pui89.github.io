@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 AI NOMAD intelligent four-wheel suitcase concept</title>
+<desc id="desc">Premium upright smart suitcase with telescopic pull handle and four integrated spinner wheels, shown as a concept only.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071426"/><stop offset="1" stop-color="#102e4b"/></linearGradient>
+ <linearGradient id="case" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#233d59"/><stop offset=".5" stop-color="#0c1d31"/><stop offset="1" stop-color="#06101e"/></linearGradient>
+ <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#42d9ff"/><stop offset="1" stop-color="#087cb9"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1200" height="820" rx="30" fill="url(#bg)"/>
+<g opacity=".22" stroke="#42d9ff" fill="none"><path d="M0 650H1200M0 700H1200M80 0V820M1120 0V820"/><circle cx="930" cy="150" r="180"/><circle cx="930" cy="150" r="240"/></g>
+<text x="70" y="90" fill="#42d9ff" font-family="Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="7">PUI89 / SMART MOBILITY</text>
+<text x="70" y="160" fill="#f4f8ff" font-family="Arial,sans-serif" font-size="58" font-weight="800">AI NOMAD</text>
+<text x="72" y="205" fill="#b8cce0" font-family="Arial,sans-serif" font-size="25">Four-Wheel Intelligent Suitcase</text>
+<ellipse cx="590" cy="690" rx="310" ry="45" fill="#000814" opacity=".65"/>
+<g transform="translate(365 180)">
+ <path d="M185 70V5Q185 -10 200 -10H310Q325 -10 325 5V70" fill="none" stroke="#9db5ca" stroke-width="18" stroke-linecap="round"/>
+ <path d="M205 0H305" stroke="#42d9ff" stroke-width="5" stroke-linecap="round"/>
+ <rect x="105" y="65" width="300" height="465" rx="48" fill="url(#case)" stroke="#7893ad" stroke-width="5"/>
+ <rect x="123" y="83" width="264" height="429" rx="36" fill="none" stroke="#42d9ff" stroke-opacity=".5" stroke-width="3"/>
+ <path d="M145 120V470M365 120V470" stroke="#9bb3ca" stroke-opacity=".28" stroke-width="5"/>
+ <rect x="178" y="185" width="155" height="72" rx="18" fill="#061323" stroke="#42d9ff" stroke-width="3" filter="url(#glow)"/>
+ <circle cx="218" cy="221" r="10" fill="#42d9ff"/><circle cx="293" cy="221" r="10" fill="#42d9ff"/>
+ <path d="M238 235Q255 249 273 235" fill="none" stroke="#42d9ff" stroke-width="5" stroke-linecap="round"/>
+ <text x="255" y="305" fill="#dcecff" font-family="Arial,sans-serif" font-size="29" text-anchor="middle" font-weight="800">PUI89</text>
+ <path d="M145 355H365" stroke="url(#cyan)" stroke-width="5" stroke-linecap="round"/>
+ <rect x="145" y="390" width="220" height="70" rx="12" fill="#0a1728" stroke="#355b7b"/>
+ <text x="255" y="432" fill="#8deaff" font-family="Arial,sans-serif" font-size="18" text-anchor="middle">AI ASSISTANT</text>
+ <!-- Four caster wheels: two front wheels and two rear wheels offset for depth -->
+ <g fill="#020a14" stroke="#91a9c1" stroke-width="6">
+  <circle cx="115" cy="558" r="21"/><circle cx="395" cy="558" r="21"/>
+  <circle cx="147" cy="573" r="26"/><circle cx="363" cy="573" r="26"/>
+ </g>
+ <g stroke="#42d9ff" stroke-width="3"><path d="M98 558H132M378 558H412M125 560H169M341 560H385"/></g>
+</g>
+<g fill="#dcecff" font-family="Arial,sans-serif">
+ <text x="810" y="330" font-size="28" font-weight="700">Suitcase-first identity</text>
+ <text x="810" y="375" font-size="21" fill="#b8cce0">Compact luggage-inspired enclosure</text>
+ <text x="810" y="430" font-size="28" font-weight="700">Four-wheel mobility</text>
+ <text x="810" y="475" font-size="21" fill="#b8cce0">Four integrated spinner wheels</text>
+ <text x="810" y="530" font-size="28" font-weight="700">Embedded intelligence</text>
+ <text x="810" y="575" font-size="21" fill="#b8cce0">Discreet sensing and user interaction</text>
+</g>
+<path d="M785 350H745M785 450H745M785 550H745" stroke="#42d9ff" stroke-width="3" filter="url(#glow)"/>
+<text x="70" y="770" fill="#8ba7c1" font-family="Arial,sans-serif" font-size="18">CONCEPT ONLY · NOT A BUILT OR VALIDATED PRODUCT</text>
+</svg>
