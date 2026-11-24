@@ -97,6 +97,66 @@
       ]
     },
     {
+      "id": "sentinel",
+      "number": 2,
+      "name": {
+        "en": "PUI89 Sentinel",
+        "th": "PUI89 Sentinel"
+      },
+      "repo": "Pui89/PUI89-All-Terrain-Inspection-Robot",
+      "stageLabel": {
+        "en": "Specified",
+        "th": "กำหนดข้อกำหนดแล้ว"
+      },
+      "summary": {
+        "en": "Product scope and engineering requirements for a supervised four-legged exploration and inspection robot are documented. A representative warehouse mission profile and robot-geometry/joint-load-case documentation are recorded. No physical quadruped, integrated sensor suite or validated mobility is established.",
+        "th": "มีการบันทึกขอบเขตผลิตภัณฑ์และข้อกำหนดทางวิศวกรรมสำหรับหุ่นยนต์สี่ขาสำรวจและตรวจสอบภายใต้การกำกับดูแล พร้อมภารกิจตัวอย่างในคลังสินค้าและเอกสารรูปทรงหุ่นยนต์/กรณีโหลดข้อต่อ ยังไม่มีหุ่นยนต์สี่ขาจริง ชุดเซนเซอร์ที่บูรณาการแล้ว หรือสมรรถนะการเคลื่อนที่ที่ผ่านการยืนยัน"
+      },
+      "next": {
+        "en": "Complete an authorised site survey; define the mission route, operating envelope, hazards, sensor needs and measurable acceptance criteria; then close mass and actuator budgets before simulation or prototype procurement.",
+        "th": "สำรวจพื้นที่ที่ได้รับอนุญาต กำหนดเส้นทางภารกิจ ขอบเขตการทำงาน อันตราย ความต้องการเซนเซอร์ และเกณฑ์ยอมรับที่วัดผลได้ จากนั้นสรุปงบน้ำหนักและแอคชูเอเตอร์ก่อนการจำลองหรือจัดหาต้นแบบ"
+      },
+      "evidence": {
+        "en": "Documented product scope and engineering requirements; representative warehouse mission profile (PR #224); site-survey worksheet (PR #225, open); robot geometry and joint-load-case documentation. Evidence supports the requirements gate only. No physical robot, integrated sensor suite, validated gait, terrain traversal or field safety is established.",
+        "th": "มีเอกสารขอบเขตผลิตภัณฑ์และข้อกำหนดทางวิศวกรรม ภารกิจตัวอย่างในคลังสินค้า (PR #224) แบบฟอร์มสำรวจพื้นที่ (PR #225 ยังเปิดอยู่) และเอกสารรูปทรงหุ่นยนต์/กรณีโหลดข้อต่อ หลักฐานรองรับเฉพาะประตูข้อกำหนดเท่านั้น ยังไม่มีหุ่นยนต์จริง ชุดเซนเซอร์ที่บูรณาการ การเดินที่ผ่านการยืนยัน การเคลื่อนที่ผ่านภูมิประเทศ หรือความปลอดภัยภาคสนามที่ผ่านการทดสอบ"
+      },
+      "blockers": {
+        "en": "System architecture and interfaces, software foundation, reproducible simulation/evaluation, integrated hardware, controlled bench testing and field validation remain unverified.",
+        "th": "สถาปัตยกรรมระบบและส่วนเชื่อมต่อ พื้นฐานซอฟต์แวร์ การจำลอง/ประเมินผลที่ทำซ้ำได้ ฮาร์ดแวร์ที่บูรณาการ การทดสอบบนแท่นแบบควบคุม และการยืนยันภาคสนามยังไม่มีหลักฐานยืนยัน"
+      },
+      "history": [
+        {
+          "period": "2026-11",
+          "date": "2026-11-24",
+          "type": "restoration-baseline",
+          "note": {
+            "en": "Restored Sentinel's general quadruped inspection product record. The evidence-backed checklist starts at 1 of 10 gates (10%): product scope and requirements. No narcotics-screening or X-ray scope is included.",
+            "th": "กู้คืนบันทึกผลิตภัณฑ์หุ่นยนต์สี่ขาสำรวจและตรวจสอบทั่วไป โดยเริ่มรายการตรวจสอบที่มีหลักฐาน 1 จาก 10 ประตู (10%) คือขอบเขตผลิตภัณฑ์และข้อกำหนด ไม่มีขอบเขตการคัดกรองยาเสพติดหรือ X-ray"
+          }
+        }
+      ],
+      "evidenceDate": "2026-11-24",
+      "evidenceLinks": [
+        {
+          "label": {
+            "en": "Warehouse mission profile PR #224",
+            "th": "PR #224 ภารกิจตัวอย่างในคลังสินค้า"
+          },
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/pull/224"
+        },
+        {
+          "label": {
+            "en": "Site-survey worksheet PR #225",
+            "th": "PR #225 แบบฟอร์มสำรวจพื้นที่"
+          },
+          "url": "https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/pull/225"
+        }
+      ],
+      "completedGates": [
+        "requirements"
+      ]
+    },
+    {
       "id": "ai-home",
       "number": 2,
       "name": {
