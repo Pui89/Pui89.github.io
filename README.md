@@ -1,5 +1,7 @@
 # PUI89 — Independent Industrial AI Initiative
 
+[English](README.md) · [ภาษาไทย](README.th.md)
+
 **Founder-led. Independently developed in Thailand. Built progressively for the real world.**
 
 PUI89 is an independent, software-first Industrial AI initiative led by its founder. Independence does not mean working alone: PUI89 welcomes companies, hardware manufacturers, relevant startups and experienced professionals who can contribute expertise, technology, hardware, resources and practical support to help turn product concepts into real-world solutions. The founder retains strategic direction and leadership. Multiple product concepts share one PUI89 identity and are developed progressively according to evidence, resources and priorities—not all at once. The intended core team remains deliberately small, with one founder and up to one or two specialist collaborators when justified.
