@@ -9,7 +9,7 @@ This document is the canonical reference for the current PUI89 product portfolio
 
 ## 1. Official active portfolio
 
-PUI89 has **five active products**. The Shared AI Core is common engineering infrastructure and is **not** a seventh product.
+PUI89 has **six active products**. The Shared AI Core is common engineering infrastructure and is **not** a product.
 
 | No. | Official product name | Repository | English page | Thai page | Documented evidence status (21 Nov 2026) |
 |---:|---|---|---|---|---|
