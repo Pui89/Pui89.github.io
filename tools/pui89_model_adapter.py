@@ -5,7 +5,7 @@ from typing import Any
 from pui89_adaptive_orchestrator import evaluate
 from pui89_agent_contract import validate_evidence, validate_message
 
-PROJECTS = {"coconut_harvest", "extreme_flood_rescue", "multimodal_narcotics_screening"}
+PROJECTS = {"coconut_harvest"}
 FORBIDDEN_COMMAND_FIELDS = {"actuate", "actuator_command", "hardware_command", "physical_action", "execute_action", "robot_command"}
 
 def _valid_timestamp(value: Any) -> bool:
