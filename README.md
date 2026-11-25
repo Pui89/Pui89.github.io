@@ -16,7 +16,7 @@ PUI89 follows one central principle: **make system behaviour, evidence, uncertai
 >
 > สร้างสิ่งที่คุณอยากให้มีในฐานะผู้ใช้งาน
 
-Start with what people genuinely wish they had and would value using. Understand real needs, design the user experience, and engineer practical value—not merely what is technically possible. Apply this philosophy across all five active products. The developer's perspective is a starting point, not a substitute for real user needs, feedback, usability testing, or evidence.
+Start with what people genuinely wish they had and would value using. Understand real needs, design the user experience, and engineer practical value—not merely what is technically possible. Apply this philosophy across all six active products. The developer's perspective is a starting point, not a substitute for real user needs, feedback, usability testing, or evidence.
 
 <p align="center">
   <a href="https://pui89.github.io/">
@@ -44,15 +44,15 @@ The bilingual [PUI89 Product Operating Coverage Standard v1.0](docs/PUI89_PRODUC
 
 ## Portfolio documentation alignment
 
-The authoritative five-product scope and evidence-label rules are recorded in [PUI89 Portfolio Source of Truth v1.3](docs/PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.3.md). This is a governance record, not a claim that every product capability is implemented or validated.
+The authoritative six-product scope and evidence-label rules are recorded in [PUI89 Portfolio Source of Truth v1.3](docs/PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.3.md). This is a governance record, not a claim that every product capability is implemented or validated.
 
 ## Global manufacturing handoff system
 
-PUI89 now maintains a common [Global Manufacturing Handoff System v1.0](docs/PUI89_GLOBAL_MANUFACTURING_HANDOFF_SYSTEM_V1.0.md) across all five active product repositories. It defines exact component/BOM data, material and process controls, interfaces, work instructions, inspection and test evidence, approved substitutions, TQ/NCR/ECR workflows, factory qualification and release authority. It is designed so qualified teams can work from controlled records without relying on undocumented founder explanations. Unknown values remain **TBD / NOT RELEASED** and must never be guessed.
+PUI89 now maintains a common [Global Manufacturing Handoff System v1.0](docs/PUI89_GLOBAL_MANUFACTURING_HANDOFF_SYSTEM_V1.0.md) across all six active product repositories. It defines exact component/BOM data, material and process controls, interfaces, work instructions, inspection and test evidence, approved substitutions, TQ/NCR/ECR workflows, factory qualification and release authority. It is designed so qualified teams can work from controlled records without relying on undocumented founder explanations. Unknown values remain **TBD / NOT RELEASED** and must never be guessed.
 
 ## What PUI89 is building
 
-PUI89 develops five active product projects supported by a shared AI engineering direction:
+PUI89 develops six active product projects supported by a shared AI engineering direction:
 
 - **Shared AI Core:** reusable contracts, evidence handling, uncertainty-aware state, safety gates, verification utilities, and project adapters.
 - **Domain-specific AI software:** perception, monitoring, decision-support, and task-planning workflows tailored to each project.
@@ -61,15 +61,15 @@ PUI89 develops five active product projects supported by a shared AI engineering
 
 The compute direction is **software integration and coordination**, not semiconductor chip manufacturing. No hardware performance, energy saving, or cost reduction is claimed without measured evidence.
 
-## Five-product portfolio
+## Six-product portfolio
 
 Each project has its own repository, requirements, risks, and validation gates. Shared interfaces are reused through documented boundaries; project-specific safety and domain logic remain separate.
 
 | Project | Focus | Repository | Website |
 |---|---|---|---|
-| **Coconut Harvest AI** | Coconut maturity assessment and a proposed robotic harvesting workflow | [Repository](https://github.com/Pui89/Coconut-Harvest-AI) | [EN](https://pui89.github.io/coconut.html) · [TH](https://pui89.github.io/coconut-th.html) |
+| **Coconut Harvest AI** | Coconut maturity assessment and a proposed robotic harvesting workflow | [Repository](https://github.com/Pui89/Coconut-Harvest-AI) | [EN](https://pui89.github.io/coconut.html) · [TH](https://pui89.github.io/coconut-th.html) |\n| **PUI89 Sentinel — All-Terrain Inspection Robot** | Human-supervised four-legged inspection and traceable evidence capture in authorised environments | [Repository](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot) | [EN](https://pui89.github.io/sentinel.html) · [TH](https://pui89.github.io/sentinel-th.html) |
 | **PUI89 AI HOME** | Indoor home-condition awareness and evidence-led assistance | [Repository](https://github.com/Pui89/AI-Home-Safety-Robot) | [EN](https://pui89.github.io/home.html) · [TH](https://pui89.github.io/home-th.html) |
-| **PUI89 AI NOMAD — Carry-on Suitcase-Style Mobile AI Assistant** | Upright carry-on luggage form, telescopic pull handle and four spinner caster wheels at the base; 8–10 kg target, 10 kg maximum; not airline-certified or physically validated | [Repository](https://github.com/Pui89/AI-Mobile-Assistant-Robot) | [EN](https://pui89.github.io/nomad.html) · [TH](https://pui89.github.io/nomad-th.html) |
+| **PUI89 AI NOMAD — Compact Four-Wheel Mobile Assistant** | Compact dog-inspired four-wheel mobile-assistant concept with integrated handle; 8–10 kg target, 10 kg maximum; not physically validated | [Repository](https://github.com/Pui89/AI-Mobile-Assistant-Robot) | [EN](https://pui89.github.io/nomad.html) · [TH](https://pui89.github.io/nomad-th.html) |
 | **PUI89 AI Global SUV** | Medium-size global SUV concept; HEV-first evaluation with powertrain-neutral AI software | [Repository](https://github.com/Pui89/PUI89-AI-Global-SUV) | [EN](https://pui89.github.io/ai-global-suv.html) · [TH](https://pui89.github.io/ai-global-suv-th.html) |
 | **PUI89 AI Step-Through Scooter** | Rider-centred mobility intelligence and road-awareness research | [Repository](https://github.com/Pui89/AI-Step-Through-Scooter) | [EN](https://pui89.github.io/ai-robot-motorcycle.html) · [TH](https://pui89.github.io/ai-robot-motorcycle-th.html) |
 
@@ -192,7 +192,7 @@ PUI89 welcomes partnerships that create practical value. They may be project-spe
 
 ## Active portfolio — authoritative scope
 
-PUI89 has **exactly five active products**. [PUI89 Portfolio Source of Truth v1.3](docs/PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.3.md) is the canonical record for the five active product names, repository links, bilingual website links, founder-approved requirements and evidence maturity labels. Shared AI Core is common infrastructure, not a seventh product. Flood and road-water awareness may remain advisory requirements within relevant mobility products; they are not a separate product.
+PUI89 has **exactly six active products**. [PUI89 Portfolio Source of Truth v1.3](docs/PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.3.md) is the canonical record for the six active product names, repository links, bilingual website links, founder-approved requirements and evidence maturity labels. Shared AI Core is common infrastructure, not a seventh product. Flood and road-water awareness may remain advisory requirements within relevant mobility products; they are not a separate product.
 
 The source of truth also records the HOME 8 kg target / 10 kg maximum, NOMAD's ground-use four-wheel mobile-assistant identity, and the Coconut rights → human labels → held-out CPU evaluation sequence.
 
@@ -243,15 +243,15 @@ The standard is proposed for portfolio-wide adoption. Product maturity must be a
 The bilingual [Global Engineering & Manufacturing portal](https://pui89.github.io/global-engineering.html) provides the six-product manufacturing overview. The [Global Engineering & Manufacturing Standard v1.0](docs/PUI89_GLOBAL_ENGINEERING_MANUFACTURING_STANDARD_V1.0.md) defines documentation levels, SI units, materials/component provenance, extreme-climate qualification, manufacturing transfer, quality gates and evidence labels. Product-specific preliminary briefs are linked from the portal. All candidate specifications remain distinct from released production specifications and verified capabilities.
 
 
-## Portfolio status review — 24 November 2026
+## Portfolio status review — 25 November 2026
 
-PUI89's active portfolio contains **five products**. Shared AI Core is platform infrastructure, not a seventh product. Extreme Flood Rescue AI is retired and is not part of the active portfolio. Flood and road-water observations may remain conservative advisory requirements inside relevant mobility products; they do not create a separate rescue product. 
+PUI89's active portfolio contains **six products**. Shared AI Core is platform infrastructure, not a seventh product. Extreme Flood Rescue AI is retired and is not part of the active portfolio. Flood and road-water observations may remain conservative advisory requirements inside relevant mobility products; they do not create a separate rescue product. 
 
 | Active product | Current maturity | Next evidence gate |
 |---|---|---|
-| Coconut Harvest AI | Implemented — software and evaluation-preparation foundation | Rights-cleared real images, human-reviewed labels, leakage-safe split and reproducible CPU evaluation with per-class metrics. |
+| Coconut Harvest AI | Implemented — software and evaluation-preparation foundation | Rights-cleared real images, human-reviewed labels, leakage-safe split and reproducible CPU evaluation with per-class metrics. |\n| PUI89 Sentinel | Specified — supervised quadruped inspection requirements | One authorised mission, site/hazard baseline, operating envelope and measurable acceptance criteria. |
 | PUI89 AI HOME | Implemented — early requirements, architecture and software foundations | Software-only home-awareness demonstrator with traceable observations and repeatable tests; no live sensor or robot claim. |
-| PUI89 AI NOMAD | Implemented — early software foundation | Validate the suitcase user journey, dimensions, handling, wheel/handle ergonomics, mass and power budgets. |
+| PUI89 AI NOMAD | Implemented — early software foundation | Validate the compact four-wheel assistant user journey, body/handle ergonomics, stability, mobility layout, mass and power budgets. |
 | PUI89 AI Global SUV | Implemented — software-only safety and contract foundation | Establish the hazard/use-case baseline and reproducible advisory-only scenario evaluation; driver control remains authoritative. |
 | PUI89 AI Step-Through Scooter | Specified — rider-first product requirements | Complete rider hazard analysis, measurable acceptance criteria and reproducible advisory-software test evidence. |
 
@@ -259,4 +259,4 @@ These maturity labels describe documented development state, not commercial read
 
 **Latest dated product evidence:** Coconut Harvest AI's 24 November update records dataset split-isolation checks, public image-source research and a blank field-discovery register. It does not establish an approved training dataset, completed human annotation, a trained/evaluated PUI89 model, accuracy metrics or a working harvesting robot.
 
-**Review date:** 24 November 2026. Recheck each product repository and the bilingual [Evidence & Progress pages](https://pui89.github.io/evidence.html) before making a newer maturity claim.
+**Review date:** 25 November 2026. Recheck each product repository and the bilingual [Evidence & Progress pages](https://pui89.github.io/evidence.html) before making a newer maturity claim.
