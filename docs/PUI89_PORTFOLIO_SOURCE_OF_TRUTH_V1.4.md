@@ -27,7 +27,7 @@ Repository and page names above are identifiers and links, not evidence that a p
 ### Coconut Harvest AI
 Agricultural computer-vision and harvesting-assistance project focused on coconut maturity/perception workflows. Software evaluation and real-world agricultural performance must be reported separately. Do not claim validated detection accuracy, autonomous harvesting or field deployment without corresponding evidence.
 
-### PUI89 Sentinel — All-Terrain Exploration & Inspection Robot Dog
+### PUI89 Sentinel — All-Terrain Inspection Robot Dog
 A human-supervised four-legged quadruped for authorised industrial, infrastructure, logistics and selected outdoor exploration/inspection. Candidate functions include terrain and obstacle perception, localisation/mapping, supervised inspection evidence capture, anomaly cues, and traceable multimodal observations. Mobility, gait, terrain traversal, sensor integration and field performance remain unvalidated until supported by separate evidence.
 
 **Explicitly excluded legacy scope:** narcotics detection or screening; X-ray screening, payloads or datasets; associated narcotics datasets and forensic spectra; chemical identification and enforcement. These items must not be restored as Sentinel product capabilities.
@@ -54,7 +54,7 @@ Shared interfaces and engineering principles may include observation, world-stat
 
 - **Extreme Flood Rescue AI** is retired and is not an active PUI89 product. Do not include it in active portfolio lists, product counts, current architecture diagrams, product roadmaps or active project navigation.
 - General flood, road-water, weather and environmental awareness may remain as advisory requirements within relevant active products, particularly mobility products, when clearly scoped and supported by evidence. This does not create a separate rescue product or establish flood-driving capability.
-- **PUI89 Sentinel is active** as the All-Terrain Exploration & Inspection Robot Dog: a human-supervised four-legged quadruped for authorised industrial, infrastructure, logistics and selected outdoor inspection. Its former narcotics-screening scope is excluded: do not restore narcotics detection/screening, X-ray screening or datasets, associated forensic spectra, chemical identification or enforcement. Preserve historical screening artifacts only as legacy records; do not represent them as current Sentinel capabilities.
+- **PUI89 Sentinel is active** as the All-Terrain Inspection Robot Dog: a human-supervised four-legged quadruped for authorised industrial, infrastructure, logistics and selected outdoor inspection. Its former narcotics-screening scope is excluded: do not restore narcotics detection/screening, X-ray screening or datasets, associated forensic spectra, chemical identification or enforcement. Preserve historical screening artifacts only as legacy records; do not represent them as current Sentinel capabilities.
 - Do not rewrite historical Git commits or imply that historical repository records have been erased.
 
 ## 5. Evidence and maturity language
@@ -119,4 +119,4 @@ If a conflict appears, do not silently guess. Treat this source as the portfolio
 
 - **v1.2 — 21 November 2026:** Re-established a directly retrievable canonical source; confirmed the six-product portfolio and Shared AI Core boundary.
 - **v1.3 — 24 November 2026:** Incorrectly marked Sentinel as retired. Superseded by v1.4 after correction of the product identity.
-- **v1.4 — 25 November 2026:** Restored PUI89 Sentinel as the sixth active product: All-Terrain Exploration & Inspection Robot Dog. Explicitly retained narcotics screening, X-ray screening/datasets and related forensic/chemical-identification scope as excluded. Extreme Flood Rescue AI remains retired.
+- **v1.4 — 25 November 2026:** Restored PUI89 Sentinel as the sixth active product: All-Terrain Inspection Robot Dog. Explicitly retained narcotics screening, X-ray screening/datasets and related forensic/chemical-identification scope as excluded. Extreme Flood Rescue AI remains retired.
