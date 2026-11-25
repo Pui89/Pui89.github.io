@@ -27,6 +27,11 @@ Repository and page names above are identifiers and links, not evidence that a p
 ### Coconut Harvest AI
 Agricultural computer-vision and harvesting-assistance project focused on coconut maturity/perception workflows. Software evaluation and real-world agricultural performance must be reported separately. Do not claim validated detection accuracy, autonomous harvesting or field deployment without corresponding evidence.
 
+### PUI89 Sentinel — All-Terrain Exploration & Inspection Robot Dog
+A human-supervised four-legged quadruped for authorised industrial, infrastructure, logistics and selected outdoor exploration/inspection. Candidate functions include terrain and obstacle perception, localisation/mapping, supervised inspection evidence capture, anomaly cues, and traceable multimodal observations. Mobility, gait, terrain traversal, sensor integration and field performance remain unvalidated until supported by separate evidence.
+
+**Explicitly excluded legacy scope:** narcotics detection or screening; X-ray screening, payloads or datasets; associated narcotics datasets and forensic spectra; chemical identification and enforcement. These items must not be restored as Sentinel product capabilities.
+
 ### PUI89 AI HOME
 Indoor four-wheel assistant concept. Its design and software scope must remain distinct from NOMAD. Physical mobility, payload, home-safety and sensor performance require separate validation.
 
@@ -41,7 +46,7 @@ Rider-first two-wheel step-through scooter/motorcycle concept. AI assistance is 
 
 ## 3. Shared AI Core boundary
 
-[PUI89 Shared AI Core](https://github.com/Pui89/PUI89-Shared-AI-Core) is reusable engineering infrastructure for the six products. It is not a standalone customer product in the five-product count.
+[PUI89 Shared AI Core](https://github.com/Pui89/PUI89-Shared-AI-Core) is reusable engineering infrastructure for the six products. It is not a standalone customer product in the six-product count.
 
 Shared interfaces and engineering principles may include observation, world-state representation, bounded action proposals, failure reporting, provenance, timestamps, uncertainty, abstention, human review, safe-state handling, heterogeneous compute efficiency, edge inference and recovery. A shared capability is a design direction until implementation and product-specific evidence demonstrate it. Do not assume that every product implements every shared capability.
 
