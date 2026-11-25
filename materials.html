@@ -8,7 +8,89 @@
 <style>
 :root{color-scheme:dark;--bg:#091321;--panel:#111f31;--line:#2b4058;--text:#eef5ff;--muted:#b4c2d5;--cyan:#42d9ff;--silver:#c5d0dc}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 85% 0,#18334b 0,transparent 42%),var(--bg);color:var(--text);font:16px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif}.wrap{width:min(1080px,calc(100% - 36px));margin:auto}a{color:var(--cyan);text-underline-offset:4px}.nav{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:22px 0;border-bottom:1px solid var(--line)}.nav a{margin-right:16px;text-decoration:none}.hero{padding:62px 0 34px}.eyebrow{color:var(--cyan);font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.hero h1{font-size:clamp(2.3rem,6vw,4.2rem);line-height:1.08;letter-spacing:-.04em;margin:14px 0}.hero p,.muted{color:var(--muted);max-width:800px}.section{padding:24px 0 34px}.section h2{font-size:1.65rem;margin:0 0 10px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}.card h3{margin:0 0 8px;color:var(--silver)}.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.step{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}.step:before{counter-increment:s;content:counter(s,decimal-leading-zero);display:block;color:var(--cyan);font-weight:800;margin-bottom:8px}.note{border-left:3px solid var(--cyan);padding:12px 16px;background:#10243a;color:var(--muted)}table{width:100%;border-collapse:collapse;background:var(--panel);border-radius:12px;overflow:hidden}th,td{text-align:left;vertical-align:top;padding:12px;border-bottom:1px solid var(--line)}th{color:var(--cyan)}footer{padding:30px 0 50px;color:var(--muted);border-top:1px solid var(--line);margin-top:28px}@media(max-width:640px){th,td{padding:9px;font-size:.9rem}}
-.project-bom{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin:14px 0;overflow:hidden}.project-bom summary{cursor:pointer;display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:16px 18px;list-style:none}.project-bom summary::-webkit-details-marker{display:none}.project-bom summary b{color:var(--cyan)}.project-bom summary strong{flex:1}.project-bom summary span{color:var(--silver);font-size:.9rem}.bom-body{padding:0 18px 18px}.bom-body h3{margin:0 0 6px}.table-scroll{overflow-x:auto;margin:14px 0}.table-scroll table{min-width:700px}.project-bom[open] summary{border-bottom:1px solid var(--line)}@media(max-width:640px){.project-bom summary span{width:100%}.bom-body{padding:0 12px 14px}}</style>
+.project-bom{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin:14px 0;overflow:hidden}.project-bom summary{cursor:pointer;display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:16px 18px;list-style:none}.project-bom summary::-webkit-details-marker{display:none}.project-bom summary b{color:var(--cyan)}.project-bom summary strong{flex:1}.project-bom summary span{color:var(--silver);font-size:.9rem}.bom-body{padding:0 18px 18px}.bom-body h3{margin:0 0 6px}.table-scroll{overflow-x:auto;margin:14px 0}.table-scroll table{min-width:700px}.project-bom[open] summary{border-bottom:1px solid var(--line)}@media(max-width:640px){.project-bom summary span{width:100%}.bom-body{padding:0 12px 14px}}
+/* PUI89 Reading Focus — Materials page: reduce all-blue surfaces */
+:root{
+  --bg:#0b1117;
+  --panel:#192127;
+  --line:rgba(205,218,220,.17);
+  --text:#f1f4f3;
+  --muted:#c0c9c8;
+  --cyan:#79d5df;
+  --silver:#d0d6d5;
+}
+body{
+  background:
+    radial-gradient(ellipse at 90% 0,rgba(112,153,158,.10),transparent 38%),
+    linear-gradient(180deg,#0b1117 0%,#11191e 52%,#0b1117 100%) !important;
+  color:var(--text);
+  line-height:1.8;
+}
+.wrap{max-width:1120px}
+.nav{border-color:var(--line)}
+.nav a{color:#a9dce0}
+.hero{padding:clamp(38px,6vw,66px) 0 30px}
+.hero h1{max-width:900px;letter-spacing:-.035em}
+.hero p{max-width:78ch}
+.section{
+  margin:24px 0;
+  padding:clamp(20px,3vw,30px);
+  border:1px solid var(--line);
+  border-left:3px solid #79aeb2;
+  border-radius:16px;
+  background:linear-gradient(145deg,rgba(27,36,41,.94),rgba(19,27,32,.94));
+}
+.section:nth-of-type(2){border-left-color:#a6c38b}
+.section:nth-of-type(3){border-left-color:#83b8c8}
+.section:nth-of-type(4){border-left-color:#b7a5d8}
+.section:nth-of-type(5){border-left-color:#c5b18a}
+.section h2{line-height:1.3;text-wrap:balance}
+.card,.step,.project-bom{
+  background:#20292e;
+  border-color:var(--line);
+  box-shadow:0 8px 24px rgba(0,0,0,.12);
+}
+.card h3{color:#e5eae8}
+.step:before{color:#a9dce0}
+.step:nth-child(3n+1){border-top:2px solid rgba(166,195,139,.55)}
+.step:nth-child(3n+2){border-top:2px solid rgba(121,181,195,.55)}
+.step:nth-child(3n){border-top:2px solid rgba(183,165,216,.5)}
+.note{
+  background:#202a2d;
+  border-left-color:#83b8bd;
+  color:#d0d8d6;
+  border-radius:0 10px 10px 0;
+}
+table{
+  background:#171f24;
+  border:1px solid var(--line);
+  border-radius:10px;
+  overflow:hidden;
+}
+th{
+  color:#d6e7e5;
+  background:#293338;
+  font-weight:700;
+}
+td{color:#d0d8d6}
+tbody tr:nth-child(even){background:rgba(255,255,255,.025)}
+tbody tr:hover{background:rgba(121,181,195,.07)}
+.table-scroll{border-radius:10px}
+.project-bom summary b{color:#a9dce0}
+.project-bom summary span{color:#c0c9c8}
+.project-bom[open] summary{border-bottom-color:var(--line)}
+a{color:#8edce5}
+a:hover{color:#c4f2f3}
+footer{border-color:var(--line)}
+:focus-visible{outline:3px solid #8edce5;outline-offset:4px}
+@media(max-width:640px){
+  .section{padding:18px;margin:18px 0}
+  .hero{padding-top:36px}
+  .card,.step{padding:16px}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+</style>
 </head>
 <body><div class="wrap">
 <nav class="nav" aria-label="Main navigation"><div><a href="index.html">PUI89</a><a href="index.html#projects">Projects</a><a href="news.html">News</a><a href="materials.html" aria-current="page">Materials sourcing</a></div><a href="materials-th.html" lang="th">ไทย</a></nav>
