@@ -40,7 +40,7 @@ The bilingual product pages now describe each product's sensory perception, unde
 
 ## Product operating coverage standard
 
-The bilingual [PUI89 Product Operating Coverage Standard v1.0](docs/PUI89_PRODUCT_OPERATING_COVERAGE_STANDARD_V1.0.md) defines the correct per-unit allocation and measurement method for all five active products. It sets AI HOME at one robot and one charging dock per floor; defines Coconut Harvest AI by assigned plantation work, AI NOMAD by traveller/luggage task, and each vehicle AI system by one vehicle and its approved routes. Unsupported numerical coverage figures are explicitly withdrawn; public capacity claims require product-specific test evidence. The standard is a proposed requirement, not proof of physical performance.
+The bilingual [PUI89 Product Operating Coverage Standard v1.0](docs/PUI89_PRODUCT_OPERATING_COVERAGE_STANDARD_V1.0.md) defines the correct per-unit allocation and measurement method for all six active products. It sets AI HOME at one robot and one charging dock per floor; defines Coconut Harvest AI by assigned plantation work, AI NOMAD by traveller/luggage task, and each vehicle AI system by one vehicle and its approved routes. Unsupported numerical coverage figures are explicitly withdrawn; public capacity claims require product-specific test evidence. The standard is a proposed requirement, not proof of physical performance.
 
 ## Portfolio documentation alignment
 
@@ -220,7 +220,7 @@ PUI89's engineering principle for this product is to start with the simplest use
 
 ## Offline Independence & Connectivity Resilience
 
-**The Product Must Work Without the App. Safety Must Work Without Connectivity.** PUI89's proposed mandatory requirements for all five products cover physical/local controls, offline operation, product-specific safe states, local records and recovery, printed manuals, optional remote access, failure-injection tests and evidence-based release gates.
+**The Product Must Work Without the App. Safety Must Work Without Connectivity.** PUI89's proposed mandatory requirements for all six products cover physical/local controls, offline operation, product-specific safe states, local records and recovery, printed manuals, optional remote access, failure-injection tests and evidence-based release gates.
 
 - [PUI89 Offline Independence & Connectivity Resilience Standard v1.0](docs/PUI89_OFFLINE_INDEPENDENCE_CONNECTIVITY_RESILIENCE_STANDARD_V1.0.md)
 - Every product must document what works at fully offline, local-connection, internet-connected and remote-service levels. The app and QR code are optional; neither replaces printed safety instructions or local controls.
