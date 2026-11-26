@@ -1,6 +1,6 @@
-# PUI89 Portfolio Source of Truth v1.4
+# PUI89 Portfolio Source of Truth v1.5
 
-**Effective review date:** 25 November 2026  
+**Effective review date:** 26 November 2026  
 **Owner:** PUI89  
 **Status:** Portfolio governance and documentation reference  
 **Scope:** Official active product identity, repository mapping, shared infrastructure boundaries and evidence-language rules.
@@ -14,9 +14,9 @@ PUI89 has **six active products**. The Shared AI Core is common engineering infr
 | No. | Official product name | Repository | English page | Thai page | Documented evidence status (21 Nov 2026) |
 |---:|---|---|---|---|---|
 | 1 | Coconut Harvest AI | [Pui89/Coconut-Harvest-AI](https://github.com/Pui89/Coconut-Harvest-AI) | [coconut.html](https://pui89.github.io/coconut.html) | [coconut-th.html](https://pui89.github.io/coconut-th.html) | Implemented software/evaluation-preparation work; real-image detector accuracy and physical harvesting are not validated. |
-| 2 | PUI89 Sentinel — All-Terrain Inspection Robot Dog | [Pui89/PUI89-All-Terrain-Inspection-Robot](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot) | [sentinel.html](https://pui89.github.io/sentinel.html) | [sentinel-th.html](https://pui89.github.io/sentinel-th.html) | Specified — four-legged quadruped requirements; no physical prototype, integrated sensor suite or field validation. Narcotics/X-ray screening is excluded. |
+| 2 | PUI89 Sentinel — Quadruped Environmental Inspection Robot | [Pui89/PUI89-All-Terrain-Inspection-Robot](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot) | [sentinel.html](https://pui89.github.io/sentinel.html) | [sentinel-th.html](https://pui89.github.io/sentinel-th.html) | Specified — four-legged quadruped requirements; no physical prototype, integrated sensor suite or field validation. Narcotics/X-ray screening is excluded. |
 | 3 | PUI89 AI HOME | [Pui89/AI-Home-Safety-Robot](https://github.com/Pui89/AI-Home-Safety-Robot) | [home.html](https://pui89.github.io/home.html) | [home-th.html](https://pui89.github.io/home-th.html) | Implemented early software foundations; no physical robot or validated home-safety performance. |
-| 4 | PUI89 AI NOMAD | [Pui89/AI-Mobile-Assistant-Robot](https://github.com/Pui89/AI-Mobile-Assistant-Robot) | [nomad.html](https://pui89.github.io/nomad.html) | [nomad-th.html](https://pui89.github.io/nomad-th.html) | Implemented early software foundations; suitcase-form mobile assistant; physical handling and rolling performance are unvalidated. |
+| 4 | PUI89 AI NOMAD | [Pui89/AI-Mobile-Assistant-Robot](https://github.com/Pui89/AI-Mobile-Assistant-Robot) | [nomad.html](https://pui89.github.io/nomad.html) | [nomad-th.html](https://pui89.github.io/nomad-th.html) | Implemented early software foundations; compact dog-inspired four-wheel mobile assistant with handle; physical mobility and handling performance are unvalidated. |
 | 5 | PUI89 AI Global SUV | [Pui89/PUI89-AI-Global-SUV](https://github.com/Pui89/PUI89-AI-Global-SUV) | [ai-global-suv.html](https://pui89.github.io/ai-global-suv.html) | [ai-global-suv-th.html](https://pui89.github.io/ai-global-suv-th.html) | Implemented early software-only safety/contract foundation; no vehicle integration, road testing or certification. |
 | 6 | PUI89 AI Step-Through Scooter | [Pui89/AI-Step-Through-Scooter](https://github.com/Pui89/AI-Step-Through-Scooter) | [ai-robot-motorcycle.html](https://pui89.github.io/ai-robot-motorcycle.html) | [ai-robot-motorcycle-th.html](https://pui89.github.io/ai-robot-motorcycle-th.html) | Specified rider-first two-wheel step-through requirements; no functioning scooter, rider trials or road certification. |
 
@@ -27,7 +27,7 @@ Repository and page names above are identifiers and links, not evidence that a p
 ### Coconut Harvest AI
 Agricultural computer-vision and harvesting-assistance project focused on coconut maturity/perception workflows. Software evaluation and real-world agricultural performance must be reported separately. Do not claim validated detection accuracy, autonomous harvesting or field deployment without corresponding evidence.
 
-### PUI89 Sentinel — All-Terrain Inspection Robot Dog
+### PUI89 Sentinel — Quadruped Environmental Inspection Robot
 A human-supervised four-legged quadruped for authorised industrial, infrastructure, logistics and selected outdoor exploration/inspection. Candidate functions include terrain and obstacle perception, localisation/mapping, supervised inspection evidence capture, anomaly cues, and traceable multimodal observations. Mobility, gait, terrain traversal, sensor integration and field performance remain unvalidated until supported by separate evidence.
 
 **Explicitly excluded legacy scope:** narcotics detection or screening; X-ray screening, payloads or datasets; associated narcotics datasets and forensic spectra; chemical identification and enforcement. These items must not be restored as Sentinel product capabilities.
@@ -35,8 +35,8 @@ A human-supervised four-legged quadruped for authorised industrial, infrastructu
 ### PUI89 AI HOME
 Indoor four-wheel assistant concept. Its design and software scope must remain distinct from NOMAD. Physical mobility, payload, home-safety and sensor performance require separate validation.
 
-### PUI89 AI NOMAD
-Suitcase-form mobile assistant concept with an integrated telescopic pull handle and luggage-style wheels. The suitcase form is the product's defining physical identity. It is distinct from AI HOME. No physical prototype, handling/rolling performance, environmental tolerance, payload, battery endurance or airline/cabin-baggage acceptance is established; dimensions and physical specifications remain subject to user research and engineering validation.
+### PUI89 AI NOMAD — Compact Four-Wheel Mobile Assistant
+Compact, dog-inspired four-wheel mobile assistant with a handle, intended for supervised user-directed mobility and assistance workflows. It is distinct from AI HOME and is not a suitcase, travel-luggage or airline cabin-baggage product. No physical prototype, mobility performance, environmental tolerance, payload or battery endurance is established; dimensions and physical specifications remain subject to engineering validation.
 
 ### PUI89 AI Global SUV
 AI-enabled vehicle intelligence and safety-assistance project. Advisory perception and warning concepts must not be represented as autonomous driving, vehicle-control authority, road-tested performance or certified safety capability.
@@ -120,3 +120,4 @@ If a conflict appears, do not silently guess. Treat this source as the portfolio
 - **v1.2 — 21 November 2026:** Re-established a directly retrievable canonical source; confirmed the six-product portfolio and Shared AI Core boundary.
 - **v1.3 — 24 November 2026:** Incorrectly marked Sentinel as retired. Superseded by v1.4 after correction of the product identity.
 - **v1.4 — 25 November 2026:** Restored PUI89 Sentinel as the sixth active product: All-Terrain Inspection Robot Dog. Explicitly retained narcotics screening, X-ray screening/datasets and related forensic/chemical-identification scope as excluded. Extreme Flood Rescue AI remains retired.
+- **v1.5 — 26 November 2026:** Corrected Sentinel's canonical name to Quadruped Environmental Inspection Robot and corrected AI NOMAD's identity to a compact dog-inspired four-wheel mobile assistant with handle; removed the inaccurate suitcase/luggage identity from the current portfolio baseline.
