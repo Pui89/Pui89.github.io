@@ -36,7 +36,7 @@ A human-supervised four-legged quadruped for authorised industrial, infrastructu
 Indoor four-wheel assistant concept. Its design and software scope must remain distinct from NOMAD. Physical mobility, payload, home-safety and sensor performance require separate validation.
 
 ### PUI89 AI NOMAD — Compact Four-Wheel Mobile Assistant
-Compact, dog-inspired four-wheel mobile assistant with a handle, intended for supervised user-directed mobility and assistance workflows. It is distinct from AI HOME. Its enclosure is suitcase-shaped and it rolls on four wheels; it is a mobile assistant rather than ordinary travel luggage. No physical prototype, mobility performance, environmental tolerance, payload or battery endurance is established; dimensions and physical specifications remain subject to engineering validation.
+Compact suitcase-style four-wheel mobile assistant with an integrated pull handle, intended for supervised user-directed mobility and assistance workflows. It is distinct from AI HOME. Its enclosure is suitcase-shaped and it rolls on four wheels; it is a mobile assistant rather than ordinary travel luggage. No physical prototype, mobility performance, environmental tolerance, payload or battery endurance is established; dimensions and physical specifications remain subject to engineering validation.
 
 ### PUI89 AI Global SUV
 AI-enabled vehicle intelligence and safety-assistance project. Advisory perception and warning concepts must not be represented as autonomous driving, vehicle-control authority, road-tested performance or certified safety capability.
