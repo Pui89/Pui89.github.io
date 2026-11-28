@@ -67,9 +67,9 @@ Each project has its own repository, requirements, risks, and validation gates. 
 
 | Project | Focus | Repository | Website |
 |---|---|---|---|
-| **Coconut Harvest AI** | Coconut maturity assessment and a proposed robotic harvesting workflow | [Repository](https://github.com/Pui89/Coconut-Harvest-AI) | [EN](https://pui89.github.io/coconut.html) · [TH](https://pui89.github.io/coconut-th.html) |\n| **PUI89 Sentinel — All-Terrain Inspection Robot** | Human-supervised four-legged inspection and traceable evidence capture in authorised environments | [Repository](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot) | [EN](https://pui89.github.io/sentinel.html) · [TH](https://pui89.github.io/sentinel-th.html) |
+| **Coconut Harvest AI** | Coconut maturity assessment and a proposed robotic harvesting workflow | [Repository](https://github.com/Pui89/Coconut-Harvest-AI) | [EN](https://pui89.github.io/coconut.html) · [TH](https://pui89.github.io/coconut-th.html) |\n| **PUI89 Sentinel — All-Terrain Inspection Robot Dog** | Human-supervised four-legged inspection and traceable evidence capture in authorised environments | [Repository](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot) | [EN](https://pui89.github.io/sentinel.html) · [TH](https://pui89.github.io/sentinel-th.html) |
 | **PUI89 AI HOME** | Indoor home-condition awareness and evidence-led assistance | [Repository](https://github.com/Pui89/AI-Home-Safety-Robot) | [EN](https://pui89.github.io/home.html) · [TH](https://pui89.github.io/home-th.html) |
-| **PUI89 AI NOMAD — Compact Four-Wheel Mobile Assistant** | Compact dog-inspired four-wheel mobile-assistant concept with integrated handle; 8–10 kg target, 10 kg maximum; not physically validated | [Repository](https://github.com/Pui89/AI-Mobile-Assistant-Robot) | [EN](https://pui89.github.io/nomad.html) · [TH](https://pui89.github.io/nomad-th.html) |
+| **PUI89 AI NOMAD — Compact Four-Wheel Mobile Assistant** | Compact dog-inspired four-wheel mobile-assistant concept with integrated handle; approximately 7 kg target, 10 kg maximum; not physically validated | [Repository](https://github.com/Pui89/AI-Mobile-Assistant-Robot) | [EN](https://pui89.github.io/nomad.html) · [TH](https://pui89.github.io/nomad-th.html) |
 | **PUI89 AI Global SUV** | Medium-size global SUV concept; HEV-first evaluation with powertrain-neutral AI software | [Repository](https://github.com/Pui89/PUI89-AI-Global-SUV) | [EN](https://pui89.github.io/ai-global-suv.html) · [TH](https://pui89.github.io/ai-global-suv-th.html) |
 | **PUI89 AI Step-Through Scooter** | Rider-centred mobility intelligence and road-awareness research | [Repository](https://github.com/Pui89/AI-Step-Through-Scooter) | [EN](https://pui89.github.io/ai-robot-motorcycle.html) · [TH](https://pui89.github.io/ai-robot-motorcycle-th.html) |
 
@@ -194,7 +194,7 @@ PUI89 welcomes partnerships that create practical value. They may be project-spe
 
 PUI89 has **exactly six active products**. [PUI89 Portfolio Source of Truth v1.3](docs/PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.3.md) is the canonical record for the six active product names, repository links, bilingual website links, founder-approved requirements and evidence maturity labels. Shared AI Core is common infrastructure, not a seventh product. Flood and road-water awareness may remain advisory requirements within relevant mobility products; they are not a separate product.
 
-The source of truth also records the HOME 8 kg target / 10 kg maximum, NOMAD's ground-use four-wheel mobile-assistant identity, and the Coconut rights → human labels → held-out CPU evaluation sequence.
+The source of truth also records the HOME 4–6 kg target / 10 kg maximum, NOMAD's dog-inspired four-wheel mobile-assistant identity, and the Coconut rights → human labels → held-out CPU evaluation sequence.
 
 
 ---
@@ -260,3 +260,10 @@ These maturity labels describe documented development state, not commercial read
 **Latest dated product evidence:** Coconut Harvest AI's 24 November update records dataset split-isolation checks, public image-source research and a blank field-discovery register. It does not establish an approved training dataset, completed human annotation, a trained/evaluated PUI89 model, accuracy metrics or a working harvesting robot.
 
 **Review date:** 25 November 2026. Recheck each product repository and the bilingual [Evidence & Progress pages](https://pui89.github.io/evidence.html) before making a newer maturity claim.
+
+
+## Portfolio alignment update — 28 November 2026
+
+The current portfolio baseline is [PUI89 Portfolio Source of Truth v1.3](PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.3.md). It confirms six active products, Shared AI Core as shared infrastructure, and the current design/research boundaries for Sentinel, HOME, NOMAD and AI Global SUV. The SUV's RWD-first/AWD-capable, Full HEV and 700 mm wading-depth choices are research preferences only, not validated specifications.
+
+The six-product prototype BOM and cost method is documented in [English](https://github.com/Pui89/PUI89-Research/blob/main/docs/PROTOTYPE_BOM_AND_COST_FRAMEWORK.md) and [ภาษาไทย](https://github.com/Pui89/PUI89-Research/blob/main/docs/PROTOTYPE_BOM_AND_COST_FRAMEWORK.th.md). Costs remain TBD until exact configurations and dated supplier evidence exist.
