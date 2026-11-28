@@ -1,19 +1,18 @@
 # PUI89 — Product Evidence Dashboard
 
-**Portfolio review baseline:** 21 November 2026  
+**Portfolio review baseline:** 28 November 2026  
 **Active products:** exactly six. **Shared AI Core is infrastructure, not a seventh product.**
 
-The authoritative names, canonical repositories, bilingual website links, product boundaries and evidence vocabulary are maintained in [PUI89 Portfolio Source of Truth v1.2](PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.2.md).
+The authoritative identities, bilingual pages, product boundaries and design/research preferences are maintained in [PUI89 Portfolio Source of Truth v1.3](PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.3.md).
 
-| # | Active product | Canonical repository | Current evidence boundary | Next evidence gate |
-|---:|---|---|---|---|
-| 1 | Coconut Harvest AI | [Repository](https://github.com/Pui89/Coconut-Harvest-AI) | Software/evaluation preparation; no real-image accuracy claim unless a rights-cleared held-out test report is linked. | Dataset rights, human labels, leakage-safe test split, CPU metrics and failure cases. |
-| 2 | PUI89 Sentinel — All-Terrain Exploration & Inspection Robot (quadruped) | [Repository](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot) | Quadruped concept and requirements; no physical mobility or field capability claim. Narcotics screening, X-ray screening and chemical identification are outside product scope. | Define first supervised inspection mission and operating envelope before hardware selection. |
-| 3 | PUI89 AI HOME | [Repository](https://github.com/Pui89/AI-Home-Safety-Robot) | Design/software preparation; complete mass requirement is 8 kg target, 10 kg maximum. | Verify design mass budget and later measure complete prototype mass. |
-| 4 | PUI89 AI NOMAD | [Repository](https://github.com/Pui89/AI-Mobile-Assistant-Robot) | Compact dog-inspired four-wheel outdoor/mobile assistant with retractable manual handling handle; no physical mobility or outdoor validation. Not a security-patrol robot. | Define practical assistance tasks, supervised mobility envelope, wheel/handle engineering, terrain limits and safe stop. |
-| 5 | PUI89 AI Global SUV | [Repository](https://github.com/Pui89/PUI89-AI-Global-SUV) | Vehicle concept; AI support remains advisory. | Validate road/context perception offline and document driver-warning limits. |
-| 6 | PUI89 AI Step-Through Scooter | [Repository](https://github.com/Pui89/AI-Step-Through-Scooter) | Two-wheel step-through scooter concept; AI support remains advisory. | Define road-water/flood-risk warning scenarios; unknown water means do not enter. |
-
+| # | Active product | Current evidence boundary | Next evidence gate |
+|---:|---|---|---|
+| 1 | Coconut Harvest AI | Software/evaluation preparation; no real-image accuracy claim without rights-cleared held-out test results. Four maturity classes; 0–30 m is a design target only. | Dataset rights, human labels, leakage-safe test split, CPU metrics and failure cases. |
+| 2 | PUI89 Sentinel — All-Terrain Inspection Robot Dog | Quadruped concept and requirements; RGB/depth/thermal/360° LiDAR are research modalities, not confirmed installed hardware. No physical mobility or field capability claim. Narcotics/X-ray screening is excluded. | Define first supervised inspection mission, operating envelope, hazards and measurable acceptance criteria before hardware selection. |
+| 3 | PUI89 AI HOME | Four-wheel indoor assistant design/software preparation; 4–6 kg target mass, 10 kg maximum including battery and installed hardware. Not measured. | Verify design mass budget, sensor/compute configuration and repeatable indoor software evaluation. |
+| 4 | PUI89 AI NOMAD | Dog-inspired four-wheel mobile assistant with manual handling handle; approximately 7 kg target mass, 10 kg maximum. Physical mobility and outdoor performance are not validated. | Define assistance tasks, terrain envelope, wheel/handle engineering, stability, runtime and safe stop. |
+| 5 | PUI89 AI Global SUV | Medium-size SUV concept; AI is advisory only. RWD-first/AWD-capable, Full HEV and 700 mm wading depth are research preferences, not validated specifications. | Validate road/context perception offline; assess vehicle platform, safety interfaces, water-ingress engineering and regulatory scope. |
+| 6 | PUI89 AI Step-Through Scooter | Two-wheel step-through concept; rider remains in control. Powertrain and hardware configuration remain open. | Define powertrain, rider ergonomics, road/water warning scenarios and measurable software acceptance criteria. |
 
 ## Evidence maturity labels
 
@@ -21,9 +20,13 @@ Use only: **Proposed, Specified, Implemented, Simulated, Software-tested, Bench-
 
 Do not publish unsupported commercial-readiness percentages. Each maturity claim must link to the relevant specification, commit, test, simulation report, bench record, field report or certificate. A passing workflow is not product validation.
 
-## How to read automated checks
+## Latest research repository milestones — 28 November 2026
 
-Automated tests establish only the software behavior they actually exercise for the cited commit. They do not establish model accuracy, dataset rights, physical safety, robot performance, roadworthiness, certification or customer demand. A missing workflow run is **Unknown**, not a pass or a failure.
+The PUI89-Research repository records merged work for the six-product register, environmental/material/safety qualification reference, preliminary Coconut Harvest AI literature review, FreeCut communication workflow, and 360-degree perception framework/validation protocol ([PR #6](https://github.com/Pui89/PUI89-Research/pull/6), [#7](https://github.com/Pui89/PUI89-Research/pull/7), [#9](https://github.com/Pui89/PUI89-Research/pull/9), [#10](https://github.com/Pui89/PUI89-Research/pull/10), [#11](https://github.com/Pui89/PUI89-Research/pull/11), [#12](https://github.com/Pui89/PUI89-Research/pull/12)). The Hybrid End-to-End Multimodal AI architecture remains open for review in [PR #8](https://github.com/Pui89/PUI89-Research/pull/8). These are repository/documentation milestones, not completed experimental or physical validation.
+
+## Prototype BOM and cost
+
+See the [bilingual six-product BOM and prototype-cost framework](https://github.com/Pui89/PUI89-Research/tree/main/docs/PROTOTYPE_BOM_AND_COST_FRAMEWORK.md). Until configurations and dated supplier evidence are available, product prototype costs remain **TBD — not yet responsibly estimable**. No purchase or supplier commitment is implied.
 
 ## Coconut Harvest AI — required evidence sequence
 
